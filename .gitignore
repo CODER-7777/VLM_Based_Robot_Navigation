@@ -1,0 +1,37 @@
+# Ignore unnecessary files for the UGP repo
+
+# Simulator caches and binaries
+*.bin
+*.so
+*.dylib
+*.dll
+*.exe
+build/
+bin/
+
+# Dataset and media files (except small demos)
+*.mp4
+*.mkv
+*.avi
+*.bag
+*.pcd
+*.png
+*.jpg
+*.jpeg
+# If you want to include small screenshots, you can un-ignore png/jpg 
+# by commenting them out or using !path/to/image.png
+!image.png
+!Screenshot*.png
+
+# Python
+__pycache__/
+*.pyc
+.env
+.venv
+venv/
+
+# IDEs and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
