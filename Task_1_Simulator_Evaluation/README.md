@@ -22,7 +22,7 @@ When loading the massive photorealistic 3D Office environment (`Office+2.glb`), 
 
 | Criterion | Genesis | Isaac Sim / Isaac Lab | Unreal Engine / Unity (CARLA) | AI Habitat | MuJoCo / MJX |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Environment library** | Excellent. Loads standard `.gltf`/`.obj` environments directly. | Excellent (Omniverse USDs), but massive downloads. | Massive libraries, but assets are heavy and not RL-ready. | Great for indoor scans, weak for outdoors. | Very poor native photorealism. |
+| **Environment library** | Excellent. Loads standard `.gltf`/`.obj` environments directly.I have tried this on my laptop it is working fine. | Excellent (Omniverse USDs), but massive downloads. | Massive libraries, but assets are heavy and not RL-ready. | Great for indoor scans, weak for outdoors. | Very poor native photorealism. |
 | **Visual realism** | High (native path tracing). | Very High. | Very High. | High. | Low. |
 | **Quadruped support** | Excellent. Unitree Go2 models are there, physics work robustly. | Excellent, but computationally expensive. | Hard to simulate physics bridging with Python RL frameworks. | Weak contact physics for quadrupeds. | Excellent physics, but no photorealism. |
 | **Performance** | High. Fully GPU-accelerated without extreme footprint. | Low for average hardware. Requires huge VRAM. | Low. Game engines have heavy overhead for RL parallelization. | High. | Very High. |
@@ -46,21 +46,20 @@ Genesis hits the perfect sweet spot for this project. It provides the blazing-fa
 
 **Biggest Risk:** 
 Ecosystem Immaturity. Genesis has a smaller community compared to Isaac or Unreal. Finding highly complex, pre-rigged interactive environments (like working elevators or specific doors) will require more manual work to convert standard `.glb` assets into functional URDFs.
+Also in Genesis if you have a VRAM then only try to ru Physics cause it will cause OOM errors like basically the out of memory errors.
 
+## A.Some additional points of the analysis:
+1. The first thing is we need to have a crazy gpu for the things like ISSAC SIM it has a min requirements of RTX 4070 and min VRAM of 8GB.
 ---
 
 ## 5. Working Demo & Setup Notes
 
 **Video Demonstration:**
 * [Watch the Genesis Quadruped Demo on Google Drive](https://drive.google.com/file/d/1hBrvVq-9UNVSSecGrkjWfZmLAOO4rz1X/view?usp=sharing)
-* *(Local Backup: [videos/Genesis_without_physics.mp4](videos/Genesis_without_physics.mp4))*
 
-**Screenshots:**
-![Office Scene Screenshot](screenshots/placeholder_screenshot.png)
-*(Note: Please drop your Genesis screenshots into the `screenshots/` folder and name them to match the links here)*
-
-**Setup Notes (For Juniors / Raj's Team and Krishna):**
-Genesis proved to be the most practical because it actually works on standard hardware without taking 100GB. Below are the exact commands you need to get it running from scratch:
+**Setup Notes (Raj's Team and Krishna):**
+Genesis is the most practical because it actually works on standard hardware without taking 100GB.
+Below are the exact commands you need to get it running from scratch:
 
 **1. Clone the Repos & Install Dependencies:**
 ```bash
