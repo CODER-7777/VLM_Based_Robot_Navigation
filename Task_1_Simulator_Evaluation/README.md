@@ -62,8 +62,10 @@ Also in Genesis if you have a VRAM then only try to ru Physics cause it will cau
 * I will mention the OS and environment setup in the next Setup Notes.
   
 ---
-
-## 5. Working Demo & Setup Notes
+## 5. About the python script (run_go2.py)[genesis_world/run_go2.py]
+* This is a modular script(OOP) with which you can start your genesis script load your robot model and can customize your environment.
+* I have written it to implement the walking of the robo. We can use the commands that we use in rl_sar and further there are many other features which you can know by pressing 'i' after entering into the genesis environment.While running fix your paths accordingly I have given regarding that in more detailed in the setup Notes thing.
+## 6. Working Demo & Setup Notes
 
 **Video Demonstration:**
 * [Watch the Genesis Quadruped Demo on Google Drive](https://drive.google.com/file/d/1hBrvVq-9UNVSSecGrkjWfZmLAOO4rz1X/view?usp=sharing)
