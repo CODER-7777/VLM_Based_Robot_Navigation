@@ -48,7 +48,8 @@ Ecosystem Immaturity. Genesis has a smaller community compared to Isaac or Unrea
 ## 5. Working Demo & Setup Notes
 
 **Video Demonstration:**
-* [Watch the Genesis Quadruped Demo (Visual-Only Office)](videos/Genesis_without_physics.mp4)
+* [Watch the Genesis Quadruped Demo on Google Drive](https://drive.google.com/file/d/1hBrvVq-9UNVSSecGrkjWfZmLAOO4rz1X/view?usp=sharing)
+* *(Local Backup: [videos/Genesis_without_physics.mp4](videos/Genesis_without_physics.mp4))*
 
 **Screenshots:**
 ![Office Scene Screenshot](screenshots/placeholder_screenshot.png)

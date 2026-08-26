@@ -10,7 +10,7 @@ build/
 bin/
 
 # Dataset and media files (except small demos)
-*.mp4
+*bro ad4
 *.mkv
 *.avi
 *.bag
@@ -22,6 +22,7 @@ bin/
 # by commenting them out or using !path/to/image.png
 !image.png
 !Screenshot*.png
+!1.png
 
 # Python
 __pycache__/
