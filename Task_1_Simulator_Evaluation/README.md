@@ -90,11 +90,11 @@ pip install genesis-world torch numpy
 ```
 
 **2. Configure the Policy Path:**
-Open `genesis-world/run_go2.py` and ensure the `policy_path` on line 125 exactly matches where you cloned `rl_sar` (e.g., `/home/your_username/UGP/rl_sar/rl_ws/src/rl_sar/policy/go2/robot_lab/policy.pt`).
+Open `Task_1_Simulator_Evaluation/run_go2.py` and ensure the `policy_path` exactly matches where you cloned `rl_sar` (e.g., `/home/your_username/UGP/rl_sar/rl_ws/src/rl_sar/policy/go2/robot_lab/policy.pt`).
 
 **3. Run the Simulation:**
 ```bash
-cd genesis-world
+cd Task_1_Simulator_Evaluation
 python run_go2.py
 ```
 
@@ -106,4 +106,4 @@ python run_go2.py
 ## 6. Links / References
 - **Genesis Documentation:** https://genesis-world.readthedocs.io/
 - **rl_sar Quadruped RL Policy Repository:** https://github.com/fan-ziqi/rl_sar
-- **Our Working Script:** Reference the `run_go2.py` setup script in the genesis-world root folder.
+- **Our Working Script:** Reference the `run_go2.py` setup script provided in this evaluation folder.
