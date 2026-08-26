@@ -49,7 +49,18 @@ Ecosystem Immaturity. Genesis has a smaller community compared to Isaac or Unrea
 Also in Genesis if you have a VRAM then only try to ru Physics cause it will cause OOM errors like basically the out of memory errors.
 
 ## A.Some additional points of the analysis:
-1. The first thing is we need to have a crazy gpu for the things like ISSAC SIM it has a min requirements of RTX 4070 and min VRAM of 8GB.
+1. The first thing is we need to have a good gpu for the things like ISSAC SIM it has a min requirements of RTX 4070 and min VRAM of 16GB.I am here attaching the photos.
+<img width="741" height="593" alt="image" src="https://github.com/user-attachments/assets/69d17afc-fed4-4c93-8427-588f610c022d" /> This is for the Issac-Sim
+
+* [Minimum Specs for ISSAC SIM(I am giving only x86_64 arch)](https://docs.isaacsim.omniverse.nvidia.com/6.0.1/installation/requirements.html)
+* [Minimum Specs for Unreal](https://dev.epicgames.com/documentation/unreal-engine/hardware-and-software-specifications-for-unreal-engine)
+  <img width="1917" height="842" alt="image" src="https://github.com/user-attachments/assets/8d36c7d2-f9c6-4676-a8f5-18f7d1f74665" />
+* In Genesis the advantage is we can run it on RTX 3050 but we need to take care of physics like basically in the photo realistic environments we have the models with more than 1 million faces to which genesis need to calculate physics which needs so much VRAM.( The RAM installed on your PC/Laptop is different from the VRAM it is a virtual memory where it will compute and it shows the storage or capacity  the GPU can compute.
+* Also there is a repo by Unreal Labs where they have integrated Unreal engines lighting, Photo realism with the Mujoco but we need to install the Unreal Engine which approx. takes a hefty amount of space ~100GB like if we inlcude the plugins and all and it also good GPU.
+* In Gazebo we can simulate sensors but physics of Mujoco is very accurate in comparison to the Gazebo.
+* In my ranking i did not mention the Mujoco as it does not have good rexture capability and we need .mjcf. But genesis can directly import the .gltf/.glb formats nicely .
+* I will mention the OS and environment setup in the next Setup Notes.
+  
 ---
 
 ## 5. Working Demo & Setup Notes
