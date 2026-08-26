@@ -1,5 +1,9 @@
 # Task 1: Photorealistic Simulator Evaluation for Quadruped Locomotion
 
+> **Quick Link:** [Jump straight to Deep Analysis & Hardware Workarounds](#1-deep-analysis--architectural-trade-offs)
+
+---
+
 ## 1. Deep Analysis & Architectural Trade-offs
 ### The Core Challenge: VRAM Ceilings & Simulator Architectures
 During this evaluation, we confronted the fundamental tension in modern robotics simulation: the division between **physics computation** and **photorealistic rendering**. 
@@ -55,12 +59,35 @@ Ecosystem Immaturity. Genesis has a smaller community compared to Isaac or Unrea
 ![Office Scene Screenshot](screenshots/placeholder_screenshot.png)
 *(Note: Please drop your Genesis screenshots into the `screenshots/` folder and name them to match the links here)*
 
-**Setup Notes (For Raj's Team and Krishna):**
-Genesis proved to be the most practical because it actually works on standard hardware without taking 100GB.
-1. **Installation:** Run `pip install genesis-world`. 
-2. **Environment & Robot:** We used the Unitree Go2 URDF and dropped in a pre-trained PPO policy from the `rl_sar` repository.
-3. **Training vs Rendering Separation:** Do NOT use the Ray-Tracer for live development. Keep using the fast rasterizer (Pyrender) for policy training. When you need photorealistic frames, write a script to render offline (one camera, one frame at a time, at a reduced resolution like 640x480) to prevent OOM errors.
-4. **Collision Workaround:** If your GPU crashes loading an environment, set the visual mesh to `collision=False` and place an invisible `plane.urdf` underneath it for physics.
+**Setup Notes (For Juniors / Raj's Team and Krishna):**
+Genesis proved to be the most practical because it actually works on standard hardware without taking 100GB. Below are the exact commands you need to get it running from scratch:
+
+**1. Clone the Repos & Install Dependencies:**
+```bash
+# Clone the main repository
+git clone https://github.com/YOUR_GITHUB_USERNAME/VLM_Based_Robot_Navigation.git
+
+# Clone the rl_sar repository (which contains the pre-trained Go2 policy)
+# (Clone this into the same parent folder, e.g., your UGP directory)
+git clone https://github.com/fan-ziqi/rl_sar.git
+
+cd VLM_Based_Robot_Navigation
+
+# Install the Genesis simulator and required libraries
+pip install genesis-world torch numpy
+```
+
+**2. Configure the Policy Path:**
+Open `genesis-world/run_go2.py` and ensure the `policy_path` on line 125 exactly matches where you cloned `rl_sar` (e.g., `/home/your_username/UGP/rl_sar/rl_ws/src/rl_sar/policy/go2/robot_lab/policy.pt`).
+
+**3. Run the Simulation:**
+```bash
+cd genesis-world
+python run_go2.py
+```
+
+**4. Training vs Rendering Separation:** Do NOT use the Ray-Tracer for live development. Keep using the fast rasterizer (Pyrender) for policy training. When you need photorealistic frames, write a script to render offline (one camera, one frame at a time, at a reduced resolution like 640x480) to prevent OOM errors.
+**5. Collision Workaround:** If your GPU crashes loading an environment, set the visual mesh to `collision=False` and place an invisible `plane.urdf` underneath it for physics.
 
 ---
 
