@@ -22,7 +22,7 @@ When loading the massive photorealistic 3D Office environment (`Office+2.glb`), 
 
 | Criterion | Genesis | Isaac Sim / Isaac Lab | Unreal Engine / Unity (CARLA) | AI Habitat | MuJoCo / MJX |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Environment library** | Excellent. Loads standard `.gltf`/`.obj` environments directly.I have tried this on my laptop it is working fine. | Excellent (Omniverse USDs), but massive downloads. | Massive libraries, but assets are heavy and not RL-ready. | Great for indoor scans, weak for outdoors. | Very poor native photorealism. |
+| **Environment library** | Excellent. Loads standard `.gltf`/`.obj` environments directly (Tested and working on my laptop). | Excellent (Omniverse USDs), but massive downloads. | Massive libraries, but assets are heavy and not RL-ready. | Great for indoor scans, weak for outdoors. | Very poor native photorealism. |
 | **Visual realism** | High (native path tracing). | Very High. | Very High. | High. | Low. |
 | **Quadruped support** | Excellent. Unitree Go2 models are there, physics work robustly. | Excellent, but computationally expensive. | Hard to simulate physics bridging with Python RL frameworks. | Weak contact physics for quadrupeds. | Excellent physics, but no photorealism. |
 | **Performance** | High. Fully GPU-accelerated without extreme footprint. | Low for average hardware. Requires huge VRAM. | Low. Game engines have heavy overhead for RL parallelization. | High. | Very High. |
