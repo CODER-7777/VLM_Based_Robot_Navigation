@@ -1,10 +1,10 @@
 # Task 1: Photorealistic Simulator Evaluation for Quadruped Locomotion
 
-> **Quick Link:** [Jump straight to Deep Analysis & Hardware Workarounds](#1-deep-analysis--architectural-trade-offs)
+> **Quick Link:** [Jump straight to Analysis & Hardware Workarounds](#1-deep-analysis--architectural-trade-offs)
 
 ---
 
-## 1. Deep Analysis & Architectural Trade-offs
+## 1. Analysis & Architectural Trade-offs
 ### The Core Challenge: VRAM Ceilings & Simulator Architectures
 During this evaluation, we confronted the fundamental tension in modern robotics simulation: the division between **physics computation** and **photorealistic rendering**. 
 
