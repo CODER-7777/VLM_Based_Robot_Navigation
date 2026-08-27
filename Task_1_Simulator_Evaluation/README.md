@@ -6,15 +6,15 @@
 
 ## 1. Analysis & Architectural Trade-offs
 ### The Core Challenge: VRAM Ceilings & Simulator Architectures
-During this evaluation, we confronted the fundamental tension in modern robotics simulation: the division between **physics computation** and **photorealistic rendering**. 
+During this evaluation, I confronted the fundamental tension in robotics simulation: the division between **physics computation** and **photorealistic rendering**. 
 
-1. **The Game Engine Trap (Unreal/Unity):** While engines like Unreal provide unparalleled visual realism (Lumen/Nanite) and particle systems for adverse conditions, they require massive storage footprints (often >100GB). Simulating high-frequency legged locomotion contact dynamics natively is difficult, and bridging them with a physics engine like MuJoCo introduces complex IPC (Inter-Process Communication) overhead.
+1. **The Game Engine  (Unreal/Unity):** While engines like Unreal provide nice visual realism (Lumen/Nanite) and particle systems for adverse conditions, they require massive storage footprints (often >100GB). Simulating high-frequency legged locomotion contact dynamics natively is difficult, and bridging them with a physics engine like MuJoCo introduces complex IPC (Inter-Process Communication) overhead.
 2. **The Physics-First Approach (Isaac Sim):** Platforms like NVIDIA Isaac Sim integrate exceptional RL pipelines with photorealism. However, they assume the heavy ray-traced renderer is always active. On hardware with limited VRAM (e.g., 4GB RTX 3050), Isaac Sim will trigger Out-of-Memory (OOM) errors before a scene even initializes.
 3. **The Decoupled Solution (Genesis):** Genesis solves this by intentionally decoupling physics from photorealism. Rigid-body physics computation requires a fraction of a Gigabyte. By default, Genesis utilizes a fast rasterizer (Pyrender) for live previews, allowing smooth RL policy execution on low-end GPUs. True photorealism in Genesis is achieved by explicitly switching to the Ray-Tracer backend (`gs.options.renderers.RayTracer()`) for offline rendering, allowing us to capture high-fidelity data without crashing the hardware.
 
 ### Hardware-Specific Workaround (Genesis Office Environment)
 When loading the massive photorealistic 3D Office environment (`Office+2.glb`), Genesis attempted to calculate convex collision hulls for the entire mesh, which instantly exceeded our 4GB VRAM limit and killed the process. 
-**Our Solution:** We set the high-fidelity office mesh to be purely visual (`collision=False`, `convexify=False`) and instantiated an invisible physics plane (`plane.urdf`) underneath it. This allowed the quadruped to interact perfectly with a stable physical floor while maintaining the photorealistic visual context of the office, successfully bypassing the hardware limits.
+**Solution:** I set the high-fidelity office mesh to be purely visual (`collision=False`, `convexify=False`) and instantiated an invisible physics plane (`plane.urdf`) underneath it. This allowed the quadruped to interact perfectly with a stable physical floor while maintaining the photorealistic visual context of the office, successfully bypassing the hardware limits.
 
 ---
 
