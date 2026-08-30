@@ -47,7 +47,7 @@ class Go2Controller:
 
     def load_environment(self, office_mesh_path="../genesis-world/office-env/Office+2.glb"):
         # Invisible plane for physics
-        self.scene.add_entity(gs.morphs.URDF(file="../genesis-world/urdf/plane/plane.urdf", fixed=True))
+        self.scene.add_entity(gs.morphs.URDF(file="urdf/plane/plane.urdf", fixed=True))
         
         # Visual-only office to prevent OOM
         self.scene.add_entity(
@@ -61,7 +61,7 @@ class Go2Controller:
         # Robot
         self.robot = self.scene.add_entity(
             gs.morphs.URDF(
-                file="../genesis-world/urdf/go2/urdf/go2.urdf",
+                file="urdf/go2/urdf/go2.urdf",
                 pos=(0.0, 0.0, 0.42),
             ),
         )
