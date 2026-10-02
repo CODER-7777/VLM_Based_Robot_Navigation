@@ -1,0 +1,49 @@
+{
+  "purpose": "Final analysis code provenance; individual record manifests preserve the recorder used for their traces.",
+  "files": {
+    "tools/jitter_analysis/analyze.py": "3f9ef6f913f886693ab5e1cc29cd9ca2ebd0224624b235754697e476fbbdf754",
+    "tools/jitter_analysis/compare_starts.py": "f39072d289f91d87deed0c00ecff7ebde752b33417028fc0b5e53563ba79ef57",
+    "tools/jitter_analysis/first_contact.py": "d549dfa96230388d98596f71d6123a8790a32c8f0a2bdbe60b46041a6d320914",
+    "tools/jitter_analysis/record.py": "5b423d7a485ae2c5b0af526eb0db9697cbe3e6f4edd83957ee9ca474e5b31a72",
+    "tools/jitter_analysis/run_suite.py": "867cb5a3435edce14edd62d604e0501e43823674284ca182b16b319cac53bb05",
+    "tools/jitter_analysis/test_analysis.py": "68305c18eec9b6f3f2a85ba397d01da155de3cd47f6a40e62955018640136c89"
+  },
+  "validation": {
+    "unittest_methods_passed": 4,
+    "passive_trajectory_cpu_physics_steps": 240,
+    "evaluation_executions": 20,
+    "distinct_conditions": 16,
+    "reported_numerical_warnings": 0,
+    "local_links_checked": true
+  },
+  "presentation_update_20261003": {
+    "purpose": "Plain-English explanations added to existing HTML and future page generation; traces and metrics retained.",
+    "pages_updated": 23,
+    "current_tool_sha256": {
+      "tools/jitter_analysis/analyze.py": "adcae9e63de50a145eb649d4fb83fb6969f2f6f53dbc824e985bdb69c0e9fa28",
+      "tools/jitter_analysis/compare_starts.py": "0eb1dfc68f2907fbf22ddb2b4b2429f88c909fccca6d255e0d65e3e3582d0e7a",
+      "tools/jitter_analysis/first_contact.py": "0bb7bd10d4d87631db45c309877d173a0dddacd06993c9925d080958b6a03adf",
+      "tools/jitter_analysis/plot_help.py": "cade6a24fa2d316f98cc15870745d4c6468d0aa303a132fad03fb3d3f8fd5b98",
+      "tools/jitter_analysis/record.py": "5b423d7a485ae2c5b0af526eb0db9697cbe3e6f4edd83957ee9ca474e5b31a72",
+      "tools/jitter_analysis/run_suite.py": "867cb5a3435edce14edd62d604e0501e43823674284ca182b16b319cac53bb05",
+      "tools/jitter_analysis/test_analysis.py": "68305c18eec9b6f3f2a85ba397d01da155de3cd47f6a40e62955018640136c89"
+    }
+  },
+  "interactive_recording_20261003": {
+    "purpose": "Record user keyboard-controlled viewer data before offline plotting; no user session synthesized",
+    "files": {
+      "tools/jitter_analysis/interactive.py": "6292bf0d73a62145d8a46e924b60d03042d0948d8f7afdd4c5089a7480f1e5a4",
+      "tools/jitter_analysis/plot_interactive.py": "ce6e80552eb3e3f34bd0c90fd06143733b4eb0ee18ec9f240f3f52d43ce6586e",
+      "tools/jitter_analysis/test_interactive.py": "3f943464aa2fe6befb892fd6da35fc5cd028b57aa8d8cfd2584c7b378f3e9fa7",
+      "xterra_mjlab/svanm2_moe_stair_sim/run_interactive_sim.py": "ec59c45890086ba586b735372b34c54ba440ca5ab3557c9fa3c0e750358c1702"
+    },
+    "validation": {
+      "total_checks_passed": 5,
+      "exact_passive_physics_steps_with_reset": 240,
+      "recording_reset_and_command_sampling_checked": true,
+      "saved_data_only_plotting_checked": true,
+      "graphical_user_session_pending": true
+    },
+    "current_viewer_limits": "User restored hip \u00b11.0472 and calf upper +0.5; retained unchanged by this work"
+  }
+}
