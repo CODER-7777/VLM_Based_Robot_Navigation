@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "outcome": "lane_exit",
+  "error": null,
+  "first_stair_contact_s": 11.815000000000447,
+  "last_recorded_time_s": 24.109999999999488,
+  "wall_seconds": 9.2140435660001,
+  "samples": 4823,
+  "warnings": {}
+}

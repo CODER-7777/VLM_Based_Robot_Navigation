@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "outcome": "flat_completed",
+  "error": null,
+  "first_stair_contact_s": null,
+  "last_recorded_time_s": 29.994999999998317,
+  "wall_seconds": 3.968844992999948,
+  "samples": 6000,
+  "warnings": {}
+}

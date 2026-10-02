@@ -1,0 +1,23 @@
+{
+  "device": "cuda:0",
+  "seconds": 30.0,
+  "vx": 0.3,
+  "stand": 3.0,
+  "ramp": 1.0,
+  "starts": [
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "sensors": [
+    "viewer",
+    "fresh"
+  ],
+  "terrains": [
+    "flat",
+    "stairs"
+  ],
+  "original": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/xterra_mjlab/checkpoints/svanm2_moe/model_90000.pt",
+  "candidate": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/xterra_mjlab/evaluation_runs/20261002_moe_target_bundle_updates90500/latest.pt"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "outcome": "tip",
+  "error": null,
+  "first_stair_contact_s": 10.985000000000317,
+  "last_recorded_time_s": 13.330000000000684,
+  "wall_seconds": 5.063152096000067,
+  "samples": 2667,
+  "warnings": {}
+}

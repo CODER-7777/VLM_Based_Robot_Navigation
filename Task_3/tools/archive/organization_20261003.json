@@ -1,0 +1,25 @@
+{
+  "reason": "Group loose debug exports and plan images; contents verified unchanged; no checkpoints, videos, results or editor swap files removed",
+  "moves": [
+    {
+      "from": "xterra_mjlab/MJDATA.TXT",
+      "to": "tools/archive/debug_exports_20260926/MJDATA.TXT",
+      "sha256": "4a427811bf221f98db374210d25b19a0f96f9b1ec0b54dc75926db70ec1446ed"
+    },
+    {
+      "from": "xterra_mjlab/screenshot.png",
+      "to": "tools/archive/debug_exports_20260926/screenshot.png",
+      "sha256": "a349bfdb0a23468d276bab966905ec353eb166a0d81f3899cbfa5d20f836327e"
+    },
+    {
+      "from": "notes/Screenshot from 2026-09-26 13-15-20.png",
+      "to": "notes/assets/training_plan_20260926_131520.png",
+      "sha256": "0765b91de3825e6ccfabd441f000513439622126c550dc10d2d76a82c704c4fb"
+    },
+    {
+      "from": "notes/Screenshot from 2026-09-26 13-20-43.png",
+      "to": "notes/assets/training_plan_20260926_132043.png",
+      "sha256": "b40084db11cb01023f5de43c5557d9e72816435b7df4807f55f9e87fd96b56c5"
+    }
+  ]
+}

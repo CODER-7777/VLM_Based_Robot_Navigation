@@ -1,0 +1,179 @@
+{
+  "checkpoint": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/xterra_mjlab/checkpoints/svanm2_moe/model_90000.pt",
+  "checkpoint_sha256": "440bbb28d554f75db38bfd163351c04ea4a32d9d06764c37b7e6071d41daa5cb",
+  "checkpoint_update": 90000,
+  "scene": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/xterra_mjlab/svanm2_moe_stair_sim/scene.xml",
+  "scene_sha256": "62934ac0a698ae6ea9716a882c975c83642dec7aab53b934a8c08df47597f3bf",
+  "source_sha256": {
+    "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/tools/jitter_analysis/record.py": "5b423d7a485ae2c5b0af526eb0db9697cbe3e6f4edd83957ee9ca474e5b31a72",
+    "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/xterra_mjlab/svanm2_moe_stair_sim/controller.py": "d2a61322324a41a6109be31c44cf7e3487f50c9bb1be9a2080fe481f2af21e38",
+    "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/xterra_mjlab/svanm2_moe_stair_sim/checkpoint_policy.py": "2027d66f5872dc8076ac69970e656566ef54a9fbee882579b3131eb13494dbc6",
+    "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/xterra_mjlab/svanm2_moe_stair_sim/build_scene.py": "1f92c8510aba361de4ee5eecd2d39fbe794364282edc2422105bc95efb1f143d"
+  },
+  "mujoco": "3.11.0",
+  "torch": "2.14.0+cu130",
+  "numpy": "2.4.6",
+  "device": "cuda:0",
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "terrain": "stairs",
+  "sensors": "viewer",
+  "seconds": 30.0,
+  "vx": 0.3,
+  "stand": 3.0,
+  "ramp": 1.0,
+  "dt": 0.005,
+  "decimation": 4,
+  "y_offset": -0.03,
+  "yaw_offset": -0.02,
+  "spawn": [
+    -1.5,
+    -9.53,
+    0.365
+  ],
+  "disabled_collision_geoms": [],
+  "joint_names": [
+    "FL_hip_joint",
+    "FL_thigh_joint",
+    "FL_calf_joint",
+    "FR_hip_joint",
+    "FR_thigh_joint",
+    "FR_calf_joint",
+    "RL_hip_joint",
+    "RL_thigh_joint",
+    "RL_calf_joint",
+    "RR_hip_joint",
+    "RR_thigh_joint",
+    "RR_calf_joint"
+  ],
+  "target_min": [
+    -0.7350000143051147,
+    -1.5707999467849731,
+    -2.7227001190185547,
+    -0.7350000143051147,
+    -1.5707999467849731,
+    -2.7227001190185547,
+    -0.7350000143051147,
+    -0.5235999822616577,
+    -2.7227001190185547,
+    -0.7350000143051147,
+    -0.5235999822616577,
+    -2.7227001190185547
+  ],
+  "target_max": [
+    0.7350000143051147,
+    3.4907000064849854,
+    -0.8877599835395813,
+    0.7350000143051147,
+    3.4907000064849854,
+    -0.8877599835395813,
+    0.7350000143051147,
+    4.537899971008301,
+    -0.8877599835395813,
+    0.7350000143051147,
+    4.537899971008301,
+    -0.8877599835395813
+  ],
+  "q0": [
+    0.0,
+    0.5806000232696533,
+    -1.1715999841690063,
+    0.0,
+    0.5806000232696533,
+    -1.1715999841690063,
+    0.0,
+    0.71670001745224,
+    -1.1341999769210815,
+    0.0,
+    0.71670001745224,
+    -1.1341999769210815
+  ],
+  "scale": [
+    0.15000000596046448,
+    0.15000000596046448,
+    0.30000001192092896,
+    0.15000000596046448,
+    0.15000000596046448,
+    0.30000001192092896,
+    0.15000000596046448,
+    0.15000000596046448,
+    0.30000001192092896,
+    0.15000000596046448,
+    0.15000000596046448,
+    0.30000001192092896
+  ],
+  "kp": 20.0,
+  "kd": 0.7,
+  "transmission": [
+    [
+      8.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      8.0,
+      0.0
+    ],
+    [
+      0.0,
+      8.0,
+      16.0
+    ]
+  ],
+  "torque_limits": [
+    12.0,
+    12.0,
+    24.0,
+    12.0,
+    12.0,
+    24.0,
+    12.0,
+    12.0,
+    24.0,
+    12.0,
+    12.0,
+    24.0
+  ],
+  "foot_friction": [
+    [
+      0.85,
+      0.01,
+      0.001
+    ],
+    [
+      0.85,
+      0.01,
+      0.001
+    ],
+    [
+      0.85,
+      0.01,
+      0.001
+    ],
+    [
+      0.85,
+      0.01,
+      0.001
+    ]
+  ],
+  "foot_solref": [
+    [
+      0.002,
+      1.0
+    ],
+    [
+      0.002,
+      1.0
+    ],
+    [
+      0.002,
+      1.0
+    ],
+    [
+      0.002,
+      1.0
+    ]
+  ],
+  "provenance": "Scripted fresh simulation, not a replay of the user's video",
+  "sampling": "Row state/target at t; forces from solve for [t,t+dt]; policy_tick marks 50 Hz updates"
+}

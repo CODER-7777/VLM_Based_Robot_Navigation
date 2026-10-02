@@ -1,0 +1,176 @@
+{
+  "time_s": 11.165000000000346,
+  "first_foot": "FL",
+  "step_top_m": 0.1,
+  "foot_radius_m": 0.022,
+  "approximate_center_z_for_flat_top_clearance_m": 0.122,
+  "measured_foot_xyz_m": [
+    -0.021317591722167406,
+    -9.427934853792333,
+    0.04267952499716529
+  ],
+  "static_clamped_target_foot_xyz_m": [
+    0.020484287932907297,
+    -9.405563598524731,
+    0.05612278032969194
+  ],
+  "static_pose_caveat": "Forward kinematics with recorded base frozen and joints set to current clamped targets; not a dynamic prediction or a feasible contact state",
+  "target_removed_on_first_leg_rad": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "raw_torque_on_first_leg_Nm": [
+    1.2480305433273315,
+    -0.5699484944343567,
+    0.10051524639129639
+  ],
+  "torque_limits_on_first_leg_Nm": [
+    12.0,
+    12.0,
+    24.0
+  ],
+  "q_on_first_leg_rad": [
+    -0.15540240705013275,
+    0.5478167533874512,
+    -1.3645552396774292
+  ],
+  "target_on_first_leg_rad": [
+    -0.0752207487821579,
+    0.41553446650505066,
+    -1.3781893253326416
+  ],
+  "first_loaded_step_contact_per_foot": {
+    "FL": {
+      "time": 11.165000000000346,
+      "geom1": "FL_foot",
+      "geom2": "step_1_1",
+      "foot": "FL",
+      "pos": [
+        0.000341204138916279,
+        -9.427934853792333,
+        0.04267952499716529
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "force_contact": [
+        50.66515996240819,
+        7.807976266817423,
+        -28.89139216353197,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance": -0.0006824082778325927
+    },
+    "FR": {
+      "time": 11.465000000000392,
+      "geom1": "FR_foot",
+      "geom2": "step_1_1",
+      "foot": "FR",
+      "pos": [
+        0.00040681012966034547,
+        -9.566849624428189,
+        0.05802579744277592
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "force_contact": [
+        46.68776725713133,
+        13.473006216078671,
+        37.32754683579557,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance": -0.0008136202593206701
+    },
+    "RR": {
+      "time": 13.140000000000654,
+      "geom1": "RR_foot",
+      "geom2": "step_1_1",
+      "foot": "RR",
+      "pos": [
+        0.04063019714952992,
+        -9.54634906264272,
+        0.09846304244636148
+      ],
+      "frame": [
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "force_contact": [
+        91.63393184062596,
+        -0.6300368017304991,
+        41.06892386172475,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance": -0.0030739151072770657
+    },
+    "RL": {
+      "time": 13.745000000000749,
+      "geom1": "RL_foot",
+      "geom2": "step_1_1",
+      "foot": "RL",
+      "pos": [
+        0.10916590431264779,
+        -9.44327905871788,
+        0.0982566278561871
+      ],
+      "frame": [
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        -0.0,
+        0.0
+      ],
+      "force_contact": [
+        123.93458148463469,
+        9.222072991997637,
+        8.409836047587657,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance": -0.003486744287625791
+    }
+  },
+  "highest_step_with_any_top_or_diagonal_support_per_foot": {
+    "FL": 3,
+    "FR": 3,
+    "RL": 2,
+    "RR": 2
+  },
+  "top_contact_caveat": "Any sample >1 N with abs(normal_z)>0.7; does not require sustained support or prove traversal"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "outcome": "timeout_incomplete",
+  "error": null,
+  "first_stair_contact_s": 11.165000000000346,
+  "last_recorded_time_s": 29.994999999998317,
+  "wall_seconds": 11.20007954599987,
+  "samples": 6000,
+  "warnings": {}
+}
