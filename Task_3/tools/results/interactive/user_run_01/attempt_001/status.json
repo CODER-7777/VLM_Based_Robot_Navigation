@@ -1,0 +1,18 @@
+{
+  "status": "reset_or_teleport",
+  "samples": 7723,
+  "chunks": [
+    "raw/chunk_00000.npz",
+    "raw/chunk_00001.npz",
+    "raw/chunk_00002.npz",
+    "raw/chunk_00003.npz",
+    "raw/chunk_00004.npz",
+    "raw/chunk_00005.npz",
+    "raw/chunk_00006.npz",
+    "raw/chunk_00007.npz"
+  ],
+  "first_stair_contact_s": 29.66999999999838,
+  "first_riser_contact_s": 29.66999999999838,
+  "error": null,
+  "warnings": {}
+}

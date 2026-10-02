@@ -1,0 +1,291 @@
+{
+  "recording_kind": "interactive_user_commands",
+  "created_utc": "2026-10-02T20:16:42.038498+00:00",
+  "checkpoint": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/xterra_mjlab/evaluation_runs/20261002_moe_target_bundle_updates90500/latest.pt",
+  "checkpoint_update": 90500,
+  "checkpoint_sha256": "06f8f2788367b89df9cf37a1c7091749ceedf7686cc5903b46a8e9381367382a",
+  "device": "cuda:0",
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "scene_sha256": "62934ac0a698ae6ea9716a882c975c83642dec7aab53b934a8c08df47597f3bf",
+  "source_sha256": {
+    "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/tools/jitter_analysis/interactive.py": "6292bf0d73a62145d8a46e924b60d03042d0948d8f7afdd4c5089a7480f1e5a4",
+    "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/xterra_mjlab/svanm2_moe_stair_sim/run_interactive_sim.py": "ec59c45890086ba586b735372b34c54ba440ca5ab3557c9fa3c0e750358c1702",
+    "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/xterra_mjlab/svanm2_moe_stair_sim/controller.py": "fa9d116a288f5675d54750d65a9d7bfa46bacd6a13a9c11620136b42bac7d1f3",
+    "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/xterra_mjlab/svanm2_moe_stair_sim/teleop.py": "e48d45b8a236599b1c5427081ab928e778a7c7c4152ecadb66d29e230c135efd",
+    "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/xterra_mjlab/svanm2_moe_stair_sim/checkpoint_policy.py": "2027d66f5872dc8076ac69970e656566ef54a9fbee882579b3131eb13494dbc6",
+    "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/xterra_mjlab/svanm2_moe_stair_sim/build_scene.py": "1f92c8510aba361de4ee5eecd2d39fbe794364282edc2422105bc95efb1f143d",
+    "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/tools/jitter_analysis/record.py": "5b423d7a485ae2c5b0af526eb0db9697cbe3e6f4edd83957ee9ca474e5b31a72",
+    "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/tools/jitter_analysis/plot_interactive.py": "ce6e80552eb3e3f34bd0c90fd06143733b4eb0ee18ec9f240f3f52d43ce6586e"
+  },
+  "mujoco": "3.11.0",
+  "torch": "2.14.0+cu130",
+  "numpy": "2.4.6",
+  "dt": 0.005,
+  "decimation": 4,
+  "joint_names": [
+    "FL_hip_joint",
+    "FL_thigh_joint",
+    "FL_calf_joint",
+    "FR_hip_joint",
+    "FR_thigh_joint",
+    "FR_calf_joint",
+    "RL_hip_joint",
+    "RL_thigh_joint",
+    "RL_calf_joint",
+    "RR_hip_joint",
+    "RR_thigh_joint",
+    "RR_calf_joint"
+  ],
+  "target_min": [
+    -1.0471999645233154,
+    -1.5707999467849731,
+    -2.7227001190185547,
+    -1.0471999645233154,
+    -1.5707999467849731,
+    -2.7227001190185547,
+    -1.0471999645233154,
+    -0.5235999822616577,
+    -2.7227001190185547,
+    -1.0471999645233154,
+    -0.5235999822616577,
+    -2.7227001190185547
+  ],
+  "target_max": [
+    1.0471999645233154,
+    3.4907000064849854,
+    0.5,
+    1.0471999645233154,
+    3.4907000064849854,
+    0.5,
+    1.0471999645233154,
+    4.537899971008301,
+    0.5,
+    1.0471999645233154,
+    4.537899971008301,
+    0.5
+  ],
+  "scale": [
+    0.15000000596046448,
+    0.15000000596046448,
+    0.30000001192092896,
+    0.15000000596046448,
+    0.15000000596046448,
+    0.30000001192092896,
+    0.15000000596046448,
+    0.15000000596046448,
+    0.30000001192092896,
+    0.15000000596046448,
+    0.15000000596046448,
+    0.30000001192092896
+  ],
+  "q0": [
+    0.0,
+    0.5806000232696533,
+    -1.1715999841690063,
+    0.0,
+    0.5806000232696533,
+    -1.1715999841690063,
+    0.0,
+    0.71670001745224,
+    -1.1341999769210815,
+    0.0,
+    0.71670001745224,
+    -1.1341999769210815
+  ],
+  "kp": 20.0,
+  "kd": 0.7,
+  "transmission": [
+    [
+      8.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      8.0,
+      0.0
+    ],
+    [
+      0.0,
+      8.0,
+      16.0
+    ]
+  ],
+  "torque_limits": [
+    12.0,
+    12.0,
+    24.0,
+    12.0,
+    12.0,
+    24.0,
+    12.0,
+    12.0,
+    24.0,
+    12.0,
+    12.0,
+    24.0
+  ],
+  "track_configs": [
+    {
+      "index": 1,
+      "height": 0.1,
+      "label": "10cm",
+      "color_main": [
+        0.15,
+        0.55,
+        0.8,
+        1.0
+      ],
+      "color_alt": [
+        0.25,
+        0.65,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "index": 2,
+      "height": 0.12,
+      "label": "12cm",
+      "color_main": [
+        0.1,
+        0.65,
+        0.6,
+        1.0
+      ],
+      "color_alt": [
+        0.2,
+        0.75,
+        0.7,
+        1.0
+      ]
+    },
+    {
+      "index": 3,
+      "height": 0.14,
+      "label": "14cm",
+      "color_main": [
+        0.2,
+        0.7,
+        0.3,
+        1.0
+      ],
+      "color_alt": [
+        0.3,
+        0.8,
+        0.4,
+        1.0
+      ]
+    },
+    {
+      "index": 4,
+      "height": 0.15,
+      "label": "15cm",
+      "color_main": [
+        0.9,
+        0.55,
+        0.1,
+        1.0
+      ],
+      "color_alt": [
+        0.95,
+        0.65,
+        0.2,
+        1.0
+      ]
+    },
+    {
+      "index": 5,
+      "height": 0.16,
+      "label": "16cm",
+      "color_main": [
+        0.85,
+        0.3,
+        0.2,
+        1.0
+      ],
+      "color_alt": [
+        0.95,
+        0.4,
+        0.3,
+        1.0
+      ]
+    },
+    {
+      "index": 6,
+      "height": 0.2,
+      "label": "20cm",
+      "color_main": [
+        0.65,
+        0.2,
+        0.75,
+        1.0
+      ],
+      "color_alt": [
+        0.75,
+        0.3,
+        0.85,
+        1.0
+      ]
+    }
+  ],
+  "foot_friction": [
+    [
+      0.85,
+      0.01,
+      0.001
+    ],
+    [
+      0.85,
+      0.01,
+      0.001
+    ],
+    [
+      0.85,
+      0.01,
+      0.001
+    ],
+    [
+      0.85,
+      0.01,
+      0.001
+    ]
+  ],
+  "foot_solref": [
+    [
+      0.002,
+      1.0
+    ],
+    [
+      0.002,
+      1.0
+    ],
+    [
+      0.002,
+      1.0
+    ],
+    [
+      0.002,
+      1.0
+    ]
+  ],
+  "foot_radius_m": [
+    0.022,
+    0.022,
+    0.022,
+    0.022
+  ],
+  "sampling": "State/target at t; contact solve and applied torque for [t,t+dt]. Actual policy command is held between ticks.",
+  "observation_convention": "Existing viewer policy input; fresh derived measurements on a scratch MjData only.",
+  "input_handling": "Keys are queued and applied between physics steps to prevent concurrent reset/measurement races.",
+  "provenance": "User-operated MuJoCo session. No scripted command schedule; this is simulator data, not real hardware.",
+  "episode": 9,
+  "reason": "viewer reset/teleport key 82",
+  "track": 1,
+  "start_sim_time": 93.28499999998765,
+  "initial_base_pos": [
+    -1.5,
+    -9.5,
+    0.365
+  ]
+}

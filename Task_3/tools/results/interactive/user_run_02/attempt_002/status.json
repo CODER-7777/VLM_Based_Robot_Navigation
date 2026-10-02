@@ -1,0 +1,11 @@
+{
+  "status": "reset_or_teleport",
+  "samples": 258,
+  "chunks": [
+    "raw/chunk_00000.npz"
+  ],
+  "first_stair_contact_s": null,
+  "first_riser_contact_s": null,
+  "error": null,
+  "warnings": {}
+}

@@ -1,0 +1,17 @@
+<!doctype html><meta charset="utf-8"><title>Your MoE recording</title><style>body{font:16px system-ui;max-width:1100px;margin:24px auto;padding:16px;line-height:1.5}img{width:100%}</style><h1>attempt_003 — your interactive recording</h1>
+<p>Track 1 (10cm); checkpoint update 90500.
+These figures read saved data only. No policy or new simulation was run to draw them.</p>
+<p><a href="../manifest.json">Exact checkpoint, limits and settings</a> · <a href="metrics.json">Numbers</a> ·
+<a href="../contacts.jsonl">Contact data</a> · <a href="../../events.jsonl">Your key events</a></p>
+<p><b>Mean joint 8–30 Hz RMS:</b> 0.416 degrees, calculated over 0.00–34.05 seconds.
+This includes impacts and useful corrections; it is not proof of a jitter cause or successful ascent.</p>
+<h2>1. Your commands and the response</h2><p>Black vx is the request actually supplied to the policy. Actual vx is how fast the body moves forward.
+The keyboard-input panel records all three commands. The request can stay constant because keys change a latched command.
+Position shows progress/height; tilt shows leaning and heading shows turning.</p><img src="01_overview.png">
+<h2>2. A short joint window</h2><p>Requested is before target limiting; clamped target is after limiting; measured is the actual angle.
+When requested and clamped separate, a limit removes part of the command. When measured differs, the joint has tracking error.
+Red dotted lines mark first recorded riser/stair contact; no line means none was recorded in the selected interval.</p><img src="02_joint_event.png">
+<h2>3. Contacts and limiting</h2><p>Foot heights and vertical-face forces show when a foot meets a riser.
+The dashed height is an approximate geometric threshold for the first tread only, not later steps or a dynamic prediction.
+Removed-target magnitude is not measured jitter. Torque maxima summarize all joints and may refer to different joints at different times;
+the JSON includes separate clipping fractions. A figure alone does not establish full climbing.</p><img src="03_contacts_control.png">

@@ -1,0 +1,17 @@
+{
+  "status": "closed",
+  "samples": 6811,
+  "chunks": [
+    "raw/chunk_00000.npz",
+    "raw/chunk_00001.npz",
+    "raw/chunk_00002.npz",
+    "raw/chunk_00003.npz",
+    "raw/chunk_00004.npz",
+    "raw/chunk_00005.npz",
+    "raw/chunk_00006.npz"
+  ],
+  "first_stair_contact_s": 15.695000000001054,
+  "first_riser_contact_s": 16.56500000000099,
+  "error": null,
+  "warnings": {}
+}
