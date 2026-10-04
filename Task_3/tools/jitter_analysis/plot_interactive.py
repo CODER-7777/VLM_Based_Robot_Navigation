@@ -59,9 +59,12 @@ def analyze_attempt(path, start=None, stop=None):
     if event_elapsed is not None and x[0] <= event_elapsed <= x[-1]:
         window &= (elapsed >= event_elapsed - 1) & (elapsed <= event_elapsed + 3)
     else:
-        window &= elapsed <= x[0] + 4
+        moving = selected & (np.linalg.norm(d["command"], axis=1) > .01)
+        onset = elapsed[np.flatnonzero(moving)[0]] if moving.any() else x[0]
+        window &= (elapsed >= max(x[0], onset - 1)) & (elapsed <= onset + 3)
     track_cfg = m["track_configs"][m["track"] - 1]
     metrics = dict(attempt=path.name, checkpoint_update=m["checkpoint_update"],
+                   observation_timing=m.get("observation_timing", "legacy"),
                    checkpoint_sha256=m["checkpoint_sha256"], samples=int(selected.sum()),
                    start_elapsed_s=float(x[0]), end_elapsed_s=float(x[-1]),
                    first_stair_contact_elapsed_s=None if s["first_stair_contact_s"] is None else s["first_stair_contact_s"] - m["start_sim_time"],
@@ -71,6 +74,10 @@ def analyze_attempt(path, start=None, stop=None):
                    target_clipped_fraction_per_joint=removed.mean(axis=0).tolist(),
                    torque_clipped_fraction_per_joint=clipped.mean(axis=0).tolist(),
                    vx_tracking_rmse_m_s=float(np.sqrt(np.mean((d["command"][selected, 0] - d["base_velocity_body"][selected, 0]) ** 2))),
+                   vy_tracking_rmse_m_s=float(np.sqrt(np.mean((d["command"][selected, 1] - d["base_velocity_body"][selected, 1]) ** 2))),
+                   yaw_rate_tracking_rmse_rad_s=float(np.sqrt(np.mean((d["command"][selected, 2] - d["angular_velocity_body"][selected, 2]) ** 2))),
+                   command_min=d["command"][selected].min(axis=0).tolist(),
+                   command_max=d["command"][selected].max(axis=0).tolist(),
                    max_tilt_deg=float(d["tilt_deg"][selected].max()),
                    max_base_x_m=float(d["base_pos"][selected, 0].max()),
                    invalid_policy_action_count=int((selected & d["policy_tick"] & ~d["raw_action_finite"]).sum()),
@@ -89,21 +96,34 @@ def analyze_attempt(path, start=None, stop=None):
         fig.savefig(plots / name, dpi=125)
         plt.close(fig)
 
-    fig, axs = plt.subplots(2, 2, figsize=(12, 7), sharex=True)
+    fig, axs = plt.subplots(4, 2, figsize=(12, 12), sharex=True)
     ax = axs[0, 0]
     ax.plot(x, d["command"][selected, 0], color="black", label="vx sent to policy")
     ax.plot(x, d["base_velocity_body"][selected, 0], label="actual body vx")
     ax.set_ylabel("Forward speed (m/s)"); ax.legend(fontsize=8)
     ax = axs[0, 1]
+    ax.plot(x, d["command"][selected, 1], color="black", label="vy sent to policy")
+    ax.plot(x, d["base_velocity_body"][selected, 1], label="actual body vy")
+    ax.set_ylabel("Sideways speed (m/s)"); ax.legend(fontsize=8)
+    ax = axs[1, 0]
+    ax.plot(x, d["command"][selected, 2], color="black", label="yaw rate sent to policy")
+    ax.plot(x, d["angular_velocity_body"][selected, 2], label="actual body angular z")
+    ax.set_ylabel("Turning rate (rad/s)"); ax.legend(fontsize=8)
+    ax = axs[1, 1]
     for i, label in enumerate(("vx input", "vy input", "yaw input")):
         ax.plot(x, d["input_command"][selected, i], label=label)
     ax.set_ylabel("Keyboard command (m/s, yaw rad/s)"); ax.legend(fontsize=8)
-    ax = axs[1, 0]
+    ax = axs[2, 0]
     ax.plot(x, d["base_pos"][selected, 0], label="world x progress")
     ax.plot(x, d["base_pos"][selected, 2], label="body height world z")
     ax.set_ylabel("Position (m)"); ax.legend(fontsize=8)
-    ax = axs[1, 1]
+    ax = axs[2, 1]
+    ax.plot(x, d["base_pos"][selected, 1], label="world y position")
+    ax.set_ylabel("Sideways position (m)"); ax.legend(fontsize=8)
+    ax = axs[3, 0]
     ax.plot(x, d["tilt_deg"][selected], label="body tilt")
+    ax.set_ylabel("Tilt (degrees)"); ax.legend(fontsize=8)
+    ax = axs[3, 1]
     ax.plot(x, np.degrees(np.unwrap(d["yaw_rad"]))[selected], label="heading")
     ax.set_ylabel("Angle (degrees)"); ax.legend(fontsize=8)
     for ax in axs.flat: mark(ax); ax.set_xlabel("Seconds since this attempt's reset")
@@ -141,22 +161,29 @@ def analyze_attempt(path, start=None, stop=None):
 
     rms_text = "Unavailable: fewer than two seconds or insufficient sample rate" if qrms is None else f"{qrms.mean():.3f} degrees"
     body = f'''<h1>{html.escape(path.name)} — your interactive recording</h1>
-<p>Track {m['track']} ({html.escape(track_cfg['label'])}); checkpoint update {m['checkpoint_update']}.
+<p>Track {m['track']} ({html.escape(track_cfg['label'])}); checkpoint update {m['checkpoint_update']};
+observation timing: {html.escape(m.get('observation_timing', 'legacy'))}.
 These figures read saved data only. No policy or new simulation was run to draw them.</p>
 <p><a href="../manifest.json">Exact checkpoint, limits and settings</a> · <a href="metrics.json">Numbers</a> ·
 <a href="../contacts.jsonl">Contact data</a> · <a href="../../events.jsonl">Your key events</a></p>
 <p><b>Mean joint 8–30 Hz RMS:</b> {rms_text}, calculated over {x[0]:.2f}–{x[-1]:.2f} seconds.
 This includes impacts and useful corrections; it is not proof of a jitter cause or successful ascent.</p>
 <h2>1. Your commands and the response</h2><p>Black vx is the request actually supplied to the policy. Actual vx is how fast the body moves forward.
-The keyboard-input panel records all three commands. The request can stay constant because keys change a latched command.
-Position shows progress/height; tilt shows leaning and heading shows turning.</p><img src="01_overview.png">
+Black vy is the requested sideways speed; actual body vy is sideways motion relative to the robot's current heading.
+Yaw-rate request is compared with measured body angular z, in radians/second; heading is the accumulated direction in degrees.
+Zero yaw-rate request does not lock the heading. World y position is different from body-relative vy when the robot turns.
+The keyboard-input panel records all three commands. Requests can stay constant because keys change a latched command.
+Position shows progress/height; tilt shows leaning and heading shows turning. These panels also support pure sideways runs with vx=0.</p><img src="01_overview.png">
 <h2>2. A short joint window</h2><p>Requested is before target limiting; clamped target is after limiting; measured is the actual angle.
 When requested and clamped separate, a limit removes part of the command. When measured differs, the joint has tracking error.
-Red dotted lines mark first recorded riser/stair contact; no line means none was recorded in the selected interval.</p><img src="02_joint_event.png">
+Red dotted lines mark first recorded riser/stair contact; no line means none was recorded in the selected interval.
+Without a stair event, the window follows the first nonzero motion command in the selected interval, or the beginning if standing throughout.</p><img src="02_joint_event.png">
 <h2>3. Contacts and limiting</h2><p>Foot heights and vertical-face forces show when a foot meets a riser.
 The dashed height is an approximate geometric threshold for the first tread only, not later steps or a dynamic prediction.
 Removed-target magnitude is not measured jitter. Torque maxima summarize all joints and may refer to different joints at different times;
 the JSON includes separate clipping fractions. A figure alone does not establish full climbing.</p><img src="03_contacts_control.png">'''
+    if (plots / "update_diagnostics.html").exists():
+        body += '<p><a href="update_diagnostics.html">Update-rate, gate and actuator diagnostics</a></p>'
     (plots / "index.html").write_text('<!doctype html><meta charset="utf-8"><title>Your MoE recording</title>'
         '<style>body{font:16px system-ui;max-width:1100px;margin:24px auto;padding:16px;line-height:1.5}img{width:100%}</style>' + body)
     return metrics

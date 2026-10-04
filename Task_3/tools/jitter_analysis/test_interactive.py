@@ -39,6 +39,10 @@ class InteractiveChecks(unittest.TestCase):
                     baseline.reset(get_spawn_pos(1))
                 if k == 129:
                     teleop.handle_key(ord('W'))
+                if k == 15:
+                    teleop.handle_char('a')
+                if k == 141:
+                    teleop.handle_char('d')
                 teleop.apply_pending(session)
                 tick = k % 4 == 0
                 command = teleop.command
@@ -60,15 +64,23 @@ class InteractiveChecks(unittest.TestCase):
             self.assertEqual(d['command'][5, 0], 0.)
             self.assertAlmostEqual(d['input_command'][5, 0], .05)
             self.assertAlmostEqual(d['command'][8, 0], .05)
+            self.assertEqual(d['command'][15, 1], 0.)
+            self.assertAlmostEqual(d['input_command'][15, 1], .05)
+            self.assertAlmostEqual(d['command'][16, 1], .05)
             self.assertEqual(load_attempt(out / 'attempt_002')[1]['samples'], 120)
+            second = load_attempt(out / 'attempt_002')[2]
+            self.assertAlmostEqual(second['input_command'][21, 1], -.05)
+            self.assertAlmostEqual(second['command'][24, 1], -.05)
             events = [json.loads(line) for line in (out / 'events.jsonl').read_text().splitlines()]
-            self.assertEqual(len([e for e in events if e['type'] == 'key']), 3)
+            self.assertEqual(len([e for e in events if e['type'] == 'key']), 5)
             self.assertTrue(any(e.get('reset') for e in events))
             results = plot_session(out)
             self.assertEqual(len(results), 2)
             self.assertIsNone(results[0]['mean_joint_8_30_hz_rms_deg'])
             self.assertTrue((out / 'attempt_001/plots/01_overview.png').exists())
             self.assertTrue((out / 'index.html').exists())
+            self.assertAlmostEqual(results[0]['vy_tracking_rmse_m_s'],float(np.sqrt(np.mean((d['command'][:,1]-d['base_velocity_body'][:,1])**2))))
+            self.assertIn('yaw_rate_tracking_rmse_rad_s',results[1])
             # Plotting consumed logs only: live physics state is untouched.
             np.testing.assert_array_equal(a.qpos, b.qpos)
 

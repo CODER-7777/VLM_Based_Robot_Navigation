@@ -1,8 +1,106 @@
 # Record my commands first, then plot what actually happened
 
-Updated **2026-10-03**. This is the current practical workflow. No new training is needed.
+Updated **2026-10-05**. No new training is needed for recording or plotting.
 
-**Latest controller edit, at the user's request:** all four hip target bounds are now ±0.735 rad and all four calf upper targets are −0.886 rad. This uses the user's requested calf value; the audit's exact value was −0.88776 rad. Other target entries, J_LEG, gains, torque limits and checkpoint weights were not changed. Restart the viewer and use a new recording directory (for example `user_run_02`) for this condition. Each recording's manifest captures the actual bounds used.
+## Start the original90000 versus newest91000 comparison
+
+The **actor's final linear layer** produces the 12 numerical joint actions: `CheckpointPolicy.actor = MLP([77,512,256,128,12])` in [checkpoint_policy.py](../xterra_mjlab/svanm2_moe_stair_sim/checkpoint_policy.py). The MoE mixes eight latent feature vectors into 32 normalized values; the actor combines them with the latest 45 observations. [controller.py](../xterra_mjlab/svanm2_moe_stair_sim/controller.py) clips the numerical actions, scales them/adds Q0, clamps targets, then applies coupled PD torque. The velocity graphs are actual robot response, not network outputs.
+
+Training already has action-rate, physical-target second-difference, target-rate-excess and target-saturation costs in the newest candidate. They are soft objectives, not hard target-speed limits. Second differences of **position targets** are acceleration-like, not position jerk. Smoothness gains must retain motion/tracking, heading and support; zero movement is not a successful smooth policy. Do not add duplicate terms or change actor/gate architecture before the comparison.
+
+**First pair: +Y = 0.15 m/s.** Run on the local graphical computer, not an SSH-only terminal. Paste the first block. Close that viewer before pasting the second launch; this also avoids queued terminal text being interpreted as movement keys. The recorder creates the output folders; do not create them manually.
+
+```bash
+cd /home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3
+M2_PAIR="tools/results/interactive/comparison_y015_$(date +%Y%m%d_%H%M%S)"
+
+xterra_mjlab/.venv/bin/python xterra_mjlab/svanm2_moe_stair_sim/run_interactive_sim.py \
+  --checkpoint-file xterra_mjlab/checkpoints/svanm2_moe/model_90000.pt \
+  --track 1 --device cuda:0 --observation-timing legacy \
+  --log-dir "$M2_PAIR/original90000"
+```
+
+After closing the original viewer, paste this in the **same terminal**:
+
+```bash
+xterra_mjlab/.venv/bin/python xterra_mjlab/svanm2_moe_stair_sim/run_interactive_sim.py \
+  --checkpoint-file xterra_mjlab/evaluation_runs/moe_swing013_latest/latest.pt \
+  --track 1 --device cuda:0 --observation-timing legacy \
+  --log-dir "$M2_PAIR/candidate91000"
+```
+
+For **each** viewer: wait 3 simulation seconds, focus the terminal, tap A exactly three times, check `vx=0, vy=+0.15, yaw=0`, release the keys and hold that request for **12 simulation seconds**, then Space and close normally. Do not reset/teleport or use steering rescue. Both launches are fresh processes. Retain bad motion and falls; wait out the recording if it falls rather than silently discarding that attempt. Verify the printed update is 90000 then 91000. Current simulation bounds/gains are used for both; neither controller nor hardware limits are modified by these commands. Actual obstacle contacts are checked in the comparison, because vx=0 does not guarantee zero forward drift.
+
+After **both** viewers close, paste in the same terminal:
+
+```bash
+for M2_SESSION in "$M2_PAIR/original90000" "$M2_PAIR/candidate91000"; do
+  xterra_mjlab/.venv/bin/python tools/jitter_analysis/plot_interactive.py "$M2_SESSION"
+  xterra_mjlab/.venv/bin/python tools/jitter_analysis/diagnose_updates.py "$M2_SESSION" --device cuda:0
+done
+
+xterra_mjlab/.venv/bin/python tools/jitter_analysis/compare_policy_runs.py \
+  "$M2_PAIR/original90000" "$M2_PAIR/candidate91000" \
+  --command 0 0.15 0 --settle 1 --seconds 8 --out "$M2_PAIR/comparison"
+
+printf 'http://127.0.0.1:8000/%s/comparison/index.html\n' "${M2_PAIR#tools/results/}"
+```
+
+The last line prints the browser URL for the existing server rooted at `tools/results`. Open it. If starting the server yourself, in another terminal use `python3 -m http.server 8000 --bind 127.0.0.1 --directory tools/results` from Task_3. Do not start a second process if port 8000 is already serving this directory. If you use a new terminal for plotting, set `M2_PAIR` to the actual saved directory rather than a new timestamp.
+
+The comparison uses eight continuous seconds after one second settling under the exact requested command. It checks model identities, initial recorded state, target limits/scales, PD/transmission, friction/contact settings, scene and controller sources, sensing timing and duration. It flags the same weights used twice, a first recording not at 90000, short holds and configuration mismatches. It preserves results for incomplete holds rather than presenting them as an equal-duration comparison. Manual command ramps/timing can still differ; one pair is not a success-rate estimate. No physics or inference runs during comparison.
+
+Read the table in this order:
+
+1. `Same recorded contract and full duration: True`; `No stair contact...: True`. Otherwise inspect why before calling it a flat matched comparison.
+2. Mean body vy close to 0.15 and lower vy RMSE: successful lateral tracking. Check unwanted vx and yaw as well.
+3. Joint 8–30 Hz RMS lower: less measured rapid joint motion. Use identical sample rates/bands.
+4. Lower p99 target steps/second-difference cost: fewer sharp target changes; judge alongside tracking, not alone.
+5. Tilt, heading drift and torque clipping do not worsen. A stopped, tilted or fallen robot is not an improvement even if its eventual trace is smooth.
+
+Next pairs use the **same two launches with a new `M2_PAIR` directory**, changing only keys and the expected comparison command:
+
+| Test | Keys after standing | Comparison `--command` |
+| --- | --- | --- |
+| −Y 0.15 | D three times | `0 -0.15 0` |
+| +Y 0.30 | A six times | `0 0.30 0` |
+| −Y 0.30 | D six times | `0 -0.30 0` |
+
+Repeat each pair in fresh processes for at least three starts before claiming a consistent improvement. Later do forward/stair trials separately: at vx=0.30 the 1.5 m runway reaches stairs in roughly five seconds of ideal tracking, so a 12-second forward run in this scene is not a flat-only test.
+
+## Current workflow: sideways recordings (+Y and −Y)
+
+The existing recorder saves all three velocity commands and body/world motion, q/dq, targets, torques, contacts, observations and gates. The October 5 plot update adds actual sideways speed, actual yaw rate, world y position, lateral/yaw tracking errors and joint detail around motion onset when no stair event occurs. It changes only offline plots/analysis. Positive body Y is left relative to the robot; negative Y is right. World Y differs after the robot turns.
+
+Start a fresh process for each direction/speed to avoid reset carry-over. Use a unique directory; it is created by the recorder:
+
+```bash
+cd /home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3
+M2_SIDE_LOG="tools/results/interactive/sideways_91000_$(date +%Y%m%d_%H%M%S)"
+xterra_mjlab/.venv/bin/python xterra_mjlab/svanm2_moe_stair_sim/run_interactive_sim.py \
+  --checkpoint-file xterra_mjlab/evaluation_runs/moe_swing013_latest/latest.pt \
+  --track 1 --device cuda:0 --observation-timing legacy \
+  --log-dir "$M2_SIDE_LOG"
+```
+
+1. Keep vx and yaw requests zero; wait roughly 3 simulation seconds standing.
+2. For +Y, tap **A three times** in the terminal (viewer Left arrow): vy +0.15 m/s. For a separate −Y run, tap **D three times** (viewer Right arrow): vy −0.15 m/s. Check the displayed command; holding a key can repeat it.
+3. Release the keys, observe about 10 seconds of steady motion, then press Space to zero commands. Avoid steering rescue in the reference attempt. Close the viewer normally to flush the files. Retain shaking/drift/failures.
+4. Repeat in a new process for the other direction. Then test ±0.30 using six taps. Diagnose within the saved ±0.3 m/s training range before testing ±0.6 separately. Check recorded obstacle contacts and world x drift: requesting vx=0 does not guarantee that the feet avoid stairs.
+5. In the same terminal, plot the saved data:
+
+```bash
+xterra_mjlab/.venv/bin/python tools/jitter_analysis/plot_interactive.py "$M2_SIDE_LOG"
+xterra_mjlab/.venv/bin/python tools/jitter_analysis/diagnose_updates.py "$M2_SIDE_LOG" --device cuda:0
+```
+
+Each attempt has `plots/index.html` and `plots/update_diagnostics.html`. With the existing server rooted at `tools/results`, open `http://127.0.0.1:8000/interactive/<printed-session-folder>/index.html`. If using another terminal, replace `$M2_SIDE_LOG` with its actual path printed at recording startup. Plot after closing the viewer. The offline tools do not simulate a new trajectory.
+
+For a separate sensing comparison, repeat identical commands/checkpoint/bounds/gains/contact settings with `--observation-timing fresh`. Keep the gate/policy at 50 Hz and PD/physics at 200 Hz. Test a frequency/gate intervention separately if the evidence justifies it. The fixed candidate used above is the new 91000 retry, SHA `dec9775d4b368b69964dde679985455d8b723d5af7fb2d24e8798fa4fdd66da4`, not the older `20261004_moe_time_rate_updates91000` candidate. The loader prints actual path/update and the manifest saves hash/bounds.
+
+**Current controller bounds:** hips ±1.0472 rad, calf upper +0.500 rad, matching the newest recorded simulation. The October 3 sections below describe historical tighter-limit instructions, not the current setup. J_LEG, gains, limits, inference frequency and model weights were not changed for sideways support.
+
+**Historical October 3 controller edit:** all four hip target bounds were ±0.735 rad and all four calf upper targets −0.886 rad. This used the user's requested calf value; the audit's exact value was −0.88776 rad. Each recording's manifest captures the actual bounds used. These bounds were subsequently reverted at the user's request.
 
 ## 1. What we know now
 

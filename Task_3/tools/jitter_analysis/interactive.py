@@ -103,7 +103,8 @@ class InteractiveSession:
             foot_solref=model.geom_solref[self.recorder.foot_ids].tolist(),
             foot_radius_m=model.geom_size[self.recorder.foot_ids, 0].tolist(),
             sampling="State/target at t; contact solve and applied torque for [t,t+dt]. Actual policy command is held between ticks.",
-            observation_convention="Existing viewer policy input; fresh derived measurements on a scratch MjData only.",
+            observation_timing=ctrl.observation_timing,
+            observation_convention="Policy input uses selected timing. obs_viewer is legacy; obs_fresh is refreshed; obs_policy is the frame actually used. Refresh is on copied MjData only.",
             input_handling="Keys are queued and applied between physics steps to prevent concurrent reset/measurement races.",
             provenance="User-operated MuJoCo session. No scripted command schedule; this is simulator data, not real hardware.",
         )
@@ -149,13 +150,14 @@ class InteractiveSession:
         self.recorder.prepare()
         if policy_tick:
             self.last_command = np.array(command, dtype=float)
-            self.recorder.obs_viewer = self.ctrl.get_current_frame(tuple(command))
+            self.recorder.obs_viewer = self.ctrl.get_legacy_frame(tuple(command))
             self.recorder.obs_fresh = fresh_frame(self.ctrl, self.recorder.scratch, command)
         self.tick = policy_tick
         self.wall_before = time.monotonic() - self.started
 
     def before_physics(self, input_command, track):
         self.row = self.recorder.state_row(self.last_command, self.tick)
+        self.row["obs_policy"] = self.ctrl.history[-1].copy()
         self.row.update(input_command=np.asarray(input_command), track=np.array(track),
                         wall_s=np.array(self.wall_before),
                         policy_wall_end_s=np.array(time.monotonic() - self.started),
