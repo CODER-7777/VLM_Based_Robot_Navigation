@@ -1,5 +1,90 @@
 # Review of the supplied smoothness, MoE routing, and actuator report
 
+## October 4 review of the new pasted advice and linked papers
+
+The attachment repeats the same recommendation block several times. Its ideas are a candidate list, not a verified specification or evidence that jitter has been fixed. This review changes documentation only: no reward, controller, XML, architecture, server file, or running training configuration was changed.
+
+### The important paper says the opposite of a guaranteed impratio fix
+
+[2512.18938v1, A Framework for Deploying Learning-based Quadruped Loco-Manipulation](https://arxiv.org/html/2512.18938v1), sections 4.1 and Table 2, concerns Unitree B1+Z1, not our SvanM2 MoE. Increasing impratio to 100 reduced sliding in their simulator, but the authors explicitly attribute attractive results to unrealistic tangential impedance rather than intrinsic robustness. It supports checking contact modeling, not claiming 100 is a universal cure.
+
+[MuJoCo option documentation](https://mujoco.readthedocs.io/en/stable/XMLreference.html#option) defines impratio as frictional-to-normal constraint impedance. It is distinct from the friction coefficient. Larger values can reduce slow slip; they do not guarantee exact sticking. High values are discouraged with pyramidal cones. Our inspected configurations use elliptic cones. A value of 100 is not universally invalid, but requires justification for the chosen model rather than copying it to improve appearances.
+
+**New verified implementation difference:**
+
+| Setting | Inspected training | Standard stair viewer builder |
+| --- | ---: | ---: |
+| impratio | 10 | 100 |
+| cone | elliptic | elliptic |
+| physics timestep | 0.005 s | 0.005 s |
+| policy interval | 0.020 s | 0.020 s |
+
+Evidence: `xterra_mjlab/tasks/velocity/config/svanm2/env_cfgs.py` lines 39–40; saved `evaluation_runs/20261002_moe_target_bundle_updates90500/env.yaml` lines 1168–1169; `svanm2_moe_stair_sim/build_scene.py` lines 103–106. This is verified in local source and the saved October 2 configuration, not a live inspection of the newest server run. Confirm its saved YAML too. Both October 4 comparison sessions use the same viewer scene, so they share its contact setup; the training/viewer difference does not alone explain which checkpoint performs better or identify jitter's root cause.
+
+A separate evaluation experiment should compare the same checkpoint and command schedule at impratio 10 versus 100, preserving all other settings. Record slip, contact impulses, heading, traversal, torque/target limiting and joint oscillation. Do not silently change this parameter midway through the current run or select only the smoothest-looking result.
+
+### Which recommendations fit our implementation?
+
+| Pasted recommendation | Current assessment |
+| --- | --- |
+| Position-target actions plus PD | Already used: raw action → raw clip → scale/standing offset → target clamp → coupled PD → torque clamp. Direct torque control is not universally jerky, and switching action spaces is unnecessary here. |
+| Soft blending of experts | Already used, but experts blend 32-D features, followed by normalization and a separate actor. They do not each output 12 joint commands. |
+| Three-to-five-frame history | Already five 45-D frames, total 225 input features. History helps hidden-state inference but does not guarantee smoothness. |
+| First/second differences | Already included. Actual contributions and task outcomes matter more than matching coefficients from another robot. |
+| Time-aware rapid-change and saturation | Implemented current experiment. Thresholds and weights are exploratory; correct stair recovery can also exceed a rate threshold. |
+| Increase penalties by 2–10 times | No justification for that multiplier from our data. Our multiple penalties can oppose required lifting or recovery. Keep the current run fixed and inspect contributions. |
+| Add output filtering | A separate closed-loop change with delay. The older audit's particular 20/40 ms filters did not reliably improve stairs. These results do not rule out every trained/calibrated filter, but do rule out presenting filtering as an established cure here. |
+| Reduce physics timestep | A numerical/contact sensitivity experiment. Preserve 20 ms policy timing and explicitly track PD update timing and delay units. Changing timestep alone changes the policy frequency. |
+| Add top-k routing/shared actor-critic MoE | An architecture experiment, not a repair already supported for our checkpoint. Top-k selection can change discontinuously. |
+| Add gait clocks or fixed contact schedules | A different policy/task interface. Could be future research, but requires an explicit design and compatible retraining rather than inserting a new signal into the 225-D checkpoint input. |
+| Migrate to Playground or another repo | Useful reference implementations; not a demonstrated SvanM2 jitter fix. Porting would introduce more differences to validate. |
+
+### The actual MoE in this repository
+
+`svanm2_moe_stair_sim/checkpoint_policy.py`, lines 35–74:
+
+```text
+five observation frames (225 numbers)
+    → eight experts, each producing 32 features
+    → eight softmax weights, weighted sum of all experts
+    → normalize the 32-feature latent
+    → concatenate the current 45-feature frame
+    → actor produces 12 raw actions
+```
+
+There is no hard argmax or top-k selection in this forward path. Softmax weights can still vary rapidly and the normalized latent can be sensitive near zero norm; these are hypotheses to measure, not established causes. Adding gate/expert/action logging is a diagnostic; changing the gate just because contact and gate variation coincide does not prove the gate initiated the problem.
+
+### Citation checks that change the interpretation
+
+- [MoE-Loco, 2503.08564](https://arxiv.org/html/2503.08564v1), section III-B, uses soft weighted experts, shared actor/critic gating, a recurrent backbone, and a two-stage training approach. Its experiments address multitask performance and gradient conflicts. It does not establish elimination of our 8–30 Hz joint motion; its six-expert actor/critic architecture differs from our eight-expert latent encoder. Its appendix's action-rate cost is an L2 norm, not automatically our squared cost, so numerical weights are not directly comparable.
+- [2503.14637](https://arxiv.org/html/2503.14637v1), section 3.5, is musculoskeletal human-motion imitation. It uses a softmax distribution to stochastically select among frozen experts. Citing it as proof of continuous quadruped action blending is misleading: softmax probabilities are not the same operation as summing all expert outputs.
+- [2604.19344](https://arxiv.org/html/2604.19344v1), section III-C, is visually guided parkour with top-4 of 16 experts and additional load balancing. It reports obstacle performance and specialization, not a guarantee that sparse routing prevents jitter. Top-k membership introduces a discrete selection boundary.
+- [2503.04613](https://arxiv.org/html/2503.04613v2) is whole-body model-predictive control. It is not proof that every torque-output RL policy must be jerky.
+- [1804.10332](https://arxiv.org/abs/1804.10332) is relevant quadruped sim-to-real research, but the applicability of its action/dynamics design must be assessed for our robot rather than copying generic gains.
+- [2601.21363](https://arxiv.org/html/2601.21363v3) studies humanoid pretraining/finetuning and includes regularization terms. That supports regularization as a research direction, not the precise weights or derivative interpretation proposed for SvanM2.
+- [2510.13488](https://arxiv.org/html/2510.13488v1) compares gait/terrain training on an oscillating bridge. It does not prove fixed gait clocks will solve our stair-contact jitter.
+- [2409.09473](https://arxiv.org/html/2409.09473v1) concerns robots with six or more legs and body-undulation control, a different balance and actuation setting from our quadruped.
+- [MuJoCo Playground](https://arxiv.org/html/2502.08844v1) and [the educational quadruped repository](https://github.com/nimazareian/quadruped-rl-locomotion) are real reference implementations. Neither constitutes validation of our specific continuation experiment. Reddit and a general blog were not used as primary technical evidence for the proposed multiplier or a guaranteed fix.
+
+### Correct derivative language
+
+For position targets and fixed interval Δt:
+
+```text
+first difference / Δt       ≈ target velocity
+second difference / Δt²     ≈ target acceleration
+third difference / Δt³      ≈ target jerk
+```
+
+Our target second-difference penalty normalizes by action scale, not by Δt². Call it a normalized second-difference cost. Our time-aware term thresholds changes in final commanded targets over `env.step_dt = 0.02 s`; it is not a measured-joint acceleration penalty. Saturation pressure measures position requests removed by the target clamp, not motor heating or torque saturation.
+
+### Honest claims and the next step
+
+Current edits are legitimate **hypotheses being tested**, with exploratory coefficients. They are not proven cures or a replication of MoE-Loco. Wide limits match our simulation experiment, not independently validated hardware limits or the unprovided original 90000 training configuration. The current trial changes limits, target-rate regularization and preferred clearance together; report improvement of the package if demonstrated, without assigning success to one term. The continued optimization itself also changes the policy, so an equal-budget control continuation is needed for a stronger causal claim when the baseline configuration is available.
+
+If training has started, keep that experiment's settings fixed. Evaluate original 90000, old 90500 and new 91000 under the same observation timing, limits, contact settings and repeatable commands. Retain failures; assess flat-ground tracking, heading/lane exit, full stair traversal, falls/stalls, slip and measured oscillation. Then perform the separate impratio sensitivity comparison before deciding that a physics edit is a validated improvement. Do not increase penalties, add filters, or replace the architecture based solely on this pasted advice.
+
+
 Date: 2026-09-28. Reviewed the complete 522-line attachment titled "Introduction and Architectural Context" against the local implementation, saved jitter audit, and primary sources for CAPS, LipsNet, LipsNet++, and gSDE.
 
 This is a technical review and revised experiment recommendation. No controller, reward, architecture, training, XML, or hardware changes were made. No new rollout or training result is claimed.

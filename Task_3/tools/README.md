@@ -1,5 +1,38 @@
 # Start here: fresh MoE failure analysis
 
+**Start a comparison:** [copy the original90000/newest91000 commands from recording guide 19](../notes/19_RECORD_MY_INTERACTIVE_RUN.md#start-the-original90000-versus-newest91000-comparison). [compare_policy_runs.py](jitter_analysis/compare_policy_runs.py) reads two actual recordings, checks control/scene/sensor/state identity and equal steady-command duration, and creates tracking, vibration, target-step, heading and tilt metrics plus an overlay. It flags short holds/configuration differences and retains failures. No controller/training code changes or simulations are performed by the comparison reader.
+
+**2026-10-05 deeper policy review:** [the actual flat-sideways session](results/interactive/sideways_91000_20261005_011859/attempt_001/plots/policy_spike_review.html) and [the older stair run](results/interactive/91000/test_2/attempt_001/plots/policy_spike_review.html) now have `09_spike_chain.png` and `10_policy_probes.png`. [inspect_policy_spikes.py](jitter_analysis/inspect_policy_spikes.py) verifies recorded inference, probes gate/expert/direct-actor branches in physical-target units and separates body-speed frequencies. Optional original-checkpoint replay uses identical candidate inputs, not its own trajectory. Read the updated [note 17](../notes/17_REVIEW_OF_ACTUATOR_DELAY_AND_GATE_SUGGESTIONS.md) for findings and next experiments. No controller or training change is made by this tool.
+
+```bash
+xterra_mjlab/.venv/bin/python tools/jitter_analysis/inspect_policy_spikes.py \
+  tools/results/interactive/sideways_91000_20261005_011859/attempt_001 \
+  tools/results/interactive/91000/test_2/attempt_001 --device cuda:0 \
+  --reference-checkpoint xterra_mjlab/checkpoints/svanm2_moe/model_90000.pt
+```
+
+**Sideways recording is ready:** follow [the +Y/−Y instructions](../notes/19_RECORD_MY_INTERACTIVE_RUN.md). The existing logger records all directions. Offline dashboards now compare requested/actual sideways speed and yaw rate, show world y position, report lateral/yaw tracking errors, and zoom around motion onset when no stair event occurs. Positive/negative Y policy-tick sampling and passive-physics equivalence passed the recording test. No policy, gate frequency or control law changed.
+
+**2026-10-05 update — target update rate and gate investigation:** open [the newest recorded-data diagnosis](results/interactive/update_gate_review_20261005/index.html). It covers the linked `91000/test_2` attempt and all three attempts in `test_swing013_91000`. They use two different 91000 checkpoints. The former was trained with time-rate weight −0.05 and profile `existing`; the latter is the completed −0.01 / `viewer-wide` / 0.13 m candidate. Do not pool their results as one model.
+
+The new [diagnose_updates.py](jitter_analysis/diagnose_updates.py) reads saved data, verifies checkpoint SHA-256, reconstructs and verifies actual policy histories/actions/gates, and plots command changes, frequency spectra, gate contributions and per-joint actuator/P/D terms. It does not run physics or change training, gains, targets or gate weights. Outputs stay beside each attempt under `plots/`; no new Markdown report was created. Original raw data and source snapshots are preserved.
+
+```bash
+cd /home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3
+xterra_mjlab/.venv/bin/python tools/jitter_analysis/diagnose_updates.py \
+  tools/results/interactive/91000/test_2 \
+  tools/results/interactive/test_swing013_91000 \
+  --device cuda:0 --out tools/results/interactive/update_gate_review_20261005
+```
+
+Read `04_updates.png` for keyboard requests versus physical response, `05_gates.png` for dense weights and offline raw-action decomposition, `06_frequency.png` for phase-specific spectra, `07_actuator_event.png` for individual joint targets/torques at contact, and `08_pd_terms.png` for verified position-error versus damping torque at the largest torque event. Plain-English explanations and exact metrics are in each attempt's `plots/update_diagnostics.html` and `update_diagnostics.json`. Gate spectra stop below 25 Hz; measured joints are sampled at 200 Hz. Held-target spectrum artifacts and argmax changes are not proof of a jitter cause.
+
+**2026-10-04 update:** the original 90000 policy completes the staircase in `results/interactive/user_run_original_4_by_sir`, verified from recorded foot positions and platform forces. Read the current update at the top of [notes/README.md](../notes/README.md). The active optional reward implementation is now `xterra_mjlab/scripts/target_rate_reward.py`; six CPU checks and actual GPU integration pass. Earlier proposal-only descriptions below are historical. No new Markdown file was added.
+
+**Optional time-aware reward proposal:** [note 22](../notes/22_TIME_AWARE_TARGET_PENALTY.md), [recorded target-rate distribution dashboard](results/time_aware_penalty_20261003/index.html), and [isolated code](jitter_analysis/target_rate_reward.py). Four CPU checks pass. These additions do not change active training or controller settings.
+
+**Latest completed review (2026-10-03):** [all five interactive sessions / 41 attempts](results/interactive_review_20261003/index.html), [full findings](results/interactive_review_20261003/REPORT.md), and [note 21 with the observation worksheet and next steps](../notes/21_INTERACTIVE_RUN_REVIEW_AND_OBSERVATIONS.md). This review reads saved data only. It adds short target second-difference / actual-joint / torque / contact plots and checks the real copied training logs. No policy or new trajectory was run.
+
 **Current workflow:** [record your own interactive viewer session, then plot the saved data](../notes/19_RECORD_MY_INTERACTIVE_RUN.md). `run_interactive_sim.py --record` enables passive live measurements; [plot_interactive.py](jitter_analysis/plot_interactive.py) reads those saved logs without running a new simulation. New recordings stay under `results/interactive/`; existing suites below retain their scripted provenance.
 
 Created 2026-10-02. This folder contains isolated local measurement tools. The old audit is a source of hypotheses, **not ground truth**. These tools import the current controller without editing it, run fresh simulations, and save raw data before interpreting it. No training or server access is performed by these tools.
@@ -40,6 +73,10 @@ In the supplied MuJoCo screenshot, **Joint** shows measured joint angles. **Cont
 | --- | --- |
 | [jitter_analysis/record.py](jitter_analysis/record.py) | Fresh simulation and synchronized joint, target, torque, contact, command, body-state and gate logging |
 | [jitter_analysis/analyze.py](jitter_analysis/analyze.py) | Seven figures, per-phase metrics and a per-run HTML page |
+| [jitter_analysis/review_interactive.py](jitter_analysis/review_interactive.py) | Offline review of all saved user-controlled sessions, four-second event plots, first-riser heights, training-log trends and observations worksheet |
+| [jitter_analysis/audit_target_rates.py](jitter_analysis/audit_target_rates.py) | Recorded target increment/time distributions and exploratory thresholds; no simulation |
+| [jitter_analysis/target_rate_reward.py](jitter_analysis/target_rate_reward.py) | Optional proposal for rate-excess reward; not imported by current training |
+| [jitter_analysis/test_target_rate_reward.py](jitter_analysis/test_target_rate_reward.py) | CPU timing, reward-manager, clipping, reset and registration checks |
 | [jitter_analysis/first_contact.py](jitter_analysis/first_contact.py) | Event-level geometry/target/torque inspection and optional matched flat comparison; two additional plots |
 | [jitter_analysis/compare_starts.py](jitter_analysis/compare_starts.py) | Paired starting-pose sensitivity plot, keeping improvements and regressions visible |
 | [jitter_analysis/plot_help.py](jitter_analysis/plot_help.py) | Simple-English plot explanations for new pages; can also update existing HTML pages without rerunning experiments |
