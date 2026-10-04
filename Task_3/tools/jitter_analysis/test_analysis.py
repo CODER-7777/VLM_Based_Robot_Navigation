@@ -1,5 +1,8 @@
 """Checks that instrumentation is passive and metrics/success criteria are meaningful."""
 import unittest
+import json
+from pathlib import Path
+import tempfile
 import mujoco
 import numpy as np
 import torch
@@ -9,6 +12,48 @@ from analyze import band_rms
 
 
 class AnalysisChecks(unittest.TestCase):
+    def test_fresh_observation_is_consistent_and_records_actual_input(self):
+        from build_scene import TRACK_CONFIGS, TRACK_SPACING
+        from interactive import InteractiveSession, RecordedTeleop
+        torch.set_num_threads(1)
+        model = mujoco.MjModel.from_xml_path(str(record.SIM / 'scene.xml'))
+        data = mujoco.MjData(model)
+        ctrl = record.original.MoeStairController(model, data, record.DEFAULT_MODEL, 'cpu',
+                                                observation_timing='fresh')
+        ctrl.reset(record.get_spawn_pos(1))
+        # A changed integrated velocity makes stale derived gyro data observable.
+        data.qvel[3:6] = [.3, -.2, .1]
+        command = (.15, 0., 0.)
+        scratch = mujoco.MjData(model)
+        mujoco.mj_copyData(scratch, model, data)
+        mujoco.mj_forward(model, scratch)
+        expected = record.fresh_frame(ctrl, scratch, command)
+        legacy = ctrl.get_legacy_frame(command)
+        before = {name: getattr(data, name).copy()
+                  for name in ('qpos', 'qvel', 'sensordata', 'xmat', 'qacc_warmstart', 'ctrl')}
+        np.testing.assert_array_equal(ctrl.get_current_frame(command), expected)
+        self.assertGreater(float(np.max(np.abs(expected - legacy))), 1e-5)
+        for name, value in before.items():
+            np.testing.assert_array_equal(getattr(data, name), value)
+        teleop = RecordedTeleop(ctrl, TRACK_CONFIGS, track_spacing=TRACK_SPACING)
+        with tempfile.TemporaryDirectory() as directory:
+            out = Path(directory) / 'recording'
+            session = InteractiveSession(model, data, ctrl, teleop, out)
+            try:
+                session.prepare_policy(command, True)
+                ctrl.policy_step(command)
+                session.before_physics(command, 1)
+                ctrl.physics_step()
+                session.after_physics()
+            finally:
+                session.close()
+            manifest = json.loads((out / 'manifest.json').read_text())
+            self.assertEqual(manifest['observation_timing'], 'fresh')
+            with np.load(out / 'attempt_001/raw/chunk_00000.npz') as trace:
+                np.testing.assert_array_equal(trace['obs_policy'][0], expected)
+                np.testing.assert_array_equal(trace['obs_fresh'][0], expected)
+                np.testing.assert_array_equal(trace['obs_viewer'][0], legacy)
+
     def test_frequency_band_and_units(self):
         fs = 200
         t = np.arange(0, 6, 1 / fs)
