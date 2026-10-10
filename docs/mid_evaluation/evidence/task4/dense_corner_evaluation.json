@@ -1,0 +1,39 @@
+{
+  "rgb_metric": "Displayed 8-bit JPEG RGB, clipped to [0,1]; masked to modeled region and synthetic selected-toaster target",
+  "views": [
+    {
+      "photo": "58348305b0f84dd8b161aaf2d5b945ef_i2_4.jpg",
+      "split": "train",
+      "displayed_rgb_masked_psnr_db": 18.79094503137229,
+      "evaluation_mask_fraction": 0.8357736468315125,
+      "valid_depth_fraction": 0.9905487060546875,
+      "measured_depth_evaluation_pixels": 259544,
+      "median_depth_absolute_error_m": 0.010943740606307983,
+      "mean_depth_absolute_error_m": 0.02321942336857319,
+      "cuda_raster_ms": 15.259648323059082
+    },
+    {
+      "photo": "90769276290547eaabfde2cc89a6cf59_i1_4.jpg",
+      "split": "val",
+      "displayed_rgb_masked_psnr_db": 7.28268892431532,
+      "evaluation_mask_fraction": 0.9590907096862793,
+      "valid_depth_fraction": 0.8427337646484375,
+      "measured_depth_evaluation_pixels": 0,
+      "median_depth_absolute_error_m": null,
+      "mean_depth_absolute_error_m": null,
+      "cuda_raster_ms": 13.327360153198242
+    },
+    {
+      "photo": "90769276290547eaabfde2cc89a6cf59_i1_3.jpg",
+      "split": "val",
+      "displayed_rgb_masked_psnr_db": 10.477015037087726,
+      "evaluation_mask_fraction": 0.633837878704071,
+      "valid_depth_fraction": 0.4423858642578125,
+      "measured_depth_evaluation_pixels": 0,
+      "median_depth_absolute_error_m": null,
+      "mean_depth_absolute_error_m": null,
+      "cuda_raster_ms": 9.961600303649902
+    }
+  ],
+  "quality_gate": "Experimental only: held-out quality and visible artifacts require further reconstruction work"
+}

@@ -1,0 +1,90 @@
+{
+  "review_date": "2026-10-10",
+  "scope": "Copies of existing artifacts, not new evaluations. Source and copy SHA-256 are identical.",
+  "records": [
+    {
+      "source": "Task_4/split_render_pipeline/evidence/final_evaluation.json",
+      "snapshot": "docs/mid_evaluation/evidence/task4/initial_gaussian_evaluation.json",
+      "bytes": 1590,
+      "sha256": "53727a757f9445d7ce04e057953d9746ac04b409445e73f006244bcc852ca156"
+    },
+    {
+      "source": "Task_4/gaussian_corner_repair/evidence/global_evaluation.json",
+      "snapshot": "docs/mid_evaluation/evidence/task4/dense_corner_evaluation.json",
+      "bytes": 1592,
+      "sha256": "7fbf34da8659583fb4b408c15f929e09ec3ff64fc371d1e7a5e432d181af88cc"
+    },
+    {
+      "source": "Task_4/gaussian_corner_repair/evidence/geometry_validation.json",
+      "snapshot": "docs/mid_evaluation/evidence/task4/dense_corner_geometry.json",
+      "bytes": 4516,
+      "sha256": "99d75cfa44f3a48f70c20ae987a4745a7a1b346475bfb35270123a70a2f52db0"
+    },
+    {
+      "source": "Task_4/kitchen_all_objects_upgrade/evidence/published_validation.json",
+      "snapshot": "docs/mid_evaluation/evidence/task4/all_kitchen_publication.json",
+      "bytes": 3701,
+      "sha256": "5024594cb97652fffdbe50ef99568087da5c8566a36de4710666cb543ec18731"
+    },
+    {
+      "source": "Task_4/kitchen_all_objects_upgrade/evidence/validation.json",
+      "snapshot": "docs/mid_evaluation/evidence/task4/all_kitchen_placement.json",
+      "bytes": 15641,
+      "sha256": "f508ffed8dbffa231b3d50dc81b2d34705fc74b5dfa41b881fadfbf2e6b700b3"
+    },
+    {
+      "source": "Task_4/kitchen_all_objects_upgrade/evidence/audit_size_exceptions.json",
+      "snapshot": "docs/mid_evaluation/evidence/task4/size_exceptions.json",
+      "bytes": 630,
+      "sha256": "3e75e26722c7a6e056ca0b06d9eceb9cfa9a30b47f851962633a928e8997c9ec"
+    },
+    {
+      "source": "Task_4/kitchen_all_objects_upgrade/evidence/physics_validation.json",
+      "snapshot": "docs/mid_evaluation/evidence/task4/physics_validation.json",
+      "bytes": 1043,
+      "sha256": "7f3ccacde449f3d24648e78ad80cb84119630a28259efca4e05e62721fa90931"
+    },
+    {
+      "source": "Task_4/kitchen_all_objects_upgrade/evidence/browser_verification.json",
+      "snapshot": "docs/mid_evaluation/evidence/task4/browser_verification.json",
+      "bytes": 4022,
+      "sha256": "7ff9eaf7c2dd9ce99400c1fb8fd4883781e37f3e332f112c9bd7d88ddc9faa75"
+    },
+    {
+      "source": "Task_4/toaster_selected_model/evidence/archive_metadata.json",
+      "snapshot": "docs/mid_evaluation/evidence/task4/toaster_archive_metadata.json",
+      "bytes": 4180,
+      "sha256": "e2fb705089771bbceb621ba8e4fc70f0a90cbbbb5e667e0923832aa3ff2393ba"
+    },
+    {
+      "source": "Task_4/toaster_wall_mesh_repair/evidence/geometry_result.json",
+      "snapshot": "docs/mid_evaluation/evidence/task4/wall_geometry_result.json",
+      "bytes": 151,
+      "sha256": "1f3aded4a6e04960002a2ff3c46298d3d1385445e3527605ed105d52ceee980d"
+    },
+    {
+      "source": "Task_4/toaster_selected_model/images/toaster_comparison.jpg",
+      "snapshot": "docs/mid_evaluation/figures/task4_toaster_comparison.jpg",
+      "bytes": 236182,
+      "sha256": "17c95a5abe07d1295a53763fbf97b2133f8aef777b70a6a894a2151dc584ea55"
+    },
+    {
+      "source": "Task_4/kitchen_all_objects_upgrade/images/gaussian_caddy.jpg",
+      "snapshot": "docs/mid_evaluation/figures/task4_caddy_comparison.jpg",
+      "bytes": 85924,
+      "sha256": "c84e85604995224d1a639577ec992811ecd2fb6aa60529ec41732c8d1ca80414"
+    },
+    {
+      "source": "Task_4/gaussian_corner_repair/images/comparison4.jpg",
+      "snapshot": "docs/mid_evaluation/figures/task4_corner_before_after.jpg",
+      "bytes": 180543,
+      "sha256": "2c33b45d40083349658bc314336cffdaa4456bba174e57937a92dbdd6923d1b7"
+    },
+    {
+      "source": "Task_4/kitchen_all_objects_upgrade/images/live_rgb.jpg",
+      "snapshot": "docs/mid_evaluation/figures/task4_latest_kitchen.jpg",
+      "bytes": 109258,
+      "sha256": "f9f25f8ab6a051a79bff5d380a7336c56cf38d1740b77e3566ecbb7ceea0a1a6"
+    }
+  ]
+}

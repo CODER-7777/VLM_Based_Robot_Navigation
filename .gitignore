@@ -36,3 +36,10 @@ venv/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Retained local source archives; provenance is recorded in review documentation.
+/reference_materials/archive/*.tar.gz
+
+# Selected small presentation figures are intentional evidence artifacts.
+!/docs/mid_evaluation/figures/*.png
+!/docs/mid_evaluation/figures/*.jpg

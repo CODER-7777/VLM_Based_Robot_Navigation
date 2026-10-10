@@ -1,0 +1,146 @@
+{
+  "review_date": "2026-10-10",
+  "scope": "File metadata inventory; environments, Git metadata, and caches excluded; no model/runtime evaluation.",
+  "excluded_directory_names": [
+    ".agents",
+    ".aws",
+    ".codex",
+    ".git",
+    ".venv",
+    "__pycache__",
+    "venv"
+  ],
+  "folders": {
+    "Task_1_Simulator_Evaluation": {
+      "files": 4,
+      "bytes_excluding_environment_and_git": 23703800,
+      "extensions": {
+        ".md": 2,
+        ".mp4": 1,
+        ".py": 1
+      }
+    },
+    "Task_2": {
+      "files": 365,
+      "bytes_excluding_environment_and_git": 667129315,
+      "extensions": {
+        "(no extension)": 4,
+        ".10": 1,
+        ".cfg": 1,
+        ".csv": 1,
+        ".json": 105,
+        ".jsonl": 5,
+        ".log": 7,
+        ".md": 30,
+        ".pid": 1,
+        ".png": 106,
+        ".pt": 12,
+        ".py": 60,
+        ".sh": 2,
+        ".svg": 2,
+        ".txt": 28
+      }
+    },
+    "Task_3": {
+      "files": 5261,
+      "bytes_excluding_environment_and_git": 3759382086,
+      "extensions": {
+        "(no extension)": 5,
+        ".0": 3,
+        ".csv": 16,
+        ".html": 184,
+        ".jpg": 35,
+        ".json": 1130,
+        ".jsonl": 335,
+        ".log": 137,
+        ".md": 42,
+        ".mp4": 9,
+        ".npz": 1352,
+        ".onnx": 3,
+        ".png": 624,
+        ".pt": 8,
+        ".py": 1034,
+        ".stl": 68,
+        ".swp": 4,
+        ".toml": 1,
+        ".ts": 2,
+        ".txt": 10,
+        ".xml": 255,
+        ".yaml": 4
+      }
+    },
+    "Task_4": {
+      "files": 609,
+      "bytes_excluding_environment_and_git": 881675913,
+      "extensions": {
+        "(no extension)": 1,
+        ".bin": 5,
+        ".glb": 1,
+        ".gltf": 5,
+        ".html": 4,
+        ".jpeg": 5,
+        ".jpg": 267,
+        ".js": 4,
+        ".json": 100,
+        ".log": 4,
+        ".md": 16,
+        ".npz": 1,
+        ".png": 85,
+        ".py": 91,
+        ".sh": 6,
+        ".tsv": 1,
+        ".txt": 8,
+        ".zip": 5
+      }
+    },
+    "reference_materials": {
+      "files": 16,
+      "bytes_excluding_environment_and_git": 17756517,
+      "extensions": {
+        ".gz": 1,
+        ".ipynb": 1,
+        ".md": 3,
+        ".pdf": 3,
+        ".png": 8
+      }
+    },
+    "genesis-world": {
+      "files": 1170,
+      "bytes_excluding_environment_and_git": 991584162,
+      "extensions": {
+        "(no extension)": 11,
+        ".bin": 1,
+        ".dae": 40,
+        ".dds": 1,
+        ".frag": 9,
+        ".geom": 6,
+        ".glb": 20,
+        ".gltf": 1,
+        ".html": 3,
+        ".in": 1,
+        ".jpeg": 5,
+        ".jpg": 77,
+        ".json": 6,
+        ".md": 18,
+        ".mtl": 37,
+        ".obj": 142,
+        ".part": 1,
+        ".ply": 3,
+        ".png": 107,
+        ".pts": 1,
+        ".py": 466,
+        ".sdf": 5,
+        ".sh": 1,
+        ".stl": 59,
+        ".toml": 1,
+        ".ttf": 12,
+        ".txt": 22,
+        ".urdf": 34,
+        ".vert": 9,
+        ".xml": 59,
+        ".yaml": 2,
+        ".yml": 10
+      }
+    }
+  }
+}

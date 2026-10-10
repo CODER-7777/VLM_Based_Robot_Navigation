@@ -1,0 +1,305 @@
+{
+  "review_date": "2026-10-10",
+  "moves": [
+    {
+      "from": "gcs@192.168.31.171",
+      "to": "reference_materials/archive/robofest_update_20261009.tar.gz",
+      "sha256": "96ac4072776a2002661382c0237e7fff2824caede7efadbe4b79c3d208e406cd",
+      "bytes": 96958,
+      "reason": "Loose gzip source archive identified as robofest-update.tar; preserved without extracting or modifying its contents.",
+      "entries": [
+        {
+          "path": "README.md",
+          "bytes": 13946,
+          "type": "file"
+        },
+        {
+          "path": "Tools/build_workspace.sh",
+          "bytes": 1905,
+          "type": "file"
+        },
+        {
+          "path": "Tools/entrypoint.sh",
+          "bytes": 468,
+          "type": "file"
+        },
+        {
+          "path": "Tools/rebuild_temp_image.sh",
+          "bytes": 2317,
+          "type": "file"
+        },
+        {
+          "path": "Tools/run_tmux.sh",
+          "bytes": 2106,
+          "type": "file"
+        },
+        {
+          "path": "Tools/start_sitl.sh",
+          "bytes": 488,
+          "type": "file"
+        },
+        {
+          "path": "Tools/test_in_container.sh",
+          "bytes": 2094,
+          "type": "file"
+        },
+        {
+          "path": "Tools/tmux_pane.sh",
+          "bytes": 1235,
+          "type": "file"
+        },
+        {
+          "path": "container.sh",
+          "bytes": 1605,
+          "type": "file"
+        },
+        {
+          "path": "docs/CONTROL_TUNING.md",
+          "bytes": 5554,
+          "type": "file"
+        },
+        {
+          "path": "docs/FLOW.md",
+          "bytes": 2437,
+          "type": "file"
+        },
+        {
+          "path": "docs/archive/CONTROL_TUNING-before-discrete-motions.md",
+          "bytes": 6546,
+          "type": "file"
+        },
+        {
+          "path": "docs/archive/FLOW-before-discrete-motions.md",
+          "bytes": 10807,
+          "type": "file"
+        },
+        {
+          "path": "docs/archive/README-before-discrete-motions.md",
+          "bytes": 63388,
+          "type": "file"
+        },
+        {
+          "path": "docs/archive/system-flow.mmd",
+          "bytes": 4813,
+          "type": "file"
+        },
+        {
+          "path": "docs/archive/system-flow.svg",
+          "bytes": 33819,
+          "type": "file"
+        },
+        {
+          "path": "docs/sitl-twist-results.json",
+          "bytes": 1729,
+          "type": "file"
+        },
+        {
+          "path": "run_dev.sh",
+          "bytes": 754,
+          "type": "file"
+        },
+        {
+          "path": "run_drone.sh",
+          "bytes": 1406,
+          "type": "file"
+        },
+        {
+          "path": "tests/run_sitl_controller.py",
+          "bytes": 7920,
+          "type": "file"
+        },
+        {
+          "path": "tests/sitl_mavlink_peer.py",
+          "bytes": 5839,
+          "type": "file"
+        },
+        {
+          "path": "tests/sitl_mavros_observer.py",
+          "bytes": 3592,
+          "type": "file"
+        },
+        {
+          "path": "tests/test_container_workflow.py",
+          "bytes": 3210,
+          "type": "file"
+        },
+        {
+          "path": "tests/test_controller_integration.py",
+          "bytes": 17011,
+          "type": "file"
+        },
+        {
+          "path": "tests/test_feedback_streams.py",
+          "bytes": 3730,
+          "type": "file"
+        },
+        {
+          "path": "tests/test_temp_build_workflow.py",
+          "bytes": 2613,
+          "type": "file"
+        },
+        {
+          "path": "tests/test_tmux_workflow.py",
+          "bytes": 1866,
+          "type": "file"
+        },
+        {
+          "path": "tests/test_vision_node.py",
+          "bytes": 8285,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/drone_controller/CMakeLists.txt",
+          "bytes": 1220,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/drone_controller/include/drone_controller/drone_controller_node.hpp",
+          "bytes": 5296,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/drone_controller/include/drone_controller/gesture_motion_fsm.hpp",
+          "bytes": 5141,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/drone_controller/include/drone_controller/motion_policy.hpp",
+          "bytes": 3633,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/drone_controller/include/drone_controller/yaw_tracking_fsm.hpp",
+          "bytes": 2694,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/drone_controller/package.xml",
+          "bytes": 790,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/drone_controller/src/drone_controller_node.cpp",
+          "bytes": 21750,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/drone_controller/src/flight_operations.cpp",
+          "bytes": 6730,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/drone_controller/src/parameters.cpp",
+          "bytes": 5802,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/drone_controller/test/test_gesture_motion.cpp",
+          "bytes": 3192,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/drone_controller/test/test_motion_policy.cpp",
+          "bytes": 8129,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/gesture_drone_bringup/CMakeLists.txt",
+          "bytes": 303,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/gesture_drone_bringup/config/gesture_params.yaml",
+          "bytes": 4309,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/gesture_drone_bringup/config/mavros_gesture.yaml",
+          "bytes": 592,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/gesture_drone_bringup/launch/gesture_drone.launch.py",
+          "bytes": 3478,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/gesture_drone_bringup/package.xml",
+          "bytes": 1043,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/gesture_drone_bringup/scripts/configure_streams.py",
+          "bytes": 3370,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/gesture_drone_bringup/scripts/monitor_gestures.py",
+          "bytes": 962,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/gesture_msgs/CMakeLists.txt",
+          "bytes": 451,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/gesture_msgs/msg/GestureCommand.msg",
+          "bytes": 126,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/gesture_msgs/msg/TrackingTarget.msg",
+          "bytes": 473,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/gesture_vision/gesture_vision/alignment.py",
+          "bytes": 2346,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/gesture_vision/gesture_vision/command_mapping.py",
+          "bytes": 1356,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/gesture_vision/gesture_vision/gesture_publisher_node.py",
+          "bytes": 13759,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/gesture_vision/gesture_vision/gesture_recognizer.py",
+          "bytes": 5501,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/gesture_vision/gesture_vision/pose_diagnostics.py",
+          "bytes": 1925,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/gesture_vision/gesture_vision/torso_tracker.py",
+          "bytes": 3019,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/gesture_vision/test/test_alignment.py",
+          "bytes": 2957,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/gesture_vision/test/test_recognition.py",
+          "bytes": 5321,
+          "type": "file"
+        },
+        {
+          "path": "workspace/src/gesture_vision/test/test_torso_tracking.py",
+          "bytes": 3110,
+          "type": "file"
+        }
+      ]
+    }
+  ],
+  "preserved": "Existing experiment directories, checkpoints, environments, and nested Git repositories kept in place."
+}

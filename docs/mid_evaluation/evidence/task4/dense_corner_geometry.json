@@ -1,0 +1,114 @@
+{
+  "views": [
+    {
+      "view": 0,
+      "camera_frame_id": "comparison_reference",
+      "before": {
+        "sampled_reference_hits": 4444,
+        "finite_depth_fraction_on_reference": 0.9106660666066607,
+        "median_depth_absolute_error_to_mesh_m": 0.0076954614059803195,
+        "p90_depth_absolute_error_to_mesh_m": 0.05475492759236001,
+        "cuda_raster_ms": 10.017791748046875,
+        "image_valid_depth_fraction": 0.9499664306640625
+      },
+      "after": {
+        "sampled_reference_hits": 4444,
+        "finite_depth_fraction_on_reference": 1.0,
+        "median_depth_absolute_error_to_mesh_m": 0.003114064546499873,
+        "p90_depth_absolute_error_to_mesh_m": 0.008291940085230088,
+        "cuda_raster_ms": 17.23289680480957,
+        "image_valid_depth_fraction": 0.9905487060546875
+      }
+    },
+    {
+      "view": 1,
+      "camera_frame_id": "comparison_user",
+      "before": {
+        "sampled_reference_hits": 9270,
+        "finite_depth_fraction_on_reference": 0.8196332254584682,
+        "median_depth_absolute_error_to_mesh_m": 0.009858914334137214,
+        "p90_depth_absolute_error_to_mesh_m": 0.22600535270882083,
+        "cuda_raster_ms": 9.885696411132812,
+        "image_valid_depth_fraction": 0.829640625
+      },
+      "after": {
+        "sampled_reference_hits": 9270,
+        "finite_depth_fraction_on_reference": 1.0,
+        "median_depth_absolute_error_to_mesh_m": 0.0035926229835615553,
+        "p90_depth_absolute_error_to_mesh_m": 0.005365902701268333,
+        "cuda_raster_ms": 15.457280158996582,
+        "image_valid_depth_fraction": 0.9961015625
+      }
+    },
+    {
+      "view": 2,
+      "camera_frame_id": "comparison_novel0",
+      "before": {
+        "sampled_reference_hits": 9221,
+        "finite_depth_fraction_on_reference": 0.8422080034703394,
+        "median_depth_absolute_error_to_mesh_m": 0.0075689974325921505,
+        "p90_depth_absolute_error_to_mesh_m": 0.11302642597924789,
+        "cuda_raster_ms": 7.254015922546387,
+        "image_valid_depth_fraction": 0.8478424072265625
+      },
+      "after": {
+        "sampled_reference_hits": 9221,
+        "finite_depth_fraction_on_reference": 1.0,
+        "median_depth_absolute_error_to_mesh_m": 0.0033382483082633474,
+        "p90_depth_absolute_error_to_mesh_m": 0.004461468893597775,
+        "cuda_raster_ms": 10.22771167755127,
+        "image_valid_depth_fraction": 0.9956329345703125
+      }
+    },
+    {
+      "view": 3,
+      "camera_frame_id": "comparison_novel1",
+      "before": {
+        "sampled_reference_hits": 9986,
+        "finite_depth_fraction_on_reference": 0.7647706789505307,
+        "median_depth_absolute_error_to_mesh_m": 0.00847085368855649,
+        "p90_depth_absolute_error_to_mesh_m": 0.09838299545316956,
+        "cuda_raster_ms": 7.429120063781738,
+        "image_valid_depth_fraction": 0.7675506591796875
+      },
+      "after": {
+        "sampled_reference_hits": 9986,
+        "finite_depth_fraction_on_reference": 1.0,
+        "median_depth_absolute_error_to_mesh_m": 0.00335766808634938,
+        "p90_depth_absolute_error_to_mesh_m": 0.004282634068630831,
+        "cuda_raster_ms": 9.21395206451416,
+        "image_valid_depth_fraction": 0.9998077392578125
+      }
+    },
+    {
+      "view": 4,
+      "camera_frame_id": "comparison_novel2",
+      "before": {
+        "sampled_reference_hits": 9996,
+        "finite_depth_fraction_on_reference": 0.7366946778711485,
+        "median_depth_absolute_error_to_mesh_m": 0.053463070979548194,
+        "p90_depth_absolute_error_to_mesh_m": 0.5048926533381154,
+        "cuda_raster_ms": 9.675775527954102,
+        "image_valid_depth_fraction": 0.7324188232421875
+      },
+      "after": {
+        "sampled_reference_hits": 9996,
+        "finite_depth_fraction_on_reference": 1.0,
+        "median_depth_absolute_error_to_mesh_m": 0.002673927798607062,
+        "p90_depth_absolute_error_to_mesh_m": 0.004002612686354934,
+        "cuda_raster_ms": 8.697855949401855,
+        "image_valid_depth_fraction": 1.0
+      }
+    }
+  ],
+  "product_min_mean_z_m": 0.9289999604225159,
+  "counter_surface_z_m": 0.929,
+  "product_support_height_error_m": 3.957748417882101e-08,
+  "geometry_changed_by_appearance_fit": false,
+  "reference_triangles": 11399,
+  "limits": [
+    "Depth errors are relative to the repaired mesh, not an independent sensor measurement.",
+    "The cropped mesh reference omits some foreground occluders outside the repaired corner.",
+    "Valid depth coverage is not a photorealism or accuracy score."
+  ]
+}
