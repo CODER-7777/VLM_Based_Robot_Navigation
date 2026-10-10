@@ -1,110 +1,68 @@
-# Task 1: Photorealistic Simulator Evaluation for Quadruped Locomotion
+# Task 1 — Simulator evaluation and Go2 demonstration
 
-> **Quick Link:** [Jump straight to Analysis & Hardware Workarounds](#1-deep-analysis--architectural-trade-offs)
+**Mid-evaluation status, 10 October 2026:** a Genesis/Go2 demonstration and simulator-selection study are recorded. Quantitative cross-simulator benchmarking, obstacle-contact validation in the office, and end-to-end language navigation remain open.
 
----
+[Project overview](../README.md) · [Presentation guide](../docs/mid_evaluation/PRESENTATION_GUIDE.md) · [Original evaluation notes](notes/INITIAL_EVALUATION.md)
 
-## 1. Analysis & Architectural Trade-offs
-### The Core Challenge: VRAM Ceilings & Simulator Architectures
-During this evaluation, I confronted the fundamental tension in robotics simulation: the division between **physics computation** and **photorealistic rendering**. 
+## Objective and constraints
 
-1. **The Game Engine  (Unreal/Unity):** While engines like Unreal provide nice visual realism (Lumen/Nanite) and particle systems for adverse conditions, they require massive storage footprints (often >100GB). Simulating high-frequency legged locomotion contact dynamics natively is difficult, and bridging them with a physics engine like MuJoCo introduces complex IPC (Inter-Process Communication) overhead.
-2. **The Physics-First Approach (Isaac Sim):** Platforms like NVIDIA Isaac Sim integrate exceptional RL pipelines with photorealism. However, they assume the heavy ray-traced renderer is always active. On hardware with limited VRAM (e.g., 4GB RTX 3050), Isaac Sim will trigger Out-of-Memory (OOM) errors before a scene even initializes.
-3. **The Decoupled Solution (Genesis):** Genesis solves this by intentionally decoupling physics from photorealism. Rigid-body physics computation requires a fraction of a Gigabyte. By default, Genesis utilizes a fast rasterizer (Pyrender) for live previews, allowing smooth RL policy execution on low-end GPUs. True photorealism in Genesis is achieved by explicitly switching to the Ray-Tracer backend (`gs.options.renderers.RayTracer()`) for offline rendering, allowing us to capture high-fidelity data without crashing the hardware.
+Find a practical environment for developing quadruped locomotion with realistic visual context. The initial development machine was recorded as an RTX 3050 with 4 GB VRAM. This made scene complexity, collision processing, and renderer overhead central considerations.
 
-### Hardware-Specific Workaround (Genesis Office Environment)
-When loading the massive photorealistic 3D Office environment (`Office+2.glb`), Genesis attempted to calculate convex collision hulls for the entire mesh, which instantly exceeded our 4GB VRAM limit and killed the process. 
-**Solution:** I set the high-fidelity office mesh to be purely visual (`collision=False`, `convexify=False`) and instantiated an invisible physics plane (`plane.urdf`) underneath it. This allowed the quadruped to interact perfectly with a stable physical floor while maintaining the photorealistic visual context of the office, successfully bypassing the hardware limits.
+The comparison considered Genesis, Isaac Sim/Isaac Lab, Unreal/Unity, Habitat, and MuJoCo/MJX. Only Genesis has a runnable project demonstration in this task directory. The other entries are design assessments recorded in the initial report; they are not measured FPS, memory, or task-success benchmarks. Historical hardware-requirement and licensing statements should not be presented as current verified specifications.
 
----
+## Attempts, outcomes, and interpretation
 
-## 2. Comparison Table
+| Attempt | Motivation / method | Recorded outcome | What we learned |
+| --- | --- | --- | --- |
+| Compare simulator options | Assess visual assets, quadruped support, setup, and local hardware constraints | Genesis selected for the initial demonstration | Early development needed a manageable visual/physics workflow; selection is project-specific |
+| Load a detailed office with collision processing | Use the scene mesh for both visuals and interaction | Initial notes report an out-of-memory failure during collision-hull processing | Detailed visual meshes can be too expensive as collision models; no numeric VRAM trace is saved here |
+| Use a visual office mesh and a separate floor | Set `collision=False`, `convexify=False`; add `plane.urdf` | The supplied script implements this workaround; a demo video is retained | The floor supplies support while the office supplies appearance. Office furniture does not become a physical obstacle through this setup |
+| Integrate a pretrained Go2 policy | Map policy joint order to URDF order, scale observations/actions, apply position targets | `run_go2.py` provides stand/walk modes and keyboard commands | Learned control depends on the checkpoint's observation, joint-order, action-scale, and gain contract |
+| Separate live preview from high-quality rendering | Keep development responsive; consider offline rendering | Proposed in the original evaluation; the supplied script does not configure the ray-tracer | This is a design direction, rather than a demonstrated photorealistic-rendering benchmark |
 
-| Criterion | Genesis | Isaac Sim / Isaac Lab | Unreal Engine / Unity (CARLA) | AI Habitat | MuJoCo / MJX |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Environment library** | Excellent. Loads standard `.gltf`/`.obj` environments directly (Tested and working on my laptop). | Excellent (Omniverse USDs), but massive downloads. | Massive libraries, but assets are heavy and not RL-ready. | Great for indoor scans, weak for outdoors. | Very poor native photorealism. |
-| **Visual realism** | High (native path tracing). | Very High. | Very High. | High. | Low. |
-| **Quadruped support** | Excellent. Unitree Go2 models are there, physics work robustly. | Excellent, but computationally expensive. | Hard to simulate physics bridging with Python RL frameworks. | Weak contact physics for quadrupeds. | Excellent physics, but no photorealism. |
-| **Performance** | High. Fully GPU-accelerated without extreme footprint. | Low for average hardware. Requires huge VRAM. | Low. Game engines have heavy overhead for RL parallelization. | High. | Very High. |
-| **Setup effort** | Very Low. Simple `pip install genesis-world`. | Very High. Strict driver specs, huge footprint. | Very High. >100GB installs, massive complex bridging overhead. | Medium. | Low. |
-| **Licensing** | Open-source (Apache 2.0). | Free for research. | Engine royalties apply. | MIT (Research datasets restricted). | Open-source (Apache 2.0). |
+The saved video is [Genesis_without_physics.mp4](videos/Genesis_without_physics.mp4). Its filename alone does not establish the physics configuration of that recording. The current script contains robot physics and a support plane, with the office mesh visual-only. No synchronized configuration/metric manifest accompanies the video.
 
----
+## Implementation documented from the script
 
-## 3. Ranked Shortlist
+| Component | Current implementation |
+| --- | --- |
+| Entry point | [run_go2.py](run_go2.py), `Go2Controller` |
+| Backend | Genesis GPU; Torch inference explicitly uses `cuda:0` |
+| Simulation setting | `dt=0.02`, `substeps=2`; one policy call per scene step in walk mode |
+| Robot / scene | Go2 URDF, plane URDF, office GLB |
+| Policy joint order | FR, FL, RR, RL; hip/thigh/calf within each leg |
+| Observation | 45 values: body angular velocity, projected gravity, velocity/yaw command, relative joint position, joint velocity, previous action |
+| Action | 12 scaled offsets from standing angles, remapped to URDF order |
+| Gains configured | Fixed gains 150/5 and RL gains 40/1; see mode-switch code |
+| Controls | `0` stand, `1` walk, up/down forward/backward, left/right turn, Space stop, Escape exit |
 
-1. **Genesis:** Native Python, loads standard photorealistic meshes (`.gltf`), and existing Go2 quadruped models are already there with robust physics. Zero bloat compared to massive game engines.
-2. **Isaac Lab:** The industry standard for RL + photorealism, but its requirements are very high; it is extremely heavy and requires a massive GPU footprint to run smoothly.
-3. **Unreal Engine / Unity:** Incredible visual realism, but takes almost 100GB to install, and setting up robust, fast physics simulation for quadruped RL is notoriously difficult.
+These details describe this Go2 script. Task 3 uses a different robot, policy history, transmission, and controller; its settings must not be substituted here.
 
----
+## Reproduction and dependencies
 
-## 4. Recommendation + Risks
+The office GLB and pretrained `rl_sar` policy are external dependencies. The script currently has a hardcoded policy path and a relative office path. Before running, check the `__main__` block and provide the matching assets:
 
-**Recommendation:** Genesis
-Genesis hits the perfect sweet spot for this project. It provides the blazing-fast GPU-accelerated physics needed for quadruped RL (rivaling MuJoCo) while featuring a built-in, lightweight photorealistic renderer that natively accepts standard 3D formats. We successfully achieved a working Unitree Go2 quadruped in a photorealistic office environment on highly constrained hardware.
-
-**Biggest Risk:** 
-Ecosystem Immaturity. Genesis has a smaller community compared to Isaac or Unreal. Finding highly complex, pre-rigged interactive environments (like working elevators or specific doors) will require more manual work to convert standard `.glb` assets into functional URDFs.
-Also in Genesis if you have a VRAM then only try to ru Physics cause it will cause OOM errors like basically the out of memory errors.
-
-## A.Some additional points of the analysis:
-1. The first thing is we need to have a good gpu for the things like ISSAC SIM it has a min requirements of RTX 4070 and min VRAM of 16GB.I am here attaching the photos.
-<img width="741" height="593" alt="image" src="https://github.com/user-attachments/assets/69d17afc-fed4-4c93-8427-588f610c022d" /> This is for the Issac-Sim
-
-* [Minimum Specs for ISSAC SIM(I am giving only x86_64 arch)](https://docs.isaacsim.omniverse.nvidia.com/6.0.1/installation/requirements.html)
-* [Minimum Specs for Unreal](https://dev.epicgames.com/documentation/unreal-engine/hardware-and-software-specifications-for-unreal-engine)
-  <img width="1917" height="842" alt="image" src="https://github.com/user-attachments/assets/8d36c7d2-f9c6-4676-a8f5-18f7d1f74665" />
-* In Genesis the advantage is we can run it on RTX 3050 but we need to take care of physics like basically in the photo realistic environments we have the models with more than 1 million faces to which genesis need to calculate physics which needs so much VRAM.( The RAM installed on your PC/Laptop is different from the VRAM it is a virtual memory where it will compute and it shows the storage or capacity  the GPU can compute.
-* Also there is a repo by Unreal Labs where they have integrated Unreal engines lighting, Photo realism with the Mujoco but we need to install the Unreal Engine which approx. takes a hefty amount of space ~100GB like if we inlcude the plugins and all and it also good GPU.
-* In Gazebo we can simulate sensors but physics of Mujoco is very accurate in comparison to the Gazebo.
-* In my ranking i did not mention the Mujoco as it does not have good rexture capability and we need .mjcf. But genesis can directly import the .gltf/.glb formats nicely .
-* I will mention the OS and environment setup in the next Setup Notes.
-  
----
-## 5. About the python script (run_go2.py)[genesis_world/run_go2.py]
-* This is a modular script(OOP) with which you can start your genesis script load your robot model and can customize your environment.
-* I have written it to implement the walking of the robo. We can use the commands that we use in rl_sar and further there are many other features which you can know by pressing 'i' after entering into the genesis environment.While running fix your paths accordingly I have given regarding that in more detailed in the setup Notes thing.
-
-## 6. Working Demo & Setup Notes
-
-**Video Demonstration:**
-* [Watch the Genesis Quadruped Demo on Google Drive](https://drive.google.com/file/d/1hBrvVq-9UNVSSecGrkjWfZmLAOO4rz1X/view?usp=sharing)
-
-**Setup Notes (Raj's Team and Krishna):**
-Genesis is the most practical because it actually works on standard hardware without taking 100GB.
-Below are the exact commands you need to get it running from scratch:
-
-**1. Clone the Repos & Install Dependencies:**
-```bash
-# Clone the main repository
-git clone https://github.com/YOUR_GITHUB_USERNAME/VLM_Based_Robot_Navigation.git
-
-# Clone the rl_sar repository (which contains the pre-trained Go2 policy)
-# (Clone this into the same parent folder, e.g., your UGP directory)
-git clone https://github.com/fan-ziqi/rl_sar.git
-
-cd VLM_Based_Robot_Navigation
-
-# Install the Genesis simulator and required libraries
-pip install genesis-world torch numpy
+```text
+Policy: /home/vivekananda/UGP/rl_sar/rl_ws/src/rl_sar/policy/go2/robot_lab/policy.pt
+Office: genesis-world/office-env/Office+2.glb
 ```
 
-**2. Configure the Policy Path:**
-Open `Task_1_Simulator_Evaluation/run_go2.py` and ensure the `policy_path` exactly matches where you cloned `rl_sar` (e.g., `/home/your_username/UGP/rl_sar/rl_ws/src/rl_sar/policy/go2/robot_lab/policy.pt`).
+The policy path points outside this repository. The Genesis checkout is a separate submodule with local files; a fresh clone does not establish that the office asset or policy is available. Use the environment compatible with this script's Genesis keybinding API; the initial report does not contain a reproducible dependency lock.
 
-**3. Run the Simulation:**
+With those assets and Genesis, PyTorch, NumPy, CUDA, and a graphical display available:
+
 ```bash
 cd Task_1_Simulator_Evaluation
 python run_go2.py
 ```
 
-**4. Training vs Rendering Separation:** Do NOT use the Ray-Tracer for live development. Keep using the fast rasterizer (Pyrender) for policy training. When you need photorealistic frames, write a script to render offline (one camera, one frame at a time, at a reduced resolution like 640x480) to prevent OOM errors.
-**5. Collision Workaround:** If your GPU crashes loading an environment, set the visual mesh to `collision=False` and place an invisible `plane.urdf` underneath it for physics.
+This documentation review did not rerun the GPU viewer. A video demonstration establishes recorded behavior, while a fresh run with source/configuration and performance logs is needed for repeatable measurements.
 
----
+## Remaining work and presentation takeaway
 
-## 6. Links / References
-- **Genesis Documentation:** https://genesis-world.readthedocs.io/
-- **rl_sar Quadruped RL Policy Repository:** https://github.com/fan-ziqi/rl_sar
-- **Our Working Script:** Reference the `run_go2.py` setup script provided in this evaluation folder.
+1. Record a reproducible scene/policy/dependency manifest and measure memory, physics throughput, image latency, and tracking error.
+2. Add simplified furniture/obstacle collision geometry instead of relying solely on a floor plane.
+3. Verify the Go2 policy contract and measure gait stability before using the environment for navigation experiments.
+4. Compare render and collision fidelity separately, then connect the visual environment to the language/planning pipeline.
+
+**Presentation statement:** “We selected Genesis for an initial Go2 demonstration and worked around detailed-mesh collision memory costs by separating appearance from floor physics. This demonstrates setup feasibility; realistic obstacle interaction still needs validation.”
