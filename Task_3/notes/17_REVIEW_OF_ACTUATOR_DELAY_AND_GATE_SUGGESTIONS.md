@@ -1,5 +1,157 @@
 # Which research suggestions should we use for our MoE jitter problem?
 
+## Hardware objective clarification, 2026-10-07 — read before the simulation recommendation below
+
+**Keep the actual deployed hardware parameters fixed. The `impratio` comparison is a simulator diagnostic, not a validated hardware fix.** The user clarified that the policy is intended for the real robot. The next step is to establish and validate the deployed control contract, rather than select simulator settings only because they look smoother. My earlier advice to change 100 to 10 should be understood as an isolated evaluation test; it does not establish that 10 represents the real contact.
+
+No live scene, controller, actuator gains, limits, rewards, weights or server files were modified during this clarification. Existing experimental results remain intact. This explanation and the latest contact analysis are saved here instead of creating another Markdown file.
+
+### What `impratio` means, from the basics
+
+When a foot touches a horizontal floor, contact involves two kinds of response:
+
+1. **Normal response:** force perpendicular to the floor, supporting weight and resisting penetration.
+2. **Tangential response:** friction along the floor, resisting sliding.
+
+MuJoCo calculates both through its contact-constraint solver. Impedance means how strongly that solver enforces a constraint. `impratio` is the frictional-to-normal constraint impedance setting. With the current elliptic cone, raising it strengthens the numerical enforcement of friction relative to normal contact. It can reduce slow slip without changing the specified friction coefficient or guaranteeing exact sticking. [Official XML reference](https://mujoco.readthedocs.io/en/stable/XMLreference.html#option-impratio).
+
+It is not a motor gain, gear ratio, control frequency, MoE gate setting, reward coefficient, or command smoother. It is a dimensionless simulation setting. There is no `impratio` value to upload into the physical motor controller.
+
+The friction coefficient `mu` and `impratio` have different roles. In a simple isotropic sliding-friction example, `||F_t|| <= mu * F_n` describes the friction-force bound. With `mu=0.85` and a normal force of 100 N, the bound is 85 N. `impratio=100` does not multiply that into 8500 N. Actual contact forces are found by solving the coupled dynamics, not by always taking the maximum friction force.
+
+### What the engine actually computes
+
+I checked the official source for the installed MuJoCo **3.11.0**, `mj_makeImpedance`:
+
+```text
+R_tangent = R_normal / impratio
+```
+
+`R` is the solver's constraint regularization, a mathematical softness term. Smaller tangential regularization makes friction enforcement harder. For equal sliding-friction coefficients in both tangential directions, both use the same value. This formula does not mean multiplying an impedance bounded between zero and one by 100, nor does it imply a proportional change in measured force. [MuJoCo 3.11.0 source, lines 2056–2065](https://github.com/google-deepmind/mujoco/blob/3.11.0/src/engine/engine_core_constraint.c#L2056).
+
+I verified this on a **single fixed recorded state at t=6 seconds**, preserving q, dq and applied control, without integrating time or running a policy:
+
+| Quantity at front-left floor contact | impratio=100 | impratio=10 |
+| --- | ---: | ---: |
+| Normal regularizer R | 0.16575755 | 0.16575755 |
+| Tangential regularizer R | 0.00165758 | 0.01657575 |
+| Sliding friction coefficient | 0.85 | 0.85 |
+
+Thus the tangential regularizer increases tenfold; the physical friction coefficient and normal regularizer remain unchanged in this fixed-state calculation. It does **not** follow that sliding, torque or vibration changes by exactly tenfold. [Exact calculation](../tools/results/control_loop_audit_20261006_v2/impratio_fixed_state.json).
+
+### Why it can affect policy outputs without changing weights
+
+```text
+Different simulated contact enforcement
+  → different ground forces and foot motion
+  → different joint velocities and body motion
+  → different observations/history
+  → different MoE features, gate weights and actor outputs
+  → different joint targets and torques
+  → different next contact
+```
+
+This explains a route through the feedback loop. It does not establish an exact oscillation mechanism, a defective MoE gate, or solver convergence failure. Solver iteration residuals were not recorded in the existing rollouts. The observed improvement at 10 proves sensitivity to this simulation setting under the tested conditions; it does not identify the real robot's cause of shaking.
+
+### Deeper readout of the saved contact data
+
+These are offline measurements of the **same** flat tests, kp=18/kd=0.7, t=5–11 seconds, requested X or Y speed 0.30 m/s. No new trajectory was generated for this readout.
+
+| Candidate91000 measurement | Forward: 100 → 10 | Sideways: 100 → 10 |
+| --- | ---: | ---: |
+| Normal contact-force 8–30 Hz RMS, average over feet | 6.525 → 2.967 N | 7.457 → 4.190 N |
+| Tangential XY force 8–30 Hz RMS, average over feet | 3.363 → 1.065 N | 4.034 → 1.562 N |
+| Applied joint-torque 8–30 Hz RMS, average over joints | 0.467 → 0.176 Nm | 0.585 → 0.234 Nm |
+| Loaded contact-point speed RMS, simulation slip proxy | 0.370 → 0.047 m/s | 0.357 → 0.059 m/s |
+| p99 loaded-contact penetration | 2.026 → 0.913 mm | 2.035 → 1.071 mm |
+
+Both original-policy directions also show reductions in those measurements. This is not simply making the feet slide more freely: the measured simulated slip proxy decreased. But it is still not hardware validation. Different gaits create different contact sample distributions; force-band RMS includes some impact/stepping content. No claim of motor heat or energy savings follows from torque RMS alone.
+
+Slip proxy definition: speed of the rigid foot at the recorded contact point, projected onto the contact tangent plane, against the stationary floor, using contacts loaded above 5 N. Computed from the recorded q/dq and the contact-point Jacobian. This captures rigid simulated contact motion, not deformation of a real rubber foot. The Jacobian method reproduced logged foot-center velocities to about 9e-16 m/s in the consistency check. [Figure](../tools/results/control_loop_audit_20261006_v2/contact_response.png), [metrics and definitions](../tools/results/control_loop_audit_20261006_v2/contact_response.json).
+
+### What to do for the real-robot objective
+
+1. **Freeze the verified deployed contract:** actual motor gains, torque limits, joint-target limits, transmission, policy/control rates, observation scaling/order and previous-action history. Do not assume the current viewer reproduces all of it. Its wider calf +0.5 / hip ±1.0472 bounds are simulation settings; the earlier audit reported tighter deployed bounds. This investigation did not revalidate physical firmware or change those limits.
+2. **Identify the continuation's actual training conditions:** current local config says impratio=10; viewer and its builder say 100. Inspect the server run's saved config/source snapshot to verify what the completed run used. Original90k training conditions remain unavailable locally.
+3. **Use existing hardware logs to validate response:** compare loaded-stance slip, joint target-to-angle tracking/lag, gyro, dq, body movement and contact transitions at comparable commands. If no synchronized force/slip measurements exist, mark contact accuracy unknown instead of choosing a numerical setting by smoothness. No new hardware experiment is authorized or performed here.
+4. **Keep diagnostic A/B results separate from deployment claims.** Matching current training's 10 can test evaluation consistency. Selecting a contact model for future hardware training needs response evidence; real hardware has no corresponding switch.
+5. **Then test policy changes with hardware parameters fixed.** Continue independently from preserved90k, compare tracking and stair traversal alongside vibration, and evaluate robustness across plausible measured contact/delay variations. Existing action/target penalties remain hypotheses for improvement; no new reward or architecture change was made here.
+
+For a hardware claim, the result must be stated as: “The policy was trained/evaluated against a validated range of contact conditions and improved measured robot behavior.” The current evidence supports only: “The simulator's jitter and traversal are strongly sensitive to its contact-constraint setting.”
+
+## Latest verified finding, 2026-10-07: test the contact solver before changing gains or rewards
+
+**The strongest confirmed contributor in the tested simulator is `impratio=100`.** Changing only that parameter to **10** reduced flat-ground vibration while maintaining approximately the same speed or improving it. Both policies also completed the 10 cm staircase at both tested gains with 10; their matching 100 cases did not complete it.
+
+Start with the [focused findings dashboard](../tools/results/control_loop_audit_20261006_v2/FINDINGS.html), [comparison figure](../tools/results/control_loop_audit_20261006_v2/impratio_comparison.png) and [exact measurements / independent traversal checks](../tools/results/control_loop_audit_20261006_v2/audit_findings.json). These are **new scripted diagnostic simulations**, separate from the user's keyboard recordings. The old sections below retain historical findings; their earlier suggested next experiments are superseded by this first test.
+
+### What differs, and why it matters
+
+- Viewer: `xterra_mjlab/svanm2_moe_stair_sim/scene.xml:4` has `impratio="100"`.
+- Current continuation training configuration: `xterra_mjlab/xterra_mjlab/tasks/velocity/config/svanm2/env_cfgs.py:39` sets `cfg.sim.mujoco.impratio = 10`.
+- `impratio` controls the contact solver's frictional impedance relative to normal impedance. Higher values make friction constraints harder relative to normal contact. It is separate from the friction coefficient, `kp` and `kd`. [Official MuJoCo definition](https://mujoco.readthedocs.io/en/stable/XMLreference.html#option-impratio).
+- This verifies a difference from the **current** training configuration. The original 90000 training configuration is still unavailable; do not claim its original setting has been recovered.
+
+Simple explanation: the feet interact with the floor through the contact solver. Changing that interaction changes motion, which changes sensor input, which changes the policy's next targets. Oscillating targets can therefore be part of this feedback response, rather than proof that the gate is independently malfunctioning.
+
+### Measurements at your current gains: kp=18, kd=0.7
+
+Requested speed is 0.30 m/s along the named axis. All rows compare the same six-second interval, t=5–11 seconds, using the legacy viewer sensing convention. Checkpoints, initial state, commands, joint limits, gains, foot friction, contact time constants, 50 Hz policy and 200 Hz PD/physics are matched within each pair. Only `impratio` differs.
+
+| Policy and direction | Joint 8–30 Hz RMS, 100 → 10 | Reduction | Mean actual speed, 100 → 10 |
+| --- | ---: | ---: | ---: |
+| Original90000, forward X | 0.380 → 0.103° | 72.9% | 0.215 → 0.246 m/s |
+| Original90000, sideways Y | 0.281 → 0.157° | 44.0% | 0.202 → 0.202 m/s |
+| Candidate91000, forward X | 0.284 → 0.120° | 57.8% | 0.235 → 0.246 m/s |
+| Candidate91000, sideways Y | 0.382 → 0.169° | 55.7% | 0.205 → 0.242 m/s |
+
+RMS here is the average across 12 joints of each joint's measured 8–30 Hz component. It is not the full walking swing and does not imply all content in that band is undesirable. The candidate improvements did not come from stopping. Original Y speed differs by only about 0.00002 m/s.
+
+At kp=20/kd=0.7 with fresh observations, 12 additional matched pairs across three starts (nominal, y+0.03 m/yaw+0.02 rad, and negative offsets) reduced vibration by **32.9–75.2%**, with mean requested-axis speed maintained or increased. See [positive offsets](../tools/results/control_loop_audit_20261006_v2/validation/start_plus/index.html) and [negative offsets](../tools/results/control_loop_audit_20261006_v2/validation/start_minus/index.html).
+
+### Stair traversal verified from raw data
+
+Same nominal start, forward 0.30 m/s, stand three seconds, ramp one second, maximum 35 seconds. The staircase is twelve 10 cm risers, ending at 1.2 m.
+
+| Policy | kp / kd | impratio=100 | impratio=10 |
+| --- | --- | --- | --- |
+| Original90000 | 18 / 0.7 | Lane exit | Traversed at 24.605 s |
+| Candidate91000 | 18 / 0.7 | Lane exit | Traversed at 25.475 s |
+| Original90000 | 20 / 0.7 | Timeout, incomplete | Traversed at 23.700 s |
+| Candidate91000 | 20 / 0.7 | Lane exit | Traversed at 25.370 s |
+
+The independent reader recomputed the traversal condition from `trace.npz`: all four feet beyond x=3.622 m and inside the stair lane, each foot having loaded the platform above 1 N, tilt below 30°, base clearance above 0.18 m, sustained for at least 0.5 s. All four reported completions pass; all four matching 100 cases fail that criterion. These are **two checkpoints × two gains at one nominal start**, not four independent seeds or a general success-rate estimate. Raw manifests show staircase collisions remain enabled.
+
+Important correction: the successful current-gain candidate first contacts the stair with its foot center at **4.39 cm**, then recovers and climbs. Low first contact is worth studying, but does not prove “the policy never learned to lift.” Compare [candidate at 100](../tools/results/control_loop_audit_20261006_v2/validation/stairs_current_gains/candidate91000_x_legacy/index.html) and [candidate at 10](../tools/results/control_loop_audit_20261006_v2/validation/stairs_current_gains/candidate91000_x_legacy_impratio10/index.html), including the first-contact figures.
+
+### What we learned about the other proposed causes
+
+1. **kp/kd:** the [gain sweep](../tools/results/gain_sensitivity_20261005_v1/index.html) has mixed results. Increasing kd from 0.7 to 0.84 reduces candidate Y vibration about 9%, but increases original Y vibration about 22%. There is no universal gain fix here. The reconstructed damping term dissipates energy in this model; a large damping torque alone does not establish a bad kd.
+2. **Gate chatter:** freezing gate weights after five seconds does not consistently reduce vibration. The quiet candidate Y case mostly stops moving. Gate activity can respond to the changing robot state; it is not established as the independent root cause.
+3. **Observation timing and history:** fresh observations help some cases and hurt others. Adding delay only to the actor's previous-action input severely destabilizes gait. Preserve the trained observation/history convention during the first contact-setting comparison.
+4. **50 Hz versus 200 Hz:** successful contact-setting cases retain those rates. The ratio alone therefore does not establish a fault. Smaller physics steps reduce vibration in several tests, but are a separate, more involved change than the first recommendation.
+5. **Rewards:** stronger smoothness penalties are not justified as the first response to this measured evaluation mismatch. The policy remains a valid subject of investigation, but assess it under a consistent contact setup before another training run.
+
+### Exactly what to do next
+
+- [ ] Manually change **only** `impratio="100"` to `impratio="10"` in `xterra_mjlab/svanm2_moe_stair_sim/scene.xml:4`.
+- [ ] Leave kp=18, kd=0.7, target limits, frequencies, history and rewards unchanged for this first comparison. No retraining is required to test this viewer setting. Do not use `--rebuild-scene`, which regenerates the XML from its builder.
+- [ ] Restart the viewer, record the newest91000, and compare flat X, flat Y and the 10 cm stairs. Use a fresh process/run directory for each attempt. Then repeat with preserved original90000. Follow [recording guide 19](19_RECORD_MY_INTERACTIVE_RUN.md).
+- [ ] Judge vibration together with actual speed, heading, falls and full traversal. Keep unsuccessful recordings too.
+- [ ] Only after that comparison, decide whether residual problems justify a separate gain or reward experiment. Do not change the gate architecture/frequency on the basis of gate movement alone.
+
+```bash
+cd /home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3
+xterra_mjlab/.venv/bin/python xterra_mjlab/svanm2_moe_stair_sim/run_interactive_sim.py \
+  --checkpoint-file xterra_mjlab/evaluation_runs/moe_swing013_latest/latest.pt \
+  --track 1 --device cuda:0 --observation-timing legacy \
+  --log-dir "tools/results/interactive/impratio10_candidate91000_$(date +%Y%m%d_%H%M%S)"
+```
+
+This command uses newest91000 SHA-256 `dec9775d4b368b69964dde679985455d8b723d5af7fb2d24e8798fa4fdd66da4`; original90000 remains SHA-256 `440bbb28d554f75db38bfd163351c04ea4a32d9d06764c37b7e6071d41daa5cb`. The diagnostic suites verified both weights and live controller/scene hashes remain unchanged.
+
+**Scope:** the audit changed diagnostic tools, plots and documentation only. It did not edit live scene/controller, rewards, training, checkpoints or server files. Temporary simulation overrides were confined to the diagnostic process. These findings identify a major contributor to simulator jitter, not the root cause of recorded real-robot jitter. Wider simulation limits remain unchanged; this does not validate them for hardware.
+
 ## Latest follow-up: +Y 0.30 m/s, equal four-second comparison
 
 Reviewed actual recordings `comparison_y030_20261005_021830` on 2026-10-05. The existing eight-second comparison is incomplete: original provides 7.12 seconds and candidate 4.52 seconds after settling. Preserve that report, but compare [equal four-second windows](../tools/results/interactive/comparison_y030_20261005_021830/comparison_equal4s/index.html), with [exact metrics](../tools/results/interactive/comparison_y030_20261005_021830/comparison_equal4s/comparison.json). Both selected windows are complete, have matching recorded control/scene settings, and have no prior or current stair contact. Manual ramps and gait phase can still differ; this is one pair, not a general success estimate.

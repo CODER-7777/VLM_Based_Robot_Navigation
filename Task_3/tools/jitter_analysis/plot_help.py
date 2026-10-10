@@ -15,13 +15,19 @@ def box(image, content):
 
 
 def reading_intro(m, s, page_dir):
-    vx, stand, ramp = m["vx"], m["stand"], m["ramp"]
+    vx = m["command_vector"][0] if "command_vector" in m else m["vx"]
+    stand, ramp = m["stand"], m["ramp"]
     full = stand + ramp
     schedule = (f'For the first {stand:g} seconds the requested speed is zero. '
                 f'From {stand:g} to {full:g} seconds it gradually rises to {vx:g} m/s '
                 f'({vx*100:g} cm/s), then stays at that speed until the run stops.')
     if ramp == 0:
         schedule = f'The requested speed is zero until {stand:g} seconds, then {vx:g} m/s until the run stops.'
+    if "command_vector" in m:
+        schedule = (f'For the first {stand:g} seconds all speed requests are zero. '
+                    f'Over the next {ramp:g} seconds they ramp to '
+                    f'[vx, vy, yaw rate] = {html.escape(str(m["command_vector"]))} '
+                    '(m/s, m/s, rad/s), then stay constant until the run stops.')
     marker = ('There is no stair-contact line in this run.' if s["first_stair_contact_s"] is None
               else f'The red vertical dotted line marks the first loaded foot/stair contact at {s["first_stair_contact_s"]:.3f} simulation seconds.')
     outcome = {
@@ -65,7 +71,7 @@ def plot_explanation(image, m=None, s=None, metrics=None):
                 end = phase["start_s"] + phase["duration_s"]
                 content += (f'<p><b>This run:</b> during {phase["start_s"]:.2f}–{end:.2f} s, '
                             f'mean body-forward speed is <b>{phase["mean_vx_body"]:.3f} m/s</b> '
-                            f'for a <b>{m["vx"]:.2f} m/s</b> request. Maximum tilt over the whole run is '
+                            f'for a <b>{(m["command_vector"][0] if "command_vector" in m else m["vx"]):.2f} m/s</b> forward request. Maximum tilt over the whole run is '
                             f'{metrics["max_tilt_deg"]:.2f}°; ending heading is {metrics["final_yaw_deg"]:.2f}°. '
                             'These describe this recorded run, not a general success rate.</p>')
         return box(image, content)
