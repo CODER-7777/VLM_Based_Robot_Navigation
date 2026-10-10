@@ -1,0 +1,31 @@
+{
+  "checkpoint": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/runs/gqft_spatial_attention/best.pt",
+  "split": "test",
+  "reference_history": 24,
+  "fixed_reference_tasks": true,
+  "histories": [
+    {
+      "history": 24,
+      "ade_px": 10.09098193359375,
+      "fde_px": 16.591120147705077,
+      "length_mae": 0.19166666666666668,
+      "endpoint_5px": 0.08333333333333333,
+      "endpoint_10px": 0.375,
+      "visible_points": 3000,
+      "queries": 120,
+      "signature_samples": 120,
+      "signature_sequences": 24,
+      "signature_cross_sequence_eligible": 120,
+      "signature_reference_curve_points": 25,
+      "nn_cosine_mean": 0.9724164605140686,
+      "nn_full_curve_gap_m_mean": 0.1139882355928421,
+      "nn_endpoint_gap_m_mean": 0.23166337609291077,
+      "signature_ambiguity": 0.0,
+      "signature_close_pairs": 4,
+      "signature_ambiguity_curve_gap_m": 0.1,
+      "prefix_ade_px": 10.09098193359375
+    }
+  ],
+  "history_selection_performed": false,
+  "selection_note": "Test data is reporting-only; select history on validation."
+}

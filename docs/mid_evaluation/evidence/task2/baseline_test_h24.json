@@ -1,0 +1,31 @@
+{
+  "checkpoint": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/checkpoints/gqft_hsgm_best.pt",
+  "split": "test",
+  "reference_history": 24,
+  "fixed_reference_tasks": true,
+  "histories": [
+    {
+      "history": 24,
+      "ade_px": 9.63094526163737,
+      "fde_px": 15.84743332862854,
+      "length_mae": 0.0,
+      "endpoint_5px": 0.1,
+      "endpoint_10px": 0.39166666666666666,
+      "visible_points": 3000,
+      "queries": 120,
+      "signature_samples": 120,
+      "signature_sequences": 24,
+      "signature_cross_sequence_eligible": 120,
+      "signature_reference_curve_points": 25,
+      "nn_cosine_mean": 0.9834133386611938,
+      "nn_full_curve_gap_m_mean": 0.10595934838056564,
+      "nn_endpoint_gap_m_mean": 0.21626973152160645,
+      "signature_ambiguity": 0.0,
+      "signature_close_pairs": 16,
+      "signature_ambiguity_curve_gap_m": 0.1,
+      "prefix_ade_px": 9.63094526163737
+    }
+  ],
+  "history_selection_performed": false,
+  "selection_note": "Test data is reporting-only; select history on validation."
+}

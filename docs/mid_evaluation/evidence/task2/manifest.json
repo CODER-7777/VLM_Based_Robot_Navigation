@@ -1,0 +1,54 @@
+{
+  "review_date": "2026-10-10",
+  "scope": "Copies of existing artifacts, not new evaluations. Source and copy SHA-256 are identical.",
+  "records": [
+    {
+      "source": "Task_2/gqft_algorithm_sharing_vivekananda/results/isl_test_h24.json",
+      "snapshot": "docs/mid_evaluation/evidence/task2/baseline_test_h24.json",
+      "bytes": 1060,
+      "sha256": "650bbdf599ee298793cf77d1388998c17b99a6d9d9cfe47b47d5996cde14e20a"
+    },
+    {
+      "source": "Task_2/gqft_algorithm_sharing_vivekananda/results/spatial_attn_test_h24.json",
+      "snapshot": "docs/mid_evaluation/evidence/task2/attention_test_h24.json",
+      "bytes": 1085,
+      "sha256": "5d150b972389e63a3ae12f2339a8e36352636bd23cfe688e054137972079cad1"
+    },
+    {
+      "source": "Task_2/gqft_algorithm_sharing_vivekananda/results/spatial_yaw_test.json",
+      "snapshot": "docs/mid_evaluation/evidence/task2/yaw_test_h24.json",
+      "bytes": 1066,
+      "sha256": "bd74deb16781ac24e884654c331bf04c58acbb51f81fd133d8cd13981e9a42b7"
+    },
+    {
+      "source": "Task_2/gqft_algorithm_sharing_vivekananda/analysis/validation_failure_20261009/diagnostics.json",
+      "snapshot": "docs/mid_evaluation/evidence/task2/validation_diagnostics.json",
+      "bytes": 159160,
+      "sha256": "65e62895d84efcf4563d5772f3a659130c117aa57e8c2ef581495d1cc50c0700"
+    },
+    {
+      "source": "Task_2/gqft_algorithm_sharing_vivekananda/analysis/label_geometry_20261009/oracle_geometry.json",
+      "snapshot": "docs/mid_evaluation/evidence/task2/geometry_oracle.json",
+      "bytes": 52145,
+      "sha256": "92725e98513e4866b6f338e928c1e5650cf4d5878c33a83e0a1b250ffbe34af4"
+    },
+    {
+      "source": "Task_2/gqft_algorithm_sharing_vivekananda/analysis/verification/cpu_contract_checks_server.json",
+      "snapshot": "docs/mid_evaluation/evidence/task2/cpu_contract_checks.json",
+      "bytes": 706,
+      "sha256": "85053d639114c7a8df243aef58a3e5241a57aa53f8e2424f4d8656434abc8a0a"
+    },
+    {
+      "source": "Task_2/gqft_algorithm_sharing_vivekananda/analysis/figures/validation_comparison.png",
+      "snapshot": "docs/mid_evaluation/figures/task2_validation_comparison.png",
+      "bytes": 149699,
+      "sha256": "8b3e802c9ffc4cb73fea98317c7477516a05471fed4aa1bda63ecfd5edb70bd8"
+    },
+    {
+      "source": "Task_2/gqft_algorithm_sharing_vivekananda/analysis/figures/geometry_failure.png",
+      "snapshot": "docs/mid_evaluation/figures/task2_geometry_failure.png",
+      "bytes": 128491,
+      "sha256": "c5420988922215bf5c936df3f2f90239e5b7e06d874550e170fc825884e3d503"
+    }
+  ]
+}

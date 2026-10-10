@@ -1,0 +1,24 @@
+{
+  "baseline_strict_loading": true,
+  "attention_strict_loading": true,
+  "yaw_strict_loading": true,
+  "flow_no_double_normalization_and_valid_mask": true,
+  "pitch_sign_and_left_axis": {
+    "correct_forward_m": 1.0,
+    "legacy_wrong_forward_m": 0.5
+  },
+  "baseline_all_outputs_bit_identical": true,
+  "attention_all_outputs_bit_identical": true,
+  "yaw_all_outputs_bit_identical": true,
+  "contradictory_config_rejected": true,
+  "fixed_rig_oracle_geometry": {
+    "max_error_px": 6.103515625e-05,
+    "flow_and_3d_labels_unchanged": true
+  },
+  "fixed_rig_cpu_backward": {
+    "loss": 0.1405710130929947,
+    "finite_gradients": true,
+    "checkpoint_written": false,
+    "optimizer_steps": 0
+  }
+}
