@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Toaster comparison and kitchen view</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#153c2c;color:#fff;font:16px system-ui,sans-serif;line-height:1.5}main{max-width:1320px;margin:auto;padding:24px}h1{margin:0 0 8px;font-size:28px}h2{font-size:23px;margin:26px 0 10px}p{margin:8px 0 16px}a{color:#bbf7d0}.compare{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}figure{margin:0;background:#102e23;border-radius:8px;overflow:hidden}figcaption{padding:10px 14px;font-weight:600}figure img{display:block;width:100%;height:auto}button,.button{display:inline-block;background:#a7f3d0;color:#123528;border:0;border-radius:6px;padding:12px 18px;font:600 16px system-ui,sans-serif;cursor:pointer;text-decoration:none}.secondary{margin-left:12px}iframe{display:block;border:1px solid #608777;border-radius:8px;width:100%;height:1020px;background:#18221e;margin-top:16px}iframe[hidden]{display:none}.note{color:#c9e3d5;font-size:14px}details{margin:16px 0}details img{width:100%;max-width:1100px;margin-top:12px}footer{border-top:1px solid #4c7060;margin-top:28px;padding-top:16px}#room-preview{max-width:800px;margin-top:16px}#room-preview img{width:100%;display:block;border-radius:6px}@media(max-width:640px){main{padding:16px}.compare{grid-template-columns:1fr}.secondary{margin:12px 0 0;display:block}iframe{height:1150px}}
+  </style>
+</head>
+<body>
+<main>
+  <h1>Toaster — comparison, then kitchen view</h1>
+  <p>Compare the photographed toaster with the current model, then view it on the kitchen counter.</p>
+  <h2>1. Real photo and current PBR scene</h2>
+  <div class="compare">
+    <figure><figcaption>Real photograph</figcaption><img src="/tour-assets/comparison/real_crop.jpg" alt="Original photograph of the Black and Decker toaster on the kitchen counter" width="600" height="480"></figure>
+    <figure><figcaption>Current toaster in the kitchen</figcaption><img src="/tour-assets/comparison/pbr_crop.jpg" alt="Current original PBR toaster rendered on the kitchen counter at the same camera pose" width="600" height="480"></figure>
+  </div>
+  <p class="note">Same calibrated camera and crop. The Hamilton Beach model retains its original metallic textures; its shape and controls differ from the Black &amp; Decker in the photo.</p>
+  <details><summary>Earlier Gaussian comparison</summary><p class="note">This older comparison uses Gaussian splats. The current kitchen view below renders the PBR model directly.</p><img src="/all-preview/gaussian_toaster.jpg" loading="lazy" alt="Earlier real photo, previous Gaussian and updated Gaussian toaster comparison"></details>
+  <h2 id="room-heading">2. See the toaster in the kitchen</h2>
+  <p>Start close to the toaster on the counter. Drag to inspect it in the room, or choose <b>Walk through home</b> to move through the kitchen.</p>
+  <button id="show-room" type="button">Show toaster in the kitchen</button>
+  <a class="secondary" href="/kitchen-room" target="_blank" rel="noopener">Open room view in a full page ↗</a>
+  <div id="room-preview"><img src="/tour-assets/comparison/pbr_room.jpg" alt="Current PBR toaster shown within the kitchen, with surrounding counter and cabinets" loading="lazy"></div>
+  <iframe id="room" title="Interactive kitchen with the PBR toaster" hidden allow="fullscreen"></iframe>
+  <p id="room-status" class="note" role="status">The interactive room loads when you click the button.</p>
+  <footer><p><a href="/comparisons">All earlier object comparisons</a> · <a href="/models">Rotate individual models</a> · <a href="/home-tour">Full home tour</a> · <a href="/gaussian">Gaussian RGB-D</a></p><p class="note">Toaster by <a href="https://sketchfab.com/3d-models/toaster-0d39352a32404ce7b71b8ac020844949">AtTheSpeedOf</a>, CC BY 4.0.</p></footer>
+</main>
+<script>
+  const button=document.getElementById('show-room'),room=document.getElementById('room');
+  button.addEventListener('click',()=>{
+    if(!room.getAttribute('src'))room.src='/kitchen-room';
+    room.hidden=false;
+    document.getElementById('room-preview').hidden=true;
+    button.textContent='Kitchen view opened';
+    document.getElementById('room-status').textContent='Loading the interactive kitchen may take about a minute. Drag to orbit when the model appears.';
+    room.scrollIntoView({behavior:'smooth',block:'start'});
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+# Large dataset artifacts copied from ISL are kept locally.
+scenes/
+previews/
+reference_photos/
+__pycache__/

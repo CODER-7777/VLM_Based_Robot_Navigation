@@ -1,0 +1,254 @@
+[
+  {
+    "old": "counter_sinkrun",
+    "new": "counter_sinkrun_photo_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/counter_sinkrun_photo_v3/fit.json",
+    "nodes": 2,
+    "method": "Whole-run photo stone"
+  },
+  {
+    "old": "counter_rangeside",
+    "new": "counter_rangeside_photo_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/counter_rangeside_photo_v3/fit.json",
+    "nodes": 2,
+    "method": "Whole-run photo stone"
+  },
+  {
+    "old": "counter_island",
+    "new": "counter_island_photo_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/counter_island_photo_v3/fit.json",
+    "nodes": 2,
+    "method": "Whole-run photo stone"
+  },
+  {
+    "old": "counter_prep",
+    "new": "counter_prep_photo_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/counter_prep_photo_v3/fit.json",
+    "nodes": 2,
+    "method": "Whole-run photo stone"
+  },
+  {
+    "old": "counter_bar",
+    "new": "counter_bar_photo_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/counter_bar_photo_v3/fit.json",
+    "nodes": 2,
+    "method": "Whole-run photo stone"
+  },
+  {
+    "old": "faucet_main_style",
+    "new": "faucet_main_style_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/faucet_main_style_v3/fit.json",
+    "nodes": 4,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "hot_tap_s4_style",
+    "new": "hot_tap_s4_style_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/hot_tap_s4_style_v3/fit.json",
+    "nodes": 4,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "soap_pump_p_lathe",
+    "new": "soap_pump_p_lathe_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/soap_pump_p_lathe_v3/fit.json",
+    "nodes": 2,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "air_gap_p_lathe",
+    "new": "air_gap_p_lathe_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/air_gap_p_lathe_v3/fit.json",
+    "nodes": 2,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "button_p_lathe",
+    "new": "button_p_lathe_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/button_p_lathe_v3/fit.json",
+    "nodes": 2,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "soap_dish_p_v2",
+    "new": "soap_dish_p_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/soap_dish_p_v3/fit.json",
+    "nodes": 2,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "bottles_v20",
+    "new": "bottles_v30",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/bottles_v30/fit.json",
+    "nodes": 1,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "bottles_v21",
+    "new": "bottles_v31",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/bottles_v31/fit.json",
+    "nodes": 1,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "bottles_v22",
+    "new": "bottles_v32",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/bottles_v32/fit.json",
+    "nodes": 1,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "bottles_v23",
+    "new": "bottles_v33",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/bottles_v33/fit.json",
+    "nodes": 1,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "canister_l_v2",
+    "new": "canister_l_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/canister_l_v3/fit.json",
+    "nodes": 4,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "canister_r_v2",
+    "new": "canister_r_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/canister_r_v3/fit.json",
+    "nodes": 4,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "coffee_machine2_v2",
+    "new": "coffee_machine2_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/coffee_machine2_v3/fit.json",
+    "nodes": 3,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "frother_v2",
+    "new": "frother_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/frother_v3/fit.json",
+    "nodes": 3,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "glass_kettle_v2",
+    "new": "glass_kettle_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/glass_kettle_v3/fit.json",
+    "nodes": 6,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "knife_block_round_v2",
+    "new": "knife_block_round_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/knife_block_round_v3/fit.json",
+    "nodes": 3,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "prep_faucet_v2",
+    "new": "prep_faucet_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/prep_faucet_v3/fit.json",
+    "nodes": 7,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "prep_soap_v2",
+    "new": "prep_soap_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/prep_soap_v3/fit.json",
+    "nodes": 2,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "range_kettle_v2",
+    "new": "range_kettle_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/range_kettle_v3/fit.json",
+    "nodes": 3,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "soap_bottle_v2",
+    "new": "soap_bottle_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/soap_bottle_v3/fit.json",
+    "nodes": 2,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "tea_tray_v2",
+    "new": "tea_tray_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/tea_tray_v3/fit.json",
+    "nodes": 7,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "phone_dock_v2",
+    "new": "phone_dock_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/phone_dock_v3/fit.json",
+    "nodes": 3,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "tv_remote_v2",
+    "new": "tv_remote_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/tv_remote_v3/fit.json",
+    "nodes": 2,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "bread_basket_v2",
+    "new": "bread_basket_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/bread_basket_v3/fit.json",
+    "nodes": 3,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "phone_v2",
+    "new": "phone_v4",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/phone_v4/fit.json",
+    "nodes": 11,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "grinder_v2",
+    "new": "grinder_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/grinder_v3/fit.json",
+    "nodes": 5,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "blue_jug_v2",
+    "new": "blue_jug_v4",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/blue_jug_v4/fit.json",
+    "nodes": 1,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "paper_towel_v2",
+    "new": "paper_towel_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/paper_towel_v3/fit.json",
+    "nodes": 2,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "caddy_v2",
+    "new": "caddy_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/caddy_v3/fit.json",
+    "nodes": 5,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "knife_block_v2",
+    "new": "knife_block_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/knife_block_v3/fit.json",
+    "nodes": 4,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  },
+  {
+    "old": "frogs_v2",
+    "new": "frogs_v3",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/frogs_v3/fit.json",
+    "nodes": 8,
+    "method": "Retained photo-fit geometry and textures; physical roughness/metal/coat restored"
+  }
+]

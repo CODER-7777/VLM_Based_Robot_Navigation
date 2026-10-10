@@ -1,0 +1,21 @@
+{
+  "shared_audit_modified": false,
+  "placement_checks_modified": false,
+  "exceptions": [
+    {
+      "object": "blue_jug_v4",
+      "generic_jug_min_span_m": 0.1,
+      "private_min_span_m": 0.04,
+      "actual_height_m": 0.051,
+      "actual_max_span_m": 0.07,
+      "reason": "Photo-fitted miniature creamer; exact product size remains uncertain."
+    },
+    {
+      "object": "phone_v4",
+      "generic_phone_max_span_m": 0.3,
+      "private_max_span_m": 0.35,
+      "actual_max_span_m": 0.316382,
+      "reason": "Desk-phone product including handset/cord; explicit size review rather than a placement failure."
+    }
+  ]
+}
