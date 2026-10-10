@@ -1,3 +1,9 @@
 [submodule "genesis-world"]
 	path = genesis-world
 	url = https://github.com/Genesis-Embodied-AI/Genesis.git
+[submodule "Task_2/gqft_algorithm_sharing_vivekananda"]
+	path = Task_2/gqft_algorithm_sharing_vivekananda
+	url = https://github.com/CODER-7777/gqft_algorithm_sharing_vivekananda.git
+[submodule "Task_3/xterra_mjlab"]
+	path = Task_3/xterra_mjlab
+	url = https://github.com/CODER-7777/xterra_mjlab.git
