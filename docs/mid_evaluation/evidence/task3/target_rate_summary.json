@@ -1,0 +1,119 @@
+{
+  "recorded_attempts": 41,
+  "qualifying_ascent_windows": 19,
+  "reference_windows": 6,
+  "reference_policy_intervals": 1200,
+  "family_order": [
+    "hip",
+    "thigh",
+    "calf"
+  ],
+  "reference_family_p99_rad_s": [
+    5.674332767724087,
+    9.019758611925607,
+    16.29229205845953
+  ],
+  "exploratory_margin": 1.25,
+  "exploratory_speed_limits_rad_s": [
+    7.092915959655109,
+    11.274698264907009,
+    20.365365073074415,
+    7.092915959655109,
+    11.274698264907009,
+    20.365365073074415,
+    7.092915959655109,
+    11.274698264907009,
+    20.365365073074415,
+    7.092915959655109,
+    11.274698264907009,
+    20.365365073074415
+  ],
+  "groups": {
+    "wide/before_stair_contact": {
+      "windows": 2,
+      "policy_intervals": 400,
+      "family_p50_rad_s": [
+        0.34738164395125515,
+        0.7828272879130808,
+        1.4813452959074143
+      ],
+      "family_p95_rad_s": [
+        2.092558769511099,
+        3.8240179419552294,
+        7.444031387574288
+      ],
+      "family_p99_rad_s": [
+        3.9289454931894654,
+        6.111640036111666,
+        12.788175374281115
+      ],
+      "joints_over_reference_fraction": 0.0014583333333333334,
+      "proposed_cost_mean": 0.0003483326856736099
+    },
+    "wide/after_stair_contact": {
+      "windows": 6,
+      "policy_intervals": 1200,
+      "family_p50_rad_s": [
+        1.7473013140277063,
+        2.82607376575727,
+        6.1500877141964745
+      ],
+      "family_p95_rad_s": [
+        7.660165643326455,
+        11.07126787304391,
+        25.76429292561967
+      ],
+      "family_p99_rad_s": [
+        11.778288636367307,
+        17.431734636441888,
+        37.07187026737282
+      ],
+      "joints_over_reference_fraction": 0.06618055555555556,
+      "proposed_cost_mean": 0.2808039375698085
+    },
+    "tight/before_stair_contact": {
+      "windows": 6,
+      "policy_intervals": 1200,
+      "family_p50_rad_s": [
+        0.4933548159899186,
+        1.0096162557607524,
+        1.5068635344500276
+      ],
+      "family_p95_rad_s": [
+        2.962325802071367,
+        5.386037230490703,
+        9.830613583321313
+      ],
+      "family_p99_rad_s": [
+        5.674332767724087,
+        9.019758611925607,
+        16.29229205845953
+      ],
+      "joints_over_reference_fraction": 0.003958333333333334,
+      "proposed_cost_mean": 0.0031752375096795052
+    },
+    "tight/after_stair_contact": {
+      "windows": 5,
+      "policy_intervals": 1000,
+      "family_p50_rad_s": [
+        1.1599041521543292,
+        1.8791705369959755,
+        2.8979569673554266
+      ],
+      "family_p95_rad_s": [
+        5.79357557231675,
+        8.568970412017922,
+        17.162774503246645
+      ],
+      "family_p99_rad_s": [
+        10.961930929693033,
+        15.030870810154084,
+        28.402640014892583
+      ],
+      "joints_over_reference_fraction": 0.028,
+      "proposed_cost_mean": 0.15519407147903486
+    }
+  },
+  "method": "Actual consecutive 50 Hz clamped-target samples; constant-command upright windows from prior review; no simulation",
+  "caveat": "The approach itself may jitter; speed/gait states differ; P99 and margin are exploratory, not actuator calibration or a learned fix"
+}

@@ -1,0 +1,424 @@
+{
+  "provenance": "Reads NEW scripted diagnostic simulations, not manual keyboard recordings.",
+  "generated_from": "protocol.json and saved trace.npz files; no new simulation",
+  "protected_hashes_unchanged": true,
+  "flat_window_s": [
+    5,
+    11
+  ],
+  "current_gains": [
+    18,
+    0.7
+  ],
+  "current_gain_flat_pairs": [
+    {
+      "checkpoint": "original90000",
+      "direction": "x",
+      "q_before_deg": 0.3801637852421899,
+      "q_after_deg": 0.10319725345490333,
+      "reduction_percent": 72.85452811104568,
+      "speed_before": 0.21513670517775524,
+      "speed_after": 0.24615959515455993,
+      "tracking_rmse_before": 0.10640441187035286,
+      "tracking_rmse_after": 0.056080692766707116
+    },
+    {
+      "checkpoint": "original90000",
+      "direction": "y",
+      "q_before_deg": 0.2810458720016113,
+      "q_after_deg": 0.157474115353053,
+      "reduction_percent": 43.96853644157059,
+      "speed_before": 0.20230835858836713,
+      "speed_after": 0.20228806938593816,
+      "tracking_rmse_before": 0.10259671361050471,
+      "tracking_rmse_after": 0.10009409270986672
+    },
+    {
+      "checkpoint": "candidate91000",
+      "direction": "x",
+      "q_before_deg": 0.2842591973282615,
+      "q_after_deg": 0.12001311813500015,
+      "reduction_percent": 57.780392239548384,
+      "speed_before": 0.23482195263257694,
+      "speed_after": 0.24636875259605204,
+      "tracking_rmse_before": 0.08212178673407299,
+      "tracking_rmse_after": 0.056179784497090074
+    },
+    {
+      "checkpoint": "candidate91000",
+      "direction": "y",
+      "q_before_deg": 0.38154379186426385,
+      "q_after_deg": 0.1690264509116902,
+      "reduction_percent": 55.6993313701138,
+      "speed_before": 0.20532433957304466,
+      "speed_after": 0.2420448201643338,
+      "tracking_rmse_before": 0.11199989461127935,
+      "tracking_rmse_after": 0.06077088800478849
+    }
+  ],
+  "repeated_fresh_reduction_percent": [
+    57.10437192422493,
+    49.38141464629684,
+    56.863861609340674,
+    58.79682874468828,
+    66.3695706924283,
+    32.93935831579381,
+    45.58210203402293,
+    75.1878222370229,
+    64.26900786813682,
+    36.79439685508942,
+    58.24953337931258,
+    43.71606400897752
+  ],
+  "stair_geometry": {
+    "step_1_1_top_m": 0.1,
+    "step_1_12_top_m": 1.2
+  },
+  "stair_verifications": [
+    {
+      "run": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/tools/results/control_loop_audit_20261006_v2/validation/stairs_current_gains/original90000_x_legacy",
+      "outcome": "lane_exit",
+      "verified_traversal": false,
+      "kp": 18.0,
+      "kd": 0.7,
+      "impratio": 100.0,
+      "final_time_s": 24.684999999999373,
+      "max_valid_traversal_hold_s": 0.0,
+      "final_foot_xyz_m": [
+        [
+          1.2573754330555225,
+          -10.323385526893794,
+          0.5230866767346316
+        ],
+        [
+          1.0644616766827684,
+          -10.52403795734352,
+          0.3766113060720794
+        ],
+        [
+          1.0734029412558426,
+          -10.134251210925036,
+          0.5186762404030144
+        ],
+        [
+          0.8729009493852147,
+          -10.130044653139247,
+          0.32156555104878215
+        ]
+      ],
+      "each_foot_loaded_platform": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "final_tilt_deg": 23.17833403817062,
+      "final_base_clearance_m": 0.33965363025809914,
+      "final_nonfoot_force_N": 0.0,
+      "first_contact_time_s": 9.385000000000067,
+      "first_contact_foot_center_z_m": 0.06372301427465636
+    },
+    {
+      "run": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/tools/results/control_loop_audit_20261006_v2/validation/stairs_current_gains/original90000_x_legacy_impratio10",
+      "outcome": "traversed",
+      "verified_traversal": true,
+      "kp": 18.0,
+      "kd": 0.7,
+      "impratio": 10.0,
+      "final_time_s": 24.60499999999939,
+      "max_valid_traversal_hold_s": 0.5000000000000003,
+      "final_foot_xyz_m": [
+        [
+          4.163271410079211,
+          -9.061558814525878,
+          1.2213031208055767
+        ],
+        [
+          4.286794713751888,
+          -9.237415073340411,
+          1.2215204838536151
+        ],
+        [
+          3.864965450254686,
+          -9.123679243554884,
+          1.2276429346601119
+        ],
+        [
+          3.7863385181527085,
+          -9.33242359822703,
+          1.2213304410244905
+        ]
+      ],
+      "each_foot_loaded_platform": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_tilt_deg": 1.1561248678315243,
+      "final_base_clearance_m": 0.349791139203637,
+      "final_nonfoot_force_N": 0.0,
+      "first_contact_time_s": 8.679999999999957,
+      "first_contact_foot_center_z_m": 0.053259341311244934
+    },
+    {
+      "run": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/tools/results/control_loop_audit_20261006_v2/validation/stairs_current_gains/candidate91000_x_legacy",
+      "outcome": "lane_exit",
+      "verified_traversal": false,
+      "kp": 18.0,
+      "kd": 0.7,
+      "impratio": 100.0,
+      "final_time_s": 15.975000000001097,
+      "max_valid_traversal_hold_s": 0.0,
+      "final_foot_xyz_m": [
+        [
+          -0.045389448977802005,
+          -8.533515754829557,
+          0.021008408894253733
+        ],
+        [
+          0.2025968583321454,
+          -8.415274367051376,
+          0.09627466858331568
+        ],
+        [
+          -0.27539957700497786,
+          -8.904831041145629,
+          0.021757413508719986
+        ],
+        [
+          -0.0685235444563981,
+          -8.979745718927227,
+          0.02138446483987355
+        ]
+      ],
+      "each_foot_loaded_platform": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "final_tilt_deg": 7.065396051926239,
+      "final_base_clearance_m": 0.3693041274647928,
+      "final_nonfoot_force_N": 0.0,
+      "first_contact_time_s": 9.46500000000008,
+      "first_contact_foot_center_z_m": 0.041029782589581204
+    },
+    {
+      "run": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/tools/results/control_loop_audit_20261006_v2/validation/stairs_current_gains/candidate91000_x_legacy_impratio10",
+      "outcome": "traversed",
+      "verified_traversal": true,
+      "kp": 18.0,
+      "kd": 0.7,
+      "impratio": 10.0,
+      "final_time_s": 25.474999999999216,
+      "max_valid_traversal_hold_s": 0.5000000000000003,
+      "final_foot_xyz_m": [
+        [
+          4.144697128633434,
+          -9.056074653298523,
+          1.2212421321405327
+        ],
+        [
+          4.2647978344549,
+          -9.243400645706062,
+          1.2215539328462475
+        ],
+        [
+          3.821454888411744,
+          -9.115546970016611,
+          1.2230050378118107
+        ],
+        [
+          3.7679408647945407,
+          -9.35978858315279,
+          1.2213923372893025
+        ]
+      ],
+      "each_foot_loaded_platform": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_tilt_deg": 1.0709940549880412,
+      "final_base_clearance_m": 0.35521597236767843,
+      "final_nonfoot_force_N": 0.0,
+      "first_contact_time_s": 8.684999999999958,
+      "first_contact_foot_center_z_m": 0.04386148201344997
+    },
+    {
+      "run": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/tools/results/control_loop_audit_20261006_v2/validation/stairs_reference/original90000_x_legacy",
+      "outcome": "timeout_incomplete",
+      "verified_traversal": false,
+      "kp": 20.0,
+      "kd": 0.7,
+      "impratio": 100.0,
+      "final_time_s": 34.99499999999945,
+      "max_valid_traversal_hold_s": 0.0,
+      "final_foot_xyz_m": [
+        [
+          0.6929422838988821,
+          -9.724770248171044,
+          0.4085564634344119
+        ],
+        [
+          0.6045302983359162,
+          -10.045673771624811,
+          0.32130065524544366
+        ],
+        [
+          0.21394252056132276,
+          -9.572276401256692,
+          0.12132997935217035
+        ],
+        [
+          0.14226628872326386,
+          -10.0949119377012,
+          0.13501442707443378
+        ]
+      ],
+      "each_foot_loaded_platform": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "final_tilt_deg": 22.06613725821247,
+      "final_base_clearance_m": 0.18231641617484834,
+      "final_nonfoot_force_N": 22.767458997538185,
+      "first_contact_time_s": 8.69999999999996,
+      "first_contact_foot_center_z_m": 0.056186366965415624
+    },
+    {
+      "run": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/tools/results/control_loop_audit_20261006_v2/validation/stairs_reference/original90000_x_legacy_impratio10",
+      "outcome": "traversed",
+      "verified_traversal": true,
+      "kp": 20.0,
+      "kd": 0.7,
+      "impratio": 10.0,
+      "final_time_s": 23.69999999999957,
+      "max_valid_traversal_hold_s": 0.5000000000000003,
+      "final_foot_xyz_m": [
+        [
+          4.209047111817533,
+          -9.354261009238028,
+          1.2211946077448657
+        ],
+        [
+          4.275297285908721,
+          -9.552556220370008,
+          1.2635163440350163
+        ],
+        [
+          3.798186546985533,
+          -9.404530918498459,
+          1.2302095892869944
+        ],
+        [
+          3.8169531924300277,
+          -9.611632314874822,
+          1.2212416903786576
+        ]
+      ],
+      "each_foot_loaded_platform": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_tilt_deg": 0.9578636686438463,
+      "final_base_clearance_m": 0.3548228674129221,
+      "final_nonfoot_force_N": 0.0,
+      "first_contact_time_s": 8.399999999999913,
+      "first_contact_foot_center_z_m": 0.06205639427733155
+    },
+    {
+      "run": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/tools/results/control_loop_audit_20261006_v2/validation/stairs_reference/candidate91000_x_legacy",
+      "outcome": "lane_exit",
+      "verified_traversal": false,
+      "kp": 20.0,
+      "kd": 0.7,
+      "impratio": 100.0,
+      "final_time_s": 15.9900000000011,
+      "max_valid_traversal_hold_s": 0.0,
+      "final_foot_xyz_m": [
+        [
+          0.727912921466157,
+          -8.432580420281159,
+          0.05693729006394438
+        ],
+        [
+          0.726832412837694,
+          -8.657107290021095,
+          0.3246404616486225
+        ],
+        [
+          0.24437044248599052,
+          -8.72064705309756,
+          0.23954745583251108
+        ],
+        [
+          0.3646513816329795,
+          -8.78693400315964,
+          0.22398245211543574
+        ]
+      ],
+      "each_foot_loaded_platform": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "final_tilt_deg": 26.16673030788133,
+      "final_base_clearance_m": 0.29559936236468487,
+      "final_nonfoot_force_N": 0.0,
+      "first_contact_time_s": 9.40500000000007,
+      "first_contact_foot_center_z_m": 0.033593746035762234
+    },
+    {
+      "run": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/tools/results/control_loop_audit_20261006_v2/validation/stairs_reference/candidate91000_x_legacy_impratio10",
+      "outcome": "traversed",
+      "verified_traversal": true,
+      "kp": 20.0,
+      "kd": 0.7,
+      "impratio": 10.0,
+      "final_time_s": 25.369999999999237,
+      "max_valid_traversal_hold_s": 0.5000000000000003,
+      "final_foot_xyz_m": [
+        [
+          4.179277889546664,
+          -8.812354864674019,
+          1.2335413844134395
+        ],
+        [
+          4.230100027378409,
+          -9.020661397819964,
+          1.221191161841857
+        ],
+        [
+          3.7697943288056814,
+          -8.918272673547857,
+          1.221231275277027
+        ],
+        [
+          3.7968741466789386,
+          -9.160672475858716,
+          1.2278019879992201
+        ]
+      ],
+      "each_foot_loaded_platform": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_tilt_deg": 1.1203443393375079,
+      "final_base_clearance_m": 0.36030946290677757,
+      "final_nonfoot_force_N": 0.0,
+      "first_contact_time_s": 8.709999999999962,
+      "first_contact_foot_center_z_m": 0.050598541621660525
+    }
+  ],
+  "scope": "Same nominal stair start, two checkpoints, two gains; not independent seeds or hardware validation."
+}

@@ -1,0 +1,72 @@
+{
+  "review_date": "2026-10-10",
+  "scope": "Copies of existing artifacts, not new evaluations. Source and copy SHA-256 are identical.",
+  "records": [
+    {
+      "source": "Task_3/moe_jitter_audit_20260921/REPORT.md",
+      "snapshot": "docs/mid_evaluation/evidence/task3/hardware_audit_report.md",
+      "bytes": 16313,
+      "sha256": "00cbab392d995f7a2a09e541bc371aa28837e3224272d0f9cf87a3e4c0b7ff34"
+    },
+    {
+      "source": "Task_3/tools/results/20261002_matched_v1/comparison.csv",
+      "snapshot": "docs/mid_evaluation/evidence/task3/matched_90500.csv",
+      "bytes": 2186,
+      "sha256": "251682f8a0f199f9ba99705608837a3231519b298ad53980c9fd4e68ee36c98c"
+    },
+    {
+      "source": "Task_3/tools/results/20261002_stair_repeats_v1/comparison.csv",
+      "snapshot": "docs/mid_evaluation/evidence/task3/stair_starts_90500.csv",
+      "bytes": 3267,
+      "sha256": "f886c5c698497d75cf52a86901e87683c06e89608c6716206eeac37d7d0bc0e9"
+    },
+    {
+      "source": "Task_3/tools/results/time_aware_penalty_20261003/summary.json",
+      "snapshot": "docs/mid_evaluation/evidence/task3/target_rate_summary.json",
+      "bytes": 3173,
+      "sha256": "1c03b0651fd514b9398ffccca8125de5f01a70d1f72b7e5d791c2d31f8f35b30"
+    },
+    {
+      "source": "Task_3/tools/results/time_rate_integration_20261004/clearance_013_check.json",
+      "snapshot": "docs/mid_evaluation/evidence/task3/rate_clearance_integration.json",
+      "bytes": 2938,
+      "sha256": "8f4741ec6e1532447056b31b64fed57f605081c5658e6fa2bfa12d56c6d483e1"
+    },
+    {
+      "source": "Task_3/tools/results/gain_sensitivity_20261005_v1/summary.json",
+      "snapshot": "docs/mid_evaluation/evidence/task3/gain_sensitivity.json",
+      "bytes": 6584,
+      "sha256": "0e3f996d844cdf3d7830021fa0a21b963cb858b3dda57b6959c22e604490921f"
+    },
+    {
+      "source": "Task_3/tools/results/control_loop_audit_20261006_v2/audit_findings.json",
+      "snapshot": "docs/mid_evaluation/evidence/task3/contact_findings.json",
+      "bytes": 12289,
+      "sha256": "5548aba133067c33522f8b3778d137ecbc5e75a88325e25710440208167bf41e"
+    },
+    {
+      "source": "Task_3/tools/results/control_loop_audit_20261006_v2/contact_response.json",
+      "snapshot": "docs/mid_evaluation/evidence/task3/contact_response.json",
+      "bytes": 5724,
+      "sha256": "4c495f047b6b7ad7c77feeeb6d315c52a32f727940b0c33db2d391e63eeeee17"
+    },
+    {
+      "source": "Task_3/tools/results/control_loop_audit_20261006_v2/impratio_fixed_state.json",
+      "snapshot": "docs/mid_evaluation/evidence/task3/fixed_state_regularization.json",
+      "bytes": 2994,
+      "sha256": "bd60e2c4be91588af7141f6769c68ed115572d6fd7ed0b42f11e26203f27d2a0"
+    },
+    {
+      "source": "Task_3/tools/results/tier1_solver_probe_20261007/results.json",
+      "snapshot": "docs/mid_evaluation/evidence/task3/solver_probe.json",
+      "bytes": 34037,
+      "sha256": "9a54b346d336ea9dfe25c016658b4cf091d550bf89f1268836b7fb9476804983"
+    },
+    {
+      "source": "Task_3/tools/results/control_loop_audit_20261006_v2/impratio_comparison.png",
+      "snapshot": "docs/mid_evaluation/figures/task3_impratio_comparison.png",
+      "bytes": 212885,
+      "sha256": "6490d9e45ee86abebf57a10c14d8fd6724d48eebed68829cb6bb56ffa182d572"
+    }
+  ]
+}
