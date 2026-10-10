@@ -1,6 +1,6 @@
 # Evidence index and interpretation rules
 
-This review is based on the local repository, nested source checkouts, historical reports, and saved result artifacts. It did not contact ISL, collect robot data, rerun policies, launch training, or reevaluate locked test. Snapshots are byte-identical copies with source hashes in the three manifests.
+This review is based on the local repository, nested source checkouts, historical reports, and saved result artifacts. Recorded benchmark metrics were not rerun. The current source review also ran CPU regression checks for strict checkpoint/output equivalence, reward integration, recording, and short passive MuJoCo trajectories; it did not contact ISL, collect robot data, launch training, or reevaluate locked test. Snapshots are byte-identical copies with source hashes in the three manifests.
 
 ## Claim-to-artifact map
 

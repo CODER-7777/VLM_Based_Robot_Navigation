@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-10",
+  "gqft": {
+    "device": "cpu",
+    "contract_checks_passed": [
+      "strict_baseline_attention_yaw_loading",
+      "normalized_flow_preservation_and_mask",
+      "pitch_sign_and_ground_axis",
+      "bit_identical_baseline_attention_yaw_outputs",
+      "contradictory_checkpoint_config_rejection"
+    ],
+    "dataset_checks": "Skipped: server dataset absent locally",
+    "cwd": "Task_2/gqft_algorithm_sharing_vivekananda",
+    "command": "CUDA_VISIBLE_DEVICES='' PYTHONDONTWRITEBYTECODE=1 .venv/bin/python tools/verify_cpu_contracts.py"
+  },
+  "svanm2": {
+    "device": "cpu",
+    "analysis_reward_recording_tests": 13,
+    "checkpoint_tests_passed": 2,
+    "cuda_checkpoint_test": "Skipped: CUDA disabled for CPU verification",
+    "commands": [
+      {
+        "cwd": "Task_3/tools/jitter_analysis",
+        "command": "CUDA_VISIBLE_DEVICES='' PYTHONDONTWRITEBYTECODE=1 ../../xterra_mjlab/.venv/bin/python -m unittest test_target_rate_reward test_analysis test_interactive -v"
+      },
+      {
+        "cwd": "Task_3/xterra_mjlab/svanm2_moe_stair_sim",
+        "command": "CUDA_VISIBLE_DEVICES='' PYTHONDONTWRITEBYTECODE=1 ../.venv/bin/python -m unittest test_checkpoint_policy -v"
+      }
+    ]
+  },
+  "task4": {
+    "python_sources_ast_parsed": 94,
+    "shell_sources_bash_n": 6,
+    "service_and_render_execution": "Not run locally: server paths, data, Habitat/Blender/CUDA dependencies"
+  },
+  "scope": "Software/interface verification; no training, locked-test reevaluation, server connection or hardware experiment."
+}

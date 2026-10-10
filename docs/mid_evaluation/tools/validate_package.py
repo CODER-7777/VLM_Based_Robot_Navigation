@@ -135,10 +135,22 @@ def main():
         errors.append("Final kitchen counts/coverage differ from the report")
     if latest["render_info"]["width"] != 800 or latest["render_info"]["height"] != 640:
         errors.append("Final kitchen image dimensions differ from the report")
+    source_count = 0
+    source_manifest = PACKAGE / "SOURCE_MANIFEST.json"
+    if source_manifest.exists():
+        for record in load(source_manifest)["files"]:
+            path = ROOT / record["path"]
+            if not path.is_file():
+                errors.append(f"Missing indexed tool source: {record['path']}")
+                continue
+            payload = path.read_bytes()
+            if len(payload) != record["bytes"] or hashlib.sha256(payload).hexdigest() != record["sha256"]:
+                errors.append(f"Indexed tool source changed: {record['path']}")
+            source_count += 1
     links, missing_optional = check_links(errors)
     if errors:
         raise SystemExit("Validation failed:\n" + "\n".join(errors))
-    print(f"PASS: {copies} source-indexed copies, {links} report links, parsed metrics, and central numeric claims.")
+    print(f"PASS: {copies} evidence copies, {source_count} indexed tool sources, {links} report links, and central numeric claims.")
     if missing_optional:
         print(f"Extended workspace sources absent: {len(missing_optional)} links; portable evidence passed.")
     else:

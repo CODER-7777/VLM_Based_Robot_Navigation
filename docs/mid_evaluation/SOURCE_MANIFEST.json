@@ -1,0 +1,660 @@
+{
+  "scope": "Parent analysis/repair/rendering source; model/controller source versioned in independent repositories.",
+  "files": [
+    {
+      "path": "Task_3/tools/jitter_analysis/analyze.py",
+      "bytes": 14672,
+      "sha256": "adcae9e63de50a145eb649d4fb83fb6969f2f6f53dbc824e985bdb69c0e9fa28"
+    },
+    {
+      "path": "Task_3/tools/jitter_analysis/audit_control_loop.py",
+      "bytes": 15159,
+      "sha256": "b0be6e09f78f003de50976f4f07441d7f48be0a1716fc5964b95598b79b991f9"
+    },
+    {
+      "path": "Task_3/tools/jitter_analysis/audit_target_rates.py",
+      "bytes": 7034,
+      "sha256": "914de74984473e39c54f3a820790b2655957c1369fa4d575add83aba97eb9c94"
+    },
+    {
+      "path": "Task_3/tools/jitter_analysis/compare_policy_runs.py",
+      "bytes": 10541,
+      "sha256": "1a886d466d7c8e1ef63193e9d48b6e3e1fe9a957075d6df27d10aaa23f821292"
+    },
+    {
+      "path": "Task_3/tools/jitter_analysis/compare_starts.py",
+      "bytes": 2747,
+      "sha256": "0eb1dfc68f2907fbf22ddb2b4b2429f88c909fccca6d255e0d65e3e3582d0e7a"
+    },
+    {
+      "path": "Task_3/tools/jitter_analysis/diagnose_updates.py",
+      "bytes": 22324,
+      "sha256": "bf0780f60b8c073d4ab4fe5b9fcefafa6dd5169d3251d70c3b83269da800c461"
+    },
+    {
+      "path": "Task_3/tools/jitter_analysis/first_contact.py",
+      "bytes": 8966,
+      "sha256": "0bb7bd10d4d87631db45c309877d173a0dddacd06993c9925d080958b6a03adf"
+    },
+    {
+      "path": "Task_3/tools/jitter_analysis/inspect_policy_spikes.py",
+      "bytes": 15033,
+      "sha256": "f005d45bbb28da1ee38b2c0428ed5f51a8ab87d28f700dcf580f04290043bd4e"
+    },
+    {
+      "path": "Task_3/tools/jitter_analysis/interactive.py",
+      "bytes": 11110,
+      "sha256": "943d296f025af729c0724a31061b41182b2b1daf0d9b8651b7cdea1f1ed50f1b"
+    },
+    {
+      "path": "Task_3/tools/jitter_analysis/plot_help.py",
+      "bytes": 17093,
+      "sha256": "12e510154c16ff959cc8e6740147ce640b9a15f90c9112edb69ea5efe6f02857"
+    },
+    {
+      "path": "Task_3/tools/jitter_analysis/plot_interactive.py",
+      "bytes": 13842,
+      "sha256": "9de3289c6cfd8ddd384ba4b70bb35b30417bdf291f181f5bbe3f9d230bef1bad"
+    },
+    {
+      "path": "Task_3/tools/jitter_analysis/record.py",
+      "bytes": 16811,
+      "sha256": "5b423d7a485ae2c5b0af526eb0db9697cbe3e6f4edd83957ee9ca474e5b31a72"
+    },
+    {
+      "path": "Task_3/tools/jitter_analysis/review_interactive.py",
+      "bytes": 24135,
+      "sha256": "ad2826b840f708773fe4af593d06028662e5860b168106f7d0ff0662108c71ae"
+    },
+    {
+      "path": "Task_3/tools/jitter_analysis/run_suite.py",
+      "bytes": 5488,
+      "sha256": "867cb5a3435edce14edd62d604e0501e43823674284ca182b16b319cac53bb05"
+    },
+    {
+      "path": "Task_3/tools/jitter_analysis/smoke_target_rate_env.py",
+      "bytes": 3839,
+      "sha256": "24c0c4ff18db92888acc20ca51c7796f630a4fe3b22a64299c5d2f668d2e5079"
+    },
+    {
+      "path": "Task_3/tools/jitter_analysis/summarize_control_loop_audit.py",
+      "bytes": 21302,
+      "sha256": "9fbfecf0b91e1c5f29417ab5733edd5a9bd2d8aa6d1a8749e067de0047dcd4d2"
+    },
+    {
+      "path": "Task_3/tools/jitter_analysis/target_rate_reward.py",
+      "bytes": 3439,
+      "sha256": "7b40732ef5f4931a0b4b616e04f20987e984f262d4cd8a373a0e186781b0b4cf"
+    },
+    {
+      "path": "Task_3/tools/jitter_analysis/test_analysis.py",
+      "bytes": 5597,
+      "sha256": "88d5a2596bd0094844dfe27ab43c349f09d2370de48e16671abec3e3fa3d9329"
+    },
+    {
+      "path": "Task_3/tools/jitter_analysis/test_interactive.py",
+      "bytes": 4389,
+      "sha256": "ee43d61ffc33f1320353980ffdc19e0629ab0f7f9d44c874154db6ee383fdb73"
+    },
+    {
+      "path": "Task_3/tools/jitter_analysis/test_target_rate_reward.py",
+      "bytes": 6444,
+      "sha256": "6cdacacdb51ea319effcb30220f1bdaafbc9d74ce664d547ed85410038eb99de"
+    },
+    {
+      "path": "Task_3/tools/jitter_analysis/tier1_solver_probe.py",
+      "bytes": 18048,
+      "sha256": "3b206eb7489d04821fbf895fe4d6116dd0a0a92d19067ae949261e299f719221"
+    },
+    {
+      "path": "Task_4/dashboard/author_pov_route.py",
+      "bytes": 50910,
+      "sha256": "a7f7ade14303b4213201073ca08dcd8548075bd0b6fd9a97822d0b55c27ca004"
+    },
+    {
+      "path": "Task_4/dashboard/run.sh",
+      "bytes": 2152,
+      "sha256": "3bd89a5a7323c057df35c411ae17e0cc81934230aa58409d65e2e6a6decb1cf6"
+    },
+    {
+      "path": "Task_4/dashboard_restore/full_editor_proxy.py",
+      "bytes": 4364,
+      "sha256": "d4047f12b7bd06ba94d4605d34fba940338c9cba8c19fb9945065959e1f6bf2b"
+    },
+    {
+      "path": "Task_4/gaussian_corner_repair/evidence/build_dense_corner.py",
+      "bytes": 6668,
+      "sha256": "0d6354dc9ff49c1b92f9622784811d0463ce19a1648f02d5b71fd4e2f8d7ae92"
+    },
+    {
+      "path": "Task_4/gaussian_corner_repair/evidence/check_published.py",
+      "bytes": 3741,
+      "sha256": "466e394038d3a91073d884cfb6842f0b7719bab7e5bf46f2312cebdfefdc73f8"
+    },
+    {
+      "path": "Task_4/gaussian_corner_repair/evidence/compare_candidate.py",
+      "bytes": 2583,
+      "sha256": "f254804f454d0d2791a79486ab1d232e4d3f2ba9e65fb5d67bf3f5ef5abbe6f9"
+    },
+    {
+      "path": "Task_4/gaussian_corner_repair/evidence/launch_corner_services.py",
+      "bytes": 3340,
+      "sha256": "6c3c63dfa630214db92d3226258c401435bb90198dff70e3b53e26727bdba221"
+    },
+    {
+      "path": "Task_4/gaussian_corner_repair/evidence/physics_corner_server.py",
+      "bytes": 13631,
+      "sha256": "81842e3a9a869b974ae442542c86af86402bfa0e0115c4bbfdf2504c45a52b78"
+    },
+    {
+      "path": "Task_4/gaussian_corner_repair/evidence/refine_dense_appearance.py",
+      "bytes": 8348,
+      "sha256": "3df8c0deeca93ca1d39efec9d68efd7caace5d10326b8fe29ac428ce1a812911"
+    },
+    {
+      "path": "Task_4/gaussian_corner_repair/evidence/stabilize_appearance.py",
+      "bytes": 4508,
+      "sha256": "8423079653d531d4693ce082b95b0169dddd8e45093fcbac87dc35f0b4ddca14"
+    },
+    {
+      "path": "Task_4/gaussian_corner_repair/evidence/validate_corner.py",
+      "bytes": 3751,
+      "sha256": "be92b475f152769c24e07e1c13349b4987ea0db26c62b3c2f8e8238388313546"
+    },
+    {
+      "path": "Task_4/gaussian_corner_repair/evidence/visual_candidate.py",
+      "bytes": 5020,
+      "sha256": "4a415207d355dd102e41ea221a6b79e148aecbf8409c76ac08c726f37aeb4bd0"
+    },
+    {
+      "path": "Task_4/gaussian_corner_repair/evidence/visual_corner_server.py",
+      "bytes": 5056,
+      "sha256": "65b5f59193684cc3d93c650b97e2ed67d1891b20ced1f9581e2be91d3d9046d7"
+    },
+    {
+      "path": "Task_4/gaussian_corner_repair/open_dashboard.sh",
+      "bytes": 1385,
+      "sha256": "5878e5cfb24c85b49910360ca5377f7546318967ef18e5c58f4f851504f83424"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/all_dashboard.py",
+      "bytes": 13391,
+      "sha256": "16b81c3a07cbd19e94f07d0ff5b13b23f9299993e057f16826bf9bf3fec9d2dd"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/assemble_all.py",
+      "bytes": 9145,
+      "sha256": "e4355e95733e618c7c9a4bfaadbb5dd3aa5e47e108e9d8b35f6f628c7ed072ed"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/browser_check.py",
+      "bytes": 3915,
+      "sha256": "76e593b9afe5192de98427af364bc0b2b9aed8297fae16527f5d910043d096c0"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/check_published.py",
+      "bytes": 2360,
+      "sha256": "886f5f8832b8082b37e29509e16a6afa0402216ebce96684f65a4e01c5a3e7c3"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/counter_atlas.py",
+      "bytes": 8150,
+      "sha256": "d2a52cc7e6cd9ec610cbfcb14ca45ed169ddd072bdd2742a83e4686c80f28ebe"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/download_models.py",
+      "bytes": 2991,
+      "sha256": "59b63384ca7f82b81b99cbc179477ee7e031dd3c2964c98c91310a703815dc92"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/final_visual_repairs.py",
+      "bytes": 8836,
+      "sha256": "dd69678058222a269b9b71acac03a81f834498bcae972e856bfdfa3284260698"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/finish_walls.py",
+      "bytes": 3266,
+      "sha256": "464af8df91e3c93c2ed10a480bb1c5e4b06a204c3d196519bdfc83ff1a69bb3e"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/fit_jug_patch.py",
+      "bytes": 7712,
+      "sha256": "13399c1cac0d290ac38dfba79464452bdccb8cf0473730fa0ba6be3401a62dd0"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/fit_phone.py",
+      "bytes": 3689,
+      "sha256": "e9220663dc363e8c6c7e4c8e6b548d5ac69a11e3fc405e86d5b84172b00effd8"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/fit_phone_final.py",
+      "bytes": 4491,
+      "sha256": "9a390e4430fac71479c7976267d26791afebd5c063b51e2a60efe965bcc3b1e0"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/frog_rigid_correction.py",
+      "bytes": 2673,
+      "sha256": "0e0de9b20debe7d069b85ff9fec1919a91999f80639e3725d85932e3af584532"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/inspect_assets.py",
+      "bytes": 2321,
+      "sha256": "4a950ca4bf1b577c481cc389af3ee7075c8a8140d63d79f00f1379254fb77571"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/inspect_phone.py",
+      "bytes": 489,
+      "sha256": "79ae47aa9fd30d9e828ef1fdb8c0833e8134f2d393a0e869f61fe42f82bdcc7c"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/launch_dashboards.py",
+      "bytes": 5160,
+      "sha256": "289d59952005530e324368c46b50c4a7da65a6ea712fe101bd69fa92503eeaec"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/phone_photo_material.py",
+      "bytes": 5125,
+      "sha256": "2e2fc107bf8506f2b4ba83823e45c63522303c64f0372ecd843dc08d984d2cd5"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/photo_refine.py",
+      "bytes": 4709,
+      "sha256": "e0a2b4490a85c830a19a8f41b5477419b9aadfc39c74aece2a666df9f76d69fd"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/physics_all_server.py",
+      "bytes": 12721,
+      "sha256": "ee2e93b3bf9bf36a5d143dc92c4cabf32f1d165fe46edbca8bcae52470e73066"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/prepare_phone.py",
+      "bytes": 1775,
+      "sha256": "018d889873eea246b3c2ccfd83aaf62c4f617e46b1df27329269071c0bbcc36a"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/preview_gaussians.py",
+      "bytes": 3880,
+      "sha256": "4b2c5b9badb7ed05147acb627874560834edd1f67fa59807819ee4733b4e2532"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/preview_mesh.py",
+      "bytes": 1721,
+      "sha256": "9bcbe5716bb93139d0094c4593f802b6fe1d47803ceb3ea43c0b15d7827f0371"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/realism_audit_all.py",
+      "bytes": 4459,
+      "sha256": "4042852fff88759ab8d4ea73f6a6d5b19b421d4c97f93d52794e8a6dfe2d96af"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/retain_stronger_visuals.py",
+      "bytes": 3656,
+      "sha256": "623c3052a12a2aaa70e4e0c53c8c8c78873acc9ded348ef1fd7a6525fb325e5d"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/sample_kitchen.py",
+      "bytes": 10562,
+      "sha256": "557906b167695d8e50c8a5c2ce6aa5db005a4de119a78f95d4814a203a7cf286"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/search_models.py",
+      "bytes": 2868,
+      "sha256": "3fca1ad74c06ec4b7a8b701621f5c720c5cf2c1d29871e1085f53e3a9ddfa4ad"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/start_review.py",
+      "bytes": 1285,
+      "sha256": "306194a6377fa2a9f90b27dcbdaae3069f028be498e39a18a65686709723a674"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/validate_final.py",
+      "bytes": 2453,
+      "sha256": "72bfb9a9270ad740b510e80bdd66d02de1b26cb9ceb1263463e2722e8ca9fad9"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/visual_all_server.py",
+      "bytes": 5010,
+      "sha256": "0e17db2482a1534d77f9e377f471bb74a044b9ae911919c2bcb650da070634f1"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/visual_candidate.py",
+      "bytes": 5010,
+      "sha256": "da9d725a7b951ff882a14b5375613c9d458ce51b1d84d1792dda365d14e017f1"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/wall_atlas.py",
+      "bytes": 6046,
+      "sha256": "062d88368137b4f85da68a965a15eca095566697d6f92e3dbedd7f93db21bce4"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/evidence/wall_atlas_final.py",
+      "bytes": 6046,
+      "sha256": "9a0a088ce41efbf85eeb7b9e757593d4e49903f258ea2d843f73e49ca3d8a74b"
+    },
+    {
+      "path": "Task_4/kitchen_all_objects_upgrade/open_dashboard.sh",
+      "bytes": 501,
+      "sha256": "58a530a7bbf56cb6785c21ada9b32f248a7920bee6ca5ce5a90b22a6451a1ad7"
+    },
+    {
+      "path": "Task_4/kitchen_objects_pbr_dashboard/evidence/build_comparisons.py",
+      "bytes": 1733,
+      "sha256": "322b7a4066411d5f26133b6d46b14af36fd967b525e11da650e82e31a7406c30"
+    },
+    {
+      "path": "Task_4/kitchen_objects_pbr_dashboard/evidence/capture_all.py",
+      "bytes": 4919,
+      "sha256": "ba94c9d019a73fd43049775bca9386e65fab4491f2a4616a8fdfd2b7ec08aac2"
+    },
+    {
+      "path": "Task_4/kitchen_objects_pbr_dashboard/evidence/home_tour_dashboard.py",
+      "bytes": 8215,
+      "sha256": "c5e55503580a202e96963a617ccb0b079f1b11b1ec2df67a1e540a7c4c857f82"
+    },
+    {
+      "path": "Task_4/kitchen_objects_pbr_dashboard/evidence/launch_home_tour.py",
+      "bytes": 3137,
+      "sha256": "117eec4da6e38cee854c5ebc2003a81703c20c3e17661b01154187f1a5746948"
+    },
+    {
+      "path": "Task_4/kitchen_objects_pbr_dashboard/evidence/prepare_catalog.py",
+      "bytes": 10733,
+      "sha256": "b9c3ec10e50e4eb1c154b4d5864c00156d035dcc28af21af2ac52f6b6551b3bc"
+    },
+    {
+      "path": "Task_4/kitchen_objects_pbr_dashboard/evidence/refresh_latest_meshes.py",
+      "bytes": 5686,
+      "sha256": "a4f6b6050f604d209f3736303fd2727f7cda3b951a5d4da96f6634954592934c"
+    },
+    {
+      "path": "Task_4/kitchen_objects_pbr_dashboard/evidence/seat_mounts.py",
+      "bytes": 2809,
+      "sha256": "4efb31016ebdf41240ffdef9837a25e3abd38d7279619fd6e4ebfe61e0e8cee9"
+    },
+    {
+      "path": "Task_4/kitchen_objects_pbr_dashboard/evidence/verify_dashboard.py",
+      "bytes": 5345,
+      "sha256": "9d1bdd9fe331a501f0ed2a5abebbdf6e72c9e0000718d9ef08dca922af2fb257"
+    },
+    {
+      "path": "Task_4/kitchen_objects_pbr_dashboard/evidence/verify_live_models.py",
+      "bytes": 3489,
+      "sha256": "3a3c94f550429b67a51e99d3823e3340af79987c73b7d81d9689a401d954d51f"
+    },
+    {
+      "path": "Task_4/kitchen_objects_pbr_dashboard/evidence/verify_published_http.py",
+      "bytes": 1852,
+      "sha256": "d4253cf08b5a3f0fd4473fe426713b4dd1dec4765b0c681c4f3b8aa73132f031"
+    },
+    {
+      "path": "Task_4/kitchen_objects_pbr_dashboard/web/comparison-first.html",
+      "bytes": 4490,
+      "sha256": "96867438fb232584f4a2222670163d129d83548b34b15843a74ea10b598ac537"
+    },
+    {
+      "path": "Task_4/kitchen_objects_pbr_dashboard/web/comparison-first.js",
+      "bytes": 4599,
+      "sha256": "c7027c3d09a3c488c7d5e738fd57dd330a57b1c267bacbc99e9ffd1d3c0e8d85"
+    },
+    {
+      "path": "Task_4/kitchen_objects_pbr_dashboard/web/home-tour.html",
+      "bytes": 3169,
+      "sha256": "3d8b026d2e3824eb49306e5254535b6d08178459862eee17c7db03716eb2895f"
+    },
+    {
+      "path": "Task_4/kitchen_objects_pbr_dashboard/web/home-tour.js",
+      "bytes": 15059,
+      "sha256": "c4dec8edb42d5f7292d75ca0883ef6761a023f073492f9be78a5e44c6b1715de"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/evidence/download_candidates.py",
+      "bytes": 612,
+      "sha256": "2e9324065d7481e05b06bc4716c7bf705587440ed1e6eda5b88476e7103edf1d"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/evidence/inspect_downloaded.py",
+      "bytes": 4866,
+      "sha256": "0c1e4719858b584392faa80ae5dece81975e1ff2b5af87d1e16796c63cb869aa"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/evidence/search_cached_models.py",
+      "bytes": 1973,
+      "sha256": "767bad739941f84c7b8d2564eb226a9720c46bb026db38190bdf0c187c33f639"
+    },
+    {
+      "path": "Task_4/open_visualization.sh",
+      "bytes": 1546,
+      "sha256": "a0213b112d4a98c9a897607954de4b9f15de1f3b417097688f5e27d2347fc4fd"
+    },
+    {
+      "path": "Task_4/split_render_pipeline/evidence/build_proxy.py",
+      "bytes": 1943,
+      "sha256": "3083db55d285e6dce801f12429bce382a84e69e76a39c96cdc2e72f721ff34cb"
+    },
+    {
+      "path": "Task_4/split_render_pipeline/evidence/check_integration.py",
+      "bytes": 2886,
+      "sha256": "1ad0e968718298b28dd9ace7c0ef8bb961218ad10ee4cb6052a36e28422b0b0c"
+    },
+    {
+      "path": "Task_4/split_render_pipeline/evidence/clean_corner.py",
+      "bytes": 2886,
+      "sha256": "934a40640c8210d38ffa132dfb774a6fac27e0e06f6a356b84f8d353ddd613e9"
+    },
+    {
+      "path": "Task_4/split_render_pipeline/evidence/evaluate_final.py",
+      "bytes": 2889,
+      "sha256": "50a13dca90dfc8b0e4cfbecea352d2b98b8ca83d1144a48028aeb17f0c778dda"
+    },
+    {
+      "path": "Task_4/split_render_pipeline/evidence/gsplat_smoke.py",
+      "bytes": 1162,
+      "sha256": "a314802c58ec5237bfaac42984ebc9d3c2f7af5bba33e747a63d3a8a4f2067d4"
+    },
+    {
+      "path": "Task_4/split_render_pipeline/evidence/launch_services.py",
+      "bytes": 1619,
+      "sha256": "d13c8d19762de8f6e580a37cc4ca97b9d804c000788acc45450af6d94cfbb51f"
+    },
+    {
+      "path": "Task_4/split_render_pipeline/evidence/physics_server.py",
+      "bytes": 10864,
+      "sha256": "d0fd4752e38b045ba8710baae618e526134c0369b24d3eda37aea537ab8609e0"
+    },
+    {
+      "path": "Task_4/split_render_pipeline/evidence/prepare_data.py",
+      "bytes": 7482,
+      "sha256": "7e521cd3bf112c8b675c6329498f91b982901ec8664513b4d67603c1c85945ce"
+    },
+    {
+      "path": "Task_4/split_render_pipeline/evidence/render_teachers.py",
+      "bytes": 1385,
+      "sha256": "26120ae5d0a9744eaaf5c8f544d6115424617946320d851e6b6e4f0f33a725a8"
+    },
+    {
+      "path": "Task_4/split_render_pipeline/evidence/train_gaussians.py",
+      "bytes": 7559,
+      "sha256": "9fe7eae7fd310c064f37b8696f6d016f9f1919a60c2ae2f94dec0049b17d6d2e"
+    },
+    {
+      "path": "Task_4/split_render_pipeline/evidence/visual_server.py",
+      "bytes": 5002,
+      "sha256": "299f0b14ad6a9d481a9d198da16f4247847157ae7ff28ed550db02ef9cfdab62"
+    },
+    {
+      "path": "Task_4/toaster_home_tour/evidence/browser_verify.py",
+      "bytes": 4663,
+      "sha256": "009329c533a8b7ea9208cab46608268458a4b0e7b6b4aa72323305d7c41d7b1d"
+    },
+    {
+      "path": "Task_4/toaster_home_tour/evidence/capture_comparison.py",
+      "bytes": 3881,
+      "sha256": "439ddbed24e038f84b939283ff0c1b0bdfeef2f39573313654649166a1d16ba1"
+    },
+    {
+      "path": "Task_4/toaster_home_tour/evidence/home_tour_dashboard.py",
+      "bytes": 4832,
+      "sha256": "9ef8597b8104736b09b203b370ace735e2a9494ce718fff7b5e9d663e1bba5b3"
+    },
+    {
+      "path": "Task_4/toaster_home_tour/evidence/launch_home_tour.py",
+      "bytes": 3062,
+      "sha256": "f99bb0475d8785b18f770b350c3740e21b89a6e2ed70391b8bfbea553f1a3c30"
+    },
+    {
+      "path": "Task_4/toaster_home_tour/evidence/navigation_verify.py",
+      "bytes": 3097,
+      "sha256": "497df190db2be5cc5cbac5fcb0cd925075677698f7d05128e3ef1ba471c7274e"
+    },
+    {
+      "path": "Task_4/toaster_home_tour/evidence/prepare_browser_scene.py",
+      "bytes": 3727,
+      "sha256": "4dd2f70265f90b4531a025b1c4f9d6e0ac45367088287d6c944a70c350089703"
+    },
+    {
+      "path": "Task_4/toaster_home_tour/evidence/start_local_tunnels.py",
+      "bytes": 3088,
+      "sha256": "07947ff1a789a37769dccc153303dda803026ae50d232013fd16e6e187c1ed9c"
+    },
+    {
+      "path": "Task_4/toaster_home_tour/evidence/verify_comparison_room.py",
+      "bytes": 4450,
+      "sha256": "8149d8a8ee09a23725b06e2d3cb69516a28d433ac9c904caa1c59e1de3140248"
+    },
+    {
+      "path": "Task_4/toaster_home_tour/open_dashboard.sh",
+      "bytes": 625,
+      "sha256": "6049f7fa07ad904b4daff6d0868842c94028f31fce20dab1c54272b608ec36b2"
+    },
+    {
+      "path": "Task_4/toaster_home_tour/web/comparison-first.html",
+      "bytes": 4496,
+      "sha256": "bf62de412735b37cd3c0ad34fc4799dd0e5c53d183a2e9332d475df0d52c5242"
+    },
+    {
+      "path": "Task_4/toaster_home_tour/web/home-tour.html",
+      "bytes": 3310,
+      "sha256": "dad27b55f8b4d26c68a5e5cba1fbbb096e130b057342050cc371cb35167fd819"
+    },
+    {
+      "path": "Task_4/toaster_home_tour/web/home-tour.js",
+      "bytes": 9324,
+      "sha256": "6ac30961495c6526aa9e0d42bc2add61370cbb4a65271cf390b52369e0a7470b"
+    },
+    {
+      "path": "Task_4/toaster_realism_upgrade/evidence/bake_toaster_v3.py",
+      "bytes": 5748,
+      "sha256": "39a3d584d8b11982555cd39f1968fb756203daff04aa01bbe2f2981eab9e8499"
+    },
+    {
+      "path": "Task_4/toaster_realism_upgrade/evidence/prepare_toaster_upgrade.py",
+      "bytes": 7013,
+      "sha256": "156f7c04a4d047d0c0e3618f20cdb1e355813ef13e568a6a2dc05b2e0733e90f"
+    },
+    {
+      "path": "Task_4/toaster_realism_upgrade/evidence/preview_toaster_upgrade.py",
+      "bytes": 1635,
+      "sha256": "d6d5b3186176f2375c757c9f9bba3068341eea9288e57f2ba9a6c72d69c26803"
+    },
+    {
+      "path": "Task_4/toaster_selected_model/evidence/assemble_private.py",
+      "bytes": 2265,
+      "sha256": "0459e870b9844edb258a4eeb7fc8c74673be2c6abc4b86593d40c87f4d0ee439"
+    },
+    {
+      "path": "Task_4/toaster_selected_model/evidence/finish_fit.py",
+      "bytes": 2533,
+      "sha256": "a8a6d00db66d500860dccc062f425e5fb6152ab43b596e3c2d40886316bebf45"
+    },
+    {
+      "path": "Task_4/toaster_selected_model/evidence/model-viewer.min.js",
+      "bytes": 955556,
+      "sha256": "774edda21e1be2a0934e460ca5943af1fe3f88da130a9f98bd6a9d611576cacf"
+    },
+    {
+      "path": "Task_4/toaster_selected_model/evidence/prepare_and_bake.py",
+      "bytes": 7774,
+      "sha256": "8be66438ac622607f6a836686da5281ad9ec956ac11f119243e5073400401305"
+    },
+    {
+      "path": "Task_4/toaster_selected_model/evidence/preview.py",
+      "bytes": 1676,
+      "sha256": "e7fde5c40996356791a78a4416bc4cc40394c47ddff48a013559fc17a4892ff4"
+    },
+    {
+      "path": "Task_4/toaster_selected_model/evidence/serve_selected.py",
+      "bytes": 4572,
+      "sha256": "ab12e3cf1d4ca40576e9f72227c5dfdbaf5e7c8c609352b08eda7001ec99cdaa"
+    },
+    {
+      "path": "Task_4/toaster_selected_model/evidence/setup_dashboard.py",
+      "bytes": 1726,
+      "sha256": "2cda7f9107a02fc6649d2509ecda8df5c4640f8e757633d81d9f1ebc71030bdc"
+    },
+    {
+      "path": "Task_4/toaster_wall_mesh_repair/evidence/build_patch.py",
+      "bytes": 4634,
+      "sha256": "e9a7d75384d79047662ff4020eb942fed6a59a3750a404b89cc6f5276df96cad"
+    },
+    {
+      "path": "Task_4/toaster_wall_mesh_repair/evidence/build_patch_v1.py",
+      "bytes": 4863,
+      "sha256": "ec9a31113107af3b20ea92591ec85771c1cc4f2fdea6e03b831ef287e98c0191"
+    },
+    {
+      "path": "Task_4/toaster_wall_mesh_repair/evidence/setup_build.py",
+      "bytes": 1099,
+      "sha256": "44197bd616908ba6972731a60d53974efc01c4436ca7b5010841f77c6e95b085"
+    },
+    {
+      "path": "Task_4/toaster_wall_mesh_repair/evidence/setup_dashboard.py",
+      "bytes": 2318,
+      "sha256": "a10916d365d8acb2b8e2e90ea1ecb3218654be6495534f7c396a0fb7a381bfed"
+    },
+    {
+      "path": "Task_4/toaster_wall_mesh_repair/evidence/wall_apply.py",
+      "bytes": 1797,
+      "sha256": "ffa7817fa7cdc03cbc52ffe66463032e858af22036cd07554da9e42d6187f289"
+    },
+    {
+      "path": "Task_4/visualization_tools/glb_preview.py",
+      "bytes": 1831,
+      "sha256": "8347b2f8a38b717809ab3b86b9f6355774bcd34c360d02f96806b8e86fb8b17c"
+    },
+    {
+      "path": "Task_4/visualization_tools/k3d.sh",
+      "bytes": 549,
+      "sha256": "5ddba08cfd6603625e8114b8f9890875aead574129b808e5301cc0c415858a49"
+    },
+    {
+      "path": "Task_4/visualization_tools/look.py",
+      "bytes": 1323,
+      "sha256": "7361db26060dee99031082fbbad3e3ed9b8714d7dd8a31d59c944ccf0eca6b57"
+    },
+    {
+      "path": "Task_4/visualization_tools/mp3d_cams.py",
+      "bytes": 2725,
+      "sha256": "35a6f7293cfcdb1221b5b81d00a8310d9cd456cf39a4e13194f09e620ad81b92"
+    },
+    {
+      "path": "Task_4/visualization_tools/multiview.py",
+      "bytes": 2348,
+      "sha256": "7f887dfbcd06c9362b1ed0f81ff619f601fa25df724fb4893f8e89ae0982b446"
+    },
+    {
+      "path": "Task_4/visualization_tools/product_preview.py",
+      "bytes": 5151,
+      "sha256": "f50e823dc6e3cf6b229887fd45e61b51ca489315e814633263efa2b0ddbe7fda"
+    }
+  ],
+  "repositories": [
+    {
+      "path": "Task_2/gqft_algorithm_sharing_vivekananda",
+      "revision": "5fe3c1ad27516d251fd48dc3b071d8e508dbd856"
+    },
+    {
+      "path": "Task_3/xterra_mjlab",
+      "revision": "31702774e79905fd9bbf9f6db0e56883de0db658"
+    }
+  ]
+}
