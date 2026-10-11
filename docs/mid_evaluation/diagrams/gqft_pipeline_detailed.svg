@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="950" viewBox="0 0 1800 950">
+<title>GQFT | Flow → temporal motion → geometric trajectory</title><desc>Code-derived architecture; the pixel query enters projection after the temporal encoder</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#087f8c"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial, Liberation Sans, sans-serif">
+<text x="55" y="68" font-size="36" font-weight="700" fill="#12243a">GQFT | Flow → temporal motion → geometric trajectory</text>
+<text x="55" y="110" font-size="23" fill="#526477">Code-derived architecture; the pixel query enters projection after the temporal encoder</text>
+<rect x="55" y="190" width="260" height="160" rx="14" fill="#eff5fd" stroke="#245ec7" stroke-width="2"/>
+<text x="73" y="228" font-size="24" fill="#12243a" font-weight="700">RGB frame pairs</text>
+<text x="73" y="267" font-size="21" fill="#526477" font-weight="400">Frozen flow extraction</text>
+<text x="73" y="297" font-size="21" fill="#526477" font-weight="400">Consecutive images</text>
+<rect x="380" y="190" width="280" height="160" rx="14" fill="#eff5fd" stroke="#245ec7" stroke-width="2"/>
+<text x="398" y="228" font-size="24" fill="#12243a" font-weight="700">Frozen SEA-RAFT</text>
+<text x="398" y="267" font-size="21" fill="#526477" font-weight="400">Flow + confidence</text>
+<text x="398" y="297" font-size="21" fill="#526477" font-weight="400">Validity / normalization</text>
+<rect x="725" y="190" width="300" height="160" rx="14" fill="#eff5fd" stroke="#245ec7" stroke-width="2"/>
+<text x="743" y="228" font-size="24" fill="#12243a" font-weight="700">CNN + spatial pooling</text>
+<text x="743" y="267" font-size="21" fill="#526477" font-weight="400">Flow + x/y coordinates</text>
+<text x="743" y="297" font-size="21" fill="#526477" font-weight="400">Mean/max or attention/max</text>
+<text x="743" y="327" font-size="21" fill="#526477" font-weight="400">One 256-D token / step</text>
+<rect x="1090" y="190" width="280" height="160" rx="14" fill="#eff5fd" stroke="#245ec7" stroke-width="2"/>
+<text x="1108" y="228" font-size="24" fill="#12243a" font-weight="700">Time embeddings</text>
+<text x="1108" y="267" font-size="21" fill="#526477" font-weight="400">Learned time positions</text>
+<text x="1108" y="297" font-size="21" fill="#526477" font-weight="400">Tokens: [B, T, 256]</text>
+<rect x="1435" y="190" width="310" height="160" rx="14" fill="#e6f6f4" stroke="#007d79" stroke-width="2"/>
+<text x="1453" y="228" font-size="24" fill="#12243a" font-weight="700">Causal Transformer</text>
+<text x="1453" y="267" font-size="21" fill="#526477" font-weight="400">4 layers · 8 heads</text>
+<text x="1453" y="297" font-size="21" fill="#526477" font-weight="400">Past + current steps only</text>
+<text x="1453" y="327" font-size="21" fill="#526477" font-weight="400">Motion states: [B,T,256]</text>
+<path d="M 319 270 H 374" fill="none" stroke="#087f8c" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 664 270 H 719" fill="none" stroke="#087f8c" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 1029 270 H 1084" fill="none" stroke="#087f8c" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 1374 270 H 1429" fill="none" stroke="#087f8c" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1435" y="460" width="310" height="155" rx="14" fill="#eff5fd" stroke="#245ec7" stroke-width="2"/>
+<text x="1453" y="498" font-size="24" fill="#12243a" font-weight="700">Displacement MLP</text>
+<text x="1453" y="537" font-size="21" fill="#526477" font-weight="400">256 → 256 → 3</text>
+<text x="1453" y="567" font-size="21" fill="#526477" font-weight="400">tanh-bounded Δx, Δy, Δz</text>
+<text x="1453" y="597" font-size="21" fill="#526477" font-weight="400">Invalid time steps zeroed</text>
+<path d="M 1590 355 V 453" fill="none" stroke="#087f8c" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1090" y="460" width="280" height="155" rx="14" fill="#eff5fd" stroke="#245ec7" stroke-width="2"/>
+<text x="1108" y="498" font-size="24" fill="#12243a" font-weight="700">Accumulate motion</text>
+<text x="1108" y="537" font-size="21" fill="#526477" font-weight="400">Cumulative sum of Δxyz</text>
+<text x="1108" y="567" font-size="21" fill="#526477" font-weight="400">Initial position = zero</text>
+<text x="1108" y="597" font-size="21" fill="#526477" font-weight="400">Path: [B, T+1, 3]</text>
+<path d="M 1429 537 H 1376" fill="none" stroke="#087f8c" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="725" y="460" width="300" height="155" rx="14" fill="#eff5fd" stroke="#245ec7" stroke-width="2"/>
+<text x="743" y="498" font-size="24" fill="#12243a" font-weight="700">Analytic projection</text>
+<text x="743" y="537" font-size="21" fill="#526477" font-weight="400">3-D path + ground anchor</text>
+<text x="743" y="567" font-size="21" fill="#526477" font-weight="400">Camera intrinsics / height</text>
+<text x="743" y="597" font-size="21" fill="#526477" font-weight="400">Pixel path: [B,Q,T+1,2]</text>
+<path d="M 1084 537 H 1031" fill="none" stroke="#087f8c" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="380" y="460" width="280" height="155" rx="14" fill="#eff5fd" stroke="#245ec7" stroke-width="2"/>
+<text x="398" y="498" font-size="24" fill="#12243a" font-weight="700">Image trajectory</text>
+<text x="398" y="537" font-size="21" fill="#526477" font-weight="400">Query-anchored pixel path</text>
+<text x="398" y="567" font-size="21" fill="#526477" font-weight="400">ADE / FDE evaluation</text>
+<text x="398" y="597" font-size="21" fill="#526477" font-weight="400">Not obstacle avoidance</text>
+<path d="M 719 537 H 666" fill="none" stroke="#087f8c" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="725" y="725" width="300" height="115" rx="14" fill="#eff5fd" stroke="#245ec7" stroke-width="2"/>
+<text x="743" y="763" font-size="24" fill="#12243a" font-weight="700">Query + camera</text>
+<text x="743" y="802" font-size="21" fill="#526477" font-weight="400">Pixel anchor (u,v)</text>
+<text x="743" y="832" font-size="21" fill="#526477" font-weight="400">Fixed-rig geometry</text>
+<path d="M 875 719 V 621" fill="none" stroke="#087f8c" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1435" y="685" width="310" height="155" rx="14" fill="#eff5fd" stroke="#245ec7" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="1453" y="723" font-size="24" fill="#12243a" font-weight="700">Optional yaw MLP</text>
+<text x="1453" y="762" font-size="21" fill="#526477" font-weight="400">256 → 128 → 1</text>
+<text x="1453" y="792" font-size="21" fill="#526477" font-weight="400">Bounded Δyaw</text>
+<text x="1453" y="822" font-size="21" fill="#526477" font-weight="400">Cumulative yaw output</text>
+<path d="M 1751 270 H 1780 V 782 H 1751" fill="none" stroke="#087f8c" stroke-width="3" marker-end="url(#arrow)" stroke-dasharray="8 6"/>
+<text x="55" y="889" font-size="21" fill="#526477" font-weight="400">Defaults shown; checkpoint configuration determines the actual architecture.</text>
+<text x="55" y="922" font-size="20" fill="#526477" font-weight="400">Validity/uncertainty branches omitted. Yaw is auxiliary: the shown pixel projection consumes xyz, not predicted yaw.</text>
+</g></svg>

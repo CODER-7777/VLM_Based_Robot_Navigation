@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="1030" viewBox="0 0 1260 1030">
+<title>GQFT | Inside the causal Transformer</title><desc>Temporal self-attention on pooled optical-flow features — no raw RGB or text tokens</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#087f8c"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial, Liberation Sans, sans-serif">
+<text x="55" y="68" font-size="36" font-weight="700" fill="#12243a">GQFT | Inside the causal Transformer</text>
+<text x="55" y="110" font-size="23" fill="#526477">Temporal self-attention on pooled optical-flow features — no raw RGB or text tokens</text>
+<rect x="55" y="180" width="350" height="155" rx="14" fill="#eff5fd" stroke="#245ec7" stroke-width="2"/>
+<text x="73" y="218" font-size="24" fill="#12243a" font-weight="700">Input motion sequence</text>
+<text x="73" y="257" font-size="21" fill="#526477" font-weight="400">One CNN token / flow step</text>
+<text x="73" y="287" font-size="21" fill="#526477" font-weight="400">Learned time embedding added</text>
+<text x="73" y="317" font-size="21" fill="#526477" font-weight="400">Default input: [B,T,256]</text>
+<rect x="475" y="175" width="730" height="555" rx="18" fill="#f8fafc" stroke="#007d79" stroke-width="2"/>
+<text x="500" y="214" font-size="27" fill="#007d79" font-weight="700">One pre-norm encoder layer × 4</text>
+<rect x="560" y="245" width="555" height="105" rx="14" fill="#e6f6f4" stroke="#007d79" stroke-width="2"/>
+<text x="578" y="283" font-size="24" fill="#12243a" font-weight="700">LayerNorm → self-attention</text>
+<text x="578" y="322" font-size="21" fill="#526477" font-weight="400">8 heads; future and padded keys masked</text>
+<rect x="560" y="405" width="555" height="105" rx="14" fill="#eff5fd" stroke="#245ec7" stroke-width="2"/>
+<text x="578" y="443" font-size="24" fill="#12243a" font-weight="700">Residual addition</text>
+<text x="578" y="482" font-size="21" fill="#526477" font-weight="400">Input + dropout(attention output)</text>
+<rect x="560" y="565" width="555" height="125" rx="14" fill="#eff5fd" stroke="#245ec7" stroke-width="2"/>
+<text x="578" y="603" font-size="24" fill="#12243a" font-weight="700">LayerNorm → feed-forward + residual</text>
+<text x="578" y="642" font-size="21" fill="#526477" font-weight="400">256 → 1024 → 256, GELU</text>
+<text x="578" y="672" font-size="21" fill="#526477" font-weight="400">Residual addition; default dropout = 0.1</text>
+<path d="M 411 282 H 554" fill="none" stroke="#087f8c" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 837 356 V 399" fill="none" stroke="#087f8c" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 837 516 V 559" fill="none" stroke="#087f8c" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="475" y="790" width="730" height="130" rx="14" fill="#e6f6f4" stroke="#007d79" stroke-width="2"/>
+<text x="493" y="828" font-size="24" fill="#12243a" font-weight="700">Final LayerNorm → motion states</text>
+<text x="493" y="867" font-size="21" fill="#526477" font-weight="400">State at step t uses valid steps 1…t only</text>
+<text x="493" y="897" font-size="21" fill="#526477" font-weight="400">[B,T,256] → displacement, optional yaw and log-variance heads</text>
+<path d="M 837 736 V 784" fill="none" stroke="#087f8c" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="55" y="430" font-size="24" fill="#12243a" font-weight="700">Causal attention mask</text>
+<text x="55" y="464" font-size="19" fill="#526477" font-weight="400">Rows: current step</text>
+<text x="55" y="492" font-size="19" fill="#526477" font-weight="400">Columns: attended steps</text>
+<rect x="80" y="520" width="57" height="57" rx="4" fill="#c7ebe6"/>
+<text x="101" y="557" font-size="18" fill="#007d79" font-weight="400">OK</text>
+<rect x="143" y="520" width="57" height="57" rx="4" fill="#edf0f4"/>
+<text x="164" y="557" font-size="18" fill="#8291a2" font-weight="400">X</text>
+<rect x="206" y="520" width="57" height="57" rx="4" fill="#edf0f4"/>
+<text x="227" y="557" font-size="18" fill="#8291a2" font-weight="400">X</text>
+<rect x="269" y="520" width="57" height="57" rx="4" fill="#edf0f4"/>
+<text x="290" y="557" font-size="18" fill="#8291a2" font-weight="400">X</text>
+<rect x="80" y="583" width="57" height="57" rx="4" fill="#c7ebe6"/>
+<text x="101" y="620" font-size="18" fill="#007d79" font-weight="400">OK</text>
+<rect x="143" y="583" width="57" height="57" rx="4" fill="#c7ebe6"/>
+<text x="164" y="620" font-size="18" fill="#007d79" font-weight="400">OK</text>
+<rect x="206" y="583" width="57" height="57" rx="4" fill="#edf0f4"/>
+<text x="227" y="620" font-size="18" fill="#8291a2" font-weight="400">X</text>
+<rect x="269" y="583" width="57" height="57" rx="4" fill="#edf0f4"/>
+<text x="290" y="620" font-size="18" fill="#8291a2" font-weight="400">X</text>
+<rect x="80" y="646" width="57" height="57" rx="4" fill="#c7ebe6"/>
+<text x="101" y="683" font-size="18" fill="#007d79" font-weight="400">OK</text>
+<rect x="143" y="646" width="57" height="57" rx="4" fill="#c7ebe6"/>
+<text x="164" y="683" font-size="18" fill="#007d79" font-weight="400">OK</text>
+<rect x="206" y="646" width="57" height="57" rx="4" fill="#c7ebe6"/>
+<text x="227" y="683" font-size="18" fill="#007d79" font-weight="400">OK</text>
+<rect x="269" y="646" width="57" height="57" rx="4" fill="#edf0f4"/>
+<text x="290" y="683" font-size="18" fill="#8291a2" font-weight="400">X</text>
+<rect x="80" y="709" width="57" height="57" rx="4" fill="#c7ebe6"/>
+<text x="101" y="746" font-size="18" fill="#007d79" font-weight="400">OK</text>
+<rect x="143" y="709" width="57" height="57" rx="4" fill="#c7ebe6"/>
+<text x="164" y="746" font-size="18" fill="#007d79" font-weight="400">OK</text>
+<rect x="206" y="709" width="57" height="57" rx="4" fill="#c7ebe6"/>
+<text x="227" y="746" font-size="18" fill="#007d79" font-weight="400">OK</text>
+<rect x="269" y="709" width="57" height="57" rx="4" fill="#c7ebe6"/>
+<text x="290" y="746" font-size="18" fill="#007d79" font-weight="400">OK</text>
+<text x="55" y="804" font-size="19" fill="#526477" font-weight="400">Allowed: current + earlier steps</text>
+<text x="55" y="832" font-size="19" fill="#526477" font-weight="400">Blocked: future steps</text>
+<text x="55" y="860" font-size="19" fill="#526477" font-weight="400">Padding keys also masked</text>
+<text x="55" y="965" font-size="21" fill="#526477" font-weight="400">Temporal attention selects useful history; CNN spatial attention selects useful image regions.</text>
+<text x="55" y="1000" font-size="21" fill="#526477" font-weight="400">Pixel query affects the later projection/validity branches, not these temporal motion states.</text>
+</g></svg>

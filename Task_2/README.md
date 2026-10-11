@@ -2,6 +2,10 @@
 
 Objective: reproduce the released GQFT baseline and improve visual trajectory estimation. Input is observed optical flow; outputs are camera displacement and ground-plane pixel trajectories, with optional yaw. Obstacle avoidance and language-navigation success are separate, unmeasured tasks.
 
+## Problem and required fix
+
+Trajectory quality varies across validation, test and episode overlays. The required fix is a consistent flow/camera/checkpoint/label contract, followed by a matched comparison that preserves the released benchmark.
+
 ## Model and data contract
 
 `RGB → SEA-RAFT → normalized flow/confidence/validity → spatial CNN → causal Transformer → displacement increments → accumulated 3-D path → ground projection`.
@@ -19,6 +23,8 @@ Camera: 960×540, 135° HFOV, 1.2 m height, +30° downward-pitch convention, 5 H
 | Adapter audit | Normalize once, convert mounting-pitch sign, use trained anchor, strict checkpoint variants | Legacy flow/pitch/anchor defects and mislabeled augmented “baseline” overlays identified |
 | Geometry oracle | Project exact ground-truth motion | Three of 104 validation windows conflict with fixed-height projection; maximum discrepancy 65.525 px |
 | Controlled supervision plan | Attention without yaw/flips; vary only label ground plane | `sequence_floor` versus `fixed_rig` experiment specified; paired training pending |
+
+![Independent GQFT pipeline](../docs/mid_evaluation/diagrams/task2_gqft_pipeline.png)
 
 ## Quantitative comparison
 
@@ -42,11 +48,21 @@ Matched CPU float32 validation: scene `D7G3Y4RVNrH`, 104 windows, one query/wind
 
 Selection: histories 4/8/12/16/20/24/30, ambiguity ≤0.05, retrieval tolerance 0.02. Embedding retrieval gaps are not direct 3-D prediction errors. Training-time validation, this CPU sweep, and test results use different protocols.
 
-## Failure analysis and current hypothesis
+## Root-cause evidence and analysis-driven changes
+
+![Matched validation errors by timestep and motion family](../docs/mid_evaluation/figures/task2_validation_comparison.png)
+
+The curves show point error at each timestep; they are not cumulative ADE. Motion-family averages expose regressions hidden by the aggregate score. [Plot interpretation and historical episode limitations](../docs/mid_evaluation/presentation/TASK2_VISUAL_ANALYSIS.md).
 
 Cached flow was divided by 160/90 a second time in legacy episode tools. Habitat mounting pitch −30° was passed into a +30° downward-pitch geometry convention. Some “baseline” overlays used an augmented checkpoint. Corrected adapters and strict architecture inference remove these confounds.
 
 Original labels use height above the sequence's first floor; inference uses fixed 1.2 m height. Exact 3-D motion gives worst-window history-24 oracle ADE 55.559 px; matching label height reduces maximum discrepancy to 0.000126 px. The optional `fixed_rig` mode is off by default and changes the annotation protocol, so its scores cannot replace the legacy benchmark.
+
+![Independent geometry-diagnosis chain](../docs/mid_evaluation/diagrams/task2_geometry_diagnosis.png)
+
+## Next experiment and guidance needed
+
+Supervisor feedback: investigate **masked spatial attention** to reduce unreliable motion evidence, and connect GQFT with VLM subgoals and RL locomotion. [Masking specification](MASKED_ATTENTION_PLAN.md) records existing masks, candidate changes and controlled evaluation; the exact intended mask remains open. [Integration interfaces](../docs/INTEGRATION_PLAN.md) distinguish reconstructed camera motion from future waypoint planning. Both directions are pending experiments.
 
 Current hypothesis: consistent projection supervision should reduce conflicting pixel/3-D objectives; regional flow aggregation remains useful but does not uniformly improve turning. Pending: paired label experiment, matched validation/history gate, source/checkpoint provenance, isolated yaw ablation, waypoint/controller integration.
 
@@ -60,3 +76,7 @@ CUDA_VISIBLE_DEVICES='' .venv/bin/python tools/verify_cpu_contracts.py
 ```
 
 CPU checks cover strict variant loading, output equivalence to historical architectures, normalized-flow preservation, pitch/axis conversion, and contradictory configuration rejection. Dataset-dependent checks require the external cache. Training/inference weights are not included in the documentation evidence snapshots.
+
+Guidance needed: preserve `sequence_floor` as the legacy benchmark while evaluating `fixed_rig` separately; select one camera/history/query protocol before paired training. Report pixel ADE/FDE, direct 3-D error, projection-oracle consistency and the history-selection gate. Upstream flow: [SEA-RAFT, ECCV 2024](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/1065_ECCV_2024_paper.php). GQFT is the supplied project codebase; no verified external paper venue is assigned to it.
+
+Transformer details: [code-derived analysis](../docs/mid_evaluation/GQFT_TRANSFORMER.md), [complete pipeline SVG](../docs/mid_evaluation/diagrams/gqft_pipeline_detailed.svg), [temporal encoder SVG](../docs/mid_evaluation/diagrams/gqft_transformer_detail.svg). The query enters projection/validity after motion encoding; it is not a Transformer input.
