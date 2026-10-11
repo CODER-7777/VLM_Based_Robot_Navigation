@@ -2,6 +2,10 @@
 
 Runtime: `Task_3/xterra_mjlab/.venv` (Python, PyTorch, MuJoCo, NumPy, Matplotlib; mjlab for reward integration). Scripts live in `jitter_analysis/` and import the simulator/controller from the SvanM2 source checkout.
 
+**Latest evidence:** [October 10 detailed report](../notes/23_DEEP_JITTER_ANALYSIS_20261010.md) and [34-case CPU dashboard](results/deep_audit_20261010/index.html). No training/GPU job was started. Discuss future GPU use with the user first.
+
+**October 11 follow-up:** [gate/frequency/VLM audit](../notes/24_GATE_FREQUENCY_AND_VLM_AUDIT_20261011.md), [CPU replay and raw rechecks](results/gate_frequency_audit_20261011_v2/analysis.json), [pathway plot](results/gate_frequency_audit_20261011_v2/gate_pathways.png), and [frequency plot](results/gate_frequency_audit_20261011_v2/frequency_phases.png). Saved-data analysis only; no new physics or training.
+
 ## Interfaces
 
 | Module | Inputs / method | Outputs |
@@ -17,6 +21,10 @@ Runtime: `Task_3/xterra_mjlab/.venv` (Python, PyTorch, MuJoCo, NumPy, Matplotlib
 | `summarize_control_loop_audit.py` | Existing contact-audit traces; independent traversal and contact Jacobian checks | `audit_findings.json`, contact-response/fixed-state diagnostics, figures |
 | `tier1_solver_probe.py` | Contact/substep grid with explicit policy/PD rates | Iteration, slip, penetration, tracking and vibration diagnostics |
 | `smoke_target_rate_env.py` | Synthetic action sequence in reward manager/environment | Integration check; not policy capability |
+| `verify_current_contract.py` | Current limits; CPU-only contact A/B and explicit-contact substep comparison | Fresh flat/stair traces, all failures, source/checkpoint integrity |
+| `catalog_evidence.py` | Project file inventory, saved event logs/checkpoints, historical contact traces | Hashes, identity/curve summaries, raw traversal recheck |
+| `summarize_deep_audit.py` | Saved October 10 traces only | Matched plots, independent numeric stair checks, dashboard |
+| `audit_gate_frequency.py` | Saved interactive frames, exact CPU checkpoint replay, September hardware arrays and filter traces | Gate/expert/direct-actor target-change probes, rate/spectrum metrics, raw rechecks and full-foot traversal verification |
 
 ## Data contracts
 
@@ -31,4 +39,4 @@ cd Task_3/tools/jitter_analysis
 CUDA_VISIBLE_DEVICES='' ../../xterra_mjlab/.venv/bin/python -m unittest test_target_rate_reward test_analysis test_interactive -v
 ```
 
-13 tests cover reward timing/clamping/reset semantics, training-profile overrides, known-frequency RMS/Nyquist behavior, observation freshness, passive trajectory equality, full-foot traversal, transmission mapping, and reset-delimited keyboard recording. No hardware or server connection is required; local checkpoint/robot assets are required.
+14 tests cover reward timing/clamping/reset semantics, training-profile overrides, known-frequency RMS/Nyquist behavior, observation freshness, passive trajectory equality, full-foot traversal, transmission mapping, reset-delimited keyboard recording, and explicit contact overrides. No hardware or server connection is required; local checkpoint/robot assets are required.

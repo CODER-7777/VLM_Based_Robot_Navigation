@@ -12,6 +12,22 @@ from analyze import band_rms
 
 
 class AnalysisChecks(unittest.TestCase):
+    def test_contact_override_is_explicit_and_recorded(self):
+        import argparse
+        from run_interactive_sim import configure_contact, parse_args
+        model = mujoco.MjModel.from_xml_path(str(record.SIM / 'scene.xml'))
+        before = record.solver_contract(model)
+        friction, solref = model.geom_friction.copy(), model.geom_solref.copy()
+        configure_contact(model, parse_args([]).contact_impratio)
+        self.assertEqual(record.solver_contract(model), before)
+        configure_contact(model, parse_args(['--contact-impratio', '10']).contact_impratio)
+        self.assertEqual(record.solver_contract(model), dict(before, impratio=10.))
+        np.testing.assert_array_equal(model.geom_friction, friction)
+        np.testing.assert_array_equal(model.geom_solref, solref)
+        for value in (0., -1., float('nan'), float('inf')):
+            with self.assertRaises(argparse.ArgumentTypeError):
+                configure_contact(model, value)
+
     def test_fresh_observation_is_consistent_and_records_actual_input(self):
         from build_scene import TRACK_CONFIGS, TRACK_SPACING
         from interactive import InteractiveSession, RecordedTeleop

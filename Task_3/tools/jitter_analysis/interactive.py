@@ -17,7 +17,7 @@ import mujoco
 import numpy as np
 import torch
 
-from record import ROOT, SIM, Recorder, fresh_frame, original, sha256, write_json
+from record import ROOT, SIM, Recorder, fresh_frame, original, sha256, write_json, solver_contract
 from teleop import KeyboardTeleop
 
 
@@ -101,6 +101,7 @@ class InteractiveSession:
             track_configs=teleop.track_configs,
             foot_friction=model.geom_friction[self.recorder.foot_ids].tolist(),
             foot_solref=model.geom_solref[self.recorder.foot_ids].tolist(),
+            solver_options=solver_contract(model),
             foot_radius_m=model.geom_size[self.recorder.foot_ids, 0].tolist(),
             sampling="State/target at t; contact solve and applied torque for [t,t+dt]. Actual policy command is held between ticks.",
             observation_timing=ctrl.observation_timing,

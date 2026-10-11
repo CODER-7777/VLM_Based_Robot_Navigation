@@ -38,6 +38,16 @@ def write_json(path, value):
     Path(path).write_text(json.dumps(value, indent=2, allow_nan=False) + "\n")
 
 
+def solver_contract(model):
+    """Compiled model options: XML hashes alone cannot capture runtime overrides."""
+    opt = model.opt
+    return dict(impratio=float(opt.impratio), timestep=float(opt.timestep),
+                iterations=int(opt.iterations), ls_iterations=int(opt.ls_iterations),
+                tolerance=float(opt.tolerance), solver=int(opt.solver),
+                integrator=int(opt.integrator), cone=int(opt.cone),
+                disableflags=int(opt.disableflags))
+
+
 def command_at(t, vx, stand, ramp):
     fraction = np.clip((t - stand) / ramp, 0.0, 1.0) if ramp else float(t >= stand)
     return np.array([vx * fraction, 0.0, 0.0], dtype=np.float64)
@@ -235,6 +245,7 @@ def record_run(checkpoint, out, terrain="stairs", sensors="viewer", device="cuda
                     q0=original.Q0.tolist(), scale=original.SCALE.tolist(), kp=ctrl.kp, kd=ctrl.kd,
                     transmission=original.J_LEG.tolist(), torque_limits=original.TORQUE_LIMITS.tolist(),
                     foot_friction=model.geom_friction[foot_ids].tolist(), foot_solref=model.geom_solref[foot_ids].tolist(),
+                    solver_options=solver_contract(model),
                     provenance="Scripted fresh simulation, not a replay of the user's video",
                     sampling="Row state/target at t; forces from solve for [t,t+dt]; policy_tick marks 50 Hz updates")
     write_json(out / "manifest.json", manifest)
