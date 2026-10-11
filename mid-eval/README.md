@@ -3,7 +3,7 @@
 | File | Contents |
 | --- | --- |
 | [Presentation PDF](UGP_VLM_BASED_ROBOT_NAVIGATION.pdf) | User-designed presentation; 12 slides covering the four tasks |
-| [Speaking script](PRESENTATION_SCRIPT.md) | Complete spoken explanation in PDF order, feedback questions, and backup answers |
+
 
 Post-evaluation direction: [VLM / trajectory / RL integration](../docs/INTEGRATION_PLAN.md) and [GQFT masked-attention research](../Task_2/MASKED_ATTENTION_PLAN.md). Implementation and evaluation are pending.
 
