@@ -1,0 +1,174 @@
+{
+  "flat_pairs": [
+    {
+      "checkpoint": "original90000",
+      "axis": "x",
+      "q_reduction_percent": 69.78695758542656,
+      "speed_change": 0.012951289234579805,
+      "rmse_change": -0.0206287406446148
+    },
+    {
+      "checkpoint": "original90000",
+      "axis": "y",
+      "q_reduction_percent": 63.529825473287296,
+      "speed_change": -0.026522649169078566,
+      "rmse_change": 0.01956975786550169
+    },
+    {
+      "checkpoint": "newest91000",
+      "axis": "x",
+      "q_reduction_percent": 67.13801238140091,
+      "speed_change": 0.024235812857905298,
+      "rmse_change": -0.030239451628470956
+    },
+    {
+      "checkpoint": "newest91000",
+      "axis": "y",
+      "q_reduction_percent": 70.46046372697614,
+      "speed_change": 0.055351429685528225,
+      "rmse_change": -0.060245733638802854
+    }
+  ],
+  "fixed_contact_baseline_equivalence": [
+    {
+      "checkpoint": "original90000",
+      "axis": "x",
+      "q_exact_equal": true,
+      "target_exact_equal": true
+    },
+    {
+      "checkpoint": "original90000",
+      "axis": "y",
+      "q_exact_equal": true,
+      "target_exact_equal": true
+    },
+    {
+      "checkpoint": "newest91000",
+      "axis": "x",
+      "q_exact_equal": true,
+      "target_exact_equal": true
+    },
+    {
+      "checkpoint": "newest91000",
+      "axis": "y",
+      "q_exact_equal": true,
+      "target_exact_equal": true
+    }
+  ],
+  "stair_verifications": [
+    {
+      "run": "original90000_stairs_x_baseline_s-1",
+      "verified_traversal": false,
+      "max_valid_hold_s": 0.0,
+      "all_feet_ever_loaded_platform": false
+    },
+    {
+      "run": "original90000_stairs_x_impratio10_s-1",
+      "verified_traversal": false,
+      "max_valid_hold_s": 0.0,
+      "all_feet_ever_loaded_platform": false
+    },
+    {
+      "run": "original90000_stairs_x_fixed_contact_sub5_s-1",
+      "verified_traversal": false,
+      "max_valid_hold_s": 0.0,
+      "all_feet_ever_loaded_platform": false
+    },
+    {
+      "run": "original90000_stairs_x_baseline_s0",
+      "verified_traversal": false,
+      "max_valid_hold_s": 0.0,
+      "all_feet_ever_loaded_platform": false
+    },
+    {
+      "run": "original90000_stairs_x_impratio10_s0",
+      "verified_traversal": true,
+      "max_valid_hold_s": 0.5,
+      "all_feet_ever_loaded_platform": true
+    },
+    {
+      "run": "original90000_stairs_x_fixed_contact_sub5_s0",
+      "verified_traversal": false,
+      "max_valid_hold_s": 0.0,
+      "all_feet_ever_loaded_platform": false
+    },
+    {
+      "run": "original90000_stairs_x_baseline_s1",
+      "verified_traversal": false,
+      "max_valid_hold_s": 0.0,
+      "all_feet_ever_loaded_platform": false
+    },
+    {
+      "run": "original90000_stairs_x_impratio10_s1",
+      "verified_traversal": true,
+      "max_valid_hold_s": 0.5,
+      "all_feet_ever_loaded_platform": true
+    },
+    {
+      "run": "original90000_stairs_x_fixed_contact_sub5_s1",
+      "verified_traversal": false,
+      "max_valid_hold_s": 0.0,
+      "all_feet_ever_loaded_platform": false
+    },
+    {
+      "run": "newest91000_stairs_x_baseline_s-1",
+      "verified_traversal": false,
+      "max_valid_hold_s": 0.0,
+      "all_feet_ever_loaded_platform": false
+    },
+    {
+      "run": "newest91000_stairs_x_impratio10_s-1",
+      "verified_traversal": true,
+      "max_valid_hold_s": 0.5,
+      "all_feet_ever_loaded_platform": true
+    },
+    {
+      "run": "newest91000_stairs_x_fixed_contact_sub5_s-1",
+      "verified_traversal": false,
+      "max_valid_hold_s": 0.0,
+      "all_feet_ever_loaded_platform": false
+    },
+    {
+      "run": "newest91000_stairs_x_baseline_s0",
+      "verified_traversal": false,
+      "max_valid_hold_s": 0.0,
+      "all_feet_ever_loaded_platform": false
+    },
+    {
+      "run": "newest91000_stairs_x_impratio10_s0",
+      "verified_traversal": false,
+      "max_valid_hold_s": 0.0,
+      "all_feet_ever_loaded_platform": false
+    },
+    {
+      "run": "newest91000_stairs_x_fixed_contact_sub5_s0",
+      "verified_traversal": false,
+      "max_valid_hold_s": 0.0,
+      "all_feet_ever_loaded_platform": false
+    },
+    {
+      "run": "newest91000_stairs_x_baseline_s1",
+      "verified_traversal": false,
+      "max_valid_hold_s": 0.0,
+      "all_feet_ever_loaded_platform": false
+    },
+    {
+      "run": "newest91000_stairs_x_impratio10_s1",
+      "verified_traversal": false,
+      "max_valid_hold_s": 0.0,
+      "all_feet_ever_loaded_platform": false
+    },
+    {
+      "run": "newest91000_stairs_x_fixed_contact_sub5_s1",
+      "verified_traversal": false,
+      "max_valid_hold_s": 0.0,
+      "all_feet_ever_loaded_platform": false
+    }
+  ],
+  "runs": 34,
+  "devices": [
+    "cpu"
+  ],
+  "training_launched": false,
+  "caveat": "Three deterministic starts per checkpoint; no hardware validation or independent training seeds."
+}

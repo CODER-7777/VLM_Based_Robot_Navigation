@@ -5,3 +5,5 @@
 Task_3/moe_jitter_audit_20260921/original_sim/*.py whitespace=-blank-at-eol
 # CSV evidence retains its original CRLF records without byte normalization.
 *.csv whitespace=cr-at-eol
+# Presentation exports are binary artifacts, not line-oriented source.
+*.pdf binary

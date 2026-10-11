@@ -1,0 +1,18 @@
+{
+  "original_toaster_parts": 11,
+  "original_texture_maps": [
+    {
+      "image": 120,
+      "sha256": "3c3d1f651e30efe6d1a4cc5ec03419bd99051e165ad929f158df2ff49ea66b48"
+    },
+    {
+      "image": 118,
+      "sha256": "57405d710f4b500e76fe9be1fbc3aa3df80889a01ff3c8e6bdd62a9249f0f8ba"
+    },
+    {
+      "image": 119,
+      "sha256": "7d7e0193549c2cca69124fc29506b578d1b11a4f2522051bebbcb409cc233353"
+    }
+  ],
+  "all_original_toaster_geometry_materials_and_texture_bytes_preserved": true
+}

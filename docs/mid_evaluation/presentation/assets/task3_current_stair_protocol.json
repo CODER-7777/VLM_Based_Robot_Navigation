@@ -1,0 +1,57 @@
+{
+  "protected_hashes": {
+    "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/xterra_mjlab/svanm2_moe_stair_sim/controller.py": "1097e679ebadcf7374790112a1678b9e403ac930ab70f33c36e8363047bb5cc7",
+    "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/xterra_mjlab/svanm2_moe_stair_sim/scene.xml": "62934ac0a698ae6ea9716a882c975c83642dec7aab53b934a8c08df47597f3bf",
+    "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/xterra_mjlab/checkpoints/svanm2_moe/model_90000.pt": "440bbb28d554f75db38bfd163351c04ea4a32d9d06764c37b7e6071d41daa5cb",
+    "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/xterra_mjlab/evaluation_runs/moe_swing013_latest/latest.pt": "dec9775d4b368b69964dde679985455d8b723d5af7fb2d24e8798fa4fdd66da4"
+  },
+  "cases": [
+    "baseline",
+    "impratio10",
+    "fixed_contact_sub5"
+  ],
+  "starts": [
+    -1,
+    0,
+    1
+  ],
+  "checkpoints": [
+    "original90000",
+    "newest91000"
+  ],
+  "terrain": "stairs",
+  "command_m_s": 0.3,
+  "policy_hz": 50,
+  "pd_hz": 200,
+  "target_min": [
+    -0.7350000143051147,
+    -1.5707999467849731,
+    -2.7227001190185547,
+    -0.7350000143051147,
+    -1.5707999467849731,
+    -2.7227001190185547,
+    -0.7350000143051147,
+    -0.5235999822616577,
+    -2.7227001190185547,
+    -0.7350000143051147,
+    -0.5235999822616577,
+    -2.7227001190185547
+  ],
+  "target_max": [
+    0.7350000143051147,
+    3.4907000064849854,
+    -0.8877599835395813,
+    0.7350000143051147,
+    3.4907000064849854,
+    -0.8877599835395813,
+    0.7350000143051147,
+    4.537899971008301,
+    -0.8877599835395813,
+    0.7350000143051147,
+    4.537899971008301,
+    -0.8877599835395813
+  ],
+  "bounds": "Current controller, NOT the wider October 7 contract.",
+  "sensing": "legacy, held constant within every pair; substeps change the age of legacy derived sensors",
+  "caveat": "Deterministic offsets are sensitivity cases, not independently trained seeds."
+}

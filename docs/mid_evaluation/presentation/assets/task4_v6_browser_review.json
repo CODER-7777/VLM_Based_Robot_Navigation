@@ -1,0 +1,1087 @@
+{
+  "status": "passed",
+  "revision": "kitchen_workspace_v6_20261011",
+  "scene_sha256": "126fbc2d2bc7b17f441e4446da4a13d1d261562bc70ed9e1d59bb029e3e41a4c",
+  "browser_errors": [],
+  "scene_state": {
+    "ready": true,
+    "error": null,
+    "toasterParts": 11,
+    "originalPbr": true
+  },
+  "room_selections": [
+    {
+      "id": "toaster",
+      "parts": {
+        "parts": 11,
+        "bounds": {
+          "min": [
+            4.426028036350384,
+            0.9290000136497527,
+            5.044254743655104
+          ],
+          "max": [
+            4.6130971337824755,
+            1.129000001970904,
+            5.339230101664841
+          ]
+        },
+        "standardMaterials": 11,
+        "method": "downloaded product, fitted and adapted"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "blue_jug",
+      "parts": {
+        "parts": 2,
+        "bounds": {
+          "min": [
+            7.031500816345215,
+            0.9290000200271589,
+            4.4152002334594735
+          ],
+          "max": [
+            7.0724992752075195,
+            0.9794999957084638,
+            4.470427989959718
+          ]
+        },
+        "standardMaterials": 2,
+        "method": "photo-guided geometry with PBR finish"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "phone",
+      "parts": {
+        "parts": 18,
+        "bounds": {
+          "min": [
+            6.719954490661621,
+            0.9283999800682059,
+            2.3566017150878915
+          ],
+          "max": [
+            7.079973220825195,
+            1.0280010700225821,
+            2.627585172653199
+          ]
+        },
+        "standardMaterials": 18,
+        "method": "existing licensed phone with refined casing edges"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "canister_l",
+      "parts": {
+        "parts": 16,
+        "bounds": {
+          "min": [
+            4.771260179579258,
+            0.9290000153705457,
+            5.31150007247925
+          ],
+          "max": [
+            4.8947401866316795,
+            1.1659200023859717,
+            5.432480216026307
+          ]
+        },
+        "standardMaterials": 16,
+        "method": "photo-built fitted mesh"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "canister_r",
+      "parts": {
+        "parts": 16,
+        "bounds": {
+          "min": [
+            4.62325993925333,
+            0.9290000153705457,
+            5.30550003051758
+          ],
+          "max": [
+            4.746739946305752,
+            1.1659200023859717,
+            5.426480174064637
+          ]
+        },
+        "standardMaterials": 16,
+        "method": "photo-built fitted mesh"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "soap_bottle",
+      "parts": {
+        "parts": 2,
+        "bounds": {
+          "min": [
+            4.987502574920654,
+            0.9290018677711465,
+            5.29450273513794
+          ],
+          "max": [
+            5.075850486755371,
+            1.125001857390156,
+            5.379497528076174
+          ]
+        },
+        "standardMaterials": 2,
+        "method": "photo-guided geometry with PBR finish"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "soap_dish",
+      "parts": {
+        "parts": 2,
+        "bounds": {
+          "min": [
+            5.763205051422119,
+            0.9290000200271584,
+            5.368490219116212
+          ],
+          "max": [
+            5.870794773101807,
+            0.9570000171661356,
+            5.437510013580323
+          ]
+        },
+        "standardMaterials": 2,
+        "method": "photo-guided geometry with PBR finish"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "bottles",
+      "parts": {
+        "parts": 4,
+        "bounds": {
+          "min": [
+            6.7134318351745605,
+            0.9290018047998624,
+            5.148515808049273
+          ],
+          "max": [
+            6.836430549621582,
+            1.0675876483455,
+            5.2571322081674055
+          ]
+        },
+        "standardMaterials": 4,
+        "method": "photo-built fitted mesh"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "paper_towel",
+      "parts": {
+        "parts": 5,
+        "bounds": {
+          "min": [
+            6.302128314971924,
+            0.929000004660336,
+            5.24899983406067
+          ],
+          "max": [
+            6.507000207901001,
+            1.2610000371932961,
+            5.452999830245973
+          ]
+        },
+        "standardMaterials": 6,
+        "method": "downloaded product, fitted and adapted"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "caddy",
+      "parts": {
+        "parts": 5,
+        "bounds": {
+          "min": [
+            6.891499996185303,
+            0.9290015935268601,
+            4.710999579837709
+          ],
+          "max": [
+            7.071000099182129,
+            1.169001779491851,
+            5.048999464331977
+          ]
+        },
+        "standardMaterials": 5,
+        "method": "photo-built fitted mesh"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "knife_block",
+      "parts": {
+        "parts": 18,
+        "bounds": {
+          "min": [
+            6.882893249205621,
+            0.9290000471568368,
+            4.251328587706672
+          ],
+          "max": [
+            7.075863483093908,
+            1.2299999814270572,
+            4.328443420161724
+          ]
+        },
+        "standardMaterials": 18,
+        "method": "downloaded product, fitted and adapted"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "knife_block_round",
+      "parts": {
+        "parts": 7,
+        "bounds": {
+          "min": [
+            6.970955245895652,
+            0.9290000314467447,
+            4.032926997928347
+          ],
+          "max": [
+            7.079045195337926,
+            1.254274003771519,
+            4.207072104059053
+          ]
+        },
+        "standardMaterials": 7,
+        "method": "photo-built fitted mesh"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "grinder",
+      "parts": {
+        "parts": 5,
+        "bounds": {
+          "min": [
+            6.921500205993652,
+            0.9290009499363618,
+            2.6729996974051544
+          ],
+          "max": [
+            7.061999797821045,
+            1.1535009379540535,
+            2.818499676931137
+          ]
+        },
+        "standardMaterials": 6,
+        "method": "photo-built grinder with licensed wood texture"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "range_kettle",
+      "parts": {
+        "parts": 3,
+        "bounds": {
+          "min": [
+            6.755090265298748,
+            0.9909999670615287,
+            3.0900641876973345
+          ],
+          "max": [
+            7.022340083573736,
+            1.2309999685875492,
+            3.3654291528491243
+          ]
+        },
+        "standardMaterials": 3,
+        "method": "downloaded product, fitted and adapted"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "hot_tap",
+      "parts": {
+        "parts": 13,
+        "bounds": {
+          "min": [
+            5.871599896810949,
+            0.9289999604225136,
+            5.342099889181556
+          ],
+          "max": [
+            6.021238195792971,
+            1.1590000391006448,
+            5.423981892387701
+          ]
+        },
+        "standardMaterials": 13,
+        "method": "licensed spout with a photo-shaped stem"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "soap_pump",
+      "parts": {
+        "parts": 2,
+        "bounds": {
+          "min": [
+            5.265450954437256,
+            0.9290018690838211,
+            5.327212448197682
+          ],
+          "max": [
+            5.346459865570068,
+            1.0479735329744972,
+            5.379305995299493
+          ]
+        },
+        "standardMaterials": 2,
+        "method": "photo-built fitted mesh"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "air_gap",
+      "parts": {
+        "parts": 2,
+        "bounds": {
+          "min": [
+            5.185344696044922,
+            0.9290018336827437,
+            5.316161760513958
+          ],
+          "max": [
+            5.239397048950195,
+            1.014411967684585,
+            5.370214618096836
+          ]
+        },
+        "standardMaterials": 2,
+        "method": "photo-built fitted mesh"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "frogs",
+      "parts": {
+        "parts": 14,
+        "bounds": {
+          "min": [
+            6.683838367462158,
+            0.9300000071525552,
+            5.158415317535401
+          ],
+          "max": [
+            6.945555210113525,
+            1.2325280904769875,
+            5.431090831756594
+          ]
+        },
+        "standardMaterials": 14,
+        "method": "retained photo-guided articulated reconstruction"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "tea_tray",
+      "parts": {
+        "parts": 4,
+        "bounds": {
+          "min": [
+            1.5085409879684448,
+            0.9310182929038985,
+            3.734759330749513
+          ],
+          "max": [
+            1.7814589738845825,
+            1.085999965667723,
+            4.135240554809571
+          ]
+        },
+        "standardMaterials": 4,
+        "method": "licensed teapot with photo-built accessories"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "glass_kettle",
+      "parts": {
+        "parts": 7,
+        "bounds": {
+          "min": [
+            1.594980001449585,
+            0.9350000023841843,
+            3.4935823230743424
+          ],
+          "max": [
+            1.7766649723052979,
+            1.1800000667572008,
+            3.7262814788818375
+          ]
+        },
+        "standardMaterials": 7,
+        "method": "photo-guided geometry with PBR finish"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "frother",
+      "parts": {
+        "parts": 3,
+        "bounds": {
+          "min": [
+            1.6145281152153204,
+            0.9349999993861489,
+            3.4215280370140277
+          ],
+          "max": [
+            1.7214718504524043,
+            1.12500002602625,
+            3.5284717722511116
+          ]
+        },
+        "standardMaterials": 6,
+        "method": "licensed ribbed body with a photo-shaped base"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "coffee_machine",
+      "parts": {
+        "parts": 51,
+        "bounds": {
+          "min": [
+            1.6385241746902466,
+            0.9350000023841846,
+            3.173846006393434
+          ],
+          "max": [
+            1.893475890159607,
+            1.1599999666213978,
+            3.2741539478302015
+          ]
+        },
+        "standardMaterials": 51,
+        "method": "existing licensed coffee machine with subdivided curved surfaces"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "phone_dock",
+      "parts": {
+        "parts": 5,
+        "bounds": {
+          "min": [
+            1.372499942779541,
+            1.1119999885559062,
+            4.861499786376955
+          ],
+          "max": [
+            1.5227553844451904,
+            1.3410619497299174,
+            4.938499927520754
+          ]
+        },
+        "standardMaterials": 5,
+        "method": "Restored photo-fitted handset and dock with rounded housing edges"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "rangetop",
+      "parts": {
+        "parts": 3,
+        "bounds": {
+          "min": [
+            6.4527997970581055,
+            0.9331657290458664,
+            3.0842499732971205
+          ],
+          "max": [
+            7.101200103759766,
+            0.9909999966621388,
+            3.994750022888185
+          ]
+        },
+        "standardMaterials": 3,
+        "method": "retained fitted mesh"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "faucet_main_style",
+      "parts": {
+        "parts": 4,
+        "bounds": {
+          "min": [
+            5.374249458312988,
+            0.9262635214608477,
+            5.18788203284599
+          ],
+          "max": [
+            5.502553939819336,
+            1.129459099300743,
+            5.398315108591755
+          ]
+        },
+        "standardMaterials": 4,
+        "method": "retained fitted mesh"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "button_p_lathe",
+      "parts": {
+        "parts": 2,
+        "bounds": {
+          "min": [
+            5.0737128257751465,
+            0.9264136498969041,
+            5.314636851237247
+          ],
+          "max": [
+            5.130920886993408,
+            0.9659850701944597,
+            5.371844924213555
+          ]
+        },
+        "standardMaterials": 2,
+        "method": "retained fitted mesh"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "prep_faucet",
+      "parts": {
+        "parts": 7,
+        "bounds": {
+          "min": [
+            1.5740000009536743,
+            0.935000893987762,
+            2.5719996796985214
+          ],
+          "max": [
+            1.7302367687225342,
+            1.240237690481688,
+            2.779999647264834
+          ]
+        },
+        "standardMaterials": 7,
+        "method": "retained fitted mesh"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "prep_soap",
+      "parts": {
+        "parts": 2,
+        "bounds": {
+          "min": [
+            1.6061570947296833,
+            0.9350008619136729,
+            2.394450539673061
+          ],
+          "max": [
+            1.6744215467643926,
+            1.0539725199625738,
+            2.4847514250082368
+          ]
+        },
+        "standardMaterials": 2,
+        "method": "retained fitted mesh"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "tv_remote",
+      "parts": {
+        "parts": 2,
+        "bounds": {
+          "min": [
+            1.1818878650665283,
+            1.11200165748596,
+            4.8348488311767595
+          ],
+          "max": [
+            1.354112148284912,
+            1.1320016384124736,
+            4.963149974823
+          ]
+        },
+        "standardMaterials": 2,
+        "method": "Original material-preserving mesh with verified placement correction"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    },
+    {
+      "id": "bread_basket",
+      "parts": {
+        "parts": 3,
+        "bounds": {
+          "min": [
+            1.600000023841858,
+            0.9350016143424562,
+            4.6499997365767385
+          ],
+          "max": [
+            1.7999999523162842,
+            1.0378280104230162,
+            4.9499994851402
+          ]
+        },
+        "standardMaterials": 3,
+        "method": "retained fitted mesh"
+      },
+      "inspection": true,
+      "model_download_header_valid": true
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "toaster",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/toaster_real.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/toaster_before.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/toaster_pbr.jpg",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "id": "blue_jug",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/blue_jug_real.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/blue_jug_before.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/blue_jug_pbr.jpg",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "id": "phone",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/phone_real.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/phone_before.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/phone_pbr.jpg",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "id": "canister_l",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/canister_l_real.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/canister_l_before.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/canister_l_pbr.jpg",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "id": "canister_r",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/canister_r_real.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/canister_r_before.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/canister_r_pbr.jpg",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "id": "soap_bottle",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/soap_bottle_real.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/soap_bottle_before.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/soap_bottle_pbr.jpg",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "id": "soap_dish",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/soap_dish_real.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/soap_dish_before.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/soap_dish_pbr.jpg",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "id": "bottles",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/bottles_real.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/bottles_before.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/bottles_pbr.jpg",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "id": "paper_towel",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/paper_towel_real.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/paper_towel_before.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/paper_towel_pbr.jpg",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "id": "caddy",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/caddy_real.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/caddy_before.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/caddy_pbr.jpg",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "id": "knife_block",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/knife_block_real.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/knife_block_before.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/knife_block_pbr.jpg",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "id": "knife_block_round",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/knife_block_round_real.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/knife_block_round_before.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/knife_block_round_pbr.jpg",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "id": "grinder",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/grinder_real.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/grinder_before.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/grinder_pbr.jpg",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "id": "range_kettle",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/range_kettle_real.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/range_kettle_before.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/range_kettle_pbr.jpg",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "id": "hot_tap",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/hot_tap_real.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/hot_tap_before.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/hot_tap_pbr.jpg",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "id": "soap_pump",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/soap_pump_real.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/soap_pump_before.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/soap_pump_pbr.jpg",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "id": "air_gap",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/air_gap_real.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/air_gap_before.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/air_gap_pbr.jpg",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "id": "frogs",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/frogs_real.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/frogs_before.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/frogs_pbr.jpg",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "id": "tea_tray",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/tea_tray_real.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/tea_tray_before.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/tea_tray_pbr.jpg",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "id": "glass_kettle",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/glass_kettle_real.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/glass_kettle_before.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/glass_kettle_pbr.jpg",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "id": "frother",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/frother_real.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/frother_before.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/frother_pbr.jpg",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "id": "coffee_machine",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/coffee_machine_real.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/coffee_machine_before.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/coffee_machine_pbr.jpg",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "id": "phone_dock",
+      "images": [
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/phone_dock_real.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/phone_dock_before.jpg",
+          "ready": true
+        },
+        {
+          "src": "http://127.0.0.1:8770/tour-assets/comparison/items/phone_dock_pbr.jpg",
+          "ready": true
+        }
+      ]
+    }
+  ],
+  "calibrated_photo_captures": 23,
+  "navigation_actions_sent": false,
+  "browser": "Chromium CDP / SwiftShader",
+  "capture_time_utc": "2026-10-10T21:39:47Z",
+  "review_scope": "Actual browser rendering, original-texture preservation, all object selections and model downloads, all comparison images; visual comparison of five changed photographed objects. TV remote translation assessed by saved placement audit.",
+  "visual_review": {
+    "contact_sheet": "browser_captures/browser_contact_sheet.jpg",
+    "observations": {
+      "blue_jug": "Smooth cobalt body and handle render correctly; generic proportions remain.",
+      "soap_bottle": "Rounded satin bottle and retained label present; pump silhouette and illumination differ from photo.",
+      "soap_dish": "Hollow oval dish and soap render; dish remains smaller and translated for tap clearance.",
+      "glass_kettle": "Glass transmission renders in browser; substitute lid, handle and base differ from photograph.",
+      "phone_dock": "Restored active handset and dock render at photo pose; controls, lean details and base remain approximate.",
+      "tv_remote": "Retained geometry/materials and translated support position validated by saved-scene placement screening; no new independent photo capture claimed."
+    },
+    "remaining_limits": [
+      "Existing scan wall/cabinet holes and distortions remain.",
+      "Passing means publication checks passed with documented approximations; it does not certify a completely photorealistic reconstruction."
+    ]
+  }
+}

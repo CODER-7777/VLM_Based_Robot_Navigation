@@ -1,0 +1,243 @@
+{
+  "scope": "Current saved evidence; plots copied byte-for-byte. The Genesis image is an extracted demo frame. Diagrams are explanatory, not experiment observations.",
+  "records": [
+    {
+      "source": "Task_3/tools/results/deep_audit_20261010/current_flat_comparison.png",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task3_current_flat.png",
+      "bytes": 140086,
+      "sha256": "271440e5bf086f3a3993ecea3d2480dd40da3aa2ff173fb2137f065dafe1a3a9"
+    },
+    {
+      "source": "Task_3/tools/results/deep_audit_20261010/current_stair_progress.png",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task3_current_stairs.png",
+      "bytes": 328327,
+      "sha256": "8b6282893541af6c6dd13f2647708dbbb64141ddb5851bc6e45d7f680783627c"
+    },
+    {
+      "source": "Task_3/tools/results/deep_audit_20261010/verification.json",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task3_current_verification.json",
+      "bytes": 4822,
+      "sha256": "f6c7ad38f16e022f1853b6055e3ee6374c0a712cf9f4eb11d6df8d2c8168d6ce"
+    },
+    {
+      "source": "Task_3/tools/results/deep_audit_20261010/flat/results.csv",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task3_current_flat.csv",
+      "bytes": 5954,
+      "sha256": "5fdaed65c21f591393926d17720ed3e613f6d7165dc1ac31d4bdeb6cba43a1f8"
+    },
+    {
+      "source": "Task_3/tools/results/deep_audit_20261010/flat/protocol.json",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task3_current_flat_protocol.json",
+      "bytes": 1948,
+      "sha256": "623e817665eff242d694aada416a4cdc3821eee3913e40dbedb140b71cc6a90c"
+    },
+    {
+      "source": "Task_3/tools/results/deep_audit_20261010/stairs/protocol.json",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task3_current_stair_protocol.json",
+      "bytes": 1944,
+      "sha256": "0c04bea37edb5a31febd1c6593b636059ad416547c80ccdf4b8a7ddd631e3c5b"
+    },
+    {
+      "source": "Task_4/kitchen_product_model_replacements/images/ten_product_comparisons.jpg",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task4_product_comparisons.jpg",
+      "bytes": 555146,
+      "sha256": "fedf2c467d558223651dcab8c86fc6de8c5ed38407a4420c5ba4f019032dc70c"
+    },
+    {
+      "source": "Task_4/kitchen_product_model_replacements/images/room_range_kettle.jpg",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task4_current_pbr_room.jpg",
+      "bytes": 272877,
+      "sha256": "a02ef571066033195edd734e923b4b0d6d9d7126eb0861361affdeb79ad6ddc8"
+    },
+    {
+      "source": "Task_4/kitchen_product_model_replacements/evidence/publication.json",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task4_product_publication.json",
+      "bytes": 2538,
+      "sha256": "9fe17ce88bf3f62801807df556397e4dc18d6c724a35b040336a8e02ce8e8046"
+    },
+    {
+      "source": "Task_4/kitchen_product_model_replacements/evidence/published_comparison_browser_review.json",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task4_product_browser_review.json",
+      "bytes": 4090,
+      "sha256": "c8759cd0c2665995f9aba75e66a4751f8bd1af4f2ba4222f121df380a74cf5fe"
+    },
+    {
+      "source": "Task_4/kitchen_product_model_replacements/evidence/original_material_verification.json",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task4_original_toaster_materials.json",
+      "bytes": 494,
+      "sha256": "c056ff110433786e0021a79e7b0cb9f2a2d9c07992593914c6031973dd690959"
+    },
+    {
+      "source": "Task_4/kitchen_product_model_replacements/evidence/published_http_verification.json",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task4_product_http_checks.json",
+      "bytes": 667,
+      "sha256": "d6feb702a20b9e6b00eb1dbb33d6906d42dc00052f3b87cb976e9297f94da23d"
+    },
+    {
+      "source": "Task_1_Simulator_Evaluation/videos/Genesis_without_physics.mp4",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task1_genesis_demo.jpg",
+      "derivation": "ffmpeg single frame at 00:00:03; no configuration inferred",
+      "bytes": 112710,
+      "sha256": "8d222dc47f32dfb38ad6a23b98de50629ad5a00fc1f8586237d329bb863bf72d",
+      "source_sha256": "a11db2a4141c566763f51e3d7bf452250bbb6f9b7b3575ea77e0e99ae5c5279d"
+    },
+    {
+      "source": "Task_4/kitchen_product_model_replacements/images/assets/range_kettle_real.jpg",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task4_range_kettle_real.jpg",
+      "bytes": 32470,
+      "sha256": "405fe730e61b94a5d5aa9fe7c96a2e655e67046aa350f213f9ef7cbf4ba59f29"
+    },
+    {
+      "source": "Task_4/kitchen_product_model_replacements/images/assets/range_kettle_before.jpg",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task4_range_kettle_earlier_mesh.jpg",
+      "bytes": 26533,
+      "sha256": "947e76a78e0f3b14711da97ab702619c67a846304f2f71ad535b99a9996c8c07"
+    },
+    {
+      "source": "Task_4/kitchen_product_model_replacements/images/assets/range_kettle_room.jpg",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task4_range_kettle_current_mesh.jpg",
+      "bytes": 337260,
+      "sha256": "4b83dd23f191bf3090c76b27b2d251065294db3a0578b291693ba4c791e1eaa1"
+    },
+    {
+      "source": "Task_2/gqft_algorithm_sharing_vivekananda/visualizations/final_overlays/ep837/leg07.png",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task2_ep837_leg07_historical.png",
+      "bytes": 632150,
+      "sha256": "9b6fb81ddba136caa4df3a68182e0a2ef3f41363eabcebfd8673b4f188909f09",
+      "qualification": "Historical episode overlay; legacy adapter defects and mislabeled baseline checkpoint prevent controlled model comparison. Baked-in baseline/success labels are not newly verified."
+    },
+    {
+      "source": "Task_2/gqft_algorithm_sharing_vivekananda/visualizations/final_overlays/ep837/leg11.png",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task2_ep837_leg11_historical.png",
+      "bytes": 750485,
+      "sha256": "2d4eef96868fe063b868667aad0c679f5cb0922234ec32f166ddace12b52995b",
+      "qualification": "Historical episode overlay; legacy adapter defects and mislabeled baseline checkpoint prevent controlled model comparison. Baked-in baseline/success labels are not newly verified."
+    },
+    {
+      "source": "Task_2/gqft_algorithm_sharing_vivekananda/visualizations/final_overlays/ep1285/leg23.png",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task2_ep1285_leg23_historical.png",
+      "bytes": 550649,
+      "sha256": "1167dcd75be5e5431187f3cbeaa5015df55ecbed2c4ec59a2cf68408bd6c9aff",
+      "qualification": "Historical episode overlay; legacy adapter defects and mislabeled baseline checkpoint prevent controlled model comparison. Baked-in baseline/success labels are not newly verified."
+    },
+    {
+      "source": "Task_4/kitchen_panorama_compare/sink_comparison_preview.jpg",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task4_panorama_before_after.jpg",
+      "bytes": 4784966,
+      "sha256": "0e50476b9982868a6964b7b506334e17c6608ac46f291dea59f8b5a934c10f56",
+      "qualification": "Saved panorama preview: original photographic skybox above, repaired PBR room below."
+    },
+    {
+      "source": "Task_4/kitchen_panorama_compare/panorama_browser_evidence/sink_viewer.png",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task4_panorama_sink_pov.png",
+      "bytes": 1249813,
+      "sha256": "6b6c63443fcad422cf61bbc82478fe2f5c10097017c42c16c2cb6683cdbfca25",
+      "qualification": "v6 synchronized original photograph/repaired PBR browser comparison."
+    },
+    {
+      "source": "Task_4/kitchen_panorama_compare/panorama_browser_evidence/range_viewer.png",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task4_panorama_range_pov.png",
+      "bytes": 1328316,
+      "sha256": "a0f960b36315df45b1598267ca859bf03cce8b867dd60bcf92ef7bed0ffa4f1f",
+      "qualification": "v6 synchronized range/phone/grinder photograph and repaired PBR browser comparison."
+    },
+    {
+      "source": "Task_4/toaster_home_tour/images/home_walk.png",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task4_home_tour_walk.png",
+      "bytes": 1417570,
+      "sha256": "15bd826f8374e7f08d5e85700729b5b4d910e4eeaa3ab6ea6f9513633f515b04",
+      "qualification": "Earlier saved home-tour walkthrough screenshot; not the latest v6 camera capture."
+    },
+    {
+      "source": "Task_4/toaster_home_tour/images/toaster_in_home.png",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task4_home_tour_toaster.png",
+      "bytes": 919865,
+      "sha256": "09fba311b22c8e4d1f89d9f0db7abdaa67e8ef5bd809311b7374fc65dccbba9a",
+      "qualification": "Earlier saved home-tour toaster inspection screenshot; not the latest v6 camera capture."
+    },
+    {
+      "source": "Task_4/kitchen_panorama_compare/v6_browser_evidence/blue_jug_full.png",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task4_v6_blue_jug_pov.png",
+      "bytes": 999563,
+      "sha256": "799926d7def1c43a482e1921797f2ad1d7894b60af17285943113eca951bc689",
+      "qualification": "Actual v6 browser room capture; shape remains approximate."
+    },
+    {
+      "source": "Task_4/kitchen_panorama_compare/v6_browser_evidence/blue_jug_real.jpg",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task4_blue_jug_real.jpg",
+      "bytes": 11934,
+      "sha256": "f035f583f20c38c51c5c1199629bb6ed60ca7f887a752097ed480edb358ea094",
+      "qualification": "Unretouched real photograph used for the jug comparison."
+    },
+    {
+      "source": "Task_4/kitchen_panorama_compare/v6_browser_evidence/phone_dock_full.png",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task4_v6_phone_dock_pov.png",
+      "bytes": 891456,
+      "sha256": "d4cabb28280d95b36cdcd44f5f8c414eac4af48f1c6edacc9ed7c07fc5b8694d",
+      "qualification": "Actual v6 browser capture of restored handset/dock; approximate product details remain."
+    },
+    {
+      "source": "Task_4/kitchen_panorama_compare/panorama_browser_evidence/verification.json",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task4_panorama_verification.json",
+      "bytes": 7956,
+      "sha256": "802d3fc82c646fa3100ab97d5a354b7c7cef39f83f7e64d2b4de0f5bfe2a05b6",
+      "qualification": "Saved v6 evidence, not a fresh server or browser check."
+    },
+    {
+      "source": "Task_4/kitchen_panorama_compare/v6_browser_evidence/browser_review.json",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task4_v6_browser_review.json",
+      "bytes": 28310,
+      "sha256": "cfae08f6d52ac5a407786a2a9ade6b7f9c8a67f68a20c55d65c7dd1f75f874c9",
+      "qualification": "Saved actual Chromium verification and visual limitations."
+    },
+    {
+      "source": "Task_3/moe_jitter_audit_20260921/hardware_jitter_diagnostics.png",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task3_hardware_diagnostics.png",
+      "bytes": 340880,
+      "sha256": "d02628691ed0c4d45f9adce7cf98d46c3a009b78d0ac0f17e60a64461d6eb548",
+      "qualification": "Saved September 21 hardware-contract audit evidence; distinct from October contact experiments."
+    },
+    {
+      "source": "Task_3/moe_jitter_audit_20260921/ablation_comparison.png",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task3_historical_ablations.png",
+      "bytes": 204842,
+      "sha256": "417fcb03164d0d06ec6d0792cc2b41b94b4917d3b4cdeec912c4b36f356e727d",
+      "qualification": "Saved September 21 hardware-contract audit evidence; distinct from October contact experiments."
+    },
+    {
+      "source": "Task_3/moe_jitter_audit_20260921/parity_summary.json",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task3_hardware_replay.json",
+      "bytes": 1297,
+      "sha256": "ee93b0f7fe5a8a0972815d19f9eb1c9860b2c5f47db918c595c3fd6dbe465849",
+      "qualification": "Saved September 21 hardware-contract audit evidence; distinct from October contact experiments."
+    },
+    {
+      "source": "Task_3/tools/results/interactive/newest91000_impratio10_20261011_022418/attempt_004/plots/01_overview.png",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task3_interactive_overview.png",
+      "bytes": 372913,
+      "sha256": "2c8f1dccfba29b30efc32bf1a4f2080366c34986f245ff0b52c483284dd83493",
+      "qualification": "Saved operator-controlled attempt with steering; not a matched contact A/B or automatic full-traversal validation."
+    },
+    {
+      "source": "Task_3/tools/results/interactive/newest91000_impratio10_20261011_022418/attempt_004/plots/02_joint_event.png",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task3_interactive_joint_event.png",
+      "bytes": 415458,
+      "sha256": "64fd71ca69048c56d6411764164b0ebce2031f54e38a986cddf951e61d481e9b",
+      "qualification": "Saved operator-controlled attempt with steering; not a matched contact A/B or automatic full-traversal validation."
+    },
+    {
+      "source": "Task_3/tools/results/interactive/newest91000_impratio10_20261011_022418/attempt_004/plots/03_contacts_control.png",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task3_interactive_contacts.png",
+      "bytes": 202872,
+      "sha256": "371323373a0d2dba4f1d676d791d42e4f936d6269bf2931819fd53c6d9183ce3",
+      "qualification": "Saved operator-controlled attempt with steering; not a matched contact A/B or automatic full-traversal validation."
+    },
+    {
+      "source": "Task_3/tools/results/interactive/newest91000_impratio10_20261011_022418/attempt_004/plots/metrics.json",
+      "snapshot": "docs/mid_evaluation/presentation/assets/task3_interactive_metrics.json",
+      "bytes": 1735,
+      "sha256": "ce7c1e16ad03e783d39b3c8b3d1954a01d46dd4e50a499ad844f84fd7b61f19b",
+      "qualification": "Saved operator-controlled attempt with steering; not a matched contact A/B or automatic full-traversal validation."
+    }
+  ]
+}

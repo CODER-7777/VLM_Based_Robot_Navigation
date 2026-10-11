@@ -1,0 +1,71 @@
+{
+  "attempt": "attempt_004",
+  "checkpoint_update": 91000,
+  "observation_timing": "legacy",
+  "checkpoint_sha256": "dec9775d4b368b69964dde679985455d8b723d5af7fb2d24e8798fa4fdd66da4",
+  "samples": 16235,
+  "start_elapsed_s": 0.0,
+  "end_elapsed_s": 81.16999999992619,
+  "first_stair_contact_elapsed_s": 4.824999999995612,
+  "first_riser_contact_elapsed_s": 4.824999999995612,
+  "mean_joint_8_30_hz_rms_deg": 0.26906901040448244,
+  "joint_8_30_hz_rms_deg_per_joint": [
+    0.13852527909157566,
+    0.2909843575150879,
+    0.5148451122130605,
+    0.1261088214521165,
+    0.2506296993311073,
+    0.45264543121596157,
+    0.09803938086842756,
+    0.2649231833695204,
+    0.4191405499553569,
+    0.0783456235283288,
+    0.1961295797415364,
+    0.3985111065717097
+  ],
+  "target_clipped_fraction_per_joint": [
+    0.0,
+    0.0,
+    0.6064675084693564,
+    0.0,
+    0.0,
+    0.11456729288574069,
+    0.0,
+    0.0,
+    0.17985833076686172,
+    0.0017246689251616877,
+    0.0,
+    0.6296273483215276
+  ],
+  "torque_clipped_fraction_per_joint": [
+    0.0,
+    0.0008007391438250693,
+    6.159531875577457e-05,
+    0.0,
+    6.159531875577457e-05,
+    0.0,
+    0.0,
+    0.0008623344625808438,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "vx_tracking_rmse_m_s": 0.09479422451666226,
+  "vy_tracking_rmse_m_s": 0.03994049059805306,
+  "yaw_rate_tracking_rmse_rad_s": 0.12976482576204915,
+  "command_min": [
+    0.0,
+    -0.25,
+    -0.4
+  ],
+  "command_max": [
+    0.5,
+    0.0,
+    0.3
+  ],
+  "max_tilt_deg": 30.762621342783813,
+  "max_base_x_m": 6.3679173560875135,
+  "invalid_policy_action_count": 0,
+  "note": "Observed interactive attempt; no automatic claim of full traversal. RMS includes gait, impacts and corrections in the selected window."
+}

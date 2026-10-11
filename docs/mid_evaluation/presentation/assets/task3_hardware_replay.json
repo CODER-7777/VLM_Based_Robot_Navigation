@@ -1,0 +1,33 @@
+{
+  "fixture_count": 34,
+  "fixture_max_abs": 0.0002288818359375,
+  "recorded_frames": 30175,
+  "replay_max_abs": 2.288818359375e-05,
+  "replay_rms": 7.730355946478085e-07,
+  "replay_allclose_1e4_1e5": true,
+  "zero_dq_raw_action_rms_difference": 0.19604404270648956,
+  "effective_K_leg": [
+    [
+      20.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      25.0,
+      10.0
+    ],
+    [
+      0.0,
+      10.0,
+      20.0
+    ]
+  ],
+  "files_sha256": {
+    "m2_training_artifacts/moe_hw_candidate_90000/offline_inference.ts": "1920a640b5ee6740b1e9a8ab34b5c587d44c83859f4c6fb1d5a0b067d1252ae7",
+    "m2_training_artifacts/hardware_transfer_20260913/moe_continuous_candidate_20260921/policy.onnx": "10848b43ebad7fa83cad269ecc721805a6c80b3fa47c95a2c841b623ebd6dfb8",
+    "m2_training_artifacts/hardware_transfer_20260913/moe_continuous_candidate_20260921/operator_control.py": "1c202ceaacfb7895edbadc3bc8f6bf3798445a3d9d2a2f9291afdc2dea2609d8",
+    "m2_training_artifacts/hardware_transfer_20260913/moe_continuous_candidate_20260921/moe_observation.py": "8fc4f17f9bc354ed15eb18852ca531040d3e060aca80df580bb73dabc7a0c5f7",
+    "m2_training_artifacts/hardware_transfer_20260913/moe_continuous_candidate_20260921/contract.json": "7c244d2b01e578a89b253117193d35e6ff7e6631a868139b00f0dfcd46d433e7"
+  }
+}

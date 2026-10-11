@@ -1,0 +1,38 @@
+{
+  "revision": "kitchen_product_models_pbr_v2",
+  "items": 22,
+  "images_verified": 88,
+  "pages": [
+    {
+      "path": "/",
+      "bytes": 4700
+    },
+    {
+      "path": "/models",
+      "bytes": 2904
+    },
+    {
+      "path": "/home-tour",
+      "bytes": 3169
+    },
+    {
+      "path": "/kitchen-room?object=range_kettle",
+      "bytes": 3169
+    },
+    {
+      "path": "/item-viewer?object=grinder",
+      "bytes": 1334
+    },
+    {
+      "path": "/gaussian",
+      "bytes": 3721
+    },
+    {
+      "path": "/comparisons",
+      "bytes": 5209
+    }
+  ],
+  "models_verified": 25,
+  "scene_range_and_lossless_gzip": true,
+  "compressed_scene_bytes": 228867332
+}
