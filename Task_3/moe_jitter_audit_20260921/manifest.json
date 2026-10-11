@@ -1,0 +1,166 @@
+{
+  "scope": "offline only; no robot connection or actuation; no training or deployment",
+  "versions": {
+    "python": "3.11.15",
+    "mujoco": "3.6.0",
+    "torch": "2.11.0+cu130",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1"
+  },
+  "rollouts": 120,
+  "policy_checkpoint_sha256": "440bbb28d554f75db38bfd163351c04ea4a32d9d06764c37b7e6071d41daa5cb",
+  "code_and_assets_sha256": {
+    "svanm2_moe_hardware_audit/assets/meshes/FL_calf.STL": "52f46231b7759b46eb47947a20a79667c137bb2d913bd09c4026c28a2953af60",
+    "svanm2_moe_hardware_audit/assets/meshes/FL_foot.STL": "a03aee221f59e41dd1911a4ac05701a92d434e1e6f833fd5edf2b9c2b8e62de3",
+    "svanm2_moe_hardware_audit/assets/meshes/FL_hip.STL": "9afd5754502c8f4145e0bc6b5580d29c00b137a057e7a5d4785b7f5895126bcf",
+    "svanm2_moe_hardware_audit/assets/meshes/FL_thigh.STL": "d8c951f6718c4a494fd1985588cd39808d451f34e2b39f96a2bcec057bf1dbe6",
+    "svanm2_moe_hardware_audit/assets/meshes/FR_calf.STL": "6561ed3816f89e91950c74b581591e047f0a72288a45876c42118d992e66e19a",
+    "svanm2_moe_hardware_audit/assets/meshes/FR_foot.STL": "94c5ebab947fd673a3121676a58a25c2332b0504d67f61d5a1e1ebe09f7eab60",
+    "svanm2_moe_hardware_audit/assets/meshes/FR_hip.STL": "72bb012a52cc8b6f3984ad5ad172bd1a58b20fa0ec003945ff8209ca1c9fd49e",
+    "svanm2_moe_hardware_audit/assets/meshes/FR_thigh.STL": "87b2fe6fa3eaaaa60fd2453333001d817677ef93d933e819e87810d55dce08b1",
+    "svanm2_moe_hardware_audit/assets/meshes/RL_calf.STL": "6b7c51e197fb8531e3b5ed44462328319b51609bc601311e8429279ae1566872",
+    "svanm2_moe_hardware_audit/assets/meshes/RL_foot.STL": "ebe757f09b0527e547b7b0828ce9f24d0be47097ea1b0bd6015ba98dfec17aa5",
+    "svanm2_moe_hardware_audit/assets/meshes/RL_hip.STL": "5cd5daedb46adc1fad819ad7e12713765af19d77d2a701699ac190d4252258f9",
+    "svanm2_moe_hardware_audit/assets/meshes/RL_thigh.STL": "1eb4d68bf94b8027be3902fac5dc7f9217c609b25bb8378fe2351284d1e57693",
+    "svanm2_moe_hardware_audit/assets/meshes/RR_calf.STL": "52d6bfcb659bbee8e46077fb13bc388b4389b3442f6e9da90bfbcdf9c1d83783",
+    "svanm2_moe_hardware_audit/assets/meshes/RR_foot.STL": "c3e101e00019bd6210a6d6c480c17af6b5950b44da24309f637f4421d19edbbe",
+    "svanm2_moe_hardware_audit/assets/meshes/RR_hip.STL": "1a174d1b7ef21868abf522f6ead0644ab885b6cd085d3bb4ec3f4cdcc77aad06",
+    "svanm2_moe_hardware_audit/assets/meshes/RR_thigh.STL": "8d00ea8f55134d30fa777087c421269e83e6e0869b154aec4502322da711783f",
+    "svanm2_moe_hardware_audit/assets/meshes/torso.STL": "aaf30674a3e12dde1814ccf2a1addcceccfde9ae1aa2999f7c56e2adafae988f",
+    "svanm2_moe_hardware_audit/assets/offline_inference.ts": "1920a640b5ee6740b1e9a8ab34b5c587d44c83859f4c6fb1d5a0b067d1252ae7",
+    "svanm2_moe_hardware_audit/assets/xml/svanm2_mjlab.xml": "2c37cc2f9eaa7be52a8c2312a1fffca779be08ce9a34406129bc2d2226527163",
+    "svanm2_moe_hardware_audit/audit/batch.py": "e21d2a4bed70d209f39429f72e195f931d50634a8d91ca8f7ae0ed911e98df2b",
+    "svanm2_moe_hardware_audit/audit/hardware_operator.py": "1c202ceaacfb7895edbadc3bc8f6bf3798445a3d9d2a2f9291afdc2dea2609d8",
+    "svanm2_moe_hardware_audit/audit/render.py": "1535c1efd61ab1503afed73b30f8e4b0ef21ee729f6228baa062b5c28e81e276",
+    "svanm2_moe_hardware_audit/audit/run_suite.py": "2e59e7a202d8acc4cff8065972597e14c7461e66cde0a7269e1980709a9bda7b",
+    "svanm2_moe_hardware_audit/audit/summarize.py": "640d8ab9c466d5ba0ed34bf34276f876362704f2027b645ce55d9ef19e6c579a",
+    "svanm2_moe_hardware_audit/audit/terrain_suite.py": "645c3a93534cad87e26107aae13a18c69152069ce6d0ea878b799341c4e834fa",
+    "svanm2_moe_hardware_audit/build_scene.py": "754555d36fdb3926b9cc2e139ec8aabbf56349be8186d9f4d54342170aa578be",
+    "svanm2_moe_hardware_audit/controller.py": "50c43dd97ab24e6441ab2807542c4283dd8d4234f24ea64f9ab6b38fb4300b08",
+    "svanm2_moe_hardware_audit/reference/contract.json": "7c244d2b01e578a89b253117193d35e6ff7e6631a868139b00f0dfcd46d433e7",
+    "svanm2_moe_hardware_audit/reference/moe_observation.py": "8fc4f17f9bc354ed15eb18852ca531040d3e060aca80df580bb73dabc7a0c5f7",
+    "svanm2_moe_hardware_audit/test_contract.py": "660e37c7d3d20bc079e8ec94db8a45124cbfc134483d15a5b825c0f6fd1e9d37"
+  },
+  "excluded": "pre_sensor_refresh_runs and invalidated concurrent-edit batch; only runs/ used",
+  "reference_sources": {
+    "m2_training_artifacts/moe_jitter_audit_20260921/original_sim/documentation.md": "bbd56e659a23e64feb53210d19a27e007a0fe9aa76651abe8a24a1dc323c1a26",
+    "m2_training_artifacts/hardware_transfer_20260913/moe/env.yaml": "e038cf1804d90fff66b98271aa678e4768864ea1a1e5834cdef2d3dae7e0e6be",
+    "m2_training_artifacts/hardware_transfer_20260913/moe_stair_debug_20260921/full_stair_result.json": "f56adabca6d3e24c0f75636ac836a826ece5f80f5a1f9352f70b965d246a6ada",
+    "m2_training_artifacts/hardware_transfer_20260913/moe_stair_debug_20260921/full_stair_policy_trace.npz": "df2daa07ed47d36982fb23e5a081e50e51f8b6cbb512c82361071d063b97d80d"
+  },
+  "rollout_commands_sha256": "59a9ba1e255d6b99d5bcd2f0db99daceca41791efcefa1229699bfb9bf4d3a62",
+  "videos": {
+    "flat_hardware_forward.mp4": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 640,
+          "height": 480,
+          "nb_frames": "388"
+        }
+      ],
+      "format": {
+        "duration": "15.520000"
+      }
+    },
+    "flat_hardware_lateral.mp4": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 640,
+          "height": 480,
+          "nb_frames": "388"
+        }
+      ],
+      "format": {
+        "duration": "15.520000"
+      }
+    },
+    "rough_3cm_hardware_forward.mp4": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 640,
+          "height": 480,
+          "nb_frames": "388"
+        }
+      ],
+      "format": {
+        "duration": "15.520000"
+      }
+    },
+    "slope_down_20_hardware_forward.mp4": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 640,
+          "height": 480,
+          "nb_frames": "388"
+        }
+      ],
+      "format": {
+        "duration": "15.520000"
+      }
+    },
+    "slope_up_20_hardware_forward.mp4": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 640,
+          "height": 480,
+          "nb_frames": "388"
+        }
+      ],
+      "format": {
+        "duration": "15.520000"
+      }
+    },
+    "stairs_up_15_hardware_forward_filter20ms_half_speed.mp4": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 640,
+          "height": 480,
+          "nb_frames": "244"
+        }
+      ],
+      "format": {
+        "duration": "9.760000"
+      }
+    },
+    "stairs_up_15_hardware_forward_half_speed.mp4": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 640,
+          "height": 480,
+          "nb_frames": "547"
+        }
+      ],
+      "format": {
+        "duration": "21.880000"
+      }
+    },
+    "stairs_up_15_legacy_forward_half_speed.mp4": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 640,
+          "height": 480,
+          "nb_frames": "775"
+        }
+      ],
+      "format": {
+        "duration": "31.000000"
+      }
+    }
+  }
+}

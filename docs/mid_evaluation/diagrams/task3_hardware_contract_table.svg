@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980">
+<title>Task 3 | Hardware-contract corrections</title><desc>Simulator mismatches, corresponding corrections and implementation status</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#087f8c"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial, Liberation Sans, sans-serif">
+<text x="55" y="68" font-size="36" font-weight="700" fill="#12243a">Task 3 | Hardware-contract corrections</text>
+<text x="55" y="110" font-size="23" fill="#526477">Simulator mismatches, corresponding corrections and implementation status</text>
+<rect x="55" y="160" width="1490" height="75" rx="12" fill="#12243a"/>
+<text x="80" y="208" font-size="28" fill="#ffffff" font-weight="700">Historical simulator mismatch</text>
+<text x="790" y="208" font-size="28" fill="#ffffff" font-weight="700">Correction</text>
+<rect x="55" y="235" width="1490" height="126" fill="#f4f7fb"/>
+<path d="M 55 361 H 1545" stroke="#d7e0e9" stroke-width="1"/>
+<text x="80" y="278" font-size="27" fill="#12243a" font-weight="700">Calf upper target: +0.50000 rad</text>
+<text x="790" y="273" font-size="25" fill="#12243a" font-weight="400">Correct upper target: -0.88776 rad</text>
+<text x="790" y="307" font-size="25" fill="#12243a" font-weight="400">Difference: 1.38776 rad / 79.5 degrees</text>
+<text x="790" y="340" font-size="19" fill="#007d79" font-weight="700">Present in current controller</text>
+<rect x="55" y="361" width="1490" height="126" fill="#ffffff"/>
+<path d="M 55 487 H 1545" stroke="#d7e0e9" stroke-width="1"/>
+<text x="80" y="404" font-size="27" fill="#12243a" font-weight="700">Hip targets: ±1.0472 rad</text>
+<text x="790" y="399" font-size="25" fill="#12243a" font-weight="400">Restore tighter hip targets: ±0.735 rad</text>
+<text x="790" y="433" font-size="25" fill="#12243a" font-weight="400">Verify the full per-leg thigh bounds</text>
+<text x="790" y="466" font-size="19" fill="#007d79" font-weight="700">Hip correction present in current controller</text>
+<rect x="55" y="487" width="1490" height="126" fill="#f4f7fb"/>
+<path d="M 55 613 H 1545" stroke="#d7e0e9" stroke-width="1"/>
+<text x="80" y="530" font-size="27" fill="#12243a" font-weight="400">Command shaping differed</text>
+<text x="80" y="566" font-size="27" fill="#12243a" font-weight="400">from the deployed operator</text>
+<text x="790" y="525" font-size="25" fill="#12243a" font-weight="400">Reproduce deadzone, shared input budget,</text>
+<text x="790" y="559" font-size="25" fill="#12243a" font-weight="400">slew and release in the audit simulator</text>
+<text x="790" y="592" font-size="19" fill="#a15b08" font-weight="700">Verified in audit; current-viewer parity incomplete</text>
+<rect x="55" y="613" width="1490" height="126" fill="#ffffff"/>
+<path d="M 55 739 H 1545" stroke="#d7e0e9" stroke-width="1"/>
+<text x="80" y="656" font-size="27" fill="#12243a" font-weight="400">Sensor, reset and timing</text>
+<text x="80" y="692" font-size="27" fill="#12243a" font-weight="400">conventions were inconsistent</text>
+<text x="790" y="651" font-size="25" fill="#12243a" font-weight="400">Refresh observations; clear full simulation</text>
+<text x="790" y="685" font-size="25" fill="#12243a" font-weight="400">state; separate policy/PD rates and delay</text>
+<text x="790" y="718" font-size="19" fill="#a15b08" font-weight="700">Verified in audit; current viewer partly implements</text>
+<rect x="55" y="739" width="1490" height="126" fill="#f4f7fb"/>
+<path d="M 55 865 H 1545" stroke="#d7e0e9" stroke-width="1"/>
+<text x="80" y="782" font-size="27" fill="#12243a" font-weight="400">Short pre-stair runs were used</text>
+<text x="80" y="818" font-size="27" fill="#12243a" font-weight="400">as stair-performance evidence</text>
+<text x="790" y="777" font-size="25" fill="#12243a" font-weight="400">Check foot contact and full traversal;</text>
+<text x="790" y="811" font-size="25" fill="#12243a" font-weight="400">retain stalls, lane exits and tips</text>
+<text x="790" y="844" font-size="19" fill="#a15b08" font-weight="700">Documented audit criteria; protocols kept separate</text>
+<path d="M 760 160 V 865" stroke="#d7e0e9" stroke-width="1"/>
+<text x="55" y="918" font-size="24" fill="#526477" font-weight="400">Software target corrections; physical joint stops and firmware limits were not changed.</text>
+<text x="55" y="956" font-size="21" fill="#526477" font-weight="400">Source: hardware-contract audit and current SvanM2 controller.</text>
+</g></svg>

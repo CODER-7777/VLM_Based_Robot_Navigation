@@ -1,63 +1,75 @@
-# Task 3 — SvanM2 MoE locomotion diagnostics
+# Task 3 — SvanM2 MoE jitter and stair failure
 
-Objective: identify jitter/stair failure mechanisms and evaluate policy changes under explicit observation, actuator, and contact contracts. A measured real-robot improvement remains pending.
+[October 11 focused audit: gating, frequency, September raw rechecks, and VLM integration](notes/24_GATE_FREQUENCY_AND_VLM_AUDIT_20261011.md). The latest manual run passes the full-foot ascent check at 16.265 s. Gate/rate changes are not established fixes; evaluation consistency and actuator/deployment verification remain the next priorities.
 
-## Policy and actuator contract
+## Problem and required fix
 
-MoE student: 5×45=225-D proprioceptive/command history → 12 raw actions; FL/FR/RL/RR hip/thigh/calf order. Policy 50 Hz; coupled PD/physics 200 Hz. Targets are standing offsets + scaled actions, followed by bounds; raw previous-action feedback is distinct from clamped targets. No explicit stair-height map enters the student.
+Reduce joint vibration while preserving commanded velocity, heading and stair support. Tightening targets or reducing motion alone is insufficient. Establish the deployed observation/actuator/contact contract before claiming a hardware fix.
 
-`J_LEG = [[8,0,0],[0,8,0],[0,8,16]]`; `tau_joint = J_LEG.T @ tau_motor`. Thigh/calf stiffness is coupled. Target bounds do not change the transmission matrix. Hardware bounds reported by the early audit and wider viewer bounds are different contracts.
+## Supported causes and analysis
 
-## Attempts and outcomes
-
-| Attempt | Result | Interpretation |
+| Finding | Evidence | What it justifies |
 | --- | --- | --- |
-| Deployment/hardware-log audit | History, targets, command shaping, timing/reset/contact mismatches; 122,607-sample ~200 Hz log and 30,175 policy I/O records | Target/angle oscillation correlation 0.962; physical cause unresolved |
-| Combined reward/bounds continuation, 90500 | Reduced target removal and better early forward tracking; mixed jitter; 0/12 distinct stair traversals | Multiple simultaneous changes prevent isolated reward attribution |
-| Matched flat/stair collision intervention | Candidate/viewer same post-contact joint RMS 0.331° flat vs 0.833° stairs | Contact changes closed-loop response, without identifying a unique cause |
-| Recorded keyboard sessions and gate/actor probes | Checkpoint replay, target/torque reconstruction, equal-command windows, spike decomposition | Flat sideways targets can spike; gate association is not gate causal proof |
-| Time-aware target-rate penalty | Elapsed-time/reset/manager integration checks; thresholds derived from recordings | Implemented cost, not established locomotion improvement |
-| 0.13 m swing preference / newest91000 | −0.01 rate weight, viewer-wide bounds, saved LR cap 1e−5 | Distinct from older91000; matched vy=0.15 RMSE worsens 0.1107→0.1335 m/s |
-| Gain sweep | Responses differ by checkpoint; PD reconstruction checked | No universal damping-only fix established |
-| Contact-setting A/B | Lower band RMS with `impratio=10`; four matched stair pairs complete at 10 and fail at 100 | Strong simulator sensitivity; not hardware validation |
-| Tier-1 solver/substep probe | 28 grid/confirmation cases with iterations, slip, penetration, tracking and band RMS | Simulator numerical diagnostics, not independent trained seeds |
+| Contact–policy–actuator feedback interaction | Matched contact-ratio interventions reduce joint/contact-force/torque-band motion with unchanged weights and controller settings | Calibrate the plant/contact model before another combined reward change |
+| Policy targets participate in vibration | Hardware target/angle correlation 0.962; checkpoint replay reproduces outputs | Analyze closed-loop policy behavior; initiating physical cause remains unresolved |
+| Train/evaluation contracts differ | Current hips ±0.735, calf upper −0.88776; newest91000 saved `viewer-wide`; viewer ratio 100 versus current training 10 | Verify bounds, delay, sensing and command shaping together |
+| Stair failure includes support and heading loss | Lane exits, incomplete rear-foot support, impact-aligned traces | Evaluate traversal/heading alongside band RMS |
+| Coupled PD and torque limits affect recovery | Exact transmission reconstruction and clipping bursts | Preserve coupling; measure real saturation/lag before gain selection |
 
-## Reward experiment
+Gate activity and 50 Hz holding do not independently establish the root cause. Hardware backlash/compliance, latency and payload/contact errors remain unmeasured hypotheses. [Detailed cause ranking and history](notes/23_DEEP_JITTER_ANALYSIS_20261010.md).
 
-`q_cmd = clamp(action*scale + offset)`; `cost_rate = sum(relu(abs(q_cmd[t]-q_cmd[t-1])/(step_dt*rate_limit)-1)^2)`.
+## Hardware-contract corrections from the September 21 audit
 
-Exploratory hip/thigh/calf thresholds: **7.093/11.275/20.365 rad/s**, 1.25×P99 from six approach windows / 1,200 policy intervals. The review covers 41 attempts, with 19 qualifying four-second windows. These are target-rate references, not actuator speed limits. First-action reset masking applies. Existing second-difference and saturation costs are retained; reward rates and per-step rewards differ by `step_dt`.
+The historical simulator allowed calf targets up to **+0.50000 rad** and hip targets **±1.0472 rad**; the recorded deployed adapter used **−0.88776 rad** and **±0.735 rad**. Those important corrections are present in the current controller. They align software target realization; they do not modify hardware firmware or establish physical joint-stop angles.
 
-## Controlled contact result
+The separate September audit also corrected operator command shaping, observation refresh, full MuJoCo reset, invalid-output handling and stair/contact validation. Not all of those corrections are active in the current viewer: sensor refresh is optional, full-reset parity remains open and nonfinite actions still fall back to zero. The complete per-leg limits, timing, command ranges and torque semantics still require deployment verification.
 
-Common 5–11 s interval, requested axis speed 0.30 m/s, `kp=18`, `kd=0.7`, same checkpoint/start/targets/friction/timing within each pair; only `impratio` changes:
+[Full analysis-to-correction inventory](../docs/mid_evaluation/presentation/TASK3_CONTRACT_CORRECTIONS.md) · [September report](moe_jitter_audit_20260921/REPORT.md) · [Presentation slide 8](../docs/mid_evaluation/presentation/SLIDE_TEXT.md#slide-8--task-3-audit-fixes-improvements-and-analysis).
 
-| Policy / axis | Joint 8–30 Hz RMS: 100 → 10 | Mean speed: 100 → 10 |
+## Attempts and analysis-driven changes
+
+| Attempt | Analysis → engineering change | Outcome |
+| --- | --- | --- |
+| Hardware/replay audit | Oscillatory targets and deployment mismatch → trace observation/target/torque signals | 122,607 control samples; 30,175 policy records; hardware cause not isolated |
+| −0.10/−0.15 action-rate continuations | Large target variation → stronger smoothness penalty | Raw action-rate training cost declines; physical jitter benefit not established by reward curves |
+| October 2 target-cost/bounds bundle90500 | Bound removal and bounded-target changes → second-difference/saturation costs | Training second difference −6.57%, saturation −59.65%; mixed jitter; 0/12 stair traversals |
+| Time-aware penalty / newest91000 | Rate depends on elapsed time; retain lift/recovery → rate-excess cost, 0.13 m swing, lower rate weight | Implementation checks pass; low-speed tracking can worsen; changes remain confounded |
+| Gain, sensing, gate and delay probes | Contact spikes could reflect feedback semantics/plant → isolated interventions | Checkpoint-dependent response; no universal damping/gate filter fix |
+| October 6–7 contact A/B | Training/viewer contact mismatch → ratio 100→10 only | Older wider limits: four matched nominal stair pairs 0/4→4/4 |
+| October 10 recheck | Current limits differ from older successful tests → 34 CPU cases with protected settings | Flat band RMS −63.5–70.5%; current stair cases 0/6→3/6; original Y tracking worsens |
+| Fixed-contact timestep check | Earlier substeps also changed effective contact stiffness → hold contact timeconstant fixed | No full stair completions at 1 ms; no universal numerical-resolution cure |
+
+![Independent sampled control loop](../docs/mid_evaluation/diagrams/task3_control_loop.png)
+
+## Current measured result — tighter limits, October 10
+
+Two exact policies; `kp=18`, `kd=0.7`; policy/PD 50/200 Hz; requested axis speed 0.30 m/s; common flat 5–11 s window. Hips ±0.735 rad, calf upper −0.88776 rad. Only `impratio` changes in each primary pair.
+
+| Policy / axis | Joint 8–30 Hz RMS: 100→10 | Mean speed: 100→10 m/s |
 | --- | ---: | ---: |
-| Original90000 / X | 0.380→0.103° | 0.215→0.246 m/s |
-| Original90000 / Y | 0.281→0.157° | 0.202→0.202 m/s |
-| Newest91000 / X | 0.284→0.120° | 0.235→0.246 m/s |
-| Newest91000 / Y | 0.382→0.169° | 0.205→0.242 m/s |
+| Original90000 / X | 0.32768→0.09900° | 0.17420→0.18716 |
+| Original90000 / Y | 0.38009→0.13862° | 0.17463→0.14811 |
+| Newest91000 / X | 0.26903→0.08841° | 0.16059→0.18483 |
+| Newest91000 / Y | 0.49752→0.14696° | 0.14812→0.20347 |
 
-Twelve additional fresh-sensing/start pairs reduce band RMS by 32.9–75.2%. Twelve 10 cm risers, one nominal start:
+Stairs: two policies × three deterministic start offsets on twelve 10 cm risers; **0/6 at 100, 3/6 at 10**. Original center/+offset completes at 29.730/30.865 s; newest −offset at 30.585 s. Require all feet beyond x=3.622 m and in lane, every foot loaded >1 N, tilt<30°, clearance>0.18 m, simultaneous hold≥0.5 s. These are simulation cases, not independent seeds or hardware success rates. [Current verification](../docs/mid_evaluation/presentation/assets/task3_current_verification.json).
 
-| Policy; kp/kd | At 100 | At 10 |
-| --- | --- | --- |
-| Original90000; 18/0.7 | Lane exit | Traversed 24.605 s |
-| Newest91000; 18/0.7 | Lane exit | Traversed 25.475 s |
-| Original90000; 20/0.7 | Incomplete timeout | Traversed 23.700 s |
-| Newest91000; 20/0.7 | Lane exit | Traversed 25.370 s |
+## Code, control contract and references
 
-Traversal: every foot beyond x=3.622 m and inside lane, every foot having loaded platform >1 N, tilt <30°, base clearance >0.18 m, held ≥0.5 s. Four policy/gain cases are not independent seeds. `impratio` controls simulated frictional/normal constraint enforcement; it is not friction coefficient or a physical motor setting.
+![Current matched contact comparison: vibration and tracking](../docs/mid_evaluation/presentation/assets/task3_current_flat.png)
 
-## Current hypothesis and pending work
+![Recorded MoE gate, expert and direct-observation pathways](tools/results/gate_frequency_audit_20261011_v2/gate_pathways.png)
 
-Jitter is consistent with a policy–actuator–contact feedback interaction. Current local training configuration uses `impratio=10`; viewer uses 100; original90000 training contact conditions remain unverified. Pending: deployed bounds/scales/history/gains/rates verification; saved continuation-source recovery; calibration against robot lag/slip/contact response; isolated reward ablations; independent starts/seeds with vibration, speed/heading, and traversal evaluated together.
+The second plot decomposes target changes using saved policy inputs. Its pathway magnitudes do not identify independent physical causes. The later post-hoc check verifies one operator-assisted ascent at 16.265 s; it remains separate from the six fixed-command contact cases. [Detailed follow-up](notes/24_GATE_FREQUENCY_AND_VLM_AUDIT_20261011.md).
 
-Measured joints at 200 Hz support 8–30 Hz; policy targets at 50 Hz use 8–20 Hz. Band RMS includes gait/impact/corrective content. Target occupancy/removal, torque clipping, and physical stop contact are different measurements.
+225-D oldest-first history plus newest frame → eight softmax-weighted 32-D latent experts → shared actor → 12 actions, FL/FR/RL/RR. Raw action ±6; scale [0.15,0.15,0.30]/leg; position-target clamp; coupled PD; effort clamp ±[12,12,24] Nm. `J=[[8,0,0],[0,8,0],[0,8,16]]`; `tau_joint=J.T @ tau_motor`. Policy targets at 50 Hz support 8–20 Hz analysis; measured joints at 200 Hz support 8–30 Hz.
 
-## Source and artifacts
+[Controller](xterra_mjlab/svanm2_moe_stair_sim/controller.py) · [Strict checkpoint loader](xterra_mjlab/svanm2_moe_stair_sim/checkpoint_policy.py) · [Reward/profile integration](xterra_mjlab/scripts/train_other.py) · [Analysis tools](tools/README.md). Runtime `--contact-impratio 10` overrides the compiled model per process; XML default remains 100. Manifests record active solver settings. Rate-excess references 7.093/11.275/20.365 rad/s are exploratory recorded-target thresholds, not motor limits.
 
-[Controller source](xterra_mjlab/svanm2_moe_stair_sim/controller.py) · [Checkpoint loader](xterra_mjlab/svanm2_moe_stair_sim/checkpoint_policy.py) · [Reward integration](xterra_mjlab/scripts/train_other.py) · [Analysis tool index](tools/README.md) · [Saved contact findings](../docs/mid_evaluation/evidence/task3/contact_findings.json).
+Upstream architecture: [pinned MoE-CTS implementation](https://github.com/wty-yy/go2_rl_gym/blob/30e74dc507bec7a642a8c98be26081f2c6f0822d/rsl_rl/rsl_rl/modules/actor_critic_moe_cts.py). Related papers: CTS (RA-L, 2024), sim-to-real locomotion (RSS, 2018); [verified references](../docs/mid_evaluation/REFERENCES.md). [MuJoCo contact-ratio definition](https://mujoco.readthedocs.io/en/stable/XMLreference.html#option-impratio).
 
-Original90000 SHA `440bbb28d554f75db38bfd163351c04ea4a32d9d06764c37b7e6071d41daa5cb`; newest91000 SHA `dec9775d4b368b69964dde679985455d8b723d5af7fb2d24e8798fa4fdd66da4`. Older91000 begins `f74e62bf` and has different rate/LR settings. Raw sessions remain under `tools/results/interactive/`; scripted studies under `tools/results/<study>/`. Flat PPO, HIMLoco, and ISL-port work are separate training tracks.
+## Next experiments and guidance needed
+
+Supervisor direction: connect the existing MoE command interface to VLM-derived subgoals and calibrated trajectory estimates. The [integration plan](../docs/INTEGRATION_PLAN.md) retains the 45-D observation layout and 50/200 Hz control clocks for the first prototype; VLM execution remains outside the motor loop. Integrated navigation evaluation is pending.
+
+Verify deployed limits/scales/history/gains/delay; recover continuation source provenance; identify real actuator lag, saturation and contact slip. Then run one-factor reward/contact ablations over independent starts/seeds, reporting band RMS, tracking RMSE, heading/lane deviation, torque clipping, foot support and completion together. Test deterministic reset against clean-process trajectories; current reset state remains a separate gap. Decide whether actuator/contact calibration or objective design is the next priority. No hardware improvement or end-to-end navigation result is established.

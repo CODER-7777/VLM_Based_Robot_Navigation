@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="850" viewBox="0 0 1800 850">
+<title>Task 3 | Analysis architecture</title><desc>Passive recording → contact-aligned diagnosis → controlled comparison</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#087f8c"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial, Liberation Sans, sans-serif">
+<text x="55" y="68" font-size="36" font-weight="700" fill="#12243a">Task 3 | Analysis architecture</text>
+<text x="55" y="110" font-size="23" fill="#526477">Passive recording → contact-aligned diagnosis → controlled comparison</text>
+<rect x="55" y="190" width="340" height="185" rx="14" fill="#eff5fd" stroke="#245ec7" stroke-width="2"/>
+<text x="73" y="228" font-size="24" fill="#12243a" font-weight="700">Run + record</text>
+<text x="73" y="267" font-size="21" fill="#526477" font-weight="400">Interactive or scripted run</text>
+<text x="73" y="297" font-size="21" fill="#526477" font-weight="400">Each reset → separate attempt</text>
+<text x="73" y="327" font-size="21" fill="#526477" font-weight="400">Checkpoint / settings manifest</text>
+<text x="73" y="357" font-size="21" fill="#526477" font-weight="400">Policy and physics traces</text>
+<rect x="485" y="190" width="355" height="185" rx="14" fill="#eff5fd" stroke="#245ec7" stroke-width="2"/>
+<text x="503" y="228" font-size="24" fill="#12243a" font-weight="700">Align observations</text>
+<text x="503" y="267" font-size="21" fill="#526477" font-weight="400">Commands + actual motion</text>
+<text x="503" y="297" font-size="21" fill="#526477" font-weight="400">Requested / clamped targets</text>
+<text x="503" y="327" font-size="21" fill="#526477" font-weight="400">Joint angles + torque</text>
+<text x="503" y="357" font-size="21" fill="#526477" font-weight="400">Foot contacts / first impact</text>
+<rect x="930" y="190" width="350" height="185" rx="14" fill="#e6f6f4" stroke="#007d79" stroke-width="2"/>
+<text x="948" y="228" font-size="24" fill="#12243a" font-weight="700">Dashboard analysis</text>
+<text x="948" y="267" font-size="21" fill="#526477" font-weight="400">Approach / impact / ascent</text>
+<text x="948" y="297" font-size="21" fill="#526477" font-weight="400">Target vs measured motion</text>
+<text x="948" y="327" font-size="21" fill="#526477" font-weight="400">RMS + tracking + tilt</text>
+<text x="948" y="357" font-size="21" fill="#526477" font-weight="400">Saturation + foot support</text>
+<rect x="1370" y="190" width="375" height="185" rx="14" fill="#eff5fd" stroke="#245ec7" stroke-width="2"/>
+<text x="1388" y="228" font-size="24" fill="#12243a" font-weight="700">Identify the mismatch</text>
+<text x="1388" y="267" font-size="21" fill="#526477" font-weight="400">Bounds / observation contract</text>
+<text x="1388" y="297" font-size="21" fill="#526477" font-weight="400">Impact-recovery response</text>
+<text x="1388" y="327" font-size="21" fill="#526477" font-weight="400">Tracking / heading loss</text>
+<text x="1388" y="357" font-size="21" fill="#526477" font-weight="400">Candidate cause, not proof</text>
+<path d="M 400 283 H 479" fill="none" stroke="#087f8c" stroke-width="3"/>
+<polygon points="479.0,283.0 467.0,277.0 467.0,289.0" fill="#087f8c"/>
+<path d="M 845 283 H 924" fill="none" stroke="#087f8c" stroke-width="3"/>
+<polygon points="924.0,283.0 912.0,277.0 912.0,289.0" fill="#087f8c"/>
+<path d="M 1285 283 H 1364" fill="none" stroke="#087f8c" stroke-width="3"/>
+<polygon points="1364.0,283.0 1352.0,277.0 1352.0,289.0" fill="#087f8c"/>
+<rect x="1370" y="490" width="375" height="185" rx="14" fill="#e6f6f4" stroke="#007d79" stroke-width="2"/>
+<text x="1388" y="528" font-size="24" fill="#12243a" font-weight="700">One-factor comparison</text>
+<text x="1388" y="567" font-size="21" fill="#526477" font-weight="400">Same start and command</text>
+<text x="1388" y="597" font-size="21" fill="#526477" font-weight="400">Fixed weights / bounds / gains</text>
+<text x="1388" y="627" font-size="21" fill="#526477" font-weight="400">Change one setting only</text>
+<text x="1388" y="657" font-size="21" fill="#526477" font-weight="400">Retain all successes / failures</text>
+<path d="M 1557 381 V 484" fill="none" stroke="#087f8c" stroke-width="3"/>
+<polygon points="1557.0,484.0 1563.0,472.0 1551.0,472.0" fill="#087f8c"/>
+<rect x="730" y="490" width="545" height="185" rx="14" fill="#eff5fd" stroke="#245ec7" stroke-width="2"/>
+<text x="748" y="528" font-size="24" fill="#12243a" font-weight="700">Judge improvement</text>
+<text x="748" y="567" font-size="21" fill="#526477" font-weight="400">Lower oscillation + preserved tracking</text>
+<text x="748" y="597" font-size="21" fill="#526477" font-weight="400">Heading / tilt / clipping / foot support</text>
+<text x="748" y="627" font-size="21" fill="#526477" font-weight="400">Full-foot stair traversal criteria</text>
+<text x="748" y="657" font-size="21" fill="#526477" font-weight="400">Keep hardware validation separate</text>
+<path d="M 1364 580 H 1281" fill="none" stroke="#087f8c" stroke-width="3"/>
+<polygon points="1281.0,580.0 1293.0,586.0 1293.0,574.0" fill="#087f8c"/>
+<path d="M 1002 681 V 730 H 225 V 381" fill="none" stroke="#087f8c" stroke-width="3" stroke-dasharray="8 6"/>
+<polygon points="225.0,381.0 219.0,393.0 231.0,393.0" fill="#087f8c"/>
+<text x="55" y="783" font-size="24" fill="#526477" font-weight="400">Interactive runs locate failure events; matched trials test whether an intervention improves them.</text>
+<text x="55" y="823" font-size="22" fill="#526477" font-weight="400">Recorded operator runs and controlled A/B results are reported separately.</text>
+</g></svg>

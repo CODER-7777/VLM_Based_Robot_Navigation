@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="810" viewBox="0 0 1800 810">
+<title>Task 3 | Reinforcement learning for locomotion</title><desc>Training: interact with the simulator, measure rewards, update the policy</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#087f8c"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial, Liberation Sans, sans-serif">
+<text x="55" y="68" font-size="36" font-weight="700" fill="#12243a">Task 3 | Reinforcement learning for locomotion</text>
+<text x="55" y="110" font-size="23" fill="#526477">Training: interact with the simulator, measure rewards, update the policy</text>
+<rect x="55" y="195" width="345" height="165" rx="14" fill="#eff5fd" stroke="#245ec7" stroke-width="2"/>
+<text x="73" y="233" font-size="24" fill="#12243a" font-weight="700">Robot observations</text>
+<text x="73" y="272" font-size="21" fill="#526477" font-weight="400">Joint state + body motion</text>
+<text x="73" y="302" font-size="21" fill="#526477" font-weight="400">Velocity command + history</text>
+<text x="73" y="332" font-size="21" fill="#526477" font-weight="400">What the policy observes</text>
+<rect x="485" y="195" width="345" height="165" rx="14" fill="#e6f6f4" stroke="#007d79" stroke-width="2"/>
+<text x="503" y="233" font-size="24" fill="#12243a" font-weight="700">Policy / actor</text>
+<text x="503" y="272" font-size="21" fill="#526477" font-weight="400">Maps observations to actions</text>
+<text x="503" y="302" font-size="21" fill="#526477" font-weight="400">Our student uses MoE features</text>
+<text x="503" y="332" font-size="21" fill="#526477" font-weight="400">12 joint-target actions</text>
+<rect x="915" y="195" width="345" height="165" rx="14" fill="#eff5fd" stroke="#245ec7" stroke-width="2"/>
+<text x="933" y="233" font-size="24" fill="#12243a" font-weight="700">Actuator + simulation</text>
+<text x="933" y="272" font-size="21" fill="#526477" font-weight="400">Scale / clamp joint targets</text>
+<text x="933" y="302" font-size="21" fill="#526477" font-weight="400">Coupled PD + torque limits</text>
+<text x="933" y="332" font-size="21" fill="#526477" font-weight="400">Robot motion and contacts</text>
+<rect x="1345" y="195" width="400" height="165" rx="14" fill="#eff5fd" stroke="#245ec7" stroke-width="2"/>
+<text x="1363" y="233" font-size="24" fill="#12243a" font-weight="700">Evaluate the transition</text>
+<text x="1363" y="272" font-size="21" fill="#526477" font-weight="400">Next robot observation</text>
+<text x="1363" y="302" font-size="21" fill="#526477" font-weight="400">Tracking / stability rewards</text>
+<text x="1363" y="332" font-size="21" fill="#526477" font-weight="400">Smoothness costs + termination</text>
+<path d="M 405 278 H 479" fill="none" stroke="#087f8c" stroke-width="3"/>
+<polygon points="479.0,278.0 467.0,272.0 467.0,284.0" fill="#087f8c"/>
+<path d="M 835 278 H 909" fill="none" stroke="#087f8c" stroke-width="3"/>
+<polygon points="909.0,278.0 897.0,272.0 897.0,284.0" fill="#087f8c"/>
+<path d="M 1265 278 H 1339" fill="none" stroke="#087f8c" stroke-width="3"/>
+<polygon points="1339.0,278.0 1327.0,272.0 1327.0,284.0" fill="#087f8c"/>
+<path d="M 1545 365 V 425 H 227 V 366" fill="none" stroke="#087f8c" stroke-width="3"/>
+<polygon points="227.0,366.0 221.0,378.0 233.0,378.0" fill="#087f8c"/>
+<text x="650" y="415" font-size="22" fill="#526477" font-weight="400">Next observation closes the control loop</text>
+<rect x="630" y="505" width="540" height="150" rx="14" fill="#e6f6f4" stroke="#007d79" stroke-width="2"/>
+<text x="648" y="543" font-size="24" fill="#12243a" font-weight="700">Learner — training only</text>
+<text x="648" y="582" font-size="21" fill="#526477" font-weight="400">Use collected transitions to update weights</text>
+<text x="648" y="612" font-size="21" fill="#526477" font-weight="400">MoE-CTS also uses teacher/student losses</text>
+<text x="648" y="642" font-size="21" fill="#526477" font-weight="400">Optimize rewards; validate actual motion</text>
+<path d="M 1545 431 V 580 H 1176" fill="none" stroke="#087f8c" stroke-width="3" stroke-dasharray="8 6"/>
+<polygon points="1176.0,580.0 1188.0,586.0 1188.0,574.0" fill="#087f8c"/>
+<path d="M 630 580 H 445 V 150 H 657 V 189" fill="none" stroke="#087f8c" stroke-width="3" stroke-dasharray="8 6"/>
+<polygon points="657.0,189.0 663.0,177.0 651.0,177.0" fill="#087f8c"/>
+<text x="55" y="731" font-size="24" fill="#526477" font-weight="400">Deployment: observation → fixed learned policy → PD control. No online weight update is shown.</text>
+<text x="55" y="773" font-size="22" fill="#526477" font-weight="400">Lower reward costs alone do not establish better tracking, lower physical jitter or stair completion.</text>
+</g></svg>

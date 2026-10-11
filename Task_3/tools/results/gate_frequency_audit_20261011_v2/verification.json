@@ -1,0 +1,58 @@
+{
+  "scope": "Saved-data verification only",
+  "syntax_valid": true,
+  "report_local_links_valid": 6,
+  "executed_source_sha256": "578b0ede9e4034849e83d691fa1eae901fbe1b60be30145441450536ac2cd4f3",
+  "current_analysis_source_sha256": "3a6d9e51f836b9b90883c45aacc8d252e2c8a1e686cd188fe58fc8b5b2704f6f",
+  "source_update": "Strict <1 m lane condition replaces <=1 m boundary; rechecked all four recordings and outcomes are identical.",
+  "traversal": [
+    {
+      "attempt": "attempt_001",
+      "outcome": "no_success_or_failure_threshold_before_recording_end",
+      "elapsed_s": 54.025000000009186,
+      "all_feet_loaded_platform": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "attempt": "attempt_002",
+      "outcome": "no_success_or_failure_threshold_before_recording_end",
+      "elapsed_s": 7.8100000000039955,
+      "all_feet_loaded_platform": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "attempt": "attempt_003",
+      "outcome": "no_success_or_failure_threshold_before_recording_end",
+      "elapsed_s": 2.825000000000486,
+      "all_feet_loaded_platform": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "attempt": "attempt_004",
+      "outcome": "traversed",
+      "elapsed_s": 16.264999999985207,
+      "all_feet_loaded_platform": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "min_foot_x_m": 3.971636802304712,
+      "tilt_deg": 1.222136812581854,
+      "clearance_m": 0.3427671572225608,
+      "caveat": "Post-hoc application of recorder criteria. Manual steering/variable commands remain; not a controlled success-rate experiment."
+    }
+  ]
+}

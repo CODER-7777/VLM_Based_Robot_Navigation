@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="960" viewBox="0 0 1800 960">
+<title>Task 3 | Student MoE architecture</title><desc>Code-derived inference graph: eight latent experts blended before one shared actor</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#087f8c"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial, Liberation Sans, sans-serif">
+<text x="55" y="68" font-size="36" font-weight="700" fill="#12243a">Task 3 | Student MoE architecture</text>
+<text x="55" y="110" font-size="23" fill="#526477">Code-derived inference graph: eight latent experts blended before one shared actor</text>
+<rect x="55" y="390" width="310" height="165" rx="14" fill="#eff5fd" stroke="#245ec7" stroke-width="2"/>
+<text x="73" y="428" font-size="24" fill="#12243a" font-weight="700">Observation history</text>
+<text x="73" y="467" font-size="21" fill="#526477" font-weight="400">5 frames × 45 features</text>
+<text x="73" y="497" font-size="21" fill="#526477" font-weight="400">Oldest → newest</text>
+<text x="73" y="527" font-size="21" fill="#526477" font-weight="400">Flattened input: 225-D</text>
+<rect x="440" y="200" width="410" height="175" rx="14" fill="#eff5fd" stroke="#245ec7" stroke-width="2"/>
+<text x="458" y="238" font-size="24" fill="#12243a" font-weight="700">Expert feature branch</text>
+<text x="458" y="277" font-size="21" fill="#526477" font-weight="400">MLP: 225 → 512 → 256 → 2048</text>
+<text x="458" y="307" font-size="21" fill="#526477" font-weight="400">Grouped 1×1 Conv, groups = 8</text>
+<text x="458" y="337" font-size="21" fill="#526477" font-weight="400">8 expert vectors × 32 features</text>
+<rect x="440" y="530" width="410" height="165" rx="14" fill="#e6f6f4" stroke="#007d79" stroke-width="2"/>
+<text x="458" y="568" font-size="24" fill="#12243a" font-weight="700">Gating branch</text>
+<text x="458" y="607" font-size="21" fill="#526477" font-weight="400">MLP: 225 → 512 → 256 → 8</text>
+<text x="458" y="637" font-size="21" fill="#526477" font-weight="400">Softmax → weights w1...w8</text>
+<text x="458" y="667" font-size="21" fill="#526477" font-weight="400">Weights sum to one</text>
+<path d="M 370 473 H 400 V 287 H 434" fill="none" stroke="#087f8c" stroke-width="3"/>
+<polygon points="434.0,287.0 422.0,281.0 422.0,293.0" fill="#087f8c"/>
+<path d="M 400 473 V 613 H 434" fill="none" stroke="#087f8c" stroke-width="3"/>
+<polygon points="434.0,613.0 422.0,607.0 422.0,619.0" fill="#087f8c"/>
+<rect x="940" y="390" width="345" height="185" rx="14" fill="#e6f6f4" stroke="#007d79" stroke-width="2"/>
+<text x="958" y="428" font-size="24" fill="#12243a" font-weight="700">Weighted latent blend</text>
+<text x="958" y="467" font-size="21" fill="#526477" font-weight="400">z = sum_i wi * Ei(history)</text>
+<text x="958" y="497" font-size="21" fill="#526477" font-weight="400">L2-normalize blended vector</text>
+<text x="958" y="527" font-size="21" fill="#526477" font-weight="400">Output: 32-D latent</text>
+<path d="M 856 287 H 903 V 448 H 934" fill="none" stroke="#087f8c" stroke-width="3"/>
+<polygon points="934.0,448.0 922.0,442.0 922.0,454.0" fill="#087f8c"/>
+<path d="M 856 613 H 903 V 523 H 934" fill="none" stroke="#087f8c" stroke-width="3"/>
+<polygon points="934.0,523.0 922.0,517.0 922.0,529.0" fill="#087f8c"/>
+<rect x="1370" y="390" width="375" height="185" rx="14" fill="#eff5fd" stroke="#245ec7" stroke-width="2"/>
+<text x="1388" y="428" font-size="24" fill="#12243a" font-weight="700">Shared actor</text>
+<text x="1388" y="467" font-size="21" fill="#526477" font-weight="400">32-D latent + latest 45-D obs</text>
+<text x="1388" y="497" font-size="21" fill="#526477" font-weight="400">77 → 512 → 256 → 128 → 12</text>
+<text x="1388" y="527" font-size="21" fill="#526477" font-weight="400">Output: 12 joint actions</text>
+<path d="M 1291 473 H 1364" fill="none" stroke="#087f8c" stroke-width="3"/>
+<polygon points="1364.0,473.0 1352.0,467.0 1352.0,479.0" fill="#087f8c"/>
+<path d="M 210 561 V 747 H 1557 V 581" fill="none" stroke="#087f8c" stroke-width="3" stroke-dasharray="8 6"/>
+<polygon points="1557.0,581.0 1551.0,593.0 1563.0,593.0" fill="#087f8c"/>
+<text x="610" y="734" font-size="22" fill="#526477" font-weight="400">Latest observation bypass: 45 features</text>
+<rect x="1370" y="720" width="375" height="200" rx="14" fill="#eff5fd" stroke="#245ec7" stroke-width="2"/>
+<text x="1388" y="758" font-size="24" fill="#12243a" font-weight="700">Control execution</text>
+<text x="1388" y="797" font-size="21" fill="#526477" font-weight="400">Hip target: ±0.735 rad</text>
+<text x="1388" y="827" font-size="21" fill="#526477" font-weight="400">Calf upper: -0.88776 rad</text>
+<text x="1388" y="857" font-size="21" fill="#526477" font-weight="400">Coupled PD + torque limits</text>
+<text x="1388" y="887" font-size="21" fill="#526477" font-weight="400">Policy 50 Hz; PD 200 Hz</text>
+<path d="M 1761 473 H 1775 V 832 H 1751" fill="none" stroke="#087f8c" stroke-width="3"/>
+<polygon points="1751.0,832.0 1763.0,838.0 1763.0,826.0" fill="#087f8c"/>
+<text x="55" y="835" font-size="23" fill="#526477" font-weight="400">All experts contribute through soft weights; no hard one-expert selection.</text>
+<text x="55" y="877" font-size="22" fill="#526477" font-weight="400">Expert roles are learned features; walking/turning/stair identities are not established.</text>
+<text x="55" y="923" font-size="21" fill="#526477" font-weight="400">Source: svanm2_moe_stair_sim/checkpoint_policy.py and controller.py.</text>
+</g></svg>

@@ -1,5 +1,7 @@
 # Which research suggestions should we use for our MoE jitter problem?
 
+**2026-10-10 update:** [note 23](23_DEEP_JITTER_ANALYSIS_20261010.md) consolidates this history and tests today's tighter target limits. The wide-bound results below remain valid for their saved contract. The later tier1 substep grid changes effective contact timeconstant as well as timestep; it is not a pure convergence test. New fixed-contact tests, all current stair failures/successes, and a CPU-only viewer command are in note 23. No additional training was launched.
+
 ## Hardware objective clarification, 2026-10-07 — read before the simulation recommendation below
 
 **Keep the actual deployed hardware parameters fixed. The `impratio` comparison is a simulator diagnostic, not a validated hardware fix.** The user clarified that the policy is intended for the real robot. The next step is to establish and validate the deployed control contract, rather than select simulator settings only because they look smoother. My earlier advice to change 100 to 10 should be understood as an isolated evaluation test; it does not establish that 10 represents the real contact.

@@ -1,0 +1,293 @@
+{
+  "definition": "50 Hz policy-aligned sequence from 200 Hz traces; sum over 12 action-scaled joints; motion t5.5\u201320s and tilt<45deg; existing baseline trajectories only",
+  "rows": [
+    {
+      "terrain": "cross_slope_10",
+      "command": "forward",
+      "seed": 0,
+      "action_rate": 2.093132786028129,
+      "target_second": 2.9735915066637224,
+      "saturation": 0.44059429871758726
+    },
+    {
+      "terrain": "cross_slope_10",
+      "command": "forward",
+      "seed": 1,
+      "action_rate": 1.834169944264789,
+      "target_second": 2.541409210285989,
+      "saturation": 0.2581967183132022
+    },
+    {
+      "terrain": "flat",
+      "command": "combined",
+      "seed": 0,
+      "action_rate": 0.6840145197792594,
+      "target_second": 0.8335771750291225,
+      "saturation": 0.804607680188708
+    },
+    {
+      "terrain": "flat",
+      "command": "combined",
+      "seed": 1,
+      "action_rate": 0.8776753517447813,
+      "target_second": 1.0953752039615154,
+      "saturation": 0.6897458063766645
+    },
+    {
+      "terrain": "flat",
+      "command": "forward",
+      "seed": 0,
+      "action_rate": 1.5186687488670363,
+      "target_second": 1.8018143737819696,
+      "saturation": 0.48469403533352484
+    },
+    {
+      "terrain": "flat",
+      "command": "forward",
+      "seed": 1,
+      "action_rate": 1.461246922058144,
+      "target_second": 1.8167631018522836,
+      "saturation": 0.3789537243156678
+    },
+    {
+      "terrain": "flat",
+      "command": "lateral",
+      "seed": 0,
+      "action_rate": 2.0446820771188348,
+      "target_second": 1.9679993366247248,
+      "saturation": 1.1634856413139172
+    },
+    {
+      "terrain": "flat",
+      "command": "lateral",
+      "seed": 1,
+      "action_rate": 2.105097264999423,
+      "target_second": 2.026752288926787,
+      "saturation": 1.1558741883137484
+    },
+    {
+      "terrain": "flat",
+      "command": "lateral_half",
+      "seed": 0,
+      "action_rate": 1.1754046990754368,
+      "target_second": 1.4041843482038976,
+      "saturation": 0.7219091652214583
+    },
+    {
+      "terrain": "flat",
+      "command": "lateral_half",
+      "seed": 1,
+      "action_rate": 1.094282773281704,
+      "target_second": 1.2901983885259716,
+      "saturation": 0.7507334166621897
+    },
+    {
+      "terrain": "flat",
+      "command": "turn",
+      "seed": 0,
+      "action_rate": 0.327198323076416,
+      "target_second": 0.4106339631162818,
+      "saturation": 0.33575761193677794
+    },
+    {
+      "terrain": "flat",
+      "command": "turn",
+      "seed": 1,
+      "action_rate": 0.2618964960340244,
+      "target_second": 0.353462869047666,
+      "saturation": 0.394520808733131
+    },
+    {
+      "terrain": "low_friction",
+      "command": "forward",
+      "seed": 0,
+      "action_rate": 4.4425726766197196,
+      "target_second": 6.146217132618346,
+      "saturation": 0.9633201061186084
+    },
+    {
+      "terrain": "low_friction",
+      "command": "forward",
+      "seed": 1,
+      "action_rate": 5.2691356178436894,
+      "target_second": 7.128183432137429,
+      "saturation": 1.276613252953887
+    },
+    {
+      "terrain": "rough_3cm",
+      "command": "forward",
+      "seed": 0,
+      "action_rate": 1.6163477268779056,
+      "target_second": 1.9135055212414407,
+      "saturation": 0.5508143068264452
+    },
+    {
+      "terrain": "rough_3cm",
+      "command": "forward",
+      "seed": 1,
+      "action_rate": 1.8889677930117486,
+      "target_second": 2.328298004616574,
+      "saturation": 0.5531226057876139
+    },
+    {
+      "terrain": "slope_down_10",
+      "command": "forward",
+      "seed": 0,
+      "action_rate": 1.4871576139089513,
+      "target_second": 2.0137719940374037,
+      "saturation": 0.2433354136410613
+    },
+    {
+      "terrain": "slope_down_10",
+      "command": "forward",
+      "seed": 1,
+      "action_rate": 1.5816299436445644,
+      "target_second": 2.0966963442744517,
+      "saturation": 0.30415996939404216
+    },
+    {
+      "terrain": "slope_down_20",
+      "command": "forward",
+      "seed": 0,
+      "action_rate": 1.762652569856653,
+      "target_second": 2.320537408916393,
+      "saturation": 0.3442413228927612
+    },
+    {
+      "terrain": "slope_down_20",
+      "command": "forward",
+      "seed": 1,
+      "action_rate": 1.8468250021048038,
+      "target_second": 2.408501780899052,
+      "saturation": 0.3450184434062501
+    },
+    {
+      "terrain": "slope_up_10",
+      "command": "forward",
+      "seed": 0,
+      "action_rate": 2.3526449951600936,
+      "target_second": 3.0613913974228644,
+      "saturation": 1.111052174641971
+    },
+    {
+      "terrain": "slope_up_10",
+      "command": "forward",
+      "seed": 1,
+      "action_rate": 6.784373948909768,
+      "target_second": 10.799209158083189,
+      "saturation": 3.647722968184336
+    },
+    {
+      "terrain": "slope_up_20",
+      "command": "forward",
+      "seed": 0,
+      "action_rate": 2.658585722992376,
+      "target_second": 3.298137892077932,
+      "saturation": 1.3374012358436125
+    },
+    {
+      "terrain": "slope_up_20",
+      "command": "forward",
+      "seed": 1,
+      "action_rate": 5.367252662946208,
+      "target_second": 7.443161921230002,
+      "saturation": 2.567741688110436
+    },
+    {
+      "terrain": "stairs_down_10",
+      "command": "forward",
+      "seed": 0,
+      "action_rate": 2.1821697742251573,
+      "target_second": 2.9013350115841927,
+      "saturation": 0.2108092461862228
+    },
+    {
+      "terrain": "stairs_down_10",
+      "command": "forward",
+      "seed": 1,
+      "action_rate": 2.650025880123365,
+      "target_second": 3.6657531104406536,
+      "saturation": 0.33324018404773187
+    },
+    {
+      "terrain": "stairs_down_15",
+      "command": "forward",
+      "seed": 0,
+      "action_rate": 3.24328032363342,
+      "target_second": 4.484572695089218,
+      "saturation": 0.4086539392620423
+    },
+    {
+      "terrain": "stairs_down_15",
+      "command": "forward",
+      "seed": 1,
+      "action_rate": 3.498499631714078,
+      "target_second": 4.018233524665572,
+      "saturation": 0.7909149061328656
+    },
+    {
+      "terrain": "stairs_down_18",
+      "command": "forward",
+      "seed": 0,
+      "action_rate": 3.3548365337211075,
+      "target_second": 4.8086904769270244,
+      "saturation": 0.36604579762789086
+    },
+    {
+      "terrain": "stairs_down_18",
+      "command": "forward",
+      "seed": 1,
+      "action_rate": 3.3159323951464326,
+      "target_second": 4.532172233942724,
+      "saturation": 0.45366509008865225
+    },
+    {
+      "terrain": "stairs_up_10",
+      "command": "forward",
+      "seed": 0,
+      "action_rate": 2.5465099102698012,
+      "target_second": 3.168224137395149,
+      "saturation": 1.0243423612647307
+    },
+    {
+      "terrain": "stairs_up_10",
+      "command": "forward",
+      "seed": 1,
+      "action_rate": 3.0735516797946003,
+      "target_second": 3.90733555212815,
+      "saturation": 1.6512541438413217
+    },
+    {
+      "terrain": "stairs_up_15",
+      "command": "forward",
+      "seed": 0,
+      "action_rate": 6.975771724084161,
+      "target_second": 9.134734944526324,
+      "saturation": 3.3389151213701296
+    },
+    {
+      "terrain": "stairs_up_15",
+      "command": "forward",
+      "seed": 1,
+      "action_rate": 5.094693140745408,
+      "target_second": 6.312201499917376,
+      "saturation": 2.5325800318508835
+    },
+    {
+      "terrain": "stairs_up_18",
+      "command": "forward",
+      "seed": 0,
+      "action_rate": 5.608361198299253,
+      "target_second": 6.7663551291283515,
+      "saturation": 4.5617005301601035
+    },
+    {
+      "terrain": "stairs_up_18",
+      "command": "forward",
+      "seed": 1,
+      "action_rate": 4.722493410644605,
+      "target_second": 5.547396691809977,
+      "saturation": 4.6304949017770145
+    }
+  ]
+}

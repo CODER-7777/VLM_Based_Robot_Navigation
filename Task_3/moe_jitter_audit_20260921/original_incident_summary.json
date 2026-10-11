@@ -1,0 +1,17 @@
+{
+  "first_60deg_tilt_time_s": 186.8411608890001,
+  "file": "moe_full_controls_candidate_20260921/pi_full_result.json",
+  "rows": 4141,
+  "median_logging_dt_s": 0.05001437949977117,
+  "nominal_Nyquist_Hz": 9.99712492688803,
+  "global_peak_including_recovery_deg": 76.41410442177047,
+  "peak_tilt_deg": 72.59596515456907,
+  "peak_tilt_time_s": 195.79108029099916,
+  "peak_tilt_phase": "moe",
+  "command_at_peak_tilt": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "high_frequency_jitter_identifiable": false
+}
