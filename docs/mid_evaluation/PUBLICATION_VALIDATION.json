@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-11",
+  "scope": "Local CPU software checks and static source validation; no training, locked-test evaluation, server restart or hardware command.",
+  "gqft_cpu_contracts": "passed; server dataset checks skipped because the dataset is absent locally",
+  "svanm2_analysis_tests_passed": 14,
+  "svanm2_checkpoint_tests_passed": 2,
+  "cuda_checkpoint_tests_skipped": 1,
+  "source_syntax_checks": {
+    ".py": 182,
+    ".sh": 7,
+    ".js": 10
+  },
+  "indexed_sources": 209,
+  "research_pending": [
+    "exact spatial-mask definition",
+    "masked-attention implementation and evaluation",
+    "VLM-trajectory-RL integration"
+  ],
+  "portable_publication_preview": "passed without nested repositories or raw sessions",
+  "evidence_snapshots": 76,
+  "report_links": 318,
+  "committed_child_source_revision": "9b0a12bf7cf6f616024c156781ae679259fb354f"
+}
