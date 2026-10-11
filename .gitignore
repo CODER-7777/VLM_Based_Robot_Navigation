@@ -43,3 +43,59 @@ Thumbs.db
 # Selected small presentation figures are intentional evidence artifacts.
 !/docs/mid_evaluation/figures/*.png
 !/docs/mid_evaluation/figures/*.jpg
+
+# Independent slide diagrams and selected small current evidence images.
+!/docs/mid_evaluation/diagrams/*.png
+!/docs/mid_evaluation/presentation/assets/*.png
+!/docs/mid_evaluation/presentation/assets/*.jpg
+
+# Generated research inputs and outputs remain local; tracked historical files
+# are preserved. Publish source, fit/licence metadata and selected evidence.
+*.npz
+*.npy
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.glb
+*.gltf
+*.ply
+*.obj
+*.blend
+*.blend1
+*.zip
+*.tar.gz
+*.mp4
+*.jsonl
+*.log
+*.swp
+.pytest_cache/
+MUJOCO_LOG.TXT
+/Task_3/Videos/
+/Task_3/tools/results/*
+!/Task_3/tools/results/gate_frequency_audit_20261011_v2/
+!/Task_3/tools/results/gate_frequency_audit_20261011_v2/*.png
+/Task_3/moe_jitter_audit_20260921/*
+!/Task_3/moe_jitter_audit_20260921/REPORT.md
+!/Task_3/moe_jitter_audit_20260921/*.py
+!/Task_3/moe_jitter_audit_20260921/*.json
+!/Task_3/moe_jitter_audit_20260921/original_sim/
+/Task_4/**/source/
+/Task_4/**/sources/
+/Task_4/**/prepared/
+/Task_4/kitchen_product_model_replacements/current/
+/Task_4/server_codex_handoff/
+
+# Broad candidate-search responses are local; fitted-object provenance and
+# reviewed artifact/browser records are retained in the publication set.
+/Task_4/kitchen_product_model_replacements/evidence/blenderkit_*.json
+/Task_4/kitchen_product_model_replacements/evidence/*shortlist*.json
+/Task_4/kitchen_product_model_replacements/evidence/*downloads*.json
+/Task_4/kitchen_product_model_replacements/evidence/*candidates*.json
+/Task_4/kitchen_all_objects_upgrade/evidence/*search*.json
+/Task_4/kitchen_all_objects_upgrade/evidence/*candidates*.json
+/Task_4/kitchen_all_objects_upgrade/evidence/downloads.json
+/Task_4/toaster_product_search/evidence/
+
+# Current review images copied unchanged from saved browser/analysis outputs.
+!/docs/mid_evaluation/figures/*.jpeg

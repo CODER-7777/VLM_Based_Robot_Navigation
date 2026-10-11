@@ -3,6 +3,8 @@
 | Path | Responsibility |
 | --- | --- |
 | `README.md`, task-root READMEs | Technical attempts/results, current hypotheses, unresolved work |
+| `mid-eval/` | User-designed PDF and matching 12-slide speaking script |
+| `docs/INTEGRATION_PLAN.md`, `Task_2/MASKED_ATTENTION_PLAN.md` | Supervisor direction, proposed interfaces and controlled experiments |
 | `docs/mid_evaluation/` | Evidence copies, figures, source index/manifests, current checks; presentation guidelines separate |
 | `Task_1_Simulator_Evaluation/` | Go2/Genesis control script, demo, preserved initial evaluation |
 | `Task_2/gqft_algorithm_sharing_vivekananda/` | Independent GQFT source Git repository; parent records its revision |
@@ -17,7 +19,7 @@
 
 `.gitmodules` registers Genesis, GQFT, and SvanM2 repositories. Nested source commits are independent of parent documentation/tool commits. Local commits are not remote publication; a parent gitlink identifies a source revision whose remote availability depends on the nested repository being pushed.
 
-## Commit partition for this revision
+## Previous seven-commit source revision
 
 Seven commits across three repositories: (1) GQFT variants/adapters/analysis source; (2) SvanM2 reward/controller source; (3) concise project/Task 1 technical reports; (4) Task 2 reports/trackers and source registration; (5) Task 3 analysis tools/report and source registration; (6) Task 4 fitting/assembly/dashboard source and report; (7) Gaussian physics/rendering source, launchers, source/validation indexes, and separate presentation documentation.
 
@@ -30,3 +32,13 @@ The Robofest gzip payload was relocated without extraction/modification; mapping
 Original Task 1 notes and earlier Task 4 overview remain archived. The prior Task 3 tool guide is preserved at `tools/archive/TOOL_GUIDE_20261010.md`; its relative links retain their original tool-root context. GQFT's historical visualization script is archived rather than discarded; released baseline files remain unchanged.
 
 Large GQFT caches and weights, newer SvanM2 candidates/recordings, and final all-kitchen GLB/Gaussian checkpoints remain local/ISL runtime inputs. Task 4 `scenes/v15/` is an older snapshot. Server code retains its data/build paths and environment dependencies; syntax checks do not establish live service availability. Portable metrics/figures do not require SSH.
+
+## Current documentation and presentation update
+
+The latest slide text, independent diagrams, current evidence snapshots and source selection are under `docs/mid_evaluation/`. [Manual publication commands](presentation/PUBLISH_COMMANDS.md) commit the reviewed child runtime source before recording its parent gitlink. Existing local code edits, historical notes and assets remain preserved.
+
+## Ten-commit publication update
+
+[Publication groups](PUBLICATION_PLAN.md) and the generated explicit path list in `PUBLICATION_PLAN.json` define ten parent commits. The changed SvanM2 runtime is committed separately in its own repository before the parent records its revision. Source, selected fit/verification metadata, plots and the presentation are published; generated traces, models, datasets and downloaded source archives stay local. Existing directories are retained to preserve code paths and evidence links.
+
+Submodules ignore untracked local inputs in the parent status; tracked source changes remain visible. Inspect each child repository directly for its local archives. The Genesis source revision is unchanged, and no attempt is made to publish local office assets to its upstream repository.
