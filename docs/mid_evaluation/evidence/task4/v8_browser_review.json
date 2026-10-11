@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "scene_sha256": "458359aa783445095fde0c32d8e161b9031c2b32765b7fd0d032ca20c417d5b4",
+  "revision": "kitchen_workspace_v8_tray_20261011",
+  "items": [
+    {
+      "id": "tea_tray",
+      "calibrated_camera_capture": true,
+      "room_inspection": true,
+      "model_route": true
+    },
+    {
+      "id": "frother",
+      "calibrated_camera_capture": true,
+      "room_inspection": true,
+      "model_route": true
+    },
+    {
+      "id": "coffee_machine",
+      "calibrated_camera_capture": true,
+      "room_inspection": true,
+      "model_route": true
+    }
+  ],
+  "calibrated_photo_captures": 23,
+  "room_model_routes_checked": 30,
+  "tea_materials_in_actual_browser": [
+    {
+      "name": "Kitchen_tea_tray_v8_Object_2",
+      "material": "Photo_reactive_ceramic_glaze",
+      "map": true,
+      "roughnessMap": true,
+      "vertices": 3962
+    },
+    {
+      "name": "Kitchen_tea_tray_v8_Object_3",
+      "material": "Photo_reactive_ceramic_glaze",
+      "map": true,
+      "roughnessMap": true,
+      "vertices": 2201
+    },
+    {
+      "name": "Kitchen_tea_tray_v8_Sugar_jar",
+      "material": "Photo_reactive_ceramic_glaze",
+      "map": true,
+      "roughnessMap": true,
+      "vertices": 21890
+    },
+    {
+      "name": "Kitchen_tea_tray_v8_Closed_rounded_porcelain_tray",
+      "material": "Porcelain_White_Glaze",
+      "map": false,
+      "roughnessMap": false,
+      "vertices": 1538
+    }
+  ],
+  "browser_errors": [],
+  "toaster": {
+    "ready": true,
+    "error": null,
+    "toasterParts": 11,
+    "originalPbr": true
+  },
+  "navigation_actions_sent": false,
+  "before_after_ui_retained": true,
+  "visual_review": {
+    "tea_tray_room": "Smooth rounded closed porcelain tray, glazed tea and sugar parts preserved, flat base aligned to prep counter.",
+    "background": "Six source scan nodes clipped only within the tea setting box; photo-sampled backsplash band fills the previous gap.",
+    "comparison": "Earlier scanned GLB and repaired GLB split both displayed and follow the same camera; five focus routes and 23 camera views rendered without browser errors.",
+    "scene_sha256": "458359aa783445095fde0c32d8e161b9031c2b32765b7fd0d032ca20c417d5b4"
+  },
+  "remaining_limits": [
+    "Teapot dimensions and glaze pattern remain photo-guided approximations.",
+    "The backsplash patch repeats one original photographed tile motif.",
+    "Other scan defects outside the tea-set background patch remain."
+  ]
+}

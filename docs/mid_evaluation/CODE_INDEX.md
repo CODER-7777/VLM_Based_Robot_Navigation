@@ -48,4 +48,19 @@ Dependencies: source repository's `pyproject.toml` and existing environment; CPU
 
 Dependencies are workload-specific: NumPy/Pillow/OpenCV, trimesh/SciPy, Blender `bpy`, Habitat-Sim/Bullet, quaternion, PyTorch/CUDA/gsplat, browser automation, and SSH. These are scripts copied from the existing ISL environments, not a complete local installation. Paths identify their server-side data/build roots; scripts with top-level server/build side effects are checked syntactically rather than imported during local validation.
 
-The source commit set excludes `.venv`, raw images/model archives, scenes, checkpoints, traces, and broad candidate-search payloads. Selected runtime web files and source/license metadata accompany the tools. [SOURCE_MANIFEST.json](SOURCE_MANIFEST.json) indexes committed parent tool paths and hashes.
+The source commit set excludes `.venv`, raw images/model archives, scenes, checkpoints, traces, and broad candidate-search payloads. Selected runtime web files and source/license metadata accompany the tools. [SOURCE_MANIFEST.json](SOURCE_MANIFEST.json) indexes selected parent tool source snapshots and hashes; current publication paths are listed separately.
+
+## Analysis → current code changes
+
+| Evidence / defect | Source change | Verification / source reference |
+| --- | --- | --- |
+| GQFT flow/pitch/checkpoint overlay confounds | `episode_contract.py`, `checkpoint.py`, strict inference/evaluation adapters | CPU variant/output/geometry checks; [SEA-RAFT](REFERENCES.md) |
+| GQFT exact-motion projection conflict | Explicit optional label mode in `dataset.py`; oracle audit and paired plan | 3/104 windows; no paired-training improvement claimed |
+| Contact setting may differ at runtime from XML | `run_interactive_sim.py`: explicit `--contact-impratio`; `record.py` / `interactive.py`: compiled solver manifest | CPU override/no-override regression; [MuJoCo reference](https://mujoco.readthedocs.io/en/stable/XMLreference.html#option-impratio) |
+| Current target limits differ from old successful tests | `catalog_evidence.py`, `verify_current_contract.py`, `summarize_deep_audit.py` | Current 34-case CPU study, checkpoint hashes and tight-limit result |
+| Target-rate penalties must account for elapsed time/reset | `target_rate_reward.py`, training profiles | Reward timing/reset/manager tests; thresholds are not actuator specifications |
+| Product silhouettes and materials remain approximate | `build_replacements.py`, `build_additional.py`, `refine_appliances.py`, `fix_grinder_texture.py`, `rebuild_glaze.py` | Saved fit/source metadata, calibrated captures and 22 browser selections |
+| Multi-material props were treated as scan background | Product `web/home-tour.js` hierarchy-aware material handling | Actual room/model browser reviews; [model authors/licences](../../Task_4/kitchen_product_model_replacements/README.md#sources) |
+| Mesh revision differs from Gaussian reconstruction | `merge_products.py`, `products_dashboard.py`, calibrated capture/publication checks | Mesh-only revision; original toaster geometry/maps preserved |
+
+Reproduction/publishing paths: [manual Git commands](presentation/PUBLISH_COMMANDS.md). These commands preserve the user's manual commit/push workflow. Raw output folders and large licensed model assets are excluded from the selected source set.

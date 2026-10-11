@@ -1,0 +1,673 @@
+{
+  "scene": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/home_pbr_products.glb",
+  "scene_sha256": "458359aa783445095fde0c32d8e161b9031c2b32765b7fd0d032ca20c417d5b4",
+  "manifest_entries_checked": 40,
+  "active_entries": 40,
+  "props_checked": 33,
+  "absent_entries": [],
+  "support_checks": [
+    {
+      "name": "rangetop_v5",
+      "support": "built-in",
+      "gap_mm": null,
+      "foot_support_fraction": null,
+      "bounds_raw": [
+        [
+          6.4527997970581055,
+          -3.9947500228881845,
+          0.9331657290458674
+        ],
+        [
+          7.101200103759766,
+          -3.08424997329712,
+          0.9909999966621393
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "faucet_main_style_v3",
+      "support": "counter_sinkrun_photo",
+      "gap_mm": -2.7383339291856545,
+      "foot_support_fraction": 0.9999999999999996,
+      "bounds_raw": [
+        [
+          5.374249458312988,
+          -5.39831510858192,
+          0.9262635739957655
+        ],
+        [
+          5.502553939819336,
+          -5.187882048470903,
+          1.129459095892108
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "hot_tap_s4_style_v5",
+      "support": "counter_sinkrun_photo",
+      "gap_mm": -0.0019475024363169169,
+      "foot_support_fraction": 1.0000000000000002,
+      "bounds_raw": [
+        [
+          5.871599896810949,
+          -5.419063557554763,
+          0.9289999604225149
+        ],
+        [
+          6.014357808093256,
+          -5.342099889181556,
+          1.159000039100646
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "soap_pump_p_lathe_v4",
+      "support": "counter_sinkrun_photo",
+      "gap_mm": -3.696680050957468e-05,
+      "foot_support_fraction": 1.0,
+      "bounds_raw": [
+        [
+          5.265450954437256,
+          -5.37930599078329,
+          0.9290018709581507
+        ],
+        [
+          5.346459865570068,
+          -5.327212482916726,
+          1.0479735234719394
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "air_gap_p_lathe_v4",
+      "support": "counter_sinkrun_photo",
+      "gap_mm": -7.096250353999523e-05,
+      "foot_support_fraction": 1.0,
+      "bounds_raw": [
+        [
+          5.185344696044922,
+          -5.37021461279389,
+          0.9290018369624476
+        ],
+        [
+          5.239397048950195,
+          -5.3161617830514585,
+          1.0144119649979773
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "button_p_lathe_v3",
+      "support": "counter_sinkrun_photo",
+      "gap_mm": -2.5882547425577496,
+      "foot_support_fraction": 1.0,
+      "bounds_raw": [
+        [
+          5.0737128257751465,
+          -5.371844919804279,
+          0.9264136531823934
+        ],
+        [
+          5.130920886993408,
+          -5.314636858096091,
+          0.96598506833534
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "soap_dish_p_v6",
+      "support": "counter_sinkrun_photo",
+      "gap_mm": -0.0018878977915415263,
+      "foot_support_fraction": 0.9807182566634367,
+      "bounds_raw": [
+        [
+          5.763205051422119,
+          -5.437510013580324,
+          0.9290000200271596
+        ],
+        [
+          5.870794773101807,
+          -5.368490219116213,
+          0.9570000171661367
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "bottles_v30",
+      "support": "counter_sinkrun_photo",
+      "gap_mm": -0.00010263034688762218,
+      "foot_support_fraction": 1.0,
+      "bounds_raw": [
+        [
+          6.799314022064209,
+          -5.1856323786912375,
+          0.9290018052946043
+        ],
+        [
+          6.836430549621582,
+          -5.1485158511338645,
+          1.0675731945636486
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "bottles_v31",
+      "support": "counter_sinkrun_photo",
+      "gap_mm": -9.494112096497531e-05,
+      "foot_support_fraction": 1.0,
+      "bounds_raw": [
+        [
+          6.7683210372924805,
+          -5.211692011176439,
+          0.9290018129838302
+        ],
+        [
+          6.807888984680176,
+          -5.1721240505527355,
+          1.0675876277065655
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "bottles_v32",
+      "support": "counter_sinkrun_photo",
+      "gap_mm": -8.59637178107775e-05,
+      "foot_support_fraction": 1.0,
+      "bounds_raw": [
+        [
+          6.739912986755371,
+          -5.2353068911327165,
+          0.9290018219612334
+        ],
+        [
+          6.778457164764404,
+          -5.196762698762153,
+          1.067573212013631
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "bottles_v33",
+      "support": "counter_sinkrun_photo",
+      "gap_mm": -7.77192517009695e-05,
+      "foot_support_fraction": 0.9999999999999998,
+      "bounds_raw": [
+        [
+          6.7134318351745605,
+          -5.2571322081674055,
+          0.9290018302056995
+        ],
+        [
+          6.74876070022583,
+          -5.22180379201061,
+          1.0675876440063954
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "canister_l_v5",
+      "support": "counter_sinkrun_photo",
+      "gap_mm": -0.0018925544044146037,
+      "foot_support_fraction": 1.0,
+      "bounds_raw": [
+        [
+          4.771260179579258,
+          -5.432480216026308,
+          0.9290000153705468
+        ],
+        [
+          4.8947401866316795,
+          -5.31150007247925,
+          1.165920002385973
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "canister_r_v5",
+      "support": "counter_sinkrun_photo",
+      "gap_mm": -0.0018925544044146037,
+      "foot_support_fraction": 1.0,
+      "bounds_raw": [
+        [
+          4.62325993925333,
+          -5.426480174064638,
+          0.9290000153705468
+        ],
+        [
+          4.746739946305752,
+          -5.30550003051758,
+          1.165920002385973
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "coffee_machine2_v7",
+      "support": "counter_prep_photo",
+      "gap_mm": -0.0017159554774881514,
+      "foot_support_fraction": 1.0,
+      "bounds_raw": [
+        [
+          1.6378400325775146,
+          -3.280225276947023,
+          0.9350000023841862
+        ],
+        [
+          1.8910000324249268,
+          -3.1677749156951918,
+          1.1562999486923222
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "frother_v7",
+      "support": "counter_prep_photo",
+      "gap_mm": -0.0017159554774881514,
+      "foot_support_fraction": 1.0,
+      "bounds_raw": [
+        [
+          1.6145281791687012,
+          -3.5284717082977313,
+          0.9350000023841862
+        ],
+        [
+          1.7214717864990234,
+          -3.4215281009674086,
+          1.123999953269959
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "glass_kettle_v6",
+      "support": "counter_prep_photo",
+      "gap_mm": -0.001715955478487352,
+      "foot_support_fraction": 1.0,
+      "bounds_raw": [
+        [
+          1.594980001449585,
+          -3.726281478881837,
+          0.9350000023841852
+        ],
+        [
+          1.7766649723052979,
+          -3.493582323074342,
+          1.1800000667572015
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "knife_block_round_v5",
+      "support": "counter_sinkrun_photo",
+      "gap_mm": -0.0018764782055979978,
+      "foot_support_fraction": 0.9999999999999996,
+      "bounds_raw": [
+        [
+          6.970955245895652,
+          -4.207072104059053,
+          0.9290000314467456
+        ],
+        [
+          7.079045195337926,
+          -4.032926997928346,
+          1.2542740037715199
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "prep_faucet_v3",
+      "support": "counter_prep_photo",
+      "gap_mm": -0.0008243519011852385,
+      "foot_support_fraction": 1.0,
+      "bounds_raw": [
+        [
+          1.5740000009536743,
+          -2.7799996472648334,
+          0.9350008939877625
+        ],
+        [
+          1.7302367687225342,
+          -2.571999700498004,
+          1.2402376876516825
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "prep_soap_v3",
+      "support": "counter_prep_photo",
+      "gap_mm": -0.0008558574665640251,
+      "foot_support_fraction": 0.9999999999999997,
+      "bounds_raw": [
+        [
+          1.6111765900583075,
+          -2.4832722002025553,
+          0.9350008624821972
+        ],
+        [
+          1.6631966593494543,
+          -2.3994695672663733,
+          1.0539725193921199
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "range_kettle_v5",
+      "support": "stovetop_grate",
+      "gap_mm": -1.1081672912638396e-05,
+      "foot_support_fraction": 0.9999999999999999,
+      "bounds_raw": [
+        [
+          6.789934167196117,
+          -3.3253461896074854,
+          0.9909999889183271
+        ],
+        [
+          6.974065742359099,
+          -3.124934269812114,
+          1.2309999640304805
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "soap_bottle_v6",
+      "support": "counter_sinkrun_photo",
+      "gap_mm": -4.0153803504416885e-05,
+      "foot_support_fraction": 1.0,
+      "bounds_raw": [
+        [
+          4.987502574920654,
+          -5.379497528076174,
+          0.9290018677711477
+        ],
+        [
+          5.075850486755371,
+          -5.294502735137941,
+          1.1250018553106924
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "tea_tray_v8",
+      "support": "counter_prep_photo",
+      "gap_mm": -0.0017159554774881514,
+      "foot_support_fraction": 1.0,
+      "bounds_raw": [
+        [
+          1.555999994277954,
+          -4.140500068664553,
+          0.9350000023841862
+        ],
+        [
+          1.7829999923706055,
+          -3.729500055313112,
+          1.0899816751480107
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "toaster_v4",
+      "support": "counter_sinkrun_photo",
+      "gap_mm": -0.0018940783911292058,
+      "foot_support_fraction": 1.0000000000000004,
+      "bounds_raw": [
+        [
+          4.432526650991999,
+          -5.335398330798678,
+          0.9290000138465601
+        ],
+        [
+          4.606889839055687,
+          -5.044571141354599,
+          1.1289999971006626
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "phone_dock_v6",
+      "support": "counter_bar_photo",
+      "gap_mm": -0.0017228886259879062,
+      "foot_support_fraction": 1.0,
+      "bounds_raw": [
+        [
+          1.372499942779541,
+          -4.938499927520754,
+          1.1119999885559073
+        ],
+        [
+          1.5227553844451904,
+          -4.861499786376954,
+          1.3410619497299185
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "tv_remote_v6",
+      "support": "counter_bar_photo",
+      "gap_mm": -5.395857227696865e-05,
+      "foot_support_fraction": 0.9554351480997779,
+      "bounds_raw": [
+        [
+          1.1818878650665283,
+          -4.963149974823,
+          1.112001657485961
+        ],
+        [
+          1.354112148284912,
+          -4.834848831176759,
+          1.1320016384124747
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "bread_basket_v3",
+      "support": "counter_prep_photo",
+      "gap_mm": -0.00010399720651310673,
+      "foot_support_fraction": 1.0,
+      "bounds_raw": [
+        [
+          1.600000023841858,
+          -4.9499994851402,
+          0.9350016143424572
+        ],
+        [
+          1.7999999523162842,
+          -4.6499997365767385,
+          1.0378280104230173
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "phone_v5",
+      "support": "counter_rangeside_photo",
+      "gap_mm": -0.6011080113148548,
+      "foot_support_fraction": 1.0,
+      "bounds_raw": [
+        [
+          6.719954490661621,
+          -2.627585172653199,
+          0.9283999800682065
+        ],
+        [
+          7.079973220825195,
+          -2.3566017150878915,
+          1.0280010700225826
+        ]
+      ],
+      "issues": [],
+      "size_review": "Cord-inclusive phone bounds are 36 cm; casing and handset checked separately."
+    },
+    {
+      "name": "grinder_v5",
+      "support": "counter_rangeside_photo",
+      "gap_mm": -0.00013814315891202966,
+      "foot_support_fraction": 1.0,
+      "bounds_raw": [
+        [
+          6.921500205993652,
+          -2.818499676931137,
+          0.9290009499363624
+        ],
+        [
+          7.061999797821045,
+          -2.6729996974051544,
+          1.1535008937551794
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "blue_jug_v6",
+      "support": "counter_sinkrun_photo",
+      "gap_mm": -0.0018878977913194817,
+      "foot_support_fraction": 1.0,
+      "bounds_raw": [
+        [
+          7.031500816345215,
+          -4.470427989959718,
+          0.9290000200271599
+        ],
+        [
+          7.0724992752075195,
+          -4.4152002334594735,
+          0.9794999957084648
+        ]
+      ],
+      "issues": [],
+      "size_review": "Miniature creamer remains about 5 cm tall; size preserved from photo fit."
+    },
+    {
+      "name": "paper_towel_v5",
+      "support": "counter_sinkrun_photo",
+      "gap_mm": -0.0019032646140226817,
+      "foot_support_fraction": 0.9896335832901424,
+      "bounds_raw": [
+        [
+          6.302128314971924,
+          -5.4529998302459735,
+          0.9290000046603372
+        ],
+        [
+          6.507000207901001,
+          -5.248999834060671,
+          1.2610000371932975
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "caddy_v3",
+      "support": "counter_sinkrun_photo",
+      "gap_mm": -0.0003112782317460372,
+      "foot_support_fraction": 1.0000000000000002,
+      "bounds_raw": [
+        [
+          6.891499996185303,
+          -5.048999435559346,
+          0.9290015966467194
+        ],
+        [
+          7.071000099182129,
+          -4.7109995885041425,
+          1.1690017767186263
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "knife_block_v5",
+      "support": "counter_sinkrun_photo",
+      "gap_mm": -0.0018607681134819032,
+      "foot_support_fraction": 0.9999999999999998,
+      "bounds_raw": [
+        [
+          6.88289325074161,
+          -4.328443418593856,
+          0.9290000471568377
+        ],
+        [
+          7.0758634677417085,
+          -4.251328587997087,
+          1.2299999814270584
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    },
+    {
+      "name": "frogs_v5",
+      "support": "counter_sinkrun_photo",
+      "gap_mm": 0.998099227605187,
+      "foot_support_fraction": 1.0,
+      "bounds_raw": [
+        [
+          6.683838367462158,
+          -5.431090831756594,
+          0.9300000071525564
+        ],
+        [
+          6.945555210113525,
+          -5.158415317535402,
+          1.2325280904769889
+        ]
+      ],
+      "issues": [],
+      "size_review": null
+    }
+  ],
+  "conservative_collision_flags": [],
+  "method": "Evaluated active saved GLB triangles in raw Z-up metres; contact footprints tested against actual counter top triangle unions, including sink cutouts. Convex hull overlap is a screening test, not proof of collision.",
+  "browser_review": "passed for this saved scene hash"
+}

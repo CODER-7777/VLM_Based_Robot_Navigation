@@ -1,0 +1,17 @@
+{
+  "watertight": true,
+  "consistent_winding": true,
+  "base_z": 0.935,
+  "basin_z": 0.9419817328,
+  "rim_z": 0.96,
+  "dimensions_m": [
+    0.22699999999999987,
+    0.41100000000000003,
+    0.02499999999999991
+  ],
+  "vertices": 1538,
+  "triangles": 3072,
+  "counter_rear_x": 1.55,
+  "tray_rear_x": 1.556,
+  "retained_teapot_sugar_geometry": true
+}

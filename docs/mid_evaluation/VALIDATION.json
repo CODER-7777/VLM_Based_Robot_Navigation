@@ -15,7 +15,7 @@
   },
   "svanm2": {
     "device": "cpu",
-    "analysis_reward_recording_tests": 13,
+    "analysis_reward_recording_tests": 14,
     "checkpoint_tests_passed": 2,
     "cuda_checkpoint_test": "Skipped: CUDA disabled for CPU verification",
     "commands": [
@@ -34,5 +34,24 @@
     "shell_sources_bash_n": 6,
     "service_and_render_execution": "Not run locally: server paths, data, Habitat/Blender/CUDA dependencies"
   },
-  "scope": "Software/interface verification; no training, locked-test reevaluation, server connection or hardware experiment."
+  "scope": "Software/interface verification; no training, locked-test reevaluation, server connection or hardware experiment.",
+  "presentation": {
+    "slides": 10,
+    "independent_diagrams": 6,
+    "formats": [
+      "png",
+      "svg"
+    ],
+    "ppt_generated": false,
+    "evidence_snapshots": 69,
+    "source_snapshots": 160,
+    "python_syntax_checks": 140,
+    "shell_syntax_checks": 6,
+    "javascript_syntax_checks": 7,
+    "unit_tests_passed": 16,
+    "cuda_unit_tests_skipped": 1,
+    "additional_gqft_svgs": 2,
+    "slide_sections": "What is it about? / Objective / Approach / Results / Analysis to fix / Next or feedback",
+    "additional_rl_moe_diagrams": 2
+  }
 }

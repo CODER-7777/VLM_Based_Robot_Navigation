@@ -49,6 +49,10 @@ def check_links(errors):
     documents = [ROOT / "README.md", ROOT / "Task_1_Simulator_Evaluation/README.md",
                  ROOT / "Task_2/README.md", ROOT / "Task_3/README.md", ROOT / "Task_4/README.md"]
     documents += sorted(PACKAGE.glob("*.md"))
+    documents += sorted((PACKAGE / "presentation").glob("*.md"))
+    documents += sorted((PACKAGE / "diagrams").glob("*.md"))
+    documents += sorted((ROOT / "mid-eval").glob("*.md"))
+    documents += [ROOT / "docs/INTEGRATION_PLAN.md", ROOT / "Task_2/MASKED_ATTENTION_PLAN.md"]
     missing_optional, count = [], 0
     for document in documents:
         source = document.read_text()
@@ -78,7 +82,11 @@ def main():
     args = parser.parse_args()
     errors = []
     copies = 0
-    for manifest_path in sorted((PACKAGE / "evidence").glob("*/manifest.json")):
+    manifests = sorted((PACKAGE / "evidence").glob("*/manifest.json"))
+    presentation_manifest = PACKAGE / "presentation/assets/manifest.json"
+    if presentation_manifest.exists():
+        manifests.append(presentation_manifest)
+    for manifest_path in manifests:
         for record in load(manifest_path)["records"]:
             snapshot = ROOT / record["snapshot"]
             if not snapshot.is_file():
@@ -89,7 +97,8 @@ def main():
                 errors.append(f"Snapshot differs from manifest: {snapshot}")
             if args.check_sources:
                 original = ROOT / record["source"]
-                if not original.is_file() or hashlib.sha256(original.read_bytes()).hexdigest() != record["sha256"]:
+                expected = record.get("source_sha256", record["sha256"])
+                if not original.is_file() or hashlib.sha256(original.read_bytes()).hexdigest() != expected:
                     errors.append(f"Original differs/missing: {original}")
             if snapshot.suffix == ".json":
                 load(snapshot)
@@ -135,6 +144,22 @@ def main():
         errors.append("Final kitchen counts/coverage differ from the report")
     if latest["render_info"]["width"] != 800 or latest["render_info"]["height"] != 640:
         errors.append("Final kitchen image dimensions differ from the report")
+    current_verification = PACKAGE / "presentation/assets/task3_current_verification.json"
+    if current_verification.exists():
+        current = load(current_verification)
+        if current["runs"] != 34 or current["devices"] != ["cpu"] or current["training_launched"]:
+            errors.append("Current locomotion study scope differs from slides")
+        stairs = current["stair_verifications"]
+        for tag, expected in [("baseline", 0), ("impratio10", 3)]:
+            rows = [r for r in stairs if f"_{tag}_" in r["run"]]
+            if len(rows) != 6 or sum(r["verified_traversal"] for r in rows) != expected:
+                errors.append(f"Current tight-limit stair result differs: {tag}")
+        reductions = [r["q_reduction_percent"] for r in current["flat_pairs"]]
+        if len(reductions) != 4 or round(min(reductions), 1) != 63.5 or round(max(reductions), 1) != 70.5:
+            errors.append("Current flat vibration range differs from slides")
+        slide_text = (PACKAGE / "presentation/SLIDE_TEXT.md").read_text()
+        if len(re.findall(r"^## Slide \d+", slide_text, re.MULTILINE)) != 10:
+            errors.append("Slide text must contain exactly ten slides")
     source_count = 0
     source_manifest = PACKAGE / "SOURCE_MANIFEST.json"
     if source_manifest.exists():
@@ -150,7 +175,7 @@ def main():
     links, missing_optional = check_links(errors)
     if errors:
         raise SystemExit("Validation failed:\n" + "\n".join(errors))
-    print(f"PASS: {copies} evidence copies, {source_count} indexed tool sources, {links} report links, and central numeric claims.")
+    print(f"PASS: {copies} evidence snapshots, {source_count} indexed tool sources, {links} report links, and central numeric claims.")
     if missing_optional:
         print(f"Extended workspace sources absent: {len(missing_optional)} links; portable evidence passed.")
     else:

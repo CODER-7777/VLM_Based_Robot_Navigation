@@ -85,6 +85,49 @@
       "snapshot": "docs/mid_evaluation/figures/task4_latest_kitchen.jpg",
       "bytes": 109258,
       "sha256": "f9f25f8ab6a051a79bff5d380a7336c56cf38d1740b77e3566ecbb7ceea0a1a6"
+    },
+    {
+      "source": "Task_4/kitchen_tray_background_repair/evidence/comparison_tour.png",
+      "snapshot": "docs/mid_evaluation/figures/task4_v8_home_tour.png",
+      "bytes": 756628,
+      "sha256": "28ba29343e937af1218b3b812cae36b50646bd7d031968d9335b53eab6e0dca8"
+    },
+    {
+      "source": "Task_4/kitchen_tray_background_repair/evidence/browser/tea_tray_comparison.jpg",
+      "snapshot": "docs/mid_evaluation/figures/task4_v8_tea_comparison.jpg",
+      "bytes": 38274,
+      "sha256": "a0521489314258903703a2895a8e4efa4441fbd99cdf2a384fbf1cef84cc76d9"
+    },
+    {
+      "source": "Task_4/kitchen_tray_background_repair/evidence/browser_review.json",
+      "snapshot": "docs/mid_evaluation/evidence/task4/v8_browser_review.json",
+      "bytes": 2454,
+      "sha256": "815c08228a13da44837542dc457a742a703e275ab3ffead2c43a61d0497d66fc"
+    },
+    {
+      "source": "Task_4/kitchen_tray_background_repair/evidence/placement_audit.json",
+      "snapshot": "docs/mid_evaluation/evidence/task4/v8_placement_audit.json",
+      "bytes": 15974,
+      "sha256": "07baa62eec2e9f39daa8e751d6d80318dc4d1ba310a2b6645ed6696aa2b2e17c"
+    },
+    {
+      "source": "Task_4/kitchen_tray_background_repair/evidence/tray_geometry.json",
+      "snapshot": "docs/mid_evaluation/evidence/task4/v8_tray_geometry.json",
+      "bytes": 349,
+      "sha256": "73f59f0e487e20db453470ba5c18c74c0c3d2a354714d88f4b35332e5a6612a1"
+    },
+    {
+      "source": "Task_4/kitchen_tray_background_repair/evidence/artifact_verification.json",
+      "snapshot": "docs/mid_evaluation/evidence/task4/v8_scene_verification.json",
+      "bytes": 8750,
+      "sha256": "b80aed586e242fe739f40abcf5c9e8831a578fb2fd0d550dd945e3de72f538fe"
+    },
+    {
+      "source": "Task_4/kitchen_tray_background_repair/evidence/verification.json",
+      "snapshot": "docs/mid_evaluation/evidence/task4/v8_home_tour_verification.json",
+      "bytes": 1203,
+      "sha256": "f1e01484c12e02e7e3b0ccd997fce2a2dcaec64a7e430fab37b424dbd2565183"
     }
-  ]
+  ],
+  "current_mesh_revision": "v8 tray/background; Gaussian evidence remains from its saved separate revision"
 }

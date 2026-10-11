@@ -4,6 +4,8 @@ This review is based on the local repository, nested source checkouts, historica
 
 ## Claim-to-artifact map
 
+Latest polygon/PBR evidence: [v8 scene checks](evidence/task4/v8_scene_verification.json), [23-view/30-route browser review](evidence/task4/v8_browser_review.json), [33-prop screening](evidence/task4/v8_placement_audit.json), [tray geometry](evidence/task4/v8_tray_geometry.json), and [shared-camera home-tour checks](evidence/task4/v8_home_tour_verification.json). [Home-tour image](figures/task4_v8_home_tour.png) and [tea-setting comparison](figures/task4_v8_tea_comparison.jpg) are copied unchanged from retained browser evidence. Gaussian accuracy is still a separate pending evaluation.
+
 | Claim / question | Portable evidence | Qualification |
 | --- | --- | --- |
 | Genesis office/Go2 demonstration | [Task 1 script](../../Task_1_Simulator_Evaluation/run_go2.py), [saved video](../../Task_1_Simulator_Evaluation/videos/Genesis_without_physics.mp4), [historical notes](../../Task_1_Simulator_Evaluation/notes/INITIAL_EVALUATION.md) | Reported feasibility; no quantitative performance/VRAM manifest; office is visual-only in current script |
@@ -74,3 +76,14 @@ Older reports and source artifacts are preserved. The task READMEs and this inde
 The package validator checks report links/anchors, copied-file hashes, JSON/CSV structure, GQFT percentage arithmetic, the 12 earlier stair outcomes, the four paired later traversals, and the latest kitchen publication values. It verifies that the documentation agrees with its artifacts; it does not repeat the underlying experiments or independently establish physical truth.
 
 Use [manifest task2](evidence/task2/manifest.json), [manifest task3](evidence/task3/manifest.json), and [manifest task4](evidence/task4/manifest.json) to trace each snapshot/figure to its original source and SHA-256.
+
+## Current presentation evidence — October 10
+
+| Claim | Snapshot | Protocol |
+| --- | --- | --- |
+| Current tight-limit contact intervention: 34 CPU cases; 63.5–70.5% flat reduction; 0/6→3/6 stairs | [Current verification](presentation/assets/task3_current_verification.json), [flat CSV](presentation/assets/task3_current_flat.csv) | Current hips ±0.735, calf upper −0.88776, kp18/kd0.7; independent of the older wider-limit four-pair study |
+| Latest product mesh: 22 reviewed selections, seven routes / 88 panels | [Browser review](presentation/assets/task4_product_browser_review.json), [HTTP checks](presentation/assets/task4_product_http_checks.json) | Private PBR mesh; no Gaussian retraining; saved review, no live availability check |
+| Original toaster retains 11 parts and all three maps | [Material verification](presentation/assets/task4_original_toaster_materials.json) | SHA-256 comparison; product mesh branch |
+| Actual slide images and demo frame | [Asset manifest](presentation/assets/manifest.json) | Byte-identical plot/browser copies; single extracted Genesis video frame has separate source hash |
+
+Independent diagrams are explanatory. Papers and publication metadata are verified in [REFERENCES.md](REFERENCES.md).

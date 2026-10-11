@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "versions": [
+    "before",
+    "after",
+    "compare"
+  ],
+  "same_camera_on_every_switch": true,
+  "split_view_uses_one_camera": true,
+  "object_inspection_checked": [
+    "toaster",
+    "blue_jug",
+    "phone",
+    "glass_kettle",
+    "phone_dock"
+  ],
+  "baseline": {
+    "source": "/data/robotics/toshith/rxr_author/refined/2azQ1b91cZZ_v1_unpatched.glb",
+    "browser_scene": "/data/robotics/toshith/vivekananda/kitchen_home_tour_before_after/before_browser.glb",
+    "bytes": 187663360,
+    "before_texture_max_edge": 1024,
+    "repaired_scene_unchanged": true,
+    "label": "Earlier saved mesh before current replacement models",
+    "untouched_original_dataset_verified": false,
+    "same_camera_on_switch": true
+  },
+  "browser_errors": [],
+  "navigation_actions_sent": false,
+  "navigation_state_unchanged_during_verification": true,
+  "navigation_note": "Other user sessions can change the existing walking state; this verifier sends no actions.",
+  "room_scene_modified": false,
+  "verified_utc": "2026-10-11T04:29:34Z",
+  "scene_sha256": "458359aa783445095fde0c32d8e161b9031c2b32765b7fd0d032ca20c417d5b4",
+  "scene_revision": "kitchen_workspace_v8_tray_20261011"
+}

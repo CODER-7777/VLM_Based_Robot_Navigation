@@ -1,6 +1,66 @@
 {
-  "scope": "Parent analysis/repair/rendering source; model/controller source versioned in independent repositories.",
+  "scope": "Selected parent analysis, repair, rendering and documentation tooling; independent child source revisions are recorded separately. No raw traces or model assets are included.",
   "files": [
+    {
+      "path": "Task_3/moe_jitter_audit_20260921/analyze_hardware.py",
+      "bytes": 4398,
+      "sha256": "bd41584373ba2bb2ef2b28593be2336d95cfad049ab1288a0e5b733c6b37ab22"
+    },
+    {
+      "path": "Task_3/moe_jitter_audit_20260921/deep_hardware.py",
+      "bytes": 4176,
+      "sha256": "624b26753a95ff814fc2b315ad8e734f26b2d821c5d33dc844a0019cab6ca00f"
+    },
+    {
+      "path": "Task_3/moe_jitter_audit_20260921/finalize.py",
+      "bytes": 5868,
+      "sha256": "a8b02727a0c752312edc50df43f3c2aa06ce2327cb865c60d03546f08cb5fa71"
+    },
+    {
+      "path": "Task_3/moe_jitter_audit_20260921/original_incident.py",
+      "bytes": 2024,
+      "sha256": "00e886a18724a3c4286533fa782a8c46fd0b5e16c2a0b93d33fbd41e0e1ec1fd"
+    },
+    {
+      "path": "Task_3/moe_jitter_audit_20260921/original_sim/build_scene.py",
+      "bytes": 12629,
+      "sha256": "c00a7550ab3a0a42241fe3644da889fb07f25ff9306babe4a7dc3fe9134a109e"
+    },
+    {
+      "path": "Task_3/moe_jitter_audit_20260921/original_sim/controller.py",
+      "bytes": 7544,
+      "sha256": "5faf0abc9a9a1a586afcae3438aea187b20b111213607c27821cb5ec7ecc7e25"
+    },
+    {
+      "path": "Task_3/moe_jitter_audit_20260921/original_sim/run_interactive_sim.py",
+      "bytes": 7236,
+      "sha256": "3a4255ff4c9a5b05168f350b012097c9854cb630c5a067b2fa8d4299da5abca2"
+    },
+    {
+      "path": "Task_3/moe_jitter_audit_20260921/original_sim/teleop.py",
+      "bytes": 8524,
+      "sha256": "e48d45b8a236599b1c5427081ab928e778a7c7c4152ecadb66d29e230c135efd"
+    },
+    {
+      "path": "Task_3/moe_jitter_audit_20260921/original_sim/test_sim_headless.py",
+      "bytes": 4377,
+      "sha256": "351cb70e96dac6dcaee4db318f4cc56655d610fee442690186f40753d69af206"
+    },
+    {
+      "path": "Task_3/moe_jitter_audit_20260921/parity_and_replay.py",
+      "bytes": 2523,
+      "sha256": "675e0a38b9c3ad4cd4adff7bb46653019977b4b972f16168e4ae6472b5ddd6c0"
+    },
+    {
+      "path": "Task_3/moe_jitter_audit_20260921/torque_audit.py",
+      "bytes": 2405,
+      "sha256": "d7081d25f9cf09da5d8262b50472dc63788c377b1f22e45774b9f17f5185b285"
+    },
+    {
+      "path": "Task_3/notes/video_jitter_audit_20260926/index.html",
+      "bytes": 15827,
+      "sha256": "ea17b38006effb598620c93530d9cad801db2b9d09c4e42b2bc2ce747cafc380"
+    },
     {
       "path": "Task_3/tools/jitter_analysis/analyze.py",
       "bytes": 14672,
@@ -12,9 +72,19 @@
       "sha256": "b0be6e09f78f003de50976f4f07441d7f48be0a1716fc5964b95598b79b991f9"
     },
     {
+      "path": "Task_3/tools/jitter_analysis/audit_gate_frequency.py",
+      "bytes": 19209,
+      "sha256": "3a6d9e51f836b9b90883c45aacc8d252e2c8a1e686cd188fe58fc8b5b2704f6f"
+    },
+    {
       "path": "Task_3/tools/jitter_analysis/audit_target_rates.py",
       "bytes": 7034,
       "sha256": "914de74984473e39c54f3a820790b2655957c1369fa4d575add83aba97eb9c94"
+    },
+    {
+      "path": "Task_3/tools/jitter_analysis/catalog_evidence.py",
+      "bytes": 6246,
+      "sha256": "a9cb62c6a0cefc3610c55641e90a3f9da96c3162478b30864cc89a0f7f5e2e62"
     },
     {
       "path": "Task_3/tools/jitter_analysis/compare_policy_runs.py",
@@ -43,8 +113,8 @@
     },
     {
       "path": "Task_3/tools/jitter_analysis/interactive.py",
-      "bytes": 11110,
-      "sha256": "943d296f025af729c0724a31061b41182b2b1daf0d9b8651b7cdea1f1ed50f1b"
+      "bytes": 11178,
+      "sha256": "bc63d6cf67c004504fccaa12df17b1ce9b70dacd6b72e68d0206291e8f65c879"
     },
     {
       "path": "Task_3/tools/jitter_analysis/plot_help.py",
@@ -58,8 +128,8 @@
     },
     {
       "path": "Task_3/tools/jitter_analysis/record.py",
-      "bytes": 16811,
-      "sha256": "5b423d7a485ae2c5b0af526eb0db9697cbe3e6f4edd83957ee9ca474e5b31a72"
+      "bytes": 17359,
+      "sha256": "b81d56067f59afe19f6b788b11102e9d6e14c65f5fb8f1b91f36b1c8cb0e69e6"
     },
     {
       "path": "Task_3/tools/jitter_analysis/review_interactive.py",
@@ -82,14 +152,19 @@
       "sha256": "9fbfecf0b91e1c5f29417ab5733edd5a9bd2d8aa6d1a8749e067de0047dcd4d2"
     },
     {
+      "path": "Task_3/tools/jitter_analysis/summarize_deep_audit.py",
+      "bytes": 9266,
+      "sha256": "6972d8af0fada1620218c3ee32245f6237d5d1b4d398ad352e05dc8a42bb989e"
+    },
+    {
       "path": "Task_3/tools/jitter_analysis/target_rate_reward.py",
       "bytes": 3439,
       "sha256": "7b40732ef5f4931a0b4b616e04f20987e984f262d4cd8a373a0e186781b0b4cf"
     },
     {
       "path": "Task_3/tools/jitter_analysis/test_analysis.py",
-      "bytes": 5597,
-      "sha256": "88d5a2596bd0094844dfe27ab43c349f09d2370de48e16671abec3e3fa3d9329"
+      "bytes": 6569,
+      "sha256": "ba9c6bab6766d26694497d0aa12663ac91b37c415fb878d5b7be32c3498d944e"
     },
     {
       "path": "Task_3/tools/jitter_analysis/test_interactive.py",
@@ -105,6 +180,16 @@
       "path": "Task_3/tools/jitter_analysis/tier1_solver_probe.py",
       "bytes": 18048,
       "sha256": "3b206eb7489d04821fbf895fe4d6116dd0a0a92d19067ae949261e299f719221"
+    },
+    {
+      "path": "Task_3/tools/jitter_analysis/verify_current_contract.py",
+      "bytes": 7885,
+      "sha256": "626023104ec8cd65f293c201ed53c6ecc16267fc210ef5e51a2bd24ad9df6d75"
+    },
+    {
+      "path": "Task_3/tools/results/gate_frequency_audit_20261011_v2/executed_analysis.py",
+      "bytes": 19151,
+      "sha256": "578b0ede9e4034849e83d691fa1eae901fbe1b60be30145441450536ac2cd4f3"
     },
     {
       "path": "Task_4/dashboard/author_pov_route.py",
@@ -337,6 +422,76 @@
       "sha256": "58a530a7bbf56cb6785c21ada9b32f248a7920bee6ca5ce5a90b22a6451a1ad7"
     },
     {
+      "path": "Task_4/kitchen_appliance_refinement_20261011/comparison-first.html",
+      "bytes": 4976,
+      "sha256": "d8e4ef81af33896c5b823444557d115ed280bd7fb9858c129bce34f606c7ae79"
+    },
+    {
+      "path": "Task_4/kitchen_appliance_refinement_20261011/comparison-first.js",
+      "bytes": 4821,
+      "sha256": "931b412dac3b059366c9eb885afb6a57b005e817622a6b590c2604cf8e7bd764"
+    },
+    {
+      "path": "Task_4/kitchen_appliance_refinement_20261011/scripts/build_finishes.py",
+      "bytes": 20953,
+      "sha256": "3b21d1dcde29208760843da42eed7bc5e3a95a9f894c931ef2b267c9aa008ae5"
+    },
+    {
+      "path": "Task_4/kitchen_appliance_refinement_20261011/scripts/prepare_candidate.py",
+      "bytes": 3895,
+      "sha256": "1ab7bbcd7000fbdf53b836b7a866df5c92ef17f2079d26b55fe87341f94b382a"
+    },
+    {
+      "path": "Task_4/kitchen_appliance_refinement_20261011/scripts/publish.py",
+      "bytes": 2756,
+      "sha256": "c9822ec12822f516143d3822b999184f89056bb128864bf08eb458e0180f07c8"
+    },
+    {
+      "path": "Task_4/kitchen_appliance_refinement_20261011/scripts/refresh_panoramas.py",
+      "bytes": 2201,
+      "sha256": "5e3d9c6343d2a00d5a0a69fcba29d97fda01fb57ff1ab851204a4c5e0194fd46"
+    },
+    {
+      "path": "Task_4/kitchen_appliance_refinement_20261011/scripts/stage_views.py",
+      "bytes": 2513,
+      "sha256": "db0fcc3f989f525513de423e89b355476d19ca61130eb8dd4bfeaf17150689f7"
+    },
+    {
+      "path": "Task_4/kitchen_appliance_refinement_20261011/scripts/verify_browser.py",
+      "bytes": 5348,
+      "sha256": "f45d27cc0f1dacc298f10feed5e641bc3d534e0cb7a0566efbd8dbc466341d06"
+    },
+    {
+      "path": "Task_4/kitchen_appliance_refinement_20261011/scripts/verify_panoramas.py",
+      "bytes": 4759,
+      "sha256": "d9dd5301e0c05a5b8ca653e3227503e0cbf6e3fb5284db12700bb9a10fd21dc8"
+    },
+    {
+      "path": "Task_4/kitchen_home_tour_before_after/home-tour.html",
+      "bytes": 4018,
+      "sha256": "93c3dff637d8660bb6adfb1d19b73c5d25fce7c0a5f853903a1adf5b08484765"
+    },
+    {
+      "path": "Task_4/kitchen_home_tour_before_after/home-tour.js",
+      "bytes": 20664,
+      "sha256": "096087e3bd820a3387e9788bdab0322e6505f5e4e69ff604d38e3e5f03012ba4"
+    },
+    {
+      "path": "Task_4/kitchen_home_tour_before_after/prepare_before.py",
+      "bytes": 2446,
+      "sha256": "ab07215264d5dcdd047bb92d09014104568cba7bbd8fe8e1a950a53fcd716d1d"
+    },
+    {
+      "path": "Task_4/kitchen_home_tour_before_after/products_dashboard.py",
+      "bytes": 11146,
+      "sha256": "5564392420ffb5b581e0bf0684088895c3b2e515ae1b4380418f13ea42a248ff"
+    },
+    {
+      "path": "Task_4/kitchen_home_tour_before_after/verify_tour.py",
+      "bytes": 4515,
+      "sha256": "5602a812fe759275c0767a8b8f33f6951bbf98ca35b183aaceca0b7a01620096"
+    },
+    {
       "path": "Task_4/kitchen_objects_pbr_dashboard/evidence/build_comparisons.py",
       "bytes": 1733,
       "sha256": "322b7a4066411d5f26133b6d46b14af36fd967b525e11da650e82e31a7406c30"
@@ -407,19 +562,234 @@
       "sha256": "c4dec8edb42d5f7292d75ca0883ef6761a023f073492f9be78a5e44c6b1715de"
     },
     {
+      "path": "Task_4/kitchen_panorama_compare/capture_panoramas.py",
+      "bytes": 6560,
+      "sha256": "1707c1facb28c7cd76ade04aab90132799c7075454e21c5ed5d59321dea6cb5a"
+    },
+    {
+      "path": "Task_4/kitchen_panorama_compare/index.html",
+      "bytes": 3088,
+      "sha256": "1505800b44ab5c98a4d192811925671d25976c3a6174ff57b4710e5eef2fc4c7"
+    },
+    {
+      "path": "Task_4/kitchen_panorama_compare/panorama.js",
+      "bytes": 5250,
+      "sha256": "72af785abd1274b783a293ea67c7dfb9ba5bb3c21e814cbebbcc21983ec6c71c"
+    },
+    {
+      "path": "Task_4/kitchen_panorama_compare/panorama_server.py",
+      "bytes": 11026,
+      "sha256": "347aaa95f31afa49821dd586ffecd5cd422585636fb3f6bc2436d3268d3f9589"
+    },
+    {
+      "path": "Task_4/kitchen_panorama_compare/verify_panorama_browser.py",
+      "bytes": 4598,
+      "sha256": "98913d91f13400d44468567b0e6a5d301e7c78f08a4448e982b274a880ea2472"
+    },
+    {
+      "path": "Task_4/kitchen_panorama_compare/verify_v6_browser.py",
+      "bytes": 4147,
+      "sha256": "f58451f24ae8e201870a6ab77bf357834efef0629e4be33b359021ce3aede391"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/evidence/build_additional.py",
+      "bytes": 8229,
+      "sha256": "0561da0c4a6b7384b17f9ed4ad09beb4f4f65deb43a4c43027bfdc4d7ebb3d5f"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/evidence/build_product_comparisons.py",
+      "bytes": 1932,
+      "sha256": "2371a9c611c15e8be6ded81958e3e67706d145540d4220f5f33bcb7accf30d0f"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/evidence/build_replacements.py",
+      "bytes": 17688,
+      "sha256": "c2ca5c640aae8a98dfbbe5f8a81d5709a32f009ccabd0e813ac6ad31a5e90c5d"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/evidence/capture_grinder_final.py",
+      "bytes": 5399,
+      "sha256": "710a2ede6c8f155f2b0ff2efd5cfa1a3c852e2551017026d6955df9c310a6c01"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/evidence/capture_products.py",
+      "bytes": 5277,
+      "sha256": "09b3b0dde08be97d401b1f3db6b93b7747fc8a87cf0569cf48fff1bbf6603676"
+    },
+    {
       "path": "Task_4/kitchen_product_model_replacements/evidence/download_candidates.py",
       "bytes": 612,
       "sha256": "2e9324065d7481e05b06bc4716c7bf705587440ed1e6eda5b88476e7103edf1d"
     },
     {
+      "path": "Task_4/kitchen_product_model_replacements/evidence/fix_grinder_texture.py",
+      "bytes": 2904,
+      "sha256": "06769d11c3fc10119787a7ca27662d6a00b22b6df6b95f7bb71a66d43412023f"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/evidence/inspect_current_parts.py",
+      "bytes": 570,
+      "sha256": "7165d39d6f8958254bd4df7c1cc92846d653fcbff1550c11c364826ed9688fd7"
+    },
+    {
       "path": "Task_4/kitchen_product_model_replacements/evidence/inspect_downloaded.py",
-      "bytes": 4866,
-      "sha256": "0c1e4719858b584392faa80ae5dece81975e1ff2b5af87d1e16796c63cb869aa"
+      "bytes": 5407,
+      "sha256": "08e33515fef1966cc18b309fb2566d0410e4d960018f1e3eecca26aa86546e9d"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/evidence/launch_home_tour_previous.py",
+      "bytes": 3137,
+      "sha256": "117eec4da6e38cee854c5ebc2003a81703c20c3e17661b01154187f1a5746948"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/evidence/launch_products.py",
+      "bytes": 3443,
+      "sha256": "7d1d6b807d390e7b23e1eb3327c7c71d365195d79e7c998a5761692718239369"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/evidence/local_review.py",
+      "bytes": 5137,
+      "sha256": "2e25087420f1097b22a8c02d75ce3a49d01e858fe61b3cae5e38c7506083a103"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/evidence/merge_products.py",
+      "bytes": 5805,
+      "sha256": "0949d512e9fcfbdfcac1352d337221cabbafbcc6724349490faef0fce62beb62"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/evidence/prepare_product_catalog.py",
+      "bytes": 11690,
+      "sha256": "45f2d510ecb646eea692db0bcb2a136d55c2d6b29f855f2dd5e5fe166936d6f2"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/evidence/products_dashboard.py",
+      "bytes": 9083,
+      "sha256": "09380059dd88e67819d350d9c47fb5bbd38fd8441863728360aeaf2fa49fcbc7"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/evidence/rebuild_glaze.py",
+      "bytes": 14554,
+      "sha256": "a9c8a82462008da0fa76996ac9e8330ec4bd065c6f5df91ac8d778c76b07fc84"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/evidence/refine_appliances.py",
+      "bytes": 15111,
+      "sha256": "b5f4cf93faec6afd9855ad61df523d015ed4a75fd78de458c1a4de0b88cd6f64"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/evidence/render_replacements.py",
+      "bytes": 1798,
+      "sha256": "2c4d127932993bcb60194140e7a22309c3321a744c0d12b53f8ecd4422337a02"
     },
     {
       "path": "Task_4/kitchen_product_model_replacements/evidence/search_cached_models.py",
       "bytes": 1973,
       "sha256": "767bad739941f84c7b8d2564eb226a9720c46bb026db38190bdf0c187c33f639"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/evidence/verify_original_materials.py",
+      "bytes": 2025,
+      "sha256": "7eb1fd0f3de4ada5893bb0a741da6cc44852ce9b003fb9376e25b223cd33f442"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/evidence/verify_published_comparisons.py",
+      "bytes": 3999,
+      "sha256": "8a3708ed398bb0657270fda5a1043ec18d498425887fb455b8ca6c2d6a67acc7"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/evidence/verify_published_products.py",
+      "bytes": 1888,
+      "sha256": "ae9692d0fb0d6af4dcd3a36a40ab7e51b9bb5fc460a8f638db328568ea594c77"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/evidence/verify_saved_models.py",
+      "bytes": 3547,
+      "sha256": "9d0fb6c80ec8c6c3696569c8b59a6f72ec4a406a780adb52ecdfccf32ee81507"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/open_dashboard.sh",
+      "bytes": 440,
+      "sha256": "965b935d1b6f9c3f31911e58f5f9c59b807858a3d1c7e4a0a1df3da53d44c8a6"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/web/comparison-first.html",
+      "bytes": 4700,
+      "sha256": "c00d4d010db2b45e56fd43e7c130affad0477ec0ed5321d6712cea48f3fbc6aa"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/web/comparison-first.js",
+      "bytes": 4753,
+      "sha256": "73395b3f6e5633255bb0890ef1731ba8346d339f6bbe0c414f210aac473207db"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/web/home-tour.html",
+      "bytes": 3169,
+      "sha256": "3d8b026d2e3824eb49306e5254535b6d08178459862eee17c7db03716eb2895f"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/web/home-tour.js",
+      "bytes": 15962,
+      "sha256": "2a0cbd38aeb7f2bf69e5ecebc4044613c3974b828955d8a45eb782602a60d9c8"
+    },
+    {
+      "path": "Task_4/kitchen_product_model_replacements/web/model-viewer.min.js",
+      "bytes": 955556,
+      "sha256": "774edda21e1be2a0934e460ca5943af1fe3f88da130a9f98bd6a9d611576cacf"
+    },
+    {
+      "path": "Task_4/kitchen_tray_background_repair/scripts/build_repair.py",
+      "bytes": 12905,
+      "sha256": "f9b72353af7c057501e524de9346b877b62f88cf0e3c6bc5dbd475759af90226"
+    },
+    {
+      "path": "Task_4/kitchen_tray_background_repair/scripts/merge_products_original.py",
+      "bytes": 5911,
+      "sha256": "5c9c0af6791438de1092c3d0d76a58fff9bcb511bad110f436da9331dc4f2da3"
+    },
+    {
+      "path": "Task_4/kitchen_tray_background_repair/scripts/prepare_repair.py",
+      "bytes": 4281,
+      "sha256": "bbf5eb3f8e919be7ae34cc10e199d6e1bf59b66f74def2d0bddb6da1960b7a77"
+    },
+    {
+      "path": "Task_4/kitchen_tray_background_repair/scripts/prepare_workspace_original.py",
+      "bytes": 10851,
+      "sha256": "55fcb2a91e6dceb1543c212f1dfa53675eb794fb58712b1067c4de69925e0ec4"
+    },
+    {
+      "path": "Task_4/kitchen_tray_background_repair/scripts/publish_reviewed_v8.py",
+      "bytes": 5045,
+      "sha256": "79197e5bf35e1989d50d7517cff16918928c7ad6d9ba239556d8a2f61d950056"
+    },
+    {
+      "path": "Task_4/kitchen_tray_background_repair/scripts/refresh_panoramas.py",
+      "bytes": 2198,
+      "sha256": "71c15aee5f428bf42fe5b3a8296fc490ae7661117d4ea1170e086bcd724a9a1a"
+    },
+    {
+      "path": "Task_4/kitchen_tray_background_repair/scripts/restart_pano_preview.py",
+      "bytes": 1326,
+      "sha256": "de0cab37c42940999ad80e1301ac7e725f6872d9c19e27dfdde17557158af8e4"
+    },
+    {
+      "path": "Task_4/kitchen_tray_background_repair/scripts/stage_views.py",
+      "bytes": 2513,
+      "sha256": "db0fcc3f989f525513de423e89b355476d19ca61130eb8dd4bfeaf17150689f7"
+    },
+    {
+      "path": "Task_4/kitchen_tray_background_repair/scripts/verify_browser.py",
+      "bytes": 5190,
+      "sha256": "8c3403d64d53e27d875639a77950d956450f417bf728a28efec30b3e5df8c19e"
+    },
+    {
+      "path": "Task_4/kitchen_tray_background_repair/scripts/verify_panoramas.py",
+      "bytes": 4759,
+      "sha256": "d9dd5301e0c05a5b8ca653e3227503e0cbf6e3fb5284db12700bb9a10fd21dc8"
+    },
+    {
+      "path": "Task_4/kitchen_tray_background_repair/scripts/verify_tour.py",
+      "bytes": 4519,
+      "sha256": "0efd6e506d517e2f01321ace1d811ca1d69c01f184b016e36fede4dcf22d8db7"
     },
     {
       "path": "Task_4/open_visualization.sh",
@@ -645,16 +1015,48 @@
       "path": "Task_4/visualization_tools/product_preview.py",
       "bytes": 5151,
       "sha256": "f50e823dc6e3cf6b229887fd45e61b51ca489315e814633263efa2b0ddbe7fda"
+    },
+    {
+      "path": "docs/mid_evaluation/tools/build_diagrams.py",
+      "bytes": 7674,
+      "sha256": "d7294a1e38b76a7d4be0f852ec539de6d4bd1a8409d4d2000201c020b6125f5d"
+    },
+    {
+      "path": "docs/mid_evaluation/tools/build_gqft_svg.py",
+      "bytes": 6085,
+      "sha256": "42779124a5c7e8e34fce9d6d73265ce353ea7898b39ff9ff892564da5834c43a"
+    },
+    {
+      "path": "docs/mid_evaluation/tools/build_rl_moe_svg.py",
+      "bytes": 8900,
+      "sha256": "b8aef584fc0786dc4813fb2b0eadb6702ad5ec0e77bc4ab7d1a4bdeb09fd799c"
+    },
+    {
+      "path": "docs/mid_evaluation/tools/generate_table_svg.py",
+      "bytes": 19308,
+      "sha256": "5c3cbe101d3c9dc45572784941f48295c9305fbe390759a97109695600ebfa41"
+    },
+    {
+      "path": "docs/mid_evaluation/tools/prepare_publication.py",
+      "bytes": 5805,
+      "sha256": "2e87aadc7c2424163a02f2665ea34a9757a8b06db32a84f4023e54440f7dc045"
+    },
+    {
+      "path": "docs/mid_evaluation/tools/validate_package.py",
+      "bytes": 9837,
+      "sha256": "9bb777151ce7e2292e40944ef8f8d543a6851dc3a928a90e76561c6719b919e6"
     }
   ],
   "repositories": [
     {
       "path": "Task_2/gqft_algorithm_sharing_vivekananda",
-      "revision": "5fe3c1ad27516d251fd48dc3b071d8e508dbd856"
+      "revision": "5fe3c1ad27516d251fd48dc3b071d8e508dbd856",
+      "pending_tracked_changes": []
     },
     {
       "path": "Task_3/xterra_mjlab",
-      "revision": "31702774e79905fd9bbf9f6db0e56883de0db658"
+      "revision": "9b0a12bf7cf6f616024c156781ae679259fb354f",
+      "pending_tracked_changes": []
     }
   ]
 }
