@@ -1,0 +1,55 @@
+{
+  "standalone": {
+    "toaster_normal": {
+      "bytes_sha256": "57405d710f4b500e76fe9be1fbc3aa3df80889a01ff3c8e6bdd62a9249f0f8ba",
+      "pixels_sha256": "d7b3668a5f7896eb740f86f9ba2f2c5c2a8389197edfd8b3f40b32a0da617835",
+      "dimensions": [
+        2048,
+        2048
+      ]
+    },
+    "toaster_metallicRoughness": {
+      "bytes_sha256": "7d7e0193549c2cca69124fc29506b578d1b11a4f2522051bebbcb409cc233353",
+      "pixels_sha256": "75a81b92db8f152b4f3f9f2b76b5c8207a0d9722f2a14db73a9a9a881b79169b",
+      "dimensions": [
+        1024,
+        1024
+      ]
+    },
+    "toaster_baseColor": {
+      "bytes_sha256": "3c3d1f651e30efe6d1a4cc5ec03419bd99051e165ad929f158df2ff49ea66b48",
+      "pixels_sha256": "70686eca3129d866ec6636e99e5aecaa398a6efb2d7cff2ffc9388c203c3792c",
+      "dimensions": [
+        2048,
+        2048
+      ]
+    }
+  },
+  "in_home": {
+    "toaster_normal": {
+      "bytes_sha256": "57405d710f4b500e76fe9be1fbc3aa3df80889a01ff3c8e6bdd62a9249f0f8ba",
+      "pixels_sha256": "d7b3668a5f7896eb740f86f9ba2f2c5c2a8389197edfd8b3f40b32a0da617835",
+      "dimensions": [
+        2048,
+        2048
+      ]
+    },
+    "toaster_metallicRoughness": {
+      "bytes_sha256": "7d7e0193549c2cca69124fc29506b578d1b11a4f2522051bebbcb409cc233353",
+      "pixels_sha256": "75a81b92db8f152b4f3f9f2b76b5c8207a0d9722f2a14db73a9a9a881b79169b",
+      "dimensions": [
+        1024,
+        1024
+      ]
+    },
+    "toaster_baseColor": {
+      "bytes_sha256": "3c3d1f651e30efe6d1a4cc5ec03419bd99051e165ad929f158df2ff49ea66b48",
+      "pixels_sha256": "70686eca3129d866ec6636e99e5aecaa398a6efb2d7cff2ffc9388c203c3792c",
+      "dimensions": [
+        2048,
+        2048
+      ]
+    }
+  },
+  "exact_original_image_bytes": true
+}

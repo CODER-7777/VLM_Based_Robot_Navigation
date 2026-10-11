@@ -1,0 +1,8 @@
+{
+  "accepted": true,
+  "revision": "all_kitchen_v3",
+  "reviewed": "Actual real-photo triptychs for 23 item groups and five additional camera views; original metallic toaster is preserved.",
+  "changes": ["Counter stone reprojected from actual photographs", "Planar backsplash extended to close the seam", "Canister decoration, caddy, bottle labels and tea/coffee surfaces photo-grounded", "Phone fixed at physical support height with improved photo silhouette fit and photographed controls", "Blue creamer constrained to the visible photo silhouette", "Frog sparse reconstruction moved rigidly inward instead of distorted by point clipping"],
+  "limitations": ["Frog statues remain sparse and approximate; this is not an exact new model", "Blue creamer has a generic opening and handle; its size is estimated", "Phone controls are photo-projected and its cord is simplified", "Knife handles and their occluded intersections remain approximate", "Hidden counter/backsplash texture uses photographic infill", "Some original surrounding scan geometry and view gaps remain", "Gaussian appearance is fixed lighting, not fully relightable PBR"],
+  "size_review": "Private audit explicitly reviews the 5.1 cm miniature creamer and 31.6 cm desk phone including handset/cord; original generic size thresholds would flag these. Support, counter, wall and overlap checks remain unchanged."
+}

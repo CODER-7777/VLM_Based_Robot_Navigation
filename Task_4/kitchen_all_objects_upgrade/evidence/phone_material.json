@@ -1,0 +1,7 @@
+{
+  "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/phone_v4/fit.json",
+  "mesh_parts": 22,
+  "geometry_changed": false,
+  "photo": "1eae5d4a0c0146c2b884d6b96d9b0e16_i2_3.jpg",
+  "method": "Calibrated photo UV projection on visible front faces; neutral dark plastic on hidden surfaces. Geometry unchanged. Photograph includes fixed lighting."
+}

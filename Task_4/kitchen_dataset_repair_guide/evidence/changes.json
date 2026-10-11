@@ -1,0 +1,41 @@
+{
+  "private_manifest": "/data/robotics/toshith/rxr_author/refined/agentA_resume/manifest.json",
+  "private_scene": "/data/robotics/toshith/rxr_author/refined/agentA_resume/test.glb",
+  "add_to_v15": [
+    "/data/robotics/toshith/rxr_author/refined/kitchen/objects/caddy_v2/fit.json",
+    "/data/robotics/toshith/rxr_author/refined/kitchen/objects/knife_block_v2/fit.json",
+    "/data/robotics/toshith/rxr_author/refined/kitchen/objects/frogs_v2/fit.json"
+  ],
+  "existing_entries_updated": [
+    "/data/robotics/toshith/rxr_author/refined/kitchen/objects/toaster_v2/fit.json",
+    "/data/robotics/toshith/rxr_author/refined/kitchen/objects/canister_l_v2/fit.json",
+    "/data/robotics/toshith/rxr_author/refined/kitchen/objects/canister_r_v2/fit.json",
+    "/data/robotics/toshith/rxr_author/refined/kitchen/objects/soap_bottle_v2/fit.json",
+    "/data/robotics/toshith/rxr_author/refined/kitchen/objects/bottles_v20/fit.json",
+    "/data/robotics/toshith/rxr_author/refined/kitchen/objects/bottles_v21/fit.json",
+    "/data/robotics/toshith/rxr_author/refined/kitchen/objects/bottles_v22/fit.json",
+    "/data/robotics/toshith/rxr_author/refined/kitchen/objects/bottles_v23/fit.json",
+    "/data/robotics/toshith/rxr_author/refined/kitchen/objects/knife_block_round_v2/fit.json",
+    "/data/robotics/toshith/rxr_author/refined/kitchen/objects/range_kettle_v2/fit.json",
+    "/data/robotics/toshith/rxr_author/refined/kitchen/objects/phone_v2/fit.json",
+    "/data/robotics/toshith/rxr_author/refined/kitchen/objects/grinder_v2/fit.json",
+    "/data/robotics/toshith/rxr_author/refined/kitchen/objects/blue_jug_v2/fit.json",
+    "/data/robotics/toshith/rxr_author/refined/kitchen/objects/paper_towel_v2/fit.json"
+  ],
+  "unchanged_verified": [
+    "/data/robotics/toshith/rxr_author/refined/kitchen/objects/soap_dish_p_v2/fit.json"
+  ],
+  "scan_replacements": {
+    "caddy": "caddy_v2",
+    "knife_block": "knife_block_v2",
+    "frog_pair_and_table": "frogs_v2"
+  },
+  "backups": "/data/robotics/toshith/rxr_author/refined/agentA_resume/backups",
+  "geometry_audit": {
+    "objects": 32,
+    "issues": [],
+    "method": "Per-component convex volumes, 2 mm tolerance, support height and full footprint containment; does not inspect backsplash texture ghosts."
+  },
+  "shared_manifest_sha256": "4a28565a79193ba46acc4cca276df0221fb776371fb0cdeb96440fd06a46e661",
+  "handoff_manifest_sha256": "4a28565a79193ba46acc4cca276df0221fb776371fb0cdeb96440fd06a46e661"
+}

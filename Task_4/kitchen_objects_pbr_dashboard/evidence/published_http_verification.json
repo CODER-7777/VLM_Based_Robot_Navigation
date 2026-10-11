@@ -1,0 +1,502 @@
+{
+  "url": "http://127.0.0.1:8767",
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 4490
+    },
+    {
+      "path": "/home-tour",
+      "status": 200,
+      "bytes": 3169
+    },
+    {
+      "path": "/kitchen-room?object=phone",
+      "status": 200,
+      "bytes": 3169
+    },
+    {
+      "path": "/models",
+      "status": 200,
+      "bytes": 2770
+    },
+    {
+      "path": "/gaussian",
+      "status": 200,
+      "bytes": 3721
+    },
+    {
+      "path": "/comparisons",
+      "status": 200,
+      "bytes": 5209
+    },
+    {
+      "path": "/legacy-editor",
+      "status": 200,
+      "bytes": 9362
+    }
+  ],
+  "models": [
+    {
+      "id": "toaster",
+      "part": 0,
+      "bytes": 5712728
+    },
+    {
+      "id": "blue_jug",
+      "part": 0,
+      "bytes": 834340
+    },
+    {
+      "id": "phone",
+      "part": 0,
+      "bytes": 2985484
+    },
+    {
+      "id": "canister_l",
+      "part": 0,
+      "bytes": 101156
+    },
+    {
+      "id": "canister_r",
+      "part": 0,
+      "bytes": 101364
+    },
+    {
+      "id": "soap_bottle",
+      "part": 0,
+      "bytes": 262344
+    },
+    {
+      "id": "soap_dish",
+      "part": 0,
+      "bytes": 153300
+    },
+    {
+      "id": "bottles",
+      "part": 0,
+      "bytes": 934484
+    },
+    {
+      "id": "bottles",
+      "part": 1,
+      "bytes": 974568
+    },
+    {
+      "id": "bottles",
+      "part": 2,
+      "bytes": 960568
+    },
+    {
+      "id": "bottles",
+      "part": 3,
+      "bytes": 939644
+    },
+    {
+      "id": "paper_towel",
+      "part": 0,
+      "bytes": 103128
+    },
+    {
+      "id": "caddy",
+      "part": 0,
+      "bytes": 1666996
+    },
+    {
+      "id": "knife_block",
+      "part": 0,
+      "bytes": 2498652
+    },
+    {
+      "id": "knife_block_round",
+      "part": 0,
+      "bytes": 95532
+    },
+    {
+      "id": "grinder",
+      "part": 0,
+      "bytes": 3326460
+    },
+    {
+      "id": "range_kettle",
+      "part": 0,
+      "bytes": 4752856
+    },
+    {
+      "id": "hot_tap",
+      "part": 0,
+      "bytes": 5266128
+    },
+    {
+      "id": "soap_pump",
+      "part": 0,
+      "bytes": 1052476
+    },
+    {
+      "id": "air_gap",
+      "part": 0,
+      "bytes": 817788
+    },
+    {
+      "id": "frogs",
+      "part": 0,
+      "bytes": 7219904
+    },
+    {
+      "id": "tea_tray",
+      "part": 0,
+      "bytes": 3070896
+    },
+    {
+      "id": "glass_kettle",
+      "part": 0,
+      "bytes": 1439432
+    },
+    {
+      "id": "frother",
+      "part": 0,
+      "bytes": 903056
+    },
+    {
+      "id": "coffee_machine",
+      "part": 0,
+      "bytes": 146608
+    }
+  ],
+  "images": [
+    {
+      "path": "/tour-assets/comparison/items/toaster_real.jpg",
+      "status": 200,
+      "bytes": 40226
+    },
+    {
+      "path": "/tour-assets/comparison/items/toaster_pbr.jpg",
+      "status": 200,
+      "bytes": 32604
+    },
+    {
+      "path": "/tour-assets/comparison/items/toaster_room.jpg",
+      "status": 200,
+      "bytes": 273447
+    },
+    {
+      "path": "/tour-assets/comparison/items/blue_jug_real.jpg",
+      "status": 200,
+      "bytes": 11934
+    },
+    {
+      "path": "/tour-assets/comparison/items/blue_jug_pbr.jpg",
+      "status": 200,
+      "bytes": 9276
+    },
+    {
+      "path": "/tour-assets/comparison/items/blue_jug_room.jpg",
+      "status": 200,
+      "bytes": 346087
+    },
+    {
+      "path": "/tour-assets/comparison/items/phone_real.jpg",
+      "status": 200,
+      "bytes": 54379
+    },
+    {
+      "path": "/tour-assets/comparison/items/phone_pbr.jpg",
+      "status": 200,
+      "bytes": 46057
+    },
+    {
+      "path": "/tour-assets/comparison/items/phone_room.jpg",
+      "status": 200,
+      "bytes": 337281
+    },
+    {
+      "path": "/tour-assets/comparison/items/canister_l_real.jpg",
+      "status": 200,
+      "bytes": 22691
+    },
+    {
+      "path": "/tour-assets/comparison/items/canister_l_pbr.jpg",
+      "status": 200,
+      "bytes": 17039
+    },
+    {
+      "path": "/tour-assets/comparison/items/canister_l_room.jpg",
+      "status": 200,
+      "bytes": 273447
+    },
+    {
+      "path": "/tour-assets/comparison/items/canister_r_real.jpg",
+      "status": 200,
+      "bytes": 25744
+    },
+    {
+      "path": "/tour-assets/comparison/items/canister_r_pbr.jpg",
+      "status": 200,
+      "bytes": 19578
+    },
+    {
+      "path": "/tour-assets/comparison/items/canister_r_room.jpg",
+      "status": 200,
+      "bytes": 273447
+    },
+    {
+      "path": "/tour-assets/comparison/items/soap_bottle_real.jpg",
+      "status": 200,
+      "bytes": 16870
+    },
+    {
+      "path": "/tour-assets/comparison/items/soap_bottle_pbr.jpg",
+      "status": 200,
+      "bytes": 16371
+    },
+    {
+      "path": "/tour-assets/comparison/items/soap_bottle_room.jpg",
+      "status": 200,
+      "bytes": 273447
+    },
+    {
+      "path": "/tour-assets/comparison/items/soap_dish_real.jpg",
+      "status": 200,
+      "bytes": 13520
+    },
+    {
+      "path": "/tour-assets/comparison/items/soap_dish_pbr.jpg",
+      "status": 200,
+      "bytes": 11902
+    },
+    {
+      "path": "/tour-assets/comparison/items/soap_dish_room.jpg",
+      "status": 200,
+      "bytes": 295549
+    },
+    {
+      "path": "/tour-assets/comparison/items/bottles_real.jpg",
+      "status": 200,
+      "bytes": 18187
+    },
+    {
+      "path": "/tour-assets/comparison/items/bottles_pbr.jpg",
+      "status": 200,
+      "bytes": 16453
+    },
+    {
+      "path": "/tour-assets/comparison/items/bottles_room.jpg",
+      "status": 200,
+      "bytes": 297035
+    },
+    {
+      "path": "/tour-assets/comparison/items/paper_towel_real.jpg",
+      "status": 200,
+      "bytes": 23415
+    },
+    {
+      "path": "/tour-assets/comparison/items/paper_towel_pbr.jpg",
+      "status": 200,
+      "bytes": 18699
+    },
+    {
+      "path": "/tour-assets/comparison/items/paper_towel_room.jpg",
+      "status": 200,
+      "bytes": 297035
+    },
+    {
+      "path": "/tour-assets/comparison/items/caddy_real.jpg",
+      "status": 200,
+      "bytes": 44590
+    },
+    {
+      "path": "/tour-assets/comparison/items/caddy_pbr.jpg",
+      "status": 200,
+      "bytes": 42974
+    },
+    {
+      "path": "/tour-assets/comparison/items/caddy_room.jpg",
+      "status": 200,
+      "bytes": 297035
+    },
+    {
+      "path": "/tour-assets/comparison/items/knife_block_real.jpg",
+      "status": 200,
+      "bytes": 37775
+    },
+    {
+      "path": "/tour-assets/comparison/items/knife_block_pbr.jpg",
+      "status": 200,
+      "bytes": 32426
+    },
+    {
+      "path": "/tour-assets/comparison/items/knife_block_room.jpg",
+      "status": 200,
+      "bytes": 346087
+    },
+    {
+      "path": "/tour-assets/comparison/items/knife_block_round_real.jpg",
+      "status": 200,
+      "bytes": 29708
+    },
+    {
+      "path": "/tour-assets/comparison/items/knife_block_round_pbr.jpg",
+      "status": 200,
+      "bytes": 27379
+    },
+    {
+      "path": "/tour-assets/comparison/items/knife_block_round_room.jpg",
+      "status": 200,
+      "bytes": 346087
+    },
+    {
+      "path": "/tour-assets/comparison/items/grinder_real.jpg",
+      "status": 200,
+      "bytes": 27889
+    },
+    {
+      "path": "/tour-assets/comparison/items/grinder_pbr.jpg",
+      "status": 200,
+      "bytes": 21235
+    },
+    {
+      "path": "/tour-assets/comparison/items/grinder_room.jpg",
+      "status": 200,
+      "bytes": 337281
+    },
+    {
+      "path": "/tour-assets/comparison/items/range_kettle_real.jpg",
+      "status": 200,
+      "bytes": 32470
+    },
+    {
+      "path": "/tour-assets/comparison/items/range_kettle_pbr.jpg",
+      "status": 200,
+      "bytes": 26617
+    },
+    {
+      "path": "/tour-assets/comparison/items/range_kettle_room.jpg",
+      "status": 200,
+      "bytes": 337281
+    },
+    {
+      "path": "/tour-assets/comparison/items/hot_tap_real.jpg",
+      "status": 200,
+      "bytes": 22859
+    },
+    {
+      "path": "/tour-assets/comparison/items/hot_tap_pbr.jpg",
+      "status": 200,
+      "bytes": 19207
+    },
+    {
+      "path": "/tour-assets/comparison/items/hot_tap_room.jpg",
+      "status": 200,
+      "bytes": 295549
+    },
+    {
+      "path": "/tour-assets/comparison/items/soap_pump_real.jpg",
+      "status": 200,
+      "bytes": 13371
+    },
+    {
+      "path": "/tour-assets/comparison/items/soap_pump_pbr.jpg",
+      "status": 200,
+      "bytes": 12685
+    },
+    {
+      "path": "/tour-assets/comparison/items/soap_pump_room.jpg",
+      "status": 200,
+      "bytes": 295549
+    },
+    {
+      "path": "/tour-assets/comparison/items/air_gap_real.jpg",
+      "status": 200,
+      "bytes": 10180
+    },
+    {
+      "path": "/tour-assets/comparison/items/air_gap_pbr.jpg",
+      "status": 200,
+      "bytes": 9836
+    },
+    {
+      "path": "/tour-assets/comparison/items/air_gap_room.jpg",
+      "status": 200,
+      "bytes": 295549
+    },
+    {
+      "path": "/tour-assets/comparison/items/frogs_real.jpg",
+      "status": 200,
+      "bytes": 67097
+    },
+    {
+      "path": "/tour-assets/comparison/items/frogs_pbr.jpg",
+      "status": 200,
+      "bytes": 69543
+    },
+    {
+      "path": "/tour-assets/comparison/items/frogs_room.jpg",
+      "status": 200,
+      "bytes": 286448
+    },
+    {
+      "path": "/tour-assets/comparison/items/tea_tray_real.jpg",
+      "status": 200,
+      "bytes": 50408
+    },
+    {
+      "path": "/tour-assets/comparison/items/tea_tray_pbr.jpg",
+      "status": 200,
+      "bytes": 36624
+    },
+    {
+      "path": "/tour-assets/comparison/items/tea_tray_room.jpg",
+      "status": 200,
+      "bytes": 307464
+    },
+    {
+      "path": "/tour-assets/comparison/items/glass_kettle_real.jpg",
+      "status": 200,
+      "bytes": 32403
+    },
+    {
+      "path": "/tour-assets/comparison/items/glass_kettle_pbr.jpg",
+      "status": 200,
+      "bytes": 25984
+    },
+    {
+      "path": "/tour-assets/comparison/items/glass_kettle_room.jpg",
+      "status": 200,
+      "bytes": 307464
+    },
+    {
+      "path": "/tour-assets/comparison/items/frother_real.jpg",
+      "status": 200,
+      "bytes": 26961
+    },
+    {
+      "path": "/tour-assets/comparison/items/frother_pbr.jpg",
+      "status": 200,
+      "bytes": 23529
+    },
+    {
+      "path": "/tour-assets/comparison/items/frother_room.jpg",
+      "status": 200,
+      "bytes": 307464
+    },
+    {
+      "path": "/tour-assets/comparison/items/coffee_machine_real.jpg",
+      "status": 200,
+      "bytes": 32620
+    },
+    {
+      "path": "/tour-assets/comparison/items/coffee_machine_pbr.jpg",
+      "status": 200,
+      "bytes": 29293
+    },
+    {
+      "path": "/tour-assets/comparison/items/coffee_machine_room.jpg",
+      "status": 200,
+      "bytes": 259909
+    }
+  ],
+  "revision": "kitchen_objects_pbr_v1",
+  "items": 22,
+  "scene_bytes": 292221036
+}

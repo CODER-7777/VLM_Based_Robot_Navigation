@@ -1,0 +1,242 @@
+{
+  "source": "/data/robotics/toshith/rxr_author/refined/split_visuals/scene.npz",
+  "reference_scene": "/data/robotics/toshith/rxr_author/refined/toaster_selected/test.glb",
+  "region": [
+    [
+      4.24,
+      -5.56,
+      0.9
+    ],
+    [
+      4.94,
+      -4.7,
+      1.75
+    ]
+  ],
+  "old_local_gaussians_removed": 18013,
+  "surface_area_m2": 2.7054340103373584,
+  "new_local_gaussians": 713050,
+  "new_product_gaussians": 236546,
+  "final_gaussians": 1044504,
+  "method": "Frozen exact clipped-triangle surface samples, original mesh UV colors, constant SH appearance; no photographic reconstruction claim",
+  "surface_max_error_m": 0,
+  "elapsed_seconds": 13.553993918001652,
+  "parts": [
+    {
+      "node": "Geometry_102.023",
+      "area_m2": 0.04558603182901976,
+      "samples": 9419,
+      "product": false
+    },
+    {
+      "node": "Geometry_028.031",
+      "area_m2": 0.12878792202164172,
+      "samples": 26610,
+      "product": false
+    },
+    {
+      "node": "Geometry_027.020",
+      "area_m2": 0.21118945641370002,
+      "samples": 43635,
+      "product": false
+    },
+    {
+      "node": "ScanRepair_plane_21",
+      "area_m2": 0.012800000619890273,
+      "samples": 2645,
+      "product": false
+    },
+    {
+      "node": "Geometry_028.027",
+      "area_m2": 0.004228533911261833,
+      "samples": 874,
+      "product": false
+    },
+    {
+      "node": "Geometry_026.023",
+      "area_m2": 0.0809401636726464,
+      "samples": 16724,
+      "product": false
+    },
+    {
+      "node": "RestoredDense_028",
+      "area_m2": 0.0007314576683442847,
+      "samples": 152,
+      "product": false
+    },
+    {
+      "node": "RestoredDense_027",
+      "area_m2": 0.014337033802820486,
+      "samples": 2963,
+      "product": false
+    },
+    {
+      "node": "RestoredDense_026",
+      "area_m2": 0.000871380641760051,
+      "samples": 181,
+      "product": false
+    },
+    {
+      "node": "SideRight.011",
+      "area_m2": 0.18822401762106486,
+      "samples": 38890,
+      "product": false
+    },
+    {
+      "node": "Shelf_0.003",
+      "area_m2": 0.018568460563648137,
+      "samples": 3837,
+      "product": false
+    },
+    {
+      "node": "RightReveal.003",
+      "area_m2": 0.06989200768042575,
+      "samples": 14441,
+      "product": false
+    },
+    {
+      "node": "Back.011",
+      "area_m2": 0.04681803987197932,
+      "samples": 9674,
+      "product": false
+    },
+    {
+      "node": "Geometry_028.021",
+      "area_m2": 0.02231556687656037,
+      "samples": 4611,
+      "product": false
+    },
+    {
+      "node": "Geometry_027.010",
+      "area_m2": 0.10378266637133977,
+      "samples": 21443,
+      "product": false
+    },
+    {
+      "node": "Geometry_026.019",
+      "area_m2": 0.039047290916778776,
+      "samples": 8068,
+      "product": false
+    },
+    {
+      "node": "ScanRepair_Loop_0349",
+      "area_m2": 0.0012330338893207977,
+      "samples": 255,
+      "product": false
+    },
+    {
+      "node": "Geometry_028.015",
+      "area_m2": 0.02376074962061968,
+      "samples": 4910,
+      "product": false
+    },
+    {
+      "node": "Geometry_027.006",
+      "area_m2": 0.00011115737884294193,
+      "samples": 128,
+      "product": false
+    },
+    {
+      "node": "Geometry_026.016",
+      "area_m2": 0.012709562607076685,
+      "samples": 2626,
+      "product": false
+    },
+    {
+      "node": "Geometry_026.001",
+      "area_m2": 0.04078446274450997,
+      "samples": 8427,
+      "product": false
+    },
+    {
+      "node": "WallRepair_tiled_return",
+      "area_m2": 0.32383988300324507,
+      "samples": 66910,
+      "product": false
+    },
+    {
+      "node": "WallRepair_return_end",
+      "area_m2": 0.015180103845580105,
+      "samples": 3137,
+      "product": false
+    },
+    {
+      "node": "WallRepair_cabinet_join",
+      "area_m2": 0.05145483892343399,
+      "samples": 10632,
+      "product": false
+    },
+    {
+      "node": "WallRepair_backsplash",
+      "area_m2": 0.08095991043091998,
+      "samples": 16728,
+      "product": false
+    },
+    {
+      "node": "Kitchen_toaster_v4_AtTheSpeedOf_Toaster_v4",
+      "area_m2": 0.39976221430047004,
+      "samples": 236546,
+      "product": true
+    },
+    {
+      "node": "Kitchen_counter_sinkrun_top",
+      "area_m2": 0.3317800571060072,
+      "samples": 68550,
+      "product": false
+    },
+    {
+      "node": "Kitchen_counter_sinkrun_edge",
+      "area_m2": 0.021315292909357596,
+      "samples": 4404,
+      "product": false
+    },
+    {
+      "node": "Kitchen_canister_r_v2_Rim",
+      "area_m2": 0.04354093375722489,
+      "samples": 8997,
+      "product": false
+    },
+    {
+      "node": "Kitchen_canister_r_v2_OriginalPhotoInk",
+      "area_m2": 0.005824004531859824,
+      "samples": 1204,
+      "product": false
+    },
+    {
+      "node": "Kitchen_canister_r_v2_Lid",
+      "area_m2": 0.04841109515600929,
+      "samples": 10003,
+      "product": false
+    },
+    {
+      "node": "Kitchen_canister_r_v2_Ceramic",
+      "area_m2": 0.10943519611027257,
+      "samples": 22611,
+      "product": false
+    },
+    {
+      "node": "Kitchen_canister_l_v2_Rim",
+      "area_m2": 0.04354088391906598,
+      "samples": 8997,
+      "product": false
+    },
+    {
+      "node": "Kitchen_canister_l_v2_OriginalPhotoInk",
+      "area_m2": 0.005824004531859818,
+      "samples": 1204,
+      "product": false
+    },
+    {
+      "node": "Kitchen_canister_l_v2_Lid",
+      "area_m2": 0.04841115935801685,
+      "samples": 10003,
+      "product": false
+    },
+    {
+      "node": "Kitchen_canister_l_v2_Ceramic",
+      "area_m2": 0.10943543573078329,
+      "samples": 22611,
+      "product": false
+    }
+  ]
+}

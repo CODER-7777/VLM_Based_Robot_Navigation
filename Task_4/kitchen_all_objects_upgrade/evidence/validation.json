@@ -1,0 +1,657 @@
+{
+  "props": [
+    {
+      "name": "faucet_main_style_v3",
+      "bottom_z": 0.9262635111808777,
+      "support": "counter_sinkrun",
+      "support_z": 0.929,
+      "base_gap_mm": -2.7364888191223624,
+      "bounds": [
+        [
+          5.374249458312988,
+          -5.398314476013184,
+          0.9262635111808777
+        ],
+        [
+          5.502553939819336,
+          -5.1878814697265625,
+          1.129459023475647
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "hot_tap_s4_style_v3",
+      "bottom_z": 0.9285441637039185,
+      "support": "counter_sinkrun",
+      "support_z": 0.929,
+      "base_gap_mm": -0.45583629608159093,
+      "bounds": [
+        [
+          5.880093097686768,
+          -5.407170295715332,
+          0.9285441637039185
+        ],
+        [
+          6.009570598602295,
+          -5.318848133087158,
+          1.1606751680374146
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "soap_pump_p_lathe_v3",
+      "bottom_z": 0.9262072443962097,
+      "support": "counter_sinkrun",
+      "support_z": 0.929,
+      "base_gap_mm": -2.792755603790331,
+      "bounds": [
+        [
+          5.265450954437256,
+          -5.379305362701416,
+          0.9262072443962097
+        ],
+        [
+          5.346459865570068,
+          -5.327211856842041,
+          1.0451788902282715
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "air_gap_p_lathe_v3",
+      "bottom_z": 0.9260467290878296,
+      "support": "counter_sinkrun",
+      "support_z": 0.929,
+      "base_gap_mm": -2.953270912170458,
+      "bounds": [
+        [
+          5.185344696044922,
+          -5.370213985443115,
+          0.9260467290878296
+        ],
+        [
+          5.239397048950195,
+          -5.316161155700684,
+          1.011456847190857
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "button_p_lathe_v3",
+      "bottom_z": 0.9264135956764221,
+      "support": "counter_sinkrun",
+      "support_z": 0.929,
+      "base_gap_mm": -2.586404323577929,
+      "bounds": [
+        [
+          5.0737128257751465,
+          -5.371844291687012,
+          0.9264135956764221
+        ],
+        [
+          5.130920886993408,
+          -5.31463623046875,
+          0.9659850001335144
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "soap_dish_p_v3",
+      "bottom_z": 0.9290018081665039,
+      "support": "counter_sinkrun",
+      "support_z": 0.929,
+      "base_gap_mm": 0.0018081665038582884,
+      "bounds": [
+        [
+          5.8385539054870605,
+          -5.442636489868164,
+          0.9290018081665039
+        ],
+        [
+          5.931446075439453,
+          -5.375361919403076,
+          0.9590018391609192
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "bottles_v30",
+      "bottom_z": 0.9290017485618591,
+      "support": "counter_sinkrun",
+      "support_z": 0.929,
+      "base_gap_mm": 0.0017485618590828977,
+      "bounds": [
+        [
+          6.799314022064209,
+          -5.18563175201416,
+          0.9290017485618591
+        ],
+        [
+          6.836430549621582,
+          -5.148515224456787,
+          1.067573070526123
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "bottles_v31",
+      "bottom_z": 0.9290017485618591,
+      "support": "counter_sinkrun",
+      "support_z": 0.929,
+      "base_gap_mm": 0.0017485618590828977,
+      "bounds": [
+        [
+          6.7683210372924805,
+          -5.211691379547119,
+          0.9290017485618591
+        ],
+        [
+          6.807888984680176,
+          -5.172123432159424,
+          1.0675874948501587
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "bottles_v32",
+      "bottom_z": 0.9290017485618591,
+      "support": "counter_sinkrun",
+      "support_z": 0.929,
+      "base_gap_mm": 0.0017485618590828977,
+      "bounds": [
+        [
+          6.739912986755371,
+          -5.235306262969971,
+          0.9290017485618591
+        ],
+        [
+          6.778457164764404,
+          -5.1967620849609375,
+          1.067573070526123
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "bottles_v33",
+      "bottom_z": 0.9290017485618591,
+      "support": "counter_sinkrun",
+      "support_z": 0.929,
+      "base_gap_mm": 0.0017485618590828977,
+      "bounds": [
+        [
+          6.7134318351745605,
+          -5.257131576538086,
+          0.9290017485618591
+        ],
+        [
+          6.74876070022583,
+          -5.221803188323975,
+          1.0675874948501587
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "canister_l_v3",
+      "bottom_z": 0.9290018081665039,
+      "support": "counter_sinkrun",
+      "support_z": 0.929,
+      "base_gap_mm": 0.0018081665038582884,
+      "bounds": [
+        [
+          4.767000198364258,
+          -5.433999061584473,
+          0.9290018081665039
+        ],
+        [
+          4.89900016784668,
+          -5.309998989105225,
+          1.1642518043518066
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "canister_r_v3",
+      "bottom_z": 0.9290018081665039,
+      "support": "counter_sinkrun",
+      "support_z": 0.929,
+      "base_gap_mm": 0.0018081665038582884,
+      "bounds": [
+        [
+          4.61899995803833,
+          -5.427999019622803,
+          0.9290018081665039
+        ],
+        [
+          4.750999927520752,
+          -5.303998947143555,
+          1.1642518043518066
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "coffee_machine2_v3",
+      "bottom_z": 0.935001015663147,
+      "support": "counter_prep",
+      "support_z": 0.935,
+      "base_gap_mm": 0.0010156631469193655,
+      "bounds": [
+        [
+          1.622725009918213,
+          -3.2745704650878906,
+          0.935001015663147
+        ],
+        [
+          1.9101626873016357,
+          -3.1729562282562256,
+          1.1539013385772705
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "frother_v3",
+      "bottom_z": 0.9350011348724365,
+      "support": "counter_prep",
+      "support_z": 0.935,
+      "base_gap_mm": 0.0011348724364701468,
+      "bounds": [
+        [
+          1.6030000448226929,
+          -3.5279994010925293,
+          0.9350011348724365
+        ],
+        [
+          1.7330000400543213,
+          -3.3979995250701904,
+          1.125001072883606
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "glass_kettle_v3",
+      "bottom_z": 0.9350011944770813,
+      "support": "counter_prep",
+      "support_z": 0.935,
+      "base_gap_mm": 0.0011944770812455374,
+      "bounds": [
+        [
+          1.6009999513626099,
+          -3.748068332672119,
+          0.9350011944770813
+        ],
+        [
+          1.7710000276565552,
+          -3.5283000469207764,
+          1.180001139640808
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "knife_block_round_v3",
+      "bottom_z": 0.9290013313293457,
+      "support": "counter_sinkrun",
+      "support_z": 0.929,
+      "base_gap_mm": 0.0013313293456551634,
+      "bounds": [
+        [
+          6.9710001945495605,
+          -4.206998825073242,
+          0.9290013313293457
+        ],
+        [
+          7.078999996185303,
+          -4.032999038696289,
+          1.2542753219604492
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "prep_faucet_v3",
+      "bottom_z": 0.9350008368492126,
+      "support": "counter_prep",
+      "support_z": 0.935,
+      "base_gap_mm": 0.0008368492125931937,
+      "bounds": [
+        [
+          1.5740000009536743,
+          -2.7799994945526123,
+          0.9350008368492126
+        ],
+        [
+          1.7302367687225342,
+          -2.5719995498657227,
+          1.2402375936508179
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "prep_soap_v3",
+      "bottom_z": 0.9350020289421082,
+      "support": "counter_prep",
+      "support_z": 0.935,
+      "base_gap_mm": 0.002028942108101006,
+      "bounds": [
+        [
+          1.6111756563186646,
+          -2.4832708835601807,
+          0.9350020289421082
+        ],
+        [
+          1.663196086883545,
+          -2.399467945098877,
+          1.05397367477417
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "range_kettle_v3",
+      "bottom_z": 0.9910010099411011,
+      "support": "rangetop",
+      "support_z": 0.991,
+      "base_gap_mm": 0.0010099411010822124,
+      "bounds": [
+        [
+          6.784144878387451,
+          -3.3161520957946777,
+          0.9910010099411011
+        ],
+        [
+          6.9683661460876465,
+          -3.1156952381134033,
+          1.2310009002685547
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "soap_bottle_v3",
+      "bottom_z": 0.9290018081665039,
+      "support": "counter_sinkrun",
+      "support_z": 0.929,
+      "base_gap_mm": 0.0018081665038582884,
+      "bounds": [
+        [
+          4.987540245056152,
+          -5.379458427429199,
+          0.9290018081665039
+        ],
+        [
+          5.075850486755371,
+          -5.294539451599121,
+          1.1250017881393433
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "tea_tray_v3",
+      "bottom_z": 0.9350012540817261,
+      "support": "counter_prep",
+      "support_z": 0.935,
+      "base_gap_mm": 0.001254081726020928,
+      "bounds": [
+        [
+          1.5161341428756714,
+          -4.162851333618164,
+          0.9350012540817261
+        ],
+        [
+          1.8238658905029297,
+          -3.7531473636627197,
+          1.1060012578964233
+        ]
+      ],
+      "counter_fraction": 0.9612668581499274
+    },
+    {
+      "name": "toaster_v4",
+      "bottom_z": 0.9290000200271606,
+      "support": "counter_sinkrun",
+      "support_z": 0.929,
+      "base_gap_mm": 2.0027160596569615e-05,
+      "bounds": [
+        [
+          4.432526588439941,
+          -5.335398197174072,
+          0.9290000200271606
+        ],
+        [
+          4.606889724731445,
+          -5.0445709228515625,
+          1.128999948501587
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "phone_dock_v3",
+      "bottom_z": 1.1120015382766724,
+      "support": "counter_bar",
+      "support_z": 1.112,
+      "base_gap_mm": 0.0015382766722638053,
+      "bounds": [
+        [
+          1.375,
+          -4.937499046325684,
+          1.1120015382766724
+        ],
+        [
+          1.465000033378601,
+          -4.832324504852295,
+          1.3096787929534912
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "tv_remote_v3",
+      "bottom_z": 1.1120015382766724,
+      "support": "counter_bar",
+      "support_z": 1.112,
+      "base_gap_mm": 0.0015382766722638053,
+      "bounds": [
+        [
+          1.1818878650665283,
+          -4.99014949798584,
+          1.1120015382766724
+        ],
+        [
+          1.354112148284912,
+          -4.8618483543396,
+          1.132001519203186
+        ]
+      ],
+      "counter_fraction": 0.9025754024839511
+    },
+    {
+      "name": "bread_basket_v3",
+      "bottom_z": 0.93500155210495,
+      "support": "counter_prep",
+      "support_z": 0.935,
+      "base_gap_mm": 0.0015521049498978812,
+      "bounds": [
+        [
+          1.600000023841858,
+          -4.94999885559082,
+          0.93500155210495
+        ],
+        [
+          1.7999999523162842,
+          -4.649999141693115,
+          1.0378278493881226
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "phone_v4",
+      "bottom_z": 0.9290008544921875,
+      "support": "counter_rangeside",
+      "support_z": 0.929,
+      "base_gap_mm": 0.0008544921874520384,
+      "bounds": [
+        [
+          6.763591289520264,
+          -2.627584934234619,
+          0.9290008544921875
+        ],
+        [
+          7.079973220825195,
+          -2.3971338272094727,
+          1.028000831604004
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "grinder_v3",
+      "bottom_z": 0.9290009140968323,
+      "support": "counter_rangeside",
+      "support_z": 0.929,
+      "base_gap_mm": 0.000914096832227429,
+      "bounds": [
+        [
+          6.921500205993652,
+          -2.8184993267059326,
+          0.9290009140968323
+        ],
+        [
+          7.061999797821045,
+          -2.672999382019043,
+          1.1535007953643799
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "blue_jug_v4",
+      "bottom_z": 0.929000735282898,
+      "support": "counter_sinkrun",
+      "support_z": 0.929,
+      "base_gap_mm": 0.0007352828979012571,
+      "bounds": [
+        [
+          7.0111083984375,
+          -4.464058876037598,
+          0.929000735282898
+        ],
+        [
+          7.081059455871582,
+          -4.409940242767334,
+          0.9800006747245789
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "paper_towel_v3",
+      "bottom_z": 0.9290018081665039,
+      "support": "counter_sinkrun",
+      "support_z": 0.929,
+      "base_gap_mm": 0.0018081665038582884,
+      "bounds": [
+        [
+          6.329999923706055,
+          -5.425999164581299,
+          0.9290018081665039
+        ],
+        [
+          6.480000019073486,
+          -5.275999069213867,
+          1.2610018253326416
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "caddy_v3",
+      "bottom_z": 0.92900151014328,
+      "support": "counter_sinkrun",
+      "support_z": 0.929,
+      "base_gap_mm": 0.0015101432799813352,
+      "bounds": [
+        [
+          6.891499996185303,
+          -5.048998832702637,
+          0.92900151014328
+        ],
+        [
+          7.071000099182129,
+          -4.710999011993408,
+          1.1690016984939575
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "knife_block_v3",
+      "bottom_z": 0.9290014505386353,
+      "support": "counter_sinkrun",
+      "support_z": 0.929,
+      "base_gap_mm": 0.0014505386352059446,
+      "bounds": [
+        [
+          6.9039998054504395,
+          -4.3489990234375,
+          0.9290014505386353
+        ],
+        [
+          7.095680236816406,
+          -4.230544567108154,
+          1.2298393249511719
+        ]
+      ],
+      "counter_fraction": 1.0
+    },
+    {
+      "name": "frogs_v3",
+      "bottom_z": 0.9290017485618591,
+      "support": "counter_sinkrun",
+      "support_z": 0.929,
+      "base_gap_mm": 0.0017485618590828977,
+      "bounds": [
+        [
+          6.646570682525635,
+          -5.416457176208496,
+          0.9290017485618591
+        ],
+        [
+          6.94223690032959,
+          -5.136347770690918,
+          1.2580018043518066
+        ]
+      ],
+      "counter_fraction": 1.0
+    }
+  ],
+  "prop_count": 32,
+  "gaussians": 4378360,
+  "all_gaussian_parameters_finite": true,
+  "geometry": "fixed mesh-surface samples; photo changes affect appearance only except the explicitly fitted miniature jug",
+  "phone_visual": "photo-fitted physical desk-phone product with photo-grounded controls",
+  "frog_visual": "sparse prior visual reconstruction with bounded support/wall correction",
+  "audit_log": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/audit.log",
+  "limits": [
+    "Some object silhouettes and unseen surfaces remain approximate.",
+    "Hidden counter/backsplash material uses photographic infill.",
+    "Specular Gaussian colors are a fixed-light approximation; original toaster PBR remains separate.",
+    "Depth is opacity-weighted expected optical-axis depth, not an independent physical depth measurement."
+  ]
+}

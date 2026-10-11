@@ -1,0 +1,9 @@
+{
+  "product_appearance_residual_weight": 0.3,
+  "spatial_neighbors": 24,
+  "smoothing_sigma_m": 0.0028,
+  "normal_cosine_threshold": 0.97,
+  "counter_appearance": "Continuous source UV texture, median photographic exposure fit, geometry-based contact occlusion",
+  "geometry_changed": false,
+  "note": "Conservative appearance blend chosen after novel-view inspection; not a relightable metal BRDF."
+}

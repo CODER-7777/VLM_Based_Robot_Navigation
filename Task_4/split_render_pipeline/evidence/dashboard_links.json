@@ -1,0 +1,102 @@
+{
+  "/": {
+    "status": 200,
+    "bytes": 10043,
+    "gaussian_link": true,
+    "comparisons_link": true
+  },
+  "/comparisons": {
+    "status": 200,
+    "bytes": 1494
+  },
+  "/product-viewer": {
+    "status": 200,
+    "bytes": 1482
+  },
+  "/scene-info": {
+    "status": 200,
+    "bytes": 481,
+    "scene_info": {
+      "scene_glb": "/data/robotics/toshith/rxr_author/refined/toaster_selected/test.glb",
+      "version": "toaster_selected",
+      "audit": {
+        "objects": 32,
+        "issues": [],
+        "method": "Per-component convex volumes, 2 mm tolerance, support height and full footprint containment; does not inspect backsplash texture ghosts."
+      },
+      "toaster_author": "AtTheSpeedOf",
+      "toaster_uid": "0d39352a32404ce7b71b8ac020844949",
+      "toaster_license": "CC-BY-4.0",
+      "pbr_viewer": "/product-viewer",
+      "ui_mode": "full_editor"
+    }
+  },
+  "prototype_render_info": {
+    "frame_id": 2,
+    "cuda_raster_ms": 7.319039821624756,
+    "valid_depth_fraction": 0.96178125,
+    "width": 400,
+    "height": 320,
+    "depth_definition": "Expected optical-axis Z in metres; opacity-weighted, not a guaranteed first surface hit",
+    "camera": {
+      "frame_id": 2,
+      "width": 400,
+      "height": 320,
+      "K": [
+        [
+          333.48750000000007,
+          0,
+          197.88343749999999
+        ],
+        [
+          0,
+          333.215625,
+          162.963125
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "c2w_raw_gl": [
+        [
+          -0.9998654601551122,
+          -0.01291791792919182,
+          0.010108856769195743,
+          4.575479984283447
+        ],
+        [
+          0.016135415669976238,
+          -0.6636920713191174,
+          0.7478318546500251,
+          -4.1999101638793945
+        ],
+        [
+          -0.0029512624353885265,
+          0.7478943520742178,
+          0.6638112142661673,
+          1.56024
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "coordinate_frame": "raw MP3D Z-up metres",
+      "agent_position_habitat": [
+        4.575479984283447,
+        0.11183337867259979,
+        4.1999101638793945
+      ],
+      "camera_position_habitat": [
+        4.575479984283447,
+        1.56024,
+        4.1999101638793945
+      ],
+      "last_motion_m": 0.0
+    }
+  }
+}

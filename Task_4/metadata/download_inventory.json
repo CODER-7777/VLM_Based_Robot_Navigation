@@ -1,0 +1,104 @@
+{
+  "server": "guest-isl@172.26.186.222",
+  "scene_source": "/data/robotics/toshith/rxr_author/refined/v15/2azQ1b91cZZ.glb",
+  "copied_on": "2026-10-07",
+  "scene_self_contained": true,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 109
+    },
+    {
+      "path": "README.md",
+      "bytes": 3578
+    },
+    {
+      "path": "dashboard/author_pov_route.py",
+      "bytes": 50910
+    },
+    {
+      "path": "dashboard/run.sh",
+      "bytes": 2152
+    },
+    {
+      "path": "metadata/counters_spec.json",
+      "bytes": 2650
+    },
+    {
+      "path": "metadata/episodes.tsv",
+      "bytes": 28183
+    },
+    {
+      "path": "metadata/kitchen_items.txt",
+      "bytes": 1427
+    },
+    {
+      "path": "metadata/manifest_v15.json",
+      "bytes": 3886
+    },
+    {
+      "path": "open_visualization.sh",
+      "bytes": 1484
+    },
+    {
+      "path": "previews/agentA_final1.jpg",
+      "bytes": 230634
+    },
+    {
+      "path": "previews/agentA_final2.jpg",
+      "bytes": 252006
+    },
+    {
+      "path": "previews/agentA_final3.jpg",
+      "bytes": 156411
+    },
+    {
+      "path": "previews/agentA_inv1.jpg",
+      "bytes": 199901
+    },
+    {
+      "path": "previews/agentA_inv2.jpg",
+      "bytes": 190953
+    },
+    {
+      "path": "previews/agentA_novel.jpg",
+      "bytes": 202773
+    },
+    {
+      "path": "previews/agentA_novel2.jpg",
+      "bytes": 202508
+    },
+    {
+      "path": "previews/agentA_novel3.jpg",
+      "bytes": 298435
+    },
+    {
+      "path": "scenes/v15/2azQ1b91cZZ.glb",
+      "bytes": 402235188
+    },
+    {
+      "path": "visualization_tools/glb_preview.py",
+      "bytes": 1831
+    },
+    {
+      "path": "visualization_tools/k3d.sh",
+      "bytes": 549
+    },
+    {
+      "path": "visualization_tools/look.py",
+      "bytes": 1323
+    },
+    {
+      "path": "visualization_tools/mp3d_cams.py",
+      "bytes": 2725
+    },
+    {
+      "path": "visualization_tools/multiview.py",
+      "bytes": 2348
+    },
+    {
+      "path": "visualization_tools/product_preview.py",
+      "bytes": 5151
+    }
+  ]
+}

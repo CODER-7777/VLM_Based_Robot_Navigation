@@ -1,0 +1,325 @@
+{
+  "objects": [
+    {
+      "loaded": true,
+      "dimensions": {
+        "x": 0.1817804747728795,
+        "y": 0.2450000234241992,
+        "z": 0.24394759396114196,
+        "toString": {}
+      },
+      "materials": [
+        {
+          "name": "phong3",
+          "metallic": 1,
+          "roughness": 0.12999999523162842
+        },
+        {
+          "name": "lambert3",
+          "metallic": 0,
+          "roughness": 0.25
+        },
+        {
+          "name": "phong6",
+          "metallic": 0,
+          "roughness": 0.029999999329447746
+        },
+        {
+          "name": "lambert9",
+          "metallic": 0,
+          "roughness": 0.6000000238418579
+        },
+        {
+          "name": "phong2",
+          "metallic": 0.800000011920929,
+          "roughness": 0.20000000298023224
+        },
+        {
+          "name": "lambert4",
+          "metallic": 1,
+          "roughness": 0.12999999523162842
+        },
+        {
+          "name": "lambert2",
+          "metallic": 0,
+          "roughness": 0.03999999910593033
+        }
+      ],
+      "images": true,
+      "object": "glass_kettle"
+    },
+    {
+      "loaded": true,
+      "dimensions": {
+        "x": 0.07711479644141095,
+        "y": 0.30099999131372823,
+        "z": 0.1929702659336523,
+        "toString": {}
+      },
+      "materials": [
+        {
+          "name": "Black Plastic",
+          "metallic": 0,
+          "roughness": 0.4000000059604645
+        },
+        {
+          "name": "Knife_Wood",
+          "metallic": 0,
+          "roughness": 0.27000001072883606
+        },
+        {
+          "name": "Wood_Holder",
+          "metallic": 0,
+          "roughness": 1
+        },
+        {
+          "name": "rough_concrete",
+          "metallic": 0,
+          "roughness": 1
+        },
+        {
+          "name": "Blade_Steel",
+          "metallic": 1,
+          "roughness": 0.20000000298023224
+        },
+        {
+          "name": "Blade_Steel",
+          "metallic": 1,
+          "roughness": 0.20000000298023224
+        }
+      ],
+      "images": true,
+      "object": "knife_block"
+    },
+    {
+      "loaded": true,
+      "dimensions": {
+        "x": 0.22697265349653506,
+        "y": 0.23999995794543091,
+        "z": 0.18413503607514825,
+        "toString": {}
+      },
+      "materials": [
+        {
+          "name": "Teakettle_Matte_Plastic",
+          "metallic": 0,
+          "roughness": 0.28999999165534973
+        },
+        {
+          "name": "Teakettle_Steel",
+          "metallic": 1,
+          "roughness": 0.11999999731779099
+        },
+        {
+          "name": "Teakettle_Color",
+          "metallic": 1,
+          "roughness": 0.10499999672174454
+        }
+      ],
+      "images": true,
+      "object": "range_kettle"
+    },
+    {
+      "loaded": true,
+      "dimensions": {
+        "x": 0.10808994944227379,
+        "y": 0.3252739872259355,
+        "z": 0.17414510613070622,
+        "toString": {}
+      },
+      "materials": [
+        {
+          "name": "knife_block_round_v3_bake_Cap.003",
+          "metallic": 0,
+          "roughness": 0.3199999928474426
+        },
+        {
+          "name": "knife_block_round_v3_bake_Wood",
+          "metallic": 0,
+          "roughness": 0.3499999940395355
+        },
+        {
+          "name": "Round_block_brushed_steel",
+          "metallic": 1,
+          "roughness": 0.2199999988079071
+        }
+      ],
+      "images": true,
+      "object": "knife_block_round"
+    },
+    {
+      "loaded": true,
+      "dimensions": {
+        "x": 0.14049959182739258,
+        "y": 0.2244999438188171,
+        "z": 0.1454999795259826,
+        "toString": {}
+      },
+      "materials": [
+        {
+          "name": "grinder_v3_bake_Black.001",
+          "metallic": 0,
+          "roughness": 0.30000001192092896
+        },
+        {
+          "name": "Dark_stained_real_wood",
+          "metallic": 0,
+          "roughness": 0.3499999940395355
+        },
+        {
+          "name": "grinder_v3_bake_Chrome",
+          "metallic": 1,
+          "roughness": 0.1599999964237213
+        },
+        {
+          "name": "grinder_v3_bake_Gold",
+          "metallic": 0.8500000238418579,
+          "roughness": 0.23000000417232513
+        },
+        {
+          "name": "grinder_v3_bake_Steel.001",
+          "metallic": 1,
+          "roughness": 0.20999999344348907
+        }
+      ],
+      "images": true,
+      "object": "grinder"
+    },
+    {
+      "loaded": true,
+      "dimensions": {
+        "x": 0.31638193130493164,
+        "y": 0.09900009632110596,
+        "z": 0.23045110702514648,
+        "toString": {}
+      },
+      "materials": [
+        {
+          "name": "Phone_photo_plastic",
+          "metallic": 0,
+          "roughness": 0.3799999952316284
+        },
+        {
+          "name": "Phone_hidden_plastic",
+          "metallic": 0,
+          "roughness": 0.3799999952316284
+        }
+      ],
+      "images": true,
+      "object": "phone"
+    },
+    {
+      "loaded": true,
+      "dimensions": {
+        "x": 0.3077317476272583,
+        "y": 0.16399871705967767,
+        "z": 0.4097042170404577,
+        "toString": {}
+      },
+      "materials": [
+        {
+          "name": "Photo_reactive_ceramic_glaze",
+          "metallic": 0,
+          "roughness": 0.1899999976158142
+        },
+        {
+          "name": "tea_tray_v3_bake_p0.003",
+          "metallic": 0,
+          "roughness": 0.17000000178813934
+        },
+        {
+          "name": "Sugar_jar_reactive_glaze",
+          "metallic": 0,
+          "roughness": 0.1899999976158142
+        }
+      ],
+      "images": true,
+      "object": "tea_tray"
+    },
+    {
+      "loaded": true,
+      "dimensions": {
+        "x": 0.17117238368934595,
+        "y": 0.2321310211836094,
+        "z": 0.07219685018054989,
+        "toString": {}
+      },
+      "materials": [
+        {
+          "name": "Photographed_aged_bronze",
+          "metallic": 0.8799999952316284,
+          "roughness": 0.27000001072883606
+        }
+      ],
+      "images": true,
+      "object": "hot_tap"
+    },
+    {
+      "loaded": true,
+      "dimensions": {
+        "x": 0.28743770718574524,
+        "y": 0.2189004272221382,
+        "z": 0.10161425173282623,
+        "toString": {}
+      },
+      "materials": [
+        {
+          "name": "coffee_machine2_v3_bake_black",
+          "metallic": 0,
+          "roughness": 0.2800000011920929
+        },
+        {
+          "name": "coffee_machine2_v3_bake_chroma",
+          "metallic": 1,
+          "roughness": 0.18000000715255737
+        },
+        {
+          "name": "coffee_machine2_v3_bake_material.002",
+          "metallic": 0,
+          "roughness": 0.3199999928474426
+        }
+      ],
+      "images": true,
+      "object": "coffee_machine"
+    },
+    {
+      "loaded": true,
+      "dimensions": {
+        "x": 0.10694371908903122,
+        "y": 0.18999886434952806,
+        "z": 0.10694371908903122,
+        "toString": {}
+      },
+      "materials": [
+        {
+          "name": "Frother_black_ribbed_ABS",
+          "metallic": 0,
+          "roughness": 0.30000001192092896
+        },
+        {
+          "name": "Frother_chrome_collar",
+          "metallic": 1,
+          "roughness": 0.14000000059604645
+        },
+        {
+          "name": "PlasticClear",
+          "metallic": 0,
+          "roughness": 0.05999999865889549
+        },
+        {
+          "name": "Rubber",
+          "metallic": 0,
+          "roughness": 0.6499999761581421
+        },
+        {
+          "name": "NespressoLogo",
+          "metallic": 0,
+          "roughness": 0.3545454740524292
+        }
+      ],
+      "images": true,
+      "object": "frother"
+    }
+  ],
+  "exceptions": []
+}

@@ -1,0 +1,108 @@
+{
+  "comparison": {
+    "title": "Toaster comparison and kitchen view",
+    "headings": [
+      "1. Real photo and current PBR scene",
+      "2. See the toaster in the kitchen"
+    ],
+    "images": [
+      {
+        "src": "http://127.0.0.1:8767/tour-assets/comparison/real_crop.jpg",
+        "width": 600,
+        "height": 480
+      },
+      {
+        "src": "http://127.0.0.1:8767/tour-assets/comparison/pbr_crop.jpg",
+        "width": 600,
+        "height": 480
+      }
+    ],
+    "roomInitiallyHidden": true,
+    "roomInitiallyUnloaded": true
+  },
+  "room": {
+    "ready": true,
+    "mode": "inspect",
+    "error": null,
+    "frame": 96,
+    "toasterParts": 11,
+    "originalPbr": true,
+    "pose": {
+      "frame_id": 96,
+      "width": 800,
+      "height": 640,
+      "K": [
+        [
+          666.9750000000001,
+          0,
+          395.76687499999997
+        ],
+        [
+          0,
+          666.43125,
+          325.92625
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "c2w_raw_gl": [
+        [
+          -0.15773454780398755,
+          -0.6558523290853168,
+          0.7382259375438097,
+          4.575479984283447
+        ],
+        [
+          0.9874771400976606,
+          -0.10252723903784625,
+          0.11990439124494712,
+          -4.1999101638793945
+        ],
+        [
+          -0.0029513071030633164,
+          0.7478943024844097,
+          0.6638112699387845,
+          1.56024
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "coordinate_frame": "raw MP3D Z-up metres",
+      "agent_position_habitat": [
+        4.575479984283447,
+        0.11183337867259979,
+        4.1999101638793945
+      ],
+      "camera_position_habitat": [
+        4.575479984283447,
+        1.56024,
+        4.1999101638793945
+      ],
+      "last_motion_m": 0
+    },
+    "toasterBounds": {
+      "min": [
+        4.426028036350384,
+        0.9290000136497527,
+        5.044254743655104
+      ],
+      "max": [
+        4.6130971337824755,
+        1.129000001970904,
+        5.339230101664841
+      ]
+    },
+    "status": "Original PBR toaster on the counter \u00b7 drag to see its sides, slots and controls",
+    "title": "Toaster in the kitchen",
+    "src": "/kitchen-room",
+    "visible": true
+  },
+  "js_exceptions": []
+}

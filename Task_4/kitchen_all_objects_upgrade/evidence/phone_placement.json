@@ -1,0 +1,18 @@
+{
+  "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/phone_v3/fit.json",
+  "bounds": [
+    [
+      6.6693764734125764,
+      -2.639240269179373,
+      0.929
+    ],
+    [
+      7.0070923114335,
+      -2.403833499801492,
+      0.9927126944473039
+    ]
+  ],
+  "photo_iou": 0.4043847322463989,
+  "yaw_deg": 16.233640471135196,
+  "color_coverage": 0.8221017887004561
+}

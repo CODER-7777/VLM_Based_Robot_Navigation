@@ -1,0 +1,42 @@
+{
+  "scene": "/data/robotics/toshith/rxr_author/refined/agentA_resume/test.glb",
+  "scene_size": 409290516,
+  "export_log": "/data/robotics/toshith/rxr_author/refined/agentA_resume/build_verified.log",
+  "previews": [
+    {
+      "path": "/data/robotics/toshith/rxr_author/refined/agentA_resume/previews/agentA_resume_compare1.jpg",
+      "sha256": "57cad2a1c2205c0c9f6c067afe493c80e44256f9678461e0a1814357471ff01a",
+      "mtime": 1791384462.867263
+    },
+    {
+      "path": "/data/robotics/toshith/rxr_author/refined/agentA_resume/previews/agentA_resume_compare2.jpg",
+      "sha256": "2a239a5f1399c2e8257af826ce87c601372d28f181d5c6e12e8aecdc8c1a722c",
+      "mtime": 1791384462.9592628
+    },
+    {
+      "path": "/data/robotics/toshith/rxr_author/refined/agentA_resume/previews/agentA_resume_compare3.jpg",
+      "sha256": "aa4e7f8b2ebe72ba54d74cc20e3472c6fd8ff574361fa5ec92292a1c368a5dba",
+      "mtime": 1791384463.0232627
+    },
+    {
+      "path": "/data/robotics/toshith/rxr_author/refined/agentA_resume/previews/agentA_resume_full_f7a060bfa1164b5e9c5cca04284f6d6b_i1_4.jpg",
+      "sha256": "c678e8158537595d8056ea9fe2d1ec6424f2287dd55f5bff951997bc2f848477",
+      "mtime": 1791384463.0512626
+    },
+    {
+      "path": "/data/robotics/toshith/rxr_author/refined/agentA_resume/previews/agentA_resume_full_f7a060bfa1164b5e9c5cca04284f6d6b_i2_4.jpg",
+      "sha256": "0e24a6b56c4c8d83cdfd1844b833fe0b4b2af597a38333452b6fa86186eb3366",
+      "mtime": 1791384463.0712626
+    },
+    {
+      "path": "/data/robotics/toshith/rxr_author/refined/agentA_resume/previews/agentA_resume_novel.jpg",
+      "sha256": "f15c1580a7206030dc1c025ec2c95d8b231547d375b3da70781fc796a03967f2",
+      "mtime": 1791384491.707213
+    }
+  ],
+  "physical_audit": {
+    "objects": 32,
+    "issues": [],
+    "method": "Per-component convex volumes, 2 mm tolerance, support height and full footprint containment; does not inspect backsplash texture ghosts."
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "revision": "all_kitchen_v3",
+  "fits": 40,
+  "gaussians": 4378360,
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 3366
+    },
+    "/comparisons": {
+      "status": 200,
+      "bytes": 5209
+    },
+    "/models": {
+      "status": 200,
+      "bytes": 3196
+    },
+    "/product-viewer?object=blue_jug_v4": {
+      "status": 200,
+      "bytes": 1133
+    },
+    "/product-viewer?object=phone_v4": {
+      "status": 200,
+      "bytes": 1251
+    },
+    "/legacy-editor": {
+      "status": 200,
+      "bytes": 9362
+    },
+    "/legacy-comparisons": {
+      "status": 200,
+      "bytes": 708
+    },
+    "toaster_v4": {
+      "status": 200,
+      "glb_bytes": 5712728
+    },
+    "blue_jug_v4": {
+      "status": 200,
+      "glb_bytes": 834340
+    },
+    "phone_v4": {
+      "status": 200,
+      "glb_bytes": 2985484
+    },
+    "caddy_v3": {
+      "status": 200,
+      "glb_bytes": 1666996
+    },
+    "canister_l_v3": {
+      "status": 200,
+      "glb_bytes": 101156
+    },
+    "grinder_v3": {
+      "status": 200,
+      "glb_bytes": 3326460
+    }
+  },
+  "state": {
+    "frame_id": 84,
+    "width": 800,
+    "height": 640,
+    "K": [
+      [
+        666.9750000000001,
+        0,
+        395.76687499999997
+      ],
+      [
+        0,
+        666.43125,
+        325.92625
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "c2w_raw_gl": [
+      [
+        -0.9998654601706158,
+        -0.012917919549265904,
+        0.010108853165505832,
+        4.575479984283447
+      ],
+      [
+        0.016135414050127382,
+        -0.6636920713165104,
+        0.7478318546872893,
+        -4.1999101638793945
+      ],
+      [
+        -0.002951266039179683,
+        0.7478943520485488,
+        0.6638112142790654,
+        1.56024
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "coordinate_frame": "raw MP3D Z-up metres",
+    "agent_position_habitat": [
+      4.575479984283447,
+      0.11183337867259979,
+      4.1999101638793945
+    ],
+    "camera_position_habitat": [
+      4.575479984283447,
+      1.56024,
+      4.1999101638793945
+    ],
+    "last_motion_m": 0.0
+  },
+  "render_info": {
+    "frame_id": 84,
+    "cuda_raster_ms": 12.057600021362305,
+    "valid_depth_fraction": 0.990068359375,
+    "width": 800,
+    "height": 640,
+    "depth_definition": "Expected optical-axis Z in metres; opacity-weighted, not a guaranteed first surface hit",
+    "camera": {
+      "frame_id": 84,
+      "width": 800,
+      "height": 640,
+      "K": [
+        [
+          666.9750000000001,
+          0,
+          395.76687499999997
+        ],
+        [
+          0,
+          666.43125,
+          325.92625
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "c2w_raw_gl": [
+        [
+          -0.9998654601706158,
+          -0.012917919549265904,
+          0.010108853165505832,
+          4.575479984283447
+        ],
+        [
+          0.016135414050127382,
+          -0.6636920713165104,
+          0.7478318546872893,
+          -4.1999101638793945
+        ],
+        [
+          -0.002951266039179683,
+          0.7478943520485488,
+          0.6638112142790654,
+          1.56024
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "coordinate_frame": "raw MP3D Z-up metres",
+      "agent_position_habitat": [
+        4.575479984283447,
+        0.11183337867259979,
+        4.1999101638793945
+      ],
+      "camera_position_habitat": [
+        4.575479984283447,
+        1.56024,
+        4.1999101638793945
+      ],
+      "last_motion_m": 0.0
+    }
+  },
+  "depth_valid_fraction": 0.990068359375,
+  "depth_median_m": 1.0180258750915527,
+  "shared_files_modified": false
+}

@@ -1,0 +1,159 @@
+{
+  "items": [
+    {
+      "selected": "toaster",
+      "images": 3,
+      "room": "/kitchen-room?object=toaster",
+      "model": "/item-viewer?object=toaster",
+      "roomHidden": true
+    },
+    {
+      "selected": "blue_jug",
+      "images": 3,
+      "room": "/kitchen-room?object=blue_jug",
+      "model": "/item-viewer?object=blue_jug",
+      "roomHidden": true
+    },
+    {
+      "selected": "phone",
+      "images": 3,
+      "room": "/kitchen-room?object=phone",
+      "model": "/item-viewer?object=phone",
+      "roomHidden": true
+    },
+    {
+      "selected": "canister_l",
+      "images": 3,
+      "room": "/kitchen-room?object=canister_l",
+      "model": "/item-viewer?object=canister_l",
+      "roomHidden": true
+    },
+    {
+      "selected": "canister_r",
+      "images": 3,
+      "room": "/kitchen-room?object=canister_r",
+      "model": "/item-viewer?object=canister_r",
+      "roomHidden": true
+    },
+    {
+      "selected": "soap_bottle",
+      "images": 3,
+      "room": "/kitchen-room?object=soap_bottle",
+      "model": "/item-viewer?object=soap_bottle",
+      "roomHidden": true
+    },
+    {
+      "selected": "soap_dish",
+      "images": 3,
+      "room": "/kitchen-room?object=soap_dish",
+      "model": "/item-viewer?object=soap_dish",
+      "roomHidden": true
+    },
+    {
+      "selected": "bottles",
+      "images": 3,
+      "room": "/kitchen-room?object=bottles",
+      "model": "/item-viewer?object=bottles",
+      "roomHidden": true
+    },
+    {
+      "selected": "paper_towel",
+      "images": 3,
+      "room": "/kitchen-room?object=paper_towel",
+      "model": "/item-viewer?object=paper_towel",
+      "roomHidden": true
+    },
+    {
+      "selected": "caddy",
+      "images": 3,
+      "room": "/kitchen-room?object=caddy",
+      "model": "/item-viewer?object=caddy",
+      "roomHidden": true
+    },
+    {
+      "selected": "knife_block",
+      "images": 3,
+      "room": "/kitchen-room?object=knife_block",
+      "model": "/item-viewer?object=knife_block",
+      "roomHidden": true
+    },
+    {
+      "selected": "knife_block_round",
+      "images": 3,
+      "room": "/kitchen-room?object=knife_block_round",
+      "model": "/item-viewer?object=knife_block_round",
+      "roomHidden": true
+    },
+    {
+      "selected": "grinder",
+      "images": 3,
+      "room": "/kitchen-room?object=grinder",
+      "model": "/item-viewer?object=grinder",
+      "roomHidden": true
+    },
+    {
+      "selected": "range_kettle",
+      "images": 3,
+      "room": "/kitchen-room?object=range_kettle",
+      "model": "/item-viewer?object=range_kettle",
+      "roomHidden": true
+    },
+    {
+      "selected": "hot_tap",
+      "images": 3,
+      "room": "/kitchen-room?object=hot_tap",
+      "model": "/item-viewer?object=hot_tap",
+      "roomHidden": true
+    },
+    {
+      "selected": "soap_pump",
+      "images": 3,
+      "room": "/kitchen-room?object=soap_pump",
+      "model": "/item-viewer?object=soap_pump",
+      "roomHidden": true
+    },
+    {
+      "selected": "air_gap",
+      "images": 3,
+      "room": "/kitchen-room?object=air_gap",
+      "model": "/item-viewer?object=air_gap",
+      "roomHidden": true
+    },
+    {
+      "selected": "frogs",
+      "images": 3,
+      "room": "/kitchen-room?object=frogs",
+      "model": "/item-viewer?object=frogs",
+      "roomHidden": true
+    },
+    {
+      "selected": "tea_tray",
+      "images": 3,
+      "room": "/kitchen-room?object=tea_tray",
+      "model": "/item-viewer?object=tea_tray",
+      "roomHidden": true
+    },
+    {
+      "selected": "glass_kettle",
+      "images": 3,
+      "room": "/kitchen-room?object=glass_kettle",
+      "model": "/item-viewer?object=glass_kettle",
+      "roomHidden": true
+    },
+    {
+      "selected": "frother",
+      "images": 3,
+      "room": "/kitchen-room?object=frother",
+      "model": "/item-viewer?object=frother",
+      "roomHidden": true
+    },
+    {
+      "selected": "coffee_machine",
+      "images": 3,
+      "room": "/kitchen-room?object=coffee_machine",
+      "model": "/item-viewer?object=coffee_machine",
+      "roomHidden": true
+    }
+  ],
+  "exceptions": []
+}

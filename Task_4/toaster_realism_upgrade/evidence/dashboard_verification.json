@@ -1,0 +1,18 @@
+{
+  "url": "http://127.0.0.1:8770",
+  "scene": {
+    "scene_glb": "/data/robotics/toshith/rxr_author/refined/toaster_upgrade/test.glb",
+    "version": "toaster_upgrade",
+    "audit": {
+      "objects": 32,
+      "issues": [],
+      "method": "Per-component convex volumes, 2 mm tolerance, support height and full footprint containment; does not inspect backsplash texture ghosts."
+    }
+  },
+  "image_bytes": {
+    "/frame.jpg": 63398,
+    "/repair-preview/toaster.jpg": 146713,
+    "/repair-preview/full.jpg": 506800,
+    "/repair-preview/novel.jpg": 400637
+  }
+}

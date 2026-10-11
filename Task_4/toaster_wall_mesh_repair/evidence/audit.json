@@ -1,0 +1,5 @@
+{
+  "objects": 32,
+  "issues": [],
+  "method": "Per-component convex volumes, 2 mm tolerance, support height and full footprint containment; does not inspect backsplash texture ghosts."
+}

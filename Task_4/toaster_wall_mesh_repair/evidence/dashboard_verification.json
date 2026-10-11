@@ -1,0 +1,18 @@
+{
+  "url": "http://127.0.0.1:8772",
+  "scene": {
+    "scene_glb": "/data/robotics/toshith/rxr_author/refined/toaster_wall_repair/test.glb",
+    "version": "toaster_wall_repair",
+    "audit": {
+      "objects": 32,
+      "issues": [],
+      "method": "Per-component convex volumes, 2 mm tolerance, support height and full footprint containment; does not inspect backsplash texture ghosts."
+    }
+  },
+  "image_bytes": {
+    "/frame.jpg": 63398,
+    "/repair-preview/toaster.jpg": 234776,
+    "/repair-preview/full.jpg": 508686,
+    "/repair-preview/novel.jpg": 407466
+  }
+}

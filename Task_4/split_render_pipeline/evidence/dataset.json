@@ -1,0 +1,26 @@
+{
+  "views": 24,
+  "panoramas": 9,
+  "train_views": 22,
+  "validation_views": 2,
+  "holdout_panorama": "90769276290547eaabfde2cc89a6cf59",
+  "gaussians": 350000,
+  "width": 640,
+  "height": 512,
+  "raw_world_units": "metres, Z up",
+  "measured_depth_views": 4,
+  "depth_initialization": "Aligned measured depth where available (uint16/4000 metres); cached Habitat v8 scan depth elsewhere",
+  "edited_geometry": "Old toaster/return-wall points removed; selected licensed toaster and repaired wall sampled instead",
+  "old_toaster_box": [
+    [
+      4.38,
+      -5.38,
+      0.932
+    ],
+    [
+      4.66,
+      -4.99,
+      1.19
+    ]
+  ]
+}

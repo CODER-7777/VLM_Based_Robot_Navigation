@@ -1,0 +1,14 @@
+[
+  {
+    "stage": "test.glb",
+    "phone_parts": 22,
+    "valid_buffer_bounds": true,
+    "stage_bytes": 423508908
+  },
+  {
+    "stage": "test_pbr.glb",
+    "phone_parts": 22,
+    "valid_buffer_bounds": true,
+    "stage_bytes": 423531200
+  }
+]

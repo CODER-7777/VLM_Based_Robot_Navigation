@@ -1,0 +1,35 @@
+{
+  "comparison": {
+    "title": "Toaster \u2014 comparison and kitchen view",
+    "items": 22,
+    "initiallyHidden": true
+  },
+  "models": [
+    {
+      "title": "Blue jug / miniature creamer",
+      "loaded": true,
+      "src": "/item-model.glb?object=blue_jug"
+    },
+    {
+      "title": "Telephone",
+      "loaded": true,
+      "src": "/item-model.glb?object=phone"
+    },
+    {
+      "title": "Stovetop kettle",
+      "loaded": true,
+      "src": "/item-model.glb?object=range_kettle"
+    },
+    {
+      "title": "Toaster",
+      "loaded": true,
+      "src": "/item-model.glb?object=toaster"
+    },
+    {
+      "title": "Coffee Machine",
+      "loaded": true,
+      "src": "/item-model.glb?object=coffee_machine"
+    }
+  ],
+  "exceptions": []
+}

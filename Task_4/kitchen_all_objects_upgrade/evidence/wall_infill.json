@@ -1,0 +1,32 @@
+[
+  {
+    "wall": "sink_back",
+    "source_patch_center_px": [
+      1147,
+      240
+    ],
+    "patch_radius_px": 35,
+    "infill": "photographed warm ceramic grain, approximate six-inch grid; observed pixels preserved",
+    "observed_fraction": 0.4265382241358545
+  },
+  {
+    "wall": "sink_right",
+    "source_patch_center_px": [
+      565,
+      176
+    ],
+    "patch_radius_px": 35,
+    "infill": "photographed warm ceramic grain, approximate six-inch grid; observed pixels preserved",
+    "observed_fraction": 0.299478149243735
+  },
+  {
+    "wall": "range_right",
+    "source_patch_center_px": [
+      135,
+      79
+    ],
+    "patch_radius_px": 35,
+    "infill": "photographed warm ceramic grain, approximate six-inch grid; observed pixels preserved",
+    "observed_fraction": 0.7649134790528234
+  }
+]

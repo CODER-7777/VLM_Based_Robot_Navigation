@@ -1,0 +1,40 @@
+{
+  "/": {
+    "status": 200,
+    "bytes": 3249,
+    "type": "text/html; charset=utf-8"
+  },
+  "/tour-info": {
+    "status": 200,
+    "bytes": 1302,
+    "type": "application/json"
+  },
+  "/comparisons": {
+    "status": 200,
+    "bytes": 5209,
+    "type": "text/html; charset=utf-8",
+    "verified_images": 28
+  },
+  "/models": {
+    "status": 200,
+    "bytes": 3499,
+    "type": "text/html; charset=utf-8"
+  },
+  "/gaussian": {
+    "status": 200,
+    "bytes": 3721,
+    "type": "text/html; charset=utf-8"
+  },
+  "/legacy-editor": {
+    "status": 200,
+    "bytes": 9362,
+    "type": "text/html; charset=utf-8"
+  },
+  "scene_head": {
+    "status": 200,
+    "bytes": "288400564",
+    "etag": "\"18dcf030ad7cee2f-1130a4b4\""
+  },
+  "cache_revalidation": 304,
+  "range": "bytes 0-19/288400564"
+}

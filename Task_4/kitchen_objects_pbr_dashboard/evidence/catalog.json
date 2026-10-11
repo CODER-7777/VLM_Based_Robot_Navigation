@@ -1,0 +1,2848 @@
+{
+  "revision": "kitchen_objects_pbr_v1",
+  "items": [
+    {
+      "id": "toaster",
+      "label": "Toaster",
+      "photo": "58348305b0f84dd8b161aaf2d5b945ef_i2_4.jpg",
+      "camera": {
+        "K": [
+          [
+            666.975,
+            0.0,
+            395.76687499999997
+          ],
+          [
+            0.0,
+            666.43125,
+            325.92625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "c2w_raw_gl": [
+          [
+            -0.999866,
+            -0.0129179,
+            0.0101089,
+            4.57548
+          ],
+          [
+            0.0161354,
+            -0.663692,
+            0.747832,
+            -4.19991
+          ],
+          [
+            -0.00295131,
+            0.747894,
+            0.663811,
+            1.56024
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "width": 800,
+        "height": 640
+      },
+      "crop": [
+        374,
+        31,
+        552,
+        269
+      ],
+      "fit_paths": [
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/toaster_v4/fit.json"
+      ],
+      "product": {
+        "uid": "0d39352a32404ce7b71b8ac020844949",
+        "name": "toaster",
+        "author": "AtTheSpeedOf",
+        "license": "CC-BY-4.0",
+        "url": "https://sketchfab.com/3d-models/toaster-0d39352a32404ce7b71b8ac020844949",
+        "source": "https://mirror.traines.eu/sketchfab-backup/0d/0d39352a32404ce7b71b8ac020844949.zip",
+        "credit": "toaster by AtTheSpeedOf, CC BY 4.0; scaled and positioned; separate kitchen reflection bake."
+      },
+      "method": "downloaded product, fitted and adapted",
+      "notes": "Hamilton Beach substitute for the Black & Decker in the photograph. Original three PBR texture maps are preserved.",
+      "nodes": [
+        "Kitchen_toaster_v4_background_low_toaster_0",
+        "Kitchen_toaster_v4_brackets_low_toaster_0",
+        "Kitchen_toaster_v4_buttons_low_toaster_0",
+        "Kitchen_toaster_v4_dialbase_low_toaster_0",
+        "Kitchen_toaster_v4_dialgrip_low_toaster_0",
+        "Kitchen_toaster_v4_grill_low_toaster_0",
+        "Kitchen_toaster_v4_legs_low_toaster_0",
+        "Kitchen_toaster_v4_lever_low_toaster_0",
+        "Kitchen_toaster_v4_rods_low_toaster_0",
+        "Kitchen_toaster_v4_toasterbody_low_toaster_0",
+        "Kitchen_toaster_v4_toastslot_low_toaster_0"
+      ],
+      "mesh_parts": 11,
+      "bounds_raw": [
+        [
+          4.426028036350384,
+          -5.339230101664841,
+          0.9290000136497538
+        ],
+        [
+          4.6130971337824755,
+          -5.044254743655104,
+          1.1290000019709052
+        ]
+      ],
+      "target_raw": [
+        4.51956258506643,
+        -5.191742422659972,
+        1.0290000078103296
+      ],
+      "counter_z": 0.929,
+      "materials": [
+        {
+          "name": "toaster",
+          "metallic": 1,
+          "roughness": 1,
+          "colour_texture": true,
+          "normal_texture": true,
+          "data_texture": true,
+          "unlit": false
+        }
+      ],
+      "real_image": "toaster_real.jpg",
+      "render_image": "toaster_pbr.jpg",
+      "room_image": "toaster_room.jpg",
+      "earlier_comparison": "gaussian_toaster.jpg"
+    },
+    {
+      "id": "blue_jug",
+      "label": "Blue jug / miniature creamer",
+      "photo": "f7a060bfa1164b5e9c5cca04284f6d6b_i2_3.jpg",
+      "camera": {
+        "K": [
+          [
+            666.975,
+            0.0,
+            395.76687499999997
+          ],
+          [
+            0.0,
+            666.43125,
+            325.92625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "c2w_raw_gl": [
+          [
+            0.170823,
+            0.64869,
+            -0.741634,
+            5.935
+          ],
+          [
+            -0.985286,
+            0.116724,
+            -0.124849,
+            -4.00097
+          ],
+          [
+            0.0055777,
+            0.752048,
+            0.659084,
+            1.56607
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "width": 800,
+        "height": 640
+      },
+      "crop": [
+        698,
+        144,
+        800,
+        261
+      ],
+      "fit_paths": [
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/blue_jug_v4/fit.json"
+      ],
+      "product": null,
+      "method": "photo-built fitted mesh",
+      "notes": "Photo-built miniature creamer, about 5.1 cm tall. Glazed finish; its handle, lip and unseen surfaces remain approximate.",
+      "nodes": [
+        "Kitchen_blue_jug_v3_Glaze"
+      ],
+      "mesh_parts": 1,
+      "bounds_raw": [
+        [
+          7.011108365631103,
+          -4.464059240519391,
+          0.9290007824568933
+        ],
+        [
+          7.0810595184326175,
+          -4.409940398834738,
+          0.9800007525802095
+        ]
+      ],
+      "target_raw": [
+        7.04608394203186,
+        -4.436999819677064,
+        0.9545007675185514
+      ],
+      "counter_z": 0.929,
+      "materials": [
+        {
+          "name": "blue_jug_v3_bake_Glaze",
+          "metallic": 0,
+          "roughness": 0.17000000178813934,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        }
+      ],
+      "real_image": "blue_jug_real.jpg",
+      "render_image": "blue_jug_pbr.jpg",
+      "room_image": "blue_jug_room.jpg",
+      "earlier_comparison": "gaussian_blue_jug.jpg"
+    },
+    {
+      "id": "phone",
+      "label": "Telephone",
+      "photo": "1eae5d4a0c0146c2b884d6b96d9b0e16_i2_3.jpg",
+      "camera": {
+        "K": [
+          [
+            666.975,
+            0.0,
+            395.76687499999997
+          ],
+          [
+            0.0,
+            666.43125,
+            325.92625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "c2w_raw_gl": [
+          [
+            -0.457226,
+            0.593022,
+            -0.662775,
+            5.9837
+          ],
+          [
+            -0.889348,
+            -0.302804,
+            0.342594,
+            -2.36235
+          ],
+          [
+            0.00247495,
+            0.74608,
+            0.665852,
+            1.55335
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "width": 800,
+        "height": 640
+      },
+      "crop": [
+        111,
+        102,
+        338,
+        341
+      ],
+      "fit_paths": [
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/phone_v4/fit.json"
+      ],
+      "product": {
+        "uid": "0821bac7ef4e4be9a2b26664ffc16213",
+        "name": "Desk Phone01 01",
+        "author": "dangkhoa208",
+        "license": "by",
+        "url": "https://sketchfab.com/3d-models/0821bac7ef4e4be9a2b26664ffc16213",
+        "glb": "kitchen/products/style/0821bac7ef4e4be9a2b26664ffc16213.glb"
+      },
+      "method": "downloaded product, fitted and adapted",
+      "notes": "Downloaded desk-phone substitute with photo-fitted controls. Its handset and housing differ from the photographed telephone.",
+      "nodes": [
+        "Kitchen_phone_v4_photo_0",
+        "Kitchen_phone_v4_photo_1",
+        "Kitchen_phone_v4_photo_2",
+        "Kitchen_phone_v4_photo_3",
+        "Kitchen_phone_v4_photo_4",
+        "Kitchen_phone_v4_photo_5",
+        "Kitchen_phone_v4_photo_6",
+        "Kitchen_phone_v4_photo_7",
+        "Kitchen_phone_v4_photo_8",
+        "Kitchen_phone_v4_photo_9",
+        "Kitchen_phone_v4_photo_10",
+        "Kitchen_phone_v4_photo_11",
+        "Kitchen_phone_v4_photo_12",
+        "Kitchen_phone_v4_photo_13",
+        "Kitchen_phone_v4_photo_14",
+        "Kitchen_phone_v4_photo_15",
+        "Kitchen_phone_v4_photo_16",
+        "Kitchen_phone_v4_photo_17",
+        "Kitchen_phone_v4_photo_18",
+        "Kitchen_phone_v4_photo_19",
+        "Kitchen_phone_v4_photo_20",
+        "Kitchen_phone_v4_photo_21"
+      ],
+      "mesh_parts": 22,
+      "bounds_raw": [
+        [
+          6.763591289520264,
+          -2.627585172653199,
+          0.9290009737014767
+        ],
+        [
+          7.079973220825195,
+          -2.3971340656280526,
+          1.0280010700225828
+        ]
+      ],
+      "target_raw": [
+        6.9217822551727295,
+        -2.512359619140626,
+        0.9785010218620298
+      ],
+      "counter_z": 0.929,
+      "materials": [
+        {
+          "name": "Phone_photo_plastic",
+          "metallic": 0.0,
+          "roughness": 0.48,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "Phone_hidden_plastic",
+          "metallic": 0.0,
+          "roughness": 0.48,
+          "colour_texture": false,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        }
+      ],
+      "real_image": "phone_real.jpg",
+      "render_image": "phone_pbr.jpg",
+      "room_image": "phone_room.jpg",
+      "earlier_comparison": "gaussian_phone.jpg"
+    },
+    {
+      "id": "canister_l",
+      "label": "Left canister",
+      "photo": "58348305b0f84dd8b161aaf2d5b945ef_i2_4.jpg",
+      "camera": {
+        "K": [
+          [
+            666.975,
+            0.0,
+            395.76687499999997
+          ],
+          [
+            0.0,
+            666.43125,
+            325.92625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "c2w_raw_gl": [
+          [
+            -0.999866,
+            -0.0129179,
+            0.0101089,
+            4.57548
+          ],
+          [
+            0.0161354,
+            -0.663692,
+            0.747832,
+            -4.19991
+          ],
+          [
+            -0.00295131,
+            0.747894,
+            0.663811,
+            1.56024
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "width": 800,
+        "height": 640
+      },
+      "crop": [
+        184,
+        14,
+        311,
+        202
+      ],
+      "fit_paths": [
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/canister_l_v3/fit.json"
+      ],
+      "product": null,
+      "method": "photo-built fitted mesh",
+      "notes": "Photo-built ceramic jar. Lid hardware and the printed motif remain approximate.",
+      "nodes": [
+        "Kitchen_canister_l_v3_Ceramic",
+        "Kitchen_canister_l_v3_Lid",
+        "Kitchen_canister_l_v3_OriginalPhotoInk",
+        "Kitchen_canister_l_v3_Rim"
+      ],
+      "mesh_parts": 4,
+      "bounds_raw": [
+        [
+          4.767000198364258,
+          -5.433999630642069,
+          0.9290018614727168
+        ],
+        [
+          4.89900016784668,
+          -5.309999546029814,
+          1.1642518983904033
+        ]
+      ],
+      "target_raw": [
+        4.833000183105469,
+        -5.3719995883359415,
+        1.0466268799315601
+      ],
+      "counter_z": 0.929,
+      "materials": [
+        {
+          "name": "canister_l_v3_bake_Ceramic",
+          "metallic": 0,
+          "roughness": 0.17000000178813934,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "canister_l_v3_bake_Lid",
+          "metallic": 0,
+          "roughness": 0.17000000178813934,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "canister_l_v3_OriginalPhotoInk",
+          "metallic": 0,
+          "roughness": 0.17000000178813934,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "canister_l_v3_bake_Rim",
+          "metallic": 0,
+          "roughness": 0.17000000178813934,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        }
+      ],
+      "real_image": "canister_l_real.jpg",
+      "render_image": "canister_l_pbr.jpg",
+      "room_image": "canister_l_room.jpg",
+      "earlier_comparison": "gaussian_canister_l.jpg"
+    },
+    {
+      "id": "canister_r",
+      "label": "Right canister",
+      "photo": "58348305b0f84dd8b161aaf2d5b945ef_i2_4.jpg",
+      "camera": {
+        "K": [
+          [
+            666.975,
+            0.0,
+            395.76687499999997
+          ],
+          [
+            0.0,
+            666.43125,
+            325.92625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "c2w_raw_gl": [
+          [
+            -0.999866,
+            -0.0129179,
+            0.0101089,
+            4.57548
+          ],
+          [
+            0.0161354,
+            -0.663692,
+            0.747832,
+            -4.19991
+          ],
+          [
+            -0.00295131,
+            0.747894,
+            0.663811,
+            1.56024
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "width": 800,
+        "height": 640
+      },
+      "crop": [
+        256,
+        14,
+        394,
+        202
+      ],
+      "fit_paths": [
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/canister_r_v3/fit.json"
+      ],
+      "product": null,
+      "method": "photo-built fitted mesh",
+      "notes": "Photo-built ceramic jar. Lid hardware and the printed motif remain approximate.",
+      "nodes": [
+        "Kitchen_canister_r_v3_Ceramic",
+        "Kitchen_canister_r_v3_Lid",
+        "Kitchen_canister_r_v3_OriginalPhotoInk",
+        "Kitchen_canister_r_v3_Rim"
+      ],
+      "mesh_parts": 4,
+      "bounds_raw": [
+        [
+          4.61899995803833,
+          -5.427999588680399,
+          0.9290018593929215
+        ],
+        [
+          4.750999927520752,
+          -5.303999504068144,
+          1.1642518963104427
+        ]
+      ],
+      "target_raw": [
+        4.684999942779541,
+        -5.365999546374272,
+        1.046626877851682
+      ],
+      "counter_z": 0.929,
+      "materials": [
+        {
+          "name": "canister_r_v3_bake_Ceramic.001",
+          "metallic": 0,
+          "roughness": 0.17000000178813934,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "canister_r_v3_bake_Lid.001",
+          "metallic": 0,
+          "roughness": 0.17000000178813934,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "canister_r_v3_OriginalPhotoInk.001",
+          "metallic": 0,
+          "roughness": 0.17000000178813934,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "canister_r_v3_bake_Rim.001",
+          "metallic": 0,
+          "roughness": 0.17000000178813934,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        }
+      ],
+      "real_image": "canister_r_real.jpg",
+      "render_image": "canister_r_pbr.jpg",
+      "room_image": "canister_r_room.jpg",
+      "earlier_comparison": "gaussian_canister_r.jpg"
+    },
+    {
+      "id": "soap_bottle",
+      "label": "Soap Bottle",
+      "photo": "58348305b0f84dd8b161aaf2d5b945ef_i2_4.jpg",
+      "camera": {
+        "K": [
+          [
+            666.975,
+            0.0,
+            395.76687499999997
+          ],
+          [
+            0.0,
+            666.43125,
+            325.92625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "c2w_raw_gl": [
+          [
+            -0.999866,
+            -0.0129179,
+            0.0101089,
+            4.57548
+          ],
+          [
+            0.0161354,
+            -0.663692,
+            0.747832,
+            -4.19991
+          ],
+          [
+            -0.00295131,
+            0.747894,
+            0.663811,
+            1.56024
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "width": 800,
+        "height": 640
+      },
+      "crop": [
+        83,
+        46,
+        206,
+        213
+      ],
+      "fit_paths": [
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/soap_bottle_v3/fit.json"
+      ],
+      "product": null,
+      "method": "photo-built fitted mesh",
+      "notes": "Photo-built foam-pump bottle. Pump shape, translucency and label remain approximate.",
+      "nodes": [
+        "Kitchen_soap_bottle_v3_0",
+        "Kitchen_soap_bottle_v3_1"
+      ],
+      "mesh_parts": 2,
+      "bounds_raw": [
+        [
+          4.987540245056152,
+          -5.379459059058519,
+          0.9290018554202842
+        ],
+        [
+          5.075850486755371,
+          -5.294540031229796,
+          1.1250018573901581
+        ]
+      ],
+      "target_raw": [
+        5.031695365905762,
+        -5.336999545144158,
+        1.0270018564052212
+      ],
+      "counter_z": 0.929,
+      "materials": [
+        {
+          "name": "soap_bottle_v3_bake_Bottle",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "soap_bottle_v3_bake_Pump",
+          "metallic": 0,
+          "roughness": 0.3400000035762787,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        }
+      ],
+      "real_image": "soap_bottle_real.jpg",
+      "render_image": "soap_bottle_pbr.jpg",
+      "room_image": "soap_bottle_room.jpg",
+      "earlier_comparison": "gaussian_soap_bottle.jpg"
+    },
+    {
+      "id": "soap_dish",
+      "label": "Soap Dish",
+      "photo": "f7a060bfa1164b5e9c5cca04284f6d6b_i2_5.jpg",
+      "camera": {
+        "K": [
+          [
+            666.975,
+            0.0,
+            395.76687499999997
+          ],
+          [
+            0.0,
+            666.43125,
+            325.92625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "c2w_raw_gl": [
+          [
+            -0.938719,
+            -0.229531,
+            0.257143,
+            5.91551
+          ],
+          [
+            0.344683,
+            -0.626667,
+            0.698915,
+            -4.01695
+          ],
+          [
+            0.000720424,
+            0.744718,
+            0.667379,
+            1.56591
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "width": 800,
+        "height": 640
+      },
+      "crop": [
+        122,
+        62,
+        253,
+        170
+      ],
+      "fit_paths": [
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/soap_dish_p_v3/fit.json"
+      ],
+      "product": null,
+      "method": "photo-built fitted mesh",
+      "notes": "Resized dish and soap to fit the narrow space behind the sink; smaller than the photographed dish.",
+      "nodes": [
+        "Kitchen_soap_dish_p_v3_Dish",
+        "Kitchen_soap_dish_p_v3_Soap"
+      ],
+      "mesh_parts": 2,
+      "bounds_raw": [
+        [
+          5.8385539054870605,
+          -5.442637121497484,
+          0.9290018834380138
+        ],
+        [
+          5.931446075439453,
+          -5.375362540632675,
+          0.9590018781490313
+        ]
+      ],
+      "target_raw": [
+        5.884999990463257,
+        -5.4089998310650795,
+        0.9440018807935225
+      ],
+      "counter_z": 0.929,
+      "materials": [
+        {
+          "name": "soap_dish_p_v3_bake_Dish",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "soap_dish_p_v3_bake_Soap",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        }
+      ],
+      "real_image": "soap_dish_real.jpg",
+      "render_image": "soap_dish_pbr.jpg",
+      "room_image": "soap_dish_room.jpg",
+      "earlier_comparison": "gaussian_soap_dish.jpg"
+    },
+    {
+      "id": "bottles",
+      "label": "Bottles",
+      "photo": "f7a060bfa1164b5e9c5cca04284f6d6b_i2_4.jpg",
+      "camera": {
+        "K": [
+          [
+            666.975,
+            0.0,
+            395.76687499999997
+          ],
+          [
+            0.0,
+            666.43125,
+            325.92625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "c2w_raw_gl": [
+          [
+            -0.767871,
+            0.42418,
+            -0.480048,
+            5.92987
+          ],
+          [
+            -0.640605,
+            -0.508504,
+            0.575368,
+            -4.01458
+          ],
+          [
+            -4.66439e-05,
+            0.74933,
+            0.662197,
+            1.56601
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "width": 800,
+        "height": 640
+      },
+      "crop": [
+        384,
+        14,
+        514,
+        141
+      ],
+      "fit_paths": [
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/bottles_v30/fit.json",
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/bottles_v31/fit.json",
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/bottles_v32/fit.json",
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/bottles_v33/fit.json"
+      ],
+      "product": null,
+      "method": "photo-built fitted mesh",
+      "notes": "Four photo-traced bottles with photo-derived labels. Glass and unseen label details remain approximate.",
+      "nodes": [
+        "Kitchen_bottles_v30_0",
+        "Kitchen_bottles_v31_0",
+        "Kitchen_bottles_v32_0",
+        "Kitchen_bottles_v33_0"
+      ],
+      "mesh_parts": 4,
+      "bounds_raw": [
+        [
+          6.7134318351745605,
+          -5.2571322081674055,
+          0.9290018047998636
+        ],
+        [
+          6.836430549621582,
+          -5.148515808049273,
+          1.0675876483455011
+        ]
+      ],
+      "target_raw": [
+        6.774931192398071,
+        -5.202824008108339,
+        0.9982947265726824
+      ],
+      "counter_z": 0.929,
+      "materials": [
+        {
+          "name": "bottles_v30_Body",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "bottles_v31_Body.001",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "bottles_v32_Body.002",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "bottles_v33_Body.003",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        }
+      ],
+      "real_image": "bottles_real.jpg",
+      "render_image": "bottles_pbr.jpg",
+      "room_image": "bottles_room.jpg",
+      "earlier_comparison": "gaussian_bottles.jpg"
+    },
+    {
+      "id": "paper_towel",
+      "label": "Paper Towel",
+      "photo": "f7a060bfa1164b5e9c5cca04284f6d6b_i2_4.jpg",
+      "camera": {
+        "K": [
+          [
+            666.975,
+            0.0,
+            395.76687499999997
+          ],
+          [
+            0.0,
+            666.43125,
+            325.92625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "c2w_raw_gl": [
+          [
+            -0.767871,
+            0.42418,
+            -0.480048,
+            5.92987
+          ],
+          [
+            -0.640605,
+            -0.508504,
+            0.575368,
+            -4.01458
+          ],
+          [
+            -4.66439e-05,
+            0.74933,
+            0.662197,
+            1.56601
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "width": 800,
+        "height": 640
+      },
+      "crop": [
+        547,
+        0,
+        731,
+        194
+      ],
+      "fit_paths": [
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/paper_towel_v3/fit.json"
+      ],
+      "product": null,
+      "method": "photo-built fitted mesh",
+      "notes": "Photo-built holder and roll. Paper seams and fine paper texture are not reconstructed.",
+      "nodes": [
+        "Kitchen_paper_towel_v3_Base.099",
+        "Kitchen_paper_towel_v3_Paper"
+      ],
+      "mesh_parts": 2,
+      "bounds_raw": [
+        [
+          6.329999923706055,
+          -5.425999796210618,
+          0.9290018489931182
+        ],
+        [
+          6.480000019073486,
+          -5.275999585752829,
+          1.2610019181579417
+        ]
+      ],
+      "target_raw": [
+        6.4049999713897705,
+        -5.350999690981723,
+        1.09500188357553
+      ],
+      "counter_z": 0.929,
+      "materials": [
+        {
+          "name": "paper_towel_v3_bake_Base",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "paper_towel_v3_bake_Paper",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        }
+      ],
+      "real_image": "paper_towel_real.jpg",
+      "render_image": "paper_towel_pbr.jpg",
+      "room_image": "paper_towel_room.jpg",
+      "earlier_comparison": "gaussian_paper_towel.jpg"
+    },
+    {
+      "id": "caddy",
+      "label": "Wooden caddy",
+      "photo": "f7a060bfa1164b5e9c5cca04284f6d6b_i2_4.jpg",
+      "camera": {
+        "K": [
+          [
+            666.975,
+            0.0,
+            395.76687499999997
+          ],
+          [
+            0.0,
+            666.43125,
+            325.92625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "c2w_raw_gl": [
+          [
+            -0.767871,
+            0.42418,
+            -0.480048,
+            5.92987
+          ],
+          [
+            -0.640605,
+            -0.508504,
+            0.575368,
+            -4.01458
+          ],
+          [
+            -4.66439e-05,
+            0.74933,
+            0.662197,
+            1.56601
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "width": 800,
+        "height": 640
+      },
+      "crop": [
+        144,
+        0,
+        381,
+        186
+      ],
+      "fit_paths": [
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/caddy_v3/fit.json"
+      ],
+      "product": null,
+      "method": "photo-built fitted mesh",
+      "notes": "Photo-built caddy with photo-derived decoration. Slats, joinery and partly hidden contents remain approximate.",
+      "nodes": [
+        "Kitchen_caddy_v3_0",
+        "Kitchen_caddy_v3_1",
+        "Kitchen_caddy_v3_2",
+        "Kitchen_caddy_v3_3",
+        "Kitchen_caddy_v3_4"
+      ],
+      "mesh_parts": 5,
+      "bounds_raw": [
+        [
+          6.891499996185303,
+          -5.048999464331977,
+          0.9290015935268612
+        ],
+        [
+          7.071000099182129,
+          -4.710999579837708,
+          1.1690017794918521
+        ]
+      ],
+      "target_raw": [
+        6.981250047683716,
+        -4.879999522084843,
+        1.0490016865093565
+      ],
+      "counter_z": 0.929,
+      "materials": [
+        {
+          "name": "caddy_v3_bake_Wood.002",
+          "metallic": 0,
+          "roughness": 0.47999998927116394,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "caddy_v3_bake_LightWood",
+          "metallic": 0,
+          "roughness": 0.47999998927116394,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "caddy_v3_bake_Leaf",
+          "metallic": 0,
+          "roughness": 0.47999998927116394,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "caddy_v3_bake_Chrome.001",
+          "metallic": 0.8600000143051147,
+          "roughness": 0.47999998927116394,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "caddy_v3_bake_Apple",
+          "metallic": 0,
+          "roughness": 0.47999998927116394,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        }
+      ],
+      "real_image": "caddy_real.jpg",
+      "render_image": "caddy_pbr.jpg",
+      "room_image": "caddy_room.jpg",
+      "earlier_comparison": "gaussian_caddy.jpg"
+    },
+    {
+      "id": "knife_block",
+      "label": "Knife Block",
+      "photo": "f7a060bfa1164b5e9c5cca04284f6d6b_i2_3.jpg",
+      "camera": {
+        "K": [
+          [
+            666.975,
+            0.0,
+            395.76687499999997
+          ],
+          [
+            0.0,
+            666.43125,
+            325.92625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "c2w_raw_gl": [
+          [
+            0.170823,
+            0.64869,
+            -0.741634,
+            5.935
+          ],
+          [
+            -0.985286,
+            0.116724,
+            -0.124849,
+            -4.00097
+          ],
+          [
+            0.0055777,
+            0.752048,
+            0.659084,
+            1.56607
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "width": 800,
+        "height": 640
+      },
+      "crop": [
+        589,
+        61,
+        786,
+        286
+      ],
+      "fit_paths": [
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/knife_block_v3/fit.json"
+      ],
+      "product": null,
+      "method": "photo-built fitted mesh",
+      "notes": "Photo-built wooden block and utensils. Handle shapes and wood details remain approximate.",
+      "nodes": [
+        "Kitchen_knife_block_v3_0",
+        "Kitchen_knife_block_v3_1",
+        "Kitchen_knife_block_v3_2",
+        "Kitchen_knife_block_v3_3"
+      ],
+      "mesh_parts": 4,
+      "bounds_raw": [
+        [
+          6.9039998054504395,
+          -4.3489996550668195,
+          0.9290014867358102
+        ],
+        [
+          7.095680236816406,
+          -4.230545094449671,
+          1.2298395167567
+        ]
+      ],
+      "target_raw": [
+        6.999840021133423,
+        -4.289772374758245,
+        1.079420501746255
+      ],
+      "counter_z": 0.929,
+      "materials": [
+        {
+          "name": "knife_block_v3_bake_Black.002",
+          "metallic": 0,
+          "roughness": 0.3400000035762787,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "knife_block_v3_bake_Chrome.002",
+          "metallic": 0.8600000143051147,
+          "roughness": 0.47999998927116394,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "knife_block_v3_bake_LightWood.001",
+          "metallic": 0,
+          "roughness": 0.47999998927116394,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "knife_block_v3_bake_Steel.002",
+          "metallic": 0.8600000143051147,
+          "roughness": 0.47999998927116394,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        }
+      ],
+      "real_image": "knife_block_real.jpg",
+      "render_image": "knife_block_pbr.jpg",
+      "room_image": "knife_block_room.jpg",
+      "earlier_comparison": "gaussian_knife_block.jpg"
+    },
+    {
+      "id": "knife_block_round",
+      "label": "Knife Block Round",
+      "photo": "f7a060bfa1164b5e9c5cca04284f6d6b_i2_3.jpg",
+      "camera": {
+        "K": [
+          [
+            666.975,
+            0.0,
+            395.76687499999997
+          ],
+          [
+            0.0,
+            666.43125,
+            325.92625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "c2w_raw_gl": [
+          [
+            0.170823,
+            0.64869,
+            -0.741634,
+            5.935
+          ],
+          [
+            -0.985286,
+            0.116724,
+            -0.124849,
+            -4.00097
+          ],
+          [
+            0.0055777,
+            0.752048,
+            0.659084,
+            1.56607
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "width": 800,
+        "height": 640
+      },
+      "crop": [
+        461,
+        0,
+        611,
+        236
+      ],
+      "fit_paths": [
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/knife_block_round_v3/fit.json"
+      ],
+      "product": null,
+      "method": "photo-built fitted mesh",
+      "notes": "Photo-built block and handles. Exact knife profiles remain approximate.",
+      "nodes": [
+        "Kitchen_knife_block_round_v3_Cap",
+        "Kitchen_knife_block_round_v3_Steel",
+        "Kitchen_knife_block_round_v3_Wood"
+      ],
+      "mesh_parts": 3,
+      "bounds_raw": [
+        [
+          6.9710001945495605,
+          -4.206999456702562,
+          0.9290014180976043
+        ],
+        [
+          7.078999996185303,
+          -4.032999588861047,
+          1.254275461329083
+        ]
+      ],
+      "target_raw": [
+        7.025000095367432,
+        -4.1199995227818045,
+        1.0916384397133436
+      ],
+      "counter_z": 0.929,
+      "materials": [
+        {
+          "name": "knife_block_round_v3_bake_Cap.003",
+          "metallic": 0,
+          "roughness": 0.47999998927116394,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "knife_block_round_v3_bake_Steel",
+          "metallic": 0.8600000143051147,
+          "roughness": 0.47999998927116394,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "knife_block_round_v3_bake_Wood",
+          "metallic": 0,
+          "roughness": 0.47999998927116394,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        }
+      ],
+      "real_image": "knife_block_round_real.jpg",
+      "render_image": "knife_block_round_pbr.jpg",
+      "room_image": "knife_block_round_room.jpg",
+      "earlier_comparison": "gaussian_knife_block_round.jpg"
+    },
+    {
+      "id": "grinder",
+      "label": "Grinder",
+      "photo": "1eae5d4a0c0146c2b884d6b96d9b0e16_i2_3.jpg",
+      "camera": {
+        "K": [
+          [
+            666.975,
+            0.0,
+            395.76687499999997
+          ],
+          [
+            0.0,
+            666.43125,
+            325.92625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "c2w_raw_gl": [
+          [
+            -0.457226,
+            0.593022,
+            -0.662775,
+            5.9837
+          ],
+          [
+            -0.889348,
+            -0.302804,
+            0.342594,
+            -2.36235
+          ],
+          [
+            0.00247495,
+            0.74608,
+            0.665852,
+            1.55335
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "width": 800,
+        "height": 640
+      },
+      "crop": [
+        246,
+        52,
+        392,
+        219
+      ],
+      "fit_paths": [
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/grinder_v3/fit.json"
+      ],
+      "product": null,
+      "method": "photo-built fitted mesh",
+      "notes": "Photo-built dark-wood grinder with separate metal parts. Its exact mechanism and wood grain remain approximate.",
+      "nodes": [
+        "Kitchen_grinder_v3_0",
+        "Kitchen_grinder_v3_1",
+        "Kitchen_grinder_v3_2",
+        "Kitchen_grinder_v3_3",
+        "Kitchen_grinder_v3_4"
+      ],
+      "mesh_parts": 5,
+      "bounds_raw": [
+        [
+          6.921500205993652,
+          -2.818499719916673,
+          0.9290009466431881
+        ],
+        [
+          7.061999797821045,
+          -2.6729996974051535,
+          1.1535009379540546
+        ]
+      ],
+      "target_raw": [
+        6.991750001907349,
+        -2.745749708660913,
+        1.0412509422986214
+      ],
+      "counter_z": 0.929,
+      "materials": [
+        {
+          "name": "grinder_v3_bake_Black.001",
+          "metallic": 0,
+          "roughness": 0.3400000035762787,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "grinder_v3_bake_Chrome",
+          "metallic": 0.8600000143051147,
+          "roughness": 0.2199999988079071,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "grinder_v3_bake_Gold",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "grinder_v3_bake_Steel.001",
+          "metallic": 0.8600000143051147,
+          "roughness": 0.2199999988079071,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "grinder_v3_bake_Wood.001",
+          "metallic": 0,
+          "roughness": 0.47999998927116394,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        }
+      ],
+      "real_image": "grinder_real.jpg",
+      "render_image": "grinder_pbr.jpg",
+      "room_image": "grinder_room.jpg",
+      "earlier_comparison": "gaussian_grinder.jpg"
+    },
+    {
+      "id": "range_kettle",
+      "label": "Stovetop kettle",
+      "photo": "1eae5d4a0c0146c2b884d6b96d9b0e16_i2_3.jpg",
+      "camera": {
+        "K": [
+          [
+            666.975,
+            0.0,
+            395.76687499999997
+          ],
+          [
+            0.0,
+            666.43125,
+            325.92625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "c2w_raw_gl": [
+          [
+            -0.457226,
+            0.593022,
+            -0.662775,
+            5.9837
+          ],
+          [
+            -0.889348,
+            -0.302804,
+            0.342594,
+            -2.36235
+          ],
+          [
+            0.00247495,
+            0.74608,
+            0.665852,
+            1.55335
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "width": 800,
+        "height": 640
+      },
+      "crop": [
+        501,
+        0,
+        666,
+        173
+      ],
+      "fit_paths": [
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/range_kettle_v3/fit.json"
+      ],
+      "product": {
+        "uid": "631ac0b616974530a481b3390fd72b82",
+        "name": "2-Quart Circles Teakettle",
+        "author": "cc0archviz",
+        "license": "by",
+        "url": "https://sketchfab.com/3d-models/631ac0b616974530a481b3390fd72b82",
+        "glb": "kitchen/products/style/631ac0b616974530a481b3390fd72b82.glb"
+      },
+      "method": "downloaded product, fitted and adapted",
+      "notes": "Licensed teakettle substitute with steel and plastic parts. It stands on the grates at 0.991 m.",
+      "nodes": [
+        "Kitchen_range_kettle_v3_Teakettle_Color",
+        "Kitchen_range_kettle_v3_Teakettle_Matte_Plastic",
+        "Kitchen_range_kettle_v3_Teakettle_Steel"
+      ],
+      "mesh_parts": 3,
+      "bounds_raw": [
+        [
+          6.784144878387451,
+          -3.3161524313441166,
+          0.9910010767420884
+        ],
+        [
+          6.9683661460876465,
+          -3.115695558167317,
+          1.2310010961640971
+        ]
+      ],
+      "target_raw": [
+        6.876255512237549,
+        -3.215923994755717,
+        1.1110010864530928
+      ],
+      "counter_z": 0.991,
+      "materials": [
+        {
+          "name": "range_kettle_v3_bake_Teakettle_Color",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "range_kettle_v3_bake_Teakettle_Matte_Plastic",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "range_kettle_v3_bake_Teakettle_Steel",
+          "metallic": 0.8600000143051147,
+          "roughness": 0.2199999988079071,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        }
+      ],
+      "real_image": "range_kettle_real.jpg",
+      "render_image": "range_kettle_pbr.jpg",
+      "room_image": "range_kettle_room.jpg",
+      "earlier_comparison": "gaussian_range_kettle.jpg"
+    },
+    {
+      "id": "hot_tap",
+      "label": "Hot Tap",
+      "photo": "f7a060bfa1164b5e9c5cca04284f6d6b_i2_5.jpg",
+      "camera": {
+        "K": [
+          [
+            666.975,
+            0.0,
+            395.76687499999997
+          ],
+          [
+            0.0,
+            666.43125,
+            325.92625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "c2w_raw_gl": [
+          [
+            -0.938719,
+            -0.229531,
+            0.257143,
+            5.91551
+          ],
+          [
+            0.344683,
+            -0.626667,
+            0.698915,
+            -4.01695
+          ],
+          [
+            0.000720424,
+            0.744718,
+            0.667379,
+            1.56591
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "width": 800,
+        "height": 640
+      },
+      "crop": [
+        72,
+        3,
+        206,
+        181
+      ],
+      "fit_paths": [
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/hot_tap_s4_style_v4/fit.json"
+      ],
+      "product": {
+        "uid": "c30cc0d4a0bc49e685752287a33618d0",
+        "name": "Misturador Monocomando St. Claire - B02003BW",
+        "author": "bracci",
+        "license": "by",
+        "url": "https://sketchfab.com/3d-models/c30cc0d4a0bc49e685752287a33618d0",
+        "glb": "kitchen/products/style/c30cc0d4a0bc49e685752287a33618d0.glb"
+      },
+      "method": "downloaded product, fitted and adapted",
+      "notes": "Licensed style-matched faucet substitute. Its curved spout differs from the photographed tap.",
+      "nodes": [
+        "Kitchen_hot_tap_s4_style_v3_Diamond",
+        "Kitchen_hot_tap_s4_style_v3_material",
+        "Kitchen_hot_tap_s4_style_v3_Metal1",
+        "Kitchen_hot_tap_s4_style_v3_Metal2"
+      ],
+      "mesh_parts": 4,
+      "bounds_raw": [
+        [
+          5.880093097686768,
+          -5.407170927503297,
+          0.9290018152113702
+        ],
+        [
+          6.009570598602295,
+          -5.318848684405127,
+          1.1611328501624225
+        ]
+      ],
+      "target_raw": [
+        5.944831848144531,
+        -5.363009805954212,
+        1.0450673326868962
+      ],
+      "counter_z": 0.929,
+      "materials": [
+        {
+          "name": "hot_tap_s4_style_v3_bake_Diamond",
+          "metallic": 0.8600000143051147,
+          "roughness": 0.2199999988079071,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "hot_tap_s4_style_v3_bake_material.001",
+          "metallic": 0.8600000143051147,
+          "roughness": 0.2199999988079071,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "hot_tap_s4_style_v3_bake_Metal1.001",
+          "metallic": 0.8600000143051147,
+          "roughness": 0.2199999988079071,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "hot_tap_s4_style_v3_bake_Metal2",
+          "metallic": 0.8600000143051147,
+          "roughness": 0.2199999988079071,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        }
+      ],
+      "real_image": "hot_tap_real.jpg",
+      "render_image": "hot_tap_pbr.jpg",
+      "room_image": "hot_tap_room.jpg",
+      "earlier_comparison": "gaussian_hot_tap.jpg"
+    },
+    {
+      "id": "soap_pump",
+      "label": "Sink soap pump",
+      "photo": "f7a060bfa1164b5e9c5cca04284f6d6b_i2_5.jpg",
+      "camera": {
+        "K": [
+          [
+            666.975,
+            0.0,
+            395.76687499999997
+          ],
+          [
+            0.0,
+            666.43125,
+            325.92625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "c2w_raw_gl": [
+          [
+            -0.938719,
+            -0.229531,
+            0.257143,
+            5.91551
+          ],
+          [
+            0.344683,
+            -0.626667,
+            0.698915,
+            -4.01695
+          ],
+          [
+            0.000720424,
+            0.744718,
+            0.667379,
+            1.56591
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "width": 800,
+        "height": 640
+      },
+      "crop": [
+        394,
+        22,
+        497,
+        139
+      ],
+      "fit_paths": [
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/soap_pump_p_lathe_v4/fit.json"
+      ],
+      "product": null,
+      "method": "photo-built fitted mesh",
+      "notes": "Photo-traced and fitted pump with a metallic finish; unseen details remain approximate.",
+      "nodes": [
+        "Kitchen_soap_pump_p_lathe_v3_Cap",
+        "Kitchen_soap_pump_p_lathe_v3_Metal1"
+      ],
+      "mesh_parts": 2,
+      "bounds_raw": [
+        [
+          5.265450954437256,
+          -5.379305995299492,
+          0.9290018690838223
+        ],
+        [
+          5.346459865570068,
+          -5.327212448197682,
+          1.0479735329744981
+        ]
+      ],
+      "target_raw": [
+        5.305955410003662,
+        -5.353259221748587,
+        0.9884877010291602
+      ],
+      "counter_z": 0.929,
+      "materials": [
+        {
+          "name": "soap_pump_p_lathe_v3_bake_Cap",
+          "metallic": 0,
+          "roughness": 0.3400000035762787,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "soap_pump_p_lathe_v3_bake_Metal1.002",
+          "metallic": 0,
+          "roughness": 0.3400000035762787,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        }
+      ],
+      "real_image": "soap_pump_real.jpg",
+      "render_image": "soap_pump_pbr.jpg",
+      "room_image": "soap_pump_room.jpg",
+      "earlier_comparison": "gaussian_soap_pump.jpg"
+    },
+    {
+      "id": "air_gap",
+      "label": "Sink air gap",
+      "photo": "f7a060bfa1164b5e9c5cca04284f6d6b_i2_5.jpg",
+      "camera": {
+        "K": [
+          [
+            666.975,
+            0.0,
+            395.76687499999997
+          ],
+          [
+            0.0,
+            666.43125,
+            325.92625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "c2w_raw_gl": [
+          [
+            -0.938719,
+            -0.229531,
+            0.257143,
+            5.91551
+          ],
+          [
+            0.344683,
+            -0.626667,
+            0.698915,
+            -4.01695
+          ],
+          [
+            0.000720424,
+            0.744718,
+            0.667379,
+            1.56591
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "width": 800,
+        "height": 640
+      },
+      "crop": [
+        439,
+        24,
+        529,
+        134
+      ],
+      "fit_paths": [
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/air_gap_p_lathe_v4/fit.json"
+      ],
+      "product": null,
+      "method": "photo-built fitted mesh",
+      "notes": "Photo-traced fitted shape with metallic finish.",
+      "nodes": [
+        "Kitchen_air_gap_p_lathe_v3_Cap",
+        "Kitchen_air_gap_p_lathe_v3_Metal1"
+      ],
+      "mesh_parts": 2,
+      "bounds_raw": [
+        [
+          5.185344696044922,
+          -5.370214618096836,
+          0.9290018336827449
+        ],
+        [
+          5.239397048950195,
+          -5.316161760513958,
+          1.0144119676845862
+        ]
+      ],
+      "target_raw": [
+        5.212370872497559,
+        -5.343188189305397,
+        0.9717069006836656
+      ],
+      "counter_z": 0.929,
+      "materials": [
+        {
+          "name": "air_gap_p_lathe_v3_bake_Cap.001",
+          "metallic": 0.8600000143051147,
+          "roughness": 0.2199999988079071,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "air_gap_p_lathe_v3_bake_Metal1.003",
+          "metallic": 0.8600000143051147,
+          "roughness": 0.2199999988079071,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        }
+      ],
+      "real_image": "air_gap_real.jpg",
+      "render_image": "air_gap_pbr.jpg",
+      "room_image": "air_gap_room.jpg",
+      "earlier_comparison": "gaussian_air_gap.jpg"
+    },
+    {
+      "id": "frogs",
+      "label": "Frog statues",
+      "photo": "f7a060bfa1164b5e9c5cca04284f6d6b_i1_4.jpg",
+      "camera": {
+        "K": [
+          [
+            669.78125,
+            0.0,
+            394.27687499999996
+          ],
+          [
+            0.0,
+            670.1625,
+            324.17625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "c2w_raw_gl": [
+          [
+            -0.773299,
+            0.000583451,
+            -0.634042,
+            5.92308
+          ],
+          [
+            -0.634034,
+            0.00443386,
+            0.773293,
+            -4.00597
+          ],
+          [
+            0.00326225,
+            0.99999,
+            -0.00305809,
+            1.53273
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "width": 800,
+        "height": 640
+      },
+      "crop": [
+        272,
+        375,
+        581,
+        631
+      ],
+      "fit_paths": [
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/frogs_v3/fit.json"
+      ],
+      "product": null,
+      "method": "photo-built fitted mesh",
+      "notes": "Approximate proxy sculptures. The mesh is less faithful than parts of the earlier photo-trained Gaussian view.",
+      "nodes": [
+        "Kitchen_frogs_v3_frogs_v20",
+        "Kitchen_frogs_v3_frogs_v21",
+        "Kitchen_frogs_v3_frogs_v22",
+        "Kitchen_frogs_v3_frogs_v23",
+        "Kitchen_frogs_v3_frogs_v24",
+        "Kitchen_frogs_v3_frogs_v25",
+        "Kitchen_frogs_v3_frogs_v26",
+        "Kitchen_frogs_v3_frogs_v27"
+      ],
+      "mesh_parts": 8,
+      "bounds_raw": [
+        [
+          6.646570682525635,
+          -5.416457807837816,
+          0.9290018005819222
+        ],
+        [
+          6.94223690032959,
+          -5.136348292083108,
+          1.2580018938436819
+        ]
+      ],
+      "target_raw": [
+        6.794403791427612,
+        -5.276403049960462,
+        1.093501847212802
+      ],
+      "counter_z": 0.929,
+      "materials": [
+        {
+          "name": "frogs_v3_bake_Wood.003",
+          "metallic": 0,
+          "roughness": 0.47999998927116394,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "frogs_v3_bake_Pupil",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "frogs_v3_bake_Patina",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "frogs_v3_bake_Gold.001",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "frogs_v3_bake_Eye",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "frogs_v3_bake_Bowl",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "frogs_v3_bake_Black.003",
+          "metallic": 0,
+          "roughness": 0.3400000035762787,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "frogs_v3_bake_Belly",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        }
+      ],
+      "real_image": "frogs_real.jpg",
+      "render_image": "frogs_pbr.jpg",
+      "room_image": "frogs_room.jpg",
+      "earlier_comparison": "gaussian_frogs.jpg"
+    },
+    {
+      "id": "tea_tray",
+      "label": "Tea Tray",
+      "photo": "d70e05c20c15468eb93117d496285f82_i2_0.jpg",
+      "camera": {
+        "K": [
+          [
+            666.975,
+            0.0,
+            395.76687499999997
+          ],
+          [
+            0.0,
+            666.43125,
+            325.92625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "c2w_raw_gl": [
+          [
+            -0.24135,
+            -0.6563,
+            0.714857,
+            2.96308
+          ],
+          [
+            0.97042,
+            -0.167799,
+            0.173579,
+            -3.75117
+          ],
+          [
+            0.00603224,
+            0.735604,
+            0.677385,
+            1.56565
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "width": 800,
+        "height": 640
+      },
+      "crop": [
+        323,
+        11,
+        587,
+        188
+      ],
+      "fit_paths": [
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/tea_tray_v3/fit.json"
+      ],
+      "product": null,
+      "method": "photo-built fitted mesh",
+      "notes": "Photo-built tray and accessories; exact decorative details remain approximate.",
+      "nodes": [
+        "Kitchen_tea_tray_v3_p0",
+        "Kitchen_tea_tray_v3_p1",
+        "Kitchen_tea_tray_v3_p2",
+        "Kitchen_tea_tray_v3_p3",
+        "Kitchen_tea_tray_v3_p4",
+        "Kitchen_tea_tray_v3_p5",
+        "Kitchen_tea_tray_v3_p6"
+      ],
+      "mesh_parts": 7,
+      "bounds_raw": [
+        [
+          1.5161341428756714,
+          -4.162851836507674,
+          0.9350012972019308
+        ],
+        [
+          1.8238658905029297,
+          -3.753147619467216,
+          1.106001355483023
+        ]
+      ],
+      "target_raw": [
+        1.6700000166893005,
+        -3.9579997279874446,
+        1.020501326342477
+      ],
+      "counter_z": 0.935,
+      "materials": [
+        {
+          "name": "tea_tray_v3_bake_p0.003",
+          "metallic": 0,
+          "roughness": 0.17000000178813934,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "tea_tray_v3_bake_p1.003",
+          "metallic": 0,
+          "roughness": 0.17000000178813934,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "tea_tray_v3_bake_p2.003",
+          "metallic": 0,
+          "roughness": 0.17000000178813934,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "tea_tray_v3_bake_p3.002",
+          "metallic": 0,
+          "roughness": 0.17000000178813934,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "tea_tray_v3_bake_p4.002",
+          "metallic": 0,
+          "roughness": 0.17000000178813934,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "tea_tray_v3_bake_p5.002",
+          "metallic": 0,
+          "roughness": 0.17000000178813934,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "tea_tray_v3_bake_p6.001",
+          "metallic": 0,
+          "roughness": 0.17000000178813934,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        }
+      ],
+      "real_image": "tea_tray_real.jpg",
+      "render_image": "tea_tray_pbr.jpg",
+      "room_image": "tea_tray_room.jpg",
+      "earlier_comparison": "gaussian_tea_tray.jpg"
+    },
+    {
+      "id": "glass_kettle",
+      "label": "Glass Kettle",
+      "photo": "d70e05c20c15468eb93117d496285f82_i2_0.jpg",
+      "camera": {
+        "K": [
+          [
+            666.975,
+            0.0,
+            395.76687499999997
+          ],
+          [
+            0.0,
+            666.43125,
+            325.92625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "c2w_raw_gl": [
+          [
+            -0.24135,
+            -0.6563,
+            0.714857,
+            2.96308
+          ],
+          [
+            0.97042,
+            -0.167799,
+            0.173579,
+            -3.75117
+          ],
+          [
+            0.00603224,
+            0.735604,
+            0.677385,
+            1.56565
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "width": 800,
+        "height": 640
+      },
+      "crop": [
+        524,
+        0,
+        689,
+        183
+      ],
+      "fit_paths": [
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/glass_kettle_v3/fit.json"
+      ],
+      "product": null,
+      "method": "photo-built fitted mesh",
+      "notes": "Photo-built glass kettle. Transmission, liquid and internal reflections remain approximate.",
+      "nodes": [
+        "Kitchen_glass_kettle_v3_p0",
+        "Kitchen_glass_kettle_v3_p1",
+        "Kitchen_glass_kettle_v3_p2",
+        "Kitchen_glass_kettle_v3_p3",
+        "Kitchen_glass_kettle_v3_p4",
+        "Kitchen_glass_kettle_v3_p5"
+      ],
+      "mesh_parts": 6,
+      "bounds_raw": [
+        [
+          1.6009999513626099,
+          -3.7480686592219636,
+          0.9350012409920808
+        ],
+        [
+          1.7710000276565552,
+          -3.528300360552731,
+          1.1800012374611457
+        ]
+      ],
+      "target_raw": [
+        1.6859999895095825,
+        -3.6381845098873473,
+        1.0575012392266132
+      ],
+      "counter_z": 0.935,
+      "materials": [
+        {
+          "name": "glass_kettle_v3_bake_p0.001",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "glass_kettle_v3_bake_p1.001",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "glass_kettle_v3_bake_p2.001",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "glass_kettle_v3_bake_p3",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "glass_kettle_v3_bake_p4",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "glass_kettle_v3_bake_p5",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        }
+      ],
+      "real_image": "glass_kettle_real.jpg",
+      "render_image": "glass_kettle_pbr.jpg",
+      "room_image": "glass_kettle_room.jpg",
+      "earlier_comparison": "gaussian_glass_kettle.jpg"
+    },
+    {
+      "id": "frother",
+      "label": "Frother",
+      "photo": "d70e05c20c15468eb93117d496285f82_i2_0.jpg",
+      "camera": {
+        "K": [
+          [
+            666.975,
+            0.0,
+            395.76687499999997
+          ],
+          [
+            0.0,
+            666.43125,
+            325.92625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "c2w_raw_gl": [
+          [
+            -0.24135,
+            -0.6563,
+            0.714857,
+            2.96308
+          ],
+          [
+            0.97042,
+            -0.167799,
+            0.173579,
+            -3.75117
+          ],
+          [
+            0.00603224,
+            0.735604,
+            0.677385,
+            1.56565
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "width": 800,
+        "height": 640
+      },
+      "crop": [
+        627,
+        2,
+        776,
+        188
+      ],
+      "fit_paths": [
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/frother_v3/fit.json"
+      ],
+      "product": null,
+      "method": "photo-built fitted mesh",
+      "notes": "Photo-built frother with separate material regions; brand details remain approximate.",
+      "nodes": [
+        "Kitchen_frother_v3_p0",
+        "Kitchen_frother_v3_p1",
+        "Kitchen_frother_v3_p2"
+      ],
+      "mesh_parts": 3,
+      "bounds_raw": [
+        [
+          1.6030000448226929,
+          -3.5279996283105564,
+          0.9350011879534972
+        ],
+        [
+          1.7330000400543213,
+          -3.3979997002895526,
+          1.1250012247416008
+        ]
+      ],
+      "target_raw": [
+        1.668000042438507,
+        -3.4629996643000545,
+        1.030001206347549
+      ],
+      "counter_z": 0.935,
+      "materials": [
+        {
+          "name": "frother_v3_bake_p0",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "frother_v3_bake_p1",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "frother_v3_bake_p2",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        }
+      ],
+      "real_image": "frother_real.jpg",
+      "render_image": "frother_pbr.jpg",
+      "room_image": "frother_room.jpg",
+      "earlier_comparison": "gaussian_frother.jpg"
+    },
+    {
+      "id": "coffee_machine",
+      "label": "Coffee Machine",
+      "photo": "1113418419f84a5c80586634f7611f14_i2_4.jpg",
+      "camera": {
+        "K": [
+          [
+            666.975,
+            0.0,
+            395.76687499999997
+          ],
+          [
+            0.0,
+            666.43125,
+            325.92625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "c2w_raw_gl": [
+          [
+            0.0742953,
+            0.665814,
+            -0.74241,
+            0.792236
+          ],
+          [
+            -0.997202,
+            0.0434169,
+            -0.0608556,
+            -3.6744
+          ],
+          [
+            -0.00828541,
+            0.744853,
+            0.667177,
+            1.56275
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "width": 800,
+        "height": 640
+      },
+      "crop": [
+        67,
+        46,
+        264,
+        229
+      ],
+      "fit_paths": [
+        "/data/robotics/toshith/rxr_author/refined/kitchen/objects/coffee_machine2_v3/fit.json"
+      ],
+      "product": {
+        "uid": "5fb141555e74489ba79e588838f8562a",
+        "name": "Nespresso Coffee Machine",
+        "license": "by",
+        "glb": "/data/robotics/toshith/k3d_cache/.objaverse/hf-objaverse-v1/glbs/000-065/5fb141555e74489ba79e588838f8562a.glb",
+        "url": "https://sketchfab.com/3d-models/5fb141555e74489ba79e588838f8562a"
+      },
+      "method": "downloaded product, fitted and adapted",
+      "notes": "Licensed Nespresso substitute fitted to the photo. Exact brand/model details and controls differ.",
+      "nodes": [
+        "Kitchen_coffee_machine2_v3_black",
+        "Kitchen_coffee_machine2_v3_chroma",
+        "Kitchen_coffee_machine2_v3_material"
+      ],
+      "mesh_parts": 3,
+      "bounds_raw": [
+        [
+          1.622725009918213,
+          -3.2745708429712566,
+          0.9350011023140965
+        ],
+        [
+          1.9101626873016357,
+          -3.1729565631528978,
+          1.153901519018902
+        ]
+      ],
+      "target_raw": [
+        1.7664438486099243,
+        -3.223763703062077,
+        1.0444513106664992
+      ],
+      "counter_z": 0.935,
+      "materials": [
+        {
+          "name": "coffee_machine2_v3_bake_black",
+          "metallic": 0,
+          "roughness": 0.3400000035762787,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "coffee_machine2_v3_bake_chroma",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        },
+        {
+          "name": "coffee_machine2_v3_bake_material.002",
+          "metallic": 0,
+          "roughness": 0.5799999833106995,
+          "colour_texture": true,
+          "normal_texture": false,
+          "data_texture": false,
+          "unlit": false
+        }
+      ],
+      "real_image": "coffee_machine_real.jpg",
+      "render_image": "coffee_machine_pbr.jpg",
+      "room_image": "coffee_machine_room.jpg",
+      "earlier_comparison": "gaussian_coffee_machine.jpg"
+    }
+  ],
+  "geometry_changed": true,
+  "scene_refresh": "latest jug and telephone parts; three sink mount heights corrected",
+  "source_scene": "/data/robotics/toshith/rxr_author/refined/toaster_home_tour/home_pbr_items.glb"
+}

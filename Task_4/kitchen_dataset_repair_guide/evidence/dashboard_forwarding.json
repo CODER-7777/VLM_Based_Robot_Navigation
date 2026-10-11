@@ -1,0 +1,16 @@
+{
+  "dashboard": "http://localhost:8767/",
+  "previous_session": "http://localhost:8769/",
+  "scene": {
+    "scene_glb": "/data/robotics/toshith/rxr_author/refined/agentA_resume/test.glb",
+    "version": "agentA_resume",
+    "audit": {
+      "objects": 32,
+      "issues": [],
+      "method": "Per-component convex volumes, 2 mm tolerance, support height and full footprint containment; does not inspect backsplash texture ghosts."
+    }
+  },
+  "previous_session_step": 1396,
+  "live_frame_bytes": 63398,
+  "comparison_images_verified": 4
+}

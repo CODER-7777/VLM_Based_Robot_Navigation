@@ -1,0 +1,24 @@
+{
+  "phone": {
+    "method": "Photo-fitted fixed desk-phone product, visible controls projected from the actual photo",
+    "surface_samples": 123294,
+    "photo_supported_samples": 57153,
+    "fit": "phone_v4",
+    "limitation": "Silhouette and hidden sides remain approximate; fixed photographic appearance."
+  },
+  "frogs": {
+    "method": "Prior photo-trained decorative reconstruction moved rigidly inward from the backsplash",
+    "samples": 1386,
+    "limitation": "Sparse original reconstruction; visible shape and separate proxy are approximate. Not an exact newly reconstructed statue.",
+    "translation_m": [
+      -0.095,
+      0.075,
+      0.005
+    ]
+  },
+  "walls": {
+    "top_m": 1.4,
+    "method": "Extended physically planar photo-textured backsplash closes the visible seam; hidden tiles use approximate infill"
+  },
+  "final_gaussians": 4378360
+}

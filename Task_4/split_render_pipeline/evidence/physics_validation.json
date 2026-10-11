@@ -1,0 +1,25 @@
+{
+  "proxy": "/data/robotics/toshith/rxr_author/refined/split_visuals/proxy.glb",
+  "habitat_renderer_created": false,
+  "visual_sensors": 0,
+  "enable_physics": true,
+  "navmesh_loaded": true,
+  "navmesh_area_m2": 539.6396484375,
+  "start_position_habitat": [
+    4.575479984283447,
+    0.11183337867259979,
+    4.1999101638793945
+  ],
+  "camera_transform_max_error": 5.398293841940571e-07,
+  "navmesh_try_step_mean_ms": 0.02776438486762345,
+  "navmesh_queries_per_second": 36017.36558428557,
+  "bullet_empty_world_step_mean_ms": 0.0005096821114420891,
+  "counter_wall_probe_blocked": true,
+  "counter_wall_probe_distance_m": 0.3916458487510681,
+  "limitations": [
+    "Static proxy; dynamic objects and articulated edits are not synchronized to Gaussians.",
+    "NavMesh collision constrains the navigation agent; it is not a simulated articulated robot body.",
+    "Bullet benchmark is empty dynamic-world stepping, not a robot contact workload.",
+    "Navigation/physics throughput is separate from rendered RGB-D frame throughput."
+  ]
+}

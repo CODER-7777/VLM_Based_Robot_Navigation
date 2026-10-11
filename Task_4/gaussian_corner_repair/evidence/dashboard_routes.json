@@ -1,0 +1,22 @@
+{
+  "http://127.0.0.1:8767/": {
+    "status": 200,
+    "bytes": 10149
+  },
+  "http://127.0.0.1:8767/comparisons": {
+    "status": 200,
+    "bytes": 1612
+  },
+  "http://127.0.0.1:8778/": {
+    "status": 200,
+    "bytes": 3066
+  },
+  "http://127.0.0.1:8778/corner-comparisons": {
+    "status": 200,
+    "bytes": 937
+  },
+  "http://127.0.0.1:8778/corner-preview/0.jpg": {
+    "status": 200,
+    "bytes": 222403
+  }
+}

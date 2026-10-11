@@ -1,0 +1,10 @@
+{
+  "source": "/data/robotics/toshith/rxr_author/refined/toaster_selected/test.glb",
+  "coordinate_frame": "Raw MP3D Z-up metres; Habitat GLB stage loader applies (x,z,-y)",
+  "source_faces": 1876726,
+  "proxy_faces": 120000,
+  "method": "Texture-free static mesh simplification, target 120000 faces; retains room topology rather than enclosing the entire room in a solid box",
+  "requires_validation": "NavMesh rebuilt and snapped kitchen start checked by physics service",
+  "dynamic_collision_objects": false,
+  "axis_correction": "Undo first export Y-up rotation because this Habitat version applies MP3D stage Z-up conversion to GLB files"
+}

@@ -1,0 +1,262 @@
+{
+  "model": "Experimental RGB-D and photo-trained Gaussian baseline with bounded geometry refinement",
+  "iterations": 4500,
+  "gaussians": 350000,
+  "sh_degree": 2,
+  "training_seconds": 130.5096212462522,
+  "resolution": [
+    640,
+    512
+  ],
+  "cuda_raster_rgb_expected_depth_ms": 9.321041870117188,
+  "cuda_raster_fps": 107.28414419057079,
+  "validation": [
+    {
+      "photo": "90769276290547eaabfde2cc89a6cf59_i1_4.jpg",
+      "masked_psnr_db": 4.89524302927173,
+      "evaluation_mask_fraction": 0.9590907096862793,
+      "coverage_alpha_gt_half": 0.840527355670929
+    },
+    {
+      "photo": "90769276290547eaabfde2cc89a6cf59_i1_3.jpg",
+      "masked_psnr_db": 10.445831205183849,
+      "evaluation_mask_fraction": 0.633837878704071,
+      "coverage_alpha_gt_half": 0.44238588213920593
+    }
+  ],
+  "loss_history": [
+    {
+      "step": 0,
+      "loss": 0.16891542077064514,
+      "elapsed_s": 0.7290767543017864
+    },
+    {
+      "step": 100,
+      "loss": 0.0982104167342186,
+      "elapsed_s": 3.496673417277634
+    },
+    {
+      "step": 200,
+      "loss": 0.0759219229221344,
+      "elapsed_s": 6.338426411151886
+    },
+    {
+      "step": 300,
+      "loss": 0.03652667999267578,
+      "elapsed_s": 9.166261988226324
+    },
+    {
+      "step": 400,
+      "loss": 0.0410960428416729,
+      "elapsed_s": 11.938436729367822
+    },
+    {
+      "step": 500,
+      "loss": 0.06405898928642273,
+      "elapsed_s": 14.741690657101572
+    },
+    {
+      "step": 600,
+      "loss": 0.05638343468308449,
+      "elapsed_s": 17.48362821014598
+    },
+    {
+      "step": 700,
+      "loss": 0.050393007695674896,
+      "elapsed_s": 20.289419856388122
+    },
+    {
+      "step": 800,
+      "loss": 0.046854645013809204,
+      "elapsed_s": 23.10450794827193
+    },
+    {
+      "step": 900,
+      "loss": 0.050481997430324554,
+      "elapsed_s": 25.964319262187928
+    },
+    {
+      "step": 1000,
+      "loss": 0.0658065676689148,
+      "elapsed_s": 28.792863795999438
+    },
+    {
+      "step": 1100,
+      "loss": 0.05169805884361267,
+      "elapsed_s": 31.701166522223502
+    },
+    {
+      "step": 1200,
+      "loss": 0.050500012934207916,
+      "elapsed_s": 34.53427942516282
+    },
+    {
+      "step": 1300,
+      "loss": 0.04689506068825722,
+      "elapsed_s": 37.3555567082949
+    },
+    {
+      "step": 1400,
+      "loss": 0.0764373317360878,
+      "elapsed_s": 40.21615235321224
+    },
+    {
+      "step": 1500,
+      "loss": 0.04966260492801666,
+      "elapsed_s": 43.07415503123775
+    },
+    {
+      "step": 1600,
+      "loss": 0.08931122720241547,
+      "elapsed_s": 45.86756619811058
+    },
+    {
+      "step": 1700,
+      "loss": 0.03253249451518059,
+      "elapsed_s": 48.697517768945545
+    },
+    {
+      "step": 1800,
+      "loss": 0.03752510994672775,
+      "elapsed_s": 51.49112788727507
+    },
+    {
+      "step": 1900,
+      "loss": 0.04945870861411095,
+      "elapsed_s": 54.260881203226745
+    },
+    {
+      "step": 2000,
+      "loss": 0.04422934353351593,
+      "elapsed_s": 57.0667484132573
+    },
+    {
+      "step": 2100,
+      "loss": 0.0719410851597786,
+      "elapsed_s": 59.814870744012296
+    },
+    {
+      "step": 2200,
+      "loss": 0.0662945881485939,
+      "elapsed_s": 62.58161800913513
+    },
+    {
+      "step": 2300,
+      "loss": 0.025756124407052994,
+      "elapsed_s": 65.46272950200364
+    },
+    {
+      "step": 2400,
+      "loss": 0.0686735063791275,
+      "elapsed_s": 68.24808659497648
+    },
+    {
+      "step": 2500,
+      "loss": 0.026345033198595047,
+      "elapsed_s": 71.08788122609258
+    },
+    {
+      "step": 2600,
+      "loss": 0.02847374603152275,
+      "elapsed_s": 73.80582062201574
+    },
+    {
+      "step": 2700,
+      "loss": 0.0363694429397583,
+      "elapsed_s": 76.59699162701145
+    },
+    {
+      "step": 2800,
+      "loss": 0.025730350986123085,
+      "elapsed_s": 79.32769495807588
+    },
+    {
+      "step": 2900,
+      "loss": 0.03126528859138489,
+      "elapsed_s": 82.15276190824807
+    },
+    {
+      "step": 3000,
+      "loss": 0.032795798033475876,
+      "elapsed_s": 84.96323243901134
+    },
+    {
+      "step": 3100,
+      "loss": 0.02883741445839405,
+      "elapsed_s": 87.82597945304587
+    },
+    {
+      "step": 3200,
+      "loss": 0.03990489989519119,
+      "elapsed_s": 90.65317118633538
+    },
+    {
+      "step": 3300,
+      "loss": 0.033467356115579605,
+      "elapsed_s": 93.43687546625733
+    },
+    {
+      "step": 3400,
+      "loss": 0.04387277737259865,
+      "elapsed_s": 96.16598664736375
+    },
+    {
+      "step": 3500,
+      "loss": 0.02099890634417534,
+      "elapsed_s": 98.92231893725693
+    },
+    {
+      "step": 3600,
+      "loss": 0.02769329771399498,
+      "elapsed_s": 101.74056941596791
+    },
+    {
+      "step": 3700,
+      "loss": 0.024490974843502045,
+      "elapsed_s": 104.5065818252042
+    },
+    {
+      "step": 3800,
+      "loss": 0.027410857379436493,
+      "elapsed_s": 107.352285573259
+    },
+    {
+      "step": 3900,
+      "loss": 0.017571959644556046,
+      "elapsed_s": 110.12067327927798
+    },
+    {
+      "step": 4000,
+      "loss": 0.027384771034121513,
+      "elapsed_s": 112.92777026910335
+    },
+    {
+      "step": 4100,
+      "loss": 0.027211835607886314,
+      "elapsed_s": 115.7542238663882
+    },
+    {
+      "step": 4200,
+      "loss": 0.020683130249381065,
+      "elapsed_s": 118.57211498497054
+    },
+    {
+      "step": 4300,
+      "loss": 0.021033605560660362,
+      "elapsed_s": 121.39385146601126
+    },
+    {
+      "step": 4400,
+      "loss": 0.025516334921121597,
+      "elapsed_s": 124.22561658127233
+    }
+  ],
+  "limitations": [
+    "Measured depth available for only some training views; cached scan depth used elsewhere.",
+    "Geometry refinement limited to 4 cm, selected toaster centers limited to 1 mm.",
+    "Kitchen coverage only; unseen regions and scan geometry errors may remain.",
+    "Gaussian expected optical depth is opacity-weighted; low-alpha pixels must be invalidated.",
+    "SH approximates view-dependent metal appearance; it is not a relightable BRDF.",
+    "Performance excludes HTTP, JPEG encoding, physics and scene loading."
+  ]
+}

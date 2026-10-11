@@ -1,6 +1,6 @@
 """Inspect licensed native assets in isolation; embedded Python is disabled."""
 from pathlib import Path
-import bpy, json, math
+import bpy, json, math, sys
 from mathutils import Vector, Matrix
 
 ROOT=Path(__file__).resolve().parent.parent
@@ -9,13 +9,19 @@ bpy.context.preferences.filepaths.use_scripts_auto_execute=False
 sources=json.loads((ROOT/'evidence/downloaded_models.json').read_text())
 sources=[r for r in sources if r['uid']!='51768654adf74b38a360b848e0e59ef6']
 sources.append(dict(json.loads((ROOT/'evidence/frother_source.json').read_text()),native=True))
+additional='--additional' in sys.argv
+if additional:sources=json.loads((ROOT/'evidence/additional_downloads.json').read_text())+json.loads((ROOT/'evidence/additional_objaverse_sources.json').read_text())
 report=[]
 for row in sources:
  uid=row['uid'];dest=OUT/uid;dest.mkdir(exist_ok=True)
  bpy.ops.wm.read_factory_settings(use_empty=True)
  bpy.context.preferences.filepaths.use_scripts_auto_execute=False
  if row.get('native'):
-  bpy.ops.wm.open_mainfile(filepath=str(ROOT/'evidence/aeroccino4_2k.blend'),use_scripts=False)
+  filepath=ROOT/'sources'/(uid+'.blend') if additional else ROOT/'evidence/aeroccino4_2k.blend'
+  bpy.ops.wm.open_mainfile(filepath=str(filepath),use_scripts=False)
+  for o in list(bpy.context.scene.objects):
+   if o.type=='CURVE':
+    bpy.ops.object.select_all(action='DESELECT');o.select_set(True);bpy.context.view_layer.objects.active=o;bpy.ops.object.convert(target='MESH')
  else:bpy.ops.import_scene.gltf(filepath=str(ROOT/'sources'/(uid+'.glb')))
  meshes=[o for o in bpy.context.scene.objects if o.type=='MESH']
  if uid=='ra8feUCmFGxTrwlug7qOe9i8gme':meshes=[o for o in meshes if o.name.startswith('nespresso maquina_') or o.name=='metal_0']
@@ -46,7 +52,7 @@ for row in sources:
  item={'uid':uid,'source':row,'original_meshes':originals,'source_bounds':[list(lo),list(hi)],'materials':[]}
  for m in bpy.data.materials:
   item['materials'].append({'name':m.name,'nodes':[(n.name,n.type) for n in m.node_tree.nodes] if m.use_nodes else [],'images':[n.image.name for n in m.node_tree.nodes if n.type=='TEX_IMAGE' and n.image] if m.use_nodes else []})
- report.append(item);(OUT/'inspection.json').write_text(json.dumps(report,indent=2))
+ report.append(item);(OUT/('inspection_additional.json' if additional else 'inspection.json')).write_text(json.dumps(report,indent=2))
  s=bpy.context.scene;s.render.engine='CYCLES';s.cycles.samples=24;s.cycles.use_denoising=True;s.render.threads_mode='FIXED';s.render.threads=8
  s.render.resolution_x=560;s.render.resolution_y=560;s.render.resolution_percentage=100;s.view_settings.view_transform='AgX'
  world=bpy.data.worlds.new('Inspection world');world.use_nodes=True;world.node_tree.nodes['Background'].inputs['Color'].default_value=(.4,.4,.4,1);world.node_tree.nodes['Background'].inputs['Strength'].default_value=.4;s.world=world

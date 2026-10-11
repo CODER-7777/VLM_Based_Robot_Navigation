@@ -1,0 +1,670 @@
+[
+  {
+    "name": "sink_main_v2",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/sink_main_v2/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/sink_main_v2/world_tex.glb",
+    "base": [
+      5.559557260056096,
+      -5.154437643111501,
+      0.9235120677651832
+    ],
+    "height": 0.21637428481294785,
+    "product": null,
+    "views": [
+      "f7a060bfa1164b5e9c5cca04284f6d6b_i2_5.jpg"
+    ],
+    "method": null
+  },
+  {
+    "name": "sink_prep_v2",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/sink_prep_v2/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/sink_prep_v2/world_tex.glb",
+    "base": [
+      1.8284303531858077,
+      -2.6791068365958335,
+      0.9131197191108257
+    ],
+    "height": 0.14481908374548713,
+    "product": null,
+    "views": [
+      "e22e764c60c44da28c2ba3e5c93fd44f_i2_4.jpg"
+    ],
+    "method": null
+  },
+  {
+    "name": "rangetop",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/rangetop/fit.json",
+    "glb": "kitchen/objects/rangetop/world_col.glb",
+    "base": [
+      6.783602907943726,
+      -3.5378,
+      0.905
+    ],
+    "height": 0.08599999999999997,
+    "product": {
+      "uid": "c0bdc06e700341afbf289ffdf5c62e40",
+      "name": "GE Cafe 36\" Gas Rangetop",
+      "author": "allenbranch",
+      "license": "by"
+    },
+    "views": [
+      "1eae5d4a0c0146c2b884d6b96d9b0e16_i2_3.jpg"
+    ],
+    "method": null
+  },
+  {
+    "name": "counter_sinkrun",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/counter_sinkrun/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/counter_sinkrun/world_tex.glb",
+    "base": [
+      6.001364049923656,
+      -4.957767531157245,
+      0.929
+    ],
+    "height": 0.0,
+    "product": null,
+    "views": [],
+    "method": null
+  },
+  {
+    "name": "counter_rangeside",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/counter_rangeside/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/counter_rangeside/world_tex.glb",
+    "base": [
+      6.7749999999999995,
+      -2.6585,
+      0.929
+    ],
+    "height": 0.0,
+    "product": null,
+    "views": [],
+    "method": null
+  },
+  {
+    "name": "counter_island",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/counter_island/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/counter_island/world_tex.glb",
+    "base": [
+      4.620000000000001,
+      -2.890000000000001,
+      0.943
+    ],
+    "height": 0.0,
+    "product": null,
+    "views": [],
+    "method": null
+  },
+  {
+    "name": "counter_prep",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/counter_prep/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/counter_prep/world_tex.glb",
+    "base": [
+      1.8274999999999997,
+      -3.5925,
+      0.935
+    ],
+    "height": 0.0,
+    "product": null,
+    "views": [],
+    "method": null
+  },
+  {
+    "name": "counter_bar",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/counter_bar/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/counter_bar/world_tex.glb",
+    "base": [
+      1.4706744363775317,
+      -3.1895548337791366,
+      1.112
+    ],
+    "height": 0.0,
+    "product": null,
+    "views": [],
+    "method": null
+  },
+  {
+    "name": "faucet_main_style",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/faucet_main_style/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/faucet_main_style/world_baked.glb",
+    "base": [
+      5.471774456775868,
+      -5.366540411358361,
+      0.9262617004116798
+    ],
+    "height": 0.20319550648522844,
+    "product": {
+      "uid": "9c3da9c402ee47e7ad1e762d5610fa7d",
+      "name": "Misturador Monocomando St. Claire - B02001G",
+      "author": "bracci",
+      "license": "by",
+      "url": "https://sketchfab.com/3d-models/9c3da9c402ee47e7ad1e762d5610fa7d",
+      "glb": "kitchen/products/style/9c3da9c402ee47e7ad1e762d5610fa7d.glb"
+    },
+    "views": [
+      "58348305b0f84dd8b161aaf2d5b945ef_i2_3.jpg",
+      "f7a060bfa1164b5e9c5cca04284f6d6b_i2_5.jpg"
+    ],
+    "method": null
+  },
+  {
+    "name": "hot_tap_s4_style",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/hot_tap_s4_style/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/hot_tap_s4_style/world_baked.glb",
+    "base": [
+      5.975947467127271,
+      -5.382445813460308,
+      0.92854240417312
+    ],
+    "height": 0.23213101444163586,
+    "product": {
+      "uid": "c30cc0d4a0bc49e685752287a33618d0",
+      "name": "Misturador Monocomando St. Claire - B02003BW",
+      "author": "bracci",
+      "license": "by",
+      "url": "https://sketchfab.com/3d-models/c30cc0d4a0bc49e685752287a33618d0",
+      "glb": "kitchen/products/style/c30cc0d4a0bc49e685752287a33618d0.glb"
+    },
+    "views": [
+      "f7a060bfa1164b5e9c5cca04284f6d6b_i2_5.jpg"
+    ],
+    "method": null
+  },
+  {
+    "name": "soap_pump_p_lathe",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/soap_pump_p_lathe/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/soap_pump_p_lathe/world_baked.glb",
+    "base": [
+      5.3204132770863986,
+      -5.353259628806491,
+      0.9262054338923081
+    ],
+    "height": 0.11897164922425463,
+    "product": null,
+    "views": [
+      "f7a060bfa1164b5e9c5cca04284f6d6b_i2_5.jpg"
+    ],
+    "method": null
+  },
+  {
+    "name": "air_gap_p_lathe",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/air_gap_p_lathe/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/air_gap_p_lathe/world_baked.glb",
+    "base": [
+      5.212370846543953,
+      -5.343188453286047,
+      0.926044950154195
+    ],
+    "height": 0.08541010835931928,
+    "product": null,
+    "views": [
+      "f7a060bfa1164b5e9c5cca04284f6d6b_i2_5.jpg"
+    ],
+    "method": null
+  },
+  {
+    "name": "button_p_lathe",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/button_p_lathe/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/button_p_lathe/world_baked.glb",
+    "base": [
+      5.102316804269468,
+      -5.343241030266441,
+      0.9264118239648929
+    ],
+    "height": 0.03957138496003876,
+    "product": null,
+    "views": [
+      "f7a060bfa1164b5e9c5cca04284f6d6b_i2_5.jpg"
+    ],
+    "method": null
+  },
+  {
+    "name": "soap_dish_p_v2",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/soap_dish_p_v2/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/soap_dish_p_v2/world_baked.glb",
+    "base": [
+      5.885,
+      -5.409,
+      0.929
+    ],
+    "height": 0.029999999329447746,
+    "product": null,
+    "views": [],
+    "method": null
+  },
+  {
+    "name": "bottles_v20",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/bottles_v20/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/bottles_v20/world_resume_photo.glb",
+    "base": [
+      6.817872297290654,
+      -5.167074450052161,
+      0.929
+    ],
+    "height": 0.13857142857142857,
+    "product": null,
+    "views": [
+      "f7a060bfa1164b5e9c5cca04284f6d6b_i2_4.jpg"
+    ],
+    "method": null
+  },
+  {
+    "name": "bottles_v21",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/bottles_v21/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/bottles_v21/world_resume_photo.glb",
+    "base": [
+      6.788104840108073,
+      -5.191908285303718,
+      0.929
+    ],
+    "height": 0.1385858585858586,
+    "product": null,
+    "views": [
+      "f7a060bfa1164b5e9c5cca04284f6d6b_i2_4.jpg"
+    ],
+    "method": null
+  },
+  {
+    "name": "bottles_v22",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/bottles_v22/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/bottles_v22/world_resume_photo.glb",
+    "base": [
+      6.759185032460003,
+      -5.216034959417458,
+      0.929
+    ],
+    "height": 0.13857142857142857,
+    "product": null,
+    "views": [
+      "f7a060bfa1164b5e9c5cca04284f6d6b_i2_4.jpg"
+    ],
+    "method": null
+  },
+  {
+    "name": "bottles_v23",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/bottles_v23/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/bottles_v23/world_resume_photo.glb",
+    "base": [
+      6.731096253767338,
+      -5.239468338298044,
+      0.929
+    ],
+    "height": 0.1385858585858586,
+    "product": null,
+    "views": [
+      "f7a060bfa1164b5e9c5cca04284f6d6b_i2_4.jpg"
+    ],
+    "method": null
+  },
+  {
+    "name": "canister_l_v2",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/canister_l_v2/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/canister_l_v2/world_resume_final.glb",
+    "base": [
+      4.833,
+      -5.372,
+      0.929
+    ],
+    "height": 0.23524999999999996,
+    "product": null,
+    "views": [],
+    "method": null
+  },
+  {
+    "name": "canister_r_v2",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/canister_r_v2/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/canister_r_v2/world_resume_final.glb",
+    "base": [
+      4.685,
+      -5.366,
+      0.929
+    ],
+    "height": 0.23524999999999996,
+    "product": null,
+    "views": [],
+    "method": null
+  },
+  {
+    "name": "coffee_machine2_v2",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/coffee_machine2_v2/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/coffee_machine2_v2/world_baked.glb",
+    "base": [
+      1.766442285592683,
+      -3.2239187811523324,
+      0.935
+    ],
+    "height": 0.21890038499999998,
+    "product": {
+      "uid": "5fb141555e74489ba79e588838f8562a",
+      "name": "Nespresso Coffee Machine",
+      "license": "by",
+      "glb": "/data/robotics/toshith/k3d_cache/.objaverse/hf-objaverse-v1/glbs/000-065/5fb141555e74489ba79e588838f8562a.glb"
+    },
+    "views": [
+      "e22e764c60c44da28c2ba3e5c93fd44f_i2_4.jpg",
+      "1113418419f84a5c80586634f7611f14_i2_4.jpg",
+      "d70e05c20c15468eb93117d496285f82_i2_1.jpg"
+    ],
+    "method": null
+  },
+  {
+    "name": "frother_v2",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/frother_v2/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/frother_v2/world_baked.glb",
+    "base": [
+      1.668,
+      -3.485,
+      0.935
+    ],
+    "height": 0.18999999999999995,
+    "product": null,
+    "views": [
+      "d70e05c20c15468eb93117d496285f82_i2_0.jpg"
+    ],
+    "method": null
+  },
+  {
+    "name": "glass_kettle_v2",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/glass_kettle_v2/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/glass_kettle_v2/world_baked.glb",
+    "base": [
+      1.686,
+      -3.658,
+      0.935
+    ],
+    "height": 0.2450000000000001,
+    "product": null,
+    "views": [
+      "d70e05c20c15468eb93117d496285f82_i2_0.jpg"
+    ],
+    "method": null
+  },
+  {
+    "name": "knife_block_round_v2",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/knife_block_round_v2/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/knife_block_round_v2/world_resume_final.glb",
+    "base": [
+      7.025,
+      -4.12,
+      0.929
+    ],
+    "height": 0.3252740428672847,
+    "product": null,
+    "views": [],
+    "method": null
+  },
+  {
+    "name": "prep_faucet_v2",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/prep_faucet_v2/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/prep_faucet_v2/world_baked.glb",
+    "base": [
+      1.6,
+      -2.676,
+      0.935
+    ],
+    "height": 0.3052367430772396,
+    "product": null,
+    "views": [
+      "b8a09dcf771a45df8501fa1f19abd2c5_i1_4.jpg",
+      "e22e764c60c44da28c2ba3e5c93fd44f_i2_4.jpg"
+    ],
+    "method": null
+  },
+  {
+    "name": "prep_soap_v2",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/prep_soap_v2/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/prep_soap_v2/world.glb",
+    "base": [
+      1.638,
+      -2.426,
+      0.935
+    ],
+    "height": 0.11897164583206177,
+    "product": null,
+    "views": [],
+    "method": null
+  },
+  {
+    "name": "range_kettle_v2",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/range_kettle_v2/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/range_kettle_v2/world_resume_final.glb",
+    "base": [
+      6.882,
+      -3.217,
+      0.991
+    ],
+    "height": 0.23999999999999988,
+    "product": {
+      "uid": "631ac0b616974530a481b3390fd72b82",
+      "name": "2-Quart Circles Teakettle",
+      "author": "cc0archviz",
+      "license": "by",
+      "url": "https://sketchfab.com/3d-models/631ac0b616974530a481b3390fd72b82",
+      "glb": "kitchen/products/style/631ac0b616974530a481b3390fd72b82.glb"
+    },
+    "views": [
+      "1eae5d4a0c0146c2b884d6b96d9b0e16_i2_3.jpg"
+    ],
+    "method": null
+  },
+  {
+    "name": "soap_bottle_v2",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/soap_bottle_v2/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/soap_bottle_v2/world_resume_photo.glb",
+    "base": [
+      5.03,
+      -5.337,
+      0.929
+    ],
+    "height": 0.19599999999999995,
+    "product": null,
+    "views": [],
+    "method": null
+  },
+  {
+    "name": "tea_tray_v2",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/tea_tray_v2/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/tea_tray_v2/world_baked.glb",
+    "base": [
+      1.67,
+      -3.94,
+      0.935
+    ],
+    "height": 0.17100000000000004,
+    "product": null,
+    "views": [
+      "d70e05c20c15468eb93117d496285f82_i2_0.jpg"
+    ],
+    "method": null
+  },
+  {
+    "name": "toaster_v4",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/toaster_v4/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/toaster_v4/world_baked.glb",
+    "base": [
+      4.519999980926514,
+      -5.190000057220459,
+      0.9290000200271606
+    ],
+    "height": 0.2,
+    "product": {
+      "uid": "0d39352a32404ce7b71b8ac020844949",
+      "name": "toaster",
+      "author": "AtTheSpeedOf",
+      "license": "CC-BY-4.0",
+      "url": "https://sketchfab.com/3d-models/toaster-0d39352a32404ce7b71b8ac020844949",
+      "source": "https://mirror.traines.eu/sketchfab-backup/0d/0d39352a32404ce7b71b8ac020844949.zip",
+      "credit": "toaster by AtTheSpeedOf, CC BY 4.0; scaled and positioned; separate kitchen reflection bake."
+    },
+    "views": [
+      "58348305b0f84dd8b161aaf2d5b945ef_i2_4.jpg"
+    ],
+    "method": null
+  },
+  {
+    "name": "phone_dock_v2",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/phone_dock_v2/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/phone_dock_v2/world_baked.glb",
+    "base": [
+      1.42,
+      -4.9,
+      1.112
+    ],
+    "height": 0.1976772544246752,
+    "product": null,
+    "views": [
+      "1113418419f84a5c80586634f7611f14_i1_5.jpg",
+      "b2dce1643d6e4dfa9448b3520ebd48e4_i1_0.jpg"
+    ],
+    "method": null
+  },
+  {
+    "name": "tv_remote_v2",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/tv_remote_v2/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/tv_remote_v2/world_baked.glb",
+    "base": [
+      1.268,
+      -4.926,
+      1.112
+    ],
+    "height": 0.020000000000000018,
+    "product": null,
+    "views": [
+      "d17568bcd7cd4cd3bb0f4af2c63a3ef9_i2_3.jpg"
+    ],
+    "method": null
+  },
+  {
+    "name": "bread_basket_v2",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/bread_basket_v2/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/bread_basket_v2/world_baked.glb",
+    "base": [
+      1.7,
+      -4.8,
+      0.935
+    ],
+    "height": 0.10282630446395435,
+    "product": null,
+    "views": [
+      "b8a09dcf771a45df8501fa1f19abd2c5_i1_4.jpg",
+      "1113418419f84a5c80586634f7611f14_i1_5.jpg"
+    ],
+    "method": null
+  },
+  {
+    "name": "phone_v2",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/phone_v2/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/phone_v2/world_resume_photo.glb",
+    "base": [
+      6.80123429913812,
+      -2.472114863012907,
+      0.929
+    ],
+    "height": 0.09000000000000008,
+    "product": {
+      "uid": "0821bac7ef4e4be9a2b26664ffc16213",
+      "name": "Desk Phone01 01",
+      "author": "dangkhoa208",
+      "license": "by",
+      "url": "https://sketchfab.com/3d-models/0821bac7ef4e4be9a2b26664ffc16213",
+      "glb": "kitchen/products/style/0821bac7ef4e4be9a2b26664ffc16213.glb"
+    },
+    "views": [
+      "1eae5d4a0c0146c2b884d6b96d9b0e16_i2_3.jpg"
+    ],
+    "method": null
+  },
+  {
+    "name": "grinder_v2",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/grinder_v2/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/grinder_v2/world_resume_photo.glb",
+    "base": [
+      6.99,
+      -2.75,
+      0.929
+    ],
+    "height": 0.22449999999999992,
+    "product": null,
+    "views": [
+      "1eae5d4a0c0146c2b884d6b96d9b0e16_i2_3.jpg"
+    ],
+    "method": "photo-informed parametric reconstruction"
+  },
+  {
+    "name": "blue_jug_v2",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/blue_jug_v2/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/blue_jug_v2/world_resume_baked.glb",
+    "base": [
+      7.014,
+      -4.437,
+      0.929
+    ],
+    "height": 0.10497635633471769,
+    "product": null,
+    "views": [
+      "f7a060bfa1164b5e9c5cca04284f6d6b_i2_3.jpg"
+    ],
+    "method": "photo-informed parametric reconstruction"
+  },
+  {
+    "name": "paper_towel_v2",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/paper_towel_v2/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/paper_towel_v2/world_resume_final.glb",
+    "base": [
+      6.405,
+      -5.351,
+      0.929
+    ],
+    "height": 0.3320000000000001,
+    "product": null,
+    "views": [],
+    "method": null
+  },
+  {
+    "name": "caddy_v2",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/caddy_v2/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/caddy_v2/world_resume_photo.glb",
+    "base": [
+      6.982,
+      -4.88,
+      0.929
+    ],
+    "height": 0.24000000953674305,
+    "product": null,
+    "views": [
+      "f7a060bfa1164b5e9c5cca04284f6d6b_i2_4.jpg"
+    ],
+    "method": "photo-informed parametric reconstruction"
+  },
+  {
+    "name": "knife_block_v2",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/knife_block_v2/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/knife_block_v2/world_resume_photo.glb",
+    "base": [
+      6.983,
+      -4.29,
+      0.929
+    ],
+    "height": 0.30083797468354434,
+    "product": null,
+    "views": [
+      "f7a060bfa1164b5e9c5cca04284f6d6b_i2_3.jpg"
+    ],
+    "method": "photo-informed parametric reconstruction"
+  },
+  {
+    "name": "frogs_v2",
+    "fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/frogs_v2/fit.json",
+    "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/frogs_v2/world_resume_final.glb",
+    "base": [
+      6.82,
+      -5.302,
+      0.929
+    ],
+    "height": 0.32899999618530273,
+    "product": null,
+    "views": [
+      "f7a060bfa1164b5e9c5cca04284f6d6b_i2_4.jpg"
+    ],
+    "method": "photo-informed parametric reconstruction"
+  }
+]

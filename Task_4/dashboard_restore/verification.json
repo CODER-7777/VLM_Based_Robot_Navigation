@@ -1,0 +1,17 @@
+{
+  "url": "http://127.0.0.1:8767",
+  "scene": {
+    "scene_glb": "/data/robotics/toshith/rxr_author/refined/agentA_resume/test.glb",
+    "version": "agentA_resume",
+    "audit": {
+      "objects": 32,
+      "issues": [],
+      "method": "Per-component convex volumes, 2 mm tolerance, support height and full footprint containment; does not inspect backsplash texture ghosts."
+    },
+    "ui_mode": "full_editor"
+  },
+  "step": 0,
+  "frame_bytes": 63398,
+  "comparisons_collapsed": true,
+  "movement_and_object_controls": true
+}

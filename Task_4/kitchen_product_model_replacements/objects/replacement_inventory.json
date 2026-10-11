@@ -1,0 +1,267 @@
+[
+  {
+    "id": "glass_kettle",
+    "folder": "glass_kettle_v5",
+    "product": {
+      "uid": "bba458a4a294440b95c7fe486d3a3d45",
+      "name": "Electronic Kettle",
+      "author": "Grifonov",
+      "license": "by",
+      "url": "https://sketchfab.com/3d-models/bba458a4a294440b95c7fe486d3a3d45"
+    },
+    "bounds_raw": [
+      [
+        1.594980001449585,
+        -3.748281478881836,
+        0.9350000023841858
+      ],
+      [
+        1.7766649723052979,
+        -3.515582323074341,
+        1.1800000667572021
+      ]
+    ],
+    "height_m": 0.24500006437301636,
+    "triangles": 32446,
+    "mesh_parts": 7,
+    "notes": "Downloaded glass electric-kettle substitute with clear glass transmission, detailed spout and curved handle. The photo has a rounder body and a different lid."
+  },
+  {
+    "id": "knife_block",
+    "folder": "knife_block_v5",
+    "product": {
+      "uid": "967b767b-cd43-44f8-94c4-e3af008da71b",
+      "name": "Knife Holder with a Cutting Board",
+      "author": "Patrik ",
+      "license": "royalty_free",
+      "url": "https://www.blenderkit.com/asset-gallery-detail/967b767b-cd43-44f8-94c4-e3af008da71b/"
+    },
+    "bounds_raw": [
+      [
+        6.882893085479736,
+        -4.32844352722168,
+        0.9290000200271606
+      ],
+      [
+        7.075863361358643,
+        -4.251328468322754,
+        1.2300000190734863
+      ]
+    ],
+    "height_m": 0.3009999990463257,
+    "triangles": 27120,
+    "mesh_parts": 18,
+    "notes": "Downloaded detailed knife holder and five knives, with rounded black handles, steel rivets, baked wood grain and the native sharpening stone. The holder profile and missing scissors differ from the photo."
+  },
+  {
+    "id": "range_kettle",
+    "folder": "range_kettle_v5",
+    "product": {
+      "uid": "631ac0b616974530a481b3390fd72b82",
+      "name": "2-Quart Circles Teakettle",
+      "author": "cc0archviz",
+      "license": "by",
+      "url": "https://sketchfab.com/3d-models/631ac0b616974530a481b3390fd72b82"
+    },
+    "bounds_raw": [
+      [
+        6.789934158325195,
+        -3.3253462314605713,
+        0.9909999966621399
+      ],
+      [
+        6.974065780639648,
+        -3.124934196472168,
+        1.2309999465942383
+      ]
+    ],
+    "height_m": 0.2399999499320984,
+    "triangles": 128972,
+    "mesh_parts": 3,
+    "notes": "Original licensed kettle restored as separate steel and plastic parts, with a subdivided curved body and true reflective PBR metal. The body profile remains a substitute."
+  },
+  {
+    "id": "knife_block_round",
+    "folder": "knife_block_round_v5",
+    "product": null,
+    "bounds_raw": [
+      [
+        6.9709553718566895,
+        -4.207071781158447,
+        0.9290000200271606
+      ],
+      [
+        7.079045295715332,
+        -4.0329270362854,
+        1.2542740106582642
+      ]
+    ],
+    "height_m": 0.3252739906311035,
+    "triangles": 65844,
+    "mesh_parts": 7,
+    "notes": "Photo-built oval holder with smoothly rounded stainless-steel handles. Small rim bevels preserve the holder profile; the exact knife blades and cap slots remain approximate."
+  },
+  {
+    "id": "grinder",
+    "folder": "grinder_v5",
+    "product": {
+      "uid": "967b767b-cd43-44f8-94c4-e3af008da71b",
+      "name": "Knife Holder with a Cutting Board",
+      "author": "Patrik ",
+      "license": "royalty_free",
+      "url": "https://www.blenderkit.com/asset-gallery-detail/967b767b-cd43-44f8-94c4-e3af008da71b/"
+    },
+    "bounds_raw": [
+      [
+        6.921500205993652,
+        -2.8184995651245117,
+        0.9290000200271606
+      ],
+      [
+        7.062000274658203,
+        -2.672999620437622,
+        1.153499960899353
+      ]
+    ],
+    "height_m": 0.22449994087219238,
+    "triangles": 28156,
+    "mesh_parts": 5,
+    "notes": "Photo-built open-hopper grinder retained for silhouette fidelity. Licensed wood texture applied to its dark case; edges beveled and metal parts smoothed. The texture source is a knife holder, not a downloaded grinder model."
+  },
+  {
+    "id": "phone",
+    "folder": "phone_v5",
+    "product": {
+      "uid": "0821bac7ef4e4be9a2b26664ffc16213",
+      "name": "Desk Phone01 01",
+      "author": "dangkhoa208",
+      "license": "by",
+      "url": "https://sketchfab.com/3d-models/0821bac7ef4e4be9a2b26664ffc16213",
+      "glb": "kitchen/products/style/0821bac7ef4e4be9a2b26664ffc16213.glb"
+    },
+    "bounds_raw": [
+      [
+        6.763591289520264,
+        -2.627584934234619,
+        0.9290000200271606
+      ],
+      [
+        7.079973220825195,
+        -2.3971340656280518,
+        1.0280001163482666
+      ]
+    ],
+    "height_m": 0.09900009632110596,
+    "triangles": 39948,
+    "mesh_parts": 22,
+    "notes": "Existing licensed desk phone retained with its photo-fitted labels and controls. Casing edges receive a small physical bevel and smooth shading. Alternative free phones were reviewed, but did not improve the photographed layout."
+  },
+  {
+    "id": "tea_tray",
+    "folder": "tea_tray_v5",
+    "product": {
+      "uid": "0deff0a5da2546f9a52cdd42dcc2d4fb",
+      "name": "Ceramic teapot",
+      "author": "pityafinwe",
+      "license": "by",
+      "url": "https://sketchfab.com/3d-models/0deff0a5da2546f9a52cdd42dcc2d4fb"
+    },
+    "bounds_raw": [
+      [
+        1.5161341428756714,
+        -4.162851810455322,
+        0.9350013136863708
+      ],
+      [
+        1.8238658905029297,
+        -3.753147602081299,
+        1.0989999771118164
+      ]
+    ],
+    "height_m": 0.16399866342544556,
+    "triangles": 107304,
+    "mesh_parts": 4,
+    "notes": "Downloaded ceramic teapot with curved handle and spout, photo-coloured reactive glaze. Tray retained; sugar jar rebuilt from the photo. Decorative glaze details remain approximate."
+  },
+  {
+    "id": "hot_tap",
+    "folder": "hot_tap_s4_style_v5",
+    "product": {
+      "uid": "c30c4323bb124630bd49c3d9073880a3",
+      "name": "antique faucets",
+      "author": "hemantcbr",
+      "license": "by",
+      "url": "https://sketchfab.com/3d-models/c30c4323bb124630bd49c3d9073880a3"
+    },
+    "bounds_raw": [
+      [
+        5.8645758628845215,
+        -5.4171037673950195,
+        0.9290000200271606
+      ],
+      [
+        6.007617473602295,
+        -5.289289951324463,
+        1.1611310243606567
+      ]
+    ],
+    "height_m": 0.2321310043334961,
+    "triangles": 57848,
+    "mesh_parts": 6,
+    "notes": "Licensed antique-faucet spout combined with a photo-shaped slim stem, flange and lower lever. Bronze patina texture is procedural; the exact original tap is not reproduced."
+  },
+  {
+    "id": "coffee_machine",
+    "folder": "coffee_machine2_v5",
+    "product": {
+      "uid": "5fb141555e74489ba79e588838f8562a",
+      "name": "Nespresso Coffee Machine",
+      "author": "ekorneeff",
+      "license": "by",
+      "url": "https://sketchfab.com/3d-models/nespresso-coffee-machine-5fb141555e74489ba79e588838f8562a"
+    },
+    "bounds_raw": [
+      [
+        1.622725248336792,
+        -3.2745707035064697,
+        0.9350000023841858
+      ],
+      [
+        1.9101624488830566,
+        -3.1729564666748047,
+        1.1539000272750854
+      ]
+    ],
+    "height_m": 0.21890002489089966,
+    "triangles": 12272,
+    "mesh_parts": 3,
+    "notes": "Earlier licensed Nespresso substitute retained because it more closely matches the photographed silhouette. Curved housing receives two levels of Catmull-Clark subdivision with hard-edge creases, and chrome is restored to reflective PBR. Fine controls still differ."
+  },
+  {
+    "id": "frother",
+    "folder": "frother_v5",
+    "product": {
+      "uid": "b6507fb3-8156-40ee-9825-9dca8edfb85a",
+      "name": "Aeroccino 4 Milk Frother",
+      "author": "Andy Machin",
+      "license": "royalty_free",
+      "url": "https://www.blenderkit.com/asset-gallery-detail/b6507fb3-8156-40ee-9825-9dca8edfb85a/"
+    },
+    "bounds_raw": [
+      [
+        1.6145281791687012,
+        -3.5284717082977295,
+        0.9350000023841858
+      ],
+      [
+        1.7214717864990234,
+        -3.4215281009674072,
+        1.125
+      ]
+    ],
+    "height_m": 0.1899999976158142,
+    "triangles": 37308,
+    "mesh_parts": 3,
+    "notes": "Downloaded Aeroccino ribbed body and lid adapted to the handle-free black photographed type, with a photo-shaped subdivided base and chrome collar. Exact logo, lid and power cable details remain approximate."
+  }
+]

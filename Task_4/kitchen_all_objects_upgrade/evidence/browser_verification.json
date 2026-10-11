@@ -1,0 +1,150 @@
+{
+  "live": {
+    "title": "All kitchen repairs",
+    "images": [
+      {
+        "src": "http://127.0.0.1:8767/frame.jpg?frame_id=84",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/depth.png?frame_id=84",
+        "loaded": true
+      }
+    ],
+    "status": "Frame 84 \u00b7 camera [4.575479984283447,1.56024,4.1999101638793945]",
+    "ready": true
+  },
+  "comparisons": {
+    "title": "All repaired-object comparisons",
+    "images": [
+      {
+        "src": "http://127.0.0.1:8767/all-preview/gaussian_toaster.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/gaussian_canister_l.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/gaussian_canister_r.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/gaussian_soap_bottle.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/gaussian_soap_dish.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/gaussian_soap_pump.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/gaussian_hot_tap.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/gaussian_air_gap.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/gaussian_bottles.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/gaussian_caddy.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/gaussian_frogs.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/gaussian_knife_block.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/gaussian_knife_block_round.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/gaussian_blue_jug.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/gaussian_paper_towel.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/gaussian_phone.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/gaussian_grinder.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/gaussian_range_kettle.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/gaussian_tea_tray.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/gaussian_glass_kettle.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/gaussian_frother.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/gaussian_coffee_machine.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/gaussian_coffee_can.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/novel_sink_run.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/novel_jug_and_caddy.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/novel_phone.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/novel_prep.jpg",
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:8767/all-preview/novel_island.jpg",
+        "loaded": true
+      }
+    ],
+    "ready": true
+  },
+  "phone_model": {
+    "title": "Material preview phone_v4",
+    "images": [],
+    "modelLoaded": true,
+    "modelError": null,
+    "ready": true
+  },
+  "jug_model": {
+    "title": "Material preview blue_jug_v4",
+    "images": [],
+    "modelLoaded": true,
+    "modelError": null,
+    "ready": true
+  },
+  "js_exceptions": []
+}

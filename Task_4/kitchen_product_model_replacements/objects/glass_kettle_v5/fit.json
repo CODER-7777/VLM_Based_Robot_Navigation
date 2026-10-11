@@ -1,0 +1,300 @@
+{
+  "name": "glass_kettle_v5",
+  "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/glass_kettle_v5/world_pbr.glb",
+  "world_mesh": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/glass_kettle_v5/world.ply",
+  "matrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "base": [
+    1.686,
+    -3.658,
+    0.935
+  ],
+  "height": 0.24500006437301636,
+  "views": [
+    "d70e05c20c15468eb93117d496285f82_i2_0.jpg"
+  ],
+  "delete_aabb": [
+    [
+      1.594980001449585,
+      -3.748281478881836,
+      0.928084539521388
+    ],
+    [
+      1.7766649723052979,
+      -3.515582323074341,
+      1.1800000667572021
+    ]
+  ],
+  "keep_below_z": 0.935,
+  "delete_polygon": [
+    [
+      1.594980001449585,
+      -3.748281478881836
+    ],
+    [
+      1.6824428314982531,
+      -3.7530495442504153
+    ],
+    [
+      1.6828847069246147,
+      -3.753069107913348
+    ],
+    [
+      1.6891152930753852,
+      -3.753069107913348
+    ],
+    [
+      1.6895571685017468,
+      -3.7530495442504153
+    ],
+    [
+      1.7766649723052979,
+      -3.748281478881836
+    ],
+    [
+      1.7805843641899692,
+      -3.6244864649335318
+    ],
+    [
+      1.780581014962296,
+      -3.623968902071739
+    ],
+    [
+      1.7766649723052979,
+      -3.515582323074341
+    ],
+    [
+      1.594980001449585,
+      -3.515582323074341
+    ]
+  ],
+  "spec": {
+    "name": "glass_kettle_v2",
+    "old": "glass_kettle",
+    "base": [
+      1.686,
+      -3.658,
+      0.935
+    ],
+    "yaw_deg": 90,
+    "views": [
+      "d70e05c20c15468eb93117d496285f82_i2_0.jpg"
+    ],
+    "note": "glass electric kettle on black power base, chrome trim/lid/handle (real ~17 cm dia, 24 cm tall); glass cannot be transparent in the matte stage, so a smoky grey stands in",
+    "parts": [
+      {
+        "type": "lathe",
+        "profile": [
+          [
+            0,
+            0.085
+          ],
+          [
+            0.03,
+            0.085
+          ],
+          [
+            0.031,
+            0.07
+          ],
+          [
+            0.04,
+            0.076
+          ],
+          [
+            0.07,
+            0.084
+          ],
+          [
+            0.11,
+            0.082
+          ],
+          [
+            0.15,
+            0.074
+          ],
+          [
+            0.185,
+            0.064
+          ],
+          [
+            0.2,
+            0.06
+          ],
+          [
+            0.205,
+            0.063
+          ],
+          [
+            0.215,
+            0.063
+          ],
+          [
+            0.22,
+            0.05
+          ],
+          [
+            0.235,
+            0.03
+          ],
+          [
+            0.24,
+            0.012
+          ],
+          [
+            0.245,
+            0.0
+          ]
+        ],
+        "bands": [
+          [
+            0.03,
+            [
+              34,
+              36,
+              42
+            ]
+          ],
+          [
+            0.04,
+            [
+              168,
+              170,
+              178
+            ]
+          ],
+          [
+            0.2,
+            [
+              150,
+              156,
+              156
+            ]
+          ],
+          [
+            1,
+            [
+              168,
+              170,
+              178
+            ]
+          ]
+        ]
+      },
+      {
+        "type": "tube",
+        "points": [
+          [
+            0.06,
+            0,
+            0.212
+          ],
+          [
+            0.105,
+            0,
+            0.205
+          ],
+          [
+            0.118,
+            0,
+            0.15
+          ],
+          [
+            0.105,
+            0,
+            0.075
+          ],
+          [
+            0.07,
+            0,
+            0.055
+          ]
+        ],
+        "r": 0.012,
+        "rgb": [
+          150,
+          152,
+          160
+        ]
+      },
+      {
+        "type": "tube",
+        "points": [
+          [
+            -0.055,
+            0,
+            0.198
+          ],
+          [
+            -0.075,
+            0,
+            0.21
+          ],
+          [
+            -0.085,
+            0,
+            0.214
+          ]
+        ],
+        "r": 0.014,
+        "rgb": [
+          122,
+          126,
+          126
+        ]
+      }
+    ]
+  },
+  "finish": "bake_finish_b.py kitchen/products/island/specs/finish_glass_kettle_v2.json",
+  "appearance_revision": "Kitchen all-object photo support and physical finish v3",
+  "geometry_changed": true,
+  "product": {
+    "uid": "bba458a4a294440b95c7fe486d3a3d45",
+    "name": "Electronic Kettle",
+    "author": "Grifonov",
+    "license": "by",
+    "url": "https://sketchfab.com/3d-models/bba458a4a294440b95c7fe486d3a3d45"
+  },
+  "realism_notes": "Downloaded glass electric-kettle substitute with clear glass transmission, detailed spout and curved handle. The photo has a rounder body and a different lid.",
+  "placement_refinement": {
+    "previous_fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/glass_kettle_v3/fit.json",
+    "locked_height_m": 0.245,
+    "yaw_deg": -25,
+    "bounds_raw": [
+      [
+        1.594980001449585,
+        -3.748281478881836,
+        0.9350000023841858
+      ],
+      [
+        1.7766649723052979,
+        -3.515582323074341,
+        1.1800000667572021
+      ]
+    ]
+  }
+}

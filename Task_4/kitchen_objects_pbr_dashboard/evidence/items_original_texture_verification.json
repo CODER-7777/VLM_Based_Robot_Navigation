@@ -1,0 +1,17 @@
+[
+  {
+    "name": "toaster_normal",
+    "sha256": "57405d710f4b500e76fe9be1fbc3aa3df80889a01ff3c8e6bdd62a9249f0f8ba",
+    "preserved": true
+  },
+  {
+    "name": "toaster_metallicRoughness",
+    "sha256": "7d7e0193549c2cca69124fc29506b578d1b11a4f2522051bebbcb409cc233353",
+    "preserved": true
+  },
+  {
+    "name": "toaster_baseColor",
+    "sha256": "3c3d1f651e30efe6d1a4cc5ec03419bd99051e165ad929f158df2ff49ea66b48",
+    "preserved": true
+  }
+]

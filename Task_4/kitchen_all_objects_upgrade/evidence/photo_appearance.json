@@ -1,0 +1,167 @@
+{
+  "objects": [
+    {
+      "object": "hot_tap",
+      "photo": "f7a060bfa1164b5e9c5cca04284f6d6b_i2_5.jpg",
+      "surface_samples": 10681,
+      "photo_supported": 3357,
+      "fraction": 0.3142964141934276,
+      "mask": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/masks/hot_tap.png"
+    },
+    {
+      "object": "soap_dish",
+      "photo": "f7a060bfa1164b5e9c5cca04284f6d6b_i2_5.jpg",
+      "surface_samples": 11937,
+      "photo_supported": 4803,
+      "fraction": 0.402362402613722,
+      "mask": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/masks/soap_dish.png"
+    },
+    {
+      "object": "soap_pump",
+      "photo": "f7a060bfa1164b5e9c5cca04284f6d6b_i2_5.jpg",
+      "surface_samples": 7126,
+      "photo_supported": 2195,
+      "fraction": 0.308026943586865,
+      "mask": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/masks/soap_pump.png"
+    },
+    {
+      "object": "air_gap",
+      "photo": "f7a060bfa1164b5e9c5cca04284f6d6b_i2_5.jpg",
+      "surface_samples": 5621,
+      "photo_supported": 1964,
+      "fraction": 0.34940402063689735,
+      "mask": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/masks/air_gap.png"
+    },
+    {
+      "object": "soap_bottle",
+      "photo": "58348305b0f84dd8b161aaf2d5b945ef_i2_4.jpg",
+      "surface_samples": 21530,
+      "photo_supported": 5511,
+      "fraction": 0.2559684161634928,
+      "mask": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/masks/soap_bottle.png"
+    },
+    {
+      "object": "canister_l",
+      "photo": "58348305b0f84dd8b161aaf2d5b945ef_i2_4.jpg",
+      "surface_samples": 80945,
+      "photo_supported": 22082,
+      "fraction": 0.2728025202297857,
+      "mask": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/masks/canister_l.png"
+    },
+    {
+      "object": "canister_r",
+      "photo": "58348305b0f84dd8b161aaf2d5b945ef_i2_4.jpg",
+      "surface_samples": 80945,
+      "photo_supported": 25073,
+      "fraction": 0.30975353635184383,
+      "mask": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/masks/canister_r.png"
+    },
+    {
+      "object": "knife_block_round",
+      "photo": "f7a060bfa1164b5e9c5cca04284f6d6b_i2_3.jpg",
+      "surface_samples": 82767,
+      "photo_supported": 12999,
+      "fraction": 0.15705534814600022,
+      "mask": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/masks/knife_block_round.png"
+    },
+    {
+      "object": "knife_block",
+      "photo": "f7a060bfa1164b5e9c5cca04284f6d6b_i2_3.jpg",
+      "surface_samples": 65896,
+      "photo_supported": 11687,
+      "fraction": 0.17735522641738496,
+      "mask": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/masks/knife_block.png"
+    },
+    {
+      "object": "blue_jug",
+      "photo": "f7a060bfa1164b5e9c5cca04284f6d6b_i2_3.jpg",
+      "surface_samples": 19074,
+      "photo_supported": 6217,
+      "fraction": 0.3259410716158121,
+      "mask": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/masks/blue_jug.png"
+    },
+    {
+      "object": "caddy",
+      "photo": "f7a060bfa1164b5e9c5cca04284f6d6b_i2_4.jpg",
+      "surface_samples": 174878,
+      "photo_supported": 56099,
+      "fraction": 0.3207893502899164,
+      "mask": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/masks/caddy.png"
+    },
+    {
+      "object": "bottles",
+      "photo": "f7a060bfa1164b5e9c5cca04284f6d6b_i2_4.jpg",
+      "surface_samples": 22161,
+      "photo_supported": 7078,
+      "fraction": 0.3193899192274717,
+      "mask": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/masks/bottles.png"
+    },
+    {
+      "object": "tea_tray",
+      "photo": "d70e05c20c15468eb93117d496285f82_i2_0.jpg",
+      "surface_samples": 149425,
+      "photo_supported": 49441,
+      "fraction": 0.33087502091350174,
+      "mask": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/masks/tea_tray.png"
+    },
+    {
+      "object": "glass_kettle",
+      "photo": "d70e05c20c15468eb93117d496285f82_i2_0.jpg",
+      "surface_samples": 66540,
+      "photo_supported": 16604,
+      "fraction": 0.2495341148181545,
+      "mask": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/masks/glass_kettle.png"
+    },
+    {
+      "object": "frother",
+      "photo": "d70e05c20c15468eb93117d496285f82_i2_0.jpg",
+      "surface_samples": 34199,
+      "photo_supported": 7841,
+      "fraction": 0.2292757098160765,
+      "mask": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/masks/frother.png"
+    },
+    {
+      "object": "coffee_machine",
+      "photo": "1113418419f84a5c80586634f7611f14_i2_4.jpg",
+      "surface_samples": 153507,
+      "photo_supported": 53386,
+      "fraction": 0.3477756714677507,
+      "mask": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/masks/coffee_machine.png"
+    },
+    {
+      "object": "grinder",
+      "photo": "1eae5d4a0c0146c2b884d6b96d9b0e16_i2_3.jpg",
+      "surface_samples": 97852,
+      "photo_supported": 31133,
+      "fraction": 0.3181641662919511,
+      "mask": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/masks/grinder.png"
+    },
+    {
+      "object": "range_kettle",
+      "photo": "1eae5d4a0c0146c2b884d6b96d9b0e16_i2_3.jpg",
+      "surface_samples": 53988,
+      "photo_supported": 13066,
+      "fraction": 0.24201674446173224,
+      "mask": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/masks/range_kettle.png"
+    },
+    {
+      "object": "frogs",
+      "photo": "f7a060bfa1164b5e9c5cca04284f6d6b_i1_4.jpg",
+      "surface_samples": 85976,
+      "photo_supported": 6961,
+      "fraction": 0.08096445519679911,
+      "mask": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/masks/frogs.png"
+    },
+    {
+      "object": "paper_towel",
+      "photo": "f7a060bfa1164b5e9c5cca04284f6d6b_i2_4.jpg",
+      "surface_samples": 84665,
+      "photo_supported": 26481,
+      "fraction": 0.31277387350144686,
+      "mask": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/masks/paper_towel.png"
+    }
+  ],
+  "geometry_changed": false,
+  "elapsed_s": 20.229684114456177,
+  "limitations": "Colors are photo-grounded, hidden surfaces remain approximate; this is fixed-light Gaussian appearance, not relightable PBR."
+}

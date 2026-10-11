@@ -1,0 +1,480 @@
+{
+  "scene": {
+    "toasterParts": 11,
+    "originalPbr": true,
+    "items": {
+      "toaster": {
+        "parts": 11,
+        "bounds": {
+          "min": [
+            4.426028036350384,
+            0.9290000136497527,
+            5.044254743655104
+          ],
+          "max": [
+            4.6130971337824755,
+            1.129000001970904,
+            5.339230101664841
+          ]
+        },
+        "standardMaterials": 11,
+        "method": "downloaded product, fitted and adapted"
+      },
+      "blue_jug": {
+        "parts": 1,
+        "bounds": {
+          "min": [
+            7.011108365631103,
+            0.9290007824568924,
+            4.409940398834739
+          ],
+          "max": [
+            7.0810595184326175,
+            0.9800007525802086,
+            4.464059240519392
+          ]
+        },
+        "standardMaterials": 1,
+        "method": "photo-built fitted mesh"
+      },
+      "phone": {
+        "parts": 22,
+        "bounds": {
+          "min": [
+            6.7635979652404785,
+            0.9290009737014762,
+            2.3971364498138437
+          ],
+          "max": [
+            7.07997989654541,
+            1.0280010700225821,
+            2.62758755683899
+          ]
+        },
+        "standardMaterials": 22,
+        "method": "downloaded product, fitted and adapted"
+      },
+      "canister_l": {
+        "parts": 4,
+        "bounds": {
+          "min": [
+            4.767000198364258,
+            0.9290018614727157,
+            5.309999546029814
+          ],
+          "max": [
+            4.89900016784668,
+            1.1642518983904022,
+            5.433999630642069
+          ]
+        },
+        "standardMaterials": 4,
+        "method": "photo-built fitted mesh"
+      },
+      "canister_r": {
+        "parts": 4,
+        "bounds": {
+          "min": [
+            4.61899995803833,
+            0.9290018593929202,
+            5.303999504068144
+          ],
+          "max": [
+            4.750999927520752,
+            1.1642518963104416,
+            5.427999588680399
+          ]
+        },
+        "standardMaterials": 4,
+        "method": "photo-built fitted mesh"
+      },
+      "soap_bottle": {
+        "parts": 2,
+        "bounds": {
+          "min": [
+            4.987540245056152,
+            0.929001855420283,
+            5.294540031229796
+          ],
+          "max": [
+            5.075850486755371,
+            1.1250018573901568,
+            5.379459059058519
+          ]
+        },
+        "standardMaterials": 2,
+        "method": "photo-built fitted mesh"
+      },
+      "soap_dish": {
+        "parts": 2,
+        "bounds": {
+          "min": [
+            5.8385539054870605,
+            0.9290018834380127,
+            5.3753625406326755
+          ],
+          "max": [
+            5.931446075439453,
+            0.95900187814903,
+            5.442637121497484
+          ]
+        },
+        "standardMaterials": 2,
+        "method": "photo-built fitted mesh"
+      },
+      "bottles": {
+        "parts": 4,
+        "bounds": {
+          "min": [
+            6.7134318351745605,
+            0.9290018047998624,
+            5.148515808049273
+          ],
+          "max": [
+            6.836430549621582,
+            1.0675876483455,
+            5.2571322081674055
+          ]
+        },
+        "standardMaterials": 4,
+        "method": "photo-built fitted mesh"
+      },
+      "paper_towel": {
+        "parts": 2,
+        "bounds": {
+          "min": [
+            6.329999923706055,
+            0.929001848993117,
+            5.275999585752829
+          ],
+          "max": [
+            6.480000019073486,
+            1.2610019181579406,
+            5.425999796210618
+          ]
+        },
+        "standardMaterials": 2,
+        "method": "photo-built fitted mesh"
+      },
+      "caddy": {
+        "parts": 5,
+        "bounds": {
+          "min": [
+            6.891499996185303,
+            0.9290015935268601,
+            4.710999579837709
+          ],
+          "max": [
+            7.071000099182129,
+            1.169001779491851,
+            5.048999464331977
+          ]
+        },
+        "standardMaterials": 5,
+        "method": "photo-built fitted mesh"
+      },
+      "knife_block": {
+        "parts": 18,
+        "bounds": {
+          "min": [
+            6.882893249205621,
+            0.9290000471568368,
+            4.251328587706672
+          ],
+          "max": [
+            7.075863483093908,
+            1.2299999814270572,
+            4.328443420161724
+          ]
+        },
+        "standardMaterials": 18,
+        "method": "downloaded product, fitted and adapted"
+      },
+      "knife_block_round": {
+        "parts": 7,
+        "bounds": {
+          "min": [
+            6.970955245895652,
+            0.9290000314467447,
+            4.032926997928347
+          ],
+          "max": [
+            7.079045195337926,
+            1.254274003771519,
+            4.207072104059053
+          ]
+        },
+        "standardMaterials": 7,
+        "method": "photo-built fitted mesh"
+      },
+      "grinder": {
+        "parts": 5,
+        "bounds": {
+          "min": [
+            6.921500205993652,
+            0.9290009499363618,
+            2.6729996974051544
+          ],
+          "max": [
+            7.061999797821045,
+            1.1535009379540535,
+            2.818499676931137
+          ]
+        },
+        "standardMaterials": 6,
+        "method": "downloaded product, fitted and adapted"
+      },
+      "range_kettle": {
+        "parts": 3,
+        "bounds": {
+          "min": [
+            6.755090265298748,
+            0.9909999670615287,
+            3.0900641876973345
+          ],
+          "max": [
+            7.022340083573736,
+            1.2309999685875492,
+            3.3654291528491243
+          ]
+        },
+        "standardMaterials": 3,
+        "method": "downloaded product, fitted and adapted"
+      },
+      "hot_tap": {
+        "parts": 6,
+        "bounds": {
+          "min": [
+            5.849932156505784,
+            0.9290000200271584,
+            5.284773088472598
+          ],
+          "max": [
+            6.01976062993922,
+            1.1611309965072842,
+            5.426259062098644
+          ]
+        },
+        "standardMaterials": 6,
+        "method": "downloaded product, fitted and adapted"
+      },
+      "soap_pump": {
+        "parts": 2,
+        "bounds": {
+          "min": [
+            5.265450954437256,
+            0.9290018690838211,
+            5.327212448197682
+          ],
+          "max": [
+            5.346459865570068,
+            1.0479735329744972,
+            5.379305995299493
+          ]
+        },
+        "standardMaterials": 2,
+        "method": "photo-built fitted mesh"
+      },
+      "air_gap": {
+        "parts": 2,
+        "bounds": {
+          "min": [
+            5.185344696044922,
+            0.9290018336827437,
+            5.316161760513958
+          ],
+          "max": [
+            5.239397048950195,
+            1.014411967684585,
+            5.370214618096836
+          ]
+        },
+        "standardMaterials": 2,
+        "method": "photo-built fitted mesh"
+      },
+      "frogs": {
+        "parts": 8,
+        "bounds": {
+          "min": [
+            6.646570682525635,
+            0.9290018005819211,
+            5.136348292083108
+          ],
+          "max": [
+            6.94223690032959,
+            1.2580018938436806,
+            5.416457807837816
+          ]
+        },
+        "standardMaterials": 8,
+        "method": "photo-built fitted mesh"
+      },
+      "tea_tray": {
+        "parts": 4,
+        "bounds": {
+          "min": [
+            1.5161341428756714,
+            0.9350012972019294,
+            3.7531475077085084
+          ],
+          "max": [
+            1.8238658905029297,
+            1.0990000128346944,
+            4.162851724748966
+          ]
+        },
+        "standardMaterials": 4,
+        "method": "downloaded product, fitted and adapted"
+      },
+      "glass_kettle": {
+        "parts": 7,
+        "bounds": {
+          "min": [
+            1.565098293316381,
+            0.934999988386801,
+            3.4813023461841905
+          ],
+          "max": [
+            1.8312941090889092,
+            1.1800000118110003,
+            3.778202720513228
+          ]
+        },
+        "standardMaterials": 7,
+        "method": "downloaded product, fitted and adapted"
+      },
+      "frother": {
+        "parts": 3,
+        "bounds": {
+          "min": [
+            1.6145281152153204,
+            0.9349999993861489,
+            3.4215280370140277
+          ],
+          "max": [
+            1.7214718504524043,
+            1.12500002602625,
+            3.5284717722511116
+          ]
+        },
+        "standardMaterials": 6,
+        "method": "downloaded product, fitted and adapted"
+      },
+      "coffee_machine": {
+        "parts": 3,
+        "bounds": {
+          "min": [
+            1.6227249950170517,
+            0.9350000023842983,
+            3.1729564592242254
+          ],
+          "max": [
+            1.910162702202797,
+            1.1539004296064366,
+            3.2745707109570517
+          ]
+        },
+        "standardMaterials": 3,
+        "method": "downloaded product, fitted and adapted"
+      }
+    }
+  },
+  "photos": [
+    {
+      "photo": "1eae5d4a0c0146c2b884d6b96d9b0e16_i2_3.jpg",
+      "capture": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_4/kitchen_product_model_replacements/images/photo_1eae5d4a0c0146c2b884d6b96d9b0e16_i2_3.jpg",
+      "camera": {
+        "K": [
+          [
+            1067.16,
+            0.0,
+            633.227
+          ],
+          [
+            0.0,
+            1066.29,
+            521.482
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "c2w_raw_gl": [
+          [
+            -0.457226,
+            0.593022,
+            -0.662775,
+            5.9837
+          ],
+          [
+            -0.889348,
+            -0.302804,
+            0.342594,
+            -2.36235
+          ],
+          [
+            0.00247495,
+            0.74608,
+            0.665852,
+            1.55335
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "width": 1280,
+        "height": 1024
+      }
+    }
+  ],
+  "room_views": [
+    {
+      "id": "phone",
+      "mode": "inspect",
+      "camera": [
+        5.983700000000001,
+        1.55335,
+        2.3623500000000006
+      ],
+      "target": [
+        0.8448283865588766,
+        -0.5177001014744337,
+        0.13509849073060212
+      ]
+    },
+    {
+      "id": "grinder",
+      "mode": "inspect",
+      "camera": [
+        6.271113334306014,
+        1.4073412733324924,
+        2.4716642029188813
+      ],
+      "target": [
+        0.8443312219712313,
+        -0.4289283477515403,
+        0.32113121944105827
+      ]
+    },
+    {
+      "id": "range_kettle",
+      "mode": "inspect",
+      "camera": [
+        6.20308463305893,
+        1.4461199753179597,
+        2.5721307156400206
+      ],
+      "target": [
+        0.6814770102446339,
+        -0.33308985962178167,
+        0.651644251048973
+      ]
+    }
+  ],
+  "js_exceptions": []
+}

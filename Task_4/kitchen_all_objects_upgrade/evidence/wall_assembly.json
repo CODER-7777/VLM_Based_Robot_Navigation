@@ -1,0 +1,97 @@
+[
+  {
+    "name": "sink_back",
+    "axis": 0,
+    "fixed": -5.447,
+    "horizontal": [
+      4.41,
+      7.1
+    ],
+    "vertical": [
+      0.932,
+      1.4
+    ],
+    "normal": [
+      0,
+      1,
+      0
+    ],
+    "texture": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/sink_back_tile.png",
+    "observed_fraction": 0.4265382241358545,
+    "views": [
+      "f7a060bfa1164b5e9c5cca04284f6d6b_i1_5.jpg",
+      "58348305b0f84dd8b161aaf2d5b945ef_i1_4.jpg",
+      "58348305b0f84dd8b161aaf2d5b945ef_i1_3.jpg",
+      "f7a060bfa1164b5e9c5cca04284f6d6b_i1_4.jpg",
+      "1eae5d4a0c0146c2b884d6b96d9b0e16_i1_4.jpg",
+      "58348305b0f84dd8b161aaf2d5b945ef_i2_4.jpg",
+      "f7a060bfa1164b5e9c5cca04284f6d6b_i2_5.jpg",
+      "d70e05c20c15468eb93117d496285f82_i1_4.jpg",
+      "e22e764c60c44da28c2ba3e5c93fd44f_i1_2.jpg",
+      "f7a060bfa1164b5e9c5cca04284f6d6b_i2_4.jpg",
+      "58348305b0f84dd8b161aaf2d5b945ef_i2_3.jpg"
+    ]
+  },
+  {
+    "name": "sink_right",
+    "axis": 1,
+    "fixed": 7.103,
+    "horizontal": [
+      -5.447,
+      -3.995
+    ],
+    "vertical": [
+      0.932,
+      1.4
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "texture": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/sink_right_tile.png",
+    "observed_fraction": 0.299478149243735,
+    "views": [
+      "f7a060bfa1164b5e9c5cca04284f6d6b_i1_4.jpg",
+      "f7a060bfa1164b5e9c5cca04284f6d6b_i1_3.jpg",
+      "f7a060bfa1164b5e9c5cca04284f6d6b_i2_4.jpg",
+      "58348305b0f84dd8b161aaf2d5b945ef_i1_3.jpg",
+      "1eae5d4a0c0146c2b884d6b96d9b0e16_i1_4.jpg",
+      "58348305b0f84dd8b161aaf2d5b945ef_i1_2.jpg",
+      "1eae5d4a0c0146c2b884d6b96d9b0e16_i1_3.jpg"
+    ]
+  },
+  {
+    "name": "range_right",
+    "axis": 1,
+    "fixed": 7.103,
+    "horizontal": [
+      -3.081,
+      -2.236
+    ],
+    "vertical": [
+      0.932,
+      1.4
+    ],
+    "normal": [
+      -1,
+      0,
+      0
+    ],
+    "texture": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/range_right_tile.png",
+    "observed_fraction": 0.7649134790528234,
+    "views": [
+      "1eae5d4a0c0146c2b884d6b96d9b0e16_i1_3.jpg",
+      "1eae5d4a0c0146c2b884d6b96d9b0e16_i2_3.jpg",
+      "f7a060bfa1164b5e9c5cca04284f6d6b_i1_2.jpg",
+      "f5a6564a68744895b25176ee9af53c57_i1_2.jpg",
+      "58348305b0f84dd8b161aaf2d5b945ef_i1_2.jpg",
+      "8b00915324764301b56bc873b06b1b1d_i1_3.jpg",
+      "e22e764c60c44da28c2ba3e5c93fd44f_i1_1.jpg",
+      "8b00915324764301b56bc873b06b1b1d_i1_4.jpg",
+      "8b00915324764301b56bc873b06b1b1d_i2_3.jpg",
+      "20a5c1beab4245c0b293283af82b1a16_i1_3.jpg",
+      "20a5c1beab4245c0b293283af82b1a16_i1_4.jpg"
+    ]
+  }
+]

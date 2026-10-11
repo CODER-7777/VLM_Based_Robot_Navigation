@@ -1,0 +1,11 @@
+{
+  "gsplat_version": "1.5.3",
+  "shape": [
+    1,
+    64,
+    64,
+    4
+  ],
+  "center_depth_m": 2.0,
+  "first_call_including_compile_s": 150.06239092163742
+}

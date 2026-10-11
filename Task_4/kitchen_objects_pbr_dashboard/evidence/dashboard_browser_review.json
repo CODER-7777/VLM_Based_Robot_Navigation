@@ -1,0 +1,404 @@
+{
+  "base": "http://127.0.0.1:8784",
+  "comparisons": [
+    {
+      "selected": "toaster",
+      "images": [
+        {
+          "width": 285,
+          "height": 380
+        },
+        {
+          "width": 285,
+          "height": 380
+        }
+      ]
+    },
+    {
+      "selected": "blue_jug",
+      "images": [
+        {
+          "width": 163,
+          "height": 188
+        },
+        {
+          "width": 163,
+          "height": 188
+        }
+      ]
+    },
+    {
+      "selected": "phone",
+      "images": [
+        {
+          "width": 363,
+          "height": 383
+        },
+        {
+          "width": 363,
+          "height": 383
+        }
+      ]
+    },
+    {
+      "selected": "canister_l",
+      "images": [
+        {
+          "width": 204,
+          "height": 301
+        },
+        {
+          "width": 204,
+          "height": 301
+        }
+      ]
+    },
+    {
+      "selected": "canister_r",
+      "images": [
+        {
+          "width": 220,
+          "height": 301
+        },
+        {
+          "width": 220,
+          "height": 301
+        }
+      ]
+    },
+    {
+      "selected": "soap_bottle",
+      "images": [
+        {
+          "width": 197,
+          "height": 267
+        },
+        {
+          "width": 197,
+          "height": 267
+        }
+      ]
+    },
+    {
+      "selected": "soap_dish",
+      "images": [
+        {
+          "width": 210,
+          "height": 173
+        },
+        {
+          "width": 210,
+          "height": 173
+        }
+      ]
+    },
+    {
+      "selected": "bottles",
+      "images": [
+        {
+          "width": 208,
+          "height": 204
+        },
+        {
+          "width": 208,
+          "height": 204
+        }
+      ]
+    },
+    {
+      "selected": "paper_towel",
+      "images": [
+        {
+          "width": 295,
+          "height": 310
+        },
+        {
+          "width": 295,
+          "height": 310
+        }
+      ]
+    },
+    {
+      "selected": "caddy",
+      "images": [
+        {
+          "width": 380,
+          "height": 298
+        },
+        {
+          "width": 380,
+          "height": 298
+        }
+      ]
+    },
+    {
+      "selected": "knife_block",
+      "images": [
+        {
+          "width": 316,
+          "height": 360
+        },
+        {
+          "width": 316,
+          "height": 360
+        }
+      ]
+    },
+    {
+      "selected": "knife_block_round",
+      "images": [
+        {
+          "width": 240,
+          "height": 378
+        },
+        {
+          "width": 240,
+          "height": 378
+        }
+      ]
+    },
+    {
+      "selected": "grinder",
+      "images": [
+        {
+          "width": 233,
+          "height": 267
+        },
+        {
+          "width": 233,
+          "height": 267
+        }
+      ]
+    },
+    {
+      "selected": "range_kettle",
+      "images": [
+        {
+          "width": 264,
+          "height": 277
+        },
+        {
+          "width": 264,
+          "height": 277
+        }
+      ]
+    },
+    {
+      "selected": "hot_tap",
+      "images": [
+        {
+          "width": 215,
+          "height": 285
+        },
+        {
+          "width": 215,
+          "height": 285
+        }
+      ]
+    },
+    {
+      "selected": "soap_pump",
+      "images": [
+        {
+          "width": 165,
+          "height": 187
+        },
+        {
+          "width": 165,
+          "height": 187
+        }
+      ]
+    },
+    {
+      "selected": "air_gap",
+      "images": [
+        {
+          "width": 144,
+          "height": 176
+        },
+        {
+          "width": 144,
+          "height": 176
+        }
+      ]
+    },
+    {
+      "selected": "frogs",
+      "images": [
+        {
+          "width": 495,
+          "height": 410
+        },
+        {
+          "width": 495,
+          "height": 410
+        }
+      ]
+    },
+    {
+      "selected": "tea_tray",
+      "images": [
+        {
+          "width": 422,
+          "height": 283
+        },
+        {
+          "width": 422,
+          "height": 283
+        }
+      ]
+    },
+    {
+      "selected": "glass_kettle",
+      "images": [
+        {
+          "width": 264,
+          "height": 293
+        },
+        {
+          "width": 264,
+          "height": 293
+        }
+      ]
+    },
+    {
+      "selected": "frother",
+      "images": [
+        {
+          "width": 239,
+          "height": 298
+        },
+        {
+          "width": 239,
+          "height": 298
+        }
+      ]
+    },
+    {
+      "selected": "coffee_machine",
+      "images": [
+        {
+          "width": 315,
+          "height": 292
+        },
+        {
+          "width": 315,
+          "height": 292
+        }
+      ]
+    }
+  ],
+  "room_switches": [
+    {
+      "id": "toaster",
+      "originalPbr": true,
+      "parts": 11
+    },
+    {
+      "id": "blue_jug",
+      "originalPbr": true,
+      "parts": 1
+    },
+    {
+      "id": "phone",
+      "originalPbr": true,
+      "parts": 22
+    },
+    {
+      "id": "canister_l",
+      "originalPbr": true,
+      "parts": 4
+    },
+    {
+      "id": "canister_r",
+      "originalPbr": true,
+      "parts": 4
+    },
+    {
+      "id": "soap_bottle",
+      "originalPbr": true,
+      "parts": 2
+    },
+    {
+      "id": "soap_dish",
+      "originalPbr": true,
+      "parts": 2
+    },
+    {
+      "id": "bottles",
+      "originalPbr": true,
+      "parts": 4
+    },
+    {
+      "id": "paper_towel",
+      "originalPbr": true,
+      "parts": 2
+    },
+    {
+      "id": "caddy",
+      "originalPbr": true,
+      "parts": 5
+    },
+    {
+      "id": "knife_block",
+      "originalPbr": true,
+      "parts": 4
+    },
+    {
+      "id": "knife_block_round",
+      "originalPbr": true,
+      "parts": 3
+    },
+    {
+      "id": "grinder",
+      "originalPbr": true,
+      "parts": 5
+    },
+    {
+      "id": "range_kettle",
+      "originalPbr": true,
+      "parts": 3
+    },
+    {
+      "id": "hot_tap",
+      "originalPbr": true,
+      "parts": 4
+    },
+    {
+      "id": "soap_pump",
+      "originalPbr": true,
+      "parts": 2
+    },
+    {
+      "id": "air_gap",
+      "originalPbr": true,
+      "parts": 2
+    },
+    {
+      "id": "frogs",
+      "originalPbr": true,
+      "parts": 8
+    },
+    {
+      "id": "tea_tray",
+      "originalPbr": true,
+      "parts": 7
+    },
+    {
+      "id": "glass_kettle",
+      "originalPbr": true,
+      "parts": 6
+    },
+    {
+      "id": "frother",
+      "originalPbr": true,
+      "parts": 3
+    },
+    {
+      "id": "coffee_machine",
+      "originalPbr": true,
+      "parts": 3
+    }
+  ],
+  "exceptions": []
+}

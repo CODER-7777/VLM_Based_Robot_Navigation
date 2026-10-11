@@ -1,0 +1,120 @@
+{
+  "name": "grinder_v5",
+  "glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/grinder_v5/world_pbr.glb",
+  "world_mesh": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/grinder_v5/world.ply",
+  "matrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "base": [
+    6.99,
+    -2.75,
+    0.929
+  ],
+  "height": 0.22449994087219238,
+  "views": [
+    "1eae5d4a0c0146c2b884d6b96d9b0e16_i2_3.jpg"
+  ],
+  "delete_aabb": [
+    [
+      6.81,
+      -2.92,
+      0.926
+    ],
+    [
+      7.098,
+      -2.58,
+      1.21
+    ]
+  ],
+  "delete_polygon": [
+    [
+      6.81,
+      -2.92
+    ],
+    [
+      7.095,
+      -2.92
+    ],
+    [
+      7.098,
+      -2.9119431179382587
+    ],
+    [
+      7.098,
+      -2.594054179839244
+    ],
+    [
+      7.095,
+      -2.58
+    ],
+    [
+      7.018353396148385,
+      -2.5793094016555025
+    ],
+    [
+      6.81,
+      -2.58
+    ]
+  ],
+  "keep_below_z": 0.929,
+  "delete_mode": "centroid",
+  "method": "photo-informed parametric reconstruction",
+  "realism_notes": "Photo-built open-hopper grinder retained for silhouette fidelity. Licensed wood texture applied to its dark case; edges beveled and metal parts smoothed. The texture source is a knife holder, not a downloaded grinder model.",
+  "pose": {
+    "yaw_deg": 90
+  },
+  "protect_backsplash": true,
+  "textured_from": [
+    "1eae5d4a0c0146c2b884d6b96d9b0e16_i2_3.jpg"
+  ],
+  "photo_coverage": 0.014636559172018915,
+  "appearance_revision": "Kitchen all-object photo support and physical finish v3",
+  "geometry_changed": true,
+  "product": {
+    "uid": "967b767b-cd43-44f8-94c4-e3af008da71b",
+    "name": "Knife Holder with a Cutting Board",
+    "author": "Patrik ",
+    "license": "royalty_free",
+    "url": "https://www.blenderkit.com/asset-gallery-detail/967b767b-cd43-44f8-94c4-e3af008da71b/"
+  },
+  "placement_refinement": {
+    "previous_fit": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/grinder_v3/fit.json",
+    "locked_height_m": 0.2245,
+    "yaw_deg": 0,
+    "bounds_raw": [
+      [
+        6.921500205993652,
+        -2.8184995651245117,
+        0.9290000200271606
+      ],
+      [
+        7.062000274658203,
+        -2.672999620437622,
+        1.153499960899353
+      ]
+    ]
+  }
+}

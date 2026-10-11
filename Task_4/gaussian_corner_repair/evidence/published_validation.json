@@ -1,0 +1,16 @@
+{
+  "live_pose_preserved_on_publication": true,
+  "live_pose_unchanged_by_isolated_test": true,
+  "reference_button_passed": true,
+  "reference_camera_max_error": 5.398293841940571e-07,
+  "rgb_depth_pose_intrinsics_frame_agree": true,
+  "stale_frame_rejected": true,
+  "invalid_depth_is_nan": true,
+  "resolution": [
+    800,
+    640
+  ],
+  "reference_valid_depth_fraction": 0.98885546875,
+  "reference_cuda_raster_ms": 12.545023918151855,
+  "reference_rpc_scope": "CUDA timer excludes image encoding and transfer"
+}

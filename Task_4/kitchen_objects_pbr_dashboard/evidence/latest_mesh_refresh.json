@@ -1,0 +1,24 @@
+{
+  "source": "/data/robotics/toshith/rxr_author/refined/toaster_home_tour/home_pbr.glb",
+  "output": "/data/robotics/toshith/rxr_author/refined/toaster_home_tour/home_pbr_items.glb",
+  "replacements": [
+    {
+      "id": "blue_jug",
+      "source_glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/blue_jug_v4/world_pbr.glb",
+      "source_sha256": "37031f9d64b15bb8bec40ce20b93e80e164c4be77ea474dae384a4eab971bcd3",
+      "old_parts_removed": 1,
+      "new_mesh_parts": 1,
+      "materials_preserved": true
+    },
+    {
+      "id": "phone",
+      "source_glb": "/data/robotics/toshith/rxr_author/refined/kitchen/objects/phone_v4/world_pbr.glb",
+      "source_sha256": "47508438c9c615db1211d7ab272596b28c63a1092554af11b884f0c877d21263",
+      "old_parts_removed": 11,
+      "new_mesh_parts": 22,
+      "materials_preserved": true
+    }
+  ],
+  "unchanged_toaster_original_textures": true,
+  "bytes": 292220700
+}

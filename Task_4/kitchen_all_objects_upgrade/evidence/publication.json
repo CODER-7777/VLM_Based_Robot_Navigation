@@ -1,0 +1,160 @@
+{
+  "revision": "all_kitchen_v3",
+  "scene_glb": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/test.glb",
+  "visual_checkpoint": "/data/robotics/toshith/rxr_author/refined/kitchen_all_upgrade/scene_refined.npz",
+  "health": {
+    "ready": true,
+    "process": "independent_gsplat_cuda",
+    "gaussians": 4378360,
+    "revision": "all_kitchen_v3"
+  },
+  "camera_before": {
+    "frame_id": 83,
+    "width": 800,
+    "height": 640,
+    "K": [
+      [
+        666.9750000000001,
+        0,
+        395.76687499999997
+      ],
+      [
+        0,
+        666.43125,
+        325.92625
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "c2w_raw_gl": [
+      [
+        -0.9998654601706158,
+        -0.012917919549265904,
+        0.010108853165505832,
+        4.575479984283447
+      ],
+      [
+        0.016135414050127382,
+        -0.6636920713165104,
+        0.7478318546872893,
+        -4.1999101638793945
+      ],
+      [
+        -0.002951266039179683,
+        0.7478943520485488,
+        0.6638112142790654,
+        1.56024
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "coordinate_frame": "raw MP3D Z-up metres",
+    "agent_position_habitat": [
+      4.575479984283447,
+      0.11183337867259979,
+      4.1999101638793945
+    ],
+    "camera_position_habitat": [
+      4.575479984283447,
+      1.56024,
+      4.1999101638793945
+    ],
+    "last_motion_m": 0.0
+  },
+  "camera_after": {
+    "frame_id": 84,
+    "width": 800,
+    "height": 640,
+    "K": [
+      [
+        666.9750000000001,
+        0,
+        395.76687499999997
+      ],
+      [
+        0,
+        666.43125,
+        325.92625
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "c2w_raw_gl": [
+      [
+        -0.9998654601706158,
+        -0.012917919549265904,
+        0.010108853165505832,
+        4.575479984283447
+      ],
+      [
+        0.016135414050127382,
+        -0.6636920713165104,
+        0.7478318546872893,
+        -4.1999101638793945
+      ],
+      [
+        -0.002951266039179683,
+        0.7478943520485488,
+        0.6638112142790654,
+        1.56024
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "coordinate_frame": "raw MP3D Z-up metres",
+    "agent_position_habitat": [
+      4.575479984283447,
+      0.11183337867259979,
+      4.1999101638793945
+    ],
+    "camera_position_habitat": [
+      4.575479984283447,
+      1.56024,
+      4.1999101638793945
+    ],
+    "last_motion_m": 0.0
+  },
+  "prior_editor_preserved": true,
+  "shared_files_modified": false,
+  "review": {
+    "accepted": true,
+    "revision": "all_kitchen_v3",
+    "reviewed": "Actual real-photo triptychs for 23 item groups and five additional camera views; original metallic toaster is preserved.",
+    "changes": [
+      "Counter stone reprojected from actual photographs",
+      "Planar backsplash extended to close the seam",
+      "Canister decoration, caddy, bottle labels and tea/coffee surfaces photo-grounded",
+      "Phone fixed at physical support height with improved photo silhouette fit and photographed controls",
+      "Blue creamer constrained to the visible photo silhouette",
+      "Frog sparse reconstruction moved rigidly inward instead of distorted by point clipping"
+    ],
+    "limitations": [
+      "Frog statues remain sparse and approximate; this is not an exact new model",
+      "Blue creamer has a generic opening and handle; its size is estimated",
+      "Phone controls are photo-projected and its cord is simplified",
+      "Knife handles and their occluded intersections remain approximate",
+      "Hidden counter/backsplash texture uses photographic infill",
+      "Some original surrounding scan geometry and view gaps remain",
+      "Gaussian appearance is fixed lighting, not fully relightable PBR"
+    ],
+    "size_review": "Private audit explicitly reviews the 5.1 cm miniature creamer and 31.6 cm desk phone including handset/cord; original generic size thresholds would flag these. Support, counter, wall and overlap checks remain unchanged."
+  },
+  "backups": [
+    "/data/robotics/toshith/rxr_author/refined/split_visuals/scene_before_all_kitchen.npz",
+    "/data/robotics/toshith/rxr_author/refined/split_visuals/scene_before_all_kitchen.ply"
+  ]
+}

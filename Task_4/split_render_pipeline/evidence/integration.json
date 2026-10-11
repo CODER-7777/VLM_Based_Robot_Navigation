@@ -1,0 +1,19 @@
+{
+  "rgb_resolution": [
+    400,
+    320
+  ],
+  "initial_frame": 0,
+  "restored_frame": 2,
+  "pose_restored_after_left_right": true,
+  "stale_frame_rejected": true,
+  "rgb_depth_camera_synchronized": true,
+  "depth_invalid_pixels_are_nan": true,
+  "valid_depth_fraction": 0.96178125,
+  "depth_definition": "Gaussian expected optical-axis Z depth, metres; invalid below alpha 0.5",
+  "warm_cuda_raster_ms_400x320": 8.584192276000977,
+  "render_info_rpc_with_encoding_ms": 111.11582500052464,
+  "camera_transform_max_error": 5.398293841940571e-07,
+  "physics_has_no_visual_sensors": true,
+  "counter_wall_collision_probe_passed": true
+}

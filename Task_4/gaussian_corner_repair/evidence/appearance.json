@@ -1,0 +1,67 @@
+{
+  "counter_gaussians": 74276,
+  "counter_photo_supported": 42826,
+  "fallback_exposure_gain": [
+    0.8680265545845032,
+    0.9580891132354736,
+    1.1475980281829834
+  ],
+  "contact_occlusion_samples": 4500,
+  "contact_occlusion_max": 0.9788075701976819,
+  "pbr_teacher_train_views": 10,
+  "pbr_appearance_iterations": 2200,
+  "geometry_optimized": false,
+  "product_gaussians": 236546,
+  "loss_history": [
+    {
+      "step": 0,
+      "loss": 0.136256605386734
+    },
+    {
+      "step": 200,
+      "loss": 0.022826965898275375
+    },
+    {
+      "step": 400,
+      "loss": 0.016351614147424698
+    },
+    {
+      "step": 600,
+      "loss": 0.018575415015220642
+    },
+    {
+      "step": 800,
+      "loss": 0.020828401669859886
+    },
+    {
+      "step": 1000,
+      "loss": 0.019188402220606804
+    },
+    {
+      "step": 1200,
+      "loss": 0.017711007967591286
+    },
+    {
+      "step": 1400,
+      "loss": 0.02180122211575508
+    },
+    {
+      "step": 1600,
+      "loss": 0.01341236848384142
+    },
+    {
+      "step": 1800,
+      "loss": 0.012498009018599987
+    },
+    {
+      "step": 2000,
+      "loss": 0.01261863112449646
+    }
+  ],
+  "elapsed_seconds": 209.29282367788255,
+  "limits": [
+    "Local repaired corner only; broader scan distortions remain.",
+    "SH fits pre-rendered metallic appearance; it is not a relightable PBR material.",
+    "Countertop contact shading is approximate ambient occlusion."
+  ]
+}

@@ -1,0 +1,2208 @@
+{
+  "final_gaussians": 4378360,
+  "removed": 825622,
+  "new_fixed_samples": 4036166,
+  "old_retained": 218882,
+  "parts": [
+    {
+      "node": "Geometry_028.033",
+      "area_m2": 0.0067608056207086355,
+      "samples": 423,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_026.029",
+      "area_m2": 0.024846879994843626,
+      "samples": 1553,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_099.015",
+      "area_m2": 0.0033807013288103863,
+      "samples": 212,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_021.008",
+      "area_m2": 0.201949675430013,
+      "samples": 12622,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_019.006",
+      "area_m2": 5.119734407670669e-05,
+      "samples": 20,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_102.024",
+      "area_m2": 0.0009564699747024538,
+      "samples": 60,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_027.021",
+      "area_m2": 0.025471070087379685,
+      "samples": 1592,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_102.023",
+      "area_m2": 0.17352804704166017,
+      "samples": 10846,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_028.031",
+      "area_m2": 0.17837147157925062,
+      "samples": 11149,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_027.020",
+      "area_m2": 0.2674953519160653,
+      "samples": 16719,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_026.027",
+      "area_m2": 0.00021848335903517478,
+      "samples": 20,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_102.022",
+      "area_m2": 0.008884316332225011,
+      "samples": 556,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_028.030",
+      "area_m2": 0.009397988729365116,
+      "samples": 588,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_026.026",
+      "area_m2": 0.3251099572366449,
+      "samples": 20320,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_102.021",
+      "area_m2": 0.05451639069887004,
+      "samples": 3408,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_028.029",
+      "area_m2": 0.009386230481250346,
+      "samples": 587,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_027.018",
+      "area_m2": 0.0009835519186489048,
+      "samples": 62,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_026.025",
+      "area_m2": 0.7975052408408383,
+      "samples": 49845,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "SideRight.036",
+      "area_m2": 0.20256037145498498,
+      "samples": 12661,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "SideLeft.036",
+      "area_m2": 0.20256030505495523,
+      "samples": 12661,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "RightReveal.020",
+      "area_m2": 0.0733969095543753,
+      "samples": 4588,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "LeftReveal.020",
+      "area_m2": 0.0733968908702214,
+      "samples": 4588,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Floor.036",
+      "area_m2": 0.1662689991009811,
+      "samples": 10392,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "BottomReveal.020",
+      "area_m2": 0.06310087885238577,
+      "samples": 3944,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Back.036",
+      "area_m2": 0.23734136828375874,
+      "samples": 14834,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_102.020",
+      "area_m2": 0.08691476238844299,
+      "samples": 5433,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_028.028",
+      "area_m2": 0.20729827896695902,
+      "samples": 12957,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_027.017",
+      "area_m2": 0.07142226841444568,
+      "samples": 4464,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_026.024",
+      "area_m2": 0.0031265926434199016,
+      "samples": 196,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_028.027",
+      "area_m2": 0.006853795886118005,
+      "samples": 429,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_026.023",
+      "area_m2": 0.07009114409014836,
+      "samples": 4381,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "RestoredDense_028.001",
+      "area_m2": 0.001544545148804857,
+      "samples": 97,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "PreservedRGB_102.001",
+      "area_m2": 0.0008603524035780832,
+      "samples": 54,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "PreservedRGB_028.001",
+      "area_m2": 0.0005146161398863865,
+      "samples": 33,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "RestoredDense_102",
+      "area_m2": 0.0028315435492953043,
+      "samples": 177,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "RestoredDense_028",
+      "area_m2": 0.001099393623031247,
+      "samples": 69,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "RestoredDense_027",
+      "area_m2": 0.02109544087607277,
+      "samples": 1319,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "RestoredDense_026",
+      "area_m2": 0.0023571281969567105,
+      "samples": 148,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "RestoredDense_025",
+      "area_m2": 0.012162735459771987,
+      "samples": 761,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "PreservedRGB_028",
+      "area_m2": 0.009636518057178816,
+      "samples": 603,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "PreservedRGB_025",
+      "area_m2": 0.001280180794398415,
+      "samples": 81,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_102.016",
+      "area_m2": 1.077386828147447e-05,
+      "samples": 20,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_025.019",
+      "area_m2": 0.000234782195329857,
+      "samples": 20,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_102.015",
+      "area_m2": 0.004070593811662781,
+      "samples": 255,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_028.023",
+      "area_m2": 0.000294913967494055,
+      "samples": 20,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_026.021",
+      "area_m2": 0.0025588055127790683,
+      "samples": 160,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "SideRight.019",
+      "area_m2": 0.1977802376441988,
+      "samples": 12362,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "SideLeft.019",
+      "area_m2": 0.19778018135399927,
+      "samples": 12362,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "RightReveal.011",
+      "area_m2": 0.07162192858263446,
+      "samples": 4477,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "LeftReveal.011",
+      "area_m2": 0.0716219128398855,
+      "samples": 4477,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Floor.019",
+      "area_m2": 0.138025624715996,
+      "samples": 8627,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "BottomReveal.011",
+      "area_m2": 0.05258924222371142,
+      "samples": 3287,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Back.019",
+      "area_m2": 0.19311009446042662,
+      "samples": 12070,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "SideRight.018",
+      "area_m2": 0.19778028976616968,
+      "samples": 12362,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "SideLeft.018",
+      "area_m2": 0.1977802375458414,
+      "samples": 12362,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "RightReveal.010",
+      "area_m2": 0.07162195141528135,
+      "samples": 4477,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "LeftReveal.010",
+      "area_m2": 0.0716219302428988,
+      "samples": 4477,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Floor.018",
+      "area_m2": 0.15666391266473284,
+      "samples": 9792,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "BottomReveal.010",
+      "area_m2": 0.05952604910289515,
+      "samples": 3721,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Back.018",
+      "area_m2": 0.21860335621554888,
+      "samples": 13663,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "SideRight.017",
+      "area_m2": 0.19778033461806713,
+      "samples": 12362,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "SideLeft.017",
+      "area_m2": 0.19778027465607453,
+      "samples": 12362,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "RightReveal.009",
+      "area_m2": 0.07162195011237063,
+      "samples": 4477,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "LeftReveal.009",
+      "area_m2": 0.07162195279323866,
+      "samples": 4477,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Floor.017",
+      "area_m2": 0.16376419345897758,
+      "samples": 10236,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "BottomReveal.009",
+      "area_m2": 0.06216864305587859,
+      "samples": 3886,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Back.017",
+      "area_m2": 0.22831514532308209,
+      "samples": 14270,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "SideRight.016",
+      "area_m2": 0.19375253736799408,
+      "samples": 12110,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "SideLeft.016",
+      "area_m2": 0.1968725358278101,
+      "samples": 12305,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "RightReveal.008",
+      "area_m2": 0.06992490028406684,
+      "samples": 4371,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "LeftReveal.008",
+      "area_m2": 0.07128490064050264,
+      "samples": 4456,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Floor.016",
+      "area_m2": 0.003431825515395953,
+      "samples": 215,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "BottomReveal.008",
+      "area_m2": 0.0011899999952316282,
+      "samples": 75,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Back.016",
+      "area_m2": 0.23451757222700773,
+      "samples": 14658,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "SideRight.015",
+      "area_m2": 0.19687254990645178,
+      "samples": 12305,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "SideLeft.015",
+      "area_m2": 0.1937525422650951,
+      "samples": 12110,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "RightReveal.007",
+      "area_m2": 0.07128490048820817,
+      "samples": 4456,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "LeftReveal.007",
+      "area_m2": 0.06992490013177238,
+      "samples": 4371,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Floor.015",
+      "area_m2": 0.0034418353111917484,
+      "samples": 216,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "BottomReveal.007",
+      "area_m2": 0.0011899999952316156,
+      "samples": 75,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Back.015",
+      "area_m2": 0.23572596687816444,
+      "samples": 14733,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_102.014",
+      "area_m2": 0.37030232178692096,
+      "samples": 23144,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_028.022",
+      "area_m2": 0.2266949483853859,
+      "samples": 14169,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_027.011",
+      "area_m2": 0.16083299963805506,
+      "samples": 10053,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_026.020",
+      "area_m2": 0.05794094387681618,
+      "samples": 3622,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_099.009",
+      "area_m2": 0.24026127396426836,
+      "samples": 15017,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_024.003",
+      "area_m2": 0.004782543816143381,
+      "samples": 299,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_023.004",
+      "area_m2": 0.27821827235832086,
+      "samples": 17389,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_022.004",
+      "area_m2": 0.18771575841514213,
+      "samples": 11733,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_021.004",
+      "area_m2": 0.050490955031580305,
+      "samples": 3156,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_020.002",
+      "area_m2": 0.023248575951336545,
+      "samples": 1454,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "SideRight.011",
+      "area_m2": 0.1827840179214738,
+      "samples": 11425,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Shelf_0.003",
+      "area_m2": 0.013608460644710638,
+      "samples": 851,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "RightReveal.003",
+      "area_m2": 0.06787200775910375,
+      "samples": 4243,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Back.011",
+      "area_m2": 0.02895624697231057,
+      "samples": 1810,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_028.021",
+      "area_m2": 0.022315566876560333,
+      "samples": 1395,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_027.010",
+      "area_m2": 0.10048105298102404,
+      "samples": 6281,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_026.019",
+      "area_m2": 0.0383647930472177,
+      "samples": 2398,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_102.012",
+      "area_m2": 0.01057657941332672,
+      "samples": 662,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_028.020",
+      "area_m2": 0.020602872351916605,
+      "samples": 1288,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_027.009",
+      "area_m2": 0.00024248064622129162,
+      "samples": 20,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_025.016",
+      "area_m2": 0.00826668539178322,
+      "samples": 517,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "ScanRepair_plane_19",
+      "area_m2": 0.0021866908123849486,
+      "samples": 137,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_099.007",
+      "area_m2": 0.012838888409511794,
+      "samples": 803,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_024.001",
+      "area_m2": 0.000590071369703193,
+      "samples": 37,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_023.002",
+      "area_m2": 0.004586584912605215,
+      "samples": 287,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_021.002",
+      "area_m2": 0.4743598784507595,
+      "samples": 29648,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_020.001",
+      "area_m2": 0.02148873498190223,
+      "samples": 1344,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "ScanRepair_Loop_0395",
+      "area_m2": 0.006553943206445648,
+      "samples": 410,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "ScanRepair_Loop_0349",
+      "area_m2": 0.0012330338893207962,
+      "samples": 78,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_102.008",
+      "area_m2": 0.01027088506209822,
+      "samples": 642,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_099.005",
+      "area_m2": 0.12072715441297881,
+      "samples": 7546,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_028.015",
+      "area_m2": 0.10175221712064235,
+      "samples": 6360,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_027.006",
+      "area_m2": 0.00011115737884293061,
+      "samples": 20,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_026.016",
+      "area_m2": 0.021020653448258077,
+      "samples": 1314,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_024",
+      "area_m2": 0.012084054792313705,
+      "samples": 756,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_023",
+      "area_m2": 0.06570748351294403,
+      "samples": 4107,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_021",
+      "area_m2": 0.005161924367899333,
+      "samples": 323,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_020",
+      "area_m2": 0.0025477073889984955,
+      "samples": 160,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "HingeDetail_0.022",
+      "area_m2": 0.0040843868940924725,
+      "samples": 256,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_028.014",
+      "area_m2": 0.01876478683504877,
+      "samples": 1173,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_027.005",
+      "area_m2": 0.10631892747174247,
+      "samples": 6645,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "HingeDetail_0.021",
+      "area_m2": 0.0040843868940924725,
+      "samples": 256,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_028.013",
+      "area_m2": 0.012873788016026535,
+      "samples": 805,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_027.004",
+      "area_m2": 0.14654184954176883,
+      "samples": 9159,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "HingeDetail_0.012",
+      "area_m2": 0.004084386894092502,
+      "samples": 256,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_028.005",
+      "area_m2": 0.004268080859680182,
+      "samples": 267,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_026.008",
+      "area_m2": 0.0895054709037047,
+      "samples": 5595,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "HingeDetail_0.011",
+      "area_m2": 0.004084386894092502,
+      "samples": 256,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_028.004",
+      "area_m2": 0.00026132998072151315,
+      "samples": 20,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_026.007",
+      "area_m2": 0.10339851447435816,
+      "samples": 6463,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "HingeDetail_0.010",
+      "area_m2": 0.004084386894092502,
+      "samples": 256,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_028.003",
+      "area_m2": 0.0027594918723665308,
+      "samples": 173,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_026.006",
+      "area_m2": 0.10719216408933466,
+      "samples": 6700,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "HingeDetail_0.009",
+      "area_m2": 0.004084386894092502,
+      "samples": 256,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_027.001",
+      "area_m2": 0.10462177330487371,
+      "samples": 6539,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "HingeDetail_0.008",
+      "area_m2": 0.004084386894092502,
+      "samples": 256,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_028.002",
+      "area_m2": 0.0030742229264337975,
+      "samples": 193,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_027",
+      "area_m2": 0.1106082658373861,
+      "samples": 6914,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Geometry_026.001",
+      "area_m2": 0.031827895357254124,
+      "samples": 1990,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "WallRepair_tiled_return",
+      "area_m2": 0.3238398830032454,
+      "samples": 20240,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "WallRepair_return_end",
+      "area_m2": 0.015180103845580113,
+      "samples": 949,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "WallRepair_cabinet_join",
+      "area_m2": 0.051454843280685815,
+      "samples": 3216,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_wall_all_sink_right",
+      "area_m2": 0.4907760470142364,
+      "samples": 30674,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_wall_all_sink_back",
+      "area_m2": 0.9092200180578232,
+      "samples": 56827,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_wall_all_range_right",
+      "area_m2": 0.28561000926733016,
+      "samples": 17851,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_tv_remote_v3_p1",
+      "area_m2": 0.007336003648606519,
+      "samples": 2866,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_tv_remote_v3_p0",
+      "area_m2": 0.024919946057533324,
+      "samples": 9735,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_toaster_v4_AtTheSpeedOf_Toaster_v4",
+      "area_m2": 0.39976221430046943,
+      "samples": 156158,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_tea_tray_v3_p6",
+      "area_m2": 0.01594989687511957,
+      "samples": 6231,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_tea_tray_v3_p5",
+      "area_m2": 0.016527706928231564,
+      "samples": 6457,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_tea_tray_v3_p4",
+      "area_m2": 0.00752285552029121,
+      "samples": 2939,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_tea_tray_v3_p3",
+      "area_m2": 0.006636526215049466,
+      "samples": 2593,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_tea_tray_v3_p2",
+      "area_m2": 0.03481902369993607,
+      "samples": 13602,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_tea_tray_v3_p1",
+      "area_m2": 0.02737429689797322,
+      "samples": 10694,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_tea_tray_v3_p0",
+      "area_m2": 0.2736847367912354,
+      "samples": 106909,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_soap_pump_p_lathe_v3_Metal1",
+      "area_m2": 0.017155863968882135,
+      "samples": 6702,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_soap_pump_p_lathe_v3_Cap",
+      "area_m2": 0.0010830564502127306,
+      "samples": 424,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_soap_dish_p_v3_Soap",
+      "area_m2": 0.008091894374342908,
+      "samples": 3161,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_soap_dish_p_v3_Dish",
+      "area_m2": 0.02246655035218422,
+      "samples": 8776,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_soap_bottle_v3_1",
+      "area_m2": 0.010144279720111598,
+      "samples": 3963,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_soap_bottle_v3_0",
+      "area_m2": 0.044970413682615895,
+      "samples": 17567,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_sink_prep_v2_geometry_0",
+      "area_m2": 0.03476188290935764,
+      "samples": 2173,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_sink_main_v2_geometry_0",
+      "area_m2": 0.1235085105292185,
+      "samples": 7720,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_rangetop_Steel",
+      "area_m2": 0.4332439275852742,
+      "samples": 27078,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_rangetop_Grate",
+      "area_m2": 1.1602453531070207,
+      "samples": 72516,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_rangetop_Deck",
+      "area_m2": 1.559188513277358,
+      "samples": 97450,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_range_kettle_v3_Teakettle_Steel",
+      "area_m2": 0.0024629091296846247,
+      "samples": 963,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_range_kettle_v3_Teakettle_Matte_Plastic",
+      "area_m2": 0.031344291233141426,
+      "samples": 12244,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_range_kettle_v3_Teakettle_Color",
+      "area_m2": 0.10439862989707423,
+      "samples": 40781,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_prep_soap_v3_Metal1",
+      "area_m2": 0.017155863968882072,
+      "samples": 6702,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_prep_soap_v3_Cap",
+      "area_m2": 0.0010830564502127228,
+      "samples": 424,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_prep_faucet_v3_p6",
+      "area_m2": 0.0026586699771157414,
+      "samples": 1039,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_prep_faucet_v3_p5",
+      "area_m2": 0.0026586699771154465,
+      "samples": 1039,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_prep_faucet_v3_p4",
+      "area_m2": 0.010054239733975501,
+      "samples": 3928,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_prep_faucet_v3_p3",
+      "area_m2": 0.010054239876228326,
+      "samples": 3928,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_prep_faucet_v3_p2",
+      "area_m2": 0.011700826164702971,
+      "samples": 4571,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_prep_faucet_v3_p1",
+      "area_m2": 0.022727690459624056,
+      "samples": 8879,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_prep_faucet_v3_p0",
+      "area_m2": 0.016903670977307415,
+      "samples": 6603,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_phone_dock_v3_p2",
+      "area_m2": 0.007111953431023778,
+      "samples": 2779,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_phone_dock_v3_p1",
+      "area_m2": 0.029500038225958723,
+      "samples": 11524,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_phone_dock_v3_p0",
+      "area_m2": 0.021749954938883317,
+      "samples": 8497,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_paper_towel_v3_Paper",
+      "area_m2": 0.16018510250597767,
+      "samples": 62573,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_paper_towel_v3_Base.099",
+      "area_m2": 0.05655450140223905,
+      "samples": 22092,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_knife_block_v3_3",
+      "area_m2": 0.004022536257118559,
+      "samples": 1572,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_knife_block_v3_2",
+      "area_m2": 0.11631582401454535,
+      "samples": 45436,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_knife_block_v3_1",
+      "area_m2": 0.004996178277294885,
+      "samples": 1952,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_knife_block_v3_0",
+      "area_m2": 0.04335609096722098,
+      "samples": 16936,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_knife_block_round_v3_Wood",
+      "area_m2": 0.11932658323861282,
+      "samples": 46612,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_knife_block_round_v3_Steel",
+      "area_m2": 0.017979801742807253,
+      "samples": 7024,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_knife_block_round_v3_Cap",
+      "area_m2": 0.0745739295114686,
+      "samples": 29131,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_hot_tap_s4_style_v3_Metal2",
+      "area_m2": 0.00016797938750940235,
+      "samples": 66,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_hot_tap_s4_style_v3_Metal1",
+      "area_m2": 0.026854364199109537,
+      "samples": 10490,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_hot_tap_s4_style_v3_material",
+      "area_m2": 0.00013784448226481543,
+      "samples": 54,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_hot_tap_s4_style_v3_Diamond",
+      "area_m2": 0.00017999364435341035,
+      "samples": 71,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_grinder_v3_4",
+      "area_m2": 0.013422079971292068,
+      "samples": 5243,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_grinder_v3_3",
+      "area_m2": 0.003032822880196237,
+      "samples": 1185,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_grinder_v3_2",
+      "area_m2": 0.0016805913033682443,
+      "samples": 657,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_grinder_v3_1",
+      "area_m2": 0.040105621601951844,
+      "samples": 15667,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_grinder_v3_0",
+      "area_m2": 0.19225526544014152,
+      "samples": 75100,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_glass_kettle_v3_p5",
+      "area_m2": 0.004162497423214765,
+      "samples": 1626,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_glass_kettle_v3_p4",
+      "area_m2": 0.016668722204625768,
+      "samples": 6512,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_glass_kettle_v3_p3",
+      "area_m2": 0.020354985470747766,
+      "samples": 7952,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_glass_kettle_v3_p2",
+      "area_m2": 0.07824996226737525,
+      "samples": 30567,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_glass_kettle_v3_p1",
+      "area_m2": 0.012254115665235538,
+      "samples": 4787,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_glass_kettle_v3_p0",
+      "area_m2": 0.038643929783344626,
+      "samples": 15096,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_frother_v3_p2",
+      "area_m2": 0.008555366082013419,
+      "samples": 3342,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_frother_v3_p1",
+      "area_m2": 0.010280539018215563,
+      "samples": 4016,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_frother_v3_p0",
+      "area_m2": 0.06871106264827495,
+      "samples": 26841,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_frogs_v3_frogs_v27",
+      "area_m2": 0.02385423398366874,
+      "samples": 9319,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_frogs_v3_frogs_v26",
+      "area_m2": 0.018328270018380256,
+      "samples": 7160,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_frogs_v3_frogs_v25",
+      "area_m2": 0.010704362856327171,
+      "samples": 4182,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_frogs_v3_frogs_v24",
+      "area_m2": 0.004661322283128644,
+      "samples": 1821,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_frogs_v3_frogs_v23",
+      "area_m2": 0.00642593148131422,
+      "samples": 2511,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_frogs_v3_frogs_v22",
+      "area_m2": 0.09817517204337509,
+      "samples": 38350,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_frogs_v3_frogs_v21",
+      "area_m2": 0.0007940165736750127,
+      "samples": 311,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_frogs_v3_frogs_v20",
+      "area_m2": 0.05714386407225313,
+      "samples": 22322,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_faucet_main_style_v3_Rock",
+      "area_m2": 0.0009915373662327666,
+      "samples": 388,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_faucet_main_style_v3_Metal1",
+      "area_m2": 0.06314788630384728,
+      "samples": 24668,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_faucet_main_style_v3_material",
+      "area_m2": 0.00024669297504154015,
+      "samples": 97,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_faucet_main_style_v3_Black",
+      "area_m2": 0.00032071993233813786,
+      "samples": 126,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_counter_sinkrun_photo_v3_top",
+      "area_m2": 1.8802016788632718,
+      "samples": 257916,
+      "prop": false,
+      "counter": true
+    },
+    {
+      "node": "Kitchen_counter_sinkrun_photo_v3_edge",
+      "area_m2": 0.1140692724888126,
+      "samples": 7130,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_counter_rangeside_photo_v3_top",
+      "area_m2": 0.5492500991821319,
+      "samples": 75343,
+      "prop": false,
+      "counter": true
+    },
+    {
+      "node": "Kitchen_counter_rangeside_photo_v3_edge",
+      "area_m2": 0.06127740396482342,
+      "samples": 3830,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_counter_prep_photo_v3_top",
+      "area_m2": 1.322628687793753,
+      "samples": 181431,
+      "prop": false,
+      "counter": true
+    },
+    {
+      "node": "Kitchen_counter_prep_photo_v3_edge",
+      "area_m2": 0.09497026659970004,
+      "samples": 5936,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_counter_island_photo_v3_top",
+      "area_m2": 2.8771968600351894,
+      "samples": 394678,
+      "prop": false,
+      "counter": true
+    },
+    {
+      "node": "Kitchen_counter_island_photo_v3_edge",
+      "area_m2": 0.29728894211097096,
+      "samples": 18581,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_counter_bar_photo_v3_top",
+      "area_m2": 1.3084995999336408,
+      "samples": 179493,
+      "prop": false,
+      "counter": true
+    },
+    {
+      "node": "Kitchen_counter_bar_photo_v3_edge",
+      "area_m2": 0.6810510619352821,
+      "samples": 42566,
+      "prop": false,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_coffee_machine2_v3_material",
+      "area_m2": 0.11052169017060348,
+      "samples": 43173,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_coffee_machine2_v3_chroma",
+      "area_m2": 0.008873403296523738,
+      "samples": 3467,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_coffee_machine2_v3_black",
+      "area_m2": 0.273577695406267,
+      "samples": 106867,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_canister_r_v3_Rim",
+      "area_m2": 0.04354093375722505,
+      "samples": 17009,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_canister_r_v3_OriginalPhotoInk",
+      "area_m2": 0.005824004531859826,
+      "samples": 2276,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_canister_r_v3_Lid",
+      "area_m2": 0.04841109515600926,
+      "samples": 18911,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_canister_r_v3_Ceramic",
+      "area_m2": 0.10943519611027251,
+      "samples": 42749,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_canister_l_v3_Rim",
+      "area_m2": 0.04354088391906591,
+      "samples": 17009,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_canister_l_v3_OriginalPhotoInk",
+      "area_m2": 0.005824004531859826,
+      "samples": 2276,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_canister_l_v3_Lid",
+      "area_m2": 0.04841115935801707,
+      "samples": 18911,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_canister_l_v3_Ceramic",
+      "area_m2": 0.1094354357307834,
+      "samples": 42749,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_caddy_v3_4",
+      "area_m2": 0.12138323852787589,
+      "samples": 47416,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_caddy_v3_3",
+      "area_m2": 0.014910434144493856,
+      "samples": 5825,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_caddy_v3_2",
+      "area_m2": 0.008607778393828463,
+      "samples": 3363,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_caddy_v3_1",
+      "area_m2": 0.02323194157395374,
+      "samples": 9075,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_caddy_v3_0",
+      "area_m2": 0.27954909317154475,
+      "samples": 109199,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_button_p_lathe_v3_Metal1",
+      "area_m2": 0.007634278879171997,
+      "samples": 2983,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_button_p_lathe_v3_Cap",
+      "area_m2": 0.0012665254208541576,
+      "samples": 495,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_bread_basket_v3_p2",
+      "area_m2": 0.11723999802581678,
+      "samples": 45797,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_bread_basket_v3_p1",
+      "area_m2": 0.11019995193481716,
+      "samples": 43047,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_bread_basket_v3_p0",
+      "area_m2": 0.34377434759971476,
+      "samples": 134287,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_bottles_v33_0",
+      "area_m2": 0.013922397052377205,
+      "samples": 5439,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_bottles_v32_0",
+      "area_m2": 0.014593656420639716,
+      "samples": 5701,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_bottles_v31_0",
+      "area_m2": 0.014914766334954227,
+      "samples": 5827,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_bottles_v30_0",
+      "area_m2": 0.013294654436298676,
+      "samples": 5194,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_blue_jug_v4_Glaze",
+      "area_m2": 0.04882927584831513,
+      "samples": 19074,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_air_gap_p_lathe_v3_Metal1",
+      "area_m2": 0.013129761061042973,
+      "samples": 5129,
+      "prop": true,
+      "counter": false
+    },
+    {
+      "node": "Kitchen_air_gap_p_lathe_v3_Cap",
+      "area_m2": 0.0012583911544141835,
+      "samples": 492,
+      "prop": true,
+      "counter": false
+    }
+  ],
+  "part_names": [
+    "Geometry_028.033",
+    "Geometry_026.029",
+    "Geometry_099.015",
+    "Geometry_021.008",
+    "Geometry_019.006",
+    "Geometry_102.024",
+    "Geometry_027.021",
+    "Geometry_102.023",
+    "Geometry_028.031",
+    "Geometry_027.020",
+    "Geometry_026.027",
+    "Geometry_102.022",
+    "Geometry_028.030",
+    "Geometry_026.026",
+    "Geometry_102.021",
+    "Geometry_028.029",
+    "Geometry_027.018",
+    "Geometry_026.025",
+    "SideRight.036",
+    "SideLeft.036",
+    "RightReveal.020",
+    "LeftReveal.020",
+    "Floor.036",
+    "BottomReveal.020",
+    "Back.036",
+    "Geometry_102.020",
+    "Geometry_028.028",
+    "Geometry_027.017",
+    "Geometry_026.024",
+    "Geometry_028.027",
+    "Geometry_026.023",
+    "RestoredDense_028.001",
+    "PreservedRGB_102.001",
+    "PreservedRGB_028.001",
+    "RestoredDense_102",
+    "RestoredDense_028",
+    "RestoredDense_027",
+    "RestoredDense_026",
+    "RestoredDense_025",
+    "PreservedRGB_028",
+    "PreservedRGB_025",
+    "Geometry_102.016",
+    "Geometry_025.019",
+    "Geometry_102.015",
+    "Geometry_028.023",
+    "Geometry_026.021",
+    "SideRight.019",
+    "SideLeft.019",
+    "RightReveal.011",
+    "LeftReveal.011",
+    "Floor.019",
+    "BottomReveal.011",
+    "Back.019",
+    "SideRight.018",
+    "SideLeft.018",
+    "RightReveal.010",
+    "LeftReveal.010",
+    "Floor.018",
+    "BottomReveal.010",
+    "Back.018",
+    "SideRight.017",
+    "SideLeft.017",
+    "RightReveal.009",
+    "LeftReveal.009",
+    "Floor.017",
+    "BottomReveal.009",
+    "Back.017",
+    "SideRight.016",
+    "SideLeft.016",
+    "RightReveal.008",
+    "LeftReveal.008",
+    "Floor.016",
+    "BottomReveal.008",
+    "Back.016",
+    "SideRight.015",
+    "SideLeft.015",
+    "RightReveal.007",
+    "LeftReveal.007",
+    "Floor.015",
+    "BottomReveal.007",
+    "Back.015",
+    "Geometry_102.014",
+    "Geometry_028.022",
+    "Geometry_027.011",
+    "Geometry_026.020",
+    "Geometry_099.009",
+    "Geometry_024.003",
+    "Geometry_023.004",
+    "Geometry_022.004",
+    "Geometry_021.004",
+    "Geometry_020.002",
+    "SideRight.011",
+    "Shelf_0.003",
+    "RightReveal.003",
+    "Back.011",
+    "Geometry_028.021",
+    "Geometry_027.010",
+    "Geometry_026.019",
+    "Geometry_102.012",
+    "Geometry_028.020",
+    "Geometry_027.009",
+    "Geometry_025.016",
+    "ScanRepair_plane_19",
+    "Geometry_099.007",
+    "Geometry_024.001",
+    "Geometry_023.002",
+    "Geometry_021.002",
+    "Geometry_020.001",
+    "ScanRepair_Loop_0395",
+    "ScanRepair_Loop_0349",
+    "Geometry_102.008",
+    "Geometry_099.005",
+    "Geometry_028.015",
+    "Geometry_027.006",
+    "Geometry_026.016",
+    "Geometry_024",
+    "Geometry_023",
+    "Geometry_021",
+    "Geometry_020",
+    "HingeDetail_0.022",
+    "Geometry_028.014",
+    "Geometry_027.005",
+    "HingeDetail_0.021",
+    "Geometry_028.013",
+    "Geometry_027.004",
+    "HingeDetail_0.012",
+    "Geometry_028.005",
+    "Geometry_026.008",
+    "HingeDetail_0.011",
+    "Geometry_028.004",
+    "Geometry_026.007",
+    "HingeDetail_0.010",
+    "Geometry_028.003",
+    "Geometry_026.006",
+    "HingeDetail_0.009",
+    "Geometry_027.001",
+    "HingeDetail_0.008",
+    "Geometry_028.002",
+    "Geometry_027",
+    "Geometry_026.001",
+    "WallRepair_tiled_return",
+    "WallRepair_return_end",
+    "WallRepair_cabinet_join",
+    "Kitchen_wall_all_sink_right",
+    "Kitchen_wall_all_sink_back",
+    "Kitchen_wall_all_range_right",
+    "Kitchen_tv_remote_v3_p1",
+    "Kitchen_tv_remote_v3_p0",
+    "Kitchen_toaster_v4_AtTheSpeedOf_Toaster_v4",
+    "Kitchen_tea_tray_v3_p6",
+    "Kitchen_tea_tray_v3_p5",
+    "Kitchen_tea_tray_v3_p4",
+    "Kitchen_tea_tray_v3_p3",
+    "Kitchen_tea_tray_v3_p2",
+    "Kitchen_tea_tray_v3_p1",
+    "Kitchen_tea_tray_v3_p0",
+    "Kitchen_soap_pump_p_lathe_v3_Metal1",
+    "Kitchen_soap_pump_p_lathe_v3_Cap",
+    "Kitchen_soap_dish_p_v3_Soap",
+    "Kitchen_soap_dish_p_v3_Dish",
+    "Kitchen_soap_bottle_v3_1",
+    "Kitchen_soap_bottle_v3_0",
+    "Kitchen_sink_prep_v2_geometry_0",
+    "Kitchen_sink_main_v2_geometry_0",
+    "Kitchen_rangetop_Steel",
+    "Kitchen_rangetop_Grate",
+    "Kitchen_rangetop_Deck",
+    "Kitchen_range_kettle_v3_Teakettle_Steel",
+    "Kitchen_range_kettle_v3_Teakettle_Matte_Plastic",
+    "Kitchen_range_kettle_v3_Teakettle_Color",
+    "Kitchen_prep_soap_v3_Metal1",
+    "Kitchen_prep_soap_v3_Cap",
+    "Kitchen_prep_faucet_v3_p6",
+    "Kitchen_prep_faucet_v3_p5",
+    "Kitchen_prep_faucet_v3_p4",
+    "Kitchen_prep_faucet_v3_p3",
+    "Kitchen_prep_faucet_v3_p2",
+    "Kitchen_prep_faucet_v3_p1",
+    "Kitchen_prep_faucet_v3_p0",
+    "Kitchen_phone_dock_v3_p2",
+    "Kitchen_phone_dock_v3_p1",
+    "Kitchen_phone_dock_v3_p0",
+    "Kitchen_paper_towel_v3_Paper",
+    "Kitchen_paper_towel_v3_Base.099",
+    "Kitchen_knife_block_v3_3",
+    "Kitchen_knife_block_v3_2",
+    "Kitchen_knife_block_v3_1",
+    "Kitchen_knife_block_v3_0",
+    "Kitchen_knife_block_round_v3_Wood",
+    "Kitchen_knife_block_round_v3_Steel",
+    "Kitchen_knife_block_round_v3_Cap",
+    "Kitchen_hot_tap_s4_style_v3_Metal2",
+    "Kitchen_hot_tap_s4_style_v3_Metal1",
+    "Kitchen_hot_tap_s4_style_v3_material",
+    "Kitchen_hot_tap_s4_style_v3_Diamond",
+    "Kitchen_grinder_v3_4",
+    "Kitchen_grinder_v3_3",
+    "Kitchen_grinder_v3_2",
+    "Kitchen_grinder_v3_1",
+    "Kitchen_grinder_v3_0",
+    "Kitchen_glass_kettle_v3_p5",
+    "Kitchen_glass_kettle_v3_p4",
+    "Kitchen_glass_kettle_v3_p3",
+    "Kitchen_glass_kettle_v3_p2",
+    "Kitchen_glass_kettle_v3_p1",
+    "Kitchen_glass_kettle_v3_p0",
+    "Kitchen_frother_v3_p2",
+    "Kitchen_frother_v3_p1",
+    "Kitchen_frother_v3_p0",
+    "Kitchen_frogs_v3_frogs_v27",
+    "Kitchen_frogs_v3_frogs_v26",
+    "Kitchen_frogs_v3_frogs_v25",
+    "Kitchen_frogs_v3_frogs_v24",
+    "Kitchen_frogs_v3_frogs_v23",
+    "Kitchen_frogs_v3_frogs_v22",
+    "Kitchen_frogs_v3_frogs_v21",
+    "Kitchen_frogs_v3_frogs_v20",
+    "Kitchen_faucet_main_style_v3_Rock",
+    "Kitchen_faucet_main_style_v3_Metal1",
+    "Kitchen_faucet_main_style_v3_material",
+    "Kitchen_faucet_main_style_v3_Black",
+    "Kitchen_counter_sinkrun_photo_v3_top",
+    "Kitchen_counter_sinkrun_photo_v3_edge",
+    "Kitchen_counter_rangeside_photo_v3_top",
+    "Kitchen_counter_rangeside_photo_v3_edge",
+    "Kitchen_counter_prep_photo_v3_top",
+    "Kitchen_counter_prep_photo_v3_edge",
+    "Kitchen_counter_island_photo_v3_top",
+    "Kitchen_counter_island_photo_v3_edge",
+    "Kitchen_counter_bar_photo_v3_top",
+    "Kitchen_counter_bar_photo_v3_edge",
+    "Kitchen_coffee_machine2_v3_material",
+    "Kitchen_coffee_machine2_v3_chroma",
+    "Kitchen_coffee_machine2_v3_black",
+    "Kitchen_canister_r_v3_Rim",
+    "Kitchen_canister_r_v3_OriginalPhotoInk",
+    "Kitchen_canister_r_v3_Lid",
+    "Kitchen_canister_r_v3_Ceramic",
+    "Kitchen_canister_l_v3_Rim",
+    "Kitchen_canister_l_v3_OriginalPhotoInk",
+    "Kitchen_canister_l_v3_Lid",
+    "Kitchen_canister_l_v3_Ceramic",
+    "Kitchen_caddy_v3_4",
+    "Kitchen_caddy_v3_3",
+    "Kitchen_caddy_v3_2",
+    "Kitchen_caddy_v3_1",
+    "Kitchen_caddy_v3_0",
+    "Kitchen_button_p_lathe_v3_Metal1",
+    "Kitchen_button_p_lathe_v3_Cap",
+    "Kitchen_bread_basket_v3_p2",
+    "Kitchen_bread_basket_v3_p1",
+    "Kitchen_bread_basket_v3_p0",
+    "Kitchen_bottles_v33_0",
+    "Kitchen_bottles_v32_0",
+    "Kitchen_bottles_v31_0",
+    "Kitchen_bottles_v30_0",
+    "Kitchen_blue_jug_v4_Glaze",
+    "Kitchen_air_gap_p_lathe_v3_Metal1",
+    "Kitchen_air_gap_p_lathe_v3_Cap"
+  ],
+  "regions": [
+    [
+      [
+        4.25,
+        -5.5,
+        0.9
+      ],
+      [
+        7.15,
+        -2.2,
+        1.74
+      ]
+    ],
+    [
+      [
+        1.15,
+        -5.0,
+        0.91
+      ],
+      [
+        2.32,
+        -1.86,
+        1.78
+      ]
+    ],
+    [
+      [
+        3.7,
+        -3.82,
+        0.918
+      ],
+      [
+        4.249999,
+        -1.97,
+        1.02
+      ]
+    ],
+    [
+      [
+        4.25,
+        -2.199999,
+        0.918
+      ],
+      [
+        5.54,
+        -1.97,
+        1.02
+      ]
+    ]
+  ],
+  "appearance": "Photo UV colors plus approximate environment reflection SH; fixed geometry; separate PBR export for relighting",
+  "phone_existing_visual_retained": 990,
+  "elapsed_s": 120.34282851219177,
+  "jug_final_fit": {
+    "height_m": 0.050999915599822976,
+    "parameters": [
+      0.6,
+      0.04,
+      0.0,
+      0.0
+    ],
+    "primary_photo_iou": 0.6352669596672058,
+    "photographic_surface_fraction": 0.34308482751389324,
+    "bounds": [
+      [
+        7.011108365631103,
+        -4.464058861541748,
+        0.9290007630348206
+      ],
+      [
+        7.0810595184326175,
+        -4.409940037536622,
+        0.9800006786346436
+      ]
+    ],
+    "transform": [
+      [
+        0.6,
+        -0.0,
+        0.0,
+        2.8456
+      ],
+      [
+        0.0,
+        0.6,
+        0.0,
+        -1.7748000000000004
+      ],
+      [
+        0.0,
+        0.0,
+        0.6,
+        0.37160000000000004
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "visual_selection": {
+    "phone": {
+      "method": "Photo-fitted fixed desk-phone product, visible controls projected from the actual photo",
+      "surface_samples": 123294,
+      "photo_supported_samples": 57153,
+      "fit": "phone_v4",
+      "limitation": "Silhouette and hidden sides remain approximate; fixed photographic appearance."
+    },
+    "frogs": {
+      "method": "Prior photo-trained decorative reconstruction moved rigidly inward from the backsplash",
+      "samples": 1386,
+      "limitation": "Sparse original reconstruction; visible shape and separate proxy are approximate. Not an exact newly reconstructed statue.",
+      "translation_m": [
+        -0.095,
+        0.075,
+        0.005
+      ]
+    },
+    "walls": {
+      "top_m": 1.4,
+      "method": "Extended physically planar photo-textured backsplash closes the visible seam; hidden tiles use approximate infill"
+    },
+    "final_gaussians": 4378360
+  }
+}
