@@ -1,30 +1,33 @@
-# Task 1 — Simulator evaluation
+# Task 1 — Go2 simulator feasibility
 
-Objective: execute quadruped control in a visually detailed environment under the recorded RTX 3050 / 4 GB VRAM constraint.
+## Problem and required fix
 
-## Attempts and results
+Execute quadruped control inside a detailed office on the recorded RTX 3050 / 4 GB VRAM platform. The initial detailed collision mesh reportedly caused out-of-memory errors. The required fix is a collision-valid environment within that budget, with reproducible assets and timing measurements.
 
-| Attempt | Implementation / outcome | Limitation |
-| --- | --- | --- |
-| Simulator comparison | Genesis, Isaac Sim/Lab, Unreal/Unity, Habitat, MuJoCo/MJX assessed; Genesis used for the prototype | Design comparison, not measured cross-engine benchmarking |
-| Detailed office collision mesh | Collision/convex-hull processing reportedly caused OOM | No saved numerical memory trace |
-| Split visual and collision geometry | `Office+2.glb`: `collision=False`, `convexify=False`; `plane.urdf` supplies support | Furniture is visible but has no collision response |
-| Pretrained Go2 controller | Joint-order remapping, 45-D observation, 12 position-target actions, stand/walk keyboard modes | Policy/scene dependencies are external; no language navigation |
-| Offline high-quality rendering | Proposed separation from live preview | Ray-traced rendering benchmark not implemented in this script |
+## Cause and analysis
 
-## Control implementation
+Collision/convex-hull processing of the office mesh is the reported bottleneck. Disabling it allowed the visual prototype to proceed, but no saved peak-VRAM trace establishes a numerical root-cause profile. Visible furniture without collision cannot validate navigation or obstacle avoidance.
 
-[run_go2.py](run_go2.py): Genesis GPU; `dt=0.02`, two substeps; one inference per scene step in walk mode. Observation: angular velocity (3), gravity (3), command (3), relative joint position (12), joint velocity (12), previous action (12). Policy joint order: FR/FL/RR/RL, hip/thigh/calf. Configured stand gains 150/5 and walk gains 40/1. Actions are offsets from the standing pose.
+## Attempts, rationale and outcomes
 
-The script requires CUDA, a display, Genesis/PyTorch/NumPy, the matching `rl_sar` policy, and `genesis-world/office-env/Office+2.glb`. Its policy path is currently hardcoded outside this repository.
+| Attempt | Analysis that motivated it | Change / result | Remaining issue |
+| --- | --- | --- | --- |
+| Simulator comparison | Hardware budget versus renderer/physics requirements | Genesis selected; Isaac, Unity/Unreal, Habitat and MuJoCo alternatives assessed | No measured cross-engine benchmark |
+| Detailed office collision | Reported mesh-processing OOM | Full detailed collision abandoned for prototype | Numerical memory attribution missing |
+| Separate visual and collision geometry | Render mesh detail need not enter collision processing | `Office+2.glb`: collision/convexify false; plane supports Go2 | Furniture collision absent |
+| Pretrained control integration | Policy and robot use different joint interfaces | 45-D observations, 12 position targets, joint remapping and stand/walk modes | External policy, hardcoded path; language control pending |
+| Offline high-quality rendering | Live preview and final images have different resource demands | Proposed runtime/render separation | Ray-traced benchmark pending |
 
-```bash
-cd Task_1_Simulator_Evaluation
-python run_go2.py
-```
+![Independent Genesis scene diagram](../docs/mid_evaluation/diagrams/task1_simulation.png)
 
-[Recorded demo](videos/Genesis_without_physics.mp4) · [Initial evaluation](notes/INITIAL_EVALUATION.md). The video has no synchronized configuration manifest; its filename does not verify its physics setup.
+## Code and control contract
 
-## Current hypothesis and pending work
+[run_go2.py](run_go2.py): GPU Genesis, `dt=0.02`, two substeps, one inference/scene step in walk mode. Observation dimensions: gyro 3 + gravity 3 + command 3 + joint position 12 + joint velocity 12 + previous action 12. Policy order FR/FL/RR/RL; stand gains 150/5, walk gains 40/1. Targets are standing-pose offsets.
 
-A detailed visual mesh with simplified collision geometry should reduce scene-processing cost while retaining useful observations. Pending: furniture collision proxies; source/asset/environment hashes; memory and physics/render latency measurements; tracking/stability evaluation; connection to the navigation interface.
+Dependencies: Genesis, PyTorch, NumPy, CUDA/display, matching `rl_sar` policy and `genesis-world/office-env/Office+2.glb`. [Recorded demo](videos/Genesis_without_physics.mp4) has no synchronized configuration manifest; its filename does not verify physics. [Initial evaluation](notes/INITIAL_EVALUATION.md).
+
+## Next experiment and guidance needed
+
+Hypothesis: simplified furniture proxies can restore useful collisions without processing the complete visual mesh. Hold the scene/controller fixed; compare proxy complexity using peak VRAM, initialization time, physics/render p50/p95 latency, tracking RMSE and obstacle collision checks. Guidance needed: collision approximation acceptable for this navigation study and target workstation/runtime budget.
+
+Source reference: [Genesis upstream](https://github.com/Genesis-Embodied-AI/Genesis). Genesis is a software dependency here; no paper venue is assigned to this local demonstration.

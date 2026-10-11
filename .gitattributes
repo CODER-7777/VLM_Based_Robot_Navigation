@@ -1,0 +1,5 @@
+# Matplotlib SVG path data contains valid whitespace before embedded newlines.
+# Preserve generated vectors and copied source bytes; retain checks for code.
+*.svg whitespace=-blank-at-eol
+# Historical simulator sources are retained byte-for-byte as audit evidence.
+Task_3/moe_jitter_audit_20260921/original_sim/*.py whitespace=-blank-at-eol
