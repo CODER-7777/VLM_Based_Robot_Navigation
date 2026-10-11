@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "revision": "kitchen_workspace_v8_tray_20261011",
+  "scene_sha256": "458359aa783445095fde0c32d8e161b9031c2b32765b7fd0d032ca20c417d5b4",
+  "views": [
+    "sink",
+    "corner",
+    "range",
+    "tea",
+    "coffee"
+  ],
+  "faces": 30,
+  "size": [
+    4096,
+    2048
+  ],
+  "navigation_actions_sent": false,
+  "browser_errors": [],
+  "captured_utc": "2026-10-11T04:33:48Z",
+  "visual_review": "Five original-photo and v8-rendered panoramic pairs were assembled from 30 views."
+}

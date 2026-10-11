@@ -1,0 +1,79 @@
+{
+  "status": "passed",
+  "scene_sha256": "5ed7766ed49259522106e6ecd47866fde111ad38a98c2e18580127ec5da48a04",
+  "revision": "kitchen_workspace_v7_20261011",
+  "items": [
+    {
+      "id": "tea_tray",
+      "calibrated_camera_capture": true,
+      "room_inspection": true,
+      "model_route": true
+    },
+    {
+      "id": "frother",
+      "calibrated_camera_capture": true,
+      "room_inspection": true,
+      "model_route": true
+    },
+    {
+      "id": "coffee_machine",
+      "calibrated_camera_capture": true,
+      "room_inspection": true,
+      "model_route": true
+    }
+  ],
+  "calibrated_photo_captures": 23,
+  "room_model_routes_checked": 30,
+  "tea_materials_in_actual_browser": [
+    {
+      "name": "Kitchen_tea_tray_v7_Ceramic_Tray",
+      "material": "Porcelain_White_Glaze",
+      "map": false,
+      "roughnessMap": false,
+      "vertices": 22018
+    },
+    {
+      "name": "Kitchen_tea_tray_v7_Object_2",
+      "material": "Photo_reactive_ceramic_glaze",
+      "map": true,
+      "roughnessMap": true,
+      "vertices": 3962
+    },
+    {
+      "name": "Kitchen_tea_tray_v7_Object_3",
+      "material": "Photo_reactive_ceramic_glaze",
+      "map": true,
+      "roughnessMap": true,
+      "vertices": 2201
+    },
+    {
+      "name": "Kitchen_tea_tray_v7_Sugar_jar",
+      "material": "Photo_reactive_ceramic_glaze",
+      "map": true,
+      "roughnessMap": true,
+      "vertices": 21890
+    }
+  ],
+  "browser_errors": [],
+  "toaster": {
+    "ready": true,
+    "error": null,
+    "toasterParts": 11,
+    "originalPbr": true
+  },
+  "navigation_actions_sent": false,
+  "before_after_ui_retained": true,
+  "reviewed_utc": "2026-10-11T00:50:54Z",
+  "visual_observations": {
+    "tea_tray": "Turquoise/brown glaze and rounded jar visible in real browser; earlier white export fixed. Exact pot/spout shape and glaze pattern differ.",
+    "coffee_machine": "Rounded black roof, metal side relief and chrome lever now resemble the photo silhouette more closely. Lower platform occluded by existing foreground bar in this calibration. Exact controls and product type remain approximate.",
+    "frother": "Smooth ribbed body and clean acrylic lid visible. Collar/rim still differ and kettle occludes part of it."
+  },
+  "remaining_limits": [
+    "Turquoise/brown glaze and rounded jar visible in real browser; earlier white export fixed. Exact pot/spout shape and glaze pattern differ.",
+    "Rounded black roof, metal side relief and chrome lever now resemble the photo silhouette more closely. Lower platform occluded by existing foreground bar in this calibration. Exact controls and product type remain approximate.",
+    "Smooth ribbed body and clean acrylic lid visible. Collar/rim still differ and kettle occludes part of it.",
+    "Existing background scan gaps and photo-texture ghosts remain.",
+    "Placement checks use support footprints and conservative overlap screening, not watertight collision proofs."
+  ]
+}

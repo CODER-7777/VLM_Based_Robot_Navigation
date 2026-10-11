@@ -1,0 +1,16 @@
+{
+  "status": "published",
+  "revision": "kitchen_workspace_v8_tray_20261011",
+  "dashboard_pid": 3045203,
+  "dashboard_port": 8774,
+  "panorama_pid": 3045217,
+  "panorama_port": 8786,
+  "scene_sha256": "458359aa783445095fde0c32d8e161b9031c2b32765b7fd0d032ca20c417d5b4",
+  "same_camera_glb_comparison": "passed",
+  "five_position_panoramas": "passed",
+  "navigation_state_preserved": true,
+  "navigation_actions_sent": false,
+  "replaced_dashboard_pid": 2914345,
+  "replaced_panorama_pid": 2917819,
+  "workspace": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair"
+}

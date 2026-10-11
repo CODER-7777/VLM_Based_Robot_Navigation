@@ -1,0 +1,12 @@
+{
+  "status": "published",
+  "pid": 2914345,
+  "port": 8774,
+  "revision": "kitchen_workspace_v7_20261011",
+  "scene_sha256": "5ed7766ed49259522106e6ecd47866fde111ad38a98c2e18580127ec5da48a04",
+  "workspace": "/data/robotics/toshith/vivekananda/kitchen_appliance_refinement_20261011",
+  "navigation_process_restarted": false,
+  "gaussian_process_restarted": false,
+  "navigation_state_preserved": true,
+  "replaced_personal_presentation_pid": 2868580
+}

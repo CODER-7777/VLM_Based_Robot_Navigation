@@ -1,0 +1,53 @@
+{
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 4976
+    },
+    "/models": {
+      "status": 200,
+      "bytes": 3864
+    },
+    "/kitchen-room": {
+      "status": 200,
+      "bytes": 3169
+    },
+    "/tour-info": {
+      "status": 200,
+      "bytes": 75394
+    },
+    "/repair-status": {
+      "status": 200,
+      "bytes": 18599
+    }
+  },
+  "scene_header_valid": true,
+  "revision": "kitchen_workspace_v6_20261011",
+  "scene_sha256": "126fbc2d2bc7b17f441e4446da4a13d1d261562bc70ed9e1d59bb029e3e41a4c",
+  "comparisons": [
+    "toaster",
+    "blue_jug",
+    "phone",
+    "canister_l",
+    "canister_r",
+    "soap_bottle",
+    "soap_dish",
+    "bottles",
+    "paper_towel",
+    "caddy",
+    "knife_block",
+    "knife_block_round",
+    "grinder",
+    "range_kettle",
+    "hot_tap",
+    "soap_pump",
+    "air_gap",
+    "frogs",
+    "tea_tray",
+    "glass_kettle",
+    "frother",
+    "coffee_machine",
+    "phone_dock"
+  ],
+  "browser_errors": []
+}

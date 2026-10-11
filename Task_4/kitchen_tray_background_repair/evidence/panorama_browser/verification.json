@@ -1,0 +1,342 @@
+{
+  "status": "passed",
+  "revision": "kitchen_workspace_v8_tray_20261011",
+  "scene_sha256": "458359aa783445095fde0c32d8e161b9031c2b32765b7fd0d032ca20c417d5b4",
+  "views": [
+    {
+      "id": "sink",
+      "state": {
+        "ready": true,
+        "error": null,
+        "view": "sink",
+        "selection": "sink",
+        "panels": [
+          {
+            "size": [
+              4096,
+              2048
+            ],
+            "quaternion": [
+              -0.11474668839366382,
+              0,
+              0,
+              0.9933947843142159
+            ],
+            "fov": 100,
+            "programs": 1
+          },
+          {
+            "size": [
+              4096,
+              2048
+            ],
+            "quaternion": [
+              -0.11474668839366382,
+              0,
+              0,
+              0.9933947843142159
+            ],
+            "fov": 100,
+            "programs": 1
+          }
+        ]
+      },
+      "downloads": [
+        {
+          "name": "sink_before.jpg",
+          "bytes": 2534168,
+          "dimensions": [
+            4096,
+            2048
+          ]
+        },
+        {
+          "name": "sink_after.jpg",
+          "bytes": 2530957,
+          "dimensions": [
+            4096,
+            2048
+          ]
+        },
+        {
+          "name": "sink_comparison.jpg",
+          "bytes": 4787159,
+          "dimensions": [
+            4096,
+            4216
+          ]
+        }
+      ]
+    },
+    {
+      "id": "corner",
+      "state": {
+        "ready": true,
+        "error": null,
+        "view": "corner",
+        "selection": "corner",
+        "panels": [
+          {
+            "size": [
+              4096,
+              2048
+            ],
+            "quaternion": [
+              -0.10873978260995001,
+              -0.31719968245604957,
+              -0.03663962575209242,
+              0.9413912889720558
+            ],
+            "fov": 100,
+            "programs": 1
+          },
+          {
+            "size": [
+              4096,
+              2048
+            ],
+            "quaternion": [
+              -0.10873978260995001,
+              -0.31719968245604957,
+              -0.03663962575209242,
+              0.9413912889720558
+            ],
+            "fov": 100,
+            "programs": 1
+          }
+        ]
+      },
+      "downloads": [
+        {
+          "name": "corner_before.jpg",
+          "bytes": 2561911,
+          "dimensions": [
+            4096,
+            2048
+          ]
+        },
+        {
+          "name": "corner_after.jpg",
+          "bytes": 2536297,
+          "dimensions": [
+            4096,
+            2048
+          ]
+        },
+        {
+          "name": "corner_comparison.jpg",
+          "bytes": 4824341,
+          "dimensions": [
+            4096,
+            4216
+          ]
+        }
+      ]
+    },
+    {
+      "id": "range",
+      "state": {
+        "ready": true,
+        "error": null,
+        "view": "range",
+        "selection": "range",
+        "panels": [
+          {
+            "size": [
+              4096,
+              2048
+            ],
+            "quaternion": [
+              -0.09134797956735274,
+              -0.6011890189960485,
+              -0.06944313591907472,
+              0.790825493355681
+            ],
+            "fov": 100,
+            "programs": 1
+          },
+          {
+            "size": [
+              4096,
+              2048
+            ],
+            "quaternion": [
+              -0.09134797956735274,
+              -0.6011890189960485,
+              -0.06944313591907472,
+              0.790825493355681
+            ],
+            "fov": 100,
+            "programs": 1
+          }
+        ]
+      },
+      "downloads": [
+        {
+          "name": "range_before.jpg",
+          "bytes": 2449432,
+          "dimensions": [
+            4096,
+            2048
+          ]
+        },
+        {
+          "name": "range_after.jpg",
+          "bytes": 2465719,
+          "dimensions": [
+            4096,
+            2048
+          ]
+        },
+        {
+          "name": "range_comparison.jpg",
+          "bytes": 4646868,
+          "dimensions": [
+            4096,
+            4216
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea",
+      "state": {
+        "ready": true,
+        "error": null,
+        "view": "tea",
+        "selection": "tea",
+        "panels": [
+          {
+            "size": [
+              4096,
+              2048
+            ],
+            "quaternion": [
+              -0.0782826242881809,
+              0.726316453823788,
+              0.0838965626939989,
+              0.6777149890680629
+            ],
+            "fov": 100,
+            "programs": 1
+          },
+          {
+            "size": [
+              4096,
+              2048
+            ],
+            "quaternion": [
+              -0.0782826242881809,
+              0.726316453823788,
+              0.0838965626939989,
+              0.6777149890680629
+            ],
+            "fov": 100,
+            "programs": 1
+          }
+        ]
+      },
+      "downloads": [
+        {
+          "name": "tea_before.jpg",
+          "bytes": 2444616,
+          "dimensions": [
+            4096,
+            2048
+          ]
+        },
+        {
+          "name": "tea_after.jpg",
+          "bytes": 2550266,
+          "dimensions": [
+            4096,
+            2048
+          ]
+        },
+        {
+          "name": "tea_comparison.jpg",
+          "bytes": 4722896,
+          "dimensions": [
+            4096,
+            4216
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coffee",
+      "state": {
+        "ready": true,
+        "error": null,
+        "view": "coffee",
+        "selection": "coffee",
+        "panels": [
+          {
+            "size": [
+              4096,
+              2048
+            ],
+            "quaternion": [
+              -0.059564878212966445,
+              -0.8490686179029169,
+              -0.09807562276522676,
+              0.5156701267235849
+            ],
+            "fov": 100,
+            "programs": 1
+          },
+          {
+            "size": [
+              4096,
+              2048
+            ],
+            "quaternion": [
+              -0.059564878212966445,
+              -0.8490686179029169,
+              -0.09807562276522676,
+              0.5156701267235849
+            ],
+            "fov": 100,
+            "programs": 1
+          }
+        ]
+      },
+      "downloads": [
+        {
+          "name": "coffee_before.jpg",
+          "bytes": 2314212,
+          "dimensions": [
+            4096,
+            2048
+          ]
+        },
+        {
+          "name": "coffee_after.jpg",
+          "bytes": 2394714,
+          "dimensions": [
+            4096,
+            2048
+          ]
+        },
+        {
+          "name": "coffee_comparison.jpg",
+          "bytes": 4455950,
+          "dimensions": [
+            4096,
+            4216
+          ]
+        }
+      ]
+    }
+  ],
+  "linked_drag_passed": true,
+  "linked_wheel_zoom_passed": true,
+  "reset_passed": true,
+  "photo_comparison_objects_covered": 23,
+  "missing_photo_objects": [],
+  "browser_errors": [],
+  "navigation_actions_sent": false,
+  "before_representation": "Original dataset photographic skyboxes; untouched mesh unavailable",
+  "after_representation": "Actual published PBR room browser captures",
+  "verified_utc": "2026-10-11T04:34:28Z"
+}

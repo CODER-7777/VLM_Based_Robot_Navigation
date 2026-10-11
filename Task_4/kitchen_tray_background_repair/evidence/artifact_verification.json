@@ -1,0 +1,241 @@
+{
+  "revision": "kitchen_workspace_v8_tray_20261011",
+  "status": "local artifact checks passed",
+  "scene_sha256": "458359aa783445095fde0c32d8e161b9031c2b32765b7fd0d032ca20c417d5b4",
+  "source_scene_sha256": "f01f9b8d912273fcabf14d451e0027be8c765cd8d934a5c29614295a9c5d397d",
+  "scene_bytes": 458340868,
+  "manifest_reference_entries": 40,
+  "active_fit_entries": 40,
+  "props_checked": 33,
+  "room_model_selections": 30,
+  "photo_comparison_selections": 23,
+  "source_toaster_parts": 11,
+  "original_toaster_texture_maps": [
+    {
+      "image": 120,
+      "sha256": "3c3d1f651e30efe6d1a4cc5ec03419bd99051e165ad929f158df2ff49ea66b48"
+    },
+    {
+      "image": 118,
+      "sha256": "57405d710f4b500e76fe9be1fbc3aa3df80889a01ff3c8e6bdd62a9249f0f8ba"
+    },
+    {
+      "image": 119,
+      "sha256": "7d7e0193549c2cca69124fc29506b578d1b11a4f2522051bebbcb409cc233353"
+    }
+  ],
+  "original_toaster_geometry_materials_texture_bytes_preserved": true,
+  "standalone_model_bounds_match_saved_scene": [
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/sink_main_v2/fit.json",
+      "parts": 1,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/sink_prep_v2/fit.json",
+      "parts": 1,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/rangetop_v5/fit.json",
+      "parts": 3,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/counter_sinkrun_photo_v3/fit.json",
+      "parts": 2,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/counter_rangeside_photo_v3/fit.json",
+      "parts": 2,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/counter_island_photo_v3/fit.json",
+      "parts": 2,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/counter_prep_photo_v3/fit.json",
+      "parts": 2,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/counter_bar_photo_v3/fit.json",
+      "parts": 2,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/faucet_main_style_v3/fit.json",
+      "parts": 4,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/hot_tap_s4_style_v5/fit.json",
+      "parts": 13,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/soap_pump_p_lathe_v4/fit.json",
+      "parts": 2,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/air_gap_p_lathe_v4/fit.json",
+      "parts": 2,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/button_p_lathe_v3/fit.json",
+      "parts": 2,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/soap_dish_p_v6/fit.json",
+      "parts": 2,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/bottles_v30/fit.json",
+      "parts": 1,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/bottles_v31/fit.json",
+      "parts": 1,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/bottles_v32/fit.json",
+      "parts": 1,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/bottles_v33/fit.json",
+      "parts": 1,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/canister_l_v5/fit.json",
+      "parts": 16,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/canister_r_v5/fit.json",
+      "parts": 16,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/coffee_machine2_v7/fit.json",
+      "parts": 14,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/frother_v7/fit.json",
+      "parts": 6,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/glass_kettle_v6/fit.json",
+      "parts": 7,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/knife_block_round_v5/fit.json",
+      "parts": 7,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/prep_faucet_v3/fit.json",
+      "parts": 7,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/prep_soap_v3/fit.json",
+      "parts": 2,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/range_kettle_v5/fit.json",
+      "parts": 3,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/soap_bottle_v6/fit.json",
+      "parts": 2,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/tea_tray_v8/fit.json",
+      "parts": 4,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/toaster_v4/fit.json",
+      "parts": 11,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/phone_dock_v6/fit.json",
+      "parts": 5,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/tv_remote_v6/fit.json",
+      "parts": 2,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/bread_basket_v3/fit.json",
+      "parts": 3,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/phone_v5/fit.json",
+      "parts": 18,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/grinder_v5/fit.json",
+      "parts": 6,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/blue_jug_v6/fit.json",
+      "parts": 2,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/paper_towel_v5/fit.json",
+      "parts": 6,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/caddy_v3/fit.json",
+      "parts": 5,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/knife_block_v5/fit.json",
+      "parts": 18,
+      "bounds_match_scene": true
+    },
+    {
+      "fit": "/data/robotics/toshith/vivekananda/kitchen_tray_background_repair/objects/frogs_v5/fit.json",
+      "parts": 14,
+      "bounds_match_scene": true
+    }
+  ],
+  "source_glb_material_indices_and_buffer_ranges_valid": true,
+  "support_flags": 0,
+  "conservative_overlap_flags": 0,
+  "missing_reference_entry": [],
+  "browser_review": "passed; actual browser rendered 23 calibrated views and 30 model routes; synchronized GLB comparison preserved camera",
+  "http_publication": "published and HTTP routes checked",
+  "limitations": [
+    "Teapot dimensions and glaze pattern remain photo-guided approximations.",
+    "The backsplash patch repeats one original photographed tile motif.",
+    "Other scan defects outside the tea-set background patch remain."
+  ]
+}

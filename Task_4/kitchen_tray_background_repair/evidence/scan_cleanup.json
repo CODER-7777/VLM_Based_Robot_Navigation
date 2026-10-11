@@ -1,0 +1,68 @@
+{
+  "source": "/data/robotics/toshith/vivekananda/kitchen_appliance_refinement_20261011/home_pbr_products.glb",
+  "source_sha256": "5ed7766ed49259522106e6ecd47866fde111ad38a98c2e18580127ec5da48a04",
+  "deletion_box_raw": [
+    [
+      1.5,
+      -4.25,
+      0.932
+    ],
+    [
+      1.8,
+      -3.5,
+      1.0439
+    ]
+  ],
+  "changes": [
+    {
+      "node": "Geometry_021",
+      "node_index": 3800,
+      "triangles_intersecting_region": 2,
+      "triangles_with_inside_parts_removed": 2,
+      "old_triangles": 2,
+      "new_triangles": 0
+    },
+    {
+      "node": "Geometry_023",
+      "node_index": 3802,
+      "triangles_intersecting_region": 7,
+      "triangles_with_inside_parts_removed": 7,
+      "old_triangles": 132,
+      "new_triangles": 125
+    },
+    {
+      "node": "Geometry_099.005",
+      "node_index": 3810,
+      "triangles_intersecting_region": 8,
+      "triangles_with_inside_parts_removed": 8,
+      "old_triangles": 207,
+      "new_triangles": 207
+    },
+    {
+      "node": "Geometry_021.004",
+      "node_index": 3930,
+      "triangles_intersecting_region": 12,
+      "triangles_with_inside_parts_removed": 12,
+      "old_triangles": 101,
+      "new_triangles": 89
+    },
+    {
+      "node": "Geometry_023.004",
+      "node_index": 3932,
+      "triangles_intersecting_region": 14,
+      "triangles_with_inside_parts_removed": 12,
+      "old_triangles": 121,
+      "new_triangles": 121
+    },
+    {
+      "node": "Geometry_099.009",
+      "node_index": 3935,
+      "triangles_intersecting_region": 11,
+      "triangles_with_inside_parts_removed": 11,
+      "old_triangles": 339,
+      "new_triangles": 332
+    }
+  ],
+  "method": "Exact half-space clipping of original scan triangles, retaining and interpolating outside geometry and UVs. All Kitchen_ and WallRepair_ repair nodes are excluded.",
+  "shared_files_modified": false
+}

@@ -1,0 +1,352 @@
+{
+  "status": "passed",
+  "revision": "kitchen_workspace_v6_20261011",
+  "scene_sha256": "126fbc2d2bc7b17f441e4446da4a13d1d261562bc70ed9e1d59bb029e3e41a4c",
+  "views": [
+    {
+      "id": "sink",
+      "state": {
+        "ready": true,
+        "error": null,
+        "view": "sink",
+        "selection": "sink",
+        "panels": [
+          {
+            "size": [
+              4096,
+              2048
+            ],
+            "quaternion": [
+              -0.11474668839366382,
+              0,
+              0,
+              0.9933947843142159
+            ],
+            "fov": 100,
+            "programs": 1
+          },
+          {
+            "size": [
+              4096,
+              2048
+            ],
+            "quaternion": [
+              -0.11474668839366382,
+              0,
+              0,
+              0.9933947843142159
+            ],
+            "fov": 100,
+            "programs": 1
+          }
+        ]
+      },
+      "downloads": [
+        {
+          "name": "sink_before.jpg",
+          "bytes": 2534168,
+          "dimensions": [
+            4096,
+            2048
+          ]
+        },
+        {
+          "name": "sink_after.jpg",
+          "bytes": 2528668,
+          "dimensions": [
+            4096,
+            2048
+          ]
+        },
+        {
+          "name": "sink_comparison.jpg",
+          "bytes": 4784998,
+          "dimensions": [
+            4096,
+            4216
+          ]
+        }
+      ]
+    },
+    {
+      "id": "corner",
+      "state": {
+        "ready": true,
+        "error": null,
+        "view": "corner",
+        "selection": "corner",
+        "panels": [
+          {
+            "size": [
+              4096,
+              2048
+            ],
+            "quaternion": [
+              -0.10873978260995001,
+              -0.31719968245604957,
+              -0.03663962575209242,
+              0.9413912889720558
+            ],
+            "fov": 100,
+            "programs": 1
+          },
+          {
+            "size": [
+              4096,
+              2048
+            ],
+            "quaternion": [
+              -0.10873978260995001,
+              -0.31719968245604957,
+              -0.03663962575209242,
+              0.9413912889720558
+            ],
+            "fov": 100,
+            "programs": 1
+          }
+        ]
+      },
+      "downloads": [
+        {
+          "name": "corner_before.jpg",
+          "bytes": 2561911,
+          "dimensions": [
+            4096,
+            2048
+          ]
+        },
+        {
+          "name": "corner_after.jpg",
+          "bytes": 2532055,
+          "dimensions": [
+            4096,
+            2048
+          ]
+        },
+        {
+          "name": "corner_comparison.jpg",
+          "bytes": 4820390,
+          "dimensions": [
+            4096,
+            4216
+          ]
+        }
+      ]
+    },
+    {
+      "id": "range",
+      "state": {
+        "ready": true,
+        "error": null,
+        "view": "range",
+        "selection": "range",
+        "panels": [
+          {
+            "size": [
+              4096,
+              2048
+            ],
+            "quaternion": [
+              -0.09134797956735274,
+              -0.6011890189960485,
+              -0.06944313591907472,
+              0.790825493355681
+            ],
+            "fov": 100,
+            "programs": 1
+          },
+          {
+            "size": [
+              4096,
+              2048
+            ],
+            "quaternion": [
+              -0.09134797956735274,
+              -0.6011890189960485,
+              -0.06944313591907472,
+              0.790825493355681
+            ],
+            "fov": 100,
+            "programs": 1
+          }
+        ]
+      },
+      "downloads": [
+        {
+          "name": "range_before.jpg",
+          "bytes": 2449432,
+          "dimensions": [
+            4096,
+            2048
+          ]
+        },
+        {
+          "name": "range_after.jpg",
+          "bytes": 2462760,
+          "dimensions": [
+            4096,
+            2048
+          ]
+        },
+        {
+          "name": "range_comparison.jpg",
+          "bytes": 4644135,
+          "dimensions": [
+            4096,
+            4216
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea",
+      "state": {
+        "ready": true,
+        "error": null,
+        "view": "tea",
+        "selection": "tea",
+        "panels": [
+          {
+            "size": [
+              4096,
+              2048
+            ],
+            "quaternion": [
+              -0.0782826242881809,
+              0.726316453823788,
+              0.0838965626939989,
+              0.6777149890680629
+            ],
+            "fov": 100,
+            "programs": 1
+          },
+          {
+            "size": [
+              4096,
+              2048
+            ],
+            "quaternion": [
+              -0.0782826242881809,
+              0.726316453823788,
+              0.0838965626939989,
+              0.6777149890680629
+            ],
+            "fov": 100,
+            "programs": 1
+          }
+        ]
+      },
+      "downloads": [
+        {
+          "name": "tea_before.jpg",
+          "bytes": 2444616,
+          "dimensions": [
+            4096,
+            2048
+          ]
+        },
+        {
+          "name": "tea_after.jpg",
+          "bytes": 2550162,
+          "dimensions": [
+            4096,
+            2048
+          ]
+        },
+        {
+          "name": "tea_comparison.jpg",
+          "bytes": 4722853,
+          "dimensions": [
+            4096,
+            4216
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coffee",
+      "state": {
+        "ready": true,
+        "error": null,
+        "view": "coffee",
+        "selection": "coffee",
+        "panels": [
+          {
+            "size": [
+              4096,
+              2048
+            ],
+            "quaternion": [
+              -0.059564878212966445,
+              -0.8490686179029169,
+              -0.09807562276522676,
+              0.5156701267235849
+            ],
+            "fov": 100,
+            "programs": 1
+          },
+          {
+            "size": [
+              4096,
+              2048
+            ],
+            "quaternion": [
+              -0.059564878212966445,
+              -0.8490686179029169,
+              -0.09807562276522676,
+              0.5156701267235849
+            ],
+            "fov": 100,
+            "programs": 1
+          }
+        ]
+      },
+      "downloads": [
+        {
+          "name": "coffee_before.jpg",
+          "bytes": 2314212,
+          "dimensions": [
+            4096,
+            2048
+          ]
+        },
+        {
+          "name": "coffee_after.jpg",
+          "bytes": 2394055,
+          "dimensions": [
+            4096,
+            2048
+          ]
+        },
+        {
+          "name": "coffee_comparison.jpg",
+          "bytes": 4455353,
+          "dimensions": [
+            4096,
+            4216
+          ]
+        }
+      ]
+    }
+  ],
+  "linked_drag_passed": true,
+  "linked_wheel_zoom_passed": true,
+  "reset_passed": true,
+  "photo_comparison_objects_covered": 23,
+  "missing_photo_objects": [],
+  "browser_errors": [],
+  "navigation_actions_sent": false,
+  "before_representation": "Original dataset photographic skyboxes; untouched mesh unavailable",
+  "after_representation": "Actual published PBR room browser captures",
+  "verified_utc": "2026-10-10T21:43:55Z",
+  "visual_review": {
+    "status": "reviewed",
+    "contact_sheet": "browser/all_positions_contact.jpg",
+    "observations": [
+      "All five real-photograph and repaired-room directions align visually at the supplied panorama cameras.",
+      "Repaired props appear in sink, corner, range, tea and coffee areas; choose position and zoom to inspect them.",
+      "Existing scan gaps remain conspicuous behind sink/corner objects, under upper cabinets and near the ceiling.",
+      "Several substitute appliances and decorative objects remain less faithful than the photographs."
+    ]
+  }
+}

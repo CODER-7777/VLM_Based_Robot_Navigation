@@ -1,0 +1,12 @@
+{
+  "revision": "kitchen_workspace_v6_20261011",
+  "workspace": "/data/robotics/toshith/vivekananda/kitchen_repair_20261011",
+  "status": "published",
+  "port": 8774,
+  "pid": 2820150,
+  "current_scene": "/data/robotics/toshith/vivekananda/kitchen_repair_20261011/home_pbr_products.glb",
+  "navigation_process_restarted": false,
+  "gaussian_process_restarted": false,
+  "navigation_state_preserved": true,
+  "live_scene_replaced": true
+}

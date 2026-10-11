@@ -1,0 +1,935 @@
+[
+  {
+    "animationCount": 0,
+    "categories": [
+      {
+        "uid": "b3631aefd82b4eeba37aa5fc0b73b05a",
+        "name": "Food & Drink",
+        "slug": "food-drink",
+        "uri": "https://api.sketchfab.com/v3/categories/b3631aefd82b4eeba37aa5fc0b73b05a",
+        "icon": "https://static.sketchfab.com/static/builds/web/dist/static/assets/images/icons/categories/dac08ea5b8779b2cef7a4c81327df721-v2.svg",
+        "thumbnails": [
+          {
+            "width": "512",
+            "height": "288",
+            "url": "https://static.sketchfab.com/categories/b3631aefd82b4eeba37aa5fc0b73b05a/512x288.png"
+          },
+          {
+            "width": "800",
+            "height": "450",
+            "url": "https://static.sketchfab.com/categories/b3631aefd82b4eeba37aa5fc0b73b05a/800x450.png"
+          }
+        ]
+      }
+    ],
+    "commentCount": 0,
+    "createdAt": "2016-11-10T11:55:26.714976",
+    "embedUrl": "https://sketchfab.com/models/29ee8eedcd0341c388882f50826dd208/embed",
+    "faceCount": 662140,
+    "isAgeRestricted": false,
+    "license": {
+      "uri": "https://api.sketchfab.com/v3/licenses/34b725081a6a4184957efaec2cb84ed3",
+      "label": "CC Attribution-NonCommercial-NoDerivs",
+      "fullName": "CC Attribution-NonCommercial-NoDerivs",
+      "requirements": "Author must be credited. No commercial use. Modified versions can not be distributed.",
+      "url": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "slug": "by-nc-nd"
+    },
+    "likeCount": 0,
+    "name": "Aeroccino3",
+    "publishedAt": "2016-11-10T12:24:45.416502",
+    "soundCount": 0,
+    "staffpickedAt": null,
+    "tags": [
+      {
+        "name": "aerial",
+        "slug": "aerial",
+        "uri": "https://api.sketchfab.com/v3/tags/aerial"
+      }
+    ],
+    "thumbnails": {
+      "images": [
+        {
+          "uid": "9523561a93344de4bf0f231815355b48",
+          "width": 1920,
+          "height": 1080,
+          "size": 185851,
+          "url": "https://media.sketchfab.com/models/29ee8eedcd0341c388882f50826dd208/thumbnails/749d92caab994d78b5083f751f742715/948defc7c28041a5a5608c1cbda25233.jpeg"
+        },
+        {
+          "uid": "597520cabb37490aad2596b136dccb74",
+          "width": 1024,
+          "height": 576,
+          "size": 30744,
+          "url": "https://media.sketchfab.com/models/29ee8eedcd0341c388882f50826dd208/thumbnails/749d92caab994d78b5083f751f742715/9ad993cb0e6b45eeb8b53dcbeaa54054.jpeg"
+        },
+        {
+          "uid": "1e04e7b4891244ff91d5478ad21fd706",
+          "width": 720,
+          "height": 405,
+          "size": 17258,
+          "url": "https://media.sketchfab.com/models/29ee8eedcd0341c388882f50826dd208/thumbnails/749d92caab994d78b5083f751f742715/f897f44168f5485ab4141006a9e876b8.jpeg"
+        },
+        {
+          "uid": "3e73d1b444754753907b7617ef85bc47",
+          "width": 256,
+          "height": 144,
+          "size": 3670,
+          "url": "https://media.sketchfab.com/models/29ee8eedcd0341c388882f50826dd208/thumbnails/749d92caab994d78b5083f751f742715/f7708f43cb134f5299e8e6f8eb49ce6a.jpeg"
+        },
+        {
+          "uid": "f1d3786ce7424e33a7cfc797bad992f7",
+          "width": 64,
+          "height": 36,
+          "size": 807,
+          "url": "https://media.sketchfab.com/models/29ee8eedcd0341c388882f50826dd208/thumbnails/749d92caab994d78b5083f751f742715/368d4354066b403bb3090eca7a43a24c.jpeg"
+        }
+      ]
+    },
+    "uid": "29ee8eedcd0341c388882f50826dd208",
+    "uri": "https://api.sketchfab.com/v3/models/29ee8eedcd0341c388882f50826dd208",
+    "user": {
+      "uid": "5a10fa1a88d74ffc8d90c9efcf34c241",
+      "username": "odi17",
+      "displayName": "Osvaldo Dimeglio",
+      "account": "basic",
+      "profileUrl": "https://sketchfab.com/odi17",
+      "avatar": {
+        "uid": "4974deb357aa42c088a5e721507fdda1",
+        "uri": "https://api.sketchfab.com/v3/avatars/4974deb357aa42c088a5e721507fdda1",
+        "images": [
+          {
+            "width": 32,
+            "height": 32,
+            "size": 740,
+            "url": "https://media.sketchfab.com/avatars/4974deb357aa42c088a5e721507fdda1/d0cb9056cdbb43bbb26751ea8c21f923.jpeg"
+          },
+          {
+            "width": 48,
+            "height": 48,
+            "size": 1090,
+            "url": "https://media.sketchfab.com/avatars/4974deb357aa42c088a5e721507fdda1/74aedfc2b5434f8a9118eb41e3f80b66.jpeg"
+          },
+          {
+            "width": 90,
+            "height": 90,
+            "size": 2511,
+            "url": "https://media.sketchfab.com/avatars/4974deb357aa42c088a5e721507fdda1/7ba60fd7035847ffb2895b1f03a447ad.jpeg"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "size": 2878,
+            "url": "https://media.sketchfab.com/avatars/4974deb357aa42c088a5e721507fdda1/19678f6b8cb24b82bc89fb0da2fed9ff.jpeg"
+          }
+        ]
+      },
+      "uri": "https://api.sketchfab.com/v3/users/5a10fa1a88d74ffc8d90c9efcf34c241"
+    },
+    "vertexCount": 330352,
+    "viewCount": 75,
+    "viewerUrl": "https://sketchfab.com/3d-models/aeroccino3-29ee8eedcd0341c388882f50826dd208",
+    "isDownloadable": true,
+    "isProtected": false,
+    "description": "",
+    "price": null,
+    "downloadCount": 45,
+    "editorUrl": "https://sketchfab.com/models/29ee8eedcd0341c388882f50826dd208/edit",
+    "status": {
+      "warning": {},
+      "processing": "SUCCEEDED"
+    },
+    "source": "website",
+    "hasCommentsDisabled": false,
+    "updatedAt": "2022-03-10T23:11:30.984180",
+    "pbrType": null,
+    "textureCount": null,
+    "materialCount": 7
+  },
+  {
+    "animationCount": 0,
+    "categories": [],
+    "commentCount": 0,
+    "createdAt": "2026-06-22T09:16:16.615368",
+    "embedUrl": "https://sketchfab.com/models/cb6b6373ff014b7eb80ec7834d812a34/embed",
+    "faceCount": 43008,
+    "isAgeRestricted": false,
+    "license": {
+      "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+      "label": "CC Attribution",
+      "fullName": "Creative Commons Attribution",
+      "requirements": "Author must be credited. Commercial use is allowed.",
+      "url": "http://creativecommons.org/licenses/by/4.0/",
+      "slug": "by"
+    },
+    "likeCount": 4,
+    "name": "Nepreso Aeroccino",
+    "publishedAt": "2026-06-22T09:18:14.123151",
+    "soundCount": 0,
+    "staffpickedAt": null,
+    "tags": [
+      {
+        "name": "mtrltech",
+        "slug": "mtrltech",
+        "uri": "https://api.sketchfab.com/v3/tags/mtrltech"
+      },
+      {
+        "name": "mtrlnespresso",
+        "slug": "mtrlnespresso",
+        "uri": "https://api.sketchfab.com/v3/tags/mtrlnespresso"
+      },
+      {
+        "name": "mtrlcafe",
+        "slug": "mtrlcafe",
+        "uri": "https://api.sketchfab.com/v3/tags/mtrlcafe"
+      },
+      {
+        "name": "mtrlnestle",
+        "slug": "mtrlnestle",
+        "uri": "https://api.sketchfab.com/v3/tags/mtrlnestle"
+      }
+    ],
+    "thumbnails": {
+      "images": [
+        {
+          "uid": "abbabace33f64e40a3e4704f1962c8dd",
+          "width": 1920,
+          "height": 1080,
+          "size": 84363,
+          "url": "https://media.sketchfab.com/models/cb6b6373ff014b7eb80ec7834d812a34/thumbnails/f8db4631dc0747e0ac40f5e6cbe27ee9/c82d5b928f7b4fd3bff944eff2bc47d3.jpeg"
+        },
+        {
+          "uid": "df8264efa5ae48b6a0d6295044bfef3f",
+          "width": 1024,
+          "height": 576,
+          "size": 27123,
+          "url": "https://media.sketchfab.com/models/cb6b6373ff014b7eb80ec7834d812a34/thumbnails/f8db4631dc0747e0ac40f5e6cbe27ee9/1d0847dfdf8e4100bfa9d5d72abfd487.jpeg"
+        },
+        {
+          "uid": "b20adacb390741f6bb7c0b908ec3d223",
+          "width": 720,
+          "height": 405,
+          "size": 15796,
+          "url": "https://media.sketchfab.com/models/cb6b6373ff014b7eb80ec7834d812a34/thumbnails/f8db4631dc0747e0ac40f5e6cbe27ee9/4ce80e89abf2403f89ebd66dcf6281c4.jpeg"
+        },
+        {
+          "uid": "a5f4f8986677410d813e3c96d196d246",
+          "width": 256,
+          "height": 144,
+          "size": 3563,
+          "url": "https://media.sketchfab.com/models/cb6b6373ff014b7eb80ec7834d812a34/thumbnails/f8db4631dc0747e0ac40f5e6cbe27ee9/6da9346c7f164194bbd36614d60d6e5c.jpeg"
+        },
+        {
+          "uid": "9b4e02a568d0451b8e5ecb7a75b10574",
+          "width": 64,
+          "height": 36,
+          "size": 995,
+          "url": "https://media.sketchfab.com/models/cb6b6373ff014b7eb80ec7834d812a34/thumbnails/f8db4631dc0747e0ac40f5e6cbe27ee9/2bd93dcaf98942c686fe88ed44200035.jpeg"
+        }
+      ]
+    },
+    "uid": "cb6b6373ff014b7eb80ec7834d812a34",
+    "uri": "https://api.sketchfab.com/v3/models/cb6b6373ff014b7eb80ec7834d812a34",
+    "user": {
+      "uid": "f5d3b7ed7879414085c0a8c5af773306",
+      "username": "vmmaniac",
+      "displayName": "Roberto Dom\u00ednguez",
+      "account": "basic",
+      "profileUrl": "https://sketchfab.com/vmmaniac",
+      "avatar": {
+        "uid": "a274d0b3e5284c52b482c4acf7980591",
+        "uri": "https://api.sketchfab.com/v3/avatars/a274d0b3e5284c52b482c4acf7980591",
+        "images": [
+          {
+            "width": 32,
+            "height": 32,
+            "size": 2632,
+            "url": "https://media.sketchfab.com/avatars/a274d0b3e5284c52b482c4acf7980591/66992ff094ce4b99a3cf177b7970c0de.png"
+          },
+          {
+            "width": 48,
+            "height": 48,
+            "size": 4650,
+            "url": "https://media.sketchfab.com/avatars/a274d0b3e5284c52b482c4acf7980591/e7d6445c0b4941b0b043f00c8fa07d84.png"
+          },
+          {
+            "width": 90,
+            "height": 90,
+            "size": 11282,
+            "url": "https://media.sketchfab.com/avatars/a274d0b3e5284c52b482c4acf7980591/d5b87e9616de4ac7bea6d20e7c61afcf.png"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "size": 13123,
+            "url": "https://media.sketchfab.com/avatars/a274d0b3e5284c52b482c4acf7980591/6bc93b6591e84c5cacc6be30c0fae299.png"
+          }
+        ]
+      },
+      "uri": "https://api.sketchfab.com/v3/users/f5d3b7ed7879414085c0a8c5af773306"
+    },
+    "vertexCount": 21653,
+    "viewCount": 8,
+    "viewerUrl": "https://sketchfab.com/3d-models/nepreso-aeroccino-cb6b6373ff014b7eb80ec7834d812a34",
+    "isDownloadable": true,
+    "isProtected": false,
+    "description": "",
+    "price": null,
+    "downloadCount": 6,
+    "editorUrl": "https://sketchfab.com/models/cb6b6373ff014b7eb80ec7834d812a34/edit",
+    "status": {
+      "warning": {},
+      "processing": "SUCCEEDED"
+    },
+    "source": "website",
+    "hasCommentsDisabled": false,
+    "updatedAt": "2026-06-22T09:18:14.282658",
+    "pbrType": "metalness",
+    "textureCount": 4,
+    "materialCount": 3
+  },
+  {
+    "animationCount": 0,
+    "categories": [
+      {
+        "uid": "d7cebaeca8604ebab1480e413404b679",
+        "name": "Electronics & Gadgets",
+        "slug": "electronics-gadgets",
+        "uri": "https://api.sketchfab.com/v3/categories/d7cebaeca8604ebab1480e413404b679",
+        "icon": "https://static.sketchfab.com/static/builds/web/dist/static/assets/images/icons/categories/336c224334b7e53e277d236a8355e90a-v2.svg",
+        "thumbnails": [
+          {
+            "width": "512",
+            "height": "288",
+            "url": "https://static.sketchfab.com/categories/d7cebaeca8604ebab1480e413404b679/512x288.png"
+          },
+          {
+            "width": "800",
+            "height": "450",
+            "url": "https://static.sketchfab.com/categories/d7cebaeca8604ebab1480e413404b679/800x450.png"
+          }
+        ]
+      },
+      {
+        "uid": "606f202e5a3c4e62bf9aab1cd9f63e1b",
+        "name": "Furniture & Home",
+        "slug": "furniture-home",
+        "uri": "https://api.sketchfab.com/v3/categories/606f202e5a3c4e62bf9aab1cd9f63e1b",
+        "icon": "https://static.sketchfab.com/static/builds/web/dist/static/assets/images/icons/categories/c999ae9e0525ccfb8fd8953190d5307d-v2.svg",
+        "thumbnails": [
+          {
+            "width": "512",
+            "height": "288",
+            "url": "https://static.sketchfab.com/categories/606f202e5a3c4e62bf9aab1cd9f63e1b/512x288.png"
+          },
+          {
+            "width": "800",
+            "height": "450",
+            "url": "https://static.sketchfab.com/categories/606f202e5a3c4e62bf9aab1cd9f63e1b/800x450.png"
+          }
+        ]
+      }
+    ],
+    "commentCount": 0,
+    "createdAt": "2025-09-27T12:28:27.380219",
+    "embedUrl": "https://sketchfab.com/models/587c8104da254e95af119a9f076c122b/embed",
+    "faceCount": 485990,
+    "isAgeRestricted": false,
+    "license": {
+      "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+      "label": "CC Attribution",
+      "fullName": "Creative Commons Attribution",
+      "requirements": "Author must be credited. Commercial use is allowed.",
+      "url": "http://creativecommons.org/licenses/by/4.0/",
+      "slug": "by"
+    },
+    "likeCount": 1,
+    "name": "Cafetera Nespresso",
+    "publishedAt": "2025-09-27T12:30:15.731023",
+    "soundCount": 0,
+    "staffpickedAt": null,
+    "tags": [],
+    "thumbnails": {
+      "images": [
+        {
+          "uid": "11fa2deee4ae47e6bc982b62a4f8445d",
+          "width": 1920,
+          "height": 1080,
+          "size": 63212,
+          "url": "https://media.sketchfab.com/models/587c8104da254e95af119a9f076c122b/thumbnails/87511402661d4e4da43b6a51f35c8cc2/4958e4d2a0a44a118b8b66a505302890.jpeg"
+        },
+        {
+          "uid": "fc662509ceef44afac744ad084fe648e",
+          "width": 1024,
+          "height": 576,
+          "size": 21402,
+          "url": "https://media.sketchfab.com/models/587c8104da254e95af119a9f076c122b/thumbnails/87511402661d4e4da43b6a51f35c8cc2/0bf57cce963340559e24b76a542db81d.jpeg"
+        },
+        {
+          "uid": "fb506ae6fd404bc9889a5de83bdc252b",
+          "width": 720,
+          "height": 405,
+          "size": 12420,
+          "url": "https://media.sketchfab.com/models/587c8104da254e95af119a9f076c122b/thumbnails/87511402661d4e4da43b6a51f35c8cc2/c05f0c62c85a4056af0cc20dd4f941a2.jpeg"
+        },
+        {
+          "uid": "c8442a0af8394ea5bef9402a31b997d1",
+          "width": 256,
+          "height": 144,
+          "size": 2681,
+          "url": "https://media.sketchfab.com/models/587c8104da254e95af119a9f076c122b/thumbnails/87511402661d4e4da43b6a51f35c8cc2/418d94a14ce645189396db6e68d5c06d.jpeg"
+        },
+        {
+          "uid": "886ba4cf63364b5b8e749de6f97200ea",
+          "width": 64,
+          "height": 36,
+          "size": 959,
+          "url": "https://media.sketchfab.com/models/587c8104da254e95af119a9f076c122b/thumbnails/87511402661d4e4da43b6a51f35c8cc2/8440197846a24412bff6e50be27b5d3d.jpeg"
+        }
+      ]
+    },
+    "uid": "587c8104da254e95af119a9f076c122b",
+    "uri": "https://api.sketchfab.com/v3/models/587c8104da254e95af119a9f076c122b",
+    "user": {
+      "uid": "d407e22eb65d41839ee22cee2eb69819",
+      "username": "xxavi007",
+      "displayName": "xxavi007",
+      "account": "basic",
+      "profileUrl": "https://sketchfab.com/xxavi007",
+      "avatar": {
+        "uid": "78fa317e46024a5283765aa34df5e508",
+        "uri": "https://api.sketchfab.com/v3/avatars/78fa317e46024a5283765aa34df5e508",
+        "images": [
+          {
+            "width": 100,
+            "height": 100,
+            "size": 6421,
+            "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/aec92fe9a74e499c98d759362cd7f02f.jpeg"
+          },
+          {
+            "width": 48,
+            "height": 48,
+            "size": 2518,
+            "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/17fa177ffaa344a2b2fc8e78efd40fbb.jpeg"
+          },
+          {
+            "width": 90,
+            "height": 90,
+            "size": 5653,
+            "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/02162695bdc840faa3bcb2d418309c5e.jpeg"
+          },
+          {
+            "width": 32,
+            "height": 32,
+            "size": 1350,
+            "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/6fde876cbded4cd48d36a76029e3aa02.jpeg"
+          }
+        ]
+      },
+      "uri": "https://api.sketchfab.com/v3/users/d407e22eb65d41839ee22cee2eb69819"
+    },
+    "vertexCount": 217048,
+    "viewCount": 105,
+    "viewerUrl": "https://sketchfab.com/3d-models/cafetera-nespresso-587c8104da254e95af119a9f076c122b",
+    "isDownloadable": true,
+    "isProtected": false,
+    "description": "",
+    "price": null,
+    "downloadCount": 95,
+    "editorUrl": "https://sketchfab.com/models/587c8104da254e95af119a9f076c122b/edit",
+    "status": {
+      "warning": {},
+      "processing": "SUCCEEDED"
+    },
+    "source": "website",
+    "hasCommentsDisabled": false,
+    "updatedAt": "2025-09-27T12:30:15.830768",
+    "pbrType": null,
+    "textureCount": 0,
+    "materialCount": 7
+  },
+  {
+    "animationCount": 0,
+    "categories": [
+      {
+        "uid": "606f202e5a3c4e62bf9aab1cd9f63e1b",
+        "name": "Furniture & Home",
+        "slug": "furniture-home",
+        "uri": "https://api.sketchfab.com/v3/categories/606f202e5a3c4e62bf9aab1cd9f63e1b",
+        "icon": "https://static.sketchfab.com/static/builds/web/dist/static/assets/images/icons/categories/c999ae9e0525ccfb8fd8953190d5307d-v2.svg",
+        "thumbnails": [
+          {
+            "width": "512",
+            "height": "288",
+            "url": "https://static.sketchfab.com/categories/606f202e5a3c4e62bf9aab1cd9f63e1b/512x288.png"
+          },
+          {
+            "width": "800",
+            "height": "450",
+            "url": "https://static.sketchfab.com/categories/606f202e5a3c4e62bf9aab1cd9f63e1b/800x450.png"
+          }
+        ]
+      }
+    ],
+    "commentCount": 0,
+    "createdAt": "2025-06-18T16:53:51.019922",
+    "embedUrl": "https://sketchfab.com/models/8cebf4de1b33446db4501d8f1c24cc1f/embed",
+    "faceCount": 48142,
+    "isAgeRestricted": false,
+    "license": {
+      "uri": "https://api.sketchfab.com/v3/licenses/72eb2b1960364637901eacce19283624",
+      "label": "Free Standard",
+      "fullName": "Free Standard",
+      "requirements": "Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works",
+      "url": "https://sketchfab.com/licenses",
+      "slug": "free-st"
+    },
+    "likeCount": 2,
+    "name": "Cafetera nespresso",
+    "publishedAt": "2025-06-18T16:54:50.651335",
+    "soundCount": 0,
+    "staffpickedAt": null,
+    "tags": [
+      {
+        "name": "realityscan",
+        "slug": "realityscan",
+        "uri": "https://api.sketchfab.com/v3/tags/realityscan"
+      },
+      {
+        "name": "noai",
+        "slug": "noai",
+        "uri": "https://api.sketchfab.com/v3/tags/noai"
+      }
+    ],
+    "thumbnails": {
+      "images": [
+        {
+          "uid": "8137cb4433944a3686028de08d4ae6d5",
+          "width": 1920,
+          "height": 1080,
+          "size": 79975,
+          "url": "https://media.sketchfab.com/models/8cebf4de1b33446db4501d8f1c24cc1f/thumbnails/0d2d377d39844bc6a9d8a4dc7b0e2d99/6912921ef337456b80dcef7cd04b09e7.jpeg"
+        },
+        {
+          "uid": "dbb69324b740472f9d3c8778a9500221",
+          "width": 1024,
+          "height": 576,
+          "size": 24846,
+          "url": "https://media.sketchfab.com/models/8cebf4de1b33446db4501d8f1c24cc1f/thumbnails/0d2d377d39844bc6a9d8a4dc7b0e2d99/04fedcfeff024f7a84983879fbac1e35.jpeg"
+        },
+        {
+          "uid": "7be65e70f53d417a82f6fdb3fd45c6c5",
+          "width": 720,
+          "height": 405,
+          "size": 14059,
+          "url": "https://media.sketchfab.com/models/8cebf4de1b33446db4501d8f1c24cc1f/thumbnails/0d2d377d39844bc6a9d8a4dc7b0e2d99/e4d7260cc9e94d69ad0f49ae9ae4343f.jpeg"
+        },
+        {
+          "uid": "22682d64577e4cee850c941edb58baab",
+          "width": 256,
+          "height": 144,
+          "size": 3070,
+          "url": "https://media.sketchfab.com/models/8cebf4de1b33446db4501d8f1c24cc1f/thumbnails/0d2d377d39844bc6a9d8a4dc7b0e2d99/8240f2385714485b82420704399c71ba.jpeg"
+        },
+        {
+          "uid": "7a418f23851b4c3f8711488a92e0846a",
+          "width": 64,
+          "height": 36,
+          "size": 1020,
+          "url": "https://media.sketchfab.com/models/8cebf4de1b33446db4501d8f1c24cc1f/thumbnails/0d2d377d39844bc6a9d8a4dc7b0e2d99/1d1116a8eef54063aa6ddd2fa2bda500.jpeg"
+        }
+      ]
+    },
+    "uid": "8cebf4de1b33446db4501d8f1c24cc1f",
+    "uri": "https://api.sketchfab.com/v3/models/8cebf4de1b33446db4501d8f1c24cc1f",
+    "user": {
+      "uid": "038abd460983423caad3663b9cc7b70b",
+      "username": "mlatapiat",
+      "displayName": "mlatapiat",
+      "account": "basic",
+      "profileUrl": "https://sketchfab.com/mlatapiat",
+      "avatar": {
+        "uid": "51af6a870cce449eb75b0345feebaebb",
+        "uri": "https://api.sketchfab.com/v3/avatars/51af6a870cce449eb75b0345feebaebb",
+        "images": [
+          {
+            "width": 90,
+            "height": 90,
+            "size": 5719,
+            "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/2ef0f894055b4bb69123b2a27fa2d379.jpeg"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "size": 6496,
+            "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/ab11eedf96374486acb544f71a23b165.jpeg"
+          },
+          {
+            "width": 32,
+            "height": 32,
+            "size": 1359,
+            "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/35f6f9b6c9a14a548ce472582d8a9bb5.jpeg"
+          },
+          {
+            "width": 48,
+            "height": 48,
+            "size": 2584,
+            "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/a8072a51447c4d41ab177b357111b420.jpeg"
+          }
+        ]
+      },
+      "uri": "https://api.sketchfab.com/v3/users/038abd460983423caad3663b9cc7b70b"
+    },
+    "vertexCount": 24517,
+    "viewCount": 29,
+    "viewerUrl": "https://sketchfab.com/3d-models/cafetera-nespresso-8cebf4de1b33446db4501d8f1c24cc1f",
+    "isDownloadable": true,
+    "isProtected": false,
+    "description": "",
+    "price": null,
+    "downloadCount": 28,
+    "editorUrl": "https://sketchfab.com/models/8cebf4de1b33446db4501d8f1c24cc1f/edit",
+    "status": {
+      "warning": {},
+      "processing": "SUCCEEDED"
+    },
+    "source": "realityscan",
+    "hasCommentsDisabled": false,
+    "updatedAt": "2025-06-18T16:54:50.615841",
+    "pbrType": null,
+    "textureCount": null,
+    "materialCount": 1
+  },
+  {
+    "animationCount": 0,
+    "categories": [
+      {
+        "uid": "f825c721edb541dbbc8cd210123616c7",
+        "name": "Architecture",
+        "slug": "architecture",
+        "uri": "https://api.sketchfab.com/v3/categories/f825c721edb541dbbc8cd210123616c7",
+        "icon": "https://static.sketchfab.com/static/builds/web/dist/static/assets/images/icons/categories/0d6c3fa023a12c3d7aa493c542afd1b8-v2.svg",
+        "thumbnails": [
+          {
+            "width": "512",
+            "height": "288",
+            "url": "https://static.sketchfab.com/categories/f825c721edb541dbbc8cd210123616c7/512x288.png"
+          },
+          {
+            "width": "800",
+            "height": "450",
+            "url": "https://static.sketchfab.com/categories/f825c721edb541dbbc8cd210123616c7/800x450.png"
+          }
+        ]
+      }
+    ],
+    "commentCount": 0,
+    "createdAt": "2023-01-15T15:30:56.519236",
+    "embedUrl": "https://sketchfab.com/models/27bdd6ea3b12438b8daa9bb0e8f4cc09/embed",
+    "faceCount": 35649,
+    "isAgeRestricted": false,
+    "license": {
+      "uri": "https://api.sketchfab.com/v3/licenses/b9ddc40b93e34cdca1fc152f39b9f375",
+      "label": "CC Attribution-ShareAlike",
+      "fullName": "Creative Commons Attribution-ShareAlike",
+      "requirements": "Author must be credited. Modified versions must have the same license. Commercial use is allowed.",
+      "url": "http://creativecommons.org/licenses/by-sa/4.0/",
+      "slug": "by-sa"
+    },
+    "likeCount": 5,
+    "name": "Nespresso Machine 1",
+    "publishedAt": "2023-01-15T15:37:46.027626",
+    "soundCount": 0,
+    "staffpickedAt": null,
+    "tags": [
+      {
+        "name": "nespresso",
+        "slug": "nespresso",
+        "uri": "https://api.sketchfab.com/v3/tags/nespresso"
+      },
+      {
+        "name": "coffee",
+        "slug": "coffee",
+        "uri": "https://api.sketchfab.com/v3/tags/coffee"
+      },
+      {
+        "name": "Machine",
+        "slug": "machine",
+        "uri": "https://api.sketchfab.com/v3/tags/machine"
+      },
+      {
+        "name": "Krups",
+        "slug": "krups",
+        "uri": "https://api.sketchfab.com/v3/tags/krups"
+      },
+      {
+        "name": "houdini",
+        "slug": "houdini",
+        "uri": "https://api.sketchfab.com/v3/tags/houdini"
+      },
+      {
+        "name": "coffemachine",
+        "slug": "coffemachine",
+        "uri": "https://api.sketchfab.com/v3/tags/coffemachine"
+      },
+      {
+        "name": "nespreso",
+        "slug": "nespreso",
+        "uri": "https://api.sketchfab.com/v3/tags/nespreso"
+      },
+      {
+        "name": "3d",
+        "slug": "3d",
+        "uri": "https://api.sketchfab.com/v3/tags/3d"
+      },
+      {
+        "name": "model",
+        "slug": "model",
+        "uri": "https://api.sketchfab.com/v3/tags/model"
+      },
+      {
+        "name": "3dmodel",
+        "slug": "3dmodel",
+        "uri": "https://api.sketchfab.com/v3/tags/3dmodel"
+      },
+      {
+        "name": "nesspresso",
+        "slug": "nesspresso",
+        "uri": "https://api.sketchfab.com/v3/tags/nesspresso"
+      }
+    ],
+    "thumbnails": {
+      "images": [
+        {
+          "uid": "6b9f557ee54145a28257ba9935e54d05",
+          "width": 1920,
+          "height": 1080,
+          "size": 59872,
+          "url": "https://media.sketchfab.com/models/27bdd6ea3b12438b8daa9bb0e8f4cc09/thumbnails/d8fa3026569f4ebbae66c2774e0371b9/7cb5c573667d4916814a850ab375240e.jpeg"
+        },
+        {
+          "uid": "581c2b2fa9fc4367ade3aa8082bd85a1",
+          "width": 1024,
+          "height": 576,
+          "size": 19177,
+          "url": "https://media.sketchfab.com/models/27bdd6ea3b12438b8daa9bb0e8f4cc09/thumbnails/d8fa3026569f4ebbae66c2774e0371b9/2bb7bf873c344159afcb00881b2f8380.jpeg"
+        },
+        {
+          "uid": "15dde92ebf1d4fb9aed43bcb5d62cb40",
+          "width": 720,
+          "height": 405,
+          "size": 11226,
+          "url": "https://media.sketchfab.com/models/27bdd6ea3b12438b8daa9bb0e8f4cc09/thumbnails/d8fa3026569f4ebbae66c2774e0371b9/b864258908644acd9ef2757f57ba8de1.jpeg"
+        },
+        {
+          "uid": "cc702a21dca34db0996993eb1e3b453e",
+          "width": 256,
+          "height": 144,
+          "size": 2553,
+          "url": "https://media.sketchfab.com/models/27bdd6ea3b12438b8daa9bb0e8f4cc09/thumbnails/d8fa3026569f4ebbae66c2774e0371b9/05ef5721f89748f080acc928ef97eddd.jpeg"
+        },
+        {
+          "uid": "eda8e6e3f601437e830cc659d858130c",
+          "width": 64,
+          "height": 36,
+          "size": 854,
+          "url": "https://media.sketchfab.com/models/27bdd6ea3b12438b8daa9bb0e8f4cc09/thumbnails/d8fa3026569f4ebbae66c2774e0371b9/1e3d34626e104108887e69c28315c054.jpeg"
+        }
+      ]
+    },
+    "uid": "27bdd6ea3b12438b8daa9bb0e8f4cc09",
+    "uri": "https://api.sketchfab.com/v3/models/27bdd6ea3b12438b8daa9bb0e8f4cc09",
+    "user": {
+      "uid": "747b8fa89e4748c19cb896b9288fd2a1",
+      "username": "davidinlines",
+      "displayName": "davidinlines",
+      "account": "basic",
+      "profileUrl": "https://sketchfab.com/davidinlines",
+      "avatar": {
+        "uid": "5b2d763805404f63b86f756741ffa3e1",
+        "uri": "https://api.sketchfab.com/v3/avatars/5b2d763805404f63b86f756741ffa3e1",
+        "images": [
+          {
+            "width": 32,
+            "height": 32,
+            "size": 1282,
+            "url": "https://media.sketchfab.com/avatars/5b2d763805404f63b86f756741ffa3e1/2de70f9408bd41b0bf5a12d6531f5d5d.png"
+          },
+          {
+            "width": 48,
+            "height": 48,
+            "size": 1812,
+            "url": "https://media.sketchfab.com/avatars/5b2d763805404f63b86f756741ffa3e1/fa4f283fe122498ab745eb9084f613d5.png"
+          },
+          {
+            "width": 90,
+            "height": 90,
+            "size": 4028,
+            "url": "https://media.sketchfab.com/avatars/5b2d763805404f63b86f756741ffa3e1/950874e5dacc4d308de336dce9e5de09.png"
+          },
+          {
+            "width": 100,
+            "height": 100,
+            "size": 4514,
+            "url": "https://media.sketchfab.com/avatars/5b2d763805404f63b86f756741ffa3e1/1425771d3ec046bca9fb035c14c2f1f0.png"
+          }
+        ]
+      },
+      "uri": "https://api.sketchfab.com/v3/users/747b8fa89e4748c19cb896b9288fd2a1"
+    },
+    "vertexCount": 15612,
+    "viewCount": 952,
+    "viewerUrl": "https://sketchfab.com/3d-models/nespresso-machine-1-27bdd6ea3b12438b8daa9bb0e8f4cc09",
+    "isDownloadable": true,
+    "isProtected": false,
+    "description": "Model of Coffe Machine Nespresso.\nDemo in Unreal Engine 5\nhttps://www.linkedin.com/posts/davidinlines_houdini-hda-otl-ugcPost-7019262789349175296-JhOi?utm_source=share&utm_medium=member_desktop",
+    "price": null,
+    "downloadCount": 1192,
+    "editorUrl": "https://sketchfab.com/models/27bdd6ea3b12438b8daa9bb0e8f4cc09/edit",
+    "status": {
+      "warning": {},
+      "processing": "SUCCEEDED"
+    },
+    "source": "houdini",
+    "hasCommentsDisabled": false,
+    "updatedAt": "2024-02-15T17:29:53.677246",
+    "pbrType": null,
+    "textureCount": 0,
+    "materialCount": 7
+  },
+  {
+    "animationCount": 0,
+    "categories": [],
+    "commentCount": 0,
+    "createdAt": "2016-04-22T15:15:37.973638",
+    "embedUrl": "https://sketchfab.com/models/5a56ac54f7144de4878958cd45cac3cd/embed",
+    "faceCount": 3378008,
+    "isAgeRestricted": false,
+    "license": {
+      "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+      "label": "CC Attribution",
+      "fullName": "Creative Commons Attribution",
+      "requirements": "Author must be credited. Commercial use is allowed.",
+      "url": "http://creativecommons.org/licenses/by/4.0/",
+      "slug": "by"
+    },
+    "likeCount": 6,
+    "name": "Cafetera Nespresso Japan",
+    "publishedAt": "2016-04-22T15:42:23.539539",
+    "soundCount": 0,
+    "staffpickedAt": null,
+    "tags": [],
+    "thumbnails": {
+      "images": [
+        {
+          "uid": "f710cd2b6071424d8431e034d8f02712",
+          "width": 1024,
+          "height": 576,
+          "size": 27577,
+          "url": "https://media.sketchfab.com/models/5a56ac54f7144de4878958cd45cac3cd/thumbnails/99c119ef9bf04260b53aeaea6fbc99c0/1024x576.jpeg"
+        },
+        {
+          "uid": "a5e1c53c049048678e2558060f4d35c5",
+          "width": 864,
+          "height": 486,
+          "size": 21500,
+          "url": "https://media.sketchfab.com/models/5a56ac54f7144de4878958cd45cac3cd/thumbnails/99c119ef9bf04260b53aeaea6fbc99c0/864x486.jpeg"
+        },
+        {
+          "uid": "a79799dbd6054c0bb75b43d91b797185",
+          "width": 640,
+          "height": 360,
+          "size": 14277,
+          "url": "https://media.sketchfab.com/models/5a56ac54f7144de4878958cd45cac3cd/thumbnails/99c119ef9bf04260b53aeaea6fbc99c0/640x360.jpeg"
+        },
+        {
+          "uid": "1c0c17238d6042b38fd231bf00c8ac7d",
+          "width": 448,
+          "height": 252,
+          "size": 8772,
+          "url": "https://media.sketchfab.com/models/5a56ac54f7144de4878958cd45cac3cd/thumbnails/99c119ef9bf04260b53aeaea6fbc99c0/448x252.jpeg"
+        },
+        {
+          "uid": "a3638037996e49a08404473ddf4a8784",
+          "width": 200,
+          "height": 200,
+          "size": 4743,
+          "url": "https://media.sketchfab.com/models/5a56ac54f7144de4878958cd45cac3cd/thumbnails/99c119ef9bf04260b53aeaea6fbc99c0/200x200.jpeg"
+        },
+        {
+          "uid": "e5d6e95384874c018f3a6f7be963a07f",
+          "width": 50,
+          "height": 50,
+          "size": 960,
+          "url": "https://media.sketchfab.com/models/5a56ac54f7144de4878958cd45cac3cd/thumbnails/99c119ef9bf04260b53aeaea6fbc99c0/50x50.jpeg"
+        },
+        {
+          "uid": "fdac152630ca4b288642e3a480703cc3",
+          "width": 100,
+          "height": 100,
+          "size": 2041,
+          "url": "https://media.sketchfab.com/models/5a56ac54f7144de4878958cd45cac3cd/thumbnails/99c119ef9bf04260b53aeaea6fbc99c0/100x100.jpeg"
+        }
+      ]
+    },
+    "uid": "5a56ac54f7144de4878958cd45cac3cd",
+    "uri": "https://api.sketchfab.com/v3/models/5a56ac54f7144de4878958cd45cac3cd",
+    "user": {
+      "uid": "0bfa2f45d5984bc6ade1adc9d12d2c63",
+      "username": "furiadesignerone",
+      "displayName": "furiadesignerone",
+      "account": "basic",
+      "profileUrl": "https://sketchfab.com/furiadesignerone",
+      "avatar": {
+        "uid": "78fa317e46024a5283765aa34df5e508",
+        "uri": "https://api.sketchfab.com/v3/avatars/78fa317e46024a5283765aa34df5e508",
+        "images": [
+          {
+            "width": 100,
+            "height": 100,
+            "size": 6421,
+            "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/aec92fe9a74e499c98d759362cd7f02f.jpeg"
+          },
+          {
+            "width": 48,
+            "height": 48,
+            "size": 2518,
+            "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/17fa177ffaa344a2b2fc8e78efd40fbb.jpeg"
+          },
+          {
+            "width": 90,
+            "height": 90,
+            "size": 5653,
+            "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/02162695bdc840faa3bcb2d418309c5e.jpeg"
+          },
+          {
+            "width": 32,
+            "height": 32,
+            "size": 1350,
+            "url": "https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/6fde876cbded4cd48d36a76029e3aa02.jpeg"
+          }
+        ]
+      },
+      "uri": "https://api.sketchfab.com/v3/users/0bfa2f45d5984bc6ade1adc9d12d2c63"
+    },
+    "vertexCount": 1688995,
+    "viewCount": 792,
+    "viewerUrl": "https://sketchfab.com/3d-models/cafetera-nespresso-japan-5a56ac54f7144de4878958cd45cac3cd",
+    "isDownloadable": true,
+    "isProtected": false,
+    "description": "Capsule Coffee machine, based on Evangelion Coffee machine",
+    "price": null,
+    "downloadCount": 318,
+    "editorUrl": "https://sketchfab.com/models/5a56ac54f7144de4878958cd45cac3cd/edit",
+    "status": {
+      "warning": {},
+      "processing": "SUCCEEDED"
+    },
+    "source": "website-deflated",
+    "hasCommentsDisabled": false,
+    "updatedAt": "2022-07-20T12:22:00.408695",
+    "pbrType": null,
+    "textureCount": null,
+    "materialCount": 23
+  }
+]

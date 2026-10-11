@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "revision": "kitchen_workspace_v7_20261011",
+  "scene_sha256": "5ed7766ed49259522106e6ecd47866fde111ad38a98c2e18580127ec5da48a04",
+  "views": [
+    "sink",
+    "corner",
+    "range",
+    "tea",
+    "coffee"
+  ],
+  "faces": 30,
+  "size": [
+    4096,
+    2048
+  ],
+  "navigation_actions_sent": false,
+  "browser_errors": [],
+  "captured_utc": "2026-10-11T00:58:27Z",
+  "visual_review": "All five assembled panoramas inspected; new tea colours and repaired appliances are present. Existing scan defects remain.",
+  "reviewed_utc": "2026-10-11T00:59:29Z"
+}
