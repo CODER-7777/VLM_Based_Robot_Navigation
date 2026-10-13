@@ -6,7 +6,7 @@
 | Geodesic distance | Shortest walkable start-to-goal distance |
 | Direct / Euclidean distance | Straight-line distance between the specified start and target |
 
-Distance values below are reported by the papers/docs, not newly calculated.
+Published figures and previously audited annotation values are listed separately.
 **NR** = no numeric statistic located in the inspected source. Counts retain
 explicit paper/release labels. Paper averages are not exact recomputed values.
 
@@ -30,6 +30,19 @@ explicit paper/release labels. Paper averages are not exact recomputed values.
 | NavA3 | 50 expert-defined task descriptions | 50 task definitions; repeated rollout count described inconsistently | 5 office regions, not five independent houses | Reported; [S14](#sources) |
 | LH-VLN / LHPR-VLN | Compact release: 3,342 instruction records, comprising 1,052 long-task + 2,290 step-task instructions | 1,052 long-task episodes; paper instead reports 3,260 tasks | 153 represented in compact release; paper instead reports 216 scenes | Release counted; paper totals kept separate; [S15](#sources) |
 | VLN-NF | 6,628 instructions | 3,314 feasible/infeasible pairs, giving 6,628 task instances | 65: 55 training + 10 unseen; seen-validation overlaps training | Reported; [S16](#sources) |
+
+## Annotation-derived distances
+
+Previously audited release values; these are not paper-reported statistics.
+
+| Dataset and inspected scope | Metric | Minimum (m) | Mean (m) | Maximum (m) | Records >40 m | Source |
+| --- | --- | ---: | ---: | ---: | ---: | --- |
+| OctoNav: all 39,523 episodes | Saved reference-position trace length | 0.500001 | 11.515868 | 64.278196 | 126 | [S12](#sources) |
+| OctoNav: 500 validation episodes | Same trace metric | 2.000000 | **9.620095** | 35.211116 | 0 | [S12](#sources) |
+| PAN: all 2,000 episodes | Stored shortest-path/geodesic distance | 2.003442 | 5.037371 | 10.977433 | 0 | [S11](#sources) |
+| LHPR-VLN: 1,052 long tasks | Saved 3D traces joined in subtask order, including positional movement between subtasks | 1.750000 | 25.750048 | 84.004609 | 140 | [S15](#sources) |
+| REVERIE: 5,993 training/validation records | Stored `distance` field, already rounded to 0.01 m | 5.020000 | 9.675038 | 23.310000 | 0 in inspected records | [S03](#sources) |
+| ULN: 1,622 public validation records | Stored `distance` field | 5.040000 | 10.449439 | 22.140000 | 0 in inspected records | [S06](#sources) |
 
 ## Published distances
 
