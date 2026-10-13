@@ -1,7 +1,7 @@
 # Task 5: navigation benchmark audit
 
 Audit date: **14 October 2026**. This audit covers the 16 external benchmarks
-and the repeated **Ours** row shown in the three uploaded WhatsApp photos.
+shown in the three uploaded WhatsApp photos.
 Counts refer to the inspected release or explicitly identified paper, rather
 than assuming that every paper and current release contain identical data.
 
@@ -20,7 +20,7 @@ L_trace = sum(||p[i + 1] - p[i]||_2, for i = 0, ..., n - 1)
 | Measurement | Meaning | Treatment in this audit |
 | --- | --- | --- |
 | Direct start-to-end distance | Euclidean distance between endpoint and start; ignores the intervening route and obstacles | Kept separate from route length |
-| Reference trace length | Sum of distances between consecutive positions on the saved reference route | Computed for OctoNav, LHPR-VLN and Ours |
+| Reference trace length | Sum of distances between consecutive positions on the saved reference route | Computed for OctoNav and LHPR-VLN |
 | Shortest-path / geodesic distance | Length of the shortest traversable path between start and the specified goal | Read from PAN's `info.geodesic_distance` field |
 | Stored annotation distance | A dataset's existing `distance` value; its precision is limited by the annotation | Read for REVERIE and ULN; not presented as newly recomputed geometry |
 | Executed trajectory length | Distance along the path actually taken by a human or model | Kept separate from the benchmark reference length |
@@ -48,7 +48,6 @@ Folder: `WhatsApp Unknown 2026-10-14 at 2.08.22 AM/`.
 | `WhatsApp Image 2026-10-14 at 2.07.13 AM.jpeg` | 95,632 bytes | Benchmark-table photograph |
 | Corresponding ZIP | 244,924 bytes | Contains the same three images; integrity check passes |
 | External benchmarks named | 16 | Counted across all photographs |
-| Ours | Appears three times | One project, not three datasets |
 | Dataset annotations / route coordinates inside the upload | 0 | Exact dataset statistics require external annotations or papers |
 
 ## Benchmark counts
@@ -77,7 +76,6 @@ A tour groups multiple episodes and must not be counted as one ordinary route.
 | NavA3 | 50 expert-defined task descriptions | 50 task definitions; repeated rollout count described inconsistently | 5 office regions, not five independent houses | Reported; [S14](#sources) |
 | LH-VLN / LHPR-VLN | Compact release: 3,342 instruction records, comprising 1,052 long-task + 2,290 step-task instructions | 1,052 long-task episodes; paper instead reports 3,260 tasks | 153 represented in compact release; paper instead reports 216 scenes | Release counted; paper totals kept separate; [S15](#sources) |
 | VLN-NF | 6,628 instructions | 3,314 feasible/infeasible pairs, giving 6,628 task instances | 65: 55 training + 10 unseen; seen-validation overlaps training | Reported; [S16](#sources) |
-| Ours: presentation | 30 Level 1-3 instruction records; 10 primary Level-3 requests; 22 Level-3 condition/variant records | 10 unique reference routes | 4 MP3D scenes | Counted from the server presentation and reference traces; [S17](#sources) |
 
 ## Calculated and stored distance statistics
 
@@ -93,12 +91,10 @@ Means for annotation rows are weighted by records, not deduplicated paths.
 | LHPR-VLN: 1,052 long tasks | Saved 3D traces joined in subtask order, including positional movement between subtasks | 1.750000 | 25.750048 | 84.004609 | 140 | [S15](#sources) |
 | REVERIE: 5,993 training/validation records | Stored `distance` field, already rounded to 0.01 m | 5.020000 | 9.675038 | 23.310000 | 0 in inspected records | [S03](#sources) |
 | ULN: 1,622 public validation records | Stored `distance` field | 5.040000 | 10.449439 | 22.140000 | 0 in inspected records | [S06](#sources) |
-| Ours: 10 presentation routes | Dense saved ground-truth movement trace | 9.504373 | 30.995304 | 55.172735 | 4 | [S17](#sources) |
 
 REVERIE's 2,304 public test records expose only the starting viewpoint, so the
 complete test-inclusive route-distance distribution was not calculated.
-OctoNav's validation mean above corrects the earlier conversational arithmetic
-value; the weighted calculation from all four validation subsets is
+OctoNav's validation mean is weighted across its four validation subsets:
 `9.62009546135879 m`.
 
 ### OctoNav split audit
@@ -149,89 +145,6 @@ annotations were not counted twice.
 The original RxR and continuous RxR-CE releases must not be assigned identical
 counts or distances without checking conversion and filtering.
 
-## Ours: exact presentation route audit
-
-These are the full floating-point 3D trace sums, independently recomputed from
-the saved ground-truth `locations`. They match the presentation's
-`gt_walk_trace_length_m` field. Sparse waypoint polylines are shown separately
-to make the metric difference explicit.
-
-| Episode | Collector task label | Episode key | Dense reference trace (m) | Sparse waypoint polyline (m) | Dense trace >40 m |
-| --- | --- | --- | ---: | ---: | --- |
-| 1 | Help Mary after exercise | `QUCTc6BB5sX_6120` | 9.562629003681936 | 10.047877816265729 | No |
-| 2 | Prepare kids' school clothes | `QUCTc6BB5sX_8247` | 9.504372764029327 | 10.727247506956976 | No |
-| 3 | Asha's morning tea | `2azQ1b91cZZ_3919` | 12.500062118524752 | 11.996581437874930 | No |
-| 4 | Help Nora with phone | `TbHJrupSAjP_7120` | 25.799466906900552 | 26.373618814658524 | No |
-| 5 | Another round of board games | `TbHJrupSAjP_10286` | 31.389256912405806 | 31.854176351432756 | No |
-| 6 | Food for today's outing | `QUCTc6BB5sX_3568` | 20.538413436748524 | 19.177520857211240 | No |
-| 7 | Return parcel for courier | `2azQ1b91cZZ_4240` | 45.156377567604444 | 41.491573329747060 | Yes |
-| 8 | Riya's school things | `EU6Fwq7SyZv_10664` | 49.969474066647580 | 39.206777348347934 | Yes |
-| 9 | Help Asha read after dinner | `2azQ1b91cZZ_7372` | 50.360248922778084 | 45.543804151069025 | Yes |
-| 10 | Pack Riya's toiletries | `EU6Fwq7SyZv_5784` | 55.172735240792970 | 39.066642041301920 | Yes |
-
-| Dense-trace statistic | Value |
-| --- | ---: |
-| Routes | 10 |
-| Minimum | 9.504372764029327 m |
-| Mean | 30.995303694011398 m |
-| Median | 28.594361909653180 m |
-| Maximum | 55.172735240792970 m |
-| Total | 309.953036940113900 m |
-| Routes >40 m | 4 of 10 |
-
-The sparse waypoint metric gives **2 of 10** routes over 40 m. These traces and
-waypoints come from different saved reference representations; neither should
-be silently substituted for the other or called the shortest geodesic route.
-
-### Scenes, instructions and memories
-
-| Collector environment label | MP3D scene ID | Presentation episodes |
-| --- | --- | --- |
-| Mary & Riya | `QUCTc6BB5sX` | 1, 2, 6 |
-| Asha & Maya | `2azQ1b91cZZ` | 3, 7, 9 |
-| Nora & Leo | `TbHJrupSAjP` | 4, 5 |
-| Riya, Oliver & Sam | `EU6Fwq7SyZv` | 8, 10 |
-
-| Presentation quantity | Count |
-| --- | ---: |
-| Unique routes | 10 |
-| Unique scenes | 4 |
-| Instruction levels | 3 |
-| Level 1-3 instruction records | 30 |
-| Primary Level-3 task requests | 10 |
-| Primary Level-3 condition records | 20 |
-| Additional alternate-condition records | 2 |
-| Total Level-3 condition/variant records | 22 |
-| Distinct authored memories | 16 |
-| Memory images | 50 |
-
-The 22 Level-3 condition/variant records reuse the ten reference routes. The
-environment names are authored character labels, not official house names.
-
-### Saved human collection snapshot
-
-Location on the server:
-`bench/experiments/level3_manual_collector_v2/sessions/`.
-
-| Quantity | Count |
-| --- | ---: |
-| Saved sample attempts | 9 |
-| Contributors | 3 |
-| Distinct episode keys attempted | 3 |
-| Scenes represented | 2 |
-| Navigation MP4 files | 9 |
-| Screen MP4 clips | 8 |
-| Separate voice MP4 clips | 2 |
-| Saved reasoning-text annotation events | 1 |
-| Samples with zero movement actions | 1 |
-| Optional route-guidance-viewed events | 3 |
-
-Nine saved attempts are not nine fully annotated, independent reasoning
-episodes. Screen clips can contain microphone narration without a separate
-voice clip or saved transcript. Attempts using route guidance need an explicit
-label when evaluating unaided reasoning. This snapshot counts saved records;
-it does not certify audio quality or annotation correctness.
-
 ## Corrections and interpretation for the comparison slides
 
 | Issue | Correct interpretation |
@@ -248,7 +161,6 @@ it does not certify audio quality or annotation correctness.
 | NavA3 scenes | Five office regions should not be described as five independently scanned homes |
 | Action count presented as route length | Turns, stops and failed forward moves invalidate this conversion |
 | Model trajectory length presented as reference length | These measure different paths and must remain separate |
-| Ours >40 m flag | Four dense reference traces exceed 40 m; only two sparse waypoint polylines exceed 40 m |
 | Missing distance statistics | Mark unverified; do not replace with zero or a No flag |
 
 Recommended comparison-table columns: **instruction records**, **unique
@@ -276,7 +188,6 @@ and **source/release**.
 | S14 | [NavA3 ACL paper](https://aclanthology.org/2026.acl-long.37/) |
 | S15 | [LHPR-VLN compact release](https://huggingface.co/datasets/Starry123/LHPR-VLN/tree/af66785e0b456639088d673bc100dcc63f2df997), revision `af66785e0b456639088d673bc100dcc63f2df997`; inspected `episode_task.zip`, `task.zip` and `step_task.zip`; [CVPR paper](https://openaccess.thecvf.com/content/CVPR2025/papers/Song_Towards_Long-Horizon_Vision-Language_Navigation_Platform_Benchmark_and_Method_CVPR_2025_paper.pdf) |
 | S16 | [VLN-NF ACL paper](https://aclanthology.org/2026.acl-long.1152/), Table 1 |
-| S17 | Server `172.26.186.222`: `/home/guest-isl/rishabh/bench/experiments/awarevln_levels_1_2_3_presentation/presentation.html`; dense traces in `awarevln_level2_10/datasets/val_unseen/val_unseen_guide_gt.json.gz`; sparse metadata in `bench/trajectory_catalog/episodes/`; saved samples in `bench/experiments/level3_manual_collector_v2/sessions/` |
 
 The audit did not run navigation inference or use a GPU. Dataset inspections
 were read-only; the documentation does not contain copied scene assets, videos
