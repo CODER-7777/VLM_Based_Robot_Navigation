@@ -1,38 +1,12 @@
-**CHANGES SEPT26_2026**
-
-1.  ![alt text](<assets/training_plan_20260926_131520.png>)
-    ![alt text](<assets/training_plan_20260926_132043.png>)
-
-So in the above screenshots we can see wher it is failing is shaking o much whole stepping up the stairs so teh ifirstidea i have is to inerese that 50Hz to 100hZ do u suggest to do that ?
-2.  While climbing the stairs it is turning so much to cimb and it so we can improve the so we need to give strict penalyt to climb the stairs.
-3.  smooth the action outputs 
-4.  To decrease jitter in reinforcement learning (RL) policies, you must smooth the action outputs and penalize abrupt control changes during training. Jitter usually happens when a policy switches rapidly between extreme actions to maximize immediate rewards without considering physical constraints. Here are the most effective strategies to eliminate policy jitter, grouped by implementation layer: 1. Reward Shaping (The Most Common Fix)You can directly incentivize the agent to choose smooth transitions by adding penalties to the reward function. Action Difference Penalty: Penalize the absolute or squared difference between the current action and the previous action:\(R_{penalty} = -w \cdot \Vert{}a_t - a_{t-1}\Vert{}^2\)Action Magnitude Penalty: Penalize excessively large actions if the agent only needs minor adjustments:\(R_{penalty} = -w \cdot \Vert{}a_t\Vert{}^2\)Torque/Derivative Penalties: In robotics, penalize high acceleration, jerk, or rapid torque changes.
-
-Reduce Entropy Regularization: A high entropy coefficient forces exploration by adding noise. Lowering it late in training helps the policy settle into a stable, deterministic routine.
-Tighten PPO Clipping: If using PPO, reduce the clipping parameter (e.g., from 0.2 to 0.1) to prevent massive policy updates that cause erratic shifts.
-
-Add an action smoothness reward, which penalises the second derivative of the actions (you can approximate this by the current, previous and second previous actions.)
-
-You can add a PD or PID controller after your agent has chosen an action (For example a simple PD controller with a proportional gain of 1 and derivative gain of 0.05)
-
-You can add a low-pass filter after your outputs. (I wouldn’t recommend this, because in my experience it really limits the performance of the agent, however it can decrease jittering the most.)
-
-In order to evade this, you need to evaluate if a path in the future ( path planning ) will have a greater reward than if you continue to do nothing. And if it ever chooses to do nothing, you need to sleep.
-
-Oh and some forgiveness on motor control is helpful too ( like if the amount of change in the left/right /forward is less than .2% maybe don't do anything.
-
-so theese are some of the susggestions from my side once evaluare them se the we need to fix whiel trianing from the 90000.pt model and also 
-
-
-
+> Historical note. For current commands and decisions, start at [Task 3](../../README.md).
 
 # MoE 90k simulation / hardware jitter audit — 2026-09-21
 
 **The documented stair simulator was not equivalent to the tested robot.** A separate, reproducible simulator now matches the deployed observation/action contract, target bounds and command shaping. It reproduces oscillatory targets, calf saturation and straight-command stair failures. These findings support a policy–actuator–contact interaction, but do **not** establish one exclusive cause of the hardware jitter.
 
-No robot connection, motor command, firmware change, safety change, policy deployment or retraining was performed. The ongoing hardware session was not interrupted. Concurrent edits to the original simulator were preserved; the corrected implementation is [svanm2_moe_hardware_audit](../../svanm2_moe_hardware_audit/README.md).
+No robot connection, motor command, firmware change, safety change, policy deployment or retraining was performed. The ongoing hardware session was not interrupted. Concurrent edits to the original simulator were preserved; the corrected implementation is [svanm2_moe_hardware_audit](../../../svanm2_moe_hardware_audit/README.md).
 
-Open [videos and plots](index.html). The most useful comparisons are the [hardware angle curves](hardware_joint_angles.png), [simulated 15 cm stair curves](sim_angles_stairs_up_15_forward.png), [terrain comparison](terrain_comparison.png), [ablation comparison](ablation_comparison.png), and [15 cm stair video at half speed](videos/stairs_up_15_hardware_forward_half_speed.mp4).
+Open [videos and plots](../index.html). The most useful comparisons are the [hardware angle curves](../hardware_joint_angles.png), [simulated 15 cm stair curves](../sim_angles_stairs_up_15_forward.png), [terrain comparison](../terrain_comparison.png), [ablation comparison](../ablation_comparison.png), and [15 cm stair video at half speed](../videos/stairs_up_15_hardware_forward_half_speed.mp4).
 
 ## What was wrong or unverified
 
@@ -63,7 +37,7 @@ The rollout initializer is intentionally documented: native Stand hold, then a t
 
 Two saved runs were examined:
 
-- **Original reported jitter/tip run:** 4,141 samples at approximately 20 Hz. MoE-phase peak tilt is 72.6°. The record cannot resolve 8–30 Hz jitter because its Nyquist frequency is about 10 Hz. [Original incident angles](original_incident_joint_angles.png), [incident timings](original_incident_summary.json).
+- **Original reported jitter/tip run:** 4,141 samples at approximately 20 Hz. MoE-phase peak tilt is 72.6°. The record cannot resolve 8–30 Hz jitter because its Nyquist frequency is about 10 Hz. [Original incident angles](../original_incident_joint_angles.png), [incident timings](../original_incident_summary.json).
 - **Later full-control run, reported smoother:** 122,607 samples, approximately 200 Hz, and 30,175 exact policy input/output records. This is the main high-frequency analysis source. Terrain labels and synchronized hardware video were not recorded; its worst windows must not be labelled “flat ground” or “stairs” from joint data alone.
 
 During commanded motion in the later run, 8–30 Hz measured-angle RMS was approximately **0.19–0.45° per joint**, with calves highest. Sent-target RMS in the same band was **0.63–1.84°**. The largest four-second angle window was **465–469 s**, approximately **0.87° RMS across all joints**. This band is a useful oscillation indicator, not a definition of all unwanted movement: normal gait harmonics and impacts also contribute.
@@ -139,7 +113,7 @@ The films show the front feet meeting a riser while the rear feet remain lower, 
 
 At a 5 ms timestep, requesting `solref=.002` reproduced the explicit `.010` baseline, as expected from MuJoCo's lower bound. At 1 ms, `.002` becomes a different, much harder contact model and changes gait/jitter substantially. Do not tune contact stiffness just to obtain an attractive video.
 
-Full outcomes, timing, clipping, tracking errors and contact data are in [suite_summary.csv](suite_summary.csv) and [suite_summary.json](suite_summary.json). Per-run XML and `trace.npz` files are under `runs/`. Main videos use the 5 ms baseline so they correspond to that comparison, not a selectively chosen smoother physics variant.
+Full outcomes, timing, clipping, tracking errors and contact data are in [suite_summary.csv](../suite_summary.csv) and [suite_summary.json](../suite_summary.json). Per-run XML and `trace.npz` files are under `runs/`. Main videos use the 5 ms baseline so they correspond to that comparison, not a selectively chosen smoother physics variant.
 
 ## Changes to make next, in order
 
@@ -153,10 +127,4 @@ Full outcomes, timing, clipping, tracking errors and contact data are in [suite_
 
 Five contract tests pass: deployed-adapter observation/action parity, raw-action history preservation, full physics reset, actual operator shaping/release, and stair geometry. Saved hardware replay separately passes all 34 fixtures and 30,175 recorded frames. All 120 final rollouts completed without a process error; failed physical behaviours are reported rather than filtered out.
 
-The old one-second stair “test” is not used as locomotion evidence. Initial batches interrupted by concurrent source edits are archived separately and excluded. `pre_sensor_refresh_runs/` is exploratory and excluded from final tables. The final report uses only `runs/` and its frozen asset/policy copies. See [implementation instructions](../../svanm2_moe_hardware_audit/README.md) and [manifest](manifest.json).
-
-
-
-
-/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_3/moe_jitter_audit_20260921
-int his we hav the suite summatry once als read this and atellme wwhat are fesible and meaning gul changes we cahn do an also tel me wher to whe to ake changes i will do them manually
+The old one-second stair “test” is not used as locomotion evidence. Initial batches interrupted by concurrent source edits are archived separately and excluded. `pre_sensor_refresh_runs/` is exploratory and excluded from final tables. The final report uses only `runs/` and its frozen asset/policy copies. See [implementation instructions](../../../svanm2_moe_hardware_audit/README.md) and [manifest](../manifest.json).

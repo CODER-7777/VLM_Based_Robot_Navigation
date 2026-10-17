@@ -1,6 +1,8 @@
+> Historical note. For current commands and decisions, start at [Task 3](../../README.md).
+
 # Work through the local jitter audit one issue at a time
 
-> **2026-10-02 update:** The current checklist is [notes/README.md](README.md). This older issue list remains a reference. The user now requests a combined target-limit/second-difference/saturation-pressure training trial, with actuator tuning later; the calf upper-bound edit is already done.
+> **2026-10-02 update:** The current checklist is [notes/README.md](PROJECT_HISTORY.md). This older issue list remains a reference. The user now requests a combined target-limit/second-difference/saturation-pressure training trial, with actuator tuning later; the calf upper-bound edit is already done.
 
 Date: 2026-09-28. This records the user's clarification: use the available local audit and address its problems individually. This checklist supplements `08_TARGET_LIMITS_AND_SECOND_DIFFERENCE_PLAN.md`. No controller or training code has been changed by the assistant for this task.
 
@@ -63,4 +65,4 @@ Compare oscillation alongside speed tracking, heading, full stair traversal, fal
 | Reset | | | | | |
 | Target second difference | | | | | |
 
-References: [local audit report](../moe_jitter_audit_20260921/REPORT.md), [detailed next-experiment plan](08_TARGET_LIMITS_AND_SECOND_DIFFERENCE_PLAN.md), [viewer controller](../xterra_mjlab/svanm2_moe_stair_sim/controller.py), [training configuration adapter](../xterra_mjlab/scripts/m2_algorithm_env.py).
+References: [local audit report](../../moe_jitter_audit_20260921/REPORT.md), [detailed next-experiment plan](08_TARGET_LIMITS_AND_SECOND_DIFFERENCE_PLAN.md), [viewer controller](../../xterra_mjlab/svanm2_moe_stair_sim/controller.py), [training configuration adapter](../../xterra_mjlab/scripts/m2_algorithm_env.py).

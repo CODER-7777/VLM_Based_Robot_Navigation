@@ -1,3 +1,5 @@
+> Historical note. For current commands and decisions, start at [Task 3](../../README.md).
+
 # Reward logging, server transfer, and MoE 90k verification
 
 Prepared: 2026-09-26. This is a manual implementation guide. Commands labelled LAPTOP run on your laptop; commands labelled SERVER run after SSH.
@@ -15,9 +17,9 @@ Prepared: 2026-09-26. This is a manual implementation guide. Commands labelled L
 
 Core files, relative to `Task_3/xterra_mjlab`:
 
-- [scripts/m2_algorithm_env.py](../xterra_mjlab/scripts/m2_algorithm_env.py): environment adapter; collect reward terms before reset.
-- [scripts/train_other.py](../xterra_mjlab/scripts/train_other.py): training loop, TensorBoard logging, resume and per-run override.
-- [env_cfgs.py](../xterra_mjlab/xterra_mjlab/tasks/velocity/config/svanm2/env_cfgs.py): your existing reward-weight edit.
+- [scripts/m2_algorithm_env.py](../../xterra_mjlab/scripts/m2_algorithm_env.py): environment adapter; collect reward terms before reset.
+- [scripts/train_other.py](../../xterra_mjlab/scripts/train_other.py): training loop, TensorBoard logging, resume and per-run override.
+- [env_cfgs.py](../../xterra_mjlab/xterra_mjlab/tasks/velocity/config/svanm2/env_cfgs.py): your existing reward-weight edit.
 
 The supplied original checkpoint was inspected on CPU:
 

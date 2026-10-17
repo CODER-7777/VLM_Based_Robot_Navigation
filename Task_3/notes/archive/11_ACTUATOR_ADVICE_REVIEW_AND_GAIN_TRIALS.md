@@ -1,3 +1,5 @@
+> Historical note. For current commands and decisions, start at [Task 3](../../README.md).
+
 # Review of actuator advice and a controlled MuJoCo gain experiment
 
 Date: 2026-09-28. The user wants to review pasted reward/actuator/timestep advice and try actuator tuning manually. This document records inspected facts and proposed experiments. No controller, XML, training code, checkpoint, or hardware setting was changed by the assistant, and no gain sweep was run.
@@ -91,10 +93,10 @@ After the gain study and control-contract checks, test normalized target second 
 
 ## Source locations
 
-- [Viewer gains and control law](../xterra_mjlab/svanm2_moe_stair_sim/controller.py).
-- [Training gains and action-scale formula](../xterra_mjlab/xterra_mjlab/assets/svanm2/constants.py).
-- [Coupled training actuator](../xterra_mjlab/xterra_mjlab/actuators/svanm2_actuator.py).
-- [Viewer scene generation](../xterra_mjlab/svanm2_moe_stair_sim/build_scene.py).
-- [Viewer scheduling](../xterra_mjlab/svanm2_moe_stair_sim/run_interactive_sim.py).
-- [Saved candidate settings](../xterra_mjlab/evaluation_runs/20260927_moe_jitter_candidate_weight015_updates90500/env.yaml).
+- [Viewer gains and control law](../../xterra_mjlab/svanm2_moe_stair_sim/controller.py).
+- [Training gains and action-scale formula](../../xterra_mjlab/xterra_mjlab/assets/svanm2/constants.py).
+- [Coupled training actuator](../../xterra_mjlab/xterra_mjlab/actuators/svanm2_actuator.py).
+- [Viewer scene generation](../../xterra_mjlab/svanm2_moe_stair_sim/build_scene.py).
+- [Viewer scheduling](../../xterra_mjlab/svanm2_moe_stair_sim/run_interactive_sim.py).
+- [Saved candidate settings](../../xterra_mjlab/evaluation_runs/20260927_moe_jitter_candidate_weight015_updates90500/env.yaml).
 - [Earlier reward/contract plan](10_REWARD_AND_CONTRACT_EXPERIMENT_PLAN.md).

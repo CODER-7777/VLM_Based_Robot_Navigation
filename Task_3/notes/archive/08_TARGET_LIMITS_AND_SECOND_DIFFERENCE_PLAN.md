@@ -1,6 +1,8 @@
+> Historical note. For current commands and decisions, start at [Task 3](../../README.md).
+
 # Next jitter experiment: consistent target limits and second differences
 
-> **2026-10-02 update:** Follow [the main guide](README.md) for the current combined trial and pasteable reward code. Training now has target clipping, and the viewer calf upper bounds are already corrected. Complete deployed thigh-bound parity remains unverified.
+> **2026-10-02 update:** Follow [the main guide](PROJECT_HISTORY.md) for the current combined trial and pasteable reward code. Training now has target clipping, and the viewer calf upper bounds are already corrected. Complete deployed thigh-bound parity remains unverified.
 
 Date: 2026-09-28. This is a manual implementation plan. No training, controller, robot, or reward implementation was changed while preparing it.
 
@@ -99,10 +101,10 @@ This experiment tests whether the proposed penalty helps after correcting the ta
 
 ## Evidence and references
 
-- [Audit report](../moe_jitter_audit_20260921/REPORT.md): target mismatch table and proposed reward experiments.
-- [Audit parity script](../moe_jitter_audit_20260921/parity_and_replay.py): checks bounds with the 0.05 rad buffer.
-- [Audit manifest](../moe_jitter_audit_20260921/manifest.json): source filenames and hashes.
-- [Training adapter](../xterra_mjlab/scripts/m2_algorithm_env.py): configuration and raw action clipping.
-- [Current viewer controller](../xterra_mjlab/svanm2_moe_stair_sim/controller.py): legacy target bounds.
-- [Control saved configuration](../xterra_mjlab/evaluation_runs/20260927_moe_jitter_control_weight010_updates90500/env.yaml).
-- [Candidate saved configuration](../xterra_mjlab/evaluation_runs/20260927_moe_jitter_candidate_weight015_updates90500/env.yaml).
+- [Audit report](../../moe_jitter_audit_20260921/REPORT.md): target mismatch table and proposed reward experiments.
+- [Audit parity script](../../moe_jitter_audit_20260921/parity_and_replay.py): checks bounds with the 0.05 rad buffer.
+- [Audit manifest](../../moe_jitter_audit_20260921/manifest.json): source filenames and hashes.
+- [Training adapter](../../xterra_mjlab/scripts/m2_algorithm_env.py): configuration and raw action clipping.
+- [Current viewer controller](../../xterra_mjlab/svanm2_moe_stair_sim/controller.py): legacy target bounds.
+- [Control saved configuration](../../xterra_mjlab/evaluation_runs/20260927_moe_jitter_control_weight010_updates90500/env.yaml).
+- [Candidate saved configuration](../../xterra_mjlab/evaluation_runs/20260927_moe_jitter_candidate_weight015_updates90500/env.yaml).

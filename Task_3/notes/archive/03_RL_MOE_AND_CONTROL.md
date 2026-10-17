@@ -1,3 +1,5 @@
+> Historical note. For current commands and decisions, start at [Task 3](../../README.md).
+
 # Step 1 — RL, this MoE architecture, and robot control
 
 Created: 2026-09-25. Purpose: a detailed beginner's lesson for the Task 3 MoE 90k jitter project.
@@ -129,12 +131,12 @@ A **penalty** is normally a contribution that lowers total reward. It is not a
 physical punishment, firmware fault or automatic motor shutdown. An ending rule
 can terminate an episode separately from a penalty.
 
-Source for the project's discount setting: [train_other.py](../xterra_mjlab/scripts/train_other.py), MoE algorithm construction around lines 87–92.
+Source for the project's discount setting: [train_other.py](../../xterra_mjlab/scripts/train_other.py), MoE algorithm construction around lines 87–92.
 
 ## 4. What does this student actually observe?
 
 One observation frame has 45 values. This layout is explicit in
-[controller.py](../xterra_mjlab/svanm2_moe_stair_sim/controller.py), `get_current_frame`,
+[controller.py](../../xterra_mjlab/svanm2_moe_stair_sim/controller.py), `get_current_frame`,
 and corresponds to the actor terms in the local environment configuration.
 
 | Python slice | Count | Signal | Plain meaning |
@@ -281,7 +283,7 @@ sensitivity. Conversely, changing gate weights alone is not proof of a problem.
 terrain specialization. To demonstrate specialization we need logged gate behavior
 under labelled conditions and careful comparisons, not names assigned by intuition.
 
-Evidence: [checkpoint_policy.py](../xterra_mjlab/svanm2_moe_stair_sim/checkpoint_policy.py),
+Evidence: [checkpoint_policy.py](../../xterra_mjlab/svanm2_moe_stair_sim/checkpoint_policy.py),
 `Experts`, `MoE` and `StudentMoEEncoder`; the same pattern is visible in the
 [pinned upstream module utilities](https://github.com/wty-yy/go2_rl_gym/blob/30e74dc507bec7a642a8c98be26081f2c6f0822d/rsl_rl/rsl_rl/modules/utils.py).
 
@@ -583,8 +585,8 @@ The audit reports these existing penalties in the saved training configuration:
 The current robot configuration also sets linear tracking +6, angular tracking +3,
 upright +0.5, pose +0.25, and several collision terms -0.1. This is a preliminary
 inventory, not a complete historically verified reward table. See
-[env_cfgs.py](../xterra_mjlab/xterra_mjlab/tasks/velocity/config/svanm2/env_cfgs.py)
-and [the audit's recommendations](../moe_jitter_audit_20260921/REPORT.md).
+[env_cfgs.py](../../xterra_mjlab/xterra_mjlab/tasks/velocity/config/svanm2/env_cfgs.py)
+and [the audit's recommendations](../../moe_jitter_audit_20260921/REPORT.md).
 
 **Teaching example: coefficients alone are misleading.** Suppose a tracking term
 has raw value 0.8 and coefficient +6: its contribution is +4.8. A penalty with raw
@@ -679,7 +681,7 @@ Changing `kp` or `kd` changes the physical response seen by the trained policy.
 Adding damping is not automatically an improvement: delay, contacts, required
 stepping forces and the coupled mechanism all matter. Parameter tuning needs evidence.
 
-Source: [controller.py](../xterra_mjlab/svanm2_moe_stair_sim/controller.py),
+Source: [controller.py](../../xterra_mjlab/svanm2_moe_stair_sim/controller.py),
 `policy_step` and `physics_step`; interpretation limits in the audit report.
 
 ## 14. Timing, history, delay and GPU are different issues
@@ -1016,20 +1018,20 @@ line numbers; the listed starting lines refer to the version inspected for this 
 
 | Question | Source | Starting point |
 |---|---|---|
-| What are the 45 inputs? | [controller.py](../xterra_mjlab/svanm2_moe_stair_sim/controller.py) | `get_current_frame`, line 101 |
-| What are the experts and gate? | [checkpoint_policy.py](../xterra_mjlab/svanm2_moe_stair_sim/checkpoint_policy.py) | `Experts`, line 34; `MoE`, line 45 |
+| What are the 45 inputs? | [controller.py](../../xterra_mjlab/svanm2_moe_stair_sim/controller.py) | `get_current_frame`, line 101 |
+| What are the experts and gate? | [checkpoint_policy.py](../../xterra_mjlab/svanm2_moe_stair_sim/checkpoint_policy.py) | `Experts`, line 34; `MoE`, line 45 |
 | Where is the actor input formed? | Same checkpoint loader | `CheckpointPolicy.forward`, line 71 |
 | Where are target limits and action scales? | Same controller | Constants near line 17; `policy_step`, line 137 |
 | How does PD become coupled torque? | Same controller | `physics_step`, line 166 |
-| Where are MoE training arguments passed? | [train_other.py](../xterra_mjlab/scripts/train_other.py) | MoE construction near line 87 |
+| Where are MoE training arguments passed? | [train_other.py](../../xterra_mjlab/scripts/train_other.py) | MoE construction near line 87 |
 | Where are rollouts collected and updates called? | Same training file | Loop near line 129 |
 | Where are training states restored/saved? | Same training file | Resume near line 94; save near line 180 |
-| Which terrain and command overrides apply? | [m2_algorithm_env.py](../xterra_mjlab/scripts/m2_algorithm_env.py) | `make_cfg`, line 26 |
-| How is external algorithm code loaded? | [other_backends.py](../xterra_mjlab/scripts/other_backends.py) | `load`, line 11 |
-| Where are actor and critic sensor terms? | [env_cfgs.py](../xterra_mjlab/xterra_mjlab/tasks/velocity/config/svanm2/env_cfgs.py) | Actor near line 130; critic near line 163 |
+| Which terrain and command overrides apply? | [m2_algorithm_env.py](../../xterra_mjlab/scripts/m2_algorithm_env.py) | `make_cfg`, line 26 |
+| How is external algorithm code loaded? | [other_backends.py](../../xterra_mjlab/scripts/other_backends.py) | `load`, line 11 |
+| Where are actor and critic sensor terms? | [env_cfgs.py](../../xterra_mjlab/xterra_mjlab/tasks/velocity/config/svanm2/env_cfgs.py) | Actor near line 130; critic near line 163 |
 | Where are some rewards configured? | Same environment file | Reward modifications near line 233 |
-| Where are strict resume checks? | [training_recovery.py](../xterra_mjlab/scripts/training_recovery.py) | `restore`, line 24 |
-| What was previously observed about jitter? | [REPORT.md](../moe_jitter_audit_20260921/REPORT.md) | Hardware evidence and terrain/fix experiments |
+| Where are strict resume checks? | [training_recovery.py](../../xterra_mjlab/scripts/training_recovery.py) | `restore`, line 24 |
+| What was previously observed about jitter? | [REPORT.md](../../moe_jitter_audit_20260921/REPORT.md) | Hardware evidence and terrain/fix experiments |
 
 Primary background sources were linked near the relevant explanations:
 RL introduction, PPO paper, GAE paper, CTS project, and Gymnasium time-limit handling.
@@ -1295,7 +1297,7 @@ rollouts and predictive probes. A single printed vector does not reveal its mean
 ### E. Which script shows that there are eight experts?
 
 The direct-checkpoint inference implementation is
-[checkpoint_policy.py](../xterra_mjlab/svanm2_moe_stair_sim/checkpoint_policy.py).
+[checkpoint_policy.py](../../xterra_mjlab/svanm2_moe_stair_sim/checkpoint_policy.py).
 Read these lines together:
 
 | Location | Code detail | Evidence |
@@ -1313,8 +1315,8 @@ reconstructs the shipped network rather than documenting an architecture newly
 chosen for retraining. Independent supporting evidence is available:
 
 - The pinned upstream `ActorCriticMoECTS` constructor has `expert_num=8`.
-- The local [other_backends.py](../xterra_mjlab/scripts/other_backends.py), line 18,
-  loads that upstream class; [train_other.py](../xterra_mjlab/scripts/train_other.py),
+- The local [other_backends.py](../../xterra_mjlab/scripts/other_backends.py), line 18,
+  loads that upstream class; [train_other.py](../../xterra_mjlab/scripts/train_other.py),
   line 87, constructs it without overriding the expert count.
 - CPU inspection of `model_90000.pt` confirmed a final gate weight tensor of shape
   `(8, 256)` and bias of shape `(8,)`. Thus the saved gate itself has eight outputs.
@@ -1405,7 +1407,7 @@ That is why a hard single-expert switching explanation is unsupported here.
 Dense mixing can still change quickly, and physical feedback can still oscillate.
 It does not guarantee smooth or stable robot movement.
 
-Source: [controller.py](../xterra_mjlab/svanm2_moe_stair_sim/controller.py), history
+Source: [controller.py](../../xterra_mjlab/svanm2_moe_stair_sim/controller.py), history
 allocation/update near lines 75/139, and
-[checkpoint_policy.py](../xterra_mjlab/svanm2_moe_stair_sim/checkpoint_policy.py),
+[checkpoint_policy.py](../../xterra_mjlab/svanm2_moe_stair_sim/checkpoint_policy.py),
 `MoE.forward` near line 51.

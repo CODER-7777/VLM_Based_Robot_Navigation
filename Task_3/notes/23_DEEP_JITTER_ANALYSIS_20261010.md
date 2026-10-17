@@ -154,7 +154,7 @@ In the separately instrumented October 2 bundle90500 center-start test, first lo
 
 However, a later successful wide-bound/contact10 run first meets the stair at only **4.39 cm** foot-center height and then recovers. A low first collision is an adverse event, not proof that the policy lacks all lifting capability. Recovery, rear support, heading, and contact response determine whether that event becomes failure.
 
-The newest91000 manual attempt described in note 17 keeps vx=0.4 through first contact. Joint band RMS rises from **0.3176° to 1.6417°** in the selected before/after windows; any-joint torque clipping rises from 0 to **11.31%** of samples. Later FR thigh velocity reaches 58.21 rad/s; raw torque −75.64 Nm comprises −27.74 Nm position and −47.91 Nm damping terms before clipping to −12 Nm. The damping term is already large. This supports analyzing contact/feedback excitation and saturation, rather than simply increasing `kd`. [Detailed retained measurements](17_REVIEW_OF_ACTUATOR_DELAY_AND_GATE_SUGGESTIONS.md).
+The newest91000 manual attempt described in note 17 keeps vx=0.4 through first contact. Joint band RMS rises from **0.3176° to 1.6417°** in the selected before/after windows; any-joint torque clipping rises from 0 to **11.31%** of samples. Later FR thigh velocity reaches 58.21 rad/s; raw torque −75.64 Nm comprises −27.74 Nm position and −47.91 Nm damping terms before clipping to −12 Nm. The damping term is already large. This supports analyzing contact/feedback excitation and saturation, rather than simply increasing `kd`. [Detailed retained measurements](archive/17_REVIEW_OF_ACTUATOR_DELAY_AND_GATE_SUGGESTIONS.md).
 
 ### 4.3 The “50 Hz staircase” and MoE gate are not established root causes
 

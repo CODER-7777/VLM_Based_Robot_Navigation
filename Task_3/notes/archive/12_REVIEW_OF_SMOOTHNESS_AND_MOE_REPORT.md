@@ -1,3 +1,5 @@
+> Historical note. For current commands and decisions, start at [Task 3](../../README.md).
+
 # Review of the supplied smoothness, MoE routing, and actuator report
 
 ## October 4 review of the new pasted advice and linked papers
@@ -217,11 +219,11 @@ One failed candidate is not proof that scalar rewards are exhausted, and a smoot
 
 ## Local evidence
 
-- [Saved audit](../moe_jitter_audit_20260921/REPORT.md): hardware terrain caveat, frequency metrics, replay, target limits and proposed reward ablations.
-- [Checkpoint architecture](../xterra_mjlab/svanm2_moe_stair_sim/checkpoint_policy.py): history, experts, latent normalization and actor.
-- [Viewer controller](../xterra_mjlab/svanm2_moe_stair_sim/controller.py): current bounds, deterministic inference, gains and torque mapping.
-- [Training runner](../xterra_mjlab/scripts/train_other.py): history length, configured learner and reward logging.
-- [Training adapter](../xterra_mjlab/scripts/m2_algorithm_env.py): clipped action input and history handling.
-- [Training actuator configuration](../xterra_mjlab/xterra_mjlab/assets/svanm2/constants.py): gains, delay and scale dependency.
+- [Saved audit](../../moe_jitter_audit_20260921/REPORT.md): hardware terrain caveat, frequency metrics, replay, target limits and proposed reward ablations.
+- [Checkpoint architecture](../../xterra_mjlab/svanm2_moe_stair_sim/checkpoint_policy.py): history, experts, latent normalization and actor.
+- [Viewer controller](../../xterra_mjlab/svanm2_moe_stair_sim/controller.py): current bounds, deterministic inference, gains and torque mapping.
+- [Training runner](../../xterra_mjlab/scripts/train_other.py): history length, configured learner and reward logging.
+- [Training adapter](../../xterra_mjlab/scripts/m2_algorithm_env.py): clipped action input and history handling.
+- [Training actuator configuration](../../xterra_mjlab/xterra_mjlab/assets/svanm2/constants.py): gains, delay and scale dependency.
 - [Actuator/gain experiment](11_ACTUATOR_ADVICE_REVIEW_AND_GAIN_TRIALS.md).
 - [Reward experiments](10_REWARD_AND_CONTRACT_EXPERIMENT_PLAN.md).

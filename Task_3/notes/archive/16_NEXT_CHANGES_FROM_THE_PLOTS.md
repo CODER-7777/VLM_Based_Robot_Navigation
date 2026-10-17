@@ -1,3 +1,5 @@
+> Historical note. For current commands and decisions, start at [Task 3](../../README.md).
+
 # What I would change next, based on the plots
 
 **Additional contact-setting check (October 4):** local training and the saved October 2 candidate use `impratio=10`, while the standard stair viewer builder uses `100`. Both use elliptic cones. Its effect on jitter is unmeasured. [The updated paper review](12_REVIEW_OF_SMOOTHNESS_AND_MOE_REPORT.md) explains why the cited paper warns that a smoother simulation at 100 can reflect unrealistic traction for its robot. Keep the current run fixed; compare contact settings separately.
@@ -5,7 +7,7 @@
 
 ## Latest review — 2026-10-04 new comparison recordings
 
-Read [the compact comparison](../tools/results/interactive_comparison_20261004/index.html): two plots and a JSON summary, generated only from your saved keyboard-operated data. No new simulation, policy training, or server access occurred during this review.
+Read [the compact comparison](../../tools/results/interactive_comparison_20261004/index.html): two plots and a JSON summary, generated only from your saved keyboard-operated data. No new simulation, policy training, or server access occurred during this review.
 
 **Implemented among the five ideas:** (1) optional `--swing-height 0.13` in `scripts/train_other.py`, setting both existing clearance preferences; (2) optional viewer `--observation-timing fresh`, refreshing derived observations on copied state. Neither flag is enabled automatically. No new heading objective, standing-support objective, or friction override was added. Training already randomizes foot friction over 0.3–1.5, containing the viewer's 0.85. The time-aware target-rate term is separately implemented and enabled only with `--target-rate-weight`; existing second-difference and saturation-pressure terms remain registered.
 
@@ -85,7 +87,7 @@ Other findings:
 
 Validation: seven reward/configuration checks and five controller/analysis checks pass. Fresh frames match independently refreshed observations without mutating live solver state; recording captures the actual input and legacy instrumentation preserves the tested trajectory. The actual GPU environment also passed 24 synthetic-action steps with 0.13 m preferences and finite reward contributions. This is implementation validation, not a new policy training or a successful climbing result. No new Markdown file was added. The remaining text records the earlier proposal and historical trials.
 
-Written 2026-10-03. **These are proposed experiments, not applied fixes.** The fresh data are summarized in [the report](../tools/results/20261002_matched_v1/REPORT.md); [note 15](15_HOW_TO_READ_THE_PLOTS.md) explains the graphs.
+Written 2026-10-03. **These are proposed experiments, not applied fixes.** The fresh data are summarized in [the report](../../tools/results/20261002_matched_v1/REPORT.md); [note 15](../15_HOW_TO_READ_THE_PLOTS.md) explains the graphs.
 
 Additional prerequisite from [note 17](17_REVIEW_OF_ACTUATOR_DELAY_AND_GATE_SUGGESTIONS.md): training already configures 0–2 physics-step actuator delay, while the current viewer does not reproduce that explicit delay buffer. Verify the server's actual implementation and establish consistent evaluation timing before attributing a reward trial's results to rewards alone. Gate diagnostics and the research-suggestion review are also recorded there.
 
@@ -97,9 +99,9 @@ The current viewer combines current joint positions/velocities with derived body
 
 The inspected local training environment performs a forward update before returning observations. Before choosing the evaluation convention, check the exact version used on the server too. The training package and current local package need not be identical.
 
-**Proposed implementation direction:** provide joint and body readings from the intended same simulation state before inference, while preserving joint order, scales, previous-action semantics and five-frame history ordering. The copied-state method in [record.py](../tools/jitter_analysis/record.py) is already an isolated prototype. Reusing it avoids assuming that adding `mj_forward()` to the live solver is a harmless change.
+**Proposed implementation direction:** provide joint and body readings from the intended same simulation state before inference, while preserving joint order, scales, previous-action semantics and five-frame history ordering. The copied-state method in [record.py](../../tools/jitter_analysis/record.py) is already an isolated prototype. Reusing it avoids assuming that adding `mj_forward()` to the live solver is a harmless change.
 
-Files: [controller.py](../xterra_mjlab/svanm2_moe_stair_sim/controller.py), [m2_algorithm_env.py](../xterra_mjlab/scripts/m2_algorithm_env.py), and the training environment implementation. Agreement with the intended interface is the goal; refreshed observations are not a demonstrated jitter fix.
+Files: [controller.py](../../xterra_mjlab/svanm2_moe_stair_sim/controller.py), [m2_algorithm_env.py](../../xterra_mjlab/scripts/m2_algorithm_env.py), and the training environment implementation. Agreement with the intended interface is the goal; refreshed observations are not a demonstrated jitter fix.
 
 ## 2. My first reward experiment: slightly higher preferred swing clearance
 
@@ -123,7 +125,7 @@ cfg.rewards["foot_clearance"].params["target_height"] = 0.13
 cfg.rewards["foot_swing_height"].params["target_height"] = 0.13
 ```
 
-Place a trial override after `make_cfg(...)` and before configuration saving and environment creation in [train_other.py](../xterra_mjlab/scripts/train_other.py). Alternatively, robot defaults live in [env_cfgs.py](../xterra_mjlab/xterra_mjlab/tasks/velocity/config/svanm2/env_cfgs.py). Choose one source of the override so the saved configuration is unambiguous. Do not edit installed package defaults for this trial.
+Place a trial override after `make_cfg(...)` and before configuration saving and environment creation in [train_other.py](../../xterra_mjlab/scripts/train_other.py). Alternatively, robot defaults live in [env_cfgs.py](../../xterra_mjlab/xterra_mjlab/tasks/velocity/config/svanm2/env_cfgs.py). Choose one source of the override so the saved configuration is unambiguous. Do not edit installed package defaults for this trial.
 
 Before running a full continuation, a short training-environment check should log measured foot-site height, contact mask, foot velocity and these two reward contributions in selected ascending-stair/student episodes. A higher preferred peak does not guarantee the foot reaches that height **before** the riser. Inspect the first-contact plot again after training. If it lifts higher only after collision, the next experiment must address lift timing/placement rather than increasing height indefinitely.
 

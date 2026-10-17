@@ -301,7 +301,7 @@ Maximum body x and highest loaded step can include later/fall motion and are not
 Four-second windows hold a fixed command, exclude startup/large tilt/low clearance, and never cross first stair contact.
 After-contact windows need not be continuously on stairs. Pooled associations mix terrain phases and repeated windows and are not causal proof.
 
-For the detailed 2026-10-03 interpretation, read Task_3/notes/21_INTERACTIVE_RUN_REVIEW_AND_OBSERVATIONS.md.
+For the detailed 2026-10-03 interpretation, read Task_3/notes/archive/21_INTERACTIVE_RUN_REVIEW_AND_OBSERVATIONS.md.
 ''')
     rows=''.join(f'<tr><td><a href="../interactive/{html.escape(r["run"])}/plots/index.html">{html.escape(r["run"])}</a></td><td>{r["limit_profile"]}</td><td>{r["category"]}</td><td>{r["duration_s"]:.2f}</td><td>{r["max_vx"]:.2f}</td><td>{r["max_base_x_m"]:.3f}</td><td>{r["max_tilt_deg"]:.1f}</td><td>{r["sustained_failure_s"]}</td></tr>' for r in results if r['samples'])
     body=f'<h1>Review of your actual interactive recordings</h1><p>{len(results)} attempts; raw files retained. No new simulation or policy inference was run.</p><p><a href="REPORT.md">Read conclusions</a> · <a href="attempts.csv">Every attempt</a> · <a href="observations.csv">Your observations worksheet</a> · <a href="constant_command_windows.json">Constant-command windows</a> · <a href="input_sha256.json">Input hashes</a></p>'

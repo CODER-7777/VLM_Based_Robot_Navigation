@@ -1,3 +1,5 @@
+> Historical note. For current commands and decisions, start at [Task 3](../../README.md).
+
 # Task 3 — persistent MoE 90k learning and jitter workflow
 
 Updated: 2026-09-25. This is the master checklist and restart point for our work.
@@ -124,15 +126,15 @@ Completion: explain the loop, experts/gating, and training versus inference in y
 
 Read and trace:
 
-1. [Repository README](../xterra_mjlab/README.md)
-2. [Model card](../xterra_mjlab/MODEL_CARD.md)
-3. [Checkpoint README](../xterra_mjlab/checkpoints/svanm2_moe/README.md)
-4. [Training entry point](../xterra_mjlab/scripts/train_other.py)
-5. [Algorithm environment setup](../xterra_mjlab/scripts/m2_algorithm_env.py)
-6. [Robot task configuration](../xterra_mjlab/xterra_mjlab/tasks/velocity/config/svanm2/env_cfgs.py)
-7. [Backend integration](../xterra_mjlab/scripts/other_backends.py)
-8. [Training recovery](../xterra_mjlab/scripts/training_recovery.py)
-9. [Checkpoint inference reconstruction](../xterra_mjlab/svanm2_moe_stair_sim/checkpoint_policy.py)
+1. [Repository README](../../xterra_mjlab/README.md)
+2. [Model card](../../xterra_mjlab/MODEL_CARD.md)
+3. [Checkpoint README](../../xterra_mjlab/checkpoints/svanm2_moe/README.md)
+4. [Training entry point](../../xterra_mjlab/scripts/train_other.py)
+5. [Algorithm environment setup](../../xterra_mjlab/scripts/m2_algorithm_env.py)
+6. [Robot task configuration](../../xterra_mjlab/xterra_mjlab/tasks/velocity/config/svanm2/env_cfgs.py)
+7. [Backend integration](../../xterra_mjlab/scripts/other_backends.py)
+8. [Training recovery](../../xterra_mjlab/scripts/training_recovery.py)
+9. [Checkpoint inference reconstruction](../../xterra_mjlab/svanm2_moe_stair_sim/checkpoint_policy.py)
 
 The inference loader helps explain the network, but cannot establish the full
 training algorithm, losses, curriculum or reward implementation by itself.
@@ -172,11 +174,11 @@ and each finding labelled source-verified, report-only, or unresolved.
 
 Sources:
 
-- [Dashboard](../moe_jitter_audit_20260921/index.html)
-- [Technical report](../moe_jitter_audit_20260921/REPORT.md)
+- [Dashboard](../../moe_jitter_audit_20260921/index.html)
+- [Technical report](../../moe_jitter_audit_20260921/REPORT.md)
 - [Our plain-language explanation](02_JITTER_AUDIT_EXPLANATION.md)
-- [Rollout results](../moe_jitter_audit_20260921/suite_summary.csv)
-- [Provenance manifest](../moe_jitter_audit_20260921/manifest.json)
+- [Rollout results](../../moe_jitter_audit_20260921/suite_summary.csv)
+- [Provenance manifest](../../moe_jitter_audit_20260921/manifest.json)
 
 Serve the dashboard using:
 

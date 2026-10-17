@@ -1,12 +1,14 @@
+> Historical note. For current commands and decisions, start at [Task 3](../../README.md).
+
 # Recorded 10 cm stair attempt: visual review
 
-Reviewed: **2026-10-02**. Main workflow: [README.md](README.md).
+Reviewed: **2026-10-02**. Main workflow: [README.md](PROJECT_HISTORY.md).
 
 **Observation:** the robot stays broadly upright on the flat approach, but the first visible stair attempt develops a large tilt and a low body posture. The second attempt repeatedly works near the first step without completing the staircase. This recording identifies stair entry and support transfer as the immediate diagnostic region. It does not establish the cause of joint jitter or a percentage improvement over the original policy.
 
 ## Recording and evidence
 
-- Original video: [2026-10-02 18-50-10.mp4](../Videos/2026-10-02%2018-50-10.mp4).
+- Original video: [2026-10-02 18-50-10.mp4](../../Videos/2026-10-02%2018-50-10.mp4).
 - Duration: **35.267 seconds**, 1920 × 1080, **30 frames/second**, 1,058 encoded video frames. It also contains an audio track; this report concerns the visual evidence.
 - Video SHA-256: `62788a5fe1cc214d16be2abbaf0c3c414526b8b824d2541aaebf7d5ea55a7f78`.
 - Review method: decoded-frame timeline every **0.5 s** across the recording, plus **5 fps** crops around stair-entry, body-drop and later stepping intervals. Full-resolution selected frames were inspected to read the HUD. This is a visual review, not a joint-telemetry audit.
@@ -17,7 +19,7 @@ Reviewed: **2026-10-02**. Main workflow: [README.md](README.md).
 
 The local controller now has hip target bounds **±0.735** and calf upper targets **-0.88776**, following the user's authorized hip edit. These are verified source settings at review time; a video cannot prove that an already-running process loaded a subsequent source edit.
 
-[Whole-video overview](video_review_20261002_candidate90500/overview_3s.jpg).
+[Whole-video overview](../video_review_20261002_candidate90500/overview_3s.jpg).
 
 ## Timestamped observations
 
@@ -40,16 +42,16 @@ There are two visible approach/stair-entry attempts, separated by a reset. The l
 
 ## Evidence images
 
-- [Flat approach at 3 s](video_review_20261002_candidate90500/frame_03s.png).
-- [First stair entry and tilt, 8.0–10.2 s](video_review_20261002_candidate90500/first_contact_5fps.jpg).
-- [58° HUD reading at 10 s](video_review_20261002_candidate90500/frame_10s.png).
-- [Low posture, 10.4–12.6 s](video_review_20261002_candidate90500/first_tip_5fps.jpg).
-- [0.18 m base-height HUD at 12 s](video_review_20261002_candidate90500/frame_12s.png).
-- [Second stair entry, 20.2–22.4 s](video_review_20261002_candidate90500/second_attempt_5fps.jpg).
-- [Later second-attempt corrections, 25.4–27.6 s](video_review_20261002_candidate90500/second_attempt_later_5fps.jpg).
-- [Second reset/zero command at 32.5 s](video_review_20261002_candidate90500/frame_32_5s.png).
+- [Flat approach at 3 s](../video_review_20261002_candidate90500/frame_03s.png).
+- [First stair entry and tilt, 8.0–10.2 s](../video_review_20261002_candidate90500/first_contact_5fps.jpg).
+- [58° HUD reading at 10 s](../video_review_20261002_candidate90500/frame_10s.png).
+- [Low posture, 10.4–12.6 s](../video_review_20261002_candidate90500/first_tip_5fps.jpg).
+- [0.18 m base-height HUD at 12 s](../video_review_20261002_candidate90500/frame_12s.png).
+- [Second stair entry, 20.2–22.4 s](../video_review_20261002_candidate90500/second_attempt_5fps.jpg).
+- [Later second-attempt corrections, 25.4–27.6 s](../video_review_20261002_candidate90500/second_attempt_later_5fps.jpg).
+- [Second reset/zero command at 32.5 s](../video_review_20261002_candidate90500/frame_32_5s.png).
 
-Whole-recording 0.5 s timeline sheets: [0–5.5 s](video_review_20261002_candidate90500/timeline_01.jpg), [6–11.5 s](video_review_20261002_candidate90500/timeline_02.jpg), [12–17.5 s](video_review_20261002_candidate90500/timeline_03.jpg), [18–23.5 s](video_review_20261002_candidate90500/timeline_04.jpg), [24–29.5 s](video_review_20261002_candidate90500/timeline_05.jpg), [30–35 s](video_review_20261002_candidate90500/timeline_06.jpg).
+Whole-recording 0.5 s timeline sheets: [0–5.5 s](../video_review_20261002_candidate90500/timeline_01.jpg), [6–11.5 s](../video_review_20261002_candidate90500/timeline_02.jpg), [12–17.5 s](../video_review_20261002_candidate90500/timeline_03.jpg), [18–23.5 s](../video_review_20261002_candidate90500/timeline_04.jpg), [24–29.5 s](../video_review_20261002_candidate90500/timeline_05.jpg), [30–35 s](../video_review_20261002_candidate90500/timeline_06.jpg).
 
 ## What we can infer
 
@@ -76,4 +78,4 @@ Keep the current reward weights and actuator settings while establishing this ev
 
 Only local analysis images and Markdown notes were created/updated. No simulator or training Python was changed in this review, no simulation was launched, and no server action was performed.
 
-Code references: [viewer HUD and stepping loop](../xterra_mjlab/svanm2_moe_stair_sim/run_interactive_sim.py), [target/PD controller](../xterra_mjlab/svanm2_moe_stair_sim/controller.py), [command/reset handling and base-x region label](../xterra_mjlab/svanm2_moe_stair_sim/teleop.py), [track dimensions](../xterra_mjlab/svanm2_moe_stair_sim/build_scene.py). These explain the displayed fields; they are not a substitute for the recorded session's provenance or telemetry.
+Code references: [viewer HUD and stepping loop](../../xterra_mjlab/svanm2_moe_stair_sim/run_interactive_sim.py), [target/PD controller](../../xterra_mjlab/svanm2_moe_stair_sim/controller.py), [command/reset handling and base-x region label](../../xterra_mjlab/svanm2_moe_stair_sim/teleop.py), [track dimensions](../../xterra_mjlab/svanm2_moe_stair_sim/build_scene.py). These explain the displayed fields; they are not a substitute for the recorded session's provenance or telemetry.

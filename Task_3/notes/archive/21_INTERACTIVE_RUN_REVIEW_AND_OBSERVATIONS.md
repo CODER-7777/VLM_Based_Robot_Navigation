@@ -1,3 +1,5 @@
+> Historical note. For current commands and decisions, start at [Task 3](../../README.md).
+
 # Your interactive runs: findings, observations and next steps
 
 Updated 2026-10-03. **Follow this note now.** Notes 16–18 remain background proposals; note 19 tells you how to record. This note reviews all currently saved interactive data and explains the new short plots.
@@ -26,7 +28,7 @@ python3 -m http.server 8000 --bind 127.0.0.1
 
 Open <http://127.0.0.1:8000/tools/results/interactive_review_20261003/index.html>.
 
-The [full report](../tools/results/interactive_review_20261003/REPORT.md) includes methods and interpretation limits. [Every attempt](../tools/results/interactive_review_20261003/attempts.csv) is listed, and the [observations worksheet](../tools/results/interactive_review_20261003/observations.csv) has one row per attempt and blank columns for your comments.
+The [full report](../../tools/results/interactive_review_20261003/REPORT.md) includes methods and interpretation limits. [Every attempt](../../tools/results/interactive_review_20261003/attempts.csv) is listed, and the [observations worksheet](../../tools/results/interactive_review_20261003/observations.csv) has one row per attempt and blank columns for your comments.
 
 ## What I understood from these runs
 
@@ -73,12 +75,12 @@ Also, the wider viewer bounds differ from the tighter training bounds. The cost 
 
 | Order and image | Read it like this | Question for your observation |
 | --- | --- | --- |
-| 1. [Training penalties](../tools/results/interactive_review_20261003/training_penalties.png) | Top left is raw target cost; lower right is its negative weighted contribution. Lower raw cost and a contribution nearer zero indicate less punishment. | Is the improvement modest or a complete elimination? It is modest. |
-| 2. [Wider-limit ascent, attempt 006](../tools/results/interactive_review_20261003/user_run_03_attempt_006_signal_chain.png) | Red dotted line is first riser contact, **8.325 s after reset**. Read each panel before and after it. | Does rapid measured motion become larger after contact? Your answer: yes. |
-| 3. [Tighter-limit ascent, attempt 001](../tools/results/interactive_review_20261003/with_the_hardware_limits_01_attempt_001_signal_chain.png) | First riser contact at **11.755 s**. Later rear-right thigh torque reaches its ±12 Nm bound and the actual angle departs markedly from the target. | Is there a contact/recovery problem as well as changing targets? Which comes first in the unfiltered signals? |
-| 4. [First-riser heights](../tools/results/interactive_review_20261003/first_riser_clearance.png) | Bars are measured foot-center heights at first face contact, not desired heights. Green is approximate direct clearance of the first tread. | Was lift early/high enough before the face hit? |
-| 5. [Cost versus measured motion](../tools/results/interactive_review_20261003/cost_vs_jitter.png) | Each dot is a four-second constant-command upright interval. Right means more abrupt target increments; up means more rapid actual joint motion. | Do they tend to rise together? Yes; this supports investigation, not proof of causation. |
-| 6. [All ascent progress](../tools/results/interactive_review_20261003/all_ascent_progress.png) | Top bars are body progress; bottom bars are maximum requested speed. | Am I comparing equal commands? Does progress actually reach the platform? |
+| 1. [Training penalties](../../tools/results/interactive_review_20261003/training_penalties.png) | Top left is raw target cost; lower right is its negative weighted contribution. Lower raw cost and a contribution nearer zero indicate less punishment. | Is the improvement modest or a complete elimination? It is modest. |
+| 2. [Wider-limit ascent, attempt 006](../../tools/results/interactive_review_20261003/user_run_03_attempt_006_signal_chain.png) | Red dotted line is first riser contact, **8.325 s after reset**. Read each panel before and after it. | Does rapid measured motion become larger after contact? Your answer: yes. |
+| 3. [Tighter-limit ascent, attempt 001](../../tools/results/interactive_review_20261003/with_the_hardware_limits_01_attempt_001_signal_chain.png) | First riser contact at **11.755 s**. Later rear-right thigh torque reaches its ±12 Nm bound and the actual angle departs markedly from the target. | Is there a contact/recovery problem as well as changing targets? Which comes first in the unfiltered signals? |
+| 4. [First-riser heights](../../tools/results/interactive_review_20261003/first_riser_clearance.png) | Bars are measured foot-center heights at first face contact, not desired heights. Green is approximate direct clearance of the first tread. | Was lift early/high enough before the face hit? |
+| 5. [Cost versus measured motion](../../tools/results/interactive_review_20261003/cost_vs_jitter.png) | Each dot is a four-second constant-command upright interval. Right means more abrupt target increments; up means more rapid actual joint motion. | Do they tend to rise together? Yes; this supports investigation, not proof of causation. |
+| 6. [All ascent progress](../../tools/results/interactive_review_20261003/all_ascent_progress.png) | Top bars are body progress; bottom bars are maximum requested speed. | Am I comparing equal commands? Does progress actually reach the platform? |
 
 The four-panel event plots mean:
 
@@ -119,12 +121,12 @@ Success means less unwanted shaking **and** useful movement with reliable full a
 
 | File | Purpose |
 | --- | --- |
-| [review_interactive.py](../tools/jitter_analysis/review_interactive.py) | New offline all-session review, target-cost plots, training-log trend and observations CSV |
-| [plot_interactive.py](../tools/jitter_analysis/plot_interactive.py) | Existing three-figure per-attempt dashboard; reads actual saved data |
-| [jitter_rewards.py](../xterra_mjlab/scripts/jitter_rewards.py) | Existing reward formulas; unchanged by this analysis |
-| [train_other.py](../xterra_mjlab/scripts/train_other.py) | Registers reward terms/overrides before saved configuration and environment creation |
-| [env_cfgs.py](../xterra_mjlab/xterra_mjlab/tasks/velocity/config/svanm2/env_cfgs.py) | Robot training targets, sensors and reward configuration |
-| [controller.py](../xterra_mjlab/svanm2_moe_stair_sim/controller.py) | Viewer target transformation and coupled motor control; unchanged in this review |
+| [review_interactive.py](../../tools/jitter_analysis/review_interactive.py) | New offline all-session review, target-cost plots, training-log trend and observations CSV |
+| [plot_interactive.py](../../tools/jitter_analysis/plot_interactive.py) | Existing three-figure per-attempt dashboard; reads actual saved data |
+| [jitter_rewards.py](../../xterra_mjlab/scripts/jitter_rewards.py) | Existing reward formulas; unchanged by this analysis |
+| [train_other.py](../../xterra_mjlab/scripts/train_other.py) | Registers reward terms/overrides before saved configuration and environment creation |
+| [env_cfgs.py](../../xterra_mjlab/xterra_mjlab/tasks/velocity/config/svanm2/env_cfgs.py) | Robot training targets, sensors and reward configuration |
+| [controller.py](../../xterra_mjlab/svanm2_moe_stair_sim/controller.py) | Viewer target transformation and coupled motor control; unchanged in this review |
 
 To repeat this offline review after future recordings, choose a fresh output name:
 

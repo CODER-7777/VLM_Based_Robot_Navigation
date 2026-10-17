@@ -1,10 +1,12 @@
+> Historical note. For current commands and decisions, start at [Task 3](../../README.md).
+
 # Record my commands first, then plot what actually happened
 
 Updated **2026-10-05**. No new training is needed for recording or plotting.
 
 ## Start the original90000 versus newest91000 comparison
 
-The **actor's final linear layer** produces the 12 numerical joint actions: `CheckpointPolicy.actor = MLP([77,512,256,128,12])` in [checkpoint_policy.py](../xterra_mjlab/svanm2_moe_stair_sim/checkpoint_policy.py). The MoE mixes eight latent feature vectors into 32 normalized values; the actor combines them with the latest 45 observations. [controller.py](../xterra_mjlab/svanm2_moe_stair_sim/controller.py) clips the numerical actions, scales them/adds Q0, clamps targets, then applies coupled PD torque. The velocity graphs are actual robot response, not network outputs.
+The **actor's final linear layer** produces the 12 numerical joint actions: `CheckpointPolicy.actor = MLP([77,512,256,128,12])` in [checkpoint_policy.py](../../xterra_mjlab/svanm2_moe_stair_sim/checkpoint_policy.py). The MoE mixes eight latent feature vectors into 32 normalized values; the actor combines them with the latest 45 observations. [controller.py](../../xterra_mjlab/svanm2_moe_stair_sim/controller.py) clips the numerical actions, scales them/adds Q0, clamps targets, then applies coupled PD torque. The velocity graphs are actual robot response, not network outputs.
 
 Training already has action-rate, physical-target second-difference, target-rate-excess and target-saturation costs in the newest candidate. They are soft objectives, not hard target-speed limits. Second differences of **position targets** are acceleration-like, not position jerk. Smoothness gains must retain motion/tracking, heading and support; zero movement is not a successful smooth policy. Do not add duplicate terms or change actor/gate architecture before the comparison.
 
@@ -189,7 +191,7 @@ Recording mode queues keyboard events to apply them between physics steps, rathe
 
 ## 6. Clean folder layout and validation
 
-Follow [Task_3/README.md](../README.md) for the folder map. Four loose files were grouped without changing contents: the plan's two screenshots went to `notes/assets/` and the old debug dump/screenshot went to `tools/archive/debug_exports_20260926/`. PLAN.md image links were updated. [The move manifest](../tools/archive/organization_20261003.json) records original locations and hashes. Checkpoints, videos, old dashboards and numerical results were retained in place. Editor swap files were left alone.
+Follow [Task_3/README.md](../../README.md) for the folder map. Four loose files were grouped without changing contents: the plan's two screenshots went to `notes/assets/` and the old debug dump/screenshot went to `tools/archive/debug_exports_20260926/`. PLAN.md image links were updated. [The move manifest](../../tools/archive/organization_20261003.json) records original locations and hashes. Checkpoints, videos, old dashboards and numerical results were retained in place. Editor swap files were left alone.
 
 The new recording path was verified against an uninstrumented controller over 240 CPU physics steps, including queued command changes and a reset: positions, velocities and targets matched exactly. The test also checked chunk loading, separate attempts, command sampling and saved-data-only plot generation. Validation data were temporary and are not presented as your recording. A graphical run with your commands still needs to be recorded by you.
 

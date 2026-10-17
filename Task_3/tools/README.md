@@ -1,42 +1,27 @@
-# SvanM2 analysis tools
+# Recording and analysis tools
 
-Runtime: `Task_3/xterra_mjlab/.venv` (Python, PyTorch, MuJoCo, NumPy, Matplotlib; mjlab for reward integration). Scripts live in `jitter_analysis/` and import the simulator/controller from the SvanM2 source checkout.
+Use the [main README](../README.md) for simulation and plotting commands, and the [debugging strategy](../notes/25_RL_POLICY_DEBUG_STRATEGY_20261017.md) for the investigation order.
 
-**Latest evidence:** [October 10 detailed report](../notes/23_DEEP_JITTER_ANALYSIS_20261010.md) and [34-case CPU dashboard](results/deep_audit_20261010/index.html). No training/GPU job was started. Discuss future GPU use with the user first.
-
-**October 11 follow-up:** [gate/frequency/VLM audit](../notes/24_GATE_FREQUENCY_AND_VLM_AUDIT_20261011.md), [CPU replay and raw rechecks](results/gate_frequency_audit_20261011_v2/analysis.json), [pathway plot](results/gate_frequency_audit_20261011_v2/gate_pathways.png), and [frequency plot](results/gate_frequency_audit_20261011_v2/frequency_phases.png). Saved-data analysis only; no new physics or training.
-
-## Interfaces
-
-| Module | Inputs / method | Outputs |
+| Task | Script in `jitter_analysis/` | Runs new simulation? |
 | --- | --- | --- |
-| `record.py`, `interactive.py` | Policy/controller, physics state, keyboard commands, resets; passive recording | Session/attempt manifests, source hashes, contacts, chunked raw NPZ, status |
-| `analyze.py`, `plot_interactive.py`, `plot_help.py` | Saved traces; band RMS, units/timing, torque reconstruction | Metrics JSON, plots, HTML |
-| `review_interactive.py`, `compare_policy_runs.py` | Recorded attempts; command/duration/contact/checkpoint contract checks | Matched windows, tracking/oscillation comparisons, CSV/JSON/HTML |
-| `inspect_policy_spikes.py`, `diagnose_updates.py` | Saved policy input/action history, strict checkpoint replay, MoE/actor decomposition | Target-spike/gate diagnostics and consistency checks |
-| `first_contact.py`, `compare_starts.py` | Contact events, foot trajectories, paired starts | Clearance/support/traversal analysis |
-| `audit_target_rates.py`, `target_rate_reward.py` | Actual clamped target deltas and policy timestamps | Exploratory target-rate distributions and reward proposal |
-| `run_suite.py` | Scripted flat/stair/sensing/start protocol | Frozen comparison runs and source snapshots |
-| `audit_control_loop.py` | Matched gain/contact/sensing interventions; 50 Hz policy / 200 Hz PD | Protocol, run traces, summary metrics |
-| `summarize_control_loop_audit.py` | Existing contact-audit traces; independent traversal and contact Jacobian checks | `audit_findings.json`, contact-response/fixed-state diagnostics, figures |
-| `tier1_solver_probe.py` | Contact/substep grid with explicit policy/PD rates | Iteration, slip, penetration, tracking and vibration diagnostics |
-| `smoke_target_rate_env.py` | Synthetic action sequence in reward manager/environment | Integration check; not policy capability |
-| `verify_current_contract.py` | Current limits; CPU-only contact A/B and explicit-contact substep comparison | Fresh flat/stair traces, all failures, source/checkpoint integrity |
-| `catalog_evidence.py` | Project file inventory, saved event logs/checkpoints, historical contact traces | Hashes, identity/curve summaries, raw traversal recheck |
-| `summarize_deep_audit.py` | Saved October 10 traces only | Matched plots, independent numeric stair checks, dashboard |
-| `audit_gate_frequency.py` | Saved interactive frames, exact CPU checkpoint replay, September hardware arrays and filter traces | Gate/expert/direct-actor target-change probes, rate/spectrum metrics, raw rechecks and full-foot traversal verification |
+| Record an interactive session | `interactive.py`, called by the viewer with `--record` | Records the running viewer |
+| Plot saved attempts | `plot_interactive.py` | No |
+| Verify recorded policy outputs and inspect gating/timing | `diagnose_updates.py` | No; offline policy replay |
+| Inspect target spikes and actor-input sensitivity | `inspect_policy_spikes.py` | No; offline policy probes |
+| Compare recorded attempts and commands | `review_interactive.py`, `compare_policy_runs.py` | No |
+| Run scripted controlled experiments | `record.py`, `run_suite.py`, `audit_control_loop.py`, `verify_current_contract.py` | Yes |
 
-## Data contracts
-
-Joint traces at 200 Hz: 8–30 Hz analysis band. Policy targets at 50 Hz: 8–20 Hz. `requested`, `target`, `q`, applied torque, command, contact, and source/checkpoint hashes are distinct fields. Flat/stair classification comes from contacts, not filenames. Traversal requires all-foot platform/support/lane/upright criteria. Commands and window durations must match for comparisons.
-
-`results/interactive/<session>/attempt_*/` holds raw chunks plus `plots/`; `results/<study>/` holds scripted studies. `archive/` preserves earlier debug exports and guides. Checkpoints remain in the source checkout/evaluation-run folders.
-
-## CPU regression suite
+For the latest inspected session, from **Task_3**:
 
 ```bash
-cd Task_3/tools/jitter_analysis
-CUDA_VISIBLE_DEVICES='' ../../xterra_mjlab/.venv/bin/python -m unittest test_target_rate_reward test_analysis test_interactive -v
+CUDA_VISIBLE_DEVICES='' xterra_mjlab/.venv/bin/python \
+  tools/jitter_analysis/diagnose_updates.py \
+  tools/results/interactive/20261017_205511_247716 \
+  --device cpu --out tools/results/policy_debug_20261017
 ```
 
-14 tests cover reward timing/clamping/reset semantics, training-profile overrides, known-frequency RMS/Nyquist behavior, observation freshness, passive trajectory equality, full-foot traversal, transmission mapping, reset-delimited keyboard recording, and explicit contact overrides. No hardware or server connection is required; local checkpoint/robot assets are required.
+Open [the diagnostics dashboard](results/policy_debug_20261017/index.html). Replace session/output paths for a new recording. Rerunning the plotting tools replaces their derived outputs, while retaining raw recordings.
+
+Recorded joints are sampled at 200 Hz; the standard joint analysis band is 8–30 Hz. Policy targets and gate weights are sampled at 50 Hz; use a band below their 25 Hz Nyquist limit. Compare consistent commands, windows, checkpoint identities and outcomes.
+
+`audit_gate_frequency.py` currently contains October 11 attempt/phase selections; adapt them before analyzing another session. [Historical complete tool reference](../notes/archive/TOOLS_REFERENCE_20261011.md).

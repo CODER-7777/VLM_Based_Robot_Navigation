@@ -1,3 +1,5 @@
+> Historical note. For current commands and decisions, start at [Task 3](../../README.md).
+
 # Could the tighter target limits explain worse stair climbing?
 
 Checked **2026-10-03**. This is a short decision guide based on the saved traces, not a new limits experiment. No controller, training or server code was changed.
@@ -13,7 +15,7 @@ These are allowed **requested positions**, not a change to gears or J_LEG. Tight
 
 ## The useful numbers, without reading long plots
 
-I checked the twelve distinct stair traces in [the repeats folder](../tools/results/20261002_stair_repeats_v1/). Six use the current candidate (three starts, each under viewer and refreshed-observation conditions).
+I checked the twelve distinct stair traces in [the repeats folder](../../tools/results/20261002_stair_repeats_v1). Six use the current candidate (three starts, each under viewer and refreshed-observation conditions).
 
 For the candidate:
 

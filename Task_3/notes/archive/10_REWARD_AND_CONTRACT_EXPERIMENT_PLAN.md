@@ -1,6 +1,8 @@
+> Historical note. For current commands and decisions, start at [Task 3](../../README.md).
+
 # Review of the proposed contract and reward changes
 
-> **2026-10-02 update:** Follow [the main guide](README.md). The user now prefers testing the combined package to save training time. The separate experiments below remain useful for later attribution. Actuator tuning is deferred; current source clipping is no longer null and the viewer calf upper-bound edit is already done.
+> **2026-10-02 update:** Follow [the main guide](PROJECT_HISTORY.md). The user now prefers testing the combined package to save training time. The separate experiments below remain useful for later attribution. Actuator tuning is deferred; current source clipping is no longer null and the viewer calf upper-bound edit is already done.
 
 Date: 2026-09-28. This is a proposed manual implementation and experiment plan, not a record of implemented fixes or successful training. It follows the user's request to work through the local audit one issue at a time. No controller or training code was edited while writing this note.
 
@@ -73,4 +75,4 @@ Collect measured and commanded joint angles, raw and clamped targets, timestamps
 
 A robot that stops or avoids the stairs can have lower oscillation without solving the task. Keep failed trials and report them. Fixable software discrepancies and uncertain physical parameters should be tracked separately; the report does not establish exact actuator dynamics or one exclusive jitter cause.
 
-References: [audit report](../moe_jitter_audit_20260921/REPORT.md), [issue-by-issue checklist](09_AUDIT_ISSUE_BY_ISSUE_CHECKLIST.md), [implementation considerations](08_TARGET_LIMITS_AND_SECOND_DIFFERENCE_PLAN.md).
+References: [audit report](../../moe_jitter_audit_20260921/REPORT.md), [issue-by-issue checklist](09_AUDIT_ISSUE_BY_ISSUE_CHECKLIST.md), [implementation considerations](08_TARGET_LIMITS_AND_SECOND_DIFFERENCE_PLAN.md).

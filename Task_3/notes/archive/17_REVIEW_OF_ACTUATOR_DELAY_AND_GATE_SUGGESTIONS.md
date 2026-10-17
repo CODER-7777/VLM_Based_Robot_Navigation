@@ -1,6 +1,8 @@
+> Historical note. For current commands and decisions, start at [Task 3](../../README.md).
+
 # Which research suggestions should we use for our MoE jitter problem?
 
-**2026-10-10 update:** [note 23](23_DEEP_JITTER_ANALYSIS_20261010.md) consolidates this history and tests today's tighter target limits. The wide-bound results below remain valid for their saved contract. The later tier1 substep grid changes effective contact timeconstant as well as timestep; it is not a pure convergence test. New fixed-contact tests, all current stair failures/successes, and a CPU-only viewer command are in note 23. No additional training was launched.
+**2026-10-10 update:** [note 23](../23_DEEP_JITTER_ANALYSIS_20261010.md) consolidates this history and tests today's tighter target limits. The wide-bound results below remain valid for their saved contract. The later tier1 substep grid changes effective contact timeconstant as well as timestep; it is not a pure convergence test. New fixed-contact tests, all current stair failures/successes, and a CPU-only viewer command are in note 23. No additional training was launched.
 
 ## Hardware objective clarification, 2026-10-07 — read before the simulation recommendation below
 
@@ -39,7 +41,7 @@ I verified this on a **single fixed recorded state at t=6 seconds**, preserving 
 | Tangential regularizer R | 0.00165758 | 0.01657575 |
 | Sliding friction coefficient | 0.85 | 0.85 |
 
-Thus the tangential regularizer increases tenfold; the physical friction coefficient and normal regularizer remain unchanged in this fixed-state calculation. It does **not** follow that sliding, torque or vibration changes by exactly tenfold. [Exact calculation](../tools/results/control_loop_audit_20261006_v2/impratio_fixed_state.json).
+Thus the tangential regularizer increases tenfold; the physical friction coefficient and normal regularizer remain unchanged in this fixed-state calculation. It does **not** follow that sliding, torque or vibration changes by exactly tenfold. [Exact calculation](../../tools/results/control_loop_audit_20261006_v2/impratio_fixed_state.json).
 
 ### Why it can affect policy outputs without changing weights
 
@@ -69,7 +71,7 @@ These are offline measurements of the **same** flat tests, kp=18/kd=0.7, t=5–1
 
 Both original-policy directions also show reductions in those measurements. This is not simply making the feet slide more freely: the measured simulated slip proxy decreased. But it is still not hardware validation. Different gaits create different contact sample distributions; force-band RMS includes some impact/stepping content. No claim of motor heat or energy savings follows from torque RMS alone.
 
-Slip proxy definition: speed of the rigid foot at the recorded contact point, projected onto the contact tangent plane, against the stationary floor, using contacts loaded above 5 N. Computed from the recorded q/dq and the contact-point Jacobian. This captures rigid simulated contact motion, not deformation of a real rubber foot. The Jacobian method reproduced logged foot-center velocities to about 9e-16 m/s in the consistency check. [Figure](../tools/results/control_loop_audit_20261006_v2/contact_response.png), [metrics and definitions](../tools/results/control_loop_audit_20261006_v2/contact_response.json).
+Slip proxy definition: speed of the rigid foot at the recorded contact point, projected onto the contact tangent plane, against the stationary floor, using contacts loaded above 5 N. Computed from the recorded q/dq and the contact-point Jacobian. This captures rigid simulated contact motion, not deformation of a real rubber foot. The Jacobian method reproduced logged foot-center velocities to about 9e-16 m/s in the consistency check. [Figure](../../tools/results/control_loop_audit_20261006_v2/contact_response.png), [metrics and definitions](../../tools/results/control_loop_audit_20261006_v2/contact_response.json).
 
 ### What to do for the real-robot objective
 
@@ -85,7 +87,7 @@ For a hardware claim, the result must be stated as: “The policy was trained/ev
 
 **The strongest confirmed contributor in the tested simulator is `impratio=100`.** Changing only that parameter to **10** reduced flat-ground vibration while maintaining approximately the same speed or improving it. Both policies also completed the 10 cm staircase at both tested gains with 10; their matching 100 cases did not complete it.
 
-Start with the [focused findings dashboard](../tools/results/control_loop_audit_20261006_v2/FINDINGS.html), [comparison figure](../tools/results/control_loop_audit_20261006_v2/impratio_comparison.png) and [exact measurements / independent traversal checks](../tools/results/control_loop_audit_20261006_v2/audit_findings.json). These are **new scripted diagnostic simulations**, separate from the user's keyboard recordings. The old sections below retain historical findings; their earlier suggested next experiments are superseded by this first test.
+Start with the [focused findings dashboard](../../tools/results/control_loop_audit_20261006_v2/FINDINGS.html), [comparison figure](../../tools/results/control_loop_audit_20261006_v2/impratio_comparison.png) and [exact measurements / independent traversal checks](../../tools/results/control_loop_audit_20261006_v2/audit_findings.json). These are **new scripted diagnostic simulations**, separate from the user's keyboard recordings. The old sections below retain historical findings; their earlier suggested next experiments are superseded by this first test.
 
 ### What differs, and why it matters
 
@@ -109,7 +111,7 @@ Requested speed is 0.30 m/s along the named axis. All rows compare the same six-
 
 RMS here is the average across 12 joints of each joint's measured 8–30 Hz component. It is not the full walking swing and does not imply all content in that band is undesirable. The candidate improvements did not come from stopping. Original Y speed differs by only about 0.00002 m/s.
 
-At kp=20/kd=0.7 with fresh observations, 12 additional matched pairs across three starts (nominal, y+0.03 m/yaw+0.02 rad, and negative offsets) reduced vibration by **32.9–75.2%**, with mean requested-axis speed maintained or increased. See [positive offsets](../tools/results/control_loop_audit_20261006_v2/validation/start_plus/index.html) and [negative offsets](../tools/results/control_loop_audit_20261006_v2/validation/start_minus/index.html).
+At kp=20/kd=0.7 with fresh observations, 12 additional matched pairs across three starts (nominal, y+0.03 m/yaw+0.02 rad, and negative offsets) reduced vibration by **32.9–75.2%**, with mean requested-axis speed maintained or increased. See [positive offsets](../../tools/results/control_loop_audit_20261006_v2/validation/start_plus/index.html) and [negative offsets](../../tools/results/control_loop_audit_20261006_v2/validation/start_minus/index.html).
 
 ### Stair traversal verified from raw data
 
@@ -124,11 +126,11 @@ Same nominal start, forward 0.30 m/s, stand three seconds, ramp one second, maxi
 
 The independent reader recomputed the traversal condition from `trace.npz`: all four feet beyond x=3.622 m and inside the stair lane, each foot having loaded the platform above 1 N, tilt below 30°, base clearance above 0.18 m, sustained for at least 0.5 s. All four reported completions pass; all four matching 100 cases fail that criterion. These are **two checkpoints × two gains at one nominal start**, not four independent seeds or a general success-rate estimate. Raw manifests show staircase collisions remain enabled.
 
-Important correction: the successful current-gain candidate first contacts the stair with its foot center at **4.39 cm**, then recovers and climbs. Low first contact is worth studying, but does not prove “the policy never learned to lift.” Compare [candidate at 100](../tools/results/control_loop_audit_20261006_v2/validation/stairs_current_gains/candidate91000_x_legacy/index.html) and [candidate at 10](../tools/results/control_loop_audit_20261006_v2/validation/stairs_current_gains/candidate91000_x_legacy_impratio10/index.html), including the first-contact figures.
+Important correction: the successful current-gain candidate first contacts the stair with its foot center at **4.39 cm**, then recovers and climbs. Low first contact is worth studying, but does not prove “the policy never learned to lift.” Compare [candidate at 100](../../tools/results/control_loop_audit_20261006_v2/validation/stairs_current_gains/candidate91000_x_legacy/index.html) and [candidate at 10](../../tools/results/control_loop_audit_20261006_v2/validation/stairs_current_gains/candidate91000_x_legacy_impratio10/index.html), including the first-contact figures.
 
 ### What we learned about the other proposed causes
 
-1. **kp/kd:** the [gain sweep](../tools/results/gain_sensitivity_20261005_v1/index.html) has mixed results. Increasing kd from 0.7 to 0.84 reduces candidate Y vibration about 9%, but increases original Y vibration about 22%. There is no universal gain fix here. The reconstructed damping term dissipates energy in this model; a large damping torque alone does not establish a bad kd.
+1. **kp/kd:** the [gain sweep](../../tools/results/gain_sensitivity_20261005_v1/index.html) has mixed results. Increasing kd from 0.7 to 0.84 reduces candidate Y vibration about 9%, but increases original Y vibration about 22%. There is no universal gain fix here. The reconstructed damping term dissipates energy in this model; a large damping torque alone does not establish a bad kd.
 2. **Gate chatter:** freezing gate weights after five seconds does not consistently reduce vibration. The quiet candidate Y case mostly stops moving. Gate activity can respond to the changing robot state; it is not established as the independent root cause.
 3. **Observation timing and history:** fresh observations help some cases and hurt others. Adding delay only to the actor's previous-action input severely destabilizes gait. Preserve the trained observation/history convention during the first contact-setting comparison.
 4. **50 Hz versus 200 Hz:** successful contact-setting cases retain those rates. The ratio alone therefore does not establish a fault. Smaller physics steps reduce vibration in several tests, but are a separate, more involved change than the first recommendation.
@@ -156,7 +158,7 @@ This command uses newest91000 SHA-256 `dec9775d4b368b69964dde679985455d8b723d5af
 
 ## Latest follow-up: +Y 0.30 m/s, equal four-second comparison
 
-Reviewed actual recordings `comparison_y030_20261005_021830` on 2026-10-05. The existing eight-second comparison is incomplete: original provides 7.12 seconds and candidate 4.52 seconds after settling. Preserve that report, but compare [equal four-second windows](../tools/results/interactive/comparison_y030_20261005_021830/comparison_equal4s/index.html), with [exact metrics](../tools/results/interactive/comparison_y030_20261005_021830/comparison_equal4s/comparison.json). Both selected windows are complete, have matching recorded control/scene settings, and have no prior or current stair contact. Manual ramps and gait phase can still differ; this is one pair, not a general success estimate.
+Reviewed actual recordings `comparison_y030_20261005_021830` on 2026-10-05. The existing eight-second comparison is incomplete: original provides 7.12 seconds and candidate 4.52 seconds after settling. Preserve that report, but compare [equal four-second windows](../../tools/results/interactive/comparison_y030_20261005_021830/comparison_equal4s/index.html), with [exact metrics](../../tools/results/interactive/comparison_y030_20261005_021830/comparison_equal4s/comparison.json). Both selected windows are complete, have matching recorded control/scene settings, and have no prior or current stair contact. Manual ramps and gait phase can still differ; this is one pair, not a general success estimate.
 
 | Metric at requested vy +0.30 m/s | Original90000 | Candidate91000 |
 | --- | ---: | ---: |
@@ -183,7 +185,7 @@ No controller, reward, policy, training or server code was edited for this follo
 
 ## Latest result: original90000 versus newest91000, +Y 0.15 m/s
 
-Reviewed the actual user-recorded pair `comparison_y015_20261005_015702` on 2026-10-05. [Open the comparison](../tools/results/interactive/comparison_y015_20261005_015702/comparison/index.html) or [exact metrics](../tools/results/interactive/comparison_y015_20261005_015702/comparison/comparison.json).
+Reviewed the actual user-recorded pair `comparison_y015_20261005_015702` on 2026-10-05. [Open the comparison](../../tools/results/interactive/comparison_y015_20261005_015702/comparison/index.html) or [exact metrics](../../tools/results/interactive/comparison_y015_20261005_015702/comparison/comparison.json).
 
 **Conclusion: the candidate is smoother, but tracks sideways movement worse and nearly stops. This is not a successful overall fix.**
 
@@ -216,7 +218,7 @@ In the **last five seconds** of the selected candidate window, mean vy is only *
 
 **The policy is not ruled out.** Verification that the right weights load and that replay reproduces them says nothing about whether those weights produce good control. The current recordings show substantial physical-target jumps and poor disturbed-state tracking. Changing gate frequency alone is not yet justified: the gate, expert features, direct actor inputs and contacts all participate.
 
-Read the [new sideways policy-spike page](../tools/results/interactive/sideways_91000_20261005_011859/attempt_001/plots/policy_spike_review.html) and [the older stair-run policy-spike page](../tools/results/interactive/91000/test_2/attempt_001/plots/policy_spike_review.html). The reusable source is [inspect_policy_spikes.py](../tools/jitter_analysis/inspect_policy_spikes.py). It reads original chunks and verifies checkpoint SHA, actual five-frame inference, mapped targets and existing decomposition checks. No physics rollout, training, controller edit, target-limit edit or server operation was performed. New plots/JSON/HTML stay inside each attempt's existing `plots/` folder.
+Read the [new sideways policy-spike page](../../tools/results/interactive/sideways_91000_20261005_011859/attempt_001/plots/policy_spike_review.html) and [the older stair-run policy-spike page](../../tools/results/interactive/91000/test_2/attempt_001/plots/policy_spike_review.html). The reusable source is [inspect_policy_spikes.py](../../tools/jitter_analysis/inspect_policy_spikes.py). It reads original chunks and verifies checkpoint SHA, actual five-frame inference, mapped targets and existing decomposition checks. No physics rollout, training, controller edit, target-limit edit or server operation was performed. New plots/JSON/HTML stay inside each attempt's existing `plots/` folder.
 
 ### What the velocity plot actually means
 
@@ -283,7 +285,7 @@ At the earlier check, no new Y-direction session was present: newest remained `t
 
 ## 2026-10-05: newest recordings, 50 Hz holds, gates and actuator response
 
-Read the [new offline dashboard](../tools/results/interactive/update_gate_review_20261005/index.html) and [reusable tool instructions](../tools/README.md). Original raw recordings were read; no new simulation, training or runtime control change was made. All four recorded histories replayed against their matching checkpoint within documented floating-point tolerances. P/D torque reconstruction and additive raw-action decomposition passed independently. The 20 Hz synthetic signal RMS and constant-command/contact boundary checks passed.
+Read the [new offline dashboard](../../tools/results/interactive/update_gate_review_20261005/index.html) and [reusable tool instructions](../../tools/README.md). Original raw recordings were read; no new simulation, training or runtime control change was made. All four recorded histories replayed against their matching checkpoint within documented floating-point tolerances. P/D torque reconstruction and additive raw-action decomposition passed independently. The 20 Hz synthetic signal RMS and constant-command/contact boundary checks passed.
 
 **Checkpoint distinction:** the user's linked `91000/test_2/attempt_001` uses SHA `f74e62bf...`, the older run with time-rate weight −0.05, profile `existing` and learning-rate cap 0.0003 in its saved checkpoint arguments. Its viewer has wide limits. The newest `test_swing013_91000` uses SHA `dec9775d...`, the completed retry with −0.01, `viewer-wide`, 0.13 m and cap 1e−5. Saved arguments identify the intended settings; no missing original 90000 environment is inferred from them.
 
@@ -303,15 +305,15 @@ Newest attempt_001 is a flat-ground drive/turn recording that never contacts sta
 
 Written **2026-10-03**. This is an evidence review and proposed experiment order. No training, actuator, policy, viewer or server code was changed for this review.
 
-Read this alongside [the fresh failure report](../tools/results/20261002_matched_v1/REPORT.md), [the plot-reading guide](15_HOW_TO_READ_THE_PLOTS.md), and [the proposed clearance experiment](16_NEXT_CHANGES_FROM_THE_PLOTS.md). The older September audit and the research papers are sources of hypotheses; our recorded measurements must determine which hypotheses apply.
+Read this alongside [the fresh failure report](../../tools/results/20261002_matched_v1/REPORT.md), [the plot-reading guide](../15_HOW_TO_READ_THE_PLOTS.md), and [the proposed clearance experiment](16_NEXT_CHANGES_FROM_THE_PLOTS.md). The older September audit and the research papers are sources of hypotheses; our recorded measurements must determine which hypotheses apply.
 
 ## 1. What our plots actually say
 
-In the central candidate run, the front-left foot hits the vertical face of the first stair at **9.730 s**. Its center is only **5.63 cm** high. To pass directly over a 10 cm top, this 2.2 cm-radius sphere needs its center above approximately **12.2 cm**, plus clearance margin. See [the event plot](../tools/results/20261002_matched_v1/candidate90500_stairs_viewer_start0/08_first_contact.png) and [the underlying event measurements](../tools/results/20261002_matched_v1/candidate90500_stairs_viewer_start0/first_contact_analysis.json).
+In the central candidate run, the front-left foot hits the vertical face of the first stair at **9.730 s**. Its center is only **5.63 cm** high. To pass directly over a 10 cm top, this 2.2 cm-radius sphere needs its center above approximately **12.2 cm**, plus clearance margin. See [the event plot](../../tools/results/20261002_matched_v1/candidate90500_stairs_viewer_start0/08_first_contact.png) and [the underlying event measurements](../../tools/results/20261002_matched_v1/candidate90500_stairs_viewer_start0/first_contact_analysis.json).
 
 At that instant, the contacting leg's targets and torques are not clipped. Even putting the joints at their current commanded angles with the body frozen produces a low foot in the static geometric check. This does not predict the dynamic trajectory, but it gives no evidence that the immediate problem is simply insufficient torque to achieve an already-high foot target.
 
-The policy makes much larger corrections after contact. In matched six-second windows, measured joint 8–30 Hz RMS averages **0.331° on flat versus 0.833° with stairs**. The [matched comparison](../tools/results/20261002_matched_v1/candidate90500_stairs_viewer_start0/09_flat_comparison.png) shows progress stopping and body tilt increasing after stair contact. This identifies an effect of the stair on the complete feedback loop. It does not isolate a faulty motor, gate or reward, and the frequency band includes impacts and useful corrections as well as potentially unwanted vibration.
+The policy makes much larger corrections after contact. In matched six-second windows, measured joint 8–30 Hz RMS averages **0.331° on flat versus 0.833° with stairs**. The [matched comparison](../../tools/results/20261002_matched_v1/candidate90500_stairs_viewer_start0/09_flat_comparison.png) shows progress stopping and body tilt increasing after stair contact. This identifies an effect of the stair on the complete feedback loop. It does not isolate a faulty motor, gate or reward, and the frequency band includes impacts and useful corrections as well as potentially unwanted vibration.
 
 Across the repeated starts, improved speed tracking and less target removal did not produce consistent jitter improvement or successful ascent. Therefore, increasing smoothness punishment again is not the best-supported next step. We need to investigate **foot lifting before collision, timing, support transfer and direction**.
 
@@ -328,7 +330,7 @@ Across the repeated starts, improved speed tracking and less target removal did 
 
 ## 3. Actuator modelling: a good idea, but not a proven first fix
 
-Our current simulator already uses a coupled motor-space PD model, rather than teleporting joints to desired angles. [svanm2_actuator.py](../xterra_mjlab/xterra_mjlab/actuators/svanm2_actuator.py) implements the transmission and torque clamp. [constants.py](../xterra_mjlab/xterra_mjlab/assets/svanm2/constants.py) configures kp 20, kd 0.7, gear ratios 8/8/16, coupling 0.5, armature 0.01 and joint-side torque limits 12/12/24 Nm. These are implemented assumptions, not proof of complete hardware calibration.
+Our current simulator already uses a coupled motor-space PD model, rather than teleporting joints to desired angles. [svanm2_actuator.py](../../xterra_mjlab/xterra_mjlab/actuators/svanm2_actuator.py) implements the transmission and torque clamp. [constants.py](../../xterra_mjlab/xterra_mjlab/assets/svanm2/constants.py) configures kp 20, kd 0.7, gear ratios 8/8/16, coupling 0.5, armature 0.01 and joint-side torque limits 12/12/24 Nm. These are implemented assumptions, not proof of complete hardware calibration.
 
 Hwangbo's ANYmal work learned actuator torque response from histories of position error and velocity using hardware data. That is a useful precedent, but a different robot's fitted model cannot be copied into ours. [Original paper](https://arxiv.org/pdf/1901.08652).
 
@@ -342,7 +344,7 @@ Also distinguish **improving the actuator model inside training simulation** fro
 
 This is an important correction to the pasted suggestion's zero-latency assumption.
 
-In [constants.py](../xterra_mjlab/xterra_mjlab/assets/svanm2/constants.py), the training actuator has:
+In [constants.py](../../xterra_mjlab/xterra_mjlab/assets/svanm2/constants.py), the training actuator has:
 
 ```python
 delay_min_lag = 0
@@ -350,15 +352,15 @@ delay_max_lag = 2
 delay_update_period = 0
 ```
 
-[env_cfgs.py](../xterra_mjlab/xterra_mjlab/tasks/velocity/config/svanm2/env_cfgs.py) selects the delayed robot when `play=False`. The completed candidate's [saved env.yaml](../xterra_mjlab/evaluation_runs/20261002_moe_target_bundle_updates90500/env.yaml) contains these same settings, physics timestep 0.005 s and decimation 4.
+[env_cfgs.py](../../xterra_mjlab/xterra_mjlab/tasks/velocity/config/svanm2/env_cfgs.py) selects the delayed robot when `play=False`. The completed candidate's [saved env.yaml](../../xterra_mjlab/evaluation_runs/20261002_moe_target_bundle_updates90500/env.yaml) contains these same settings, physics timestep 0.005 s and decimation 4.
 
 In the inspected **local installed mjlab implementation**, actuator lag is in physics steps and period 0 means resample every step. The custom actuator receives delayed command targets before calculating torque. This corresponds to a configured **0, 5 or 10 ms command delay**, not 0, 20 or 40 ms. Observation delays in that saved configuration are zero. The current viewer has no equivalent explicit randomized command-delay buffer.
 
 Implementation references:
 
-- [Actuator delay configuration and application](../xterra_mjlab/.venv/lib/python3.11/site-packages/mjlab/actuator/actuator.py).
-- [Delay-buffer implementation](../xterra_mjlab/.venv/lib/python3.11/site-packages/mjlab/utils/buffers/delay_buffer.py).
-- [Entity actuator application](../xterra_mjlab/.venv/lib/python3.11/site-packages/mjlab/entity/entity.py).
+- [Actuator delay configuration and application](../../xterra_mjlab/.venv/lib/python3.11/site-packages/mjlab/actuator/actuator.py).
+- [Delay-buffer implementation](../../xterra_mjlab/.venv/lib/python3.11/site-packages/mjlab/utils/buffers/delay_buffer.py).
+- [Entity actuator application](../../xterra_mjlab/.venv/lib/python3.11/site-packages/mjlab/entity/entity.py).
 
 The saved YAML establishes the run's configured settings. Verify the actual **server mjlab version and implementation** before claiming that its runtime behavior matches the currently installed local package exactly.
 
@@ -370,7 +372,7 @@ The two cited delay sources describe different approaches. [HiLo](https://arxiv.
 
 ## 5. The gate: investigate it, but do not call correlation the root cause
 
-Our [checkpoint_policy.py](../xterra_mjlab/svanm2_moe_stair_sim/checkpoint_policy.py) shows:
+Our [checkpoint_policy.py](../../xterra_mjlab/svanm2_moe_stair_sim/checkpoint_policy.py) shows:
 
 ```text
 five 45-value observation frames → 225-value history
@@ -393,7 +395,7 @@ I checked the existing central candidate gate logs on 2026-10-03. At the 50 Hz p
 | 3.73–9.73 s, before first stair contact | 0.04339 | 0.04339 |
 | 9.73–15.73 s, after first stair contact | 0.07373 | 0.04089 |
 
-Source: `trace.npz` in [the stair case](../tools/results/20261002_matched_v1/candidate90500_stairs_viewer_start0/) and [the matched flat case](../tools/results/20261002_matched_v1/candidate90500_flat_viewer_start0/). These are dimensionless gate-change magnitudes, **not joint jitter amplitudes**. This is one paired start, not a cross-trial causal result.
+Source: `trace.npz` in [the stair case](../../tools/results/20261002_matched_v1/candidate90500_stairs_viewer_start0) and [the matched flat case](../../tools/results/20261002_matched_v1/candidate90500_flat_viewer_start0). These are dimensionless gate-change magnitudes, **not joint jitter amplitudes**. This is one paired start, not a cross-trial causal result.
 
 The gate changes more after the stair collision. However, the collision also changes the observations and each expert's features. The gate may be reacting appropriately to the disturbance. This result motivates further diagnosis; it does not prove the gate causes the shaking.
 
@@ -403,7 +405,7 @@ Options with a deliberation cost are temporally extended decisions, not a direct
 
 ## 6. Observation filtering: first identify which input is noisy
 
-The deployed student frame contains commands, gyro, projected gravity, joint positions, joint velocities and previous clipped raw actions. See [controller.py](../xterra_mjlab/svanm2_moe_stair_sim/controller.py). There is **no explicit binary contact signal, contact force or stair-height input** to this student. Training's reward/critic sensors should not be confused with actor inputs.
+The deployed student frame contains commands, gyro, projected gravity, joint positions, joint velocities and previous clipped raw actions. See [controller.py](../../xterra_mjlab/svanm2_moe_stair_sim/controller.py). There is **no explicit binary contact signal, contact force or stair-height input** to this student. Training's reward/critic sensors should not be confused with actor inputs.
 
 A stair impact can still alter q, dq and gyro, and therefore affect the gate indirectly. Inspect these signals and their timing before selecting any filter. Synchronizing readings is different from smoothing them.
 

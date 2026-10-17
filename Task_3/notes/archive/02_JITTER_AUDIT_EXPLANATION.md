@@ -1,3 +1,5 @@
+> Historical note. For current commands and decisions, start at [Task 3](../../README.md).
+
 # MoE 90k Jitter Audit — Plain-Language Explanation
 
 ## Main question and answer
@@ -98,8 +100,8 @@ the two systems. This mismatch alone was not proven to cause every failure.
 | Did the original 90k training use the demo limits? | Not established; historical training configuration and action processing must still be traced. |
 | Is this mismatch proven to cause the jitter? | No. It can change control behavior, but the audit did not isolate it as the root cause; failures occurred under both limit profiles. |
 
-Source: [original controller](../xterra_mjlab/svanm2_moe_stair_sim/controller.py),
-`TARGET_MAX` near line 32, and [audit comparison](../moe_jitter_audit_20260921/REPORT.md).
+Source: [original controller](../../xterra_mjlab/svanm2_moe_stair_sim/controller.py),
+`TARGET_MAX` near line 32, and [audit comparison](../../moe_jitter_audit_20260921/REPORT.md).
 The deployed adapter's original contract is not currently available locally for
 fresh direct inspection; that side of the comparison relies on the saved audit
 and its artifacts. Do not confuse this provenance limit with saying the report

@@ -1,3 +1,5 @@
+> Historical note. For current commands and decisions, start at [Task 3](../../README.md).
+
 # Problem Fixability Table
 
 Updated: 2026-09-25. You tell the problem, I record whether it's fixable and how.

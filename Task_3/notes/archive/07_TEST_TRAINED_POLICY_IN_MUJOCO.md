@@ -1,6 +1,8 @@
+> Historical note. For current commands and decisions, start at [Task 3](../../README.md).
+
 # Test the trained policy in MuJoCo
 
-> **2026-10-02 update:** Follow [the main guide](README.md) for current paths, edited limits and the next training trial. The calf upper bound has already been corrected; the copy paths and status below describe an earlier setup.
+> **2026-10-02 update:** Follow [the main guide](PROJECT_HISTORY.md) for current paths, edited limits and the next training trial. The calf upper bound has already been corrected; the copy paths and status below describe an earlier setup.
 
 Date: 2026-09-28. This guide documents a first visual comparison and the requirements for quantitative jitter evaluation. No controller or training code was changed.
 
@@ -88,9 +90,9 @@ Visual improvement is preliminary evidence. Numerical reduction requires logged 
 
 ## Sources
 
-- [Viewer and arguments](../xterra_mjlab/svanm2_moe_stair_sim/run_interactive_sim.py)
-- [Checkpoint loader](../xterra_mjlab/svanm2_moe_stair_sim/checkpoint_policy.py)
-- [Controller and target limits](../xterra_mjlab/svanm2_moe_stair_sim/controller.py)
-- [Keyboard controls](../xterra_mjlab/svanm2_moe_stair_sim/teleop.py)
+- [Viewer and arguments](../../xterra_mjlab/svanm2_moe_stair_sim/run_interactive_sim.py)
+- [Checkpoint loader](../../xterra_mjlab/svanm2_moe_stair_sim/checkpoint_policy.py)
+- [Controller and target limits](../../xterra_mjlab/svanm2_moe_stair_sim/controller.py)
+- [Keyboard controls](../../xterra_mjlab/svanm2_moe_stair_sim/teleop.py)
 - [Training/server workflow](06_REWARD_LOGGING_SERVER_WORKFLOW.md)
 - [Earlier video audit](05_VIDEO_JITTER_AUDIT.md)

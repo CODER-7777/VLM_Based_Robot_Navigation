@@ -1,6 +1,8 @@
+> Historical note. For current commands and decisions, start at [Task 3](../../README.md).
+
 # Time-aware target changes: your idea, measured evidence and manual code steps
 
-**2026-10-04:** implementation is now complete locally; follow the current update at the top of [README.md](README.md). The manual integration instructions below are historical. The successful original-policy recording motivates a smaller −0.01 trial weight and explicit simulator-matching bounds, not a proven jitter fix.
+**2026-10-04:** implementation is now complete locally; follow the current update at the top of [README.md](PROJECT_HISTORY.md). The manual integration instructions below are historical. The successful original-policy recording motivates a smaller −0.01 trial weight and explicit simulator-matching bounds, not a proven jitter fix.
 
 Updated 2026-10-03. This is an **isolated proposal**, not an applied training change or a demonstrated jitter fix. The assistant added diagnostic/proposal files under `tools`; active reward/controller/training files and the server were not edited. This follows your earlier preference to make training edits manually.
 
@@ -45,7 +47,7 @@ A constant fast sequence can have zero second difference but nonzero rate-excess
 
 ## 3. Saturation pressure already exists and is active
 
-In [jitter_rewards.py](../xterra_mjlab/scripts/jitter_rewards.py), `TargetSaturationPressure` computes:
+In [jitter_rewards.py](../../xterra_mjlab/scripts/jitter_rewards.py), `TargetSaturationPressure` computes:
 
 ```text
 q_requested = action * scale + standing_offset
@@ -59,7 +61,7 @@ Pressure is positive when part of the request is removed. A request exactly at a
 
 ## 4. Thresholds measured from your recordings
 
-[The new rate dashboard](http://127.0.0.1:8000/tools/results/time_aware_penalty_20261003/index.html) and [the distribution image](../tools/results/time_aware_penalty_20261003/target_rate_distributions.png) use recorded targets only. No new simulation was run.
+[The new rate dashboard](http://127.0.0.1:8000/tools/results/time_aware_penalty_20261003/index.html) and [the distribution image](../../tools/results/time_aware_penalty_20261003/target_rate_distributions.png) use recorded targets only. No new simulation was run.
 
 The source review covers **41 attempts**. This calibration uses **19 qualifying entrance-start windows**: fixed command, upright, four seconds each, entirely before or after first stair contact. Top-spawn descent and its later flat travel are excluded. The tighter-bound approach reference contains **six windows / 1200 policy intervals**. Each family pools four legs. Its commands include different forward speeds, so this is an exploratory reference, not a single-speed benchmark or a healthy hardware calibration.
 
@@ -103,9 +105,9 @@ The manager normally multiplies a contribution rate by the 20 ms environment ste
 
 ## 6. Tested proposal files
 
-- [audit_target_rates.py](../tools/jitter_analysis/audit_target_rates.py): reads actual saved target timestamps, draws the distribution image and reports threshold-exceeding fractions.
-- [target_rate_reward.py](../tools/jitter_analysis/target_rate_reward.py): proposed manager reward and explicit configuration helper. It is **not imported by current training**.
-- [test_target_rate_reward.py](../tools/jitter_analysis/test_target_rate_reward.py): four CPU checks passed: elapsed-time dependence and equal-rate behavior; target clamping/reset masks/real reward-manager weighting; retaining saturation once; rejecting invalid threshold configurations.
+- [audit_target_rates.py](../../tools/jitter_analysis/audit_target_rates.py): reads actual saved target timestamps, draws the distribution image and reports threshold-exceeding fractions.
+- [target_rate_reward.py](../../tools/jitter_analysis/target_rate_reward.py): proposed manager reward and explicit configuration helper. It is **not imported by current training**.
+- [test_target_rate_reward.py](../../tools/jitter_analysis/test_target_rate_reward.py): four CPU checks passed: elapsed-time dependence and equal-rate behavior; target clamping/reset masks/real reward-manager weighting; retaining saturation once; rejecting invalid threshold configurations.
 
 The proposed term computes final clamped targets through the existing `_TargetCost` mapping, preserves raw-action history semantics, returns one cost per environment, and suppresses the first action after an episode reset. It uses the action manager's history, so it does not keep a rolling buffer that could leak across resets. It applies no output filter and adds no actuator delay.
 

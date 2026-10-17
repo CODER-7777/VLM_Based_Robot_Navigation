@@ -1,6 +1,8 @@
+> Historical note. For current commands and decisions, start at [Task 3](../../README.md).
+
 # Commit the current Task_3 work in six groups
 
-Historical Task 3-only commands. The current whole-repository update is defined by the [ten-commit publication plan](../../docs/mid_evaluation/PUBLICATION_PLAN.md).
+Historical Task 3-only commands. The current whole-repository update is defined by the [ten-commit publication plan](../../../docs/mid_evaluation/PUBLICATION_PLAN.md).
 
 Updated 2026-10-05 after inspecting the parent repository. Branch: `main`; remote: `https://github.com/CODER-7777/VLM_Based_Robot_Navigation.git`. The index was empty when inspected. These are commands for the user; the assistant has not staged, committed or pushed anything.
 

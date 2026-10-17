@@ -4,7 +4,7 @@
 
 This report was generated from new local simulations and inspected plots. The September audit supplied hypotheses; its conclusions were not assumed to be ground truth. Neither this report nor a simulator can establish the real robot's physical parameters without measurements.
 
-Read the [central-start dashboard](index.html), [three-start comparison](../20261002_stair_repeats_v1/index.html), and [measurement/tool guide](../../README.md). The supplied screen recording is separately reviewed in [note 13](../../../notes/13_CANDIDATE_VIDEO_REVIEW_20261002.md); these simulations are **not a replay** of its manual commands or resets.
+Read the [central-start dashboard](index.html), [three-start comparison](../20261002_stair_repeats_v1/index.html), and [measurement/tool guide](../../README.md). The supplied screen recording is separately reviewed in [note 13](../../../notes/archive/13_CANDIDATE_VIDEO_REVIEW_20261002.md); these simulations are **not a replay** of its manual commands or resets.
 
 ## 1. What was actually run
 
