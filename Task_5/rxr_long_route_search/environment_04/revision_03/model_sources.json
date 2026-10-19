@@ -1,0 +1,37 @@
+{
+  "model_title": "Backpack Photogrammetry",
+  "author": "WV_ArtDev",
+  "scanner_credit": "SmallpolyArt, credited by WV_ArtDev in the source description",
+  "license": {
+    "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+    "label": "CC Attribution",
+    "fullName": "Creative Commons Attribution",
+    "requirements": "Author must be credited. Commercial use is allowed.",
+    "url": "http://creativecommons.org/licenses/by/4.0/",
+    "slug": "by"
+  },
+  "original_url": "https://sketchfab.com/3d-models/backpack-photogrammetry-b8037798633640e7bf040aac16ea8d45",
+  "download_url": "https://huggingface.co/datasets/allenai/objaverse/resolve/main/glbs/000-069/b8037798633640e7bf040aac16ea8d45.glb",
+  "retrieved_on": "2026-10-15",
+  "source_sha256": "8873812f5af724430c6b882382409064e13ed933c5035455632cbc5428fb4108",
+  "prepared_sha256": "664d3dfebdf4ffe1c01bbac7163f81da2fc7ab3c8c635a2389edecf58d718417",
+  "prepared_asset": "assets/canvas_backpack_baked_clean_40cm.glb",
+  "modifications": {
+    "source": "wv_backpack_photogrammetry.glb",
+    "source_triangles": 303347,
+    "removed_triangles": 59220,
+    "retained_triangles": 244127,
+    "cut_source_y": -0.8,
+    "height_m": 0.4,
+    "front_direction": "+Z",
+    "modifications": "Removed display ring/underside scan artifacts, baked node transforms, normalized Y-up and scale; no texture replacement or invented details."
+  },
+  "alternative_4k_schoolbag": {
+    "author": "HotFrost (Atharva Taras)",
+    "url": "https://sketchfab.com/3d-models/school-bag-backpack-photoscan-64249ba38f5045bdaabbb5749aa30033",
+    "author_lists_4k_textures": true,
+    "downloaded": false,
+    "official_download_api_result": "401 Unauthorized; needs authenticated Sketchfab download",
+    "preview_only": "assets/hotfrost_author_preview.jpg"
+  }
+}

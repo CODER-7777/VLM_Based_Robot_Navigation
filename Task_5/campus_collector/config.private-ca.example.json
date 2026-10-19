@@ -1,0 +1,16 @@
+{
+  "bind": "172.26.186.222",
+  "port": 8443,
+  "public_origin": "https://172.26.186.222:8443",
+  "tls_certificate": "certificates/server/collector.crt",
+  "tls_private_key": "certificates/server/collector.key",
+  "allowed_networks": [],
+  "data_root": "/home/guest-isl/rishabh/bench/experiments/level3_manual_collector_v2/data_collecting/data",
+  "backend_python": "/home/guest-isl/rishabh/bench/envs/navila/bin/python",
+  "worker_port_start": 9100,
+  "max_workers": 2,
+  "idle_seconds": 600,
+  "login_seconds": 28800,
+  "max_upload_bytes": 314572800,
+  "minimum_free_bytes": 2147483648
+}

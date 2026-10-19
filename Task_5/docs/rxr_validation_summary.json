@@ -1,0 +1,21 @@
+{
+  "scope": "Official RxR validation guide paths; 3D graph-edge sum, not follower detours or RxR-CE dense traces",
+  "threshold_m": 40,
+  "connectivity_revision": "589d091b111333f9e9f9d6cfd021b2eb68435925",
+  "splits": {
+    "val_seen": {
+      "guide_records": 8813,
+      "unique_paths": 1244,
+      "long_guide_records": 78,
+      "long_unique_paths": 14,
+      "max_route_m": 49.36764044124739
+    },
+    "val_unseen": {
+      "guide_records": 13652,
+      "unique_paths": 1517,
+      "long_guide_records": 126,
+      "long_unique_paths": 14,
+      "max_route_m": 49.57830148863115
+    }
+  }
+}

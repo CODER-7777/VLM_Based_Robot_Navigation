@@ -1,0 +1,14 @@
+{
+  "bind": "127.0.0.1",
+  "port": 8889,
+  "public_origin": "http://127.0.0.1:8889",
+  "allowed_networks": ["127.0.0.1/32"],
+  "data_root": "dev_data",
+  "backend_python": "/home/guest-isl/rishabh/bench/envs/navila/bin/python",
+  "worker_port_start": 9100,
+  "max_workers": 2,
+  "idle_seconds": 600,
+  "login_seconds": 28800,
+  "max_upload_bytes": 314572800,
+  "minimum_free_bytes": 2147483648
+}

@@ -1,37 +1,75 @@
-# Route lengths and instruction counts
+# Memory-guided robot navigation: research and demonstration collection
 
-Distances are **minimum / mean / maximum**, in metres. Instruction counts include stored language variants and repeated wording.
+Task 5 studies how a navigation request can be grounded in remembered household places. It contains an RxR route audit, tools for reviewing and adapting scenes, and a browser application for collecting human navigation demonstrations with speech, screen video and written reasoning.
 
-| Benchmark | Instructions | Route/path: min / mean / max (m) | Direct: min / mean / max (m) | Distance scope / definition | Official data / source |
-| --- | ---: | --- | --- | --- | --- |
-| R2R | 21,582 | 5.003705 / 9.870627 / 25.214923 | 1.429815 / 7.629172 / 22.802798 | Train + validation; 3D viewpoint-path sum; 5,798 reference records | [Annotations](https://github.com/peteanderson80/Matterport3DSimulator/blob/master/tasks/R2R/data/download.sh) |
-| RxR | 126,069 | 0.570057 / 16.043859 / 49.875964 | 0.478677 / 9.444426 / 46.006615 | Public train + validation guides; 3D viewpoint-path sum; 101,932 records | [Release](https://github.com/google-research-datasets/RxR) |
-| RxR-CE | 87,609 | 0.000000 / 15.672044 / 84.151891 | 0.000000 / 9.136181 / 39.915394 | Public train + validation guides; dense teacher-position trace; 78,052 records | [Official download](https://github.com/jacobkrantz/VLN-CE#episodes-room-across-room-rxr) |
-| REVERIE | 21,702 | 5.021011 / 9.675035 / 23.308359 | 1.429815 / 7.167012 / 22.802798 | Train + validation; 3D viewpoint-path sum; 5,993 reference records | [Annotations](https://github.com/YuankaiQi/REVERIE/tree/207e90cdde48acf2f2f3fc912528966a062fc432/tasks/REVERIE/data) |
-| DDN | 2,419 | — | — | Public demands and trajectory metadata; no per-step/end poses or distance fields. Exact distances require simulator replay. | [Release](https://github.com/whcpumpkin/Demand-driven-navigation#dataset) |
-| IntentionNav | 2,000 | 2.498000 / 3.779042 / 8.857000 | 1.278000 / 3.353826 / 6.226000 | All 500 reference records; stored geodesic and planar XY Euclidean fields | [Annotations](https://huggingface.co/datasets/Anonymous260726/IntentionNav/tree/31dc1ffb0308e33c5b035aa5672c85b9df589aa0) |
-| ULN / R2R-ULN | 14,044 total; 9,846 public validation | 5.042274 / 10.449442 / 22.141029 | 1.935872 / 7.781904 / 16.853175 | Public validation; 3D viewpoint-path sum; 1,622 reference records | [Annotations](https://github.com/weixi-feng/ULN/tree/0f251df3ffc6dd9c538d075db8674e6ad54a596b/ULN-Rec-VLN-BERT/data), [total count](https://aclanthology.org/2022.emnlp-main.429/) |
-| IVLN (discrete) | 17,385 | 5.003705 / 9.870421 / 25.214923 | 1.429815 / 7.628370 / 22.802798 | Per-instruction 3D viewpoint paths selected by official tour lists | [Tour data](https://github.com/Bill1235813/IVLN) |
-| IVLN-CE (continuous) | 13,239 | 4.708854 / 9.856501 / 25.223370 | 1.233570 / 7.850027 / 22.802761 | Per-instruction 3D reference-waypoint sums; direct distance from authored start to goal | [Tour data](https://github.com/jacobkrantz/IVLN-CE) |
-| VCN-Bench (all released) | 107,090 | 3.000025 / 14.105282 / 91.447281 | 0.488019 / 11.357357 / 75.913356 | All released train + test records; stored `dist_to_goal`; direct to nearest listed goal viewpoint (3D, unsnapped) | [Annotations](https://huggingface.co/datasets/qqqqi/VCN-Bench/tree/f27bd1fc5e6fa3a47260dcd79f2768227d04c5eb) |
-| VCN-Bench (test subset) | 1,250 | 3.000780 / 18.691149 / 55.786209 | 0.503012 / 14.251029 / 39.097188 | Subset of the preceding row; same stored-distance and viewpoint metrics | [Annotations](https://huggingface.co/datasets/qqqqi/VCN-Bench/tree/f27bd1fc5e6fa3a47260dcd79f2768227d04c5eb) |
-| FindingDory | 85,083 | — | — | Public query annotations; no query-specific navigation trace/distance. Goals use logical constraints and scene state; history manipulation routes are not query navigation routes. | [Annotations](https://huggingface.co/datasets/yali30/findingdory-habitat/tree/667d6c0c9cd393a6b21f152f7f4f4e983bd162a7) |
-| SIF | 480 evaluation instructions | — | — | Public task archive: 480 prompts verified. No reference navigation traces or route-distance fields; symbolic/dynamic delivery targets require scene-aware reference generation. | [Task archive](https://drive.google.com/file/d/1JHIUu3Lzf59SoGOHGmHCqNzZZ0hJLZlL/view), [author download script](https://github.com/soyeonm/SIF_github/blob/539c86e82d0e501cc11a20273805803b880bc75b/setup/download_data.sh) |
-| PersONAL-PAN | 12,000 | 2.003442 / 5.037371 / 10.977433 | 0.516087 / 4.461305 / 10.871635 | All 2,000 reference records; stored geodesic and planar XZ Euclidean fields; target points can differ | [Annotations](https://github.com/ZiliottoFilippoDev/PersONAL/tree/34be105236f0b2433d9d04f50cce3ebb72b7f001/data/split) |
-| OctoNav-Bench (all) | 39,523 | 0.500001 / 11.515868 / 64.278196 | 0.482963 / 7.669363 / 42.173820 | All released 3D reference-position traces | [Archive](https://huggingface.co/datasets/Oshwiciqwq/OctoNav-Bench/tree/main) |
-| OctoNav-Bench (validation subset) | 500 | 2.000000 / 9.620095 / 35.211116 | 1.434577 / 6.688504 / 23.181468 | Subset of the preceding row; same trace metric | [Archive](https://huggingface.co/datasets/Oshwiciqwq/OctoNav-Bench/tree/main) |
-| LMEE-Bench | 166 evaluation instructions | 0.750000 / 31.668590 / 73.467540 | 0.000000 / 6.249437 / 21.822858 | Released success traces joined in subtask order, including movement between subtasks | [Traces](https://huggingface.co/datasets/wangsen99/LMEE-Bench/tree/ac0d3fc102e99ed05db07b19f3e061a42b1529f1) |
-| NavA3 | 50 navigation task instructions | — | — | Official repository provides code/point-cloud data, but no complete task-route annotations. Count from paper; pointing-QA training examples excluded. | [Repository](https://github.com/linglingxiansen/NavA3), [paper](https://aclanthology.org/2026.acl-long.37/) |
-| LHPR-VLN (long tasks) | 1,052 | 1.750000 / 25.750048 / 84.004609 | 0.112831 / 6.996121 / 37.236425 | Released 3D traces joined in subtask order, including movement between subtasks | [Traces](https://huggingface.co/datasets/Starry123/LHPR-VLN/tree/af66785e0b456639088d673bc100dcc63f2df997) |
-| LHPR-VLN (step tasks) | 2,290 | 0.749999 / 10.797853 / 61.629176 | 0.749999 / 6.733125 / 36.303906 | 2,113 verified trace intervals; 177 records excluded because stored start poses disagree with indexed trace starts | [Traces](https://huggingface.co/datasets/Starry123/LHPR-VLN/tree/af66785e0b456639088d673bc100dcc63f2df997) |
-| VLN-NF | 6,628 | — | — | Official project says code/data links will be added once public; no downloadable task-route annotations located. Count from paper. | [Release status](https://vln-nf.github.io/), [paper](https://aclanthology.org/2026.acl-long.1152/) |
+This is research infrastructure and pilot collection software. The collector uses manual Habitat controls; it does not run a learned navigation policy or demonstrate physical object pickup/delivery.
 
-- **Route/path** is the sum of distances between successive saved positions. **Direct** is the straight-line distance between the first and last positions, unless the table specifies another target or a stored Euclidean field. A stored geodesic is the shortest navigable path, not necessarily the demonstrated route.
-- Means use the available reference records in each row, retaining repeated paths. R2R, RxR and REVERIE instruction totals include hidden-test instructions, but their distances cover public train/validation paths only. RxR-CE includes 9,557 hidden-test guide instructions; its distance statistics cover 78,052 public guide traces, including nine stationary traces.
-- Current R2R author downloads contain **21,582** instruction entries; the original paper reports 21,567. FindingDory's released instruction dictionaries contain **85,083** entries (79,213 train + 5,870 validation). LHPR-VLN's two rows together contain **3,342** instructions. OctoNav's validation row and VCN's test row are subsets, not additional datasets.
-- IVLN distances cover individual instructions and exclude oracle movement between instructions. PAN's geodesic goal viewpoint and Euclidean object position can differ; its two fields do not always share endpoints. PAN and IntentionNav Euclidean fields are planar; the other direct metrics are 3D.
-- VCN's release contains **105,840 training + 1,250 test instructions**; the [paper](https://arxiv.org/html/2609.34687v1) reports 103,055 training. In **5,274** released records (including 55 test records), direct distance to the listed viewpoints exceeds stored `dist_to_goal`. The archive omits the actual path/snap endpoints, so these raw field statistics are flagged; endpoint equivalence is unverified. [Author goal-distance code](https://github.com/siqiZ805/VCN-Bench/blob/96bbcbf3e4fce0809ed1fabafab8d309fc9676e7/src/habitat.py#L344).
-- SIF's 480 prompts comprise 160 pick-and-place, 160 object-movement and 160 human-movement task records. Its public task/map-state archives do not provide task-phase reference routes. Top-level `start_position` is a placeholder in all 480 records; the actual task start is in `sif_params.agent_start_pose`. The inaccessible Hugging Face link concerns scene assets, not the public task archive. [Author reset code](https://github.com/soyeonm/SIF_github/blob/539c86e82d0e501cc11a20273805803b880bc75b/envs/habitat/submodules/reset.py#L214).
-- Graph-path distances use the authors' [Matterport3D viewpoint coordinates](https://github.com/peteanderson80/Matterport3DSimulator/tree/master/connectivity). Continuous/long-task distances use the released position arrays. DDN's `path` field names image folders, not position traces. FindingDory's `nav_goal_pos` belongs to history generation, not a universal endpoint for all language queries.
+## Start here
 
-Availability checked on **14 October 2026**. “—” means the required data are inaccessible or do not define a verified distance for that task; the specific reason is given in the same row.
+| Purpose | Files |
+| --- | --- |
+| Research question, method, findings and limitations | [Research overview](docs/RESEARCH_OVERVIEW.md) |
+| Benchmark instruction counts and distance definitions | [Benchmark audit](docs/benchmark_route_lengths.md) |
+| Reproduce checks and prepare a new checkout | [Reproducibility guide](docs/REPRODUCIBILITY.md) |
+| Current recording website and server | [Campus collector](campus_collector/README.md) |
+| Administrator certificate/deployment steps | [Collection setup](CAMPUS_COLLECTION_START_HERE.md) |
+| Contributor navigation and recording instructions | [Participant guide](campus_collector/PARTICIPANT_GUIDE.md) |
+| Individual dashboard startup scripts | [Dashboard launchers](dashboard_startup/README.md) |
+| Exact GitHub selection and local-only material | [Publication guide](docs/GITHUB_FILES.md), [file manifest](publication_files.json) |
+
+## Main components
+
+- **Route search:** `rxr_long_route_search/search_rxr.py` measures original validation guide paths using 3D connectivity coordinates. Review scripts inspect goal views and room semantics.
+- **Scene experiments:** `rxr_long_route_search/environment_04/` and `room_tasks/environment_06/` contain placement and rendering code. Added school bags/toiletries are authored props; geometric contact fitting is separate from physics or manipulation.
+- **Research dashboards:** route, endpoint, room and model review interfaces; `checkpoint_walkthrough_studio/` provides a separate walkthrough/annotation tool.
+- **Collection website:** `campus_collector/` provides account login, a network allowlist, HTTPS configuration, separate per-user Habitat workers, recording/upload recovery, sample downloads and audio extraction.
+- **Earlier collectors:** `level3_manual_collector/` and `level3_manual_collector_v2/` retain source for the original local collection interfaces. Use the campus collector for shared participant access.
+
+## Recorded research findings
+
+The validation audit examined **22,465 guide records representing 2,761 distinct paths**. **28 original paths** meet the `>=40 m` graph-route threshold: 14 seen and 14 unseen, with 204 instruction variants. [Aggregate results](docs/rxr_validation_summary.json) retain the graph revision and split counts.
+
+The research owner's later visual shortlist contains **12 review indices**: 4, 5, 6, 7, 8, 9, 10, 16, 17, 18, 26 and 27. These are plausible furniture locations, not verified school-bag storage routines. [Selection metadata](docs/reviewed_goal_selection.json) maps review indices to original path IDs.
+
+The shared pilot assigns two existing presentation tasks with reference lengths **41.49 m** and **45.54 m** to contributors. Three separately authored owner tasks study multiple destinations, a room alias and ownership-based destination selection. Those three are shorter and must not be reported as `>40 m` routes. Original RxR guide lengths, RxR-CE reference lengths and actual human trajectories are distinct quantities.
+
+## Website and saved data
+
+```mermaid
+flowchart LR
+    B[Browser on an allowed campus network] --> H[HTTPS gateway and account login]
+    H --> W1[User A: loopback Habitat worker]
+    H --> W2[User B: loopback Habitat worker]
+    W1 --> D[Private server recording storage]
+    W2 --> D
+```
+
+Each saved sample can contain the request, selected memory IDs, corrected reasoning, events, camera poses, frames, navigation replay, microphone/screen recording and a separate audio-only clip extracted from the screen recording. Evaluation coordinates are stored separately from participant inputs. Account creation is administrator-only; contributors need no SSH account.
+
+The existing deployment stores recordings on the simulation server at:
+
+```text
+/home/guest-isl/rishabh/bench/experiments/level3_manual_collector_v2/data_collecting/data/
+  contributors/<username>/sessions/<username>/<sample_timestamp>/
+```
+
+Server application files are deployed under `Data_from_Dashboard/campus_collector/`. Updating GitHub does not deploy or restart that service. Its deployment-specific paths must be adapted for another server.
+
+## Quick checks
+
+Run from `Task_5` with Python 3.10 or newer:
+
+```sh
+python3 -B tools/github_publication.py --check
+python3 -B -m unittest discover -s campus_collector -p 'test_*.py'
+```
+
+Unit tests use temporary files and synthetic cases and do not need Habitat or scene downloads. Local sockets must be permitted. Full rendering requires a compatible Habitat environment, authorized scene assets and the source presentation; see the [reproducibility guide](docs/REPRODUCIBILITY.md).
+
+The [publication validation record](docs/VALIDATION.md) reports the checks performed and their limits.
+
+## Data and attribution
+
+GitHub contains selected source, web assets, setup examples, research notes and small aggregate results. Recordings, human-session transcripts, account databases, live configuration, certificates, licensed scene imagery, meshes, downloaded models and generated packages remain local. No existing local research artifacts are deleted by this publication setup.
+
+Use the original providers' terms for [RxR](https://github.com/google-research-datasets/RxR), [Matterport3D](https://niessner.github.io/Matterport/), [Habitat-Sim](https://github.com/facebookresearch/habitat-sim) and third-party objects. Source links and asset attribution metadata accompany the placement experiments. This update assigns no new blanket license to third-party data or to the repository.

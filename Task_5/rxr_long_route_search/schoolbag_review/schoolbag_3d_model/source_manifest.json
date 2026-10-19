@@ -1,0 +1,66 @@
+{
+  "retrieved_on": "2026-10-14",
+  "catalog_revision": "8c4e96c05299c379702be3733aeb348634b8c22d",
+  "catalog_url": "https://raw.githubusercontent.com/sceneview/sceneview/main/assets/catalog.json",
+  "credits_url": "https://sceneview.github.io/credits.html",
+  "models": [
+    {
+      "id": "school_backpack",
+      "name": "School Backpack",
+      "source": "sketchfab",
+      "sourceId": "524d7fc724094ead9f203ed06bae76e1",
+      "sourceUrl": "https://sketchfab.com/3d-models/school-backpack-524d7fc724094ead9f203ed06bae76e1",
+      "author": "MadeByYeshe",
+      "license": "CC-BY-4.0",
+      "formats": {
+        "glb": {
+          "file": "models/glb/school_backpack.glb",
+          "size": "3.3MB"
+        }
+      },
+      "tags": [
+        "realistic",
+        "hero",
+        "fashion",
+        "outdoor",
+        "product"
+      ],
+      "usedIn": [
+        "android-demo",
+        "android-tv-demo",
+        "web-demo",
+        "website",
+        "flutter-demo",
+        "react-native-demo"
+      ],
+      "defaultScale": 0.6,
+      "cameraDistance": 3.0
+    },
+    {
+      "id": "jansport_backpack",
+      "name": "JanSport backpack",
+      "_comment": "Real-product catalogue (#4560): website gallery (view.html) and Android HD pack, real-world scale, base at the origin.",
+      "source": "google-scanned-objects",
+      "sourceUrl": "https://app.gazebosim.org/GoogleResearch/fuel/models/Jansport_School_Backpack_Blue_Streak",
+      "author": "Google LLC",
+      "license": "CC-BY-4.0",
+      "shippedAs": [
+        "jansport_backpack.glb"
+      ],
+      "formats": {},
+      "tags": [
+        "fashion",
+        "sport",
+        "real-product",
+        "real-scale"
+      ],
+      "usedIn": [
+        "website",
+        "android-demo"
+      ],
+      "defaultScale": 1.0
+    }
+  ],
+  "placement_performed": false,
+  "primary_asset": "jansport_backpack.glb"
+}

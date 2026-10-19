@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>RxR · Route & Object Studio</title>
+  <meta name="description" content="Review selected RxR trajectories, inspect realistic school-backpack models, and compare environment 04 placements.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="rail"><a class="brand" href="#trajectories" aria-label="RxR studio home">R<span>↗</span></a><div class="rail-word">RXR / TASK 05</div><div class="rail-bottom">RESEARCH<br>STUDIO</div></aside>
+  <div class="shell">
+    <header><div class="project"><span class="live-dot"></span> Route & Object Studio <span class="project-sub">/ school-bag task</span></div><button class="subtle" id="export">Export review ↗</button></header>
+    <main>
+      <div class="intro"><div><div class="eyebrow">RXR VALIDATION · HUMAN REVIEW</div><h1>Choose the route.<br><span>Find the right school bag.</span></h1><p>Goal images, actual guide trajectories, model sources, and placement views in one workspace.</p></div><div class="brief"><span class="eyebrow">SITUATIONAL INSTRUCTION</span><blockquote>“Quick! Riya’s bus is here!<br>But she still needs her school bag.”</blockquote><div class="brief-foot">Review furniture first. Choose a model next.</div></div></div>
+      <section class="stats" aria-label="Review summary" id="stats"></section>
+      <nav class="tabs" aria-label="Dashboard sections"><button data-tab="trajectories" class="active">Trajectories <span id="route-total">28</span></button><button data-tab="models">Backpack models <span id="model-total">—</span></button><button data-tab="placements">Environment 04 <span>2</span></button></nav>
+      <section id="trajectories" class="tab-panel">
+        <div class="section-heading"><div><h2>Your trajectory shortlist</h2><p>Original RxR goal views. Open a route to see all headings, instructions, and its viewpoint graph.</p></div><span class="small-note">Guide route ≥ 40 m</span></div>
+        <div class="toolbar"><label class="search"><span>⌕</span><input id="route-search" placeholder="Search scene, route number, or endpoint…" aria-label="Search trajectories"></label><select id="route-scope" aria-label="Trajectory selection filter"><option value="selected">My selected routes</option><option value="all">All 28 reviewed routes</option><option value="unselected">Outside your selection</option></select><select id="route-split" aria-label="Dataset split"><option value="all">Both validation splits</option><option value="val_seen">val_seen</option><option value="val_unseen">val_unseen</option></select><select id="route-sort" aria-label="Sort routes"><option value="id">Review number ↑</option><option value="length">Longest route first</option></select></div>
+        <div class="result-line" id="route-result"></div><div id="route-grid" class="route-grid"></div>
+        <div class="evidence-note">Lengths refer to the annotated RxR guide route. A sofa in a goal view is a candidate placement location; it does not confirm an existing school bag or a storage habit.</div>
+      </section>
+      <section id="models" class="tab-panel" hidden>
+        <div class="section-heading"><div><h2>A better bag starts with the source</h2><p>Real scans, school-specific models, and advertising references. Source previews are distinct from locally inspected meshes.</p></div><span class="small-note">Research checked 15 Oct 2026</span></div>
+        <div class="toolbar"><label class="search"><span>⌕</span><input id="model-search" placeholder="Search school bag, scan, 4K, creator…" aria-label="Search model options"></label><select id="model-access" aria-label="Model access filter"><option value="all">All access types</option><option value="local">Local files available</option><option value="free">Free / login / checkout</option><option value="paid">Paid models</option><option value="reference">References only</option><option value="saved">My shortlist</option></select></div>
+        <div class="research-banner"><strong>Start here</strong><span>HotFrost’s 4K school-bag scan · repaired Xtreme scan · 3DTRIXS school bags. Inspect their shape and underside before choosing.</span></div>
+        <div id="compare-tray" hidden></div><div class="result-line" id="model-result"></div><div id="model-grid" class="model-grid"></div>
+        <div class="evidence-note">Public author pages and previews were researched across nine sources. Download, login, checkout, and reference-only status are recorded separately. Seller quality claims are not import validation. No purchases or protected-viewer extraction were performed.</div>
+      </section>
+      <section id="placements" class="tab-panel" hidden>
+        <div class="section-heading"><div><h2>Environment 04 · two possible bag locations</h2><p>SN83YJsR3w2 · val_seen · path 12519 · original guide route 47.31 m</p></div><span class="badge amber">Awaiting your visual review</span></div>
+        <div class="placement-notice">The current tan scan is the comparison baseline. Revision 03 fits the lower fabric to the measured cushions. These views show a geometric placement; physical settling and complete route playback are not established.</div>
+        <div id="placement-grid" class="placement-grid"></div>
+        <div class="section-heading"><div><h2>Placement review</h2><p>Record your observations here; export them together with the chosen models and routes.</p></div></div>
+        <label class="field-label" for="placement-notes">What should change?</label><textarea id="placement-notes" rows="4" placeholder="Example: use a modern school backpack; pink chair contact looks acceptable…"></textarea>
+      </section>
+      <footer><span>LOCAL RESEARCH WORKSPACE · choices stay in this browser until exported</span><span id="updated"></span></footer>
+    </main>
+  </div>
+  <dialog id="detail"><div class="dialog-top"><div id="detail-label"></div><button id="close-detail" class="icon-button" aria-label="Close details">✕</button></div><div id="detail-body"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body></html>

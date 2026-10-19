@@ -1,0 +1,140 @@
+{
+  "status": "Research-owner visual shortlist; plausible furniture only, no verified school-bag routine",
+  "review_indices": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    16,
+    17,
+    18,
+    26,
+    27
+  ],
+  "numbering": "goal contact sheet review_index, not RxR path_id or episode ID",
+  "routes": [
+    {
+      "review_index": 4,
+      "split": "val_seen",
+      "scan": "SN83YJsR3w2",
+      "path_id": 12519,
+      "route_length_m": 47.31053818616118,
+      "goal_viewpoint": "cc3a8c91626f4824ab02269b167c0ea1",
+      "endpoint_description": "Double-door threshold near living room",
+      "schoolbag_status": "Bag-storage routine is NOT verified."
+    },
+    {
+      "review_index": 5,
+      "split": "val_seen",
+      "scan": "VFuaQ6m2Qom",
+      "path_id": 4224,
+      "route_length_m": 49.36764044124739,
+      "goal_viewpoint": "900464c036ff4986a9bcec42a95e4b5d",
+      "endpoint_description": "Patio seating: sofa/chair annotations differ",
+      "schoolbag_status": "Bag-storage routine is NOT verified."
+    },
+    {
+      "review_index": 6,
+      "split": "val_seen",
+      "scan": "VFuaQ6m2Qom",
+      "path_id": 5721,
+      "route_length_m": 41.51756390179321,
+      "goal_viewpoint": "904fc4711f7448a094e962e59e80f7fb",
+      "endpoint_description": "Bedroom/door area; instruction variants differ",
+      "schoolbag_status": "Bag-storage routine is NOT verified."
+    },
+    {
+      "review_index": 7,
+      "split": "val_seen",
+      "scan": "VFuaQ6m2Qom",
+      "path_id": 7512,
+      "route_length_m": 43.43002077323492,
+      "goal_viewpoint": "1e1cd1f1f6cd45689fb43615d2ee4eb0",
+      "endpoint_description": "Patio entrance steps",
+      "schoolbag_status": "Bag-storage routine is NOT verified."
+    },
+    {
+      "review_index": 8,
+      "split": "val_seen",
+      "scan": "VFuaQ6m2Qom",
+      "path_id": 15009,
+      "route_length_m": 41.21318259943274,
+      "goal_viewpoint": "6fc722b635124eb5b79ad9a6e3c0e778",
+      "endpoint_description": "Kitchen/bin/telephone area",
+      "schoolbag_status": "Bag-storage routine is NOT verified."
+    },
+    {
+      "review_index": 9,
+      "split": "val_seen",
+      "scan": "VzqfbhrpDEA",
+      "path_id": 405,
+      "route_length_m": 46.0491278198698,
+      "goal_viewpoint": "55b05c4aa35a45b386e4169472aeb5a9",
+      "endpoint_description": "Garage wall / wires and storage",
+      "schoolbag_status": "Bag-storage routine is NOT verified."
+    },
+    {
+      "review_index": 10,
+      "split": "val_seen",
+      "scan": "VzqfbhrpDEA",
+      "path_id": 1662,
+      "route_length_m": 40.20035634688711,
+      "goal_viewpoint": "ce117fb11ae8486dbc4c9d47a0cd829d",
+      "endpoint_description": "Lounge: fireplace, TV and nearby couch",
+      "schoolbag_status": "Bag-storage routine is NOT verified."
+    },
+    {
+      "review_index": 16,
+      "split": "val_unseen",
+      "scan": "2azQ1b91cZZ",
+      "path_id": 1233,
+      "route_length_m": 40.75911862313892,
+      "goal_viewpoint": "b61fd325bc7a4bb5a8ca1638209ca8d9",
+      "endpoint_description": "Fireplace/window corner with flower-vase table",
+      "schoolbag_status": "Bag-storage routine is NOT verified."
+    },
+    {
+      "review_index": 17,
+      "split": "val_unseen",
+      "scan": "2azQ1b91cZZ",
+      "path_id": 5495,
+      "route_length_m": 41.476139885097496,
+      "goal_viewpoint": "b60fc1954c30464491f32618693f5daf",
+      "endpoint_description": "Hallway side table beside a door",
+      "schoolbag_status": "Plausible bag-location adaptation; no visible bag or verified routine."
+    },
+    {
+      "review_index": 18,
+      "split": "val_unseen",
+      "scan": "2azQ1b91cZZ",
+      "path_id": 9926,
+      "route_length_m": 45.52848163005553,
+      "goal_viewpoint": "f284dcd6c7a04b3eaef2c2f8c6e88446",
+      "endpoint_description": "Window/corner near fireplace and ornamental table",
+      "schoolbag_status": "Bag-storage routine is NOT verified."
+    },
+    {
+      "review_index": 26,
+      "split": "val_unseen",
+      "scan": "QUCTc6BB5sX",
+      "path_id": 11065,
+      "route_length_m": 47.239612975024414,
+      "goal_viewpoint": "afde05a9bd214e63808a5546594b59d1",
+      "endpoint_description": "Study double doors / globe",
+      "schoolbag_status": "Bag-storage routine is NOT verified."
+    },
+    {
+      "review_index": 27,
+      "split": "val_unseen",
+      "scan": "QUCTc6BB5sX",
+      "path_id": 11830,
+      "route_length_m": 41.17118834112895,
+      "goal_viewpoint": "afde05a9bd214e63808a5546594b59d1",
+      "endpoint_description": "Study double doors / globe",
+      "schoolbag_status": "Bag-storage routine is NOT verified."
+    }
+  ]
+}

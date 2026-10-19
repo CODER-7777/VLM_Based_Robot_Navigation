@@ -1,0 +1,22 @@
+[
+  {
+    "object_id": "conditioner",
+    "author": "Google LLC",
+    "license": "CC BY 4.0",
+    "source_url": "https://app.gazebosim.org/GoogleResearch/fuel/models/Marc_Anthony_Skip_Professional_Oil_of_Morocco_Conditioner_with_Argan_Oil",
+    "download_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Marc_Anthony_Skip_Professional_Oil_of_Morocco_Conditioner_with_Argan_Oil/tip/Marc_Anthony_Skip_Professional_Oil_of_Morocco_Conditioner_with_Argan_Oil.zip",
+    "source_zip_sha256": "44e3f36ec8179d7ff6edf5dc153929c267e59fff6496365c6bb8ad24cc4f4496",
+    "prepared_glb_sha256": "db985b6d2ff8a47893bbacf55a448cf905c7dc17e38c6219e91c84af9d22bb3a",
+    "modifications": "Z-up to Y-up; centered base at origin; embedded original photographic texture; no scale change."
+  },
+  {
+    "object_id": "cream",
+    "author": "Google LLC",
+    "license": "CC BY 4.0",
+    "source_url": "https://app.gazebosim.org/GoogleResearch/fuel/models/Perricone_MD_Hypoallergenic_Firming_Eye_Cream_05_oz",
+    "download_url": "https://fuel.gazebosim.org/1.0/GoogleResearch/models/Perricone_MD_Hypoallergenic_Firming_Eye_Cream_05_oz/tip/Perricone_MD_Hypoallergenic_Firming_Eye_Cream_05_oz.zip",
+    "source_zip_sha256": "353354a1a419b9f52e72425d334807f090885727451956ccbcc4717c9274965f",
+    "prepared_glb_sha256": "7c18cf6246b0635172cf189aa573a0b416b5e02e77c51fe56f6ff6d55eed8cfc",
+    "modifications": "Z-up to Y-up; centered base at origin; embedded original photographic texture; no scale change."
+  }
+]
