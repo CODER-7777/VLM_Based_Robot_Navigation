@@ -1,0 +1,41 @@
+case,batch,primary_type,type_name,secondary_types,length_m,request
+1,General pilot,L1,Nickname or alias,C1,21.8,Take these chips to Scott in the man cave.
+2,General pilot,T1,Newer memory overrides older,M1,25.8,Did I leave my phone charger where I had my coffee this morning? Go check.
+3,General pilot,P1,Ownership,M2,31.0,Olivia left her headphones on the couch again. Put them back where they charge.
+4,General pilot,P1,Ownership,M1,33.0,This package is for Megan. Take it to where she works.
+5,General pilot,L1,Nickname or alias,P1;M2,19.4,Mom says Grandma's out of towels. Take these to the guest bath.
+6,General pilot,T3,Routine by day or time,C1,18.1,Take my mug to where the dishes go.
+7,General pilot,V1,Image reference,T1,41.5,Olivia can't find the other one of these.
+8,General pilot,T3,Routine by day or time,,11.2,Scott's grabbing a quick lunch between meetings. Put his plate where we eat lunch on weekdays.
+9,General pilot,L1,Nickname or alias,P1,5.2,Go wait outside Liv's room and tell Emma her mom's here.
+10,General pilot,T1,Newer memory overrides older,T3,5.5,Grandma's shows start in five minutes. Put her blanket where she watches them.
+11,General pilot,T1,Newer memory overrides older,M1,11.3,Put the syrup where we're having brunch today.
+12,General pilot,P1,Ownership,M1,11.1,Grandma's pills ended up in my room. Put them back on her nightstand.
+13,General pilot,L1,Nickname or alias,M1,11.7,Scott's grilling tonight. Take the burgers to the grill room.
+14,General pilot,L1,Nickname or alias,P1;M1,15.2,Liv's bathroom is out of toilet paper. Take this roll to her bathroom.
+15,General pilot,V1,Image reference,,23.3,Grandma thinks she left her book on this couch. Can you go check?
+16,General pilot,L1,Nickname or alias,,33.4,Megan's book was in a pocket in the wash. Leave it on her nightstand in the master bedroom.
+17,General pilot,T1,Newer memory overrides older,C1,33.9,Take my laptop to where we're having lunch today.
+18,General pilot,P1,Ownership,M1,13.9,Scott left his charger in my room again. Put it back on his desk.
+19,General pilot,T3,Routine by day or time,M1,30.3,Scott's friends are coming for the game at one. Put these coasters where they'll be watching.
+20,General pilot,V1,Image reference,,10.3,This pillowcase goes on the bed in this picture.
+21,Difficulty types,S1,Spatial relation,,10.0,"Put the cheese board on the coffee table in front of the big couch, not the one by the fireplace."
+22,Difficulty types,S1,Spatial relation,,33.2,Can you put my phone on the nightstand next to my closet? Not the one by the door.
+23,Difficulty types,S2,Nearest to a named place,,23.0,Put these guest towels in the bathroom closest to the dining room.
+24,Difficulty types,S3,Floor or position,,36.6,"Take this printer paper upstairs, to the room with the printer."
+25,Difficulty types,C2,Exclusion or negation,,10.1,"Put the tea tray on a table, anywhere but the hearth room. Grandma's puzzle is still all over it."
+26,Difficulty types,C2,Exclusion or negation,,33.0,"Liv's science fair poster needs a big table. Set it up anywhere except the breakfast room, we eat there."
+27,Difficulty types,C3,Household state,,13.5,Can you take my towel and shampoo to the bathroom I'm using till the plumber comes?
+28,Difficulty types,M1,Ordered stops,,30.6,"Drop this blanket on Grandma's spot on the family room couch, then put these logs by the great room fireplace. Guests at six."
+29,Difficulty types,M2,Search with fallback,,17.3,"Joan's asking for her crossword book. Check the table in here first; if it's not there, try her spot on the family room couch."
+30,Difficulty types,M3,Implied pickup,M1,10.2,Grandma's cold. Bring her the cardigan she left in the family room.
+31,Difficulty types,T2,Time anchor or event order,,33.8,Megan's lost her sketchbook. She had it in her meeting with the client this morning.
+32,Difficulty types,T2,Time anchor or event order,,17.1,Dad left his phone where he had his coffee before his run. Can you grab it?
+33,Difficulty types,T3,Routine by day or time,,27.1,Take Scott his phone. You know where he is on a Sunday afternoon.
+34,Difficulty types,T3,Routine by day or time,,11.2,"Grandma needs these pills when she wakes up. Leave them where she is right now, it's her nap time."
+35,Difficulty types,L2,Reference or omitted noun,,34.5,"Liv can't find her retainer. She had it when she was brushing her teeth, go check there."
+36,Difficulty types,L2,Reference or omitted noun,,12.0,Scott fell asleep watching the late game in our room and left the TV on in there. Can you go check?
+37,Difficulty types,L3,Speaker-relative name,,24.4,Dad wants a fire tonight. Can you put these matches by the fireplace in Mom and Dad's room?
+38,Difficulty types,K1,Function of a place,,10.4,These grill grates need a good soak.
+39,Difficulty types,K2,Where things are kept,,36.5,The hall lamp just burned out. Can you find me a spare bulb?
+40,Difficulty types,K3,Social norm or privacy,,29.5,"Liv's in the shower and forgot her towel. Leave it outside her bathroom door, don't go in."

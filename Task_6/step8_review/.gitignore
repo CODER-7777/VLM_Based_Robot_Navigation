@@ -1,0 +1,5 @@
+source/
+.runtime/
+__pycache__/
+assets/*.glb
+assets/*.object_config.json

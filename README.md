@@ -1,10 +1,24 @@
-# VLM-Based Robot Navigation — Mid-evaluation
+# VLM-Based Robot Navigation
 
 **Vivekananda Y24 · Mid-evaluation research record**
 
 Research objective: language-conditioned quadruped navigation using visual motion estimation, executable locomotion and calibrated scene observations. Current results are component experiments across Go2/Genesis, SvanM2/MuJoCo and Habitat; an integrated language-navigation benchmark is pending.
 
 Supervisor direction: **unify VLM goal interpretation, trajectory estimation and RL execution**; investigate **masked attention in GQFT** to reduce unreliable motion evidence. [Integration interfaces and milestones](docs/INTEGRATION_PLAN.md) · [Masking experiment](Task_2/MASKED_ATTENTION_PLAN.md). Exact mask definition and integrated evaluation remain pending.
+
+## Task 6 — house-first instruction review (21 October 2026)
+
+The [Task 6 Step 8 dashboard](Task_6/README.md) reviews **40 authored house-first cases**: 20 general pilot cases and 20 difficulty-type cases, plus their Level 2 and extra request forms. It provides case review, five-prop inspection, independent blind review and 62 distinct naturalness prompts. [Run and review guide](Task_6/step8_review/README.md) · [Validation record](Task_6/step8_review/VALIDATION.md) · [Reviewer-reported mistakes and requested improvements](Task_6/step8_review/REVIEW_MISTAKES.md).
+
+```bash
+bash Task_6/start_step8_review.sh --open
+```
+
+The launcher connects to the existing `isl-server` deployment through SSH; campus network/VPN and authorized server access are required. Case review has request-specific questions, selected earlier memories with an expandable full earlier timeline, a live location/facing marker, and restoration of the review position and draft after visiting Props. Only submitted judgments are saved on the server; navigation remains transient and does not perform pickup/carry actions.
+
+Step 8 human review is ongoing. Memory-photo clarity, prop appearance/placement, ambiguous ownership/routines and incomplete map/destination coverage remain review issues. Automated tool checks and the original 331/331 source checks do not establish human acceptance. Scene meshes, dataset snapshots, private keys, reviewer judgments and runtime/browser state are external or ignored local inputs.
+
+[Task 5](Task_5/README.md) provides the separate demonstration-collection website, which records participant demonstrations. Task 6 is the instruction/scene review workflow.
 
 ## Problems, evidence and engineering decisions
 
@@ -14,6 +28,8 @@ Supervisor direction: **unify VLM goal interpretation, trajectory estimation and
 | [2 · GQFT](Task_2/README.md) — inconsistent trajectory errors across protocols | Double flow normalization, pitch/anchor/checkpoint mismatches; ground-plane label conflict in 3/104 validation windows | Strict adapters and architecture loading; Attention/Yaw variants → yaw fixed-history test ADE 9.631→8.783 px, but mixed validation | Paired ground-label experiment before architecture expansion; agree on camera/history protocol |
 | [3 · MoE locomotion](Task_3/README.md) — vibration, tracking loss and incomplete stairs | Strong contact–policy–coupled-actuator interaction; differing bounds/sensing/contracts; hardware initiating cause unresolved | Reward/gain/sensing probes, then matched contact intervention → current limits: 63.5–70.5% lower flat band RMS; 3/6 vs 0/6 stair completions | Calibrate deployed actuator/contact contract; evaluate speed, heading, support and vibration together |
 | [4 · Kitchen observations](Task_4/README.md) — distorted geometry, approximate props and weak novel views | Scan defects, unsupported procedural material export and limited appearance coverage | Current v8 tray/background repair; 23 calibrated views / 30 model routes; separate Gaussian branch has 4.378M points | Validate geometry/collisions and held-out RGB/depth; integrate calibrated observations |
+| [5 · Memory navigation and collection](Task_5/README.md) — research and participant demonstration infrastructure | Household memories and route lengths require separate evidence; manual controls are not a learned navigation policy | Route audit, scene review and campus collection website with per-user workers | Continue participant collection and evaluate grounding separately from recordings |
+| [6 · House-first Step 8 review](Task_6/README.md) — authored requests need human clarity and navigation checks | Filtered memories can hide needed context; images, props and accepted destinations require inspection | Four-page review dashboard, type-specific checklists, transient Habitat navigation and saved judgments | Fix reviewer-reported issues; finish independent blind and naturalness review |
 
 ## Experimental results and protocol boundaries
 
