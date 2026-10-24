@@ -1,6 +1,8 @@
 {
   "minimum_reference_length_m_exclusive": 40,
   "authored_source_root": "",
+  "house40_source_root": "",
+  "house40_rxr_file": "",
   "distance_definition": "Sum of 3D distances between successive original presentation route.reference_path positions; not shortest-path distance or a guaranteed human walking distance.",
   "episode_keys": [
     "2azQ1b91cZZ_4240",

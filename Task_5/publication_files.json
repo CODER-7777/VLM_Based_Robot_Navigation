@@ -31,6 +31,7 @@
     "campus_collector/template/web/style.css",
     "campus_collector/test_collection_selection.py",
     "campus_collector/test_gateway.py",
+    "campus_collector/test_house40.py",
     "checkpoint_walkthrough_studio/README.md",
     "checkpoint_walkthrough_studio/launch.py",
     "checkpoint_walkthrough_studio/server.py",

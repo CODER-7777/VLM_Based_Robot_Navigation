@@ -2,6 +2,7 @@
 import copy
 import base64
 import hashlib
+import gzip
 import json
 import math
 import re
@@ -46,7 +47,7 @@ def collection_cases(cases, selection_path, username=None):
     return selected
 
 
-def load_house_cases(source_root):
+def load_house_cases(source_root, include_images=True):
     """Adapt the authored three-case household dataset without rewriting sources."""
     root = Path(source_root)
     case_file = root / 'cases_level3.json'
@@ -70,7 +71,7 @@ def load_house_cases(source_root):
                              'who': record.get('speaker') or 'Household memory',
                              'said': record['annotation'], 'annotation': record['annotation'],
                              'images': [reference['image']], 'original_view_indices': [1],
-                             'image_urls': ['data:image/jpeg;base64,' + base64.b64encode(image_path.read_bytes()).decode()]})
+                             'image_urls': ['data:image/jpeg;base64,' + base64.b64encode(image_path.read_bytes()).decode()] if include_images else []})
         route = {'scene': source['scene'], 'start_position': source['original_start'],
                  'start_rotation_xyzw': source['original_start_rotation'],
                  'reference_path': source['reference_path'],
@@ -103,7 +104,7 @@ def load_house_cases(source_root):
     return cases
 
 
-def load_cases(source, default_case=None):
+def load_cases(source, default_case=None, include_images=True):
     source = Path(source)
     if not source.is_file():
         if default_case is None:
@@ -127,7 +128,7 @@ def load_cases(source, default_case=None):
         for memory_id in primary['memory_ids']:
             memory = copy.deepcopy(data['memories'][memory_id])
             memory['id'] = memory_id
-            memory['image_urls'] = [data['images'][name]['data_url'] for name in memory['images']]
+            memory['image_urls'] = [data['images'][name]['data_url'] for name in memory['images']] if include_images else []
             memories.append(memory)
         if goal_id not in primary['memory_ids']:
             raise ValueError('The authored relevant memory is not supplied: ' + episode['episode_key'])
@@ -172,17 +173,135 @@ def load_cases(source, default_case=None):
 
 
 def public_case(case):
-    return {key: value for key, value in case.items() if key not in ['route', 'source_goal_memory_id']}
+    private = {'route', 'source_goal_memory_id', 'source', 'source_sha256', 'source_collection',
+               'source_folder', 'source_notes', 'admin_notes'}
+    return {key: value for key, value in case.items() if key not in private}
+
+
+def load_house40_cases(source_root, rxr_file, include_images=True):
+    """Import the authored forty-case L3 set using its existing routes and photos.
+
+    Source files remain unchanged. Numbered halves are labels, not a claim that
+    their research difficulty was independently verified. Actions/props remain
+    conversational context in this navigation-only collector.
+    """
+    root = Path(source_root)
+    filename = root / 'cases_2azQ1b91cZZ.json'
+    records = json.loads(filename.read_text())
+    moments = {m['id']: m for m in json.loads((root / 'week_log_2azQ1b91cZZ.json').read_text())['moments']}
+    with gzip.open(rxr_file, 'rt') as stream:
+        episodes = json.load(stream)['episodes']
+    by_id = {str(ep['episode_id']): ep for ep in episodes}
+    encoded = {}
+
+    def image_url(path):
+        path = path.resolve()
+        if not path.is_relative_to(root.resolve()) or not path.is_file():
+            raise ValueError('A forty-case source image is unavailable.')
+        if not include_images:
+            return ''
+        if path not in encoded:
+            encoded[path] = 'data:image/jpeg;base64,' + base64.b64encode(path.read_bytes()).decode()
+        return encoded[path]
+
+    cases = {}
+    for index, source in enumerate(records, 1):
+        candidates = [by_id[str(eid)] for eid in source['episode_ids'] if str(eid) in by_id]
+        if not candidates:
+            raise ValueError('No source RxR-CE episode for ' + source['case_id'])
+        ep = next((e for e in candidates if str(e.get('instruction', {}).get('instruction_id')) ==
+                   str(source['level1_instruction_id'])), candidates[0])
+        reference = ep['reference_path']
+        cut = source.get('sub')
+        if cut:
+            reference = reference[cut[0]:cut[1] + 1]
+        if len(reference) < 2 or math.dist(reference[-1], source['end_xyz']) > .15:
+            raise ValueError('Source route endpoint mismatch for ' + source['case_id'])
+        rotation = ep['start_rotation']
+        if cut and cut[0] > 0:
+            delta = next(([b[i] - reference[0][i] for i in range(3)] for b in reference[1:]
+                          if math.dist(reference[0], b) > .01), [0, 0, -1])
+            yaw = math.atan2(-delta[0], -delta[2])
+            rotation = [0, math.sin(yaw / 2), 0, math.cos(yaw / 2)]
+        level = source['levels']['3']
+        refs = list(dict.fromkeys(source['week_log_ids']))
+        memories = []
+        for mid in refs:
+            m = moments[mid]
+            path = root / 'verify/2azQ1b91cZZ' / ('memory_' + mid + '.jpg')
+            urls = [image_url(path)] if m.get('view') else []
+            memories.append({'id': mid, 'when': m.get('day', '') + ' ' + m.get('time', ''),
+                             'who': m['who'], 'said': m['quote'],
+                             'annotation': m['who'] + ' says, “' + m['quote'] + '”',
+                             'mode': m.get('mode', 'said'), 'images': [path.name] if urls else [],
+                             'image_urls': urls if include_images else [], 'original_view_indices': [1] if urls else []})
+        request_image = None
+        request_view = level.get('image_view')
+        if request_view:
+            match = next((m for m in moments.values() if m.get('view') == request_view), None)
+            path = (root / 'verify/2azQ1b91cZZ' / ('memory_' + match['id'] + '.jpg') if match else
+                    root / 'verify/2azQ1b91cZZ' / ('sheet_' + request_view + '.jpg'))
+            request_image = image_url(path)
+        key = 'house40_' + source['case_id']
+        cases[key] = {
+            'episode_key': key, 'scene': '2azQ1b91cZZ', 'title': f'House 40 · {index:02d} · ' + level['text'],
+            'index': index, 'group': 'house40', 'category': level.get('phenomenon', ''),
+            'environment_label': 'House-first · 20 + 20 tasks',
+            'now': level.get('day', '') + ' ' + level.get('time', ''),
+            'original_request': level['text'], 'default_request': level['text'],
+            'default_current_state': 'Speaker: ' + level['speaker'] + '. ' + source['start'].get('story', '') +
+                                     ' This is a navigation-only task; object handling and other actions are conversational context.',
+            'memories': memories, 'default_relevant_memory_ids': [], 'source_goal_memory_id': None,
+            'request_image_url': request_image,
+            'route': {'scene': '2azQ1b91cZZ', 'start_position': reference[0],
+                      'start_rotation_xyzw': rotation, 'reference_path': reference,
+                      'goals': [{'position': reference[-1], 'radius': .65}],
+                      'source_episode_id': str(ep['episode_id']), 'source_subroute': cut,
+                      'authored_subroute_heading': bool(cut and cut[0] > 0)},
+            'source': str(filename), 'source_folder': str(root),
+            'source_collection': 'house40_a' if index <= 20 else 'house40_b',
+            'ready_for_assignment': not bool(level.get('image') and not request_view),
+            'source_notes': ('Missing request photo: ' + level['image'] + '. Admin preview only until supplied. '
+                             if level.get('image') and not request_view else '') +
+                            'L3 main request only; optional off-limits/multi-goal forms are not imported. Source images reused; independent task/geometry review pending. Props are not inserted.',
+            'scenario': 'Authored household request. Navigate to the remembered destination; no manipulation, cleaning or state-change outcome is simulated.',
+            'scenario_matches_original_benchmark': False,
+            'reasoning_template': 'Task → relevant memory → matching features → general plan → when to stop',
+            'voice_examples': {},
+        }
+    return cases
+
+
+def load_study_cases(source, default_case, selection, include_images=True):
+    """One catalog loader shared by collector workers and the private admin UI."""
+    cases = load_cases(source, default_case, include_images=include_images)
+    for case in cases.values():
+        case['source_collection'] = 'presentation10'
+        case['source_folder'] = str(Path(source).parent)
+    if selection.get('authored_source_root'):
+        added = load_house_cases(selection['authored_source_root'], include_images=include_images)
+        for case in added.values():
+            case['source_collection'] = 'house3'
+            case['source_folder'] = str(selection['authored_source_root'])
+        cases.update(added)
+    if selection.get('house40_source_root'):
+        cases.update(load_house40_cases(selection['house40_source_root'], selection['house40_rxr_file'], include_images=include_images))
+    return cases
 
 
 def environment_catalog(cases, scene_root):
     grouped = {}
+    collections = {}
     for case in cases.values():
         scene = case['scene']
+        collections.setdefault(scene, set()).add(case.get('source_collection', 'existing'))
         environment = grouped.setdefault(scene, {
             'scene': scene, 'label': case.get('environment_label') or 'Environment ' + str(len(grouped) + 1) + ' · ' + scene,
             'available': (Path(scene_root) / scene / (scene + '.glb')).is_file(), 'episodes': []})
         environment['episodes'].append({
             'episode_key': case['episode_key'], 'title': case['title'], 'index': case['index'],
             'request': case['default_request'], 'group': case['group'], 'category': case.get('category', '')})
+    for scene, environment in grouped.items():
+        if len(collections[scene]) > 1:
+            environment['label'] = 'Study environment · ' + scene
     return list(grouped.values())
