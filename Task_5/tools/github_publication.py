@@ -14,15 +14,15 @@ FORBIDDEN_PARTS = {'certificates', 'packages', 'sessions', 'deleted_sessions', '
                    'owner_credentials', 'data', 'dev_data', 'sources', 'assets', '.runtime',
                    '__pycache__', '.uploads', 'author_case_sources'}
 FORBIDDEN_NAMES = {'sample_case.json', 'collection_selection.json', 'campus_owner.json',
-                   'config.production.json', 'accounts.sqlite3'}
-EXTENSIONS = {'.py', '.sh', '.md', '.json', '.csv', '.html', '.css', '.js'}
+                   'config.production.json', 'accounts.sqlite3', 'browser_fixture_test.go'}
+EXTENSIONS = {'.py', '.sh', '.md', '.json', '.csv', '.html', '.css', '.js', '.go', '.mod'}
 PATTERNS = [
     ('private key', re.compile(r'-----BEGIN (?:[A-Z0-9]+ )*PRIVATE KEY-----')),
     # A legacy browser test contains a 1x1 synthetic PNG (96 base64 chars).
     ('embedded image payload', re.compile(r'data:image/[^;\s]+;base64,[A-Za-z0-9+/]{512}')),
     ('GitHub token', re.compile(r'\b(?:gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{40,})')),
     ('Hugging Face token', re.compile(r'\bhf_[A-Za-z0-9]{30,}')),
-    ('deployment password', re.compile(r'[A-Za-z0-9]+_ugp_ts_' + r'pil@\d{4}')),
+    ('deployment password', re.compile(r'\b[A-Za-z0-9_-]+_(?:admin|ugp_ts_' + r'pil)@\d{4}\b')),
     ('credential in URL', re.compile(r'https?://[^\s/@:]+:[^\s/@]+@')),
 ]
 
@@ -38,6 +38,8 @@ def selected_files():
             raise ValueError('Invalid publication path: ' + name)
         if set(path.parts) & FORBIDDEN_PARTS or path.name in FORBIDDEN_NAMES:
             raise ValueError('Private/generated publication path: ' + name)
+        if path.name.startswith('verify_') and path.suffix == '.py':
+            raise ValueError('Generated verification scripts stay local: ' + name)
         if path.suffix not in EXTENSIONS and name not in {'.gitignore', 'Route_length_Instructions'}:
             raise ValueError('Unexpected publication type: ' + name)
         source = ROOT / name

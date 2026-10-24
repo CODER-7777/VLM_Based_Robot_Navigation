@@ -11,14 +11,7 @@ python3 -B -m unittest discover -s campus_collector -p 'test_*.py'
 
 These tests use temporary files and synthetic cases. They need no scene images, authored household files or GPU, but bind temporary loopback HTTP servers. The gateway uses the standard library; test passwords are generated for temporary accounts.
 
-For the synthetic audio integration check, install `imageio-ffmpeg` in a suitable environment, then run:
-
-```sh
-python3 -B campus_collector/verify_screen_audio.py \
-  --template campus_collector/template --report /tmp/task5-audio-check.json
-```
-
-This creates a synthetic tone/video and checks extraction, idempotence, media download and ZIP contents without touching human recordings. Browser checks additionally need Chrome/Chromium; inspect their script arguments. Real-worker checks require the simulation environment and create temporary QA accounts/artifacts; run them on a prepared test deployment.
+Generated browser, audio and live-worker verification scripts and their reports remain local to the development workspace. They are not prerequisites supplied by this checkout. The published unit tests use synthetic fixtures; browser/media integration and real Habitat rendering require a separately prepared local test environment, authorized assets and suitable dependencies.
 
 ## Route search
 
@@ -41,9 +34,9 @@ Excluded deployment inputs include the source `presentation.html`, prepared `tem
 On a prepared simulation server:
 
 1. Set the presentation/scene paths in `template/collector.py`. From `campus_collector`, run `python3 -B template/collector.py --prepare` to generate the prepared sample without launching Habitat. The current preparer expects laundry episode `QUCTc6BB5sX_8247` in the source presentation.
-2. Copy `template/collection_selection.example.json` to `template/collection_selection.json`. Its two default episode IDs must exist in your presentation. Set `authored_source_root` and add `account_episode_keys` only when the extra cases are installed. The synthetic unit fixture demonstrates the authored metadata schema.
+2. Copy `template/collection_selection.example.json` to `template/collection_selection.json`. Its two default episode IDs must exist in your presentation. Set `authored_source_root` for the three-case source and `house40_source_root` / `house40_rxr_file` for the forty-case source only when those authorized inputs are installed. Manage contributor assignments through the admin dashboard; keep any deployment-specific account selection local. The synthetic unit fixture demonstrates the authored metadata schema.
 3. Copy a `config.*.example.json` to `config.production.json`; adapt bind/origin, interpreter, data root, TLS paths and approved network ranges. Production refuses an empty allowlist. Existing paths are site-specific examples.
-4. Follow [the administrator guide](../CAMPUS_COLLECTION_START_HERE.md) for certificates, package transfer, owner-created accounts and startup. Generate new certificates for a new installation. Share [participant instructions](../campus_collector/PARTICIPANT_GUIDE.md), never server keys.
+4. Follow [the administrator guide](../CAMPUS_COLLECTION_START_HERE.md) for certificates, package transfer, owner-created accounts and startup. Generate new certificates for a new installation. Build the [portable participant launcher](../campus_collector/study_launcher/README.md) and share its short guide, never server keys.
 
 `build_server_package.py` requires the prepared inputs before building an archive. A package made with `--include-tls` contains a private server key and must stay private; packages are excluded from Git.
 

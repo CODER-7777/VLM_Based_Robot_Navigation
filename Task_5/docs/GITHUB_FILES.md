@@ -9,7 +9,7 @@ Local-only material includes:
 - Human sessions, recordings, transcripts, raw uploads, account databases, logs and runtime state.
 - Live configuration, per-account assignments, passwords, private keys, certificates and generated ZIP/TAR packages.
 - Downloaded annotations, source presentations, prepared cases with embedded imagery, scene meshes, rendered household views and third-party models/textures.
-- Verification dumps, duplicate/backup collectors, personal screenshots, unrelated CSVs and the internal Wi-Fi document.
+- Generated `verify_*.py` scripts and verification dumps, duplicate/backup collectors, poster-generation prompts, personal screenshots, unrelated CSVs and the internal Wi-Fi document.
 
 Historical experiment READMEs describe local outputs and may link to files absent from GitHub. The root README and `docs/` provide the standalone research account. Collectors require authorized external simulator/data inputs for rendering.
 
@@ -21,4 +21,4 @@ python3 -B tools/github_publication.py --write-ignore
 python3 -B tools/github_publication.py --export /tmp/task5-source-review
 ```
 
-The exporter refuses symlinks, missing files, unexpected file types, large files, embedded image payloads and recognizable credential/key material. It guards against accidental inclusion; it is not a complete secret scanner. Review staged changes before pushing. Ignore rules do not remove files already tracked in older commits.
+The exporter refuses symlinks, missing files, generated verification scripts, unexpected file types, large files, embedded image payloads and recognizable credential/key material. It guards against accidental inclusion; it is not a complete secret scanner. Review staged changes before pushing. Ignore rules do not remove files already tracked in older commits; removing their index entries leaves local copies intact and does not rewrite existing Git history.
