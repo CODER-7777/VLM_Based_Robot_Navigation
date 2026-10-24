@@ -19,7 +19,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from queue import Queue
 from urllib.parse import parse_qs, urlparse, urlencode
 import zipfile
-from presentation_cases import DEFAULT_EPISODE, collection_cases, environment_catalog, load_cases, load_house_cases, public_case
+from presentation_cases import DEFAULT_EPISODE, collection_cases, environment_catalog, load_cases, load_house_cases, load_study_cases, public_case
 
 ROOT = Path(__file__).resolve().parent
 BENCH = Path('/home/guest-isl/rishabh/bench')
@@ -146,11 +146,9 @@ class Collector:
         from PIL import Image
         self.hs, self.np, self.q, self.Image = habitat_sim, np, quaternion, Image
         default_case = json.loads((ROOT / 'sample_case.json').read_text())
-        self.cases = load_cases(SOURCE, default_case)
         selection_path = ROOT / 'collection_selection.json'
         selection = json.loads(selection_path.read_text()) if selection_path.is_file() else {}
-        if selection.get('authored_source_root'):
-            self.cases.update(load_house_cases(selection['authored_source_root']))
+        self.cases = load_study_cases(SOURCE, default_case, selection)
         owner_file = ROOT / 'campus_owner.json'
         owner = json.loads(owner_file.read_text())['username'] if owner_file.is_file() else None
         self.collection_cases = collection_cases(self.cases, ROOT / 'collection_selection.json', owner)
@@ -164,6 +162,105 @@ class Collector:
         self.session = None; self.finished = False; self.frame_index = 0
         self.frames = []; self.path_length = 0.; self.actions = 0
         self.reset()
+        self.restore_checkpoint()
+
+    def save_checkpoint(self):
+        """Persist acknowledged navigation independently of the client launcher."""
+        if not self.session or self.finished:
+            return
+        value = {'session_id': str(self.session.relative_to(ROOT)),
+                 'episode_key': self.case['episode_key'], 'pose': self.pose(),
+                 'actions': self.actions, 'path_length_m': self.path_length,
+                 'elapsed_seconds': self.elapsed(), 'goal_stage': self.goal_stage,
+                 'goal_reached': self.goal_reached, 'last_observation': self.frames[-1]}
+        path = ROOT / 'active_checkpoint.json'
+        temporary = path.with_suffix('.tmp')
+        with temporary.open('w') as stream:
+            json.dump(value, stream); stream.flush(); os.fsync(stream.fileno())
+        temporary.replace(path)
+        directory = os.open(ROOT, os.O_RDONLY | os.O_DIRECTORY)
+        try: os.fsync(directory)
+        finally: os.close(directory)
+
+    def restore_checkpoint(self):
+        """Resume the same account's unfinished sample after a worker restart."""
+        owner_file = ROOT / 'campus_owner.json'
+        if not owner_file.is_file(): return False
+        owner = json.loads(owner_file.read_text())['username']
+        path = ROOT / 'active_checkpoint.json'
+        try:
+            value = json.loads(path.read_text()) if path.is_file() else None
+            if value is None:
+                # Also retain unfinished samples created before checkpoints existed.
+                for source in sorted((ROOT/'sessions'/owner).glob('*/inputs.json'), reverse=True):
+                    if (source.parent/'manifest.json').is_file(): continue
+                    trajectory = source.parent/'trajectory.jsonl'
+                    if not trajectory.is_file(): continue
+                    rows = []
+                    for line in trajectory.read_text().splitlines():
+                        try:
+                            row = json.loads(line)
+                            if (source.parent/row['frame_path']).is_file(): rows.append(row)
+                        except (ValueError, KeyError): continue
+                    if not rows: continue
+                    inputs = json.loads(source.read_text()); last = rows[-1]
+                    distance = sum(math.dist(a['pose']['position'], b['pose']['position']) for a,b in zip(rows,rows[1:]))
+                    value = {'session_id':str(source.parent.relative_to(ROOT)), 'episode_key':inputs['episode_key'],
+                             'pose':last['pose'], 'actions':sum(r['action'] in ['FORWARD','LEFT','RIGHT'] for r in rows),
+                             'path_length_m':distance, 'elapsed_seconds':last['elapsed_seconds'],
+                             'goal_stage':0, 'goal_reached':False, 'last_observation':last}
+                    events = source.parent/'events.jsonl'
+                    if events.is_file():
+                        for line in events.read_text().splitlines():
+                            try:
+                                event = json.loads(line)
+                                if event.get('type') == 'intermediate_navigation_stop':
+                                    value['goal_stage'] = max(value['goal_stage'], event['stop_index']+1)
+                            except (ValueError, KeyError): continue
+                    break
+            if value is None: return False
+            directory = session_directory(value['session_id'])
+            inputs = json.loads((directory/'inputs.json').read_text())
+            if directory.parent.name != owner or inputs['annotator_id'] != owner:
+                raise ValueError('Checkpoint belongs to a different account.')
+            if (directory/'manifest.json').is_file(): return False
+            if value['episode_key'] not in self.collection_cases:
+                raise ValueError('Checkpoint instruction is not assigned to this account.')
+            self.activate_case(value['episode_key'])
+            state = self.hs.AgentState(); pose = value['pose']
+            state.position = self.np.asarray(pose['position'], dtype=self.np.float32)
+            x,y,z,w = pose['rotation_xyzw']; state.rotation = self.q.quaternion(w,x,y,z)
+            self.agent.set_state(state, reset_sensors=True); self.render()
+            rows = []
+            trajectory = directory/'trajectory.jsonl'
+            if trajectory.is_file():
+                for line in trajectory.read_text().splitlines():
+                    try:
+                        row = json.loads(line)
+                        if (directory/row['frame_path']).is_file() and row['frame_index'] <= value['last_observation']['frame_index']:
+                            rows.append(row)
+                    except (ValueError, KeyError): continue
+            last = value['last_observation']
+            if not any(row['frame_index'] == last['frame_index'] for row in rows):
+                self.save_frame(directory, self.rgb.copy(), last); rows.append(last)
+            # A killed worker may leave a partial final JSONL line. Retain the
+            # original for review and repair it before recording more actions.
+            if trajectory.is_file() and not (directory/'trajectory.before_resume.jsonl').exists():
+                (directory/'trajectory.before_resume.jsonl').write_bytes(trajectory.read_bytes())
+            repaired = directory/'trajectory.resume.tmp'
+            repaired.write_text(''.join(json.dumps(row)+'\n' for row in rows))
+            repaired.replace(trajectory)
+            self.session = directory; self.finished = False; self.frames = rows; self.frame_futures = []
+            self.frame_index = max(row['frame_index'] for row in rows)+1
+            self.actions = value['actions']; self.path_length = value['path_length_m']
+            self.started = time.monotonic()-value['elapsed_seconds']; self.ended_elapsed = 0.
+            self.goal_stage = value['goal_stage']; self.goal_reached = value['goal_reached']
+            self.recording_source = 'human_manual_resumed'
+            self.event({'type':'session_resumed', 'recovery':'durable_navigation_checkpoint'})
+            return True
+        except Exception:
+            print('An unfinished sample could not be resumed automatically. Its files were retained.', flush=True)
+            return False
 
     def scene_configuration(self, scene):
         habitat_sim = self.hs
@@ -324,6 +421,7 @@ class Collector:
         self.capture('START', data.get('client_elapsed_ms'))
         self.event({'type': 'session_start', 'recording_source': self.recording_source})
         self.advance_ordered_goals()
+        self.save_checkpoint()
         return self.response_state()
 
     def action(self, data):
@@ -342,6 +440,7 @@ class Collector:
         self.capture(action.upper(), data.get('client_elapsed_ms'), collided)
         self.advance_ordered_goals()
         self.goal_reached = self.guidance()['next_action'] == 'stop'
+        self.save_checkpoint()
         return self.response_state()
 
     def advance_ordered_goals(self):
