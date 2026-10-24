@@ -13,7 +13,7 @@ This is research infrastructure and pilot collection software. The collector use
 | Reproduce checks and prepare a new checkout | [Reproducibility guide](docs/REPRODUCIBILITY.md) |
 | Current recording website and server | [Campus collector](campus_collector/README.md) |
 | Administrator certificate/deployment steps | [Collection setup](CAMPUS_COLLECTION_START_HERE.md) |
-| Contributor navigation and recording instructions | [Participant guide](campus_collector/PARTICIPANT_GUIDE.md) |
+| Contributor navigation and recording instructions | [Launcher quick start](campus_collector/STUDY_LAUNCHER_GUIDE.md) |
 | Individual dashboard startup scripts | [Dashboard launchers](dashboard_startup/README.md) |
 | Exact GitHub selection and local-only material | [Publication guide](docs/GITHUB_FILES.md), [file manifest](publication_files.json) |
 
@@ -23,6 +23,7 @@ This is research infrastructure and pilot collection software. The collector use
 - **Scene experiments:** `rxr_long_route_search/environment_04/` and `room_tasks/environment_06/` contain placement and rendering code. Added school bags/toiletries are authored props; geometric contact fitting is separate from physics or manipulation.
 - **Research dashboards:** route, endpoint, room and model review interfaces; `checkpoint_walkthrough_studio/` provides a separate walkthrough/annotation tool.
 - **Collection website:** `campus_collector/` provides account login, a network allowlist, HTTPS configuration, separate per-user Habitat workers, recording/upload recovery, sample downloads and audio extraction.
+- **Participant launchers:** native Windows/Linux clients and a macOS app keep the study CA inside their HTTPS client, open the recording dashboard locally, close automatically with its last tab and retain account-scoped browser recovery data. [Build notes](campus_collector/study_launcher/README.md) explain external inputs and platform testing limits.
 - **Earlier collectors:** `level3_manual_collector/` and `level3_manual_collector_v2/` retain source for the original local collection interfaces. Use the campus collector for shared participant access.
 
 ## Recorded research findings
@@ -31,7 +32,7 @@ The validation audit examined **22,465 guide records representing 2,761 distinct
 
 The research owner's later visual shortlist contains **12 review indices**: 4, 5, 6, 7, 8, 9, 10, 16, 17, 18, 26 and 27. These are plausible furniture locations, not verified school-bag storage routines. [Selection metadata](docs/reviewed_goal_selection.json) maps review indices to original path IDs.
 
-The shared pilot assigns two existing presentation tasks with reference lengths **41.49 m** and **45.54 m** to contributors. Three separately authored owner tasks study multiple destinations, a room alias and ownership-based destination selection. Those three are shorter and must not be reported as `>40 m` routes. Original RxR guide lengths, RxR-CE reference lengths and actual human trajectories are distinct quantities.
+The study catalog combines forty house-first cases, ten presentation tasks and three authored household cases. Administrators assign available instructions privately. Two earlier pilot examples have reference lengths **41.49 m** and **45.54 m**; the three authored household examples are shorter and must not be reported as `>40 m` routes. Original RxR guide lengths, RxR-CE reference lengths and actual human trajectories are distinct quantities.
 
 ## Website and saved data
 

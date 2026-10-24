@@ -21,3 +21,11 @@ The publication check scans selected text for recognizable key/token/password ma
 Full simulator rendering, live campus reachability, certificate installation and participant microphone capture were not rerun for this publication. No server service was deployed or restarted, and no human recordings were included or modified. Historical runtime reports remain local.
 
 Commands and prerequisites are in [REPRODUCIBILITY.md](REPRODUCIBILITY.md). Re-run the checks after changing the source; this file records this publication's validation, not a promise about later revisions.
+
+## Source publication update — 25 October 2026
+
+The publication selection contains 144 research/application files. Generated verification scripts, the browser-only QA fixture, poster prompts, credentials, deployment data and built packages remain local. Previously tracked verification scripts are removed from the current Git index without deleting their working copies or rewriting history.
+
+A fresh source-only export passed all 31 Python unit tests, the launcher Go unit tests and JavaScript syntax checks. The Go compile used an owner-supplied public CA only in the temporary test export, as documented in the launcher build notes; that certificate is not part of the Git selection. Recognizable secret-pattern checks found no matches in the selected source or the previous Task 5 HEAD snapshot. These checks are not a comprehensive security audit.
+
+This publication does not modify or restart the production service. Windows/macOS runtime pilots and human recording validation remain separate from source compilation and synthetic tests. Development-only browser, audio and lifecycle reports remain local.

@@ -29,7 +29,7 @@ const episodeNames={
   EU6Fwq7SyZv_5784:'Pack Riya’s toiletries for the trip'
 };
 function environmentName(environment){
-  if(environment.label?.startsWith('Iyer–Malhotra'))return environment.label;
+  if(environment.label?.startsWith('Iyer–Malhotra')||environment.label?.startsWith('Study environment')||environment.label?.startsWith('House-first'))return environment.label;
   const index=environmentChoices.findIndex(item=>item.scene===environment.scene)+1;
   return environmentNames[environment.scene]?'Environment '+index+' · '+environmentNames[environment.scene]:environment.label;
 }
@@ -56,6 +56,14 @@ function selectMemories(ids){
 function banner(){
   $('task-title').textContent=$('request').value;
   $('task-state').textContent=$('current-state').value;
+  let photo=$('request-reference');
+  if(!photo){photo=document.createElement('details');photo.id='request-reference';
+    const label=document.createElement('summary');label.textContent='Photo supplied with this request';
+    const img=document.createElement('img');img.alt='Source photo accompanying this task';img.style.maxWidth='min(520px,100%)';img.style.maxHeight='380px';img.style.objectFit='contain';
+    photo.append(label,img);$('task-state').after(photo);}
+  photo.hidden=!caseData?.request_image_url;
+  const image=photo.querySelector('img');
+  if(caseData?.request_image_url)image.src=caseData.request_image_url;else image.removeAttribute('src');
 }
 function episodeOptions(scene){
   const environment=environmentChoices.find(item=>item.scene===scene),selector=$('episode-select');
@@ -77,9 +85,9 @@ function applyCase(value){
   $('request').value=value.default_request;$('current-state').value=value.default_current_state;
   $('memories').replaceChildren();value.memories.forEach((memory,index)=>$('memories').append(memoryCard(memory,index+1)));
   selectMemories(value.default_relevant_memory_ids);selectionSource='episode_default';
-  $('template').textContent='State the task and what you already carry. Recall the relevant speaker’s exact statement. Describe what is visible now. Explain the next movement and how you will recognize arrival.';
+  $('template').textContent='Speak while navigating. Explain what you see, which memory it matches, and why you turn, move forward, change direction or stop. Record screen + microphone captures your voice.';
   for(const part of ['before','decision','passing','correction','arrival']){
-    if(value.voice_examples?.[part])$('voice-'+part).textContent='“'+value.voice_examples[part]+'”';
+    $('voice-'+part).textContent=value.voice_examples?.[part]?'“'+value.voice_examples[part]+'”':'I will [turn left / turn right / move forward / stop] because [evidence in my current view and the relevant memory].';
   }
   const environment=environmentChoices.find(item=>item.scene===value.scene);
   $('episode-info').textContent=(environment?environmentName(environment)+' · ':'')+value.scene+
@@ -200,7 +208,7 @@ function update(s,force=false){
     }
   }
   const message=finished?'Episode completed. Create a new sample before recording another episode.':
-    s.goal_reached?'Destination reached. Record your arrival reasoning and press STOP. A new episode needs a new sample.':'';
+    s.goal_reached?'Explain which visible features confirm the destination, then press STOP & save.':'';
   $('completion-banner').hidden=!message;$('completion-banner').textContent=message;
   document.body.classList.toggle('has-completion',!!message);
   $('focus-status').textContent=active?(voice?'Reasoning microphone on':'Sample recording · '+(screen?'screen capture on':'screen capture off')):finished?'Episode completed':'Create a sample to begin.';
@@ -228,7 +236,7 @@ async function createSample(){
       episode_key:caseData.episode_key,
       relevant_memory_ids:selected(),memory_selection_source:selectionSource,client_elapsed_ms:0});
     update(s,true);event('New sample created');$('scene').focus({preventScroll:true});
-    notice('Sample created. Record reasoning, or use Record screen + microphone for the focused view.');
+    notice('Sample created. Click Record screen + microphone and explain your decisions aloud while navigating.');
     localStorage.setItem('collector_v2_username',user);
   }catch(e){notice(e.message);}
 }
