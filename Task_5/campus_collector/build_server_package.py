@@ -11,8 +11,8 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--include-tls',action='store_true',help='Include the server TLS key/certificate and public CA certificate. Keep this package private.')
     args=parser.parse_args()
-    names=['gateway.py','run_tmux.py','start_campus_collector.sh','backfill_screen_audio.py','campus.css',
-           'campus-client.js','campus-recovery.js','README.md','IT_REQUEST.md','PARTICIPANT_GUIDE.md','CLOUDFLARE_NOTES.md',
+    names=['gateway.py','admin_tools.py','admin_web/index.html','admin_web/app.js','admin_web/style.css','run_tmux.py','start_campus_collector.sh','backfill_screen_audio.py','campus.css',
+           'campus-client.js','campus-recovery.js','README.md','ADMIN_GUIDE.md','IT_REQUEST.md','PARTICIPANT_GUIDE.md','CLOUDFLARE_NOTES.md',
            'config.production.example.json','config.private-ca.example.json','config.dev.example.json',
            'template/collector.py','template/presentation_cases.py','template/sample_case.json','template/collection_selection.json',
            'template/web/index.html','template/web/app.js','template/web/style.css']

@@ -9,6 +9,7 @@
 !/level3_manual_collector_v2/
 !/rxr_long_route_search/
 !/tools/
+!/campus_collector/admin_web/
 !/campus_collector/template/
 !/checkpoint_walkthrough_studio/tools/
 !/checkpoint_walkthrough_studio/web/
@@ -31,10 +32,15 @@
 !/README.md
 !/Route_length_Instructions
 !/VIVEKANANDA_RECORDING_README.md
+!/campus_collector/ADMIN_GUIDE.md
 !/campus_collector/CLOUDFLARE_NOTES.md
 !/campus_collector/IT_REQUEST.md
 !/campus_collector/PARTICIPANT_GUIDE.md
 !/campus_collector/README.md
+!/campus_collector/admin_tools.py
+!/campus_collector/admin_web/app.js
+!/campus_collector/admin_web/index.html
+!/campus_collector/admin_web/style.css
 !/campus_collector/backfill_screen_audio.py
 !/campus_collector/build_server_package.py
 !/campus_collector/campus-client.js
@@ -53,6 +59,7 @@
 !/campus_collector/template/web/app.js
 !/campus_collector/template/web/index.html
 !/campus_collector/template/web/style.css
+!/campus_collector/test_admin.py
 !/campus_collector/test_collection_selection.py
 !/campus_collector/test_gateway.py
 !/campus_collector/test_house40.py

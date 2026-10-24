@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Study administration</title><link rel="stylesheet" href="/admin/style.css"></head>
+<body>
+<header><a class="brand" href="/admin"><span class="mark">N</span><span>Navigation study<small>Administration</small></span></a>
+<nav><span id="identity">Checking access…</span><a href="/">Open collector</a><button id="signout" class="subtle">Sign out</button></nav></header>
+<main>
+<div class="heading"><div><p class="eyebrow">PRIVATE WORKSPACE</p><h1>People, tasks and progress.</h1><p class="muted">Create an account, select its tasks, and save. Participants see only their own assignments.</p></div>
+<button id="refresh" class="subtle">Refresh</button></div>
+<p id="message" role="status" aria-live="polite"></p>
+<section class="stats" aria-label="Study summary">
+<article><span id="total-tasks">—</span><p>Instructions in catalog</p></article>
+<article><span id="total-users">—</span><p>Contributor accounts</p></article>
+<article><span id="total-samples">—</span><p>Saved samples</p></article>
+<article><span id="active-workers">—</span><p>Recording / processing</p></article></section>
+<div class="workspace">
+<aside class="panel people"><div class="panel-title"><h2>People</h2><button id="new-user">+ New account</button></div>
+<p class="muted small">Individual logins. Credentials are shown only when created or reset.</p><div id="people"></div></aside>
+<section class="panel assignments"><div class="panel-title"><div><p class="eyebrow">ASSIGNMENT EDITOR</p><h2 id="person-title">Select a person</h2></div><span id="person-mode" class="pill">—</span></div>
+<p id="person-info" class="muted small"></p>
+<div class="filters"><label>Search<input id="search" type="search" placeholder="Instruction, ID, house or folder"></label>
+<label>Collection<select id="collection"><option value="">All collections</option></select></label>
+<label>Route length<select id="length"><option value="0">All lengths</option><option value="40">At least 40 m</option><option value="30">At least 30 m</option></select></label></div>
+<div class="selection-tools"><label class="inline"><input type="checkbox" id="assigned-only"> Show selected only</label><span id="result-count"></span><button id="select-filtered" class="subtle">Select filtered</button><button id="clear-filtered" class="subtle">Clear filtered</button></div>
+<div class="table-wrap"><table><thead><tr><th>Select</th><th>Instruction</th><th>Collection / scene</th><th>Route</th><th>Memories</th></tr></thead><tbody id="tasks"></tbody></table></div>
+<div class="save-bar"><div><strong id="selected-count">0 selected</strong><p id="dirty-label" class="small muted">No unsaved changes</p></div><button id="save" disabled>Save assignment</button></div>
+<div class="account-actions"><button id="reset-password" class="subtle" disabled>Reset password</button><button id="toggle-enabled" class="subtle" disabled>Disable account</button><span class="small muted">Active recordings and uploads are protected.</span></div>
+</section></div>
+<section class="panel sources"><div class="panel-title"><div><p class="eyebrow">PROVENANCE</p><h2>Which folder contains which instructions?</h2></div><div class="exports"><a href="/api/admin/catalog.csv">Download CSV</a><a href="/api/admin/catalog.md">Download Markdown table</a></div></div>
+<p class="small muted">Private admin exports. Keep these out of participant ZIPs and shared guides. Route length is the sum of saved reference segments, not an executed run.</p>
+<div class="table-wrap"><table><thead><tr><th>Collection</th><th>Tasks</th><th>Source folder</th><th>Source file</th></tr></thead><tbody id="sources"></tbody></table></div></section>
+<section class="panel"><div class="panel-title"><h2>Recent admin changes</h2><span class="small muted">Passwords are never included.</span></div><div class="table-wrap"><table><thead><tr><th>Time</th><th>Administrator</th><th>Action</th><th>Account</th><th>Details</th></tr></thead><tbody id="audit"></tbody></table></div></section>
+<p class="footer">Admin tools do not use a simulation slot. Opening the collector does. Administrator roles are managed through the server CLI.</p>
+</main>
+<dialog id="create-dialog"><form id="create-form"><div class="panel-title"><h2>Create contributor account</h2><button type="button" data-close="create-dialog" class="subtle">Close</button></div>
+<label>Username<input id="create-name" autocomplete="off" required pattern="[A-Za-z0-9_-]{1,48}" maxlength="48" placeholder="Letters, digits, _ or -"></label>
+<label>Password<input id="create-password" type="password" autocomplete="new-password" minlength="12" maxlength="256" placeholder="Leave blank to generate a password"></label>
+<label class="inline"><input id="create-with-selection" type="checkbox"> Assign the tasks currently selected in the editor</label>
+<p class="small muted">Otherwise the new account starts with no tasks until you assign them. New accounts are contributors, not administrators.</p><p id="create-error" role="alert"></p><button type="submit">Create account</button></form></dialog>
+<dialog id="credentials-dialog"><div class="panel-title"><h2>Share privately</h2><button data-close="credentials-dialog" class="subtle">Close</button></div>
+<p class="muted">These credentials are shown once. Copy them now and send only to this person.</p>
+<label>Username<input id="issued-name" readonly></label><label>Password<input id="issued-password" type="password" readonly autocomplete="off"></label>
+<label class="inline"><input id="show-password" type="checkbox"> Show password</label><button id="copy-credentials">Copy login details</button></dialog>
+<dialog id="task-dialog"><div class="panel-title"><h2>Instruction details</h2><button data-close="task-dialog" class="subtle">Close</button></div><pre id="task-detail"></pre></dialog>
+<script src="/admin/app.js"></script></body></html>

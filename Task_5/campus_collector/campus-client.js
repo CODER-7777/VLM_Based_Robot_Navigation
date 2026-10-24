@@ -2,7 +2,7 @@
 (async()=>{
   const response=await fetch('/auth/me');
   if(!response.ok){location.href='/';return}
-  const {username}=await response.json();
+  const {username,role}=await response.json();
   const style=document.createElement('link');style.rel='stylesheet';style.href='/campus.css';document.head.appendChild(style);
   const bar=document.createElement('div');bar.className='campus-account';
   const message=document.createElement('span');message.textContent='Signed in as '+username+' · independent recording session · uploads save directly to the research server';
@@ -11,6 +11,10 @@
   await CampusUploads.setAccount(username);
   const signout=document.createElement('button');signout.textContent='Save, then sign out';
   bar.append(message,recover,signout);document.body.prepend(bar);
+  if(role==='admin'){
+    const link=document.createElement('a');link.href='/admin';link.textContent='Study administration';
+    link.style.color='white';bar.insertBefore(link,recover);
+  }
   const field=document.getElementById('annotator');
   localStorage.setItem('collector_v2_username',username);
   if(field){field.value=username;field.readOnly=true;field.title='Your authenticated contributor ID';}

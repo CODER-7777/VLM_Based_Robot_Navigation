@@ -29,6 +29,7 @@ import sys
 import threading
 import time
 from urllib.parse import parse_qs, urlencode, urlsplit
+from admin_tools import Administration, AdminStore, AdminError
 
 ROOT=Path(__file__).resolve().parent
 USERNAME=re.compile(r'^[A-Za-z0-9_-]{1,48}$')
@@ -60,8 +61,8 @@ class Accounts:
 
     @staticmethod
     def validate(username,password):
-        if not USERNAME.fullmatch(username):raise ValueError('Use 1–48 letters, digits, underscores or hyphens.')
-        if not 12<=len(password)<=256:raise ValueError('Use a password of 12–256 characters.')
+        if not isinstance(username,str) or not USERNAME.fullmatch(username):raise ValueError('Use 1–48 letters, digits, underscores or hyphens.')
+        if not isinstance(password,str) or not 12<=len(password)<=256:raise ValueError('Use a password of 12–256 characters.')
 
     def add(self,username,password):
         self.validate(username,password)
@@ -117,7 +118,7 @@ class Worker:
 
 class WorkerPool:
     def __init__(self,cfg):
-        self.cfg=cfg;self.lock=threading.RLock();self.workers={}
+        self.cfg=cfg;self.lock=threading.RLock();self.workers={};self.administration=None
         self.root=Path(cfg['data_root'])/'contributors';self.root.mkdir(parents=True,exist_ok=True,mode=0o700)
 
     def state(self,w):
@@ -146,7 +147,9 @@ class WorkerPool:
                 shutil.copy2(template/name,folder/name)
             selection = template/'collection_selection.json'
             if selection.is_file():
-                shutil.copy2(selection,folder/selection.name)
+                value=json.loads(selection.read_text())
+                if self.administration:value=self.administration.worker_selection(username,value)
+                (folder/selection.name).write_text(json.dumps(value,indent=2)+'\n')
             shutil.copytree(template/'web',folder/'web',dirs_exist_ok=True)
             (folder/'campus_owner.json').write_text(json.dumps({'username':username})+'\n')
             occupied={w.port for w in self.workers.values()}
@@ -185,6 +188,7 @@ class Gateway(ThreadingHTTPServer):
     daemon_threads=True
     def __init__(self,cfg,dev=False):
         self.cfg=cfg;self.dev=dev;self.accounts=Accounts(cfg['data_root']);self.pool=WorkerPool(cfg)
+        self.admin=Administration(cfg,self.accounts,self.pool);self.pool.administration=self.admin
         self.networks=[ipaddress.ip_network(n,strict=False) for n in cfg['allowed_networks']]
         self.attempts=defaultdict(deque);self.auth_lock=threading.Lock();self.auth_slots=threading.BoundedSemaphore(4)
         super().__init__((cfg['bind'],cfg['port']),Handler)
@@ -269,10 +273,12 @@ class Handler(BaseHTTPRequestHandler):
         path=urlsplit(self.path).path
         if path=='/campus.css':return self.reply(200,(ROOT/'campus.css').read_bytes(),'text/css')
         user=self.user()
-        if path=='/auth/me':return self.reply(200 if user else 401,{'username':user})
+        if path=='/auth/me':return self.reply(200 if user else 401,{'username':user,'role':self.server.admin.store.role(user)})
+        if path.startswith('/admin') or path.startswith('/api/admin/'):
+            return self.admin_get(path,user)
         if path=='/register':return self.error(404,'Accounts are supplied by the study owner.')
         if path=='/login':
-            if user:return self.reply(303,b'',extra={'Location':'/'})
+            if user:return self.reply(303,b'',extra={'Location':'/admin' if self.server.admin.store.role(user)=='admin' else '/'})
             return self.reply(200,auth_page(LOGIN),'text/html; charset=utf-8')
         if not user:
             if path=='/':return self.reply(200,auth_page(LOGIN),'text/html; charset=utf-8')
@@ -303,6 +309,11 @@ class Handler(BaseHTTPRequestHandler):
                 return self.login(n)
             user=self.user()
             if not user:return self.error(401,'Sign in before collecting data.')
+            if path.startswith('/api/admin/'):
+                if self.server.admin.store.role(user)!='admin':return self.error(403,'Administrator access is required.')
+                if n>65536:return self.error(413,'Administrator request too large.')
+                data=json.loads(self.rfile.read(n) or b'{}')
+                return self.reply(200,self.server.admin.mutate(user,path.removeprefix('/api/admin/'),data))
             if path=='/auth/logout':
                 if not self.server.pool.release(user):return self.error(409,'STOP & save and wait for all uploads/MP4 processing before signing out.')
                 self.server.accounts.revoke(self.token());return self.reply(200,{'signed_out':True},extra={'Set-Cookie':self.cookie('',True)})
@@ -320,7 +331,29 @@ class Handler(BaseHTTPRequestHandler):
                 if k in payload and not self.own_session(user,payload[k]):return self.error(403,'Recording belongs to another contributor.')
             return self.proxy(user,self.path,body=json.dumps(payload).encode())
         except OverflowError as e:self.error(413,str(e))
+        except AdminError as e:self.error(e.status,str(e))
         except (ValueError,KeyError) as e:self.error(400,str(e))
+
+    def admin_get(self,path,user):
+        if not user:
+            if path in ['/admin','/admin/']:
+                return self.reply(303,b'',extra={'Location':'/login'})
+            return self.error(401,'Sign in to use study administration.')
+        if self.server.admin.store.role(user)!='admin':return self.error(403,'Administrator access is required.')
+        assets={'/admin':('index.html','text/html; charset=utf-8'),'/admin/':('index.html','text/html; charset=utf-8'),
+                '/admin/app.js':('app.js','text/javascript'),'/admin/style.css':('style.css','text/css')}
+        if path in assets:
+            name,mime=assets[path]
+            return self.reply(200,(ROOT/'admin_web'/name).read_bytes(),mime)
+        try:
+            if path=='/api/admin/state':return self.reply(200,self.server.admin.overview(user))
+            if path in ['/api/admin/catalog.csv','/api/admin/catalog.md']:
+                markdown=path.endswith('.md');name='private_instruction_catalog.'+('md' if markdown else 'csv')
+                return self.reply(200,self.server.admin.export(markdown),
+                                  'text/markdown; charset=utf-8' if markdown else 'text/csv; charset=utf-8',
+                                  {'Content-Disposition':'attachment; filename="'+name+'"'})
+        except (OSError,ValueError,KeyError):return self.error(503,'The instruction catalog needs administrator review; check the server source configuration.')
+        return self.error(404,'Administrator route not found.')
 
     def auth_attempt(self,username):
         ip=self.client_address[0];now=time.monotonic();key=('pair',ip,username)
@@ -350,17 +383,24 @@ class Handler(BaseHTTPRequestHandler):
             return self.reply(401,auth_page(LOGIN,'Invalid contributor ID or password.'),'text/html; charset=utf-8')
         with self.server.auth_lock:self.server.attempts.pop(key,None)
         token=self.server.accounts.login(username,self.server.cfg.get('login_seconds',28800))
-        return self.reply(303,b'',extra={'Set-Cookie':self.cookie(token),'Location':'/'})
+        return self.reply(303,b'',extra={'Set-Cookie':self.cookie(token),'Location':'/admin' if self.server.admin.store.role(username)=='admin' else '/'})
 
     def proxy(self,user,target,body=None,stream_length=None):
-        w=self.server.pool.get(user)
+        assignment=self.server.admin.store.assignment(user)
+        if self.server.admin.store.role(user)!='admin' and assignment is not None and not assignment['keys']:
+            return self.error(403,'No instructions are assigned yet. Ask a study administrator to assign your tasks.')
+        # Take a worker lease before any admin may release/reconfigure it.
+        with self.server.pool.lock:
+            try:w=self.server.pool.get(user)
+            except (ValueError,OSError):return self.error(503,'Your instruction assignment needs administrator review.')
+            if w is not None:w.inflight+=1
         path=urlsplit(target).path
         if w is None:
             return self.reply(503,WAIT.replace('MESSAGE','All collection slots are currently in use.'),'text/html; charset=utf-8',{'Retry-After':'4'}) if path=='/' else self.error(503,'All collection slots are busy. Please wait and retry.')
         # Readiness must not allocate another renderer or reset existing state.
         if self.server.pool.state(w) is None:
+            with self.server.pool.lock:w.inflight-=1
             return self.reply(503,WAIT.replace('MESSAGE','Preparing your independent simulator…'),'text/html; charset=utf-8',{'Retry-After':'4'}) if path=='/' else self.error(503,'Your simulator is starting; retry shortly.')
-        with self.server.pool.lock:w.inflight+=1
         con=HTTPConnection('127.0.0.1',w.port,timeout=600)
         headers_sent=False
         try:
@@ -434,10 +474,15 @@ def main():
     parser.add_argument('--config',required=True);parser.add_argument('--dev',action='store_true')
     operations=parser.add_mutually_exclusive_group()
     operations.add_argument('--add-user');operations.add_argument('--disable-user');operations.add_argument('--reset-password')
+    operations.add_argument('--grant-admin');operations.add_argument('--revoke-admin')
     parser.add_argument('--password-stdin',action='store_true')
     args=parser.parse_args();raw=load_settings(args.config)
-    if args.add_user or args.disable_user or args.reset_password:
+    if args.add_user or args.disable_user or args.reset_password or args.grant_admin or args.revoke_admin:
         accounts=Accounts(raw['data_root'])
+        if args.grant_admin or args.revoke_admin:
+            name=args.grant_admin or args.revoke_admin
+            AdminStore(accounts).set_role(name,'admin' if args.grant_admin else 'contributor')
+            print('Study role updated:',name);return
         if args.disable_user:accounts.disable(args.disable_user);print('Contributor disabled:',args.disable_user);return
         password=sys.stdin.readline().rstrip('\n') if args.password_stdin else getpass.getpass('New contributor password (at least 12 characters): ')
         if not args.password_stdin and password!=getpass.getpass('Confirm new password: '):raise SystemExit('Passwords do not match.')
