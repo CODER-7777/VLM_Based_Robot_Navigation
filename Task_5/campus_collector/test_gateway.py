@@ -157,10 +157,14 @@ class GatewayTests(unittest.TestCase):
         server=Gateway(cfg,dev=False);port=server.server_address[1]
         cfg['public_origin']=f'https://127.0.0.1:{port}'
         context=ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER);context.minimum_version=ssl.TLSVersion.TLSv1_2
-        context.load_cert_chain(cert,key);server.socket=context.wrap_socket(server.socket,server_side=True)
+        context.load_cert_chain(cert,key);server.enable_tls(context)
         server.accounts.add('tlsuser',self.password)
         thread=threading.Thread(target=server.serve_forever,daemon=True);thread.start()
         client=HTTPSConnection('127.0.0.1',port,context=ssl.create_default_context(cafile=str(cert)),timeout=5)
+        # Idle browser preconnections and incomplete TLS must not block login.
+        idle=socket.create_connection(('127.0.0.1',port),timeout=2)
+        partial=socket.create_connection(('127.0.0.1',port),timeout=2)
+        partial.sendall(b'\x16\x03\x01')
         try:
             body=urlencode({'username':'tlsuser','password':self.password})
             client.request('POST','/auth/login',body,headers={'Origin':cfg['public_origin'],'Content-Type':'application/x-www-form-urlencoded'})
@@ -169,7 +173,7 @@ class GatewayTests(unittest.TestCase):
             self.assertIn('Secure',response.getheader('Set-Cookie'))
             self.assertIn('HttpOnly',response.getheader('Set-Cookie'))
         finally:
-            client.close();server.shutdown();server.server_close();server.pool.close()
+            idle.close();partial.close();client.close();server.shutdown();server.server_close();server.pool.close()
 
     def test_08_only_owner_created_accounts_can_sign_in(self):
         page=self.request('/')[2]

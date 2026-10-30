@@ -186,6 +186,23 @@ class WorkerPool:
 
 class Gateway(ThreadingHTTPServer):
     daemon_threads=True
+    request_queue_size=128
+
+    def enable_tls(self, context):
+        # Never negotiate TLS in the accept loop: a browser preconnection can
+        # otherwise block every participant before Handler.setup runs.
+        self.socket=context.wrap_socket(self.socket,server_side=True,do_handshake_on_connect=False)
+
+    def process_request_thread(self, request, client_address):
+        if isinstance(request, ssl.SSLSocket):
+            try:
+                request.settimeout(10)
+                request.do_handshake()
+            except (OSError, ssl.SSLError):
+                self.shutdown_request(request)
+                return
+        super().process_request_thread(request,client_address)
+
     def __init__(self,cfg,dev=False):
         self.cfg=cfg;self.dev=dev;self.accounts=Accounts(cfg['data_root']);self.pool=WorkerPool(cfg)
         self.admin=Administration(cfg,self.accounts,self.pool);self.pool.administration=self.admin
@@ -492,7 +509,7 @@ def main():
     cfg=configuration(args.config,args.dev);server=Gateway(cfg,args.dev)
     if not args.dev:
         context=ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER);context.minimum_version=ssl.TLSVersion.TLSv1_2
-        context.load_cert_chain(cfg['tls_certificate'],cfg['tls_private_key']);server.socket=context.wrap_socket(server.socket,server_side=True)
+        context.load_cert_chain(cfg['tls_certificate'],cfg['tls_private_key']);server.enable_tls(context)
     print(('LOCAL ADMIN TEST ONLY: ' if args.dev else 'Campus HTTPS collector: ')+cfg['public_origin'],flush=True)
     try:server.serve_forever()
     except KeyboardInterrupt:pass
