@@ -1,8 +1,8 @@
 # Start here
 
 1. Connect to the approved IITK network. Extract this ZIP.
-2. Open **OpenDashboard.exe** (Windows), **IITK Study Launcher.app** (Mac), or run **./OpenDashboard** in Terminal (Linux).
-3. Use Chrome/Edge. Sign in with the account sent to you privately. Keep the launcher/Terminal window open while recording.
+2. Open **OpenDashboard.exe** (Windows), **OpenDashboard.command** (Mac; follow MAC_START_HERE.txt the first time), or run **./OpenDashboard** in Terminal (Linux).
+3. The dashboard opens automatically. Use Chrome/Edge and sign in with the account sent to you privately. Keep the launcher/Terminal window open while recording.
 4. Choose your task → tick relevant memories → **Create new sample**.
 5. **Record screen + microphone** → select the dashboard → **Enter full screen & start recording**. Allow recording permissions.
 6. **Speak while navigating.** Explain what you see and why you turn left/right, move forward, change direction or stop. Use simple English. Your voice is captured with the screen. Use **W** forward, **A/D** turn.

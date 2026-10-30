@@ -4,7 +4,6 @@ from datetime import datetime
 import hashlib
 import os
 from pathlib import Path
-import plistlib
 import shutil
 import struct
 import subprocess
@@ -12,45 +11,104 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parent
 EXPECTED_CA_HASH = '5d5d81ac9d7a884bf579c3cf9cc478e5b66a907b26a3356b88d4f66baf27b445'
-MAC_APP = 'IITK Study Launcher.app/Contents/'
 MAC_MINIMUM = '13.0'
+MAC_PACKAGE_VERSION = '1.9.0'
+MAC_START_HELP = '''Mac: start here
+
+1. Extract the ZIP using Finder. Keep all extracted files together.
+2. First time only: open Terminal and type sh followed by a space.
+   Drag OpenDashboard.command from this folder into Terminal.
+   Press Enter. Type yes if the launcher asks for first-start approval.
+3. Later: double-click OpenDashboard.command. Sign in in Chrome/Edge.
+   Keep Terminal open until uploads finish.
+
+Only use the ZIP received from the study owner. First start checks the
+native executable against its bundled SHA-256. With your confirmation,
+it removes download quarantine from that executable and this command
+file only. It does not disable Gatekeeper or approve other applications.
+Keep the launcher folder beside OpenDashboard.command. This package has
+no .app bundle; use OpenDashboard.command.
+
+If macOS reports "Operation not permitted" while approving:
+Check System Settings > Privacy & Security > Files & Folders > Terminal
+and allow Downloads Folder access, if listed.
+Quit and reopen Terminal after changing a permission, then retry.
+
+Still failing? Send the owner your macOS version and chip from About This
+Mac, and the Terminal error only. Do not share passwords or browser links.
+Requires macOS 13 or later; supports Intel and Apple Silicon.
+'''
 
 
 def macos_bundle(binaries):
-    """One app bundle chooses the correct native binary without Rosetta."""
-    start = b'''#!/bin/sh
-set -eu
-study_macos_dir="$(CDPATH= cd -P "$(dirname "$0")" && pwd)"
-exec /usr/bin/open -a Terminal "$study_macos_dir/../Resources/OpenDashboard.command"
-'''
+    """Use plain files so a blocked enclosing .app cannot veto a tool launch."""
     command = b'''#!/bin/sh
 set -eu
-study_resources="$(CDPATH= cd -P "$(dirname "$0")" && pwd)"
+study_dir="$(CDPATH= cd -P "$(dirname "$0")" && pwd)"
+study_resources="$study_dir/launcher"
 case "$(/usr/bin/uname -m)" in
-  arm64) study_binary=OpenDashboard-arm64 ;;
-  x86_64) study_binary=OpenDashboard-amd64 ;;
+  arm64) study_binary=OpenDashboard-arm64; study_expected=__ARM64_HASH__ ;;
+  x86_64) study_binary=OpenDashboard-amd64; study_expected=__AMD64_HASH__ ;;
   *) printf '%s\\n' 'This launcher supports Apple Silicon and Intel Macs only.'; exit 1 ;;
 esac
+study_path="$study_resources/bin/$study_binary"
+case "${1:-}" in
+  ''|--approve) ;;
+  *) printf '%s\\n' 'Use no arguments, or --approve for the first start.'; exit 1 ;;
+esac
+if ! printf '%s  %s\\n' "$study_expected" "$study_path" | /usr/bin/shasum -a 256 -c -; then
+  printf '%s\\n' 'Executable verification failed. Obtain a fresh ZIP from the study owner.'
+  exit 1
+fi
+study_needs_approval=false
+for study_file in "$study_path" "$study_dir/$(basename "$0")"; do
+  if /usr/bin/xattr -p com.apple.quarantine "$study_file" >/dev/null 2>&1; then
+    study_needs_approval=true
+  fi
+done
+if [ "${1:-}" = --approve ] || [ "$study_needs_approval" = true ]; then
+  printf '%s\\n' 'First-start approval for this study launcher only.'
+  printf '%s\\n' 'This removes download quarantine from the verified executable and this command file.'
+  printf '%s\\n' 'It does not disable Gatekeeper globally. Continue only if this ZIP came from the study owner.'
+  printf '%s' 'Type yes to approve: '
+  if ! IFS= read -r study_answer; then
+    printf '\\n%s\\n' 'Open Terminal, type sh and a space, drag this command file into Terminal, then press Enter.'
+    exit 1
+  fi
+  if [ "$study_answer" != yes ]; then
+    printf '%s\\n' 'Cancelled. No quarantine attributes were changed.'
+    exit 1
+  fi
+  for study_file in "$study_path" "$study_dir/$(basename "$0")"; do
+    if /usr/bin/xattr -p com.apple.quarantine "$study_file" >/dev/null 2>&1; then
+      if ! /usr/bin/xattr -d com.apple.quarantine "$study_file"; then
+        printf '\\n%s\\n' 'macOS refused the requested first-start approval. The dashboard has not started.'
+        printf '%s\\n' 'Check System Settings > Privacy & Security > Files & Folders > Terminal > Downloads Folder, if listed.'
+        printf '%s\\n' 'Quit and reopen Terminal after changing a permission, then retry this command.'
+        printf '%s\\n' 'If these options are missing or locked, send the owner your macOS version and the error.'
+        exit 1
+      fi
+    fi
+  done
+fi
 printf '%s\\n' 'Keep this Terminal window open until recording uploads finish.'
-exec "$study_resources/bin/$study_binary"
+exec "$study_path"
 '''
-    info = {'CFBundleName': 'IITK Study Launcher', 'CFBundleDisplayName': 'IITK Study Launcher',
-            'CFBundleIdentifier': 'org.studylauncher.navigation', 'CFBundleExecutable': 'StartStudy',
-            'CFBundlePackageType': 'APPL', 'CFBundleShortVersionString': '1.6', 'CFBundleVersion': '7',
-            'CFBundleSupportedPlatforms': ['MacOSX'], 'LSMinimumSystemVersion': MAC_MINIMUM,
-            'LSUIElement': True}
-    return {MAC_APP + 'Info.plist': plistlib.dumps(info), MAC_APP + 'PkgInfo': b'APPL????',
-            MAC_APP + 'MacOS/StartStudy': start,
-            MAC_APP + 'Resources/OpenDashboard.command': command,
-            **{MAC_APP + 'Resources/bin/OpenDashboard-' + arch: binary.read_bytes()
+    for arch in ['arm64', 'amd64']:
+        command = command.replace(('__' + arch.upper() + '_HASH__').encode(),
+                                  hashlib.sha256(binaries[arch].read_bytes()).hexdigest().encode())
+    return {'OpenDashboard.command': command,
+            'MAC_START_HERE.txt': MAC_START_HELP.encode(),
+            'VERSION.txt': (MAC_PACKAGE_VERSION + '\n').encode(),
+            **{'launcher/bin/OpenDashboard-' + arch: binary.read_bytes()
                for arch, binary in binaries.items()}}
 
 
 def verify_macos_files(files):
-    info = plistlib.loads(files[MAC_APP + 'Info.plist'])
-    assert info['CFBundleExecutable'] == 'StartStudy' and info['LSMinimumSystemVersion'] == MAC_MINIMUM
+    assert not any(part.endswith('.app') for name in files for part in Path(name).parts), 'Mac tools must not be nested inside an app bundle'
+    assert files['VERSION.txt'].decode().strip() == MAC_PACKAGE_VERSION
     for arch, cpu in [('arm64', 0x0100000c), ('amd64', 0x01000007)]:
-        value = files[MAC_APP + 'Resources/bin/OpenDashboard-' + arch]
+        value = files['launcher/bin/OpenDashboard-' + arch]
         magic, actual_cpu, _, filetype, commands, _, _, _ = struct.unpack_from('<8I', value)
         assert magic == 0xfeedfacf and actual_cpu == cpu and filetype == 2, 'Wrong macOS binary architecture'
         offset, minimum = 32, None
@@ -62,8 +120,31 @@ def verify_macos_files(files):
                 assert platform == 1, 'Expected a macOS Mach-O binary'
             offset += size
         assert minimum is not None and minimum == 13 << 16, 'Unexpected macOS deployment target'
-    for name in ['MacOS/StartStudy', 'Resources/OpenDashboard.command']:
-        subprocess.run(['sh', '-n'], input=files[MAC_APP + name], check=True)
+    for name in ['OpenDashboard.command']:
+        subprocess.run(['sh', '-n'], input=files[name], check=True)
+        for arch in ['arm64', 'amd64']:
+            expected = hashlib.sha256(files['launcher/bin/OpenDashboard-' + arch]).hexdigest().encode()
+            assert expected in files[name], 'First-start executable checksum is stale'
+
+
+def write_archive(destination, files, executables, built_at):
+    with zipfile.ZipFile(destination, 'w', zipfile.ZIP_DEFLATED) as archive:
+        # Explicit directories preserve the launcher's extraction permissions.
+        directories = {str(parent) + '/' for name in files
+                       for parent in Path(name).parents if str(parent) != '.'}
+        for name in sorted(directories) + list(files):
+            directory = name.endswith('/')
+            item = zipfile.ZipInfo(name, date_time=built_at)
+            item.compress_type = zipfile.ZIP_DEFLATED
+            item.create_system = 3
+            mode = 0o40755 if directory else (0o100755 if name in executables else 0o100644)
+            item.external_attr = mode << 16 | (0x10 if directory else 0)
+            archive.writestr(item, b'' if directory else files[name])
+    destination.chmod(0o600)
+    with zipfile.ZipFile(destination) as archive:
+        assert archive.testzip() is None
+        assert {item.filename for item in archive.infolist() if not item.is_dir()} == set(files)
+        assert all((archive.getinfo(name).external_attr >> 16) & 0o111 for name in executables)
 
 
 def main():
@@ -99,25 +180,22 @@ def main():
             binaries[arch] = binary
         label = 'macOS' if target == 'macos' else target.title()
         destination = ROOT.parent / ('IITK_Study_Launcher_' + label + '.zip')
-        files = macos_bundle(binaries) if target == 'macos' else {filename: binaries['amd64'].read_bytes()}
+        files = (macos_bundle(binaries) if target == 'macos'
+                 else {filename: binaries['amd64'].read_bytes()})
         if target == 'macos':
             verify_macos_files(files)
         files.update({'README.txt': (ROOT / 'STUDY_LAUNCHER_GUIDE.md').read_bytes(),
                       'REASONING_TEMPLATE.txt': (ROOT / 'REASONING_TEMPLATE.md').read_bytes()})
-        executables = ({MAC_APP + 'MacOS/StartStudy', MAC_APP + 'Resources/OpenDashboard.command',
-                        MAC_APP + 'Resources/bin/OpenDashboard-arm64', MAC_APP + 'Resources/bin/OpenDashboard-amd64'}
+        if target == 'macos':
+            recording_steps = files['README.txt'].replace(
+                b'**IITK Study Launcher.app** (Mac)', b'**OpenDashboard.command** (Mac)')
+            files['README.txt'] = MAC_START_HELP.encode() + b'\nRecording steps\n\n' + recording_steps
+        executables = ({'launcher/bin/OpenDashboard-arm64', 'launcher/bin/OpenDashboard-amd64',
+                        'OpenDashboard.command'}
                        if target == 'macos' else {filename})
         built_at = datetime.now().timetuple()[:6]
-        with zipfile.ZipFile(destination, 'w', zipfile.ZIP_DEFLATED) as archive:
-            for name, payload in files.items():
-                item = zipfile.ZipInfo(name, date_time=built_at)
-                item.compress_type = zipfile.ZIP_DEFLATED
-                item.create_system = 3
-                item.external_attr = (0o100755 if name in executables else 0o100644) << 16
-                archive.writestr(item, payload)
-        destination.chmod(0o600)
+        write_archive(destination, files, executables, built_at)
         with zipfile.ZipFile(destination) as archive:
-            assert archive.testzip() is None and set(archive.namelist()) == set(files)
             if target == 'macos':
                 verify_macos_files({name: archive.read(name) for name in archive.namelist()})
                 assert all((archive.getinfo(name).external_attr >> 16) & 0o111 for name in executables)
@@ -126,20 +204,13 @@ def main():
         admin_destination = ROOT.parent / ('IITK_Admin_Launcher_' + label + '.zip')
         admin_files = dict(files)
         admin_files['README.txt'] = (ROOT / 'ADMIN_LAUNCHER_QUICK_START.md').read_bytes()
+        if target == 'macos':
+            admin_files['README.txt'] = MAC_START_HELP.encode() + b'\nAdministration\n\n' + admin_files['README.txt']
         admin_files['RECORDING_STEPS.txt'] = files['README.txt']
-        with zipfile.ZipFile(admin_destination, 'w', zipfile.ZIP_DEFLATED) as archive:
-            for name, payload in admin_files.items():
-                item = zipfile.ZipInfo(name, date_time=built_at)
-                item.compress_type = zipfile.ZIP_DEFLATED
-                item.create_system = 3
-                item.external_attr = (0o100755 if name in executables else 0o100644) << 16
-                archive.writestr(item, payload)
-        admin_destination.chmod(0o600)
-        with zipfile.ZipFile(admin_destination) as archive:
-            assert archive.testzip() is None and set(archive.namelist()) == set(admin_files)
+        write_archive(admin_destination, admin_files, executables, built_at)
         print(admin_destination)
         print('SHA-256:', hashlib.sha256(admin_destination.read_bytes()).hexdigest())
-    print('Cross-built Windows/macOS outputs require target-device acceptance testing. The macOS app is not Developer-ID signed or notarized.')
+    print('Cross-built Windows/macOS outputs require target-device acceptance testing. The macOS tools are not Developer-ID signed or notarized.')
 
 
 if __name__ == '__main__':

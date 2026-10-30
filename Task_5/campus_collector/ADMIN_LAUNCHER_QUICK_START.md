@@ -1,7 +1,7 @@
 # Admin: start here
 
 1. Connect to the approved IITK network. Extract this ZIP and open its launcher.
-2. Sign in with your admin account. Administration opens automatically.
+2. The website opens automatically. Sign in with your admin account; administration opens automatically.
 3. **New account** → enter username → create. Share its login privately.
 4. Select a person → tick their tasks → **Save assignment**.
 5. To record your own samples, open **Collector** and follow RECORDING_STEPS.txt.
