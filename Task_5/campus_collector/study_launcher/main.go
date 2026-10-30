@@ -15,6 +15,7 @@ import (
 	"errors"
 	"flag"
 	"fmt"
+	"html"
 	"io"
 	"log"
 	"net"
@@ -43,6 +44,7 @@ const studyCAFileHash = "5d5d81ac9d7a884bf579c3cf9cc478e5b66a907b26a3356b88d4f66
 const defaultUpstream = "https://172.26.186.222:8443"
 const localName = "iitk-study.localhost"
 const accessCookie = "study_launcher_access"
+const launcherVersion = "1.9"
 
 type Bridge struct {
 	life      browserLife
@@ -127,14 +129,36 @@ func newBridge(upstream string, ca []byte, expectedHash string) (*Bridge, error)
 		ErrorHandler: func(w http.ResponseWriter, r *http.Request, err error) {
 			message := "Cannot reach the study server. Check the approved IITK connection and keep this launcher open."
 			var verification *tls.CertificateVerificationError
-			if errors.As(err, &verification) {
+			certificateError := errors.As(err, &verification)
+			if certificateError {
 				message = "The study server certificate could not be verified. Contact the study owner; verification has not been bypassed."
+			}
+			if r.Method == http.MethodGet && strings.Contains(r.Header.Get("Accept"), "text/html") &&
+				(r.URL.Path == "/" || r.URL.Path == "/login" || r.URL.Path == "/admin") {
+				connectionPage(w, message, !certificateError)
+				return
 			}
 			jsonError(w, http.StatusBadGateway, message)
 		},
 		ErrorLog: log.New(io.Discard, "", 0),
 	}
 	return b, nil
+}
+
+// Keep an open browser lease during an outage. Only safe page navigation is
+// retried: never replay a password submission, action, or recording upload.
+func connectionPage(w http.ResponseWriter, message string, retry bool) {
+	w.Header().Set("Content-Type", "text/html; charset=utf-8")
+	w.Header().Set("Cache-Control", "no-store")
+	w.Header().Set("X-Content-Type-Options", "nosniff")
+	w.Header().Set("Content-Security-Policy", "default-src 'none'; script-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'")
+	w.WriteHeader(http.StatusBadGateway)
+	refresh, status := "", "Contact the study owner before continuing."
+	if retry {
+		refresh = `<meta http-equiv="refresh" content="8;url=/login">`
+		status = "Keep this tab open. Reconnecting automatically; sign in again if asked."
+	}
+	fmt.Fprintf(w, `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">%s<title>Study connection</title><script src="/_study/client.js"></script></head><body><h1>Waiting for the study server</h1><p>%s</p><p>%s</p><p><a href="/login">Try again</a></p></body></html>`, refresh, html.EscapeString(message), status)
 }
 
 func jsonError(w http.ResponseWriter, code int, message string) {
@@ -150,6 +174,33 @@ func (b *Bridge) setOrigin(port int) {
 }
 
 func (b *Bridge) launchURL() string { return b.origin + "/_study/open/" + b.secret }
+
+// Commit a local document before navigating to login. A cross-site redirect
+// chain can omit a freshly set SameSite=Strict cookie on its next request.
+// Keep the strict cookie; start a new same-site navigation instead.
+const bootstrapPage = `<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="refresh" content="0;url=/_study/ready">
+<title>Opening IITK Study</title></head><body><h1>Opening your dashboard…</h1>
+<p>You will continue to sign in automatically.</p>
+<p><a href="/_study/ready">Continue to sign in</a></p></body></html>`
+
+func localAccessError(w http.ResponseWriter, r *http.Request) {
+	if r.Method == http.MethodGet && strings.Contains(r.Header.Get("Accept"), "text/html") {
+		w.Header().Set("Content-Type", "text/html; charset=utf-8")
+		w.Header().Set("Cache-Control", "no-store")
+		w.Header().Set("X-Content-Type-Options", "nosniff")
+		w.Header().Set("Content-Security-Policy", "default-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'")
+		w.WriteHeader(http.StatusForbidden)
+		if r.URL.Path == "/_study/ready" {
+			_, _ = io.WriteString(w, `<!doctype html><html lang="en"><meta charset="utf-8"><title>Allow the local launcher cookie</title><h1>Your browser did not retain the local access cookie.</h1><p>Allow cookies for iitk-study.localhost, then open the launcher again in Chrome or Edge.</p><p>Your saved progress has not been deleted. Do not clear browser storage.</p></html>`)
+		} else {
+			_, _ = io.WriteString(w, `<!doctype html><html lang="en"><meta charset="utf-8"><title>Open IITK Study Launcher</title><h1>Open the dashboard through its launcher.</h1><p>Open OpenDashboard again and use the browser tab it opens automatically.</p><p>This tab belongs to an earlier launcher session or a different browser profile. Your saved progress has not been deleted.</p></html>`)
+		}
+		return
+	}
+	jsonError(w, http.StatusForbidden, "Open the link printed by Study Launcher to access your local dashboard.")
+}
 
 func (b *Bridge) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	peer, _, err := net.SplitHostPort(r.RemoteAddr)
@@ -181,12 +232,15 @@ func (b *Bridge) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Referrer-Policy", "no-referrer")
 		http.SetCookie(w, &http.Cookie{Name: accessCookie, Value: b.secret, Path: "/", HttpOnly: true, SameSite: http.SameSiteStrictMode})
 		w.Header().Set("Cache-Control", "no-store")
-		http.Redirect(w, r, "/login", http.StatusSeeOther)
+		w.Header().Set("Content-Type", "text/html; charset=utf-8")
+		w.Header().Set("X-Content-Type-Options", "nosniff")
+		w.Header().Set("Content-Security-Policy", "default-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'")
+		_, _ = io.WriteString(w, bootstrapPage)
 		return
 	}
 	c, err := r.Cookie(accessCookie)
 	if err != nil || subtle.ConstantTimeCompare([]byte(c.Value), []byte(b.secret)) != 1 {
-		jsonError(w, http.StatusForbidden, "Open the link printed by Study Launcher to access your local dashboard.")
+		localAccessError(w, r)
 		return
 	}
 	if r.Header.Get("Sec-Fetch-Site") == "cross-site" || (r.Header.Get("Origin") != "" && r.Header.Get("Origin") != b.origin) {
@@ -197,10 +251,16 @@ func (b *Bridge) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		jsonError(w, http.StatusForbidden, "Use the dashboard opened on this computer.")
 		return
 	}
+	if r.Method == http.MethodGet && r.URL.Path == "/_study/ready" {
+		w.Header().Set("Cache-Control", "no-store")
+		w.Header().Set("Referrer-Policy", "no-referrer")
+		http.Redirect(w, r, "/login", http.StatusSeeOther)
+		return
+	}
 	if r.Method == http.MethodGet && r.URL.Path == "/_study/status" {
 		w.Header().Set("Content-Type", "application/json")
 		w.Header().Set("Cache-Control", "no-store")
-		_ = json.NewEncoder(w).Encode(map[string]string{"launcher": "iitk-study-launcher-v1", "upstream": b.upstream.String()})
+		_ = json.NewEncoder(w).Encode(map[string]string{"launcher": "iitk-study-launcher-v1", "upstream": b.upstream.String(), "version": launcherVersion})
 		return
 	}
 	if b.lifecycleRequest(w, r) {
@@ -451,13 +511,16 @@ func main() {
 	watchContext, stopWatching := context.WithCancel(context.Background())
 	defer stopWatching()
 	go bridge.watchBrowser(watchContext, server)
-	fmt.Println("IITK Study Launcher")
+	fmt.Println("IITK Study Launcher " + launcherVersion)
 	fmt.Println("Close all dashboard tabs when finished; this launcher then exits automatically.")
 	fmt.Println("No certificate is installed into this computer's trust stores.")
-	fmt.Println("Browser link:", bridge.launchURL())
-	if !*noOpen {
+	if *noOpen {
+		fmt.Println("Browser link:", bridge.launchURL())
+	} else {
+		fmt.Println("Opening your dashboard automatically. Sign in in the browser window.")
 		if err = openBrowser(bridge.launchURL()); err != nil {
-			fmt.Println("Open the browser link above manually in Chrome or Edge.")
+			fmt.Println("The browser could not be started. Open this private link in Chrome or Edge:")
+			fmt.Println("Browser link:", bridge.launchURL())
 		}
 	}
 	stop := make(chan os.Signal, 1)

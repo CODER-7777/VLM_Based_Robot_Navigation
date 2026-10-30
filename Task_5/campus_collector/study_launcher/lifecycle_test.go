@@ -127,3 +127,20 @@ func TestHTMLInjectionAndHeartbeatAuthorization(t *testing.T) {
 		}
 	}
 }
+
+func TestPreparingAndSignInErrorPagesTrackOpenBrowser(t *testing.T) {
+	for _, status := range []int{http.StatusUnauthorized, http.StatusForbidden, http.StatusServiceUnavailable} {
+		b, _ := fixtureBridge(t, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			w.Header().Set("Content-Type", "text/html; charset=utf-8")
+			w.Header().Set("Content-Security-Policy", "script-src 'self'")
+			w.WriteHeader(status)
+			_, _ = w.Write([]byte(`<html><meta http-equiv="refresh" content="4"><body>Preparing your collector</body></html>`))
+		}), nil, false)
+		page := httptest.NewRecorder()
+		b.ServeHTTP(page, localRequest(b, "GET", "/", nil))
+		if page.Code != status || !strings.Contains(page.Body.String(), `src="/_study/client.js"`) ||
+			page.Header().Get("Content-Security-Policy") != "script-src 'self'" {
+			t.Fatalf("HTML error page lost presence tracking or changed status/CSP: %d", status)
+		}
+	}
+}

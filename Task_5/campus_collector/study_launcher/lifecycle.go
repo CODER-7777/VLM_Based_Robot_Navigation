@@ -6,6 +6,7 @@ import (
 	_ "embed"
 	"encoding/json"
 	"errors"
+	"fmt"
 	"io"
 	"net/http"
 	"strconv"
@@ -128,7 +129,7 @@ func (b *Bridge) lifecycleRequest(w http.ResponseWriter, r *http.Request) bool {
 		}
 		w.Header().Set("Content-Type", "application/json")
 		w.Header().Set("Cache-Control", "no-store")
-		_ = json.NewEncoder(w).Encode(map[string]string{"launcher": "iitk-study-launcher-v1", "upstream": b.upstream.String()})
+		_ = json.NewEncoder(w).Encode(map[string]string{"launcher": "iitk-study-launcher-v1", "upstream": b.upstream.String(), "version": launcherVersion})
 		return true
 	}
 	if r.Method == http.MethodGet && strings.HasPrefix(r.URL.Path, "/_study/presence/") {
@@ -186,7 +187,9 @@ func (b *Bridge) lifecycleRequest(w http.ResponseWriter, r *http.Request) bool {
 func validPageID(id string) bool { return len(id) == 36 && strings.Trim(id, "abcdef0123456789-") == "" }
 
 func injectBrowserClient(r *http.Response) error {
-	if r.StatusCode != http.StatusOK || !strings.HasPrefix(strings.ToLower(r.Header.Get("Content-Type")), "text/html") {
+	// Preparing/busy pages use 503 and invalid sign-in pages use 401. They
+	// still represent an open browser tab and must keep its lease alive.
+	if (r.StatusCode != http.StatusOK && r.StatusCode < 400) || !strings.HasPrefix(strings.ToLower(r.Header.Get("Content-Type")), "text/html") {
 		return nil
 	}
 	if coding := r.Header.Get("Content-Encoding"); coding != "" && coding != "identity" {
@@ -228,6 +231,7 @@ func (b *Bridge) watchBrowser(ctx context.Context, server *http.Server) {
 			if len(b.slots) > 0 || !b.life.beginShutdown(now) {
 				continue
 			}
+			fmt.Println("Closing the local launcher after dashboard tabs disconnected.")
 			shutdown, cancel := context.WithTimeout(ctx, 10*time.Second)
 			_ = server.Shutdown(shutdown)
 			cancel()

@@ -186,7 +186,7 @@ func TestFreshLaunchRequiresLoginButRefreshKeepsSession(t *testing.T) {
 		}
 	}
 	for range 2 {
-		request("GET", "/_study/open/"+b.secret, http.StatusSeeOther)
+		request("GET", "/_study/open/"+b.secret, http.StatusOK)
 		request("GET", "/api/state", http.StatusUnauthorized)
 		request("POST", "/auth/login", http.StatusSeeOther)
 		request("GET", "/api/state", http.StatusOK)
@@ -226,7 +226,7 @@ func TestFreshLaunchWaitsForUploadAndCannotRestoreOldLogin(t *testing.T) {
 	if code := <-uploadDone; code != http.StatusOK {
 		t.Fatalf("upload interrupted: %d", code)
 	}
-	if code := <-reopenDone; code != http.StatusSeeOther {
+	if code := <-reopenDone; code != http.StatusOK {
 		t.Fatalf("reopen failed: %d", code)
 	}
 	if len(b.jar.Cookies(b.upstream)) != 0 {
@@ -308,8 +308,52 @@ func TestExternalSitesAndDNSRebindingRejected(t *testing.T) {
 	r.Header.Del("Cookie")
 	w := httptest.NewRecorder()
 	b.ServeHTTP(w, r)
-	if w.Code != 303 || !strings.Contains(w.Header().Get("Set-Cookie"), "HttpOnly; SameSite=Strict") {
+	if w.Code != 200 || !strings.Contains(w.Header().Get("Set-Cookie"), "HttpOnly; SameSite=Strict") {
 		t.Fatal("bootstrap failed", w.Code)
+	}
+}
+
+func TestBootstrapCommitsLocalDocumentBeforeLogin(t *testing.T) {
+	b, _ := fixtureBridge(t, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		t.Error("bootstrap must not contact the study server")
+	}), nil, false)
+	r := localRequest(b, "GET", "/_study/open/"+b.secret, nil)
+	r.Header.Del("Cookie")
+	r.Header.Set("Sec-Fetch-Site", "cross-site")
+	w := httptest.NewRecorder()
+	b.ServeHTTP(w, r)
+	if w.Code != http.StatusOK || w.Header().Get("Location") != "" ||
+		!strings.Contains(w.Body.String(), `content="0;url=/_study/ready"`) ||
+		!strings.Contains(w.Header().Get("Content-Security-Policy"), "default-src 'none'") {
+		t.Fatal("bootstrap must establish a local document instead of an HTTP redirect")
+	}
+	if strings.Contains(w.Body.String(), b.secret) {
+		t.Fatal("bootstrap token copied into page content")
+	}
+	cookies := w.Result().Cookies()
+	if len(cookies) != 1 || !cookies[0].HttpOnly || cookies[0].SameSite != http.SameSiteStrictMode || cookies[0].Domain != "" {
+		t.Fatal("bootstrap weakened local cookie restrictions")
+	}
+	for _, missingCookie := range []bool{true, false} {
+		r = localRequest(b, "GET", "/_study/ready", nil)
+		if missingCookie {
+			r.Header.Del("Cookie")
+		}
+		w = httptest.NewRecorder()
+		b.ServeHTTP(w, r)
+		if missingCookie && w.Code != http.StatusForbidden {
+			t.Fatal("ready endpoint bypassed local authorization")
+		}
+		if !missingCookie && (w.Code != http.StatusSeeOther || w.Header().Get("Location") != "/login") {
+			t.Fatal("authorized local document did not continue to login")
+		}
+	}
+	r = localRequest(b, "GET", "/_study/ready", nil)
+	r.Header.Set("Sec-Fetch-Site", "cross-site")
+	w = httptest.NewRecorder()
+	b.ServeHTTP(w, r)
+	if w.Code != http.StatusForbidden {
+		t.Fatal("ready endpoint accepted a cross-site request")
 	}
 }
 
@@ -341,6 +385,45 @@ func TestWrongExpiredAndDifferentHostnameCertificatesRejected(t *testing.T) {
 	}
 	if _, err := newBridge(defaultUpstream, wrongCA, studyCAFileHash); err == nil {
 		t.Fatal("tampered embedded CA accepted")
+	}
+}
+
+func TestConnectionFailureKeepsBrowserAliveWithoutReplayingWrites(t *testing.T) {
+	b, upstream := fixtureBridge(t, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {}), nil, false)
+	upstream.Close()
+	for _, test := range []struct {
+		method, path string
+		page         bool
+	}{
+		{"GET", "/login", true}, {"GET", "/", true}, {"GET", "/admin", true},
+		{"GET", "/api/state", false}, {"POST", "/auth/login", false}, {"POST", "/api/upload", false},
+	} {
+		r := localRequest(b, test.method, test.path, nil)
+		r.Header.Set("Accept", "text/html")
+		w := httptest.NewRecorder()
+		b.ServeHTTP(w, r)
+		if w.Code != 502 {
+			t.Fatalf("%s %s: %d", test.method, test.path, w.Code)
+		}
+		body := w.Body.String()
+		if test.page {
+			if !strings.Contains(body, `src="/_study/client.js"`) || !strings.Contains(body, `content="8;url=/login"`) {
+				t.Fatal("outage page must preserve presence and retry safe navigation")
+			}
+		} else if !strings.HasPrefix(w.Header().Get("Content-Type"), "application/json") || strings.Contains(body, "http-equiv") {
+			t.Fatal("API requests and writes must remain errors, without automatic replay")
+		}
+	}
+}
+
+func TestCertificateFailurePageDoesNotRetryOrBypassTrust(t *testing.T) {
+	b, _ := fixtureBridge(t, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) { t.Error("untrusted request accepted") }), nil, true)
+	r := localRequest(b, "GET", "/login", nil)
+	r.Header.Set("Accept", "text/html")
+	w := httptest.NewRecorder()
+	b.ServeHTTP(w, r)
+	if w.Code != 502 || !strings.Contains(w.Body.String(), "could not be verified") || strings.Contains(w.Body.String(), "http-equiv") {
+		t.Fatal("certificate failure must remain blocked without auto retry")
 	}
 }
 
