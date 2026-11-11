@@ -1,0 +1,347 @@
+\documentclass[a4paper,11pt]{article}
+
+% ---------- Packages ----------
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{listings}
+
+\lstset{
+  basicstyle=\ttfamily\scriptsize,
+  keywordstyle=\color{blue}\bfseries,
+  commentstyle=\color{gray}\itshape,
+  stringstyle=\color{purple!70!black},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  numbersep=6pt,
+  frame=single,
+  breaklines=true,
+  showstringspaces=false,
+  tabsize=2,
+  language=Python
+}
+
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue}
+\titlespacing*{\section}{0pt}{10pt}{4pt}
+\titlespacing*{\subsection}{0pt}{8pt}{3pt}
+\setlength{\parskip}{2pt}
+
+\title{\vspace{-1.5cm}\textbf{Iteratively Reweighted Least Squares, Probit Regression, and Bayesian Logistic Regression}}
+\author{Mansoju Vivekananda}
+\begin{document}
+\maketitle
+\vspace{-1cm}
+
+\begin{abstract}
+\noindent This report studies three closely related ideas in the classical and Bayesian treatment of generalized linear models (GLMs) for binary response data: the \emph{Iteratively Reweighted Least Squares} (IRLS) algorithm used to fit maximum-likelihood GLMs, \emph{Probit regression} as a link-function alternative to logistic regression, and \emph{Bayesian logistic regression} as a probabilistic extension that yields full posterior uncertainty over parameters. We trace the historical development of these methods, derive the IRLS update from Newton--Raphson/Fisher scoring, present the latent-variable interpretation of the probit model, and derive the Laplace approximation used for Bayesian logistic regression. A worked numerical example, generic pseudocode, and practical use cases are included.
+\end{abstract}
+
+\tableofcontents
+\vspace{0.3cm}
+
+% ======================================================
+\section{Introduction and Motivation}
+Binary classification problems  predicting whether an email is spam, whether a patient survives a treatment, or whether a bond defaults cannot be modelled well by ordinary linear regression since the response $y \in \{0,1\}$ is bounded and the fitted mean $E[y\mid x]=p(x)$ must lie in $[0,1]$. \emph{Generalized Linear Models} (GLMs) solve this by mapping a linear predictor $\eta = X\beta$ through a \emph{link function} $g(\cdot)$ so that $g(p) = \eta$ \citep{nelder1972glm}. Two of the most common choices of link for binary data are the \textbf{logit} link (giving logistic regression) and the \textbf{probit} link (giving probit regression).
+
+Unlike ordinary least squares, GLMs generally have no closed-form maximum-likelihood solution because the log-likelihood is nonlinear in $\beta$. \textbf{Iteratively Reweighted Least Squares (IRLS)} is the classical numerical technique that solves this problem efficiently by repeatedly solving a \emph{weighted} least-squares problem whose weights and working response are updated at every iteration until convergence. IRLS is, in fact, equivalent to applying Fisher's scoring method (a variant of Newton--Raphson) to the GLM log-likelihood \citep{green1984irls}.
+
+A purely frequentist (maximum-likelihood) fit gives a single point estimate $\hat\beta$ with no direct statement of uncertainty beyond asymptotic standard errors. \textbf{Bayesian logistic regression} instead treats $\beta$ as a random variable with a prior distribution $p(\beta)$, and uses Bayes' theorem to obtain a posterior distribution $p(\beta \mid y, X)$ that naturally quantifies parameter and predictive uncertainty -- particularly valuable with small data sets or when regularization is desired \citep{bishop2006pattern}.
+
+The three topics are therefore not disjoint: IRLS is the computational workhorse that fits both logistic and probit regression by maximum likelihood, while Bayesian logistic regression re-uses the same likelihood but combines it with a prior, often approximated using the same quadratic (Laplace) machinery that underlies IRLS.
+
+% ======================================================
+\section{Historical Background}
+\begin{itemize}[leftmargin=*, itemsep=0pt, topsep=2pt]
+    \item \textbf{1934:} Bliss \citep{bliss1934method} coins ``probit'' while linearizing insect dose--mortality curves with the inverse normal CDF.
+    \item \textbf{1944:} Berkson \citep{berkson1944application} popularizes the simpler logit link as a competitor to the probit.
+    \item \textbf{1972:} Nelder and Wedderburn \citep{nelder1972glm} unify logistic, probit, and other exponential-family regressions as \emph{Generalized Linear Models}, all fittable by one IRLS/Fisher-scoring algorithm.
+    \item \textbf{1990s onward:} The Laplace approximation \citep{spiegelhalter1990laplace} and later MCMC/variational methods make Bayesian logistic regression computationally practical, since the Bernoulli likelihood has no Gaussian-conjugate posterior.
+\end{itemize}
+
+% ======================================================
+\section{Iteratively Reweighted Least Squares (IRLS)}
+
+\subsection{Problem Setup}
+Consider $n$ observations $(x_i, y_i)$, $y_i \in \{0,1\}$, with linear predictor $\eta_i = x_i^\top \beta$ and mean $\mu_i = E[y_i] = g^{-1}(\eta_i)$ for an invertible link $g$. The log-likelihood for a Bernoulli response is
+\begin{equation}
+\ell(\beta) = \sum_{i=1}^n \Big[ y_i \log \mu_i + (1-y_i)\log(1-\mu_i) \Big].
+\end{equation}
+Maximizing $\ell(\beta)$ requires solving $\nabla_\beta \ell(\beta) = 0$, which is nonlinear in $\beta$ for logit/probit links, so an iterative method is required.
+
+\subsection{Newton--Raphson and Fisher Scoring}
+Newton--Raphson updates the parameter using the gradient (score) $U(\beta)=\nabla_\beta \ell$ and Hessian $H(\beta)=\nabla^2_\beta \ell$:
+\begin{equation}
+\beta^{(t+1)} = \beta^{(t)} - H(\beta^{(t)})^{-1} U(\beta^{(t)}).
+\end{equation}
+\emph{Fisher scoring} replaces $H(\beta)$ by its expectation, the negative Fisher Information $\mathcal{I}(\beta) = -E[H(\beta)]$, which is more numerically stable:
+\begin{equation}
+\beta^{(t+1)} = \beta^{(t)} + \mathcal{I}(\beta^{(t)})^{-1} U(\beta^{(t)}).
+\label{eq:fisher}
+\end{equation}
+
+\subsection{Explicit Gradient and Hessian for the Logistic Case}
+Before stating the general GLM result, it is useful to derive the score and Hessian by hand for the logistic link, since this is the case IRLS reduces to most often in practice. Let $\mu_i = \sigma(\eta_i) = 1/(1+e^{-\eta_i})$ with $\eta_i = x_i^\top\beta$. The sigmoid has the well-known self-referential derivative,
+\begin{equation}
+\frac{\partial \mu_i}{\partial \eta_i} = \mu_i(1-\mu_i),
+\end{equation}
+which follows directly from differentiating $\mu_i=(1+e^{-\eta_i})^{-1}$ with the chain rule. Since $\eta_i = \sum_j \beta_j x_{ij}$, we have $\partial \eta_i/\partial \beta_j = x_{ij}$, so by the chain rule
+\begin{equation}
+\frac{\partial \mu_i}{\partial \beta_j} = \mu_i(1-\mu_i)\,x_{ij}.
+\label{eq:dmu}
+\end{equation}
+Differentiating the log-likelihood $\ell(\beta)=\sum_i\big[y_i\log\mu_i+(1-y_i)\log(1-\mu_i)\big]$ with respect to $\beta_j$,
+\begin{equation}
+\frac{\partial \ell}{\partial \beta_j} = \sum_{i=1}^n \left(\frac{y_i}{\mu_i} - \frac{1-y_i}{1-\mu_i}\right)\frac{\partial \mu_i}{\partial\beta_j}.
+\end{equation}
+Combining the two fractions over a common denominator $\mu_i(1-\mu_i)$ gives $\dfrac{y_i - \mu_i}{\mu_i(1-\mu_i)}$, and substituting Eq.~\eqref{eq:dmu} cancels the $\mu_i(1-\mu_i)$ term exactly:
+\begin{equation}
+\frac{\partial \ell}{\partial \beta_j} = \sum_{i=1}^n \frac{y_i-\mu_i}{\mu_i(1-\mu_i)}\cdot \mu_i(1-\mu_i)\,x_{ij} = \sum_{i=1}^n (y_i-\mu_i)\,x_{ij}.
+\end{equation}
+In matrix form this is the compact score vector
+\begin{equation}
+U(\beta) = \nabla_\beta \ell = X^\top(y-\mu).
+\label{eq:score_logit}
+\end{equation}
+Differentiating $U(\beta)$ once more (again applying Eq.~\eqref{eq:dmu} to $\partial\mu_i/\partial\beta_k$) gives the Hessian entries
+\begin{equation}
+\frac{\partial^2\ell}{\partial\beta_j\partial\beta_k} = -\sum_{i=1}^n \mu_i(1-\mu_i)\,x_{ij}x_{ik}
+\quad\Longrightarrow\quad
+H(\beta) = -X^\top W X, \qquad W=\mathrm{diag}\big(\mu_i(1-\mu_i)\big).
+\label{eq:hess_logit}
+\end{equation}
+Note that $H(\beta)$ depends on $\beta$ \emph{only} through the diagonal weights $\mu_i(1-\mu_i)$, and is negative semi-definite everywhere (since $0\le\mu_i(1-\mu_i)\le \tfrac14$), which guarantees $\ell(\beta)$ is concave and Newton's method converges reliably to the unique maximum.
+
+Substituting Eqs.~\eqref{eq:score_logit}--\eqref{eq:hess_logit} into the Newton--Raphson update $\beta^{(t+1)}=\beta^{(t)}-H(\beta^{(t)})^{-1}U(\beta^{(t)})$ gives
+\begin{equation}
+\beta^{(t+1)} = \beta^{(t)} + \big(X^\top W X\big)^{-1} X^\top (y-\mu).
+\end{equation}
+Left-multiplying both sides by $(X^\top W X)$ and regrouping terms so that $\beta^{(t)}$ is absorbed inside a single bracket,
+\begin{align}
+(X^\top W X)\beta^{(t+1)} &= (X^\top W X)\beta^{(t)} + X^\top(y-\mu) \notag\\
+&= X^\top W\Big(\underbrace{X\beta^{(t)} + W^{-1}(y-\mu)}_{\textstyle =\; z}\Big),
+\end{align}
+so that
+\begin{equation}
+\beta^{(t+1)} = (X^\top W X)^{-1} X^\top W z, \qquad z = X\beta^{(t)} + W^{-1}(y-\mu),
+\label{eq:irls_logit_explicit}
+\end{equation}
+which is exactly the normal-equation solution of a \emph{weighted least-squares} regression of the adjusted response $z$ on $X$ with weights $W$ -- the defining computation of one IRLS step.
+
+\subsection{Deriving the IRLS Update (General GLM)}
+For a canonical-link GLM, define the derivative $\mu_i' = \partial \mu_i / \partial \eta_i$ and variance function $V(\mu_i) = \mathrm{Var}(y_i)$. Standard GLM theory gives the score and information as
+\begin{align}
+U(\beta) &= X^\top W D^{-1}(y - \mu), \\
+\mathcal{I}(\beta) &= X^\top W X,
+\end{align}
+where $D = \mathrm{diag}(\mu_i')$ and $W = \mathrm{diag}\!\left(\dfrac{(\mu_i')^2}{V(\mu_i)}\right)$ is a diagonal \emph{working-weight} matrix. Substituting into Eq.~\eqref{eq:fisher} and simplifying yields the compact IRLS form
+\begin{equation}
+\beta^{(t+1)} = \big(X^\top W^{(t)} X\big)^{-1} X^\top W^{(t)} z^{(t)},
+\label{eq:irls}
+\end{equation}
+where $z^{(t)}$ is the \textbf{working response}
+\begin{equation}
+z_i^{(t)} = \eta_i^{(t)} + \big(y_i - \mu_i^{(t)}\big)\,\big/\, \mu_i'^{(t)}.
+\end{equation}
+Equation \eqref{eq:irls} is exactly the weighted least-squares solution for regressing $z^{(t)}$ on $X$ with weights $W^{(t)}$ -- hence the name \emph{Iteratively Reweighted} Least Squares: at every step we solve a WLS problem, recompute $\mu, W, z$ from the new $\beta$, and repeat until $\|\beta^{(t+1)}-\beta^{(t)}\|$ is below a tolerance.
+
+For logistic regression specifically, $\mu_i=\sigma(\eta_i)=1/(1+e^{-\eta_i})$, $\mu_i'=\mu_i(1-\mu_i)$, and $V(\mu_i)=\mu_i(1-\mu_i)$, so the weights simplify to $w_i = \mu_i(1-\mu_i)$, the classic logistic IRLS weight.
+
+\subsection{Generic Pseudocode}
+\begin{algorithm}[H]
+\caption{Iteratively Reweighted Least Squares (IRLS) for GLM fitting}
+\begin{algorithmic}[1]
+\State \textbf{Input:} design matrix $X$, response vector $y$, link function $g$, tolerance $\epsilon$
+\State Initialize $\beta^{(0)}$ (e.g. all zeros, or from a rough guess)
+\State $t \gets 0$
+\Repeat
+    \State Compute linear predictor: $\eta_i \gets x_i^\top \beta^{(t)}$ for all $i$
+    \State Compute fitted mean: $\mu_i \gets g^{-1}(\eta_i)$
+    \State Compute derivative $\mu_i'$ and variance $V(\mu_i)$ for the chosen link
+    \State Form weights: $w_i \gets (\mu_i')^2 / V(\mu_i)$
+    \State Form working response: $z_i \gets \eta_i + (y_i - \mu_i)/\mu_i'$
+    \State Solve weighted least squares: $\beta^{(t+1)} \gets (X^\top W X)^{-1} X^\top W z$
+    \State $t \gets t + 1$
+\Until{$\| \beta^{(t)} - \beta^{(t-1)} \| < \epsilon$}
+\State \textbf{Output:} $\hat\beta \gets \beta^{(t)}$
+\end{algorithmic}
+\end{algorithm}
+
+Figure~\ref{fig:irls_conv} shows the qualitative behaviour of the log-likelihood across iterations: IRLS typically converges in a handful of steps because of its Newton-like (locally quadratic) convergence rate.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{figures/irls_convergence.png}
+\caption{Illustrative IRLS convergence: log-likelihood rises quickly and plateaus within a few iterations.}
+\label{fig:irls_conv}
+\end{figure}
+
+% ======================================================
+\section{Probit Regression}
+
+\subsection{Model Definition}
+Probit regression replaces the logistic (sigmoid) link with the standard normal CDF $\Phi(\cdot)$:
+\begin{equation}
+P(y_i = 1 \mid x_i) = \Phi(x_i^\top \beta) = \int_{-\infty}^{x_i^\top\beta} \frac{1}{\sqrt{2\pi}} e^{-t^2/2}\,dt.
+\end{equation}
+Figure~\ref{fig:link} compares the logit and probit link functions; they are nearly identical after rescaling ($\beta_{\text{logit}} \approx 1.6\,\beta_{\text{probit}}$) but the probit's Gaussian tails decay faster than the logistic's.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{figures/link_comparison.png}
+\caption{Logistic vs. probit link functions mapping the linear predictor to probability.}
+\label{fig:link}
+\end{figure}
+
+\subsection{Latent-Variable Interpretation}
+Probit regression has an elegant \emph{latent-variable} derivation. Suppose there is an unobserved continuous variable
+\begin{equation}
+y_i^* = x_i^\top \beta + \varepsilon_i, \qquad \varepsilon_i \sim N(0,1),
+\end{equation}
+and the observed binary outcome is a thresholded version of $y_i^*$:
+\begin{equation}
+y_i = \begin{cases} 1 & \text{if } y_i^* > 0 \\ 0 & \text{if } y_i^* \le 0 \end{cases}
+\end{equation}
+Then $P(y_i=1) = P(\varepsilon_i > -x_i^\top\beta) = \Phi(x_i^\top\beta)$, recovering the probit model exactly (Figure~\ref{fig:latent}). This interpretation is useful in econometrics, where $y_i^*$ can represent an underlying utility or willingness-to-pay that is only observed through a discrete choice.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{figures/latent_variable.png}
+\caption{Latent-variable view: the observed binary label is a threshold of an unobserved Gaussian variable.}
+\label{fig:latent}
+\end{figure}
+
+\subsection{Fitting via IRLS: Why Fisher Scoring, Not Exact Newton--Raphson}
+For the probit link the score function is
+\begin{equation}
+U(\beta) = \sum_{i=1}^n \frac{y_i-\Phi_i}{\Phi_i(1-\Phi_i)}\,\phi_i\, x_i, \qquad \Phi_i=\Phi(\eta_i),\ \ \phi_i=\phi(\eta_i),
+\end{equation}
+obtained by the same chain-rule argument as Eq.~\eqref{eq:dmu}, using $\partial \Phi_i/\partial\eta_i = \phi_i$. Differentiating $U(\beta)$ again to get the \emph{exact} Hessian requires differentiating the ratio $\phi_i/[\Phi_i(1-\Phi_i)]$, which brings in $\phi_i'=-\eta_i\phi_i$ and produces a Hessian with no clean diagonal-weight structure -- algebraically correct but unwieldy to implement or reason about. This is precisely why practitioners replace the exact Hessian $H(\beta)$ with its \emph{expectation}, the Fisher information $\mathcal{I}(\beta)=-E[H(\beta)]$ (Fisher scoring, Eq.~\eqref{eq:fisher}), which for the probit link simplifies cleanly to
+\begin{equation}
+\mathcal{I}(\beta) = X^\top W X, \qquad w_i = \frac{\phi_i^{\,2}}{\Phi_i(1-\Phi_i)}.
+\label{eq:probit_weight}
+\end{equation}
+Because $\mathcal{I}(\beta)$ again has the diagonal-weight form $X^\top W X$, substituting Eq.~\eqref{eq:probit_weight} into Eq.~\eqref{eq:irls} gives the probit maximum-likelihood estimate by the \emph{same} weighted-least-squares recipe used for logistic regression -- only the weight formula $w_i$ and working response $z_i$ change with the link function.
+
+% ======================================================
+\section{Bayesian Logistic Regression}
+
+\subsection{Motivation}
+Maximum-likelihood logistic regression returns a point estimate $\hat\beta$ and can overfit or behave unstably with separable or small data. The Bayesian approach places a prior $p(\beta)$, typically $\beta \sim N(0, \alpha^{-1} I)$, encoding a preference for small coefficients (equivalent to $L_2$ regularization), and computes the posterior
+\begin{equation}
+p(\beta \mid y, X) \;\propto\; p(y \mid X, \beta)\, p(\beta) = \left[\prod_{i=1}^n \mu_i^{y_i}(1-\mu_i)^{1-y_i}\right] \, N(\beta; 0, \alpha^{-1}I).
+\end{equation}
+Unlike linear regression with a Gaussian likelihood, the Bernoulli likelihood is not conjugate to a Gaussian prior, so the posterior has no closed form and must be approximated.
+
+\subsection{Laplace Approximation}
+The Laplace approximation fits a Gaussian to the posterior mode. Let
+\begin{equation}
+\Psi(\beta) = \log p(y\mid X,\beta) + \log p(\beta)
+\end{equation}
+be the (unnormalized) log-posterior. We find the mode $\beta_{\text{MAP}} = \arg\max_\beta \Psi(\beta)$ -- this is itself solved with a Newton/IRLS-type iteration, since $\Psi$ is the penalized log-likelihood $\ell(\beta) - \tfrac{\alpha}{2}\|\beta\|^2$. At the mode, a second-order Taylor expansion gives
+\begin{equation}
+p(\beta \mid y, X) \;\approx\; N\!\big(\beta;\, \beta_{\text{MAP}},\, S_N\big), \qquad S_N^{-1} = -\nabla^2\Psi(\beta_{\text{MAP}}) = X^\top W X + \alpha I,
+\label{eq:laplace}
+\end{equation}
+where $W=\mathrm{diag}(\mu_i(1-\mu_i))$ is precisely the IRLS weight matrix evaluated at $\beta_{\text{MAP}}$ -- so the same machinery that fits ordinary logistic regression also yields the Bayesian posterior covariance almost for free \citep{bishop2006pattern}.
+
+\subsection{Predictive Distribution}
+For a new input $x_*$, the predictive probability integrates over the posterior:
+\begin{equation}
+P(y_*=1 \mid x_*, y, X) = \int \sigma(x_*^\top \beta)\, p(\beta\mid y, X)\, d\beta \;\approx\; \sigma\!\left(\frac{\mu_*}{\sqrt{1 + \pi \sigma_*^2/8}}\right),
+\end{equation}
+where $\mu_* = x_*^\top \beta_{\text{MAP}}$ and $\sigma_*^2 = x_*^\top S_N x_*$ (the ``probit approximation'' trick, since a Gaussian-averaged sigmoid is well approximated by a rescaled probit function -- a pleasing link back to Section 4). This produces predictions that are less overconfident far from the training data than the plug-in MLE prediction $\sigma(x_*^\top\hat\beta)$.
+
+Figure~\ref{fig:bayes} illustrates schematically how an initially broad Gaussian prior over a coefficient is updated, via the likelihood, into a narrower posterior peaked near the MAP estimate.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{figures/bayes_prior_posterior.png}
+\caption{Schematic Bayesian update: broad prior $\to$ concentrated Laplace-approximated posterior.}
+\label{fig:bayes}
+\end{figure}
+
+Beyond the Laplace approximation, more accurate (but costlier) alternatives include Markov Chain Monte Carlo sampling (e.g.\ Hamiltonian Monte Carlo) and variational inference, both of which avoid the Gaussian-shape assumption at the mode.
+
+% ======================================================
+\section{Numerical Example: One IRLS Step by Hand}
+Consider three observations with a bias term and a single predictor $x$:
+\begin{equation}
+X = \begin{bmatrix} 1 & -1 \\ 1 & \phantom{-}1 \\ 1 & \phantom{-}2 \end{bmatrix}, \qquad
+y = \begin{bmatrix} 0\\0\\1 \end{bmatrix}, \qquad \beta = (\beta_0,\beta_1)^\top,\ \ \beta^{(0)}=(0,0)^\top.
+\end{equation}
+
+\textbf{Step 1: Linear predictor and fitted probabilities.}
+$\eta = X\beta^{(0)} = (0,0,0)^\top \Rightarrow \mu_i=\sigma(\eta_i)=0.5$ for all $i$, so $\mu=(0.5,0.5,0.5)^\top$.
+
+\textbf{Step 2: Weight matrix.} By Eq.~\eqref{eq:hess_logit}, $w_i=\mu_i(1-\mu_i)=0.25$, so $W=0.25\,I_3$.
+
+\textbf{Step 3: Score vector.} Using Eq.~\eqref{eq:score_logit} with $y-\mu=(-0.5,-0.5,0.5)^\top$:
+\begin{equation}
+U(\beta^{(0)}) = X^\top(y-\mu) =
+\begin{bmatrix} 1 & 1 & 1 \\ -1 & 1 & 2 \end{bmatrix}
+\begin{bmatrix} -0.5\\-0.5\\0.5 \end{bmatrix}
+= \begin{bmatrix} -0.5 \\ 1.0 \end{bmatrix}.
+\end{equation}
+
+\textbf{Step 4: Information matrix $X^\top W X$.} Since $W=0.25 I_3$ here, $X^\top W X = 0.25\,X^\top X$. Computing $X^\top X$ entrywise: $\sum 1 = 3$, $\sum x_i = -1+1+2=2$, $\sum x_i^2 = 1+1+4=6$, so
+\begin{equation}
+X^\top X = \begin{bmatrix} 3 & 2\\ 2 & 6\end{bmatrix}
+\;\Longrightarrow\;
+X^\top W X = 0.25\begin{bmatrix} 3 & 2\\ 2 & 6\end{bmatrix} = \begin{bmatrix} 0.75 & 0.5\\ 0.5 & 1.5\end{bmatrix} \;\equiv\; A.
+\end{equation}
+
+\textbf{Step 5: Hand-inverting the $2\times 2$ matrix $A$.} For $A=\begin{bmatrix}a&b\\c&d\end{bmatrix}$, the closed-form inverse is $A^{-1}=\frac{1}{\det A}\begin{bmatrix}d&-b\\-c&a\end{bmatrix}$. Here $\det A = (0.75)(1.5)-(0.5)(0.5)=1.125-0.25=0.875$, so
+\begin{equation}
+A^{-1} = \frac{1}{0.875}\begin{bmatrix} 1.5 & -0.5 \\ -0.5 & 0.75 \end{bmatrix}
+= \begin{bmatrix} 1.7143 & -0.5714 \\ -0.5714 & 0.8571 \end{bmatrix}.
+\end{equation}
+
+\textbf{Step 6: Newton/Fisher-scoring update.} Since $H(\beta^{(0)})=-A$ (Eq.~\eqref{eq:hess_logit}), the update $\beta^{(1)}=\beta^{(0)}-H^{-1}U = \beta^{(0)}+A^{-1}U$ gives
+\begin{equation}
+\beta^{(1)} = \begin{bmatrix}0\\0\end{bmatrix} +
+\begin{bmatrix} 1.7143 & -0.5714 \\ -0.5714 & 0.8571 \end{bmatrix}
+\begin{bmatrix}-0.5\\1.0\end{bmatrix}
+= \begin{bmatrix} (1.7143)(-0.5)+(-0.5714)(1.0) \\ (-0.5714)(-0.5)+(0.8571)(1.0) \end{bmatrix}
+= \begin{bmatrix}-1.43\\ \phantom{-}1.14\end{bmatrix}.
+\end{equation}
+This matches the general weighted-least-squares form of Eq.~\eqref{eq:irls_logit_explicit} exactly, since $(X^\top WX)^{-1}X^\top W z = \beta^{(0)}+(X^\top WX)^{-1}X^\top(y-\mu)$ when $\beta^{(0)}=0$. Re-evaluating $\eta=X\beta^{(1)}=(-2.57,-0.29,0.86)^\top$ gives $\mu\approx(0.071,0.428,0.702)$, already noticeably closer to $y=(0,0,1)$ than the uniform $\mu=0.5$ of the first iteration; subsequent iterations refine $\beta$ further using the same recipe until $\|\beta^{(t+1)}-\beta^{(t)}\|<\epsilon$, following the convergence pattern shown qualitatively in Figure~\ref{fig:irls_conv}.
+
+A probit fit on the same data follows an identical Fisher-scoring recipe, replacing $w_i=\mu_i(1-\mu_i)$ with the probit weight of Eq.~\eqref{eq:probit_weight}; because $\phi(0)/[\Phi(0)(1-\Phi(0))] = \sqrt{2/\pi}\approx0.798 \ne 0.25$, the first-iteration weight matrix (and hence $\beta^{(1)}$) differs numerically from the logistic case even though the algorithmic structure is identical.
+
+% ======================================================
+\section{Use Cases Across Fields}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+\item \textbf{Medicine and toxicology:} Probit models remain standard for dose-response and LD50 (median lethal dose) analysis in pharmacology, tracing back to Bliss's original insecticide studies.
+\item \textbf{Econometrics:} Probit/logit models with IRLS estimation are used for discrete-choice modelling -- labor-force participation, loan default, and binary treatment-effect models -- where the latent-utility interpretation of probit is especially natural.
+\item \textbf{Credit scoring and finance:} Logistic regression fit via IRLS is a long-standing industry standard for predicting loan default or credit-card fraud, valued for interpretability and speed.
+\item \textbf{Epidemiology:} Logistic regression models disease presence/absence as a function of risk factors (e.g.\ smoking, age), with IRLS providing fast maximum-likelihood odds-ratio estimates.
+\item \textbf{Machine learning \& NLP:} Logistic regression is a baseline classifier for text classification and spam detection; Bayesian logistic regression is used when uncertainty-aware predictions are required, e.g.\ in active learning or medical decision support.
+\item \textbf{Robotics and autonomous systems:} Bayesian binary classifiers (e.g.\ obstacle/no-obstacle, safe/unsafe manoeuvre) benefit from posterior predictive uncertainty for risk-aware planning.
+\item \textbf{A/B testing and marketing:} GLMs fit via IRLS estimate click-through/conversion probabilities as functions of user features.
+\end{itemize}
+
+% ======================================================
+\section{Conclusion}
+IRLS provides an elegant, Newton-like numerical scheme for fitting a wide class of GLMs, including both logistic and probit regression, by repeatedly solving weighted least-squares problems. Probit regression, historically the earliest of the two link choices, offers an appealing latent-variable interpretation popular in econometrics, while producing near-identical fits to logistic regression after rescaling. Bayesian logistic regression extends the same likelihood with a prior, and -- via the Laplace approximation -- reuses the very same IRLS weight matrix to obtain a tractable Gaussian approximation to the posterior, unifying all three topics under one common computational thread.
+
+% ======================================================
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\appendix
+\section{Code Used to Generate Figures 1--4}
+\label{app:code}
+All figures in this report were produced with the Python script below (\texttt{matplotlib} + \texttt{scipy.stats}). It is included for reproducibility only; no part of the numerical example or derivations depends on it.
+\lstinputlisting[language=Python]{gen_figures_appendix.py}
+
+\end{document}
