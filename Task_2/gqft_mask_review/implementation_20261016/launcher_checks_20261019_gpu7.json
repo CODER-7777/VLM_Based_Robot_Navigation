@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "gpu": "7",
+  "training_started": false,
+  "dry_run_commands_verified": 4,
+  "source_archive_unchanged": true,
+  "launcher_sha256": "939f772513bd5f099196cf816f0ee044c63b76d4f4cd228bc66d8ba8d7e5b5df"
+}

@@ -1,0 +1,194 @@
+{
+  "imported_at_utc": "2026-10-14T09:02:41.202775+00:00",
+  "canonical_local_lab": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_2/gqft_mask_review",
+  "source_files_preserved": true,
+  "verification": "SHA-256 of every copied file matched its source",
+  "files": [
+    {
+      "source": "/home/vivekananda/Downloads/gqft_mask_review/ep629/leg00/20261013T170841_769161Z/ground_truth_comparison.png",
+      "destination": "ep629/leg00/20261013T170841_769161Z/ground_truth_comparison.png",
+      "sha256": "2dba7d7831958ca044e6faf1318fe11d44bddfad5f2bb057b7c3835a1de77d90",
+      "bytes": 184318
+    },
+    {
+      "source": "/home/vivekananda/Downloads/gqft_mask_review/ep629/leg00/20261013T170841_769161Z/mask_explained.png",
+      "destination": "ep629/leg00/20261013T170841_769161Z/mask_explained.png",
+      "sha256": "b7e9d0ef99be74d15fa748b9b69d242e886c4e2c864e13c0b75f2128995ee58f",
+      "bytes": 2566912
+    },
+    {
+      "source": "/home/vivekananda/Downloads/gqft_mask_review/ep629/leg00/20261013T170841_769161Z/projection_explained.png",
+      "destination": "ep629/leg00/20261013T170841_769161Z/projection_explained.png",
+      "sha256": "2bf935f27e34369f495ab77082dd0479f5202c32e97cd3642d8624cc42e4bddc",
+      "bytes": 776428
+    },
+    {
+      "source": "/home/vivekananda/Downloads/gqft_mask_review/ep629/leg00/20261013T170841_769161Z/review.json",
+      "destination": "ep629/leg00/20261013T170841_769161Z/review.json",
+      "sha256": "60208553a2641f3ecc7b53b28344e51c74bd11ae31308dfcfe9bac49c9bbaddd",
+      "bytes": 2081
+    },
+    {
+      "source": "/home/vivekananda/Downloads/gqft_mask_review/ep629/leg02/20261013T165039_654952Z/ground_truth_comparison.png",
+      "destination": "ep629/leg02/20261013T165039_654952Z/ground_truth_comparison.png",
+      "sha256": "282bc4da968ce96b41f36cc0acb27a32501cff008f91bca21a6898e066fdfd8c",
+      "bytes": 176594
+    },
+    {
+      "source": "/home/vivekananda/Downloads/gqft_mask_review/ep629/leg02/20261013T165039_654952Z/mask_explained.png",
+      "destination": "ep629/leg02/20261013T165039_654952Z/mask_explained.png",
+      "sha256": "2810fec9946a1d7be907a2d8d1dc39a95a0712436eb36345849b58e578dcf7cb",
+      "bytes": 2422265
+    },
+    {
+      "source": "/home/vivekananda/Downloads/gqft_mask_review/ep629/leg02/20261013T165039_654952Z/projection_explained.png",
+      "destination": "ep629/leg02/20261013T165039_654952Z/projection_explained.png",
+      "sha256": "53af2339790c9891d9f5ffd2b0102dd1d697ea93ba2832f9147e57e19585cb97",
+      "bytes": 826980
+    },
+    {
+      "source": "/home/vivekananda/Downloads/gqft_mask_review/ep629/leg02/20261013T165039_654952Z/review.json",
+      "destination": "ep629/leg02/20261013T165039_654952Z/review.json",
+      "sha256": "1c61098a4bc09ca7d712437cdd2e97eb4f6ed2d91526ffd87043c7853b087d72",
+      "bytes": 2092
+    },
+    {
+      "source": "/home/vivekananda/Downloads/gqft_mask_review/ep629/leg03/20261013T165054_373912Z/ground_truth_comparison.png",
+      "destination": "ep629/leg03/20261013T165054_373912Z/ground_truth_comparison.png",
+      "sha256": "0a3f84b425e95840b34a11be6bad2e804d790baa4902f7c58cee4eb5cb8e2155",
+      "bytes": 164132
+    },
+    {
+      "source": "/home/vivekananda/Downloads/gqft_mask_review/ep629/leg03/20261013T165054_373912Z/mask_explained.png",
+      "destination": "ep629/leg03/20261013T165054_373912Z/mask_explained.png",
+      "sha256": "0a05c735232c12431fb1b99fba9bb8c8bd1afadc9d37a0da2ed1d9447ae30e62",
+      "bytes": 2730838
+    },
+    {
+      "source": "/home/vivekananda/Downloads/gqft_mask_review/ep629/leg03/20261013T165054_373912Z/projection_explained.png",
+      "destination": "ep629/leg03/20261013T165054_373912Z/projection_explained.png",
+      "sha256": "7f18a4aa521ef94701f33fa2a99c8675958dc970c82ebb5aedbfd74dc6ed0571",
+      "bytes": 995453
+    },
+    {
+      "source": "/home/vivekananda/Downloads/gqft_mask_review/ep629/leg03/20261013T165054_373912Z/review.json",
+      "destination": "ep629/leg03/20261013T165054_373912Z/review.json",
+      "sha256": "eca890534e21be15aa0544d47537fe742f5192a2581ae9e94ae218b916b98c2e",
+      "bytes": 2091
+    },
+    {
+      "source": "/home/vivekananda/Downloads/gqft_mask_review/ep629/leg04/20261013T165108_948717Z/ground_truth_comparison.png",
+      "destination": "ep629/leg04/20261013T165108_948717Z/ground_truth_comparison.png",
+      "sha256": "8898f54a4ed37cd47df6f950cb73ca2c4ca5537fcdf1a3c62364b1e83073f0df",
+      "bytes": 176179
+    },
+    {
+      "source": "/home/vivekananda/Downloads/gqft_mask_review/ep629/leg04/20261013T165108_948717Z/mask_explained.png",
+      "destination": "ep629/leg04/20261013T165108_948717Z/mask_explained.png",
+      "sha256": "5c81d1e4b840fbd1a2aa87b975cf08038ef1ae5660b92a8807bf7e0379db3c1a",
+      "bytes": 2095718
+    },
+    {
+      "source": "/home/vivekananda/Downloads/gqft_mask_review/ep629/leg04/20261013T165108_948717Z/projection_explained.png",
+      "destination": "ep629/leg04/20261013T165108_948717Z/projection_explained.png",
+      "sha256": "04cc21206a4e76e7ab2f20c3b1749916945991d9e519f1631a4b13b41cc3748b",
+      "bytes": 1068964
+    },
+    {
+      "source": "/home/vivekananda/Downloads/gqft_mask_review/ep629/leg04/20261013T165108_948717Z/review.json",
+      "destination": "ep629/leg04/20261013T165108_948717Z/review.json",
+      "sha256": "c0652b0af02c3fc9ce298fd2e1e6e626073d133155303fa05cf7c8edd364b198",
+      "bytes": 2077
+    },
+    {
+      "source": "/home/vivekananda/Downloads/gqft_ep629_leg00/20261013T170841_769161Z/episode_inputs.json",
+      "destination": "ep629/leg00/20261013T170841_769161Z/probe/episode_inputs.json",
+      "sha256": "ecff55feabed458d7d1a50b3e0ca250cc802d0a116d595c076336f4d15ade3f8",
+      "bytes": 3279
+    },
+    {
+      "source": "/home/vivekananda/Downloads/gqft_ep629_leg00/20261013T170841_769161Z/flow_searaft_160x90.npz",
+      "destination": "ep629/leg00/20261013T170841_769161Z/probe/flow_searaft_160x90.npz",
+      "sha256": "8d9e16dd2bf543f69d2e11004408aa443c2a543128a2f3512583d331be199d61",
+      "bytes": 2888605
+    },
+    {
+      "source": "/home/vivekananda/Downloads/gqft_ep629_leg00/20261013T170841_769161Z/mask_diagnostics.png",
+      "destination": "ep629/leg00/20261013T170841_769161Z/probe/mask_diagnostics.png",
+      "sha256": "5236f275609c874577ecd7fc3b46a655280e3ac8e3a0b4838538c14bc6f9ae2c",
+      "bytes": 142467
+    },
+    {
+      "source": "/home/vivekananda/Downloads/gqft_ep629_leg00/20261013T170841_769161Z/mask_maps.npz",
+      "destination": "ep629/leg00/20261013T170841_769161Z/probe/mask_maps.npz",
+      "sha256": "dfb69677f288638cfcdc9c9fed25abc28bf0871e6b1908620e951d79f4fbacdd",
+      "bytes": 16617
+    },
+    {
+      "source": "/home/vivekananda/Downloads/gqft_ep629_leg00/20261013T170841_769161Z/prediction_comparison.png",
+      "destination": "ep629/leg00/20261013T170841_769161Z/probe/prediction_comparison.png",
+      "sha256": "2214b8c9daceb2c1c79bbb747b13dfdc724071c35b6955d90e3fa63a03f8d069",
+      "bytes": 366992
+    },
+    {
+      "source": "/home/vivekananda/Downloads/gqft_ep629_leg00/20261013T170841_769161Z/probe.json",
+      "destination": "ep629/leg00/20261013T170841_769161Z/probe/probe.json",
+      "sha256": "febe2c51158a55f914ae3a225980b1f2f67d8609a1887bd5d7977a91ad5171a7",
+      "bytes": 12532
+    },
+    {
+      "source": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_2/gqft_algorithm_sharing_vivekananda/analysis/masked_attention_v1/review_ep629_leg00_20261013T170841_769161Z/inputs/00000.png",
+      "destination": "inputs/ep629/00000.png",
+      "sha256": "d21ed79c766d5f20553daae84e04afcedf34934797defa39818b5bd1dadc8cd8",
+      "bytes": 447314
+    },
+    {
+      "source": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_2/gqft_algorithm_sharing_vivekananda/analysis/masked_attention_v1/review_ep629_leg00_20261013T170841_769161Z/inputs/00008.png",
+      "destination": "inputs/ep629/00008.png",
+      "sha256": "9f9f82ab641e56b9d48c892f8a7457ef1dfffab2ccccef76b287b2d20aa0ea57",
+      "bytes": 480613
+    },
+    {
+      "source": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_2/gqft_algorithm_sharing_vivekananda/analysis/masked_attention_v1/review_ep629_leg00_20261013T170841_769161Z/inputs/00009.png",
+      "destination": "inputs/ep629/00009.png",
+      "sha256": "7aec5b9881e308211a06797609c6abcd3fbd6caddae1dc40297b0c6ba658be8b",
+      "bytes": 491881
+    },
+    {
+      "source": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_2/gqft_algorithm_sharing_vivekananda/analysis/masked_attention_v1/review_ep629_leg00_20261013T170841_769161Z/inputs/00017.png",
+      "destination": "inputs/ep629/00017.png",
+      "sha256": "f154ea0bbd007ad11f85b5e78c6dba873ce2dcb8ceeb6f80a48f1bc7e58c10cc",
+      "bytes": 614928
+    },
+    {
+      "source": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_2/gqft_algorithm_sharing_vivekananda/analysis/masked_attention_v1/review_ep629_leg00_20261013T170841_769161Z/inputs/00023.png",
+      "destination": "inputs/ep629/00023.png",
+      "sha256": "00186187c46ab52ca0d942b557e4b23e9933a5c60a86427e49a3164d6a17864a",
+      "bytes": 604290
+    },
+    {
+      "source": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_2/gqft_algorithm_sharing_vivekananda/analysis/masked_attention_v1/review_ep629_leg00_20261013T170841_769161Z/inputs/b10_A_drivefix_idx3_20260829_114756.npz",
+      "destination": "inputs/ep629/b10_A_drivefix_idx3_20260829_114756.npz",
+      "sha256": "c1e730177de78a2823e4ecf4ee8718f34106f2789946d7a679005cd04b66cfb3",
+      "bytes": 12588
+    },
+    {
+      "source": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_2/gqft_algorithm_sharing_vivekananda/experiments/masked_attention_v1/GPU7_EP629_RESULTS.json",
+      "destination": "evidence/GPU7_EP629_RESULTS.json",
+      "sha256": "2be302e0fcc55fdae9291daacc248d6d9135d89a58209b308feaca18fd25c5a3",
+      "bytes": 2735
+    },
+    {
+      "source": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_2/gqft_algorithm_sharing_vivekananda/experiments/masked_attention_v1/EP629_LEG00_REVIEW.md",
+      "destination": "evidence/EP629_LEG00_REVIEW.md",
+      "sha256": "7563f10008eeed104b4025c4920ff20b14dcae81618b4755f6a7e3ab0d6bf90f",
+      "bytes": 6707
+    },
+    {
+      "source": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_2/gqft_algorithm_sharing_vivekananda/experiments/masked_attention_v1/EPISODE_REVIEW.md",
+      "destination": "evidence/EPISODE_REVIEW.md",
+      "sha256": "b57a131f66c69beb1166270dff32740898648e8c79c9f6947fec97b307d90479",
+      "bytes": 3341
+    }
+  ]
+}

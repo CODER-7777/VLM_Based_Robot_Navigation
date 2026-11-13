@@ -1,0 +1,74 @@
+{
+  "checks": {
+    "synthetic_motion_recovered": {
+      "pass": true,
+      "detail": "max err 3.73e-09"
+    },
+    "no_floor_is_finite_zero": {
+      "pass": true,
+      "detail": "[0.0, 0.0]"
+    },
+    "default_has_no_solver_params": {
+      "pass": true,
+      "detail": ""
+    },
+    "init_equals_solver_motion": {
+      "pass": true,
+      "detail": ""
+    },
+    "init_yaw_equals_solver": {
+      "pass": true,
+      "detail": ""
+    },
+    "loss_finite": {
+      "pass": true,
+      "detail": "1.2317"
+    },
+    "gradients_reach_new_modules": {
+      "pass": true,
+      "detail": ""
+    },
+    "ground_checkpoint_strict_roundtrip": {
+      "pass": true,
+      "detail": ""
+    },
+    "warm_start_requires_head_reset": {
+      "pass": true,
+      "detail": ""
+    },
+    "warm_start_loads_encoder_resets_residual_heads": {
+      "pass": true,
+      "detail": ""
+    },
+    "warm_start_rejects_other_missing_weights": {
+      "pass": true,
+      "detail": ""
+    }
+  },
+  "episode629": {
+    "leg00": {
+      "solver_mean_m": 0.016461814329945312,
+      "solver_end_m": 0.03799681882333471,
+      "gqft_attention_yaw_mean_m": 0.10248471683954641,
+      "gqft_attention_yaw_end_m": 0.27973101728316685
+    },
+    "leg02": {
+      "solver_mean_m": 0.017595279833888172,
+      "solver_end_m": 0.030328808566511548,
+      "gqft_attention_yaw_mean_m": 0.07076827029482159,
+      "gqft_attention_yaw_end_m": 0.23303337722637713
+    },
+    "leg03": {
+      "solver_mean_m": 0.033948972979781035,
+      "solver_end_m": 0.037772253938777825,
+      "gqft_attention_yaw_mean_m": 0.03021076200715084,
+      "gqft_attention_yaw_end_m": 0.043171616512520467
+    },
+    "leg04": {
+      "solver_mean_m": 0.01686641363751588,
+      "solver_end_m": 0.028756607044264134,
+      "gqft_attention_yaw_mean_m": 0.0846582709586055,
+      "gqft_attention_yaw_end_m": 0.1910988120068965
+    }
+  }
+}

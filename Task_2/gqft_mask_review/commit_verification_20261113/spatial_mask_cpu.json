@@ -1,0 +1,12 @@
+{
+  "all_valid_matches_unmasked_exactly": true,
+  "rejected_corruption_cannot_change_token": true,
+  "attention_normalizes_only_eligible_features": true,
+  "empty_frame_zero_token_and_finite_backward": true,
+  "max_pool_excludes_rejected_extreme_features": true,
+  "confidence_threshold_uses_confidence_channel": true,
+  "temporal_causality_missing_observation_and_padding": true,
+  "cpu_bfloat16_mixed_empty_frame_forward_backward_finite": true,
+  "strict_checkpoint_restores_mask_policy_and_predictions": true,
+  "invalid_mask_configuration_rejected": true
+}

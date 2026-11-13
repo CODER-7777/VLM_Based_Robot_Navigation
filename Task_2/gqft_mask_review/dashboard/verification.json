@@ -1,0 +1,44 @@
+{
+  "checks": [
+    "All twelve embedded source images loaded offline",
+    "Four episode-629 legs available",
+    "All five real checkpoint choices available",
+    "Default leg-0 combined score matches saved predictions",
+    "Camera overlay contains rendered image and trajectories",
+    "Leg switch updates window and data",
+    "Model B switch updates saved ground-error score",
+    "Model swap updates both selections",
+    "Pose slider updates shared overlay cursor",
+    "Play advances saved poses and pauses",
+    "Ground-truth visibility control works",
+    "Full-path visibility control works",
+    "Fit-paths updates common camera viewport",
+    "Reset restores shared comparison view",
+    "Error chart switches to pixel error",
+    "Chart model visibility toggles",
+    "Scorecard row selects comparison model",
+    "Scorecard sorting works",
+    "Observations persist separately for each leg",
+    "Attention tab opens",
+    "All leg/model/pair/map attention combinations render without exceptions",
+    "Unmasked checkpoint does not invent a reliability map",
+    "Attention opacity slider works",
+    "Fixed-history validation uses preserved numeric results",
+    "Failed history gates remain visible",
+    "All validation histories and four training curves render",
+    "Metrics export includes all twenty leg/model rows",
+    "Leg export includes predictions and selected-leg identity",
+    "No JavaScript runtime errors during interaction checks"
+  ],
+  "errors": [],
+  "desktop": {
+    "width": 1720,
+    "scrollWidth": 1705
+  },
+  "offline_file_url": true,
+  "mobile": {
+    "width": 430,
+    "scrollWidth": 430,
+    "errors": []
+  }
+}

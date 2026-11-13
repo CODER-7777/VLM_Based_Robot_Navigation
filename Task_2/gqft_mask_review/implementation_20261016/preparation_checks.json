@@ -1,0 +1,8 @@
+{
+  "prepared_only": true,
+  "pilot_arms_parse": true,
+  "source_manifest_valid": true,
+  "archive_roundtrip_hashes": true,
+  "source_files": 15,
+  "archive_sha256": "3abcc4e92d3fa18926a646c147c7955928675aeafcc88bb50c8e5660de98729b"
+}

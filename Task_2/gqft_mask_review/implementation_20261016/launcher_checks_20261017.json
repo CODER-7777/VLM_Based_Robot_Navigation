@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "dry_run_only": true,
+  "gpu_used": false,
+  "training_started": false,
+  "commands_parsed": 4,
+  "steps_per_arm": 500,
+  "all_arms_same_seed_and_reset_motion_heads": true,
+  "gpu": "2",
+  "archive_hash_verified": true,
+  "launcher_sha256": "da98cb4ba8dd66978ca1527039331dfcf710ea91e725e482f80fbb2a6a3da404"
+}

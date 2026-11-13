@@ -1,0 +1,82 @@
+[
+  {
+    "episode": 629,
+    "cache_sha256": "b115aa5cee59b2e67f1f4f9a797cb23d3a508bfd73962e788b9f76deadef8416",
+    "pose_sha256": "c1e730177de78a2823e4ecf4ee8718f34106f2789946d7a679005cd04b66cfb3",
+    "source": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/full_episode_flow_cache_v1/b10_A_drivefix_idx3_20260829_114756.npz",
+    "target": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/full_episode_flow_cache_v2/b10_A_drivefix_idx3_20260829_114756_a2248d21c54bd0eff412.npz",
+    "original_RGB_only": true
+  },
+  {
+    "episode": 478,
+    "cache_sha256": "a27b480c6a1372a2b38bc27b46d4217f0e7c5378a160f05ad5fa99fb73c697ff",
+    "pose_sha256": "117c677eb7d75ec34f6dbc4aaf15ed86f65a298c50d0ba7c6d195d632ecb84ce",
+    "source": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/full_episode_flow_cache_v1/b10_A_drivefix_idx2_20260829_114756.npz",
+    "target": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/full_episode_flow_cache_v2/b10_A_drivefix_idx2_20260829_114756_4c037fea2acd3c39a2a8.npz",
+    "original_RGB_only": true
+  },
+  {
+    "episode": 753,
+    "cache_sha256": "3feca0a1534d26d80206dfd21b50ed2a525714d16f855504c2ed4fda66f720ce",
+    "pose_sha256": "5bf580fe96e4d5631cf3f27d45ebf56ef917ea917e4470efbde4725ade8f8e6e",
+    "source": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/full_episode_flow_cache_v1/b10_A_drivefix_idx1_20260829_114756.npz",
+    "target": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/full_episode_flow_cache_v2/b10_A_drivefix_idx1_20260829_114756_1c65d6e421b0e753dffb.npz",
+    "original_RGB_only": true
+  },
+  {
+    "episode": 837,
+    "cache_sha256": "7201896393562c126c41adedaacb00cdba9d7d762901d6f828c3efa4c0bfc786",
+    "pose_sha256": "5ac9a49d55bfed1a6ac7dcf14badc1a97675ad34814d076b4d569680ce0e59f8",
+    "source": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/full_episode_flow_cache_v1/b10_A_drivefix_idx0_20260829_114756.npz",
+    "target": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/full_episode_flow_cache_v2/b10_A_drivefix_idx0_20260829_114756_2a8d93f8dcf1afc76214.npz",
+    "original_RGB_only": true
+  },
+  {
+    "episode": 1031,
+    "cache_sha256": "813bb7b2d0ef085f4f285c68b32fe48685dcef42fcf70cb2a84e16c110a8e80d",
+    "pose_sha256": "75bdcbd6bd9f4242083bf198dc20f3d8dfd4c4b2cbf112afda013d0244fe5d8e",
+    "source": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/full_episode_flow_cache_v1/b10_A_drivefix_idx4_20260829_114756.npz",
+    "target": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/full_episode_flow_cache_v2/b10_A_drivefix_idx4_20260829_114756_74e8a6602eb16e93d30f.npz",
+    "original_RGB_only": true
+  },
+  {
+    "episode": 1285,
+    "cache_sha256": "4c7278abbe4d3a7e72586ee43b672d21ef6e18c7a6d9d42587ca8d55a15f2d08",
+    "pose_sha256": "571189f385bd8afd79071ada881297d7c5ffde2724f510045762c22e3505ec2e",
+    "source": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/full_episode_flow_cache_v1/b10_A_drivefix_idx7_20260829_114756.npz",
+    "target": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/full_episode_flow_cache_v2/b10_A_drivefix_idx7_20260829_114756_e0b984d3661c2e6f8fec.npz",
+    "original_RGB_only": true
+  },
+  {
+    "episode": 1395,
+    "cache_sha256": "f1eb488af182e0bb7aada38df9e9c22196ed903dacffe89b7c8175a885bdc3d9",
+    "pose_sha256": "370867420bf322bc7708cc30f32d0dc4a0ba5563bc616fdd1feb948df03a06c4",
+    "source": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/full_episode_flow_cache_v1/b10_A_drivefix_idx8_20260829_114756.npz",
+    "target": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/full_episode_flow_cache_v2/b10_A_drivefix_idx8_20260829_114756_f8ccb2253671d4f7fcdd.npz",
+    "original_RGB_only": true
+  },
+  {
+    "episode": 1481,
+    "cache_sha256": "e4f59723a8ad7aa8bd8b2243807574144619096336b0c2e48492b6995db6d6f1",
+    "pose_sha256": "ebe6420552908c676e911ea6ae57197612b98c76b3e01633072ee857dcb232db",
+    "source": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/full_episode_flow_cache_v1/b10_A_drivefix_idx5_20260829_114756.npz",
+    "target": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/full_episode_flow_cache_v2/b10_A_drivefix_idx5_20260829_114756_67ae5d7b41f751e20e28.npz",
+    "original_RGB_only": true
+  },
+  {
+    "episode": 1689,
+    "cache_sha256": "ffc9ca00170f01832e6b0802db18b5acdb2b1858393781dc1e499bc800abd502",
+    "pose_sha256": "afd43c851b589df6ff86c144f0a2705b37c58ad5cde2bb19713c2a3c11584d0e",
+    "source": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/full_episode_flow_cache_v1/b10_A_drivefix_idx6_20260829_114756.npz",
+    "target": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/full_episode_flow_cache_v2/b10_A_drivefix_idx6_20260829_114756_f565a2a56d6c0edafd56.npz",
+    "original_RGB_only": true
+  },
+  {
+    "episode": 1781,
+    "cache_sha256": "9d5fa96da5f0bd828aa09fe4120f1ffb173d97ae6cdeec1ef288e2b039e6875d",
+    "pose_sha256": "7e404225038ac49724d614a5547ca28ec3c43a65cf48397f64261ecba2eb6408",
+    "source": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/full_episode_flow_cache_v1/b10_A_drivefix_idx9_20260829_114756.npz",
+    "target": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/full_episode_flow_cache_v2/b10_A_drivefix_idx9_20260829_114756_6be5509745c1d618f56c.npz",
+    "original_RGB_only": true
+  }
+]

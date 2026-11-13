@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-13",
+  "scope": "Frozen-weight validity-mask intervention; first 24 flow pairs within each leg; no ground-truth accuracy evaluation",
+  "gpu_authorized_by_user": 7,
+  "logical_device": "cuda:0",
+  "gpu_model": "NVIDIA A40",
+  "python": "/data/robotics/toshith/envs/agentvln/bin/python",
+  "torch": "2.7.0+cu126",
+  "dtype": "float32",
+  "checkpoint": "runs/gqft_spatial_yaw_v1/best.pt",
+  "checkpoint_sha256": "40729f0f537c28e5b07565aba01133bb594c7781cc59eedf90bc3fafa939ee8d",
+  "mask_policy": {"spatial_mask": "validity", "mask_min_coverage": 0.75},
+  "training_performed": false,
+  "runs": [
+    {
+      "episode": 629, "leg": 0, "start": 0, "history": 24, "exit_code": 0,
+      "server_output": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/analysis/masked_attention_v1/episodes/ep629/leg00/20261013T164100_604034Z",
+      "empty_mask_frames": 0,
+      "mean_input_coverage": 0.8424855495492617,
+      "mean_feature_coverage": 0.8048611506819725,
+      "prediction_difference_mean_m": 0.12761302292346954
+    },
+    {
+      "episode": 629, "leg": 2, "start": 0, "history": 24, "exit_code": 0,
+      "server_output": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/analysis/masked_attention_v1/episodes/ep629/leg02/20261013T165039_654952Z",
+      "empty_mask_frames": 0,
+      "mean_input_coverage": 0.8589959715803465,
+      "mean_feature_coverage": 0.8236111601193746,
+      "prediction_difference_mean_m": 0.05466506630182266
+    },
+    {
+      "episode": 629, "leg": 3, "start": 0, "history": 24, "exit_code": 0,
+      "server_output": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/analysis/masked_attention_v1/episodes/ep629/leg03/20261013T165054_373912Z",
+      "empty_mask_frames": 0,
+      "mean_input_coverage": 0.858605350057284,
+      "mean_feature_coverage": 0.7930555914839109,
+      "prediction_difference_mean_m": 0.148394376039505
+    },
+    {
+      "episode": 629, "leg": 4, "start": 0, "history": 24, "exit_code": 0,
+      "server_output": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/analysis/masked_attention_v1/episodes/ep629/leg04/20261013T165108_948717Z",
+      "empty_mask_frames": 0,
+      "mean_input_coverage": 0.8847193494439125,
+      "mean_feature_coverage": 0.8500000437100729,
+      "prediction_difference_mean_m": 0.06351923942565918
+    }
+  ],
+  "outputs_per_run": ["episode_inputs.json", "flow_searaft_160x90.npz", "probe.json", "mask_maps.npz", "mask_diagnostics.png", "prediction_comparison.png"],
+  "interpretation": "Prediction difference is sensitivity to masking, not a trajectory-error or improvement measure. ADE/FDE and direct 3-D accuracy have not been evaluated."
+}

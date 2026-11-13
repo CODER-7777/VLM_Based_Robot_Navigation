@@ -1,0 +1,55 @@
+{
+  "experiment": "soft_attention_v1",
+  "declared_before_inference": true,
+  "checkpoint_sha256": "40729f0f537c28e5b07565aba01133bb594c7781cc59eedf90bc3fafa939ee8d",
+  "immutable_isolation_source_sha256": "1068665a21ea03eb90f5ff2f315f0a96b8547110bbcccb00eb985b5742b95dd7",
+  "primary_candidate": "soft_rf_attention",
+  "policies": [
+    "original",
+    "attention_only",
+    "soft_coarse_attention",
+    "soft_rf_attention"
+  ],
+  "reliability_floor": 0.25,
+  "formula": "p_soft(i) = p_original(i) * (0.25 + 0.75 * coverage(i)) / sum_j[p_original(j) * (0.25 + 0.75 * coverage(j))]",
+  "coverage": "Density of supplied valid, finite flow pixels; primary uses 31x31 convolution footprint with stride16 and padding15 excluding outside-image padding; coarse control uses adaptive grid bins.",
+  "constant_coverage_fallback": "Preserve original attention exactly when coverage is spatially constant, including all-valid and all-invalid frames.",
+  "max_pooling": "Unchanged per-channel maximum over all original feature cells for every policy.",
+  "cnn_inputs_and_weights": "Identical original cached inputs and frozen trained CNN weights for all policies; no additional zeroing or confidence threshold.",
+  "validation": {
+    "scene": "D7G3Y4RVNrH",
+    "split": "val",
+    "windows": 104,
+    "reference_history": 30,
+    "evaluated_history": 24,
+    "stride": 5,
+    "queries": 1,
+    "query_px": [
+      480,
+      809
+    ],
+    "seed": 20260820,
+    "target_ground_plane": "sequence_floor",
+    "dtype": "float32",
+    "origin_excluded": true,
+    "augmentation": "none"
+  },
+  "episode_diagnostics": "Same four saved episode-629 windows, used only for explanation, not selection or tuning.",
+  "selection": {
+    "primary_metric": "mean_ground_error_m",
+    "guardrails": [
+      "endpoint_ground_error_m",
+      "mean_3d_error_m",
+      "endpoint_3d_error_m",
+      "mean_pixel_error_px",
+      "last_valid_pixel_error_px"
+    ],
+    "advance_to_training_planning_only_if": "Primary candidate strictly improves aggregate validation mean ground error, has no aggregate guardrail regression, and adds no depth or prefix failures; inspect motion families. This is a screening rule, not a generalization claim.",
+    "independence": "Windows overlap within one scene. No independent held-out estimate or completed history gate is claimed.",
+    "hyperparameter_search": "None in this experiment; no floor sweep or retrospective primary-candidate change."
+  },
+  "trained": false,
+  "locked_test_access": false,
+  "gpu": "2",
+  "scope": "Analysis-only attention intervention; no production-model change and no automatic training."
+}

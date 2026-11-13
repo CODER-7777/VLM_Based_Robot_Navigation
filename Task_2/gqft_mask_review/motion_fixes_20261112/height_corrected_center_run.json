@@ -1,0 +1,15 @@
+{
+  "local": "/home/vivekananda/UGP_1_VLM/VLM_Based_Robot_Navigation/Task_2/gqft_mask_review/motion_fixes_20261112/height_corrected_center",
+  "remote": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/motion_fixes_20261112/height_corrected_center",
+  "pilot": "20261111T220751Z_gpu4",
+  "run_id": "height_corrected_center",
+  "status": "completed",
+  "physical_gpu": 4,
+  "downloaded_episodes": [
+    629,
+    753,
+    1285,
+    1395,
+    1481
+  ]
+}

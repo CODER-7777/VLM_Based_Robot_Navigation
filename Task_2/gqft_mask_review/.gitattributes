@@ -1,0 +1,11 @@
+# Keep pinned upstream/source snapshots byte-for-byte, including CRLF and tabs.
+**/repositories/** -text -whitespace
+**/source/** -text -whitespace
+**/source_initial/** -text -whitespace
+**/source_training_fix/** -text -whitespace
+SOLVER_REVIEW/gqft_algorithm_sharing_vivekananda/** -text -whitespace
+**/dashboard/browser_cdp.py -text -whitespace
+
+# Captured console output and historical patches retain their original spacing.
+**/*.txt -whitespace
+**/*.patch -text -whitespace

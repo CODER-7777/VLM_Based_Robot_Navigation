@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-17",
+  "scope": "CPU code/gradient/geometry/compatibility revalidation; not training or accuracy evaluation",
+  "trained": false,
+  "gpu_used": false,
+  "tests": {
+    "trainable_modes": {
+      "exit_code": 0,
+      "result": {
+        "passed": true,
+        "device": "cpu",
+        "torch_version": "2.12.0+cu130",
+        "checks": {
+          "calibrated_horizon_depth_prior": true,
+          "soft_ground_retains_original_max_and_normalized_attention": true,
+          "confidence_bias_direction": true,
+          "empty_hard_gate_and_nonfinite_input_finite": true,
+          "previous_yaw_sign_pitched_up_and_inverse_targets": true,
+          "rotation_has_yaw_and_translation_gradients": true,
+          "semantic_init_requires_explicit_reset_and_preserves_backbone": true,
+          "full_loss_local_nll_attention_yaw_and_delta_backward": true,
+          "local_loss_rejects_missing_frame_supervision": true,
+          "local_target_loss_and_wrapped_yaw_consistent": true,
+          "new_modes_remain_causal_and_padding_safe": true,
+          "new_modes_bfloat16_forward_backward_finite": true,
+          "strict_new_config_checkpoint_roundtrip": true,
+          "invalid_new_config_rejected": true,
+          "trainable_soft_validity_matches_frozen_real_checkpoint_probe": true
+        },
+        "trained": false,
+        "source_sha256": {
+          "step2/models/gqft.py": "f9978f476b5b58dae23ca81e2566c52ac8d40ec82d03740ffc41c7fbb013199c",
+          "step2/geometry.py": "34032df53a0265fe92c136f42fd18429de3b7f2a98d2baeace52a546c2529b5d",
+          "step2/checkpoint.py": "0684ffc336d404d1ac09ea3790c2627e7091ab4dd84049ddde64d389e9afd022",
+          "step2/train_gqft.py": "86b7dde20a8927add6b76fbaaed463e9353352fba91cb8289009b7cce23a068f",
+          "infer_gqft.py": "c679b57b3f515c4154147ef17ce81a89b2981c0211163d4bc1a8ac58bbab837e"
+        }
+      }
+    },
+    "legacy_contracts": {
+      "exit_code": 0,
+      "result": {
+        "baseline_strict_loading": true,
+        "attention_strict_loading": true,
+        "yaw_strict_loading": true,
+        "flow_no_double_normalization_and_valid_mask": true,
+        "pitch_sign_and_left_axis": {
+          "correct_forward_m": 1,
+          "legacy_wrong_forward_m": 0.5
+        },
+        "baseline_all_outputs_bit_identical": true,
+        "attention_all_outputs_bit_identical": true,
+        "yaw_all_outputs_bit_identical": true,
+        "contradictory_config_rejected": true,
+        "dataset_checks": "Skipped locally: server dataset is not present"
+      }
+    },
+    "hard_mask_regressions": {
+      "exit_code": 0,
+      "result": {
+        "all_valid_matches_unmasked_exactly": true,
+        "rejected_corruption_cannot_change_token": true,
+        "attention_normalizes_only_eligible_features": true,
+        "empty_frame_zero_token_and_finite_backward": true,
+        "max_pool_excludes_rejected_extreme_features": true,
+        "confidence_threshold_uses_confidence_channel": true,
+        "temporal_causality_missing_observation_and_padding": true,
+        "cpu_bfloat16_mixed_empty_frame_forward_backward_finite": true,
+        "strict_checkpoint_restores_mask_policy_and_predictions": true,
+        "invalid_mask_configuration_rejected": true
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+--- original/step2/ground_solver.py
++++ fixed/step2/ground_solver.py
+@@ -68,7 +68,10 @@
+             nn.init.zeros_(self.weight_net[-1].bias)
+         self._grid_cache: dict = {}
+ 
++    @torch.inference_mode(False)
+     def grid(self, h: int, w: int, device):
++        # Initial validation runs in inference_mode. Cached geometry must remain
++        # ordinary tensors so a later learned-weight solve can save it for backward.
+         key = (h, w, str(device))
+         if key not in self._grid_cache:
+             cam = self.camera
+@@ -153,5 +156,10 @@
+             uv, _ = self._project(x, body, g["R"])
+             r = (uv - obs1).square().sum(-1)
+             wsum = base_w.sum(-1)
+-            rms = (base_w * r).sum(-1).div(wsum.clamp_min(1e-6)).sqrt()
++            mean_squared = (base_w * r).sum(-1).div(wsum.clamp_min(1e-6))
++            # Padded/empty frames have exactly zero residual. sqrt'(0) is
++            # infinite, giving NaN weight-net gradients even through masked tokens.
++            # Keep a zero diagnostic at zero, with a finite derivative everywhere.
++            rms = torch.where(mean_squared > 0, mean_squared.clamp_min(1e-12).sqrt(),
++                              torch.zeros_like(mean_squared))
+         return x, {"weight_sum": wsum, "residual_rms_px": rms}

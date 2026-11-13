@@ -1,0 +1,76 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Episode 629 — trained model overlays</title><style>body{background:#13171c;color:#eee;font:16px system-ui;margin:0}main{max-width:1600px;margin:auto;padding:24px}h1{margin-bottom:8px}p{line-height:1.6}.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}.card,section{background:#202730;border-radius:10px;padding:18px;margin:20px 0}.card{margin:0}img{display:block;width:100%;height:auto;background:#fff}a{color:#8bdcff}select{font:inherit;padding:8px;background:#111820;color:white;max-width:100%}table{border-collapse:collapse;width:100%;margin:18px 0}td,th{padding:10px;border-bottom:1px solid #46505d;text-align:left}.tag{display:inline-block;padding:6px 12px;margin:4px;border:1px solid #657080;border-radius:20px}summary{cursor:pointer;padding:12px;font-weight:600}nav{position:sticky;top:0;background:#13171cf2;padding:10px;z-index:5}@media(max-width:800px){.row{grid-template-columns:1fr}main{padding:12px}table{font-size:13px}td,th{padding:6px}}</style></head><body><main>
+<h1>Episode 629: overlays from the newly trained models</h1>
+<p><b>Magenta is the recorded ground truth in every image.</b> Each image uses the same unannotated camera frame. Select a model on the right and compare it with the original pretrained model on the left.</p>
+<p>These are the first <b>24 recorded flow pairs</b> of each leg, not complete legs. No scale or rotation was fitted. The blank area below RGB is the existing extended projection canvas. X marks the endpoint; the white square is the start. Dotted lines continue beyond the analytic canvas gate.</p>
+<nav><a class="tag" href="#leg00">Leg 00</a><a class="tag" href="#leg02">Leg 02</a><a class="tag" href="#leg03">Leg 03</a><a class="tag" href="#leg04">Leg 04</a></nav>
+<p><span class="tag" style="border-color:#00bcd4">Trained reference</span><span class="tag" style="border-color:#159447">Trained soft mask</span><span class="tag" style="border-color:#7c3aed">Trained yaw-local</span><span class="tag" style="border-color:#ff8800">Trained mask + yaw-local</span><span class="tag" style="border-color:#4682b4">Original pretrained yaw</span></p>
+<section id="leg00"><h2>Leg 00</h2>
+<div class="row">
+<div class="card"><h3>Original pretrained checkpoint</h3><a href="leg00/pretrained_yaw_overlay.png"><img loading="lazy" src="leg00/pretrained_yaw_overlay.png"></a></div>
+<div class="card"><label>Choose trained model: <select data-leg="leg00" onchange="chooseModel(this)"><option value="reference">Trained reference</option><option value="masked_only">Trained soft mask</option><option value="yaw_local_only">Trained yaw-local</option><option value="masked_yaw_local" selected>Trained mask + yaw-local</option><option value="pretrained_yaw">Original pretrained yaw</option></select></label><a id="link-leg00" href="leg00/masked_yaw_local_overlay.png"><img id="image-leg00" loading="lazy" src="leg00/masked_yaw_local_overlay.png"></a></div></div>
+<table><thead><tr><th>Model</th><th>Mean ground error</th><th>Endpoint ground error</th><th>Mean pixel error</th></tr></thead><tbody>
+<tr><td style="color:#00bcd4">Trained reference</td><td>14.34 cm</td><td>36.31 cm</td><td>95.57 px</td></tr>
+<tr><td style="color:#159447">Trained soft mask</td><td>12.19 cm</td><td>32.56 cm</td><td>84.51 px</td></tr>
+<tr><td style="color:#7c3aed">Trained yaw-local</td><td>7.45 cm</td><td>10.88 cm</td><td>62.57 px</td></tr>
+<tr><td style="color:#ff8800">Trained mask + yaw-local</td><td>6.50 cm</td><td>10.51 cm</td><td>54.91 px</td></tr>
+<tr><td style="color:#4682b4">Original pretrained yaw</td><td>10.25 cm</td><td>27.97 cm</td><td>68.71 px</td></tr>
+</tbody></table><p>Use the ground error when perspective makes the pixel paths hard to judge. These short diagnostic windows do not replace the matched validation benchmark.</p>
+<details open><summary>Ground paths and errors</summary><a href="leg00/ground_paths.png"><img loading="lazy" src="leg00/ground_paths.png"></a></details>
+<details><summary>All five models on the camera image</summary><a href="leg00/comparison.png"><img loading="lazy" src="leg00/comparison.png"></a></details>
+<details><summary>Common crop of all five predictions</summary><a href="leg00/comparison_zoom.png"><img loading="lazy" src="leg00/comparison_zoom.png"></a></details>
+<details><summary>Learned attention on raw frames</summary><a href="leg00/attention_comparison.png"><img loading="lazy" src="leg00/attention_comparison.png"></a></details>
+<details><summary>Soft reliability and geometric prior</summary><a href="leg00/mask_reliability.png"><img loading="lazy" src="leg00/mask_reliability.png"></a></details>
+<p><a href="leg00/predictions.json">Exact predictions and metrics</a></p></section>
+<section id="leg02"><h2>Leg 02</h2>
+<div class="row">
+<div class="card"><h3>Original pretrained checkpoint</h3><a href="leg02/pretrained_yaw_overlay.png"><img loading="lazy" src="leg02/pretrained_yaw_overlay.png"></a></div>
+<div class="card"><label>Choose trained model: <select data-leg="leg02" onchange="chooseModel(this)"><option value="reference">Trained reference</option><option value="masked_only">Trained soft mask</option><option value="yaw_local_only">Trained yaw-local</option><option value="masked_yaw_local" selected>Trained mask + yaw-local</option><option value="pretrained_yaw">Original pretrained yaw</option></select></label><a id="link-leg02" href="leg02/masked_yaw_local_overlay.png"><img id="image-leg02" loading="lazy" src="leg02/masked_yaw_local_overlay.png"></a></div></div>
+<table><thead><tr><th>Model</th><th>Mean ground error</th><th>Endpoint ground error</th><th>Mean pixel error</th></tr></thead><tbody>
+<tr><td style="color:#00bcd4">Trained reference</td><td>6.01 cm</td><td>21.34 cm</td><td>30.91 px</td></tr>
+<tr><td style="color:#159447">Trained soft mask</td><td>6.30 cm</td><td>21.90 cm</td><td>33.57 px</td></tr>
+<tr><td style="color:#7c3aed">Trained yaw-local</td><td>2.82 cm</td><td>6.88 cm</td><td>15.29 px</td></tr>
+<tr><td style="color:#ff8800">Trained mask + yaw-local</td><td>3.59 cm</td><td>9.52 cm</td><td>14.71 px</td></tr>
+<tr><td style="color:#4682b4">Original pretrained yaw</td><td>7.08 cm</td><td>23.30 cm</td><td>31.21 px</td></tr>
+</tbody></table><p>Use the ground error when perspective makes the pixel paths hard to judge. These short diagnostic windows do not replace the matched validation benchmark.</p>
+<details open><summary>Ground paths and errors</summary><a href="leg02/ground_paths.png"><img loading="lazy" src="leg02/ground_paths.png"></a></details>
+<details><summary>All five models on the camera image</summary><a href="leg02/comparison.png"><img loading="lazy" src="leg02/comparison.png"></a></details>
+<details><summary>Common crop of all five predictions</summary><a href="leg02/comparison_zoom.png"><img loading="lazy" src="leg02/comparison_zoom.png"></a></details>
+<details><summary>Learned attention on raw frames</summary><a href="leg02/attention_comparison.png"><img loading="lazy" src="leg02/attention_comparison.png"></a></details>
+<details><summary>Soft reliability and geometric prior</summary><a href="leg02/mask_reliability.png"><img loading="lazy" src="leg02/mask_reliability.png"></a></details>
+<p><a href="leg02/predictions.json">Exact predictions and metrics</a></p></section>
+<section id="leg03"><h2>Leg 03</h2>
+<div class="row">
+<div class="card"><h3>Original pretrained checkpoint</h3><a href="leg03/pretrained_yaw_overlay.png"><img loading="lazy" src="leg03/pretrained_yaw_overlay.png"></a></div>
+<div class="card"><label>Choose trained model: <select data-leg="leg03" onchange="chooseModel(this)"><option value="reference">Trained reference</option><option value="masked_only">Trained soft mask</option><option value="yaw_local_only">Trained yaw-local</option><option value="masked_yaw_local" selected>Trained mask + yaw-local</option><option value="pretrained_yaw">Original pretrained yaw</option></select></label><a id="link-leg03" href="leg03/masked_yaw_local_overlay.png"><img id="image-leg03" loading="lazy" src="leg03/masked_yaw_local_overlay.png"></a></div></div>
+<table><thead><tr><th>Model</th><th>Mean ground error</th><th>Endpoint ground error</th><th>Mean pixel error</th></tr></thead><tbody>
+<tr><td style="color:#00bcd4">Trained reference</td><td>3.19 cm</td><td>5.26 cm</td><td>8.86 px</td></tr>
+<tr><td style="color:#159447">Trained soft mask</td><td>3.26 cm</td><td>5.71 cm</td><td>8.23 px</td></tr>
+<tr><td style="color:#7c3aed">Trained yaw-local</td><td>3.01 cm</td><td>3.66 cm</td><td>9.06 px</td></tr>
+<tr><td style="color:#ff8800">Trained mask + yaw-local</td><td>3.32 cm</td><td>4.16 cm</td><td>9.14 px</td></tr>
+<tr><td style="color:#4682b4">Original pretrained yaw</td><td>3.02 cm</td><td>4.32 cm</td><td>8.43 px</td></tr>
+</tbody></table><p>Use the ground error when perspective makes the pixel paths hard to judge. These short diagnostic windows do not replace the matched validation benchmark.</p>
+<details open><summary>Ground paths and errors</summary><a href="leg03/ground_paths.png"><img loading="lazy" src="leg03/ground_paths.png"></a></details>
+<details><summary>All five models on the camera image</summary><a href="leg03/comparison.png"><img loading="lazy" src="leg03/comparison.png"></a></details>
+<details><summary>Common crop of all five predictions</summary><a href="leg03/comparison_zoom.png"><img loading="lazy" src="leg03/comparison_zoom.png"></a></details>
+<details><summary>Learned attention on raw frames</summary><a href="leg03/attention_comparison.png"><img loading="lazy" src="leg03/attention_comparison.png"></a></details>
+<details><summary>Soft reliability and geometric prior</summary><a href="leg03/mask_reliability.png"><img loading="lazy" src="leg03/mask_reliability.png"></a></details>
+<p><a href="leg03/predictions.json">Exact predictions and metrics</a></p></section>
+<section id="leg04"><h2>Leg 04</h2>
+<div class="row">
+<div class="card"><h3>Original pretrained checkpoint</h3><a href="leg04/pretrained_yaw_overlay.png"><img loading="lazy" src="leg04/pretrained_yaw_overlay.png"></a></div>
+<div class="card"><label>Choose trained model: <select data-leg="leg04" onchange="chooseModel(this)"><option value="reference">Trained reference</option><option value="masked_only">Trained soft mask</option><option value="yaw_local_only">Trained yaw-local</option><option value="masked_yaw_local" selected>Trained mask + yaw-local</option><option value="pretrained_yaw">Original pretrained yaw</option></select></label><a id="link-leg04" href="leg04/masked_yaw_local_overlay.png"><img id="image-leg04" loading="lazy" src="leg04/masked_yaw_local_overlay.png"></a></div></div>
+<table><thead><tr><th>Model</th><th>Mean ground error</th><th>Endpoint ground error</th><th>Mean pixel error</th></tr></thead><tbody>
+<tr><td style="color:#00bcd4">Trained reference</td><td>9.86 cm</td><td>23.61 cm</td><td>25.02 px</td></tr>
+<tr><td style="color:#159447">Trained soft mask</td><td>10.16 cm</td><td>24.29 cm</td><td>26.10 px</td></tr>
+<tr><td style="color:#7c3aed">Trained yaw-local</td><td>2.92 cm</td><td>5.32 cm</td><td>8.04 px</td></tr>
+<tr><td style="color:#ff8800">Trained mask + yaw-local</td><td>4.09 cm</td><td>8.16 cm</td><td>11.19 px</td></tr>
+<tr><td style="color:#4682b4">Original pretrained yaw</td><td>8.47 cm</td><td>19.11 cm</td><td>24.38 px</td></tr>
+</tbody></table><p>Use the ground error when perspective makes the pixel paths hard to judge. These short diagnostic windows do not replace the matched validation benchmark.</p>
+<details open><summary>Ground paths and errors</summary><a href="leg04/ground_paths.png"><img loading="lazy" src="leg04/ground_paths.png"></a></details>
+<details><summary>All five models on the camera image</summary><a href="leg04/comparison.png"><img loading="lazy" src="leg04/comparison.png"></a></details>
+<details><summary>Common crop of all five predictions</summary><a href="leg04/comparison_zoom.png"><img loading="lazy" src="leg04/comparison_zoom.png"></a></details>
+<details><summary>Learned attention on raw frames</summary><a href="leg04/attention_comparison.png"><img loading="lazy" src="leg04/attention_comparison.png"></a></details>
+<details><summary>Soft reliability and geometric prior</summary><a href="leg04/mask_reliability.png"><img loading="lazy" src="leg04/mask_reliability.png"></a></details>
+<p><a href="leg04/predictions.json">Exact predictions and metrics</a></p></section>
+<p><a href="provenance.json">Checkpoints and camera provenance</a> · <a href="verification.json">Artifact verification</a> · <a href="START_HERE_overview.png">All legs contact sheet</a></p>
+<script>function chooseModel(select){const file=select.dataset.leg+'/'+select.value+'_overlay.png';document.getElementById('image-'+select.dataset.leg).src=file;document.getElementById('link-'+select.dataset.leg).href=file;}</script></main></body></html>

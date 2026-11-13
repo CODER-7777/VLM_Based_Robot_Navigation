@@ -1,0 +1,48 @@
+{
+  "output": "dashboard.html",
+  "bytes": 9882889,
+  "sha256": "aa841f19794b10e6fd3f21280d95671253426dda4f11be33a29cbc100493c389",
+  "sources": {
+    "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/provenance.json": "ab5b04f104d8947350490935f61b9bebb11f5f8388bc73ab0ed5ec0be3143aea",
+    "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/predictions.json": "36974ebee3d8d3a3fc42b0435fce8b93b79dfd62e5e29818b1e8ccff294298d5",
+    "dashboard/assets/leg00/frame_00.png": "d21ed79c766d5f20553daae84e04afcedf34934797defa39818b5bd1dadc8cd8",
+    "dashboard/assets/leg00/frame_12.png": "3357e46369d9c5adc41cec6805e5d2e4a63e35f242be69205fa3c451b1f44f32",
+    "dashboard/assets/leg00/frame_23.png": "00186187c46ab52ca0d942b557e4b23e9933a5c60a86427e49a3164d6a17864a",
+    "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/predictions.json": "00187d268d45a52204393d8e9dba530cd8d6590dc4b7bb856c55603a8ca16475",
+    "dashboard/assets/leg02/frame_00.png": "70e0519ca089fec606e31c7d23a1206c3c92dc8bfd8d6354d99fa8a0249a9014",
+    "dashboard/assets/leg02/frame_12.png": "f57b5f261afb967853712dcd9c3cc5645835ef033f8932e34bd9db6f2cf7d8bf",
+    "dashboard/assets/leg02/frame_23.png": "b487c507291051066f9d5de2ef2a058bfa2d7cdb9a3fd8ab24e48e880a788c7c",
+    "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/predictions.json": "c7cb92de0466d59d82b22d5bd76d2630b1a804896d74073615b538975f097027",
+    "dashboard/assets/leg03/frame_00.png": "b93a140aa9c988b1be380ad127a6ea68186910e41396b423ce32b0d8c75dbf29",
+    "dashboard/assets/leg03/frame_12.png": "3f89ff4ff6cb1c0d7ce27461852618c5aeeaeb2ebd2c002754620c8e55c978a1",
+    "dashboard/assets/leg03/frame_23.png": "db9d46d28b888f5271062dc905b0b19a1e820da20b9945a6bdaef4de3c2fc806",
+    "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/predictions.json": "275dcac720424fb7190e2f2a95a280df0be50c6a8c14c2cc3dd7783ede27283a",
+    "dashboard/assets/leg04/frame_00.png": "ce787b5e7a3953cba4bd7c1bbb4d500288c1e0a54572c0e8acc4a287a0271ad7",
+    "dashboard/assets/leg04/frame_12.png": "422de8db280e87091944b950d0dd06194d5fb064602bc3689532195f45001705",
+    "dashboard/assets/leg04/frame_23.png": "8701380b38fc035ab7fbcb2a487d63c5a330d4b348baadd3e0dc8e303f17c8ca",
+    "pilot_results/20261019T101035Z_431613/validation_20261019T104120Z/reference.json": "083225e82f207c328b9f35757282b61ade8d68cbbc0b95e72b7bf4987604fa7d",
+    "pilot_results/20261019T101035Z_431613/reference/metrics.jsonl": "8240937c9810498dcd8e9d3161906184421cbd996e020c37d971105b822cf553",
+    "pilot_results/20261019T101035Z_431613/validation_20261019T104120Z/masked_only.json": "c67a487f9b0390131c85b8882ae543a6f7cb82bc331abdb4c8bfe981d63d7037",
+    "pilot_results/20261019T101035Z_431613/masked_only/metrics.jsonl": "36d44e956d9f0c3bd2d288f4a90885081b91a022e479cd01108292ce56958357",
+    "pilot_results/20261019T101035Z_431613/validation_20261019T104120Z/yaw_local_only.json": "c2b2162ee87e33e05f2af570256308cd7f781493a33985ef9331f57e15885ee9",
+    "pilot_results/20261019T101035Z_431613/yaw_local_only/metrics.jsonl": "7c4e07b723831afd0928101bf84dfbe36024581e9a2e4419dfa4b647931ee550",
+    "pilot_results/20261019T101035Z_431613/validation_20261019T104120Z/masked_yaw_local.json": "26e3c83bf6716a6e019c589782f262b07282d5c2ad8d9f157cd855d7aee4b1be",
+    "pilot_results/20261019T101035Z_431613/masked_yaw_local/metrics.jsonl": "8c857c2931287bb07029d32bdae34d4e0f44d157be9ed061f27f858b28655ed0",
+    "pilot_results/20261019T101035Z_431613/validation_20261019T104120Z/pretrained_yaw.json": "7a0fa2a1497ddfaab53bc1a6befea3b138351e00f38bae5b9d5c9907f5f66bb1"
+  },
+  "episode": 629,
+  "legs": [
+    0,
+    2,
+    3,
+    4
+  ],
+  "models": [
+    "reference",
+    "masked_only",
+    "yaw_local_only",
+    "masked_yaw_local",
+    "pretrained_yaw"
+  ],
+  "training_or_inference_performed": false
+}

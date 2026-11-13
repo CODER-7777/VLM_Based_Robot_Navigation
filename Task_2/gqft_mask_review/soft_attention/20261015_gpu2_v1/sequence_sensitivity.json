@@ -1,0 +1,86 @@
+{
+  "method": "Percentile bootstrap of 26 sequence mean paired differences, preserving each sequence's four overlapping windows; 20000 draws; seed20261015.",
+  "scope": "Exploratory within-one-scene sensitivity; sequences are not independent scenes. Interval is not a locked-test or cross-scene generalization estimate.",
+  "candidate_order_predeclared": [
+    "original",
+    "attention_only",
+    "soft_coarse_attention",
+    "soft_rf_attention"
+  ],
+  "policies": {
+    "soft_coarse_attention": {
+      "sequence_count": 26,
+      "mean_ground_error_delta_m": -0.00031034168403267523,
+      "bootstrap_95_percentile_interval_m": [
+        -0.0007558406287836654,
+        3.9632390493358734e-05
+      ],
+      "sequences_ground_better_than_original": 16,
+      "sequence_deltas_m": {
+        "hsgm_D7G3Y4RVNrH_val_v000": -1.5430303047618554e-07,
+        "hsgm_D7G3Y4RVNrH_val_v001": -0.004745179981767114,
+        "hsgm_D7G3Y4RVNrH_val_v002": 5.3606499299641876e-05,
+        "hsgm_D7G3Y4RVNrH_val_v003": -0.00024239249638256062,
+        "hsgm_D7G3Y4RVNrH_val_v004": -0.00010147658840489217,
+        "hsgm_D7G3Y4RVNrH_val_v005": -0.000141526644682575,
+        "hsgm_D7G3Y4RVNrH_val_v006": 2.802885663865176e-05,
+        "hsgm_D7G3Y4RVNrH_val_v007": 0.001149952016960545,
+        "hsgm_D7G3Y4RVNrH_val_v008": -3.3116066991238646e-05,
+        "hsgm_D7G3Y4RVNrH_val_v009": -0.0005378070487161105,
+        "hsgm_D7G3Y4RVNrH_val_v010": 0.0001008419940045479,
+        "hsgm_D7G3Y4RVNrH_val_v011": -0.0008933243884489484,
+        "hsgm_D7G3Y4RVNrH_val_v012": -0.0017045943987837788,
+        "hsgm_D7G3Y4RVNrH_val_v013": 0.0003415613710965005,
+        "hsgm_D7G3Y4RVNrH_val_v014": -0.0008250009876148087,
+        "hsgm_D7G3Y4RVNrH_val_v015": -0.0005279016822475821,
+        "hsgm_D7G3Y4RVNrH_val_v016": 7.4114049493125e-05,
+        "hsgm_D7G3Y4RVNrH_val_v017": -8.788237853440614e-05,
+        "hsgm_D7G3Y4RVNrH_val_v018": 6.628607702116769e-06,
+        "hsgm_D7G3Y4RVNrH_val_v019": -0.0003137819230662163,
+        "hsgm_D7G3Y4RVNrH_val_v020": 0.0013222540612986937,
+        "hsgm_D7G3Y4RVNrH_val_v021": -9.806495438291225e-05,
+        "hsgm_D7G3Y4RVNrH_val_v022": 0.00013878962702990397,
+        "hsgm_D7G3Y4RVNrH_val_v023": -0.00043221440383119786,
+        "hsgm_D7G3Y4RVNrH_val_v024": 3.057919589029073e-05,
+        "hsgm_D7G3Y4RVNrH_val_v025": -0.0006308218173787551
+      }
+    },
+    "soft_rf_attention": {
+      "sequence_count": 26,
+      "mean_ground_error_delta_m": -8.703330833871058e-05,
+      "bootstrap_95_percentile_interval_m": [
+        -0.0002136166372752838,
+        4.316270225251806e-05
+      ],
+      "sequences_ground_better_than_original": 14,
+      "sequence_deltas_m": {
+        "hsgm_D7G3Y4RVNrH_val_v000": 3.0801724752315025e-06,
+        "hsgm_D7G3Y4RVNrH_val_v001": -0.0007148818525770295,
+        "hsgm_D7G3Y4RVNrH_val_v002": 1.5984351138222802e-05,
+        "hsgm_D7G3Y4RVNrH_val_v003": -0.00014528701540611477,
+        "hsgm_D7G3Y4RVNrH_val_v004": -9.8040374419202e-05,
+        "hsgm_D7G3Y4RVNrH_val_v005": -3.2017898663486144e-05,
+        "hsgm_D7G3Y4RVNrH_val_v006": -3.6691485789721104e-05,
+        "hsgm_D7G3Y4RVNrH_val_v007": 0.0002725101528939719,
+        "hsgm_D7G3Y4RVNrH_val_v008": 5.630028748573185e-05,
+        "hsgm_D7G3Y4RVNrH_val_v009": -0.000263365976557137,
+        "hsgm_D7G3Y4RVNrH_val_v010": 0.00016447334689616983,
+        "hsgm_D7G3Y4RVNrH_val_v011": -0.0006249125464540661,
+        "hsgm_D7G3Y4RVNrH_val_v012": -0.000603692095816971,
+        "hsgm_D7G3Y4RVNrH_val_v013": 0.0004539526628107868,
+        "hsgm_D7G3Y4RVNrH_val_v014": -0.0007012217902099861,
+        "hsgm_D7G3Y4RVNrH_val_v015": -0.000284395667390306,
+        "hsgm_D7G3Y4RVNrH_val_v016": 7.85292094847758e-05,
+        "hsgm_D7G3Y4RVNrH_val_v017": -4.012550499338935e-05,
+        "hsgm_D7G3Y4RVNrH_val_v018": 2.0805917872441723e-05,
+        "hsgm_D7G3Y4RVNrH_val_v019": -0.0002107246864870814,
+        "hsgm_D7G3Y4RVNrH_val_v020": 0.0007243535152332194,
+        "hsgm_D7G3Y4RVNrH_val_v021": 0.0002727280914799771,
+        "hsgm_D7G3Y4RVNrH_val_v022": 8.967852728488258e-05,
+        "hsgm_D7G3Y4RVNrH_val_v023": -0.00032881911892184215,
+        "hsgm_D7G3Y4RVNrH_val_v024": 4.2342791564874745e-05,
+        "hsgm_D7G3Y4RVNrH_val_v025": -0.00037342902974042864
+      }
+    }
+  }
+}

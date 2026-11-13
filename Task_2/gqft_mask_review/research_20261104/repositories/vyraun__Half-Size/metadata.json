@@ -1,0 +1,81 @@
+{
+  "repository": "vyraun/Half-Size",
+  "url": "https://github.com/vyraun/Half-Size",
+  "checked_utc": "2026-11-04T12:21:10.076005+00:00",
+  "execution": "Source inspected as text only; no install, model download or execution.",
+  "http_status": 200,
+  "default_branch": "master",
+  "description": "Code for \"Effective Dimensionality Reduction for Word Embeddings\".",
+  "archived": false,
+  "license": null,
+  "homepage": "",
+  "commit_sha": "6391b59ef808721c1bb9dc71c4f7845409e4c1ad",
+  "tree_paths": [
+    "20newsgroup.py",
+    "README.md",
+    "algo.py",
+    "all_wordsim.py",
+    "data/word-sim/EN-MC-30.txt",
+    "data/word-sim/EN-MEN-TR-3k.txt",
+    "data/word-sim/EN-MTurk-287.txt",
+    "data/word-sim/EN-MTurk-771.txt",
+    "data/word-sim/EN-RG-65.txt",
+    "data/word-sim/EN-RW-STANFORD.txt",
+    "data/word-sim/EN-SIMLEX-999.txt",
+    "data/word-sim/EN-VERB-143.txt",
+    "data/word-sim/EN-WS-353-ALL.txt",
+    "data/word-sim/EN-WS-353-REL.txt",
+    "data/word-sim/EN-WS-353-SIM.txt",
+    "data/word-sim/EN-YP-130.txt",
+    "datasets.txt",
+    "downstream_datasets/20ng-test-no-stop.txt",
+    "downstream_datasets/20ng-train-no-stop.txt",
+    "downstream_datasets/r52-test-no-stop.txt",
+    "downstream_datasets/r52-train-no-stop.txt",
+    "downstream_datasets/r8-test-no-stop.txt",
+    "downstream_datasets/r8-train-no-stop.txt",
+    "imdb_test.py",
+    "new_embeddings.py",
+    "pca_ppa.py",
+    "pca_simple.py",
+    "ppa_pca.py",
+    "ranking.py",
+    "ranking.pyc",
+    "read_write.py",
+    "read_write.pyc",
+    "reuters52.py",
+    "reuters8.py",
+    "wordsim.py"
+  ],
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "README.md",
+      "status": "downloaded for static reading",
+      "url": "https://github.com/vyraun/Half-Size/blob/6391b59ef808721c1bb9dc71c4f7845409e4c1ad/README.md",
+      "sha256": "6a836548488f73b80e4af88551ac3edbde269d47f4754990c363782c311cb648",
+      "bytes": 2643
+    },
+    {
+      "path": "20newsgroup.py",
+      "status": "downloaded for static reading",
+      "url": "https://github.com/vyraun/Half-Size/blob/6391b59ef808721c1bb9dc71c4f7845409e4c1ad/20newsgroup.py",
+      "sha256": "c5b2fe8a223d13d4c983a1d5e8e7a09c6a101eda21df951af86820b32527299b",
+      "bytes": 4476
+    },
+    {
+      "path": "algo.py",
+      "status": "downloaded for static reading",
+      "url": "https://github.com/vyraun/Half-Size/blob/6391b59ef808721c1bb9dc71c4f7845409e4c1ad/algo.py",
+      "sha256": "09935653816de3b312cb0360d7cd6b644d462dd49a0a5bc458ba5a9d1ee431a9",
+      "bytes": 1954
+    },
+    {
+      "path": "all_wordsim.py",
+      "status": "downloaded for static reading",
+      "url": "https://github.com/vyraun/Half-Size/blob/6391b59ef808721c1bb9dc71c4f7845409e4c1ad/all_wordsim.py",
+      "sha256": "a190ac23a724223b4647c5bfd7f977826a35fcba75dc173e486bb64aa0641d56",
+      "bytes": 1219
+    }
+  ]
+}

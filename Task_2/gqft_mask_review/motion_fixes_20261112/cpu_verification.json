@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "central_floor_joint_recovers_synthetic_motion": true,
+    "far_ray_branch_recovers_pure_yaw": true,
+    "pure_yaw_does_not_invent_translation": true,
+    "empty_directional_support_finite_zero": true,
+    "translation_excludes_noncentral_cells": true,
+    "rolling_history_never_restarts_after_warmup": true,
+    "rolling_emits_each_newest_step_once": true,
+    "rolling_integration_preserves_vertical_motion": true,
+    "chunk_and_rolling_equal_for_context_invariant_motion": true,
+    "quality_gate_rejects_poor_empty_nonfinite_solver": true,
+    "fallback_is_exact_independent_neural_motion": true,
+    "absolute_upstairs_floor_is_not_clearance_error": true,
+    "height_audit_measures_mesh_clearance": true,
+    "mp3d_axis_conversion_is_fixed_right_handed": true,
+    "height_plan_preserves_recorded_xz_yaw": true,
+    "height_plan_camera_is_mount_above_measured_floor": true,
+    "height_plan_rejects_uncertain_support": true,
+    "runtime_center_control_preserves_all_checkpoint_parameters": true
+  },
+  "passed": 18,
+  "total": 18,
+  "scope": "Synthetic CPU contracts, not real-data improvement"
+}

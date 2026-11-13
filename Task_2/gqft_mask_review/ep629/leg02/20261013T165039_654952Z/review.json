@@ -1,0 +1,48 @@
+{
+  "source_probe": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/analysis/masked_attention_v1/episodes/ep629/leg02/20261013T165039_654952Z",
+  "poses_file": "/data/robotics/toshith/flowvo_compare/poses/b10_A_drivefix_idx3_20260829_114756.npz",
+  "episode_id": 629,
+  "leg": 2,
+  "start_episode_frame": 140,
+  "history_flow_pairs": 24,
+  "metrics_origin_excluded": true,
+  "reference_convention": "Recorded world x/z/yaw poses from build_poses.py; constant-height rendered rig from render_frames.py; no fitted scale/rotation",
+  "scope": "Single recorded episode window, not a validation benchmark or trained-mask result",
+  "mean_rejected_input_fraction": 0.14100402841965354,
+  "mean_rejected_feature_fraction": 0.17638883988062537,
+  "mean_original_attention_on_rejected_cells": 0.025066830217838287,
+  "worst_rejected_attention_frame": 7,
+  "max_original_attention_on_rejected_cells": 0.06589734554290771,
+  "reference_endpoint_forward_left_m": [
+    0.3126246646583231,
+    -0.589242071435372
+  ],
+  "valid_post_origin_pixel_points": 24,
+  "metrics": {
+    "unmasked": {
+      "mean_ground_error_m": 0.07076827029482159,
+      "endpoint_ground_error_m": 0.23303337722637713,
+      "mean_pixel_error_px": 31.21064897213185,
+      "endpoint_pixel_error_px": 94.17246259682534,
+      "accepted_prefix_points": 25,
+      "first_prefix_failure_pose": null,
+      "endpoint_forward_left_m": [
+        0.4635994708367501,
+        -0.41172823309898376
+      ]
+    },
+    "masked": {
+      "mean_ground_error_m": 0.07101595746859254,
+      "endpoint_ground_error_m": 0.17740131798951445,
+      "mean_pixel_error_px": 27.197435705184272,
+      "endpoint_pixel_error_px": 52.64339440430762,
+      "accepted_prefix_points": 25,
+      "first_prefix_failure_pose": null,
+      "endpoint_forward_left_m": [
+        0.32186387650666015,
+        -0.4120815098285675
+      ]
+    }
+  },
+  "plot_note": "The previous plot used a cumulative validity prefix, hiding later masked points after pose 2 left the canvas. New plots show raw finite predictions separately from that gate."
+}

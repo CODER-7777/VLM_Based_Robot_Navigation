@@ -1,0 +1,184 @@
+{
+  "scope": "Four 24-pair windows of one recorded episode; frozen checkpoint; not a validation benchmark",
+  "windows": 4,
+  "scored_post_origin_pose_samples": 96,
+  "aggregation": "Equal-window means; equal 24-pose counts also make mean errors equal to pooled per-pose means. Endpoint errors are four-window means.",
+  "positive_change_means": "higher error, worse",
+  "aggregate": {
+    "mean_ground_error_m": {
+      "unmasked": 0.07203050502503108,
+      "masked": 0.12569602875989588,
+      "change_percent": 74.50388375899304
+    },
+    "endpoint_ground_error_m": {
+      "unmasked": 0.18675870575724024,
+      "masked": 0.3058373296724222,
+      "change_percent": 63.760681694789234
+    },
+    "mean_pixel_error_px": {
+      "unmasked": 33.1817383623091,
+      "masked": 43.38026239833802,
+      "change_percent": 30.735351851286218
+    },
+    "endpoint_pixel_error_px": {
+      "unmasked": 69.05356185716637,
+      "masked": 71.7798240195527,
+      "change_percent": 3.948039882469012
+    }
+  },
+  "records": [
+    {
+      "episode": 629,
+      "leg": 0,
+      "history": 24,
+      "review_file": "ep629/leg00/20261013T170841_769161Z/review.json",
+      "reference_endpoint_forward_left_m": [
+        0.21602366768475167,
+        0.7122360384321049
+      ],
+      "unmasked": {
+        "mean_ground_error_m": 0.10248471683954641,
+        "endpoint_ground_error_m": 0.27973101728316685,
+        "mean_pixel_error_px": 68.71083646522223,
+        "endpoint_pixel_error_px": 139.23889238728796,
+        "accepted_prefix_points": 25,
+        "first_prefix_failure_pose": null,
+        "endpoint_forward_left_m": [
+          0.39881786254432633,
+          0.5004915595054626
+        ]
+      },
+      "masked": {
+        "mean_ground_error_m": 0.10964574179494839,
+        "endpoint_ground_error_m": 0.3429264305272962,
+        "mean_pixel_error_px": 52.40903252964018,
+        "endpoint_pixel_error_px": 107.76978427377655,
+        "accepted_prefix_points": 2,
+        "first_prefix_failure_pose": 2,
+        "endpoint_forward_left_m": [
+          0.13526862587080304,
+          0.37895363569259644
+        ]
+      },
+      "mean_rejected_input_fraction": 0.1575144504507383,
+      "mean_rejected_feature_fraction": 0.1951388493180275,
+      "mean_original_attention_on_rejected_cells": 0.1745588183403015,
+      "max_original_attention_on_rejected_cells": 0.8365340828895569
+    },
+    {
+      "episode": 629,
+      "leg": 2,
+      "history": 24,
+      "review_file": "ep629/leg02/20261013T165039_654952Z/review.json",
+      "reference_endpoint_forward_left_m": [
+        0.3126246646583231,
+        -0.589242071435372
+      ],
+      "unmasked": {
+        "mean_ground_error_m": 0.07076827029482159,
+        "endpoint_ground_error_m": 0.23303337722637713,
+        "mean_pixel_error_px": 31.21064897213185,
+        "endpoint_pixel_error_px": 94.17246259682534,
+        "accepted_prefix_points": 25,
+        "first_prefix_failure_pose": null,
+        "endpoint_forward_left_m": [
+          0.4635994708367501,
+          -0.41172823309898376
+        ]
+      },
+      "masked": {
+        "mean_ground_error_m": 0.07101595746859254,
+        "endpoint_ground_error_m": 0.17740131798951445,
+        "mean_pixel_error_px": 27.197435705184272,
+        "endpoint_pixel_error_px": 52.64339440430762,
+        "accepted_prefix_points": 25,
+        "first_prefix_failure_pose": null,
+        "endpoint_forward_left_m": [
+          0.32186387650666015,
+          -0.4120815098285675
+        ]
+      },
+      "mean_rejected_input_fraction": 0.14100402841965354,
+      "mean_rejected_feature_fraction": 0.17638883988062537,
+      "mean_original_attention_on_rejected_cells": 0.025066830217838287,
+      "max_original_attention_on_rejected_cells": 0.06589734554290771
+    },
+    {
+      "episode": 629,
+      "leg": 3,
+      "history": 24,
+      "review_file": "ep629/leg03/20261013T165054_373912Z/review.json",
+      "reference_endpoint_forward_left_m": [
+        1.1149089504319343,
+        -0.04278056860453881
+      ],
+      "unmasked": {
+        "mean_ground_error_m": 0.03021076200715084,
+        "endpoint_ground_error_m": 0.043171616512520467,
+        "mean_pixel_error_px": 8.428992473232322,
+        "endpoint_pixel_error_px": 6.4295046083491725,
+        "accepted_prefix_points": 25,
+        "first_prefix_failure_pose": null,
+        "endpoint_forward_left_m": [
+          1.0797428550025394,
+          -0.06782321631908417
+        ]
+      },
+      "masked": {
+        "mean_ground_error_m": 0.18135713618889207,
+        "endpoint_ground_error_m": 0.4555098916242705,
+        "mean_pixel_error_px": 44.83724007336182,
+        "endpoint_pixel_error_px": 76.69889744217744,
+        "accepted_prefix_points": 25,
+        "first_prefix_failure_pose": null,
+        "endpoint_forward_left_m": [
+          0.6597410673715713,
+          -0.025132350623607635
+        ]
+      },
+      "mean_rejected_input_fraction": 0.141394649942716,
+      "mean_rejected_feature_fraction": 0.20694440851608908,
+      "mean_original_attention_on_rejected_cells": 0.2376537173986435,
+      "max_original_attention_on_rejected_cells": 0.9813323616981506
+    },
+    {
+      "episode": 629,
+      "leg": 4,
+      "history": 24,
+      "review_file": "ep629/leg04/20261013T165108_948717Z/review.json",
+      "reference_endpoint_forward_left_m": [
+        0.9392890450809652,
+        0.20660783954575276
+      ],
+      "unmasked": {
+        "mean_ground_error_m": 0.0846582709586055,
+        "endpoint_ground_error_m": 0.1910988120068965,
+        "mean_pixel_error_px": 24.37647553865,
+        "endpoint_pixel_error_px": 36.37338783620302,
+        "accepted_prefix_points": 25,
+        "first_prefix_failure_pose": null,
+        "endpoint_forward_left_m": [
+          0.7985068246534349,
+          0.3358329236507416
+        ]
+      },
+      "masked": {
+        "mean_ground_error_m": 0.1407652795871505,
+        "endpoint_ground_error_m": 0.24751167854860773,
+        "mean_pixel_error_px": 49.0773412851658,
+        "endpoint_pixel_error_px": 50.00721995794924,
+        "accepted_prefix_points": 25,
+        "first_prefix_failure_pose": null,
+        "endpoint_forward_left_m": [
+          0.7167876929589361,
+          0.3150291442871094
+        ]
+      },
+      "mean_rejected_input_fraction": 0.1152806505560875,
+      "mean_rejected_feature_fraction": 0.14999995628992713,
+      "mean_original_attention_on_rejected_cells": 0.0784827172756195,
+      "max_original_attention_on_rejected_cells": 0.9812272191047668
+    }
+  ],
+  "conclusion": "The current hard validity mask worsens pooled ground and pixel errors. Leg 2 improves endpoint error, while leg 3 has a severe forward-motion regression."
+}

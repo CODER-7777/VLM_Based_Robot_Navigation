@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "torch_version": "2.12.0+cu130",
+  "checks": {
+    "calibrated_horizon_depth_prior": true,
+    "soft_ground_retains_original_max_and_normalized_attention": true,
+    "confidence_bias_direction": true,
+    "empty_hard_gate_and_nonfinite_input_finite": true,
+    "previous_yaw_sign_pitched_up_and_inverse_targets": true,
+    "rotation_has_yaw_and_translation_gradients": true,
+    "semantic_init_requires_explicit_reset_and_preserves_backbone": true,
+    "full_loss_local_nll_attention_yaw_and_delta_backward": true,
+    "local_loss_rejects_missing_frame_supervision": true,
+    "local_target_loss_and_wrapped_yaw_consistent": true,
+    "new_modes_remain_causal_and_padding_safe": true,
+    "new_modes_bfloat16_forward_backward_finite": true,
+    "strict_new_config_checkpoint_roundtrip": true,
+    "invalid_new_config_rejected": true,
+    "trainable_soft_validity_matches_frozen_real_checkpoint_probe": true
+  },
+  "trained": false,
+  "source_sha256": {
+    "step2/models/gqft.py": "97de835cfe359d90b22ac47dffe178592fa4a9119e05596c475fcabca50f63de",
+    "step2/geometry.py": "34032df53a0265fe92c136f42fd18429de3b7f2a98d2baeace52a546c2529b5d",
+    "step2/checkpoint.py": "5454765fc3cacfa552b727995e375a8faf301ba9afbfcdc7a2f32ed0c02428f5",
+    "step2/train_gqft.py": "966fa5c7cb96d8997c6e26d7cf4ee5ab5259c382d47dda1c952fb0d0035418ff",
+    "infer_gqft.py": "c679b57b3f515c4154147ef17ce81a89b2981c0211163d4bc1a8ac58bbab837e"
+  }
+}

@@ -1,0 +1,5 @@
+hsgm /data/robotics/toshith/envs/hsgm/bin/python None
+ 
+CONDA_ROOT /home/guest-isl/.anaconda
+CONDA_ROOT /home/guest-isl/.conda
+CONDA_ROOT /data/robotics/toshith/conda_pkgs

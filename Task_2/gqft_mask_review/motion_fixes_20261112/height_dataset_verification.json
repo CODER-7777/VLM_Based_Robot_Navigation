@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "episodes": 5,
+  "frames": 2880,
+  "rows": [
+    {
+      "episode": 753,
+      "frames": 521,
+      "original_poses_sha256": "5bf580fe96e4d5631cf3f27d45ebf56ef917ea917e4470efbde4725ade8f8e6e",
+      "corrected_poses_sha256": "a140d0c123314270c723fa5c54b2c5fd94f5dcabc0c5beca6527adcbfc2ef8c8",
+      "render": {
+        "episode": 753,
+        "original_poses_sha256": "5bf580fe96e4d5631cf3f27d45ebf56ef917ea917e4470efbde4725ade8f8e6e",
+        "audit_sha256": "b61267064a132398401e52db1610dee7b486dcbe15de4aacab86fe170510bf20",
+        "target_mount_height_m": 1.2,
+        "frames_expected": 521,
+        "frames_rendered": 521,
+        "complete": true,
+        "prepared_only": false,
+        "height_source": "Mesh-reconstructed vertical trajectory; not the original lost world-Y log"
+      },
+      "checked": "Frame coverage, preserved X/Z/yaw/legs/camera intrinsics, finite support, 1.2m estimated clearance"
+    },
+    {
+      "episode": 629,
+      "frames": 418,
+      "original_poses_sha256": "c1e730177de78a2823e4ecf4ee8718f34106f2789946d7a679005cd04b66cfb3",
+      "corrected_poses_sha256": "9032d7ac7f7501362a6820193d2d44dbd32b1efda1c710e7fed4eff05d58dcb0",
+      "render": {
+        "episode": 629,
+        "original_poses_sha256": "c1e730177de78a2823e4ecf4ee8718f34106f2789946d7a679005cd04b66cfb3",
+        "audit_sha256": "034bb3bce615c11b9ed043a3e2774105e65de8bf173922a3ca65b4f3d3983d80",
+        "target_mount_height_m": 1.2,
+        "frames_expected": 418,
+        "frames_rendered": 418,
+        "complete": true,
+        "prepared_only": false,
+        "height_source": "Mesh-reconstructed vertical trajectory; not the original lost world-Y log"
+      },
+      "checked": "Frame coverage, preserved X/Z/yaw/legs/camera intrinsics, finite support, 1.2m estimated clearance"
+    },
+    {
+      "episode": 1481,
+      "frames": 382,
+      "original_poses_sha256": "ebe6420552908c676e911ea6ae57197612b98c76b3e01633072ee857dcb232db",
+      "corrected_poses_sha256": "af091b9c4c26c2f9be6f22658aeb5131b4aaeded9f8d5bf4de72d7c9db64da43",
+      "render": {
+        "episode": 1481,
+        "original_poses_sha256": "ebe6420552908c676e911ea6ae57197612b98c76b3e01633072ee857dcb232db",
+        "audit_sha256": "bfc09e3e0c23778211ae19897f2044f9627a799bfeeaa67b2941f1c14188b35b",
+        "target_mount_height_m": 1.2,
+        "frames_expected": 382,
+        "frames_rendered": 382,
+        "complete": true,
+        "prepared_only": false,
+        "height_source": "Mesh-reconstructed vertical trajectory; not the original lost world-Y log"
+      },
+      "checked": "Frame coverage, preserved X/Z/yaw/legs/camera intrinsics, finite support, 1.2m estimated clearance"
+    },
+    {
+      "episode": 1285,
+      "frames": 1431,
+      "original_poses_sha256": "571189f385bd8afd79071ada881297d7c5ffde2724f510045762c22e3505ec2e",
+      "corrected_poses_sha256": "81d7ab8d583444c3cb2b03d030cc96e35142d7683a12f57f6f41a696a9e624f8",
+      "render": {
+        "episode": 1285,
+        "original_poses_sha256": "571189f385bd8afd79071ada881297d7c5ffde2724f510045762c22e3505ec2e",
+        "audit_sha256": "52206916aee7007ef285390ce869ca500e4ee2d7f8281c51eb7e4eb9c32c7f70",
+        "target_mount_height_m": 1.2,
+        "frames_expected": 1431,
+        "frames_rendered": 1431,
+        "complete": true,
+        "prepared_only": false,
+        "height_source": "Mesh-reconstructed vertical trajectory; not the original lost world-Y log"
+      },
+      "checked": "Frame coverage, preserved X/Z/yaw/legs/camera intrinsics, finite support, 1.2m estimated clearance"
+    },
+    {
+      "episode": 1395,
+      "frames": 128,
+      "original_poses_sha256": "370867420bf322bc7708cc30f32d0dc4a0ba5563bc616fdd1feb948df03a06c4",
+      "corrected_poses_sha256": "9eb4d33c4efe9b658f0dce7f8bb893263cc25cd195b07083a18e884e9a6e40d7",
+      "render": {
+        "episode": 1395,
+        "original_poses_sha256": "370867420bf322bc7708cc30f32d0dc4a0ba5563bc616fdd1feb948df03a06c4",
+        "audit_sha256": "54ee352e6ca275663cc7b992435c31a8301c72f5c3227642bb566157f482338c",
+        "target_mount_height_m": 1.2,
+        "frames_expected": 128,
+        "frames_rendered": 128,
+        "complete": true,
+        "prepared_only": false,
+        "height_source": "Mesh-reconstructed vertical trajectory; not the original lost world-Y log"
+      },
+      "checked": "Frame coverage, preserved X/Z/yaw/legs/camera intrinsics, finite support, 1.2m estimated clearance"
+    }
+  ],
+  "scope": "Reconstructed-support consistency; not semantic floor certification"
+}

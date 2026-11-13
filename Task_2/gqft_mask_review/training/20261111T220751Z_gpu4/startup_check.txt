@@ -1,0 +1,23 @@
+{
+  "status": "training",
+  "pid": 1851617,
+  "started_utc": "2026-11-11T22:11:45.486476+00:00",
+  "gpu_physical": 4,
+  "steps_per_arm": 500,
+  "completed_arms": [],
+  "current_arm": "yaw_local_reference",
+  "current_log": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/ground_pilots/20261111T220751Z_gpu4/yaw_local_reference/train.log",
+  "updated_utc": "2026-11-11T22:11:45.565236+00:00"
+}
+
+controller.log 
+ 
+yaw_local_reference/train.log 
+ VAL {"step": 0, "ade_px": 57905.58400491019, "fde_px": 62794.60056093656, "length_mae": 1.0576923076923077, "endpoint_5px": 0.007692307692307693, "endpoint_10px": 0.019230769230769232, "visible_points": 2354, "queries": 260}
+TRAIN {"step": 20, "epoch": 0, "loss": 66.62144621610642, "motion": 0.07284765583463013, "path": 23.49753198781982, "endpoint": 42.822704455815256, "visibility": 0.00023638464444957207, "motion_nll": 0.00031704690045444297, "yaw": 0.004873475660861004, "grad_norm": 14.020923614501953, "lr": 8e-05, "finite_streak": 20, "time": 1794435114.1470258}
+TRAIN {"step": 40, "epoch": 0, "loss": 0.1565150280483067, "motion": 0.02784784388495609, "path": 0.018120557931251825, "endpoint": 0.02510966481640935, "visibility": 6.599459184144507e-05, "motion_nll": -0.1924420528113842, "yaw": 0.005749516429204959, "grad_norm": 4.459235668182373, "lr": 0.00016, "finite_streak": 40, "time": 1794435115.3637857}
+TRAIN {"step": 60, "epoch": 0, "loss": 0.18481022519990803, "motion": 0.037214564112946394, "path": 0.015275302389636636, "endpoint": 0.02339595896191895, "visibility": 1.560955886361626e-05, "motion_nll": -0.6492708548903465, "yaw": 0.014870173018425702, "grad_norm": 6.615307331085205, "lr": 0.0001997685847746833, "finite_streak": 60, "time": 1794435116.6376855}
+TRAIN {"step": 80, "epoch": 0, "loss": 0.10585831999778747, "motion": 0.027999517414718865, "path": 0.012026590819004923, "endpoint": 0.015923860180191696, "visibility": 6.475511531789379e-06, "motion_nll": -1.478475946187973, "yaw": 0.019915988435968757, "grad_norm": 8.843249320983887, "lr": 0.00019792402206971155, "finite_streak": 80, "time": 1794435117.8707013}
+index, name, memory.used [MiB], utilization.gpu [%]
+4, NVIDIA A40, 3323 MiB, 10 %
+

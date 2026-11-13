@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": [
+    "original_token_bit_exact",
+    "hard_attention_control_bit_exact",
+    "max_pool_bit_exact_all_policies",
+    "soft_weights_normalized_and_finite",
+    "equivalent_log_prior_formula",
+    "no_positive_original_weight_hard_rejected",
+    "all_valid_recovers_original_bit_exact",
+    "all_invalid_constant_coverage_recovers_original_bit_exact",
+    "equal_attention_reliability_odds_1_to_4"
+  ],
+  "device": "cpu",
+  "torch_version": "2.12.0+cu130",
+  "runner_sha256": "66b062726c36e428aaf280d0432c236ca8aa7c5af973728d39939701a4d4b228",
+  "plan_sha256": "7703ddf098f9ab5f7bfa935907d5251b06cf4b18daab532ab50387cd40792e72"
+}

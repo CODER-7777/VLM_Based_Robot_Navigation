@@ -1,0 +1,79 @@
+{
+  "repository": "JiahuiYu/generative_inpainting",
+  "url": "https://github.com/JiahuiYu/generative_inpainting",
+  "checked_utc": "2026-11-04T12:20:35.338076+00:00",
+  "execution": "Source inspected as text only; no install, model download or execution.",
+  "http_status": 200,
+  "default_branch": "master",
+  "description": "DeepFill v1/v2 with Contextual Attention and Gated Convolution, CVPR 2018, and ICCV 2019 Oral",
+  "archived": false,
+  "license": {
+    "key": "other",
+    "name": "Other",
+    "spdx_id": "NOASSERTION",
+    "url": null,
+    "node_id": "MDc6TGljZW5zZTA="
+  },
+  "homepage": "http://jiahuiyu.com/deepfill/",
+  "commit_sha": "3a5324373ba52c68c79587ca183bc10b9e57b783",
+  "tree_paths": [
+    ".gitignore",
+    "LICENSE",
+    "README.md",
+    "batch_test.py",
+    "examples/places2/case1_input.png",
+    "examples/places2/case1_mask.png",
+    "examples/places2/case1_output.png",
+    "examples/places2/case1_raw.png",
+    "examples/places2/case2_input.png",
+    "examples/places2/case2_mask.png",
+    "examples/places2/case2_output.png",
+    "examples/places2/case2_raw.png",
+    "examples/places2/case3_input.png",
+    "examples/places2/case3_mask.png",
+    "examples/places2/case3_output.png",
+    "examples/places2/case3_raw.png",
+    "examples/places2/case4_input.png",
+    "examples/places2/case4_mask.png",
+    "examples/places2/case4_output.png",
+    "examples/places2/case4_raw.png",
+    "examples/places2/case5_input.png",
+    "examples/places2/case5_mask.png",
+    "examples/places2/case5_output.png",
+    "examples/places2/case5_raw.png",
+    "examples/places2/case6_input.png",
+    "examples/places2/case6_mask.png",
+    "examples/places2/case6_output.png",
+    "examples/places2/case6_raw.png",
+    "guided_batch_test.py",
+    "inpaint.yml",
+    "inpaint_model.py",
+    "inpaint_ops.py",
+    "test.py",
+    "train.py"
+  ],
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "README.md",
+      "status": "downloaded for static reading",
+      "url": "https://github.com/JiahuiYu/generative_inpainting/blob/3a5324373ba52c68c79587ca183bc10b9e57b783/README.md",
+      "sha256": "800394372ccf8d79cf2cf659cd6e9a43de94e070edfc7d106d3d4ca783baf0b7",
+      "bytes": 5028
+    },
+    {
+      "path": "inpaint_ops.py",
+      "status": "downloaded for static reading",
+      "url": "https://github.com/JiahuiYu/generative_inpainting/blob/3a5324373ba52c68c79587ca183bc10b9e57b783/inpaint_ops.py",
+      "sha256": "f438947065f3858356d274dff7860ef45eaccac7ca478de49200f8f74510d2a7",
+      "bytes": 18316
+    },
+    {
+      "path": "LICENSE",
+      "status": "downloaded for static reading",
+      "url": "https://github.com/JiahuiYu/generative_inpainting/blob/3a5324373ba52c68c79587ca183bc10b9e57b783/LICENSE",
+      "sha256": "a3897840f7b401b0fb83628764086851938982878b3a789dc0077673c50f86f2",
+      "bytes": 17696
+    }
+  ]
+}

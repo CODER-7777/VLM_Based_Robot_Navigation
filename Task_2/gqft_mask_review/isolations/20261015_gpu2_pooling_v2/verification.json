@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checks": [
+    "104_validation_and_4_episode_windows",
+    "all_six_policy_aggregates_recomputed",
+    "2496_validation_and_96_episode_shared_pixel_points",
+    "zero_input_and_feature_preprocessing_change",
+    "bit_exact_production_encoder_equivalence",
+    "bit_exact_saved_episode_predictions",
+    "four_local_neighbour_positive_and_outside_zero_controls",
+    "gpu2_only",
+    "no_training_or_test_access",
+    "executed_source_hash_matches_server"
+  ],
+  "artifact_sha256": {
+    "isolations/20261015_gpu2_pooling_v2/restored_cells_paths.png": "5ac28e5d0a8b6706dff66047201d1f58be472183e330f1034ff0f73e7403578c",
+    "isolations/20261015_gpu2_pooling_v2/neighbour_support.png": "95405b4b085cab71cb471e29e6e1f0a07c4ef68227dc70775eefc319b89146ba",
+    "isolations/20261015_gpu2_pooling_v2/validation/pooling_ablation.png": "0e15ee4e106c717d45104b68bf05c652dd4b377e49fe5b8e4d59fe059aaff940",
+    "isolations/20261015_gpu2_pooling_v2/validation/windows.jsonl": "4be253910f9854f95bf82283934b6d452b1bf1c40737685ce324538d56f81ea6",
+    "isolations/20261015_gpu2_pooling_v2/validation/report.json": "a9522cb9ea0c7edca173f0225875608d5c0e6a632bca797afedb703a640c7fd2",
+    "isolations/20261015_gpu2_pooling_v2/episodes/pooling_ablation.png": "7f0e6975f8d339d87f992a5369ed2a334891f45854ff399099d0e87d8355063f",
+    "isolations/20261015_gpu2_pooling_v2/episodes/windows.jsonl": "cb9e42dad7d16c9c0e10c80a21599c8f65573fc80a64c4519375ec7504649e88",
+    "isolations/20261015_gpu2_pooling_v2/episodes/report.json": "35464962b3cb078238cbd7d308f6361249daa8c50f2cc2896b639902a71504a2"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "repository": "NVIDIA/partialconv",
+  "url": "https://github.com/NVIDIA/partialconv",
+  "checked_utc": "2026-11-04T12:20:35.339082+00:00",
+  "execution": "Source inspected as text only; no install, model download or execution.",
+  "http_status": 200,
+  "default_branch": "master",
+  "description": "A New Padding Scheme: Partial Convolution based Padding",
+  "archived": false,
+  "license": {
+    "key": "other",
+    "name": "Other",
+    "spdx_id": "NOASSERTION",
+    "url": null,
+    "node_id": "MDc6TGljZW5zZTA="
+  },
+  "homepage": null,
+  "commit_sha": "610d373f35257887d45adae84c86d0ce7ad808ec",
+  "tree_paths": [
+    "LICENSE",
+    "README.MD",
+    "imgs/compare_all_padding.png",
+    "imgs/compare_with_zero_padding.png",
+    "imgs/compare_with_zero_padding_bar.png",
+    "imgs/compare_zero_padding_table.png",
+    "main.py",
+    "models/__init__.py",
+    "models/loss.py",
+    "models/partialconv2d.py",
+    "models/partialconv3d.py",
+    "models/pd_resnet.py",
+    "models/pd_vgg.py"
+  ],
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "README.MD",
+      "status": "downloaded for static reading",
+      "url": "https://github.com/NVIDIA/partialconv/blob/610d373f35257887d45adae84c86d0ce7ad808ec/README.MD",
+      "sha256": "7578fea2adcbaab9ac35ad4f1f19b16296a40d868d60243523c262d5ad077dd0",
+      "bytes": 7203
+    },
+    {
+      "path": "models/partialconv2d.py",
+      "status": "downloaded for static reading",
+      "url": "https://github.com/NVIDIA/partialconv/blob/610d373f35257887d45adae84c86d0ce7ad808ec/models/partialconv2d.py",
+      "sha256": "ca92d642523b7b18e56c981d6198e29e6b7cdbfa7469b3a07f5f93e741435116",
+      "bytes": 3539
+    },
+    {
+      "path": "LICENSE",
+      "status": "downloaded for static reading",
+      "url": "https://github.com/NVIDIA/partialconv/blob/610d373f35257887d45adae84c86d0ce7ad808ec/LICENSE",
+      "sha256": "4a98876f6f9ad4e5935acf20db6c1f82db7c0928f3d6381f99199184b306eca8",
+      "bytes": 3211
+    }
+  ]
+}

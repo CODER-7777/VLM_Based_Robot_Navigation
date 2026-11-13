@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "reports": [
+    {
+      "collection": "all_episodes_20261111T223221Z",
+      "episodes_rendered": 1,
+      "legs_rendered": 7,
+      "full_episode_views": 1,
+      "png_images": 41,
+      "all_expected_episodes": true,
+      "all_expected_legs": true,
+      "prediction_file_hashes_verified": true,
+      "inference_performed_locally": false,
+      "scope": "Frozen model trajectories; includes full recordings and per-leg resets; no fitted alignment",
+      "gallery_bytes": 1482392
+    },
+    {
+      "collection": "height_corrected_center",
+      "episodes_rendered": 1,
+      "legs_rendered": 7,
+      "full_episode_views": 1,
+      "png_images": 41,
+      "all_expected_episodes": true,
+      "all_expected_legs": true,
+      "prediction_file_hashes_verified": true,
+      "inference_performed_locally": false,
+      "scope": "Frozen model trajectories; includes full recordings and per-leg resets; no fitted alignment",
+      "gallery_bytes": 1447342
+    },
+    {
+      "collection": "original_rgb_center",
+      "episodes_rendered": 1,
+      "legs_rendered": 7,
+      "full_episode_views": 1,
+      "png_images": 41,
+      "all_expected_episodes": true,
+      "all_expected_legs": true,
+      "prediction_file_hashes_verified": true,
+      "inference_performed_locally": false,
+      "scope": "Frozen model trajectories; includes full recordings and per-leg resets; no fitted alignment",
+      "gallery_bytes": 1483484
+    }
+  ],
+  "models_loaded": false,
+  "gpu_used": false
+}

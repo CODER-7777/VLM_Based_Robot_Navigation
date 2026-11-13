@@ -1,0 +1,43 @@
+# Keep checkpoints, external caches and retained transfer backups local.
+/transfers/
+**/.cache/
+**/cache/
+**/matplotlib/
+**/plot_cache/
+**/__pycache__/
+**/dashboard_revisions/
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.npy
+*.tar
+*.gz
+*.log
+*.jsonl
+*.pyc
+
+# Full solver PNG sets and embedded galleries are regenerated from saved arrays.
+**/original_rgb_center/index.html
+**/height_corrected_center/index.html
+**/all_episodes_20261111T223221Z/index.html
+**/ep*/**/*.png
+**/gallery_preview_*.png
+**/comparison_preview_*.png
+**/review_preview_*.png
+/dashboard.html
+
+# Preserve compact keyframes and pose contracts needed for offline rendering.
+!**/keyframe.jpg
+!**/inputs/poses/*.npz
+
+# Curated figures, historical mask evidence and requested GIFs are intentional.
+!SOLVER_REVIEW/highlights/*.png
+!SOLVER_REVIEW/highlights/*.pdf
+!SOLVER_REVIEW/gifs_original_solver/*_final.png
+!SOLVER_REVIEW/masked_attention/**/*.png
+!SOLVER_REVIEW/user_review_images/*.png
+!ep629/**/*.png
+!isolations/**/*.png
+!soft_attention/**/*.png
+!trained_episode_overlays/20261019T101035Z_431613/**/*.png

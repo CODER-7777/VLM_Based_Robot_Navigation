@@ -1,0 +1,92 @@
+[
+  {
+    "episode": 629,
+    "arm": "yaw_local_reference",
+    "original_rgb_center_cm": 80.34620138671286,
+    "corrected_rgb_center_cm": 91.94039530837581
+  },
+  {
+    "episode": 629,
+    "arm": "solver_residual",
+    "original_rgb_center_cm": 23.257827532806285,
+    "corrected_rgb_center_cm": 7.7071425250838255
+  },
+  {
+    "episode": 629,
+    "arm": "solver_learned_weights",
+    "original_rgb_center_cm": 33.007343435789075,
+    "corrected_rgb_center_cm": 31.477118060762933
+  },
+  {
+    "episode": 753,
+    "arm": "yaw_local_reference",
+    "original_rgb_center_cm": 23.628948058283576,
+    "corrected_rgb_center_cm": 74.97121764264901
+  },
+  {
+    "episode": 753,
+    "arm": "solver_residual",
+    "original_rgb_center_cm": 48.54935515831366,
+    "corrected_rgb_center_cm": 18.57908617825788
+  },
+  {
+    "episode": 753,
+    "arm": "solver_learned_weights",
+    "original_rgb_center_cm": 38.236244104148284,
+    "corrected_rgb_center_cm": 38.238179748810005
+  },
+  {
+    "episode": 1285,
+    "arm": "yaw_local_reference",
+    "original_rgb_center_cm": 202.8577774119983,
+    "corrected_rgb_center_cm": 219.85253925865086
+  },
+  {
+    "episode": 1285,
+    "arm": "solver_residual",
+    "original_rgb_center_cm": 130.72294333324527,
+    "corrected_rgb_center_cm": 107.24429426047091
+  },
+  {
+    "episode": 1285,
+    "arm": "solver_learned_weights",
+    "original_rgb_center_cm": 120.21714723807723,
+    "corrected_rgb_center_cm": 103.06714302601144
+  },
+  {
+    "episode": 1395,
+    "arm": "yaw_local_reference",
+    "original_rgb_center_cm": 12.46758947770113,
+    "corrected_rgb_center_cm": 20.909352279179945
+  },
+  {
+    "episode": 1395,
+    "arm": "solver_residual",
+    "original_rgb_center_cm": 8.14557252704272,
+    "corrected_rgb_center_cm": 5.260471594373066
+  },
+  {
+    "episode": 1395,
+    "arm": "solver_learned_weights",
+    "original_rgb_center_cm": 4.177552252843517,
+    "corrected_rgb_center_cm": 9.475731870356755
+  },
+  {
+    "episode": 1481,
+    "arm": "yaw_local_reference",
+    "original_rgb_center_cm": 170.0766417034764,
+    "corrected_rgb_center_cm": 165.44367936178185
+  },
+  {
+    "episode": 1481,
+    "arm": "solver_residual",
+    "original_rgb_center_cm": 28.72247210040444,
+    "corrected_rgb_center_cm": 25.775289320190463
+  },
+  {
+    "episode": 1481,
+    "arm": "solver_learned_weights",
+    "original_rgb_center_cm": 36.09316463906888,
+    "corrected_rgb_center_cm": 40.723757615726036
+  }
+]

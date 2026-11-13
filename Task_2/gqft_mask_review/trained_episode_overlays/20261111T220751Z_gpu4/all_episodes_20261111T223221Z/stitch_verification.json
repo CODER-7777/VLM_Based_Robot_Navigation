@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "chunk_stitch_matches_continuous_known_motion": true,
+    "all_frames_preserved_including_short_tail": true,
+    "predicted_heading_accumulates": true,
+    "vertical_component_preserved": true,
+    "origin_projects_to_trained_query": true
+  },
+  "max_displacement_error_m": 1.4604103712456684e-07
+}
