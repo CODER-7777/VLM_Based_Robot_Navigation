@@ -1,0 +1,3190 @@
+{
+  "summary": {
+    "episode": 753,
+    "scene": "mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+    "pose_file": "/data/robotics/toshith/flowvo_compare/poses/b10_A_drivefix_idx1_20260829_114756.npz",
+    "legacy_agent_y": 0.35480260848999023,
+    "camera_mount_m": 1.2,
+    "legacy_camera_world_y": 1.5548026084899902,
+    "frames": 521,
+    "status_counts": {
+      "measured": 521
+    },
+    "clearance_median_m": 1.4362685708989147,
+    "clearance_p05_m": 1.3465301421672298,
+    "clearance_p95_m": 1.4854632060873967,
+    "height_mismatch_fraction_of_measured": 1.0,
+    "source_mesh_bounds": [
+      [
+        -17.675395965576172,
+        -18.037343978881836,
+        -3.445194959640503
+      ],
+      [
+        11.672539710998535,
+        26.977994918823242,
+        4.734117031097412
+      ]
+    ],
+    "habitat_mesh_bounds": [
+      [
+        -17.675395965576172,
+        -3.445194959640503,
+        -26.977994918823242
+      ],
+      [
+        11.672539710998535,
+        4.734117031097412,
+        18.037343978881836
+      ]
+    ],
+    "selection_scope": "Geometry audit only; episode837 remains excluded from model/threshold selection"
+  },
+  "frames": [
+    {
+      "floor_y": 0.2085025933193164,
+      "camera_clearance_m": 1.3463000151706739,
+      "support_spread_m": 0.0036807799169998046,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2085025933193164,
+      "camera_clearance_m": 1.3463000151706739,
+      "support_spread_m": 0.0036807799169998046,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2085025933193164,
+      "camera_clearance_m": 1.3463000151706739,
+      "support_spread_m": 0.0036807799169998046,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2085025933193164,
+      "camera_clearance_m": 1.3463000151706739,
+      "support_spread_m": 0.0036807799169998046,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2085025933193164,
+      "camera_clearance_m": 1.3463000151706739,
+      "support_spread_m": 0.0036807799169998046,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2085025933193164,
+      "camera_clearance_m": 1.3463000151706739,
+      "support_spread_m": 0.0036807799169998046,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2085025933193164,
+      "camera_clearance_m": 1.3463000151706739,
+      "support_spread_m": 0.0036807799169998046,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2085025933193164,
+      "camera_clearance_m": 1.3463000151706739,
+      "support_spread_m": 0.0036807799169998046,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2085025933193164,
+      "camera_clearance_m": 1.3463000151706739,
+      "support_spread_m": 0.0036807799169998046,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2085025933193164,
+      "camera_clearance_m": 1.3463000151706739,
+      "support_spread_m": 0.0036807799169998046,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2085025933193164,
+      "camera_clearance_m": 1.3463000151706739,
+      "support_spread_m": 0.0036807799169998046,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2085025933193164,
+      "camera_clearance_m": 1.3463000151706739,
+      "support_spread_m": 0.0036807799169998046,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2085025933193164,
+      "camera_clearance_m": 1.3463000151706739,
+      "support_spread_m": 0.0036807799169998046,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2085025933193164,
+      "camera_clearance_m": 1.3463000151706739,
+      "support_spread_m": 0.0036807799169998046,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2085025933193164,
+      "camera_clearance_m": 1.3463000151706739,
+      "support_spread_m": 0.0036807799169998046,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2085025933193164,
+      "camera_clearance_m": 1.3463000151706739,
+      "support_spread_m": 0.0036807799169998046,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2085025933193164,
+      "camera_clearance_m": 1.3463000151706739,
+      "support_spread_m": 0.0036807799169998046,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2085025933193164,
+      "camera_clearance_m": 1.3463000151706739,
+      "support_spread_m": 0.0036807799169998046,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2085025933193164,
+      "camera_clearance_m": 1.3463000151706739,
+      "support_spread_m": 0.0036807799169998046,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2085025933193164,
+      "camera_clearance_m": 1.3463000151706739,
+      "support_spread_m": 0.0036807799169998046,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2085025933193164,
+      "camera_clearance_m": 1.3463000151706739,
+      "support_spread_m": 0.0036807799169998046,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2085025933193164,
+      "camera_clearance_m": 1.3463000151706739,
+      "support_spread_m": 0.0036807799169998046,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.20845631507991036,
+      "camera_clearance_m": 1.3463462934100798,
+      "support_spread_m": 0.0037161082236526477,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.20845551025646505,
+      "camera_clearance_m": 1.346347098233525,
+      "support_spread_m": 0.003716569469768005,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2084507781231711,
+      "camera_clearance_m": 1.3463518303668192,
+      "support_spread_m": 0.0037189884858522815,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.20840179784618065,
+      "camera_clearance_m": 1.3464008106438095,
+      "support_spread_m": 0.0037270262622227934,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2082724663227604,
+      "camera_clearance_m": 1.3465301421672298,
+      "support_spread_m": 0.0037270262622227657,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.20740605134980822,
+      "camera_clearance_m": 1.347396557140182,
+      "support_spread_m": 0.003751657231182426,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.20698242542257095,
+      "camera_clearance_m": 1.3478201830674192,
+      "support_spread_m": 0.0039273753165689484,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.20692316359868315,
+      "camera_clearance_m": 1.347879444891307,
+      "support_spread_m": 0.003954700246127957,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.20683558233807872,
+      "camera_clearance_m": 1.3479670261519114,
+      "support_spread_m": 0.00398844389251396,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2066704083778429,
+      "camera_clearance_m": 1.3481322001121474,
+      "support_spread_m": 0.003990514579107984,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.20660117389620133,
+      "camera_clearance_m": 1.348201434593789,
+      "support_spread_m": 0.003990514579107984,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.20618537227592654,
+      "camera_clearance_m": 1.3486172362140636,
+      "support_spread_m": 0.003990514579107984,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2057100768392912,
+      "camera_clearance_m": 1.349092531650699,
+      "support_spread_m": 0.003990514579107984,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.20474791260005462,
+      "camera_clearance_m": 1.3500546958899355,
+      "support_spread_m": 0.003990514579108012,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.20467863547404436,
+      "camera_clearance_m": 1.3501239730159458,
+      "support_spread_m": 0.003990514579107984,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2046121432737333,
+      "camera_clearance_m": 1.3501904652162569,
+      "support_spread_m": 0.003990514579107984,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2045553097918765,
+      "camera_clearance_m": 1.3502472986981138,
+      "support_spread_m": 0.003990514579107984,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.20429675433408762,
+      "camera_clearance_m": 1.3505058541559025,
+      "support_spread_m": 0.003990514579108012,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.20385252602429124,
+      "camera_clearance_m": 1.350950082465699,
+      "support_spread_m": 0.00399051457910804,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2031872553032465,
+      "camera_clearance_m": 1.3516153531867436,
+      "support_spread_m": 0.003990514579108012,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.20267464495382587,
+      "camera_clearance_m": 1.3521279635361643,
+      "support_spread_m": 0.003990514579108012,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.20228186297078704,
+      "camera_clearance_m": 1.3525207455192032,
+      "support_spread_m": 0.003990514579107984,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.20168259277202488,
+      "camera_clearance_m": 1.3531200157179653,
+      "support_spread_m": 0.003990514579107984,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.2006273981257324,
+      "camera_clearance_m": 1.3541752103642577,
+      "support_spread_m": 0.003990514579108012,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19919863902805196,
+      "camera_clearance_m": 1.3556039694619382,
+      "support_spread_m": 0.004071474682100978,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19735166828548475,
+      "camera_clearance_m": 1.3574509402045054,
+      "support_spread_m": 0.004582941761028886,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19509865009287888,
+      "camera_clearance_m": 1.3597039583971113,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19401371197214207,
+      "camera_clearance_m": 1.360788896517848,
+      "support_spread_m": 0.004731945160639711,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19368288018276025,
+      "camera_clearance_m": 1.36111972830723,
+      "support_spread_m": 0.004731945160639711,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19294940654495654,
+      "camera_clearance_m": 1.3618532019450336,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19180839165122696,
+      "camera_clearance_m": 1.3629942168387632,
+      "support_spread_m": 0.004731945160639711,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19108651931936974,
+      "camera_clearance_m": 1.3637160891706204,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717595,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639711,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19056064898717592,
+      "camera_clearance_m": 1.3642419595028143,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1905554066838606,
+      "camera_clearance_m": 1.3642472018061296,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19054045561020755,
+      "camera_clearance_m": 1.3642621528797827,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19052985369198838,
+      "camera_clearance_m": 1.3642727547980018,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19052539200323992,
+      "camera_clearance_m": 1.3642772164867503,
+      "support_spread_m": 0.004731945160639711,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.19035397662871675,
+      "camera_clearance_m": 1.3644486318612734,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1902680854428541,
+      "camera_clearance_m": 1.3645345230471362,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.18961187979198738,
+      "camera_clearance_m": 1.3651907286980027,
+      "support_spread_m": 0.004731945160639739,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1888287593326355,
+      "camera_clearance_m": 1.3659738491573548,
+      "support_spread_m": 0.00464451493386514,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.18849392295004286,
+      "camera_clearance_m": 1.3663086855399473,
+      "support_spread_m": 0.004195835243720192,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.18810973566607542,
+      "camera_clearance_m": 1.3666928728239147,
+      "support_spread_m": 0.0032526187714787824,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.18758638661459065,
+      "camera_clearance_m": 1.3672162218753996,
+      "support_spread_m": 0.0033849033638584936,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.18710359760408093,
+      "camera_clearance_m": 1.3676990108859093,
+      "support_spread_m": 0.003088361059723904,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.18681216986280036,
+      "camera_clearance_m": 1.36799043862719,
+      "support_spread_m": 0.0030767925806888807,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.18648318880683057,
+      "camera_clearance_m": 1.3683194196831596,
+      "support_spread_m": 0.003000699248241895,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.18616357695128097,
+      "camera_clearance_m": 1.3686390315387091,
+      "support_spread_m": 0.003000699248241895,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1858511510082403,
+      "camera_clearance_m": 1.3689514574817498,
+      "support_spread_m": 0.003000699248241895,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1856146670279729,
+      "camera_clearance_m": 1.3691879414620174,
+      "support_spread_m": 0.003000699248241895,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.18531585131660527,
+      "camera_clearance_m": 1.3694867571733849,
+      "support_spread_m": 0.003000699248241895,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.18466343569635518,
+      "camera_clearance_m": 1.370139172793635,
+      "support_spread_m": 0.003000699248241895,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1841718122130463,
+      "camera_clearance_m": 1.370630796276944,
+      "support_spread_m": 0.0030006992482419226,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.18377316960531423,
+      "camera_clearance_m": 1.371029438884676,
+      "support_spread_m": 0.003000699248241895,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.18328495083039487,
+      "camera_clearance_m": 1.3715176576595953,
+      "support_spread_m": 0.003000699248241895,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.18258675228838894,
+      "camera_clearance_m": 1.3722158562016014,
+      "support_spread_m": 0.003000699248241895,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1815489000681051,
+      "camera_clearance_m": 1.3732537084218852,
+      "support_spread_m": 0.003000699248241895,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1803292895910605,
+      "camera_clearance_m": 1.3744733188989298,
+      "support_spread_m": 0.003000699248241895,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.17909486583285825,
+      "camera_clearance_m": 1.375707742657132,
+      "support_spread_m": 0.003000699248241895,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.17753533094706767,
+      "camera_clearance_m": 1.3772672775429224,
+      "support_spread_m": 0.003000699248241895,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.17599471745608913,
+      "camera_clearance_m": 1.378807891033901,
+      "support_spread_m": 0.003000699248241895,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1744319083384311,
+      "camera_clearance_m": 1.380370700151559,
+      "support_spread_m": 0.002873429046321041,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.17429453394031114,
+      "camera_clearance_m": 1.3805080745496792,
+      "support_spread_m": 0.0026003665425477496,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.17417726428650357,
+      "camera_clearance_m": 1.3806253442034866,
+      "support_spread_m": 0.0026003665425477773,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.17407914301441943,
+      "camera_clearance_m": 1.3807234654755707,
+      "support_spread_m": 0.0026003665425477496,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1739930153018408,
+      "camera_clearance_m": 1.3808095931881494,
+      "support_spread_m": 0.0026003665425477773,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1739245175525942,
+      "camera_clearance_m": 1.3808780909373959,
+      "support_spread_m": 0.0026003665425477773,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1738487871567093,
+      "camera_clearance_m": 1.3809538213332808,
+      "support_spread_m": 0.0022669253390824873,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1735416972280057,
+      "camera_clearance_m": 1.3812609112619845,
+      "support_spread_m": 0.0018973785007323218,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1730528417995473,
+      "camera_clearance_m": 1.3817497666904428,
+      "support_spread_m": 0.0016522555249379733,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1725240381345508,
+      "camera_clearance_m": 1.3822785703554394,
+      "support_spread_m": 0.001652255524938001,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1720731581448243,
+      "camera_clearance_m": 1.382729450345166,
+      "support_spread_m": 0.0016522555249379733,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.17165306990480395,
+      "camera_clearance_m": 1.3831495385851862,
+      "support_spread_m": 0.001652255524938001,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.17119700789159042,
+      "camera_clearance_m": 1.3836056005983997,
+      "support_spread_m": 0.001652255524938001,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.17083826193209,
+      "camera_clearance_m": 1.3839643465579001,
+      "support_spread_m": 0.0015142232347908902,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.17060416004088544,
+      "camera_clearance_m": 1.3841984484491048,
+      "support_spread_m": 0.0014716762085686952,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1703533248438298,
+      "camera_clearance_m": 1.3844492836461604,
+      "support_spread_m": 0.001471676208568723,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.17012050165350254,
+      "camera_clearance_m": 1.3846821068364876,
+      "support_spread_m": 0.001471676208568723,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1698859471800974,
+      "camera_clearance_m": 1.3849166613098929,
+      "support_spread_m": 0.001471676208568723,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16961891297005363,
+      "camera_clearance_m": 1.3851836955199366,
+      "support_spread_m": 0.0014716762085686952,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1693678876341039,
+      "camera_clearance_m": 1.3854347208558864,
+      "support_spread_m": 0.001471676208568723,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16916739291655677,
+      "camera_clearance_m": 1.3856352155734335,
+      "support_spread_m": 0.0014716762085686952,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16896669612602877,
+      "camera_clearance_m": 1.3858359123639614,
+      "support_spread_m": 0.001471676208568723,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16879574931808006,
+      "camera_clearance_m": 1.3860068591719101,
+      "support_spread_m": 0.0014716762085686952,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1686501139998313,
+      "camera_clearance_m": 1.3861524944901589,
+      "support_spread_m": 0.0014716762085686952,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16850901215502795,
+      "camera_clearance_m": 1.3862935963349623,
+      "support_spread_m": 0.0015292525478889651,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16834627517607073,
+      "camera_clearance_m": 1.3864563333139195,
+      "support_spread_m": 0.0016127732966190744,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16834627517607073,
+      "camera_clearance_m": 1.3864563333139195,
+      "support_spread_m": 0.0016127732966190744,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16834282418302424,
+      "camera_clearance_m": 1.386459784306966,
+      "support_spread_m": 0.0016146333303686533,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1682401250674042,
+      "camera_clearance_m": 1.386562483422586,
+      "support_spread_m": 0.0016730496441433873,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16821794755805303,
+      "camera_clearance_m": 1.3865846609319372,
+      "support_spread_m": 0.001686124776622444,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16821170552925174,
+      "camera_clearance_m": 1.3865909029607384,
+      "support_spread_m": 0.0016899427247075993,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16820620285279128,
+      "camera_clearance_m": 1.3865964056371989,
+      "support_spread_m": 0.0016934121076032094,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16820488480111154,
+      "camera_clearance_m": 1.3865977236888787,
+      "support_spread_m": 0.00169425091037681,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1682026657925553,
+      "camera_clearance_m": 1.386599942697435,
+      "support_spread_m": 0.0016956864911641112,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16813556740491728,
+      "camera_clearance_m": 1.386667041085073,
+      "support_spread_m": 0.001740236887601665,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16803996871404753,
+      "camera_clearance_m": 1.3867626397759427,
+      "support_spread_m": 0.0018050392425672523,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1678860863422032,
+      "camera_clearance_m": 1.386916522147787,
+      "support_spread_m": 0.0019104058630618204,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1668729335737682,
+      "camera_clearance_m": 1.387929674916222,
+      "support_spread_m": 0.0023886544436285684,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16528820081461204,
+      "camera_clearance_m": 1.389514407675378,
+      "support_spread_m": 0.0026647374013957226,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16411742127713008,
+      "camera_clearance_m": 1.39068518721286,
+      "support_spread_m": 0.002664737401395695,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16411534221223786,
+      "camera_clearance_m": 1.3906872662777523,
+      "support_spread_m": 0.0026647374013957503,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1641088762904077,
+      "camera_clearance_m": 1.3906937321995825,
+      "support_spread_m": 0.002664737401395695,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16406713124488995,
+      "camera_clearance_m": 1.3907354772451002,
+      "support_spread_m": 0.002664737401395695,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16400457635169094,
+      "camera_clearance_m": 1.3907980321382993,
+      "support_spread_m": 0.002664737401395695,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16370950463078818,
+      "camera_clearance_m": 1.391093103859202,
+      "support_spread_m": 0.002664737401395695,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16338191015489842,
+      "camera_clearance_m": 1.3914206983350919,
+      "support_spread_m": 0.0026618183757575187,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16288421200596973,
+      "camera_clearance_m": 1.3919183964840205,
+      "support_spread_m": 0.0026600483163108646,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16252283929972053,
+      "camera_clearance_m": 1.3922797691902697,
+      "support_spread_m": 0.0026600483163108646,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16187433377908164,
+      "camera_clearance_m": 1.3929282747109086,
+      "support_spread_m": 0.0026600483163108646,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.16101450331153366,
+      "camera_clearance_m": 1.3937881051784564,
+      "support_spread_m": 0.0026600483163108646,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.15958381181320788,
+      "camera_clearance_m": 1.3952187966767824,
+      "support_spread_m": 0.0026600483163108646,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.15828698191792598,
+      "camera_clearance_m": 1.3965156265720642,
+      "support_spread_m": 0.0026600483163108646,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.15701379466141266,
+      "camera_clearance_m": 1.3977888138285774,
+      "support_spread_m": 0.0026600483163108923,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.15623923333125284,
+      "camera_clearance_m": 1.3985633751587374,
+      "support_spread_m": 0.0026541899347672093,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.15546330757804963,
+      "camera_clearance_m": 1.3993393009119406,
+      "support_spread_m": 0.002591602507007268,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.15484299683251226,
+      "camera_clearance_m": 1.399959611657478,
+      "support_spread_m": 0.002616114806315406,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.15401660398011113,
+      "camera_clearance_m": 1.400786004509879,
+      "support_spread_m": 0.0026527527949536944,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.15296732179209424,
+      "camera_clearance_m": 1.401835286697896,
+      "support_spread_m": 0.0025744104890539077,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1520579898184594,
+      "camera_clearance_m": 1.4027446186715309,
+      "support_spread_m": 0.002366532622648604,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.15148444438460373,
+      "camera_clearance_m": 1.4033181641053865,
+      "support_spread_m": 0.002366532622648604,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1503055813108502,
+      "camera_clearance_m": 1.40449702717914,
+      "support_spread_m": 0.002366532622648604,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1494737534448439,
+      "camera_clearance_m": 1.4053288550451464,
+      "support_spread_m": 0.002366532622648576,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.14856616677714393,
+      "camera_clearance_m": 1.4062364417128463,
+      "support_spread_m": 0.002366532622648604,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.14744433526390816,
+      "camera_clearance_m": 1.407358273226082,
+      "support_spread_m": 0.002357588064820171,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1467170367792834,
+      "camera_clearance_m": 1.4080855717107068,
+      "support_spread_m": 0.0021668173482663478,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.14583669401643065,
+      "camera_clearance_m": 1.4089659144735596,
+      "support_spread_m": 0.001901391633667593,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.14490696361182046,
+      "camera_clearance_m": 1.4098956448781697,
+      "support_spread_m": 0.0017539713280596003,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1440272549976006,
+      "camera_clearance_m": 1.4107753534923897,
+      "support_spread_m": 0.001753971328059628,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1432961511960146,
+      "camera_clearance_m": 1.4115064572939755,
+      "support_spread_m": 0.001753971328059628,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.14264182306515558,
+      "camera_clearance_m": 1.4121607854248346,
+      "support_spread_m": 0.0017539713280596003,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.14181069494708984,
+      "camera_clearance_m": 1.4129919135429003,
+      "support_spread_m": 0.0017539713280595726,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.14118654276517517,
+      "camera_clearance_m": 1.4136160657248151,
+      "support_spread_m": 0.0017539713280595726,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.14036653333887594,
+      "camera_clearance_m": 1.4144360751511142,
+      "support_spread_m": 0.0017539713280596003,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.13932105041162987,
+      "camera_clearance_m": 1.4154815580783604,
+      "support_spread_m": 0.0017539713280595726,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.13853387093646902,
+      "camera_clearance_m": 1.4162687375535212,
+      "support_spread_m": 0.001753971328059628,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.13760629922573278,
+      "camera_clearance_m": 1.4171963092642574,
+      "support_spread_m": 0.001709495190402588,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1368179450230558,
+      "camera_clearance_m": 1.4179846634669344,
+      "support_spread_m": 0.0017935793118598886,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.13599100041692147,
+      "camera_clearance_m": 1.4188116080730686,
+      "support_spread_m": 0.0018884967576839606,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.13496651138486795,
+      "camera_clearance_m": 1.4198360971051223,
+      "support_spread_m": 0.001996880246589089,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1340899677959505,
+      "camera_clearance_m": 1.4207126406940396,
+      "support_spread_m": 0.0018069139499723164,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.13316120202619214,
+      "camera_clearance_m": 1.421641406463798,
+      "support_spread_m": 0.0015362844181359692,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1322944368841991,
+      "camera_clearance_m": 1.422508171605791,
+      "support_spread_m": 0.0015461564245575765,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.13169718104368075,
+      "camera_clearance_m": 1.4231054274463095,
+      "support_spread_m": 0.001552147256869696,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1309809971385957,
+      "camera_clearance_m": 1.4238216113513944,
+      "support_spread_m": 0.0015581613997315558,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.13026759562139173,
+      "camera_clearance_m": 1.4245350128685985,
+      "support_spread_m": 0.0015639500337605028,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.12939834997773889,
+      "camera_clearance_m": 1.4254042585122513,
+      "support_spread_m": 0.0015764364437875211,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.12857917732876534,
+      "camera_clearance_m": 1.4262234311612247,
+      "support_spread_m": 0.0015897885879471718,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.12784894131084443,
+      "camera_clearance_m": 1.4269536671791458,
+      "support_spread_m": 0.0015960321865668425,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.12722030641765406,
+      "camera_clearance_m": 1.4275823020723362,
+      "support_spread_m": 0.001603339523654046,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.12654914109738868,
+      "camera_clearance_m": 1.4282534673926015,
+      "support_spread_m": 0.0016077626850537208,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.12609178694527653,
+      "camera_clearance_m": 1.4287108215447137,
+      "support_spread_m": 0.001607158927351443,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.125461998167848,
+      "camera_clearance_m": 1.4293406103221422,
+      "support_spread_m": 0.001600194151938475,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.12494698837616101,
+      "camera_clearance_m": 1.4298556201138293,
+      "support_spread_m": 0.0015846752128444441,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.12419391666963195,
+      "camera_clearance_m": 1.4306086918203582,
+      "support_spread_m": 0.0015555291547709599,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.12367341302681617,
+      "camera_clearance_m": 1.431129195463174,
+      "support_spread_m": 0.0015269166760695646,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.12293377803946343,
+      "camera_clearance_m": 1.4318688304505267,
+      "support_spread_m": 0.0015269166760695646,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.12228047023299468,
+      "camera_clearance_m": 1.4325221382569955,
+      "support_spread_m": 0.0015574180062559728,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.12174702445469272,
+      "camera_clearance_m": 1.4330555840352974,
+      "support_spread_m": 0.0017149204686553177,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.12111754919750475,
+      "camera_clearance_m": 1.4336850592924855,
+      "support_spread_m": 0.0019000807715939677,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.12032421923013921,
+      "camera_clearance_m": 1.434478389259851,
+      "support_spread_m": 0.0020977696132429835,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11959322212581523,
+      "camera_clearance_m": 1.435209386364175,
+      "support_spread_m": 0.0022420150767391844,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11905529560637125,
+      "camera_clearance_m": 1.435747312883619,
+      "support_spread_m": 0.0022301544998164224,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11844588946092935,
+      "camera_clearance_m": 1.436356719029061,
+      "support_spread_m": 0.0022170473042566335,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11780339695061505,
+      "camera_clearance_m": 1.436999211539375,
+      "support_spread_m": 0.0022044395670168943,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11707664088517196,
+      "camera_clearance_m": 1.4377259676048182,
+      "support_spread_m": 0.002190857171272445,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11655371937378162,
+      "camera_clearance_m": 1.4382488891162086,
+      "support_spread_m": 0.0021815510645257497,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11594699979315867,
+      "camera_clearance_m": 1.4388556086968316,
+      "support_spread_m": 0.002174249315564314,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11539623481704248,
+      "camera_clearance_m": 1.4394063736729477,
+      "support_spread_m": 0.0021742493155643,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11496601010385246,
+      "camera_clearance_m": 1.4398365983861376,
+      "support_spread_m": 0.0021742493155643,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11496601010385246,
+      "camera_clearance_m": 1.4398365983861376,
+      "support_spread_m": 0.0021742493155643,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11496413154836882,
+      "camera_clearance_m": 1.4398384769416213,
+      "support_spread_m": 0.0021742493155643,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11496398092055307,
+      "camera_clearance_m": 1.439838627569437,
+      "support_spread_m": 0.002174249315564314,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1148588213503047,
+      "camera_clearance_m": 1.4399437871396854,
+      "support_spread_m": 0.0021742493155643,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11470451324493441,
+      "camera_clearance_m": 1.4400980952450557,
+      "support_spread_m": 0.0021742493155643,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11461335111177325,
+      "camera_clearance_m": 1.440189257378217,
+      "support_spread_m": 0.002174249315564314,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11444882606139385,
+      "camera_clearance_m": 1.4403537824285964,
+      "support_spread_m": 0.002174249315564314,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11356155358802043,
+      "camera_clearance_m": 1.4412410549019699,
+      "support_spread_m": 0.0022177346532687436,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11282033858131257,
+      "camera_clearance_m": 1.4419822699086775,
+      "support_spread_m": 0.002262676341309361,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1119911226989878,
+      "camera_clearance_m": 1.4428114857910024,
+      "support_spread_m": 0.002262676341309347,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11141034464813873,
+      "camera_clearance_m": 1.4433922638418515,
+      "support_spread_m": 0.002168241164371698,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11092440163364106,
+      "camera_clearance_m": 1.4438782068563492,
+      "support_spread_m": 0.0020527363505752627,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11027405556719351,
+      "camera_clearance_m": 1.4445285529227967,
+      "support_spread_m": 0.0021623037582709503,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10962860966547963,
+      "camera_clearance_m": 1.4451739988245105,
+      "support_spread_m": 0.002334173180786603,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10896638220924376,
+      "camera_clearance_m": 1.4458362262807465,
+      "support_spread_m": 0.0024203833745288644,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10843410295985588,
+      "camera_clearance_m": 1.4463685055301343,
+      "support_spread_m": 0.002314602075099398,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10830985960635969,
+      "camera_clearance_m": 1.4464927488836306,
+      "support_spread_m": 0.002059030372357079,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10864719155956967,
+      "camera_clearance_m": 1.4461554169304205,
+      "support_spread_m": 0.002208843099827343,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10884251014301484,
+      "camera_clearance_m": 1.4459600983469754,
+      "support_spread_m": 0.002139892184419831,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10886995423337485,
+      "camera_clearance_m": 1.4459326542566153,
+      "support_spread_m": 0.0020875768229484254,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10882982285082222,
+      "camera_clearance_m": 1.445972785639168,
+      "support_spread_m": 0.0020868376111471965,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10875506131230024,
+      "camera_clearance_m": 1.44604754717769,
+      "support_spread_m": 0.0020868376111472103,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10859416072160546,
+      "camera_clearance_m": 1.4462084477683848,
+      "support_spread_m": 0.0020868376111471965,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10842871322203353,
+      "camera_clearance_m": 1.4463738952679566,
+      "support_spread_m": 0.0020868376111472103,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10814842338840809,
+      "camera_clearance_m": 1.4466541851015822,
+      "support_spread_m": 0.0022457249217977537,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10794443489488759,
+      "camera_clearance_m": 1.4468581735951025,
+      "support_spread_m": 0.00240216145258855,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10777719418553948,
+      "camera_clearance_m": 1.4470254143044508,
+      "support_spread_m": 0.0024578172662535896,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1075890026109875,
+      "camera_clearance_m": 1.4472136058790026,
+      "support_spread_m": 0.0024578172662535896,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10740712193169007,
+      "camera_clearance_m": 1.4473954865583,
+      "support_spread_m": 0.0024578172662535896,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10719030110000734,
+      "camera_clearance_m": 1.447612307389983,
+      "support_spread_m": 0.0024578172662536035,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10695869747140425,
+      "camera_clearance_m": 1.447843911018586,
+      "support_spread_m": 0.0024578172662536035,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10672064314120935,
+      "camera_clearance_m": 1.4480819653487809,
+      "support_spread_m": 0.002482186111182727,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10642192520850384,
+      "camera_clearance_m": 1.4483806832814863,
+      "support_spread_m": 0.002482186111182727,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10622290663268119,
+      "camera_clearance_m": 1.448579701857309,
+      "support_spread_m": 0.002482186111182713,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10599382410848922,
+      "camera_clearance_m": 1.448808784381501,
+      "support_spread_m": 0.002482186111182713,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10578112708408854,
+      "camera_clearance_m": 1.4490214814059017,
+      "support_spread_m": 0.0025750112304166878,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10566273246519561,
+      "camera_clearance_m": 1.4491398760247947,
+      "support_spread_m": 0.0026843105866012906,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10555825845795878,
+      "camera_clearance_m": 1.4492443500320313,
+      "support_spread_m": 0.00271409805564736,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10542310129894387,
+      "camera_clearance_m": 1.4493795071910462,
+      "support_spread_m": 0.00271409805564736,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10529475073267805,
+      "camera_clearance_m": 1.4495078577573122,
+      "support_spread_m": 0.0025384236253562925,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10513347769337647,
+      "camera_clearance_m": 1.4496691307966136,
+      "support_spread_m": 0.002320445798058429,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10487056102947569,
+      "camera_clearance_m": 1.4499320474605144,
+      "support_spread_m": 0.0021330216406160174,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10454276192880559,
+      "camera_clearance_m": 1.4502598465611847,
+      "support_spread_m": 0.0019373995708673736,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10427249908400703,
+      "camera_clearance_m": 1.4505301094059833,
+      "support_spread_m": 0.0017927517614585303,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10399127764104353,
+      "camera_clearance_m": 1.4508113308489468,
+      "support_spread_m": 0.0017927517614585164,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10369438646042867,
+      "camera_clearance_m": 1.4511082220295615,
+      "support_spread_m": 0.0018248293254683051,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10338392708616423,
+      "camera_clearance_m": 1.451418681403826,
+      "support_spread_m": 0.0019453406911620202,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10315402632847881,
+      "camera_clearance_m": 1.4516485821615115,
+      "support_spread_m": 0.002059282413596139,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10295993109673232,
+      "camera_clearance_m": 1.4518426773932578,
+      "support_spread_m": 0.002059282413596139,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10272560983050781,
+      "camera_clearance_m": 1.4520769986594824,
+      "support_spread_m": 0.002747236691851243,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10250413307381089,
+      "camera_clearance_m": 1.4522984754161794,
+      "support_spread_m": 0.00599510633713056,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09981204841684752,
+      "camera_clearance_m": 1.4549905600731428,
+      "support_spread_m": 0.008715440405267255,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09613356267926024,
+      "camera_clearance_m": 1.4586690458107299,
+      "support_spread_m": 0.011480026733520263,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09344242679199662,
+      "camera_clearance_m": 1.4613601816979935,
+      "support_spread_m": 0.012341381807427818,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.089885122683569,
+      "camera_clearance_m": 1.4649174858064211,
+      "support_spread_m": 0.010187031962468451,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.0861211533312139,
+      "camera_clearance_m": 1.4686814551587763,
+      "support_spread_m": 0.007524511661517852,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08593623000562714,
+      "camera_clearance_m": 1.468866378484363,
+      "support_spread_m": 0.004576780012502418,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08576123541399165,
+      "camera_clearance_m": 1.4690413730759986,
+      "support_spread_m": 0.0021622993130178403,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08543336992306967,
+      "camera_clearance_m": 1.4693692385669206,
+      "support_spread_m": 0.0020597985024132237,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08490951582723076,
+      "camera_clearance_m": 1.4698930926627594,
+      "support_spread_m": 0.002245675315117532,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08441073883157243,
+      "camera_clearance_m": 1.4703918696584177,
+      "support_spread_m": 0.0022454962011933394,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08398114271561825,
+      "camera_clearance_m": 1.470821465774372,
+      "support_spread_m": 0.0022453401004777773,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08353157367166479,
+      "camera_clearance_m": 1.4712710348183253,
+      "support_spread_m": 0.0022452965991805462,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08303756174197768,
+      "camera_clearance_m": 1.4717650467480126,
+      "support_spread_m": 0.0022454243437990823,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08258118249495211,
+      "camera_clearance_m": 1.4722214259950381,
+      "support_spread_m": 0.0022457250604706186,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08210034598746337,
+      "camera_clearance_m": 1.4727022625025268,
+      "support_spread_m": 0.0022458705697715187,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08162817300471106,
+      "camera_clearance_m": 1.4731744354852792,
+      "support_spread_m": 0.002243334951269188,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08108955654136901,
+      "camera_clearance_m": 1.4737130519486212,
+      "support_spread_m": 0.002225098934181685,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08057965814176461,
+      "camera_clearance_m": 1.4742229503482256,
+      "support_spread_m": 0.0022070555145107668,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08018166404420164,
+      "camera_clearance_m": 1.4746209444457885,
+      "support_spread_m": 0.0021971828987432523,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.0797183510603864,
+      "camera_clearance_m": 1.4750842574296037,
+      "support_spread_m": 0.0021971828987432523,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.0793127778243518,
+      "camera_clearance_m": 1.4754898306656383,
+      "support_spread_m": 0.0022023469209434543,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07888067038019111,
+      "camera_clearance_m": 1.475921938109799,
+      "support_spread_m": 0.002211028657847322,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07849041339600973,
+      "camera_clearance_m": 1.4763121950939804,
+      "support_spread_m": 0.002211028657847322,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07808012997867847,
+      "camera_clearance_m": 1.4767224785113118,
+      "support_spread_m": 0.002211028657847336,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07771739254768041,
+      "camera_clearance_m": 1.4770852159423098,
+      "support_spread_m": 0.002211028657847322,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07736297940252221,
+      "camera_clearance_m": 1.477439629087468,
+      "support_spread_m": 0.002211028657847322,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.0770054568436348,
+      "camera_clearance_m": 1.4777971516463553,
+      "support_spread_m": 0.002211028657847322,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07663882065988872,
+      "camera_clearance_m": 1.4781637878301015,
+      "support_spread_m": 0.00230895907525093,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.0763057933205158,
+      "camera_clearance_m": 1.4784968151694744,
+      "support_spread_m": 0.002300057454988,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.0756225428240249,
+      "camera_clearance_m": 1.4791800656659653,
+      "support_spread_m": 0.002310825644994352,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07538747859979522,
+      "camera_clearance_m": 1.479415129890195,
+      "support_spread_m": 0.0022047187007726426,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.0747553656306195,
+      "camera_clearance_m": 1.4800472428593707,
+      "support_spread_m": 0.0021866009260183283,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07424497841754231,
+      "camera_clearance_m": 1.480557630072448,
+      "support_spread_m": 0.002158720846992618,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07380756383209319,
+      "camera_clearance_m": 1.480995044657897,
+      "support_spread_m": 0.0021348264202063205,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07342536002120918,
+      "camera_clearance_m": 1.481377248468781,
+      "support_spread_m": 0.0021128532474810474,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07299862029389477,
+      "camera_clearance_m": 1.4818039881960954,
+      "support_spread_m": 0.002088203921806711,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07259190892236564,
+      "camera_clearance_m": 1.4822106995676245,
+      "support_spread_m": 0.0020716144416322163,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07216568617639729,
+      "camera_clearance_m": 1.482636922313593,
+      "support_spread_m": 0.0020716144416322163,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07181993459529813,
+      "camera_clearance_m": 1.482982673894692,
+      "support_spread_m": 0.0020716144416322163,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07147577966091186,
+      "camera_clearance_m": 1.4833268288290784,
+      "support_spread_m": 0.0020716144416322163,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07110916445139519,
+      "camera_clearance_m": 1.483693444038595,
+      "support_spread_m": 0.0020716144416322024,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07075481281116022,
+      "camera_clearance_m": 1.48404779567883,
+      "support_spread_m": 0.0020716144416322163,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07037412175373146,
+      "camera_clearance_m": 1.4844284867362587,
+      "support_spread_m": 0.0020716144416322024,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07002397886360598,
+      "camera_clearance_m": 1.4847786296263843,
+      "support_spread_m": 0.0020716144416322024,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06968256176141321,
+      "camera_clearance_m": 1.485120046728577,
+      "support_spread_m": 0.0020716144416322163,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06933940240259345,
+      "camera_clearance_m": 1.4854632060873967,
+      "support_spread_m": 0.0021112009544369675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06932586810604609,
+      "camera_clearance_m": 1.4854767403839442,
+      "support_spread_m": 0.002116652885084558,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06932556850817129,
+      "camera_clearance_m": 1.485477039981819,
+      "support_spread_m": 0.0021167827074258377,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06932384344463834,
+      "camera_clearance_m": 1.4854787650453518,
+      "support_spread_m": 0.002117676153981951,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06930035233375158,
+      "camera_clearance_m": 1.4855022561562385,
+      "support_spread_m": 0.0021332475861089994,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06928937631138878,
+      "camera_clearance_m": 1.4855132321786013,
+      "support_spread_m": 0.002143424570840685,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06928576775815076,
+      "camera_clearance_m": 1.4855168407318393,
+      "support_spread_m": 0.002148945033054503,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06928191356418933,
+      "camera_clearance_m": 1.4855206949258009,
+      "support_spread_m": 0.0021672818320420534,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06930375701563067,
+      "camera_clearance_m": 1.4854988514743594,
+      "support_spread_m": 0.0023286391755591995,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06929811377789757,
+      "camera_clearance_m": 1.4855044947120926,
+      "support_spread_m": 0.0023627935950739642,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06960623201200175,
+      "camera_clearance_m": 1.4851963764779885,
+      "support_spread_m": 0.00205772775689822,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.06988467997569725,
+      "camera_clearance_m": 1.4849179285142928,
+      "support_spread_m": 0.002129036747493082,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07034789825692982,
+      "camera_clearance_m": 1.4844547102330603,
+      "support_spread_m": 0.0020370803613814215,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07078962454471355,
+      "camera_clearance_m": 1.4840129839452767,
+      "support_spread_m": 0.0019609403712638057,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07114525319267849,
+      "camera_clearance_m": 1.4836573552973118,
+      "support_spread_m": 0.0019609403712638335,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07197787981605133,
+      "camera_clearance_m": 1.4828247286739389,
+      "support_spread_m": 0.0019609403712638196,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07296321023329734,
+      "camera_clearance_m": 1.4818393982566929,
+      "support_spread_m": 0.0019664074251446173,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07430795373274351,
+      "camera_clearance_m": 1.4804946547572466,
+      "support_spread_m": 0.001997256488359911,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07550286746994136,
+      "camera_clearance_m": 1.4792997410200488,
+      "support_spread_m": 0.002010987389127014,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07672173675548508,
+      "camera_clearance_m": 1.478080871734505,
+      "support_spread_m": 0.002010987389127014,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07780707588616603,
+      "camera_clearance_m": 1.4769955326038242,
+      "support_spread_m": 0.0020109873891270003,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07876222351247633,
+      "camera_clearance_m": 1.4760403849775139,
+      "support_spread_m": 0.002010987389127014,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.07954959343283002,
+      "camera_clearance_m": 1.47525301505716,
+      "support_spread_m": 0.0020109873891270003,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08016974127503491,
+      "camera_clearance_m": 1.4746328672149553,
+      "support_spread_m": 0.0020109873891270003,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08086263242792117,
+      "camera_clearance_m": 1.473939976062069,
+      "support_spread_m": 0.002075711306845418,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08161058172125074,
+      "camera_clearance_m": 1.4731920267687395,
+      "support_spread_m": 0.002315132082456109,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08270044067590823,
+      "camera_clearance_m": 1.472102167814082,
+      "support_spread_m": 0.002668839664604669,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08359337254711569,
+      "camera_clearance_m": 1.4712092359428746,
+      "support_spread_m": 0.002668839664604669,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08434139894805183,
+      "camera_clearance_m": 1.4704612095419383,
+      "support_spread_m": 0.002668839664604669,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08525640422350468,
+      "camera_clearance_m": 1.4695462042664855,
+      "support_spread_m": 0.002668839664604669,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08616803597945528,
+      "camera_clearance_m": 1.468634572510535,
+      "support_spread_m": 0.002668839664604669,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08716966555402977,
+      "camera_clearance_m": 1.4676329429359605,
+      "support_spread_m": 0.002636306577159478,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08797586054782411,
+      "camera_clearance_m": 1.4668267479421662,
+      "support_spread_m": 0.002574571949981494,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08875668612492285,
+      "camera_clearance_m": 1.4660459223650673,
+      "support_spread_m": 0.0025348647360753374,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.08937736117115623,
+      "camera_clearance_m": 1.465425247318834,
+      "support_spread_m": 0.0025348647360753512,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.0899819823447072,
+      "camera_clearance_m": 1.464820626145283,
+      "support_spread_m": 0.0025348647360753374,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09045165103444877,
+      "camera_clearance_m": 1.4643509574555413,
+      "support_spread_m": 0.0025348647360753512,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09112013995809094,
+      "camera_clearance_m": 1.4636824685318992,
+      "support_spread_m": 0.0025348647360753374,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09171303429144871,
+      "camera_clearance_m": 1.4630895741985415,
+      "support_spread_m": 0.0025348647360753512,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09235839346687744,
+      "camera_clearance_m": 1.4624442150231127,
+      "support_spread_m": 0.002496903785165372,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09285737224724629,
+      "camera_clearance_m": 1.4619452362427439,
+      "support_spread_m": 0.002444311146102357,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09334647047992883,
+      "camera_clearance_m": 1.4614561380100612,
+      "support_spread_m": 0.002392456792180475,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09381317222379745,
+      "camera_clearance_m": 1.4609894362661928,
+      "support_spread_m": 0.0023378247971453797,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09426291401021214,
+      "camera_clearance_m": 1.460539694479778,
+      "support_spread_m": 0.0022852568300364695,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09474724288796475,
+      "camera_clearance_m": 1.4600553656020254,
+      "support_spread_m": 0.0021125352754132604,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09510706867142137,
+      "camera_clearance_m": 1.459695539818569,
+      "support_spread_m": 0.0019376006596383694,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09532213725615271,
+      "camera_clearance_m": 1.4594804712338374,
+      "support_spread_m": 0.001851786313943296,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09554741958260486,
+      "camera_clearance_m": 1.4592551889073853,
+      "support_spread_m": 0.0017910292686510731,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09577868580029339,
+      "camera_clearance_m": 1.4590239226896968,
+      "support_spread_m": 0.0017910292686510731,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09601484502459395,
+      "camera_clearance_m": 1.4587877634653963,
+      "support_spread_m": 0.001778030413709844,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09632509473849755,
+      "camera_clearance_m": 1.4584775137514927,
+      "support_spread_m": 0.0017064751858794358,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09663210554221367,
+      "camera_clearance_m": 1.4581705029477765,
+      "support_spread_m": 0.001659160763798323,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09700607126542204,
+      "camera_clearance_m": 1.457796537224568,
+      "support_spread_m": 0.0016591607637983091,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09738145842747295,
+      "camera_clearance_m": 1.4574211500625172,
+      "support_spread_m": 0.0016591607637983091,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09771279430727688,
+      "camera_clearance_m": 1.4570898141827133,
+      "support_spread_m": 0.001659160763798323,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.0981000145885498,
+      "camera_clearance_m": 1.4567025939014404,
+      "support_spread_m": 0.0016591607637983091,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09847803206858588,
+      "camera_clearance_m": 1.4563245764214043,
+      "support_spread_m": 0.0016591607637983091,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09888224842139975,
+      "camera_clearance_m": 1.4559203600685904,
+      "support_spread_m": 0.0016987218418099276,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09906711818197228,
+      "camera_clearance_m": 1.455735490308018,
+      "support_spread_m": 0.0016987218418099276,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.09960730542216101,
+      "camera_clearance_m": 1.4551953030678293,
+      "support_spread_m": 0.002202273891550907,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10019694489825298,
+      "camera_clearance_m": 1.4546056635917373,
+      "support_spread_m": 0.0023910004025041176,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10099633582679717,
+      "camera_clearance_m": 1.453806272663193,
+      "support_spread_m": 0.0025769094291571565,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10182379529383744,
+      "camera_clearance_m": 1.4529788131961527,
+      "support_spread_m": 0.0026285128780910716,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10253992931288107,
+      "camera_clearance_m": 1.4522626791771092,
+      "support_spread_m": 0.0026285128780910577,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1032208516885834,
+      "camera_clearance_m": 1.4515817568014069,
+      "support_spread_m": 0.0026285128780910716,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10400185005643625,
+      "camera_clearance_m": 1.4508007584335538,
+      "support_spread_m": 0.0026285128780910855,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1048779859908063,
+      "camera_clearance_m": 1.449924622499184,
+      "support_spread_m": 0.0026285128780910716,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10571924176255709,
+      "camera_clearance_m": 1.4490833667274332,
+      "support_spread_m": 0.0026285128780910855,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10657302325089418,
+      "camera_clearance_m": 1.448229585239096,
+      "support_spread_m": 0.0026285128780910716,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10731543431884347,
+      "camera_clearance_m": 1.4474871741711468,
+      "support_spread_m": 0.0028502989366504805,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10810288596494042,
+      "camera_clearance_m": 1.4466997225250497,
+      "support_spread_m": 0.0030802987776036433,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.10919429771695074,
+      "camera_clearance_m": 1.4456083107730395,
+      "support_spread_m": 0.003311742458998568,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11009087250124928,
+      "camera_clearance_m": 1.444711735988741,
+      "support_spread_m": 0.0033117424589985817,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11091802856446913,
+      "camera_clearance_m": 1.443884579925521,
+      "support_spread_m": 0.003311742458998568,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11177690131621767,
+      "camera_clearance_m": 1.4430257071737724,
+      "support_spread_m": 0.003311742458998568,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11258773241541076,
+      "camera_clearance_m": 1.4422148760745794,
+      "support_spread_m": 0.0033117424589985817,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11327482872281829,
+      "camera_clearance_m": 1.441527779767172,
+      "support_spread_m": 0.0030531594935084283,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11385672224856405,
+      "camera_clearance_m": 1.4409458862414262,
+      "support_spread_m": 0.002740626205944924,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11424371392659553,
+      "camera_clearance_m": 1.4405588945633947,
+      "support_spread_m": 0.0023206919020215405,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11456983280970465,
+      "camera_clearance_m": 1.4402327756802855,
+      "support_spread_m": 0.0021604335749591114,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11491108523608187,
+      "camera_clearance_m": 1.4398915232539082,
+      "support_spread_m": 0.0021604335749590975,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11491108523608187,
+      "camera_clearance_m": 1.4398915232539082,
+      "support_spread_m": 0.0021604335749590975,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11491108523608187,
+      "camera_clearance_m": 1.4398915232539082,
+      "support_spread_m": 0.0021604335749590975,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11491108523608187,
+      "camera_clearance_m": 1.4398915232539082,
+      "support_spread_m": 0.0021604335749590975,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11491641830169194,
+      "camera_clearance_m": 1.4398861901882982,
+      "support_spread_m": 0.0021604335749590975,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11491930281480309,
+      "camera_clearance_m": 1.4398833056751872,
+      "support_spread_m": 0.0021604335749590975,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11492556539799915,
+      "camera_clearance_m": 1.439877043091991,
+      "support_spread_m": 0.0021604335749590975,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1150109914914678,
+      "camera_clearance_m": 1.4397916169985223,
+      "support_spread_m": 0.0021604335749590975,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11511559525657214,
+      "camera_clearance_m": 1.439687013233418,
+      "support_spread_m": 0.0021604335749591114,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11513949721138768,
+      "camera_clearance_m": 1.4396631112786025,
+      "support_spread_m": 0.0021604335749590975,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11507265673958893,
+      "camera_clearance_m": 1.4397299517504012,
+      "support_spread_m": 0.0021604335749591114,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11497773766890039,
+      "camera_clearance_m": 1.43982487082109,
+      "support_spread_m": 0.0021604335749590975,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11466452838819507,
+      "camera_clearance_m": 1.4401380801017951,
+      "support_spread_m": 0.0021604335749591114,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11413413503415783,
+      "camera_clearance_m": 1.4406684734558324,
+      "support_spread_m": 0.0022656178161088447,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11388169675256296,
+      "camera_clearance_m": 1.4409209117374273,
+      "support_spread_m": 0.002390412187149596,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11354117052030552,
+      "camera_clearance_m": 1.4412614379696846,
+      "support_spread_m": 0.002390412187149596,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11330126425269589,
+      "camera_clearance_m": 1.4415013442372944,
+      "support_spread_m": 0.00234897348132429,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1129149135951049,
+      "camera_clearance_m": 1.4418876948948853,
+      "support_spread_m": 0.002290536142703331,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11248016607852558,
+      "camera_clearance_m": 1.4423224424114647,
+      "support_spread_m": 0.002244886898850579,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11214718175813032,
+      "camera_clearance_m": 1.4426554267318599,
+      "support_spread_m": 0.0022448868988505927,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11203426260694029,
+      "camera_clearance_m": 1.4427683458830498,
+      "support_spread_m": 0.0022448868988505927,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11190433087143475,
+      "camera_clearance_m": 1.4428982776185555,
+      "support_spread_m": 0.0022448868988506065,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1117872684878973,
+      "camera_clearance_m": 1.4430153400020929,
+      "support_spread_m": 0.0022448868988505927,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11173354785359388,
+      "camera_clearance_m": 1.4430690606363963,
+      "support_spread_m": 0.002244886898850579,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11168663278557264,
+      "camera_clearance_m": 1.4431159757044176,
+      "support_spread_m": 0.0022448868988505927,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11167601198375492,
+      "camera_clearance_m": 1.4431265965062352,
+      "support_spread_m": 0.002336096446011085,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11200944465464183,
+      "camera_clearance_m": 1.4427931638353484,
+      "support_spread_m": 0.0024927961392657294,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1124843293071178,
+      "camera_clearance_m": 1.4423182791828724,
+      "support_spread_m": 0.0024927961392657433,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11301065490460312,
+      "camera_clearance_m": 1.4417919535853871,
+      "support_spread_m": 0.0023024043080518974,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11337461215331177,
+      "camera_clearance_m": 1.4414279963366785,
+      "support_spread_m": 0.002111217704787449,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11370999826300325,
+      "camera_clearance_m": 1.441092610226987,
+      "support_spread_m": 0.001926257199571943,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.114152147495986,
+      "camera_clearance_m": 1.4406504609940043,
+      "support_spread_m": 0.0020514308503725154,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11463769652928561,
+      "camera_clearance_m": 1.4401649119607045,
+      "support_spread_m": 0.0022196707675904703,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11528786804574033,
+      "camera_clearance_m": 1.4395147404442499,
+      "support_spread_m": 0.00238625241933392,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1158968218325686,
+      "camera_clearance_m": 1.4389057866574215,
+      "support_spread_m": 0.00250706579271702,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1166044017374427,
+      "camera_clearance_m": 1.4381982067525474,
+      "support_spread_m": 0.002507065792717006,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11725450547910019,
+      "camera_clearance_m": 1.43754810301089,
+      "support_spread_m": 0.002502047289878767,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11798868467972407,
+      "camera_clearance_m": 1.4368139238102662,
+      "support_spread_m": 0.002408193028359762,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11853403759107556,
+      "camera_clearance_m": 1.4362685708989147,
+      "support_spread_m": 0.0023323883307647675,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1190823855665129,
+      "camera_clearance_m": 1.4357202229234773,
+      "support_spread_m": 0.0022837604326193667,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.11967420617916083,
+      "camera_clearance_m": 1.4351284023108293,
+      "support_spread_m": 0.0022837604326193667,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.12022989673915624,
+      "camera_clearance_m": 1.434572711750834,
+      "support_spread_m": 0.0022837604326193667,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.12101923096768971,
+      "camera_clearance_m": 1.4337833775223006,
+      "support_spread_m": 0.002283760432619353,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.12185791916915037,
+      "camera_clearance_m": 1.4329446893208397,
+      "support_spread_m": 0.0029448724568730544,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.12297440387653527,
+      "camera_clearance_m": 1.431828204613455,
+      "support_spread_m": 0.0042449869906379945,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.12473152360189513,
+      "camera_clearance_m": 1.430071084888095,
+      "support_spread_m": 0.004657877370227409,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.12660351546947346,
+      "camera_clearance_m": 1.4281990930205168,
+      "support_spread_m": 0.004657877370227409,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.12825548019007194,
+      "camera_clearance_m": 1.4265471282999183,
+      "support_spread_m": 0.004540882662723483,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.12999358188059934,
+      "camera_clearance_m": 1.424809026609391,
+      "support_spread_m": 0.0031472592095901086,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.13064695034223975,
+      "camera_clearance_m": 1.4241556581477504,
+      "support_spread_m": 0.001761708675868473,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.13101524023526914,
+      "camera_clearance_m": 1.423787368254721,
+      "support_spread_m": 0.001018180330619206,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1314029240781877,
+      "camera_clearance_m": 1.4233996844118024,
+      "support_spread_m": 0.0010181803306191783,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.13179145924654162,
+      "camera_clearance_m": 1.4230111492434485,
+      "support_spread_m": 0.0010181803306192339,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1321528312924755,
+      "camera_clearance_m": 1.4226497771975146,
+      "support_spread_m": 0.0010181803306192339,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1325621493501958,
+      "camera_clearance_m": 1.4222404591397944,
+      "support_spread_m": 0.001018180330619206,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.13291715404326032,
+      "camera_clearance_m": 1.4218854544467299,
+      "support_spread_m": 0.0014733218088736622,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.13327526398160958,
+      "camera_clearance_m": 1.4215273445083807,
+      "support_spread_m": 0.004090418681429758,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.13360777231114668,
+      "camera_clearance_m": 1.4211948361788436,
+      "support_spread_m": 0.006514974368609205,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.13394427836248962,
+      "camera_clearance_m": 1.4208583301275006,
+      "support_spread_m": 0.008873271700977986,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.13426751774823226,
+      "camera_clearance_m": 1.420535090741758,
+      "support_spread_m": 0.011035168952849367,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.13461066641048577,
+      "camera_clearance_m": 1.4201919420795044,
+      "support_spread_m": 0.013232857905668721,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.13494486684361665,
+      "camera_clearance_m": 1.4198577416463736,
+      "support_spread_m": 0.0153079361119553,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.13527920283999284,
+      "camera_clearance_m": 1.4195234056499975,
+      "support_spread_m": 0.016046755912740157,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.13572034752720005,
+      "camera_clearance_m": 1.4190822609627902,
+      "support_spread_m": 0.01118782891693093,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.13767965341132457,
+      "camera_clearance_m": 1.4171229550786657,
+      "support_spread_m": 0.006415117430828399,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1373486814879733,
+      "camera_clearance_m": 1.417453927002017,
+      "support_spread_m": 0.003053421365095982,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1375288941300462,
+      "camera_clearance_m": 1.4172737143599439,
+      "support_spread_m": 0.0028207429877213086,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.13875033963098052,
+      "camera_clearance_m": 1.4160522688590096,
+      "support_spread_m": 0.003368323535275497,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.13989856987651067,
+      "camera_clearance_m": 1.4149040386134795,
+      "support_spread_m": 0.0033683235352755247,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.14094939044737223,
+      "camera_clearance_m": 1.413853218042618,
+      "support_spread_m": 0.0033683235352755247,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1419979688418348,
+      "camera_clearance_m": 1.4128046396481553,
+      "support_spread_m": 0.0033683235352755247,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.14305037221865202,
+      "camera_clearance_m": 1.4117522362713382,
+      "support_spread_m": 0.003368323535275497,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.14410023875867561,
+      "camera_clearance_m": 1.4107023697313146,
+      "support_spread_m": 0.003368323535275497,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1449834313205819,
+      "camera_clearance_m": 1.4098191771694082,
+      "support_spread_m": 0.003368323535275497,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1460540573004639,
+      "camera_clearance_m": 1.4087485511895264,
+      "support_spread_m": 0.00342720142997624,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1469412658197882,
+      "camera_clearance_m": 1.407861342670202,
+      "support_spread_m": 0.0035591309211600863,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.14768551387890752,
+      "camera_clearance_m": 1.4071170946110827,
+      "support_spread_m": 0.0036774534130015746,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.14867878763136397,
+      "camera_clearance_m": 1.4061238208586262,
+      "support_spread_m": 0.0038282060042081623,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.14957378374853794,
+      "camera_clearance_m": 1.4052288247414522,
+      "support_spread_m": 0.0038506941427564334,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.1504726803593604,
+      "camera_clearance_m": 1.4043299281306298,
+      "support_spread_m": 0.0037976872003811224,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.15131967149585615,
+      "camera_clearance_m": 1.403482936994134,
+      "support_spread_m": 0.003739205190173872,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.15215232645482593,
+      "camera_clearance_m": 1.4026502820351643,
+      "support_spread_m": 0.003676399664370361,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.15292843789936292,
+      "camera_clearance_m": 1.4018741705906272,
+      "support_spread_m": 0.0036136327201334584,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.15292843789936292,
+      "camera_clearance_m": 1.4018741705906272,
+      "support_spread_m": 0.0036136327201334584,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.15292843789936292,
+      "camera_clearance_m": 1.4018741705906272,
+      "support_spread_m": 0.0036136327201334584,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.15292843789936292,
+      "camera_clearance_m": 1.4018741705906272,
+      "support_spread_m": 0.0036136327201334584,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.15292843789936292,
+      "camera_clearance_m": 1.4018741705906272,
+      "support_spread_m": 0.0036136327201334584,
+      "status": "measured"
+    }
+  ],
+  "leg_start": [
+    0,
+    20,
+    55,
+    57,
+    59,
+    61,
+    81,
+    136,
+    219,
+    316,
+    335,
+    354,
+    435,
+    437,
+    517,
+    519
+  ],
+  "poses_sha256": "5bf580fe96e4d5631cf3f27d45ebf56ef917ea917e4470efbde4725ade8f8e6e"
+}

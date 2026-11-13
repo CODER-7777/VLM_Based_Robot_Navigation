@@ -1,0 +1,1945 @@
+{
+  "summary": {
+    "episode": 1781,
+    "scene": "mp3d/x8F5xyUWy9e/x8F5xyUWy9e.glb",
+    "pose_file": "/data/robotics/toshith/flowvo_compare/poses/b10_A_drivefix_idx9_20260829_114756.npz",
+    "legacy_agent_y": 1.0461088418960571,
+    "camera_mount_m": 1.2,
+    "legacy_camera_world_y": 2.2461088418960573,
+    "frames": 346,
+    "status_counts": {
+      "changing_surface": 4,
+      "measured": 152,
+      "missing_support": 190
+    },
+    "clearance_median_m": 1.2938575926502924,
+    "clearance_p05_m": 1.1138041805587122,
+    "clearance_p95_m": 1.3046888085336155,
+    "height_mismatch_fraction_of_measured": 0.19078947368421054,
+    "source_mesh_bounds": [
+      [
+        -14.769477844238281,
+        -9.255003929138184,
+        -0.15389199554920197
+      ],
+      [
+        6.485613822937012,
+        10.003105163574219,
+        6.47279691696167
+      ]
+    ],
+    "habitat_mesh_bounds": [
+      [
+        -14.769477844238281,
+        -0.15389199554920197,
+        -10.003105163574219
+      ],
+      [
+        6.485613822937012,
+        6.47279691696167,
+        9.255003929138184
+      ]
+    ],
+    "selection_scope": "Geometry audit only; episode837 remains excluded from model/threshold selection"
+  },
+  "frames": [
+    {
+      "floor_y": 0.9513289117310907,
+      "camera_clearance_m": 1.2947799301649665,
+      "support_spread_m": 0.004121876176976014,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9513289117310907,
+      "camera_clearance_m": 1.2947799301649665,
+      "support_spread_m": 0.004121876176976014,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9513289117310907,
+      "camera_clearance_m": 1.2947799301649665,
+      "support_spread_m": 0.004121876176976014,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9513289117310907,
+      "camera_clearance_m": 1.2947799301649665,
+      "support_spread_m": 0.004121876176976014,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9513289117310907,
+      "camera_clearance_m": 1.2947799301649665,
+      "support_spread_m": 0.004121876176976014,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9513289117310907,
+      "camera_clearance_m": 1.2947799301649665,
+      "support_spread_m": 0.004121876176976014,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9513289117310907,
+      "camera_clearance_m": 1.2947799301649665,
+      "support_spread_m": 0.004121876176976014,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9513289117310907,
+      "camera_clearance_m": 1.2947799301649665,
+      "support_spread_m": 0.004121876176976014,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9513289117310907,
+      "camera_clearance_m": 1.2947799301649665,
+      "support_spread_m": 0.004121876176976014,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9513289117310907,
+      "camera_clearance_m": 1.2947799301649665,
+      "support_spread_m": 0.004121876176976014,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9513289117310907,
+      "camera_clearance_m": 1.2947799301649665,
+      "support_spread_m": 0.004121876176976014,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9513289117310907,
+      "camera_clearance_m": 1.2947799301649665,
+      "support_spread_m": 0.004121876176976014,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9513289117310907,
+      "camera_clearance_m": 1.2947799301649665,
+      "support_spread_m": 0.004121876176976014,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9513289117310907,
+      "camera_clearance_m": 1.2947799301649665,
+      "support_spread_m": 0.004121876176976014,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9513289117310907,
+      "camera_clearance_m": 1.2947799301649665,
+      "support_spread_m": 0.004121876176976014,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9513289117310907,
+      "camera_clearance_m": 1.2947799301649665,
+      "support_spread_m": 0.004121876176976014,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9513289117310907,
+      "camera_clearance_m": 1.2947799301649665,
+      "support_spread_m": 0.004121876176976014,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9513289117310907,
+      "camera_clearance_m": 1.2947799301649665,
+      "support_spread_m": 0.004121876176976014,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9513289117310907,
+      "camera_clearance_m": 1.2947799301649665,
+      "support_spread_m": 0.004121876176976014,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9513289117310907,
+      "camera_clearance_m": 1.2947799301649665,
+      "support_spread_m": 0.004121876176976014,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9525557074375569,
+      "camera_clearance_m": 1.2935531344585005,
+      "support_spread_m": 0.0032259103295425584,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9533866473959295,
+      "camera_clearance_m": 1.292722194500128,
+      "support_spread_m": 0.0008820019411548419,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.953460996506617,
+      "camera_clearance_m": 1.2926478453894403,
+      "support_spread_m": 0.0020508593854965396,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.95325841185946,
+      "camera_clearance_m": 1.2928504300365973,
+      "support_spread_m": 0.0024033468946661474,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.953564445341273,
+      "camera_clearance_m": 1.2925443965547843,
+      "support_spread_m": 0.0014242662001563433,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.953625233628637,
+      "camera_clearance_m": 1.2924836082674203,
+      "support_spread_m": 0.001372341682798317,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9526349418662499,
+      "camera_clearance_m": 1.2934739000298074,
+      "support_spread_m": 0.0009272703816933792,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9523538693802366,
+      "camera_clearance_m": 1.2937549725158206,
+      "support_spread_m": 0.0003403869402330839,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9513861091411985,
+      "camera_clearance_m": 1.2947227327548587,
+      "support_spread_m": 0.0030114581456877065,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9482887339052892,
+      "camera_clearance_m": 1.297820107990768,
+      "support_spread_m": 0.004146045279469601,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9463350839999712,
+      "camera_clearance_m": 1.299773757896086,
+      "support_spread_m": 0.0035291521904489143,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9444177019379935,
+      "camera_clearance_m": 1.3016911399580637,
+      "support_spread_m": 0.00479076704658199,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.940202406001396,
+      "camera_clearance_m": 1.3059064358946613,
+      "support_spread_m": 0.007232472244407262,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9360995723982243,
+      "camera_clearance_m": 1.310009269497833,
+      "support_spread_m": 0.004514042246685279,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9357125925395193,
+      "camera_clearance_m": 1.310396249356538,
+      "support_spread_m": 0.003969702519723506,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9392879687873246,
+      "camera_clearance_m": 1.3068208731087327,
+      "support_spread_m": 0.006725921516293587,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9425772218788673,
+      "camera_clearance_m": 1.30353162001719,
+      "support_spread_m": 0.0036168111262162572,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9432288991334057,
+      "camera_clearance_m": 1.3028799427626516,
+      "support_spread_m": 0.0011094882323718913,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9439090885883896,
+      "camera_clearance_m": 1.3021997533076677,
+      "support_spread_m": 0.0011523176514242062,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.944614844218443,
+      "camera_clearance_m": 1.3014939976776143,
+      "support_spread_m": 0.0008799451108523204,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9449748506914194,
+      "camera_clearance_m": 1.301133991204638,
+      "support_spread_m": 0.0007097002671657693,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9452703335861528,
+      "camera_clearance_m": 1.3008385083099046,
+      "support_spread_m": 0.0008547664745289785,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9457903563916809,
+      "camera_clearance_m": 1.3003184855043766,
+      "support_spread_m": 0.0012037237239287402,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9465822887044811,
+      "camera_clearance_m": 1.2995265531915763,
+      "support_spread_m": 0.0014410056291886963,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9472156804007835,
+      "camera_clearance_m": 1.2988931614952737,
+      "support_spread_m": 0.001254804878939142,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9477832529829098,
+      "camera_clearance_m": 1.2983255889131475,
+      "support_spread_m": 0.0010659826620019741,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9482410709899681,
+      "camera_clearance_m": 1.2978677709060893,
+      "support_spread_m": 0.0009332472071678088,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9487091275873867,
+      "camera_clearance_m": 1.2973997143086706,
+      "support_spread_m": 0.0009389346829750123,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9492174412065547,
+      "camera_clearance_m": 1.2968914006895025,
+      "support_spread_m": 0.0010644394633805287,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9496511660666073,
+      "camera_clearance_m": 1.29645767582945,
+      "support_spread_m": 0.0010148638679086108,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9500884777354398,
+      "camera_clearance_m": 1.2960203641606176,
+      "support_spread_m": 0.0009275175817052839,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9504938848327255,
+      "camera_clearance_m": 1.2956149570633317,
+      "support_spread_m": 0.0012231529905747385,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9512019948585739,
+      "camera_clearance_m": 1.2949068470374834,
+      "support_spread_m": 0.0016361617447683274,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9521777204852668,
+      "camera_clearance_m": 1.2939311214107905,
+      "support_spread_m": 0.0018122912875481179,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9530823618485517,
+      "camera_clearance_m": 1.2930264800475055,
+      "support_spread_m": 0.0014656803668742224,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9533325731510416,
+      "camera_clearance_m": 1.2927762687450157,
+      "support_spread_m": 0.0004982280667695793,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9532572455133609,
+      "camera_clearance_m": 1.2928515963826963,
+      "support_spread_m": 0.000979101038842134,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9529025041389384,
+      "camera_clearance_m": 1.2932063377571188,
+      "support_spread_m": 0.0008453841449678201,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9526201293237754,
+      "camera_clearance_m": 1.293488712572282,
+      "support_spread_m": 0.0006428246586627218,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9524559276238076,
+      "camera_clearance_m": 1.2936529142722497,
+      "support_spread_m": 0.0005115998434411795,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9522435956270818,
+      "camera_clearance_m": 1.2938652462689755,
+      "support_spread_m": 0.0005291481080553773,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9521112079101708,
+      "camera_clearance_m": 1.2939976339858865,
+      "support_spread_m": 0.0003929856841258239,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9520698653095554,
+      "camera_clearance_m": 1.294038976586502,
+      "support_spread_m": 0.00020155133351917875,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9521505548642532,
+      "camera_clearance_m": 1.293958287031804,
+      "support_spread_m": 0.00032573796524448806,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9522589028644483,
+      "camera_clearance_m": 1.2938499390316092,
+      "support_spread_m": 0.00029101734010406055,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9523332345029764,
+      "camera_clearance_m": 1.2937756073930808,
+      "support_spread_m": 0.00012852766381010738,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9523573908146269,
+      "camera_clearance_m": 1.2937514510814303,
+      "support_spread_m": 0.00023767400743446299,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9523230199709493,
+      "camera_clearance_m": 1.2937858219251082,
+      "support_spread_m": 0.00037897313283918876,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9521823367367471,
+      "camera_clearance_m": 1.2939265051593103,
+      "support_spread_m": 0.00047938586983153897,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9520569530218267,
+      "camera_clearance_m": 1.2940518888742307,
+      "support_spread_m": 0.0004500100659583506,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9519584292068922,
+      "camera_clearance_m": 1.2941504126891652,
+      "support_spread_m": 0.00041005831484397515,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9518684106699228,
+      "camera_clearance_m": 1.2942404312261346,
+      "support_spread_m": 0.00041005831484408617,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9517605606276268,
+      "camera_clearance_m": 1.2943482812684306,
+      "support_spread_m": 0.004854217732378929,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9504517406463685,
+      "camera_clearance_m": 1.295657101249689,
+      "support_spread_m": 0.013166494693256037,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9424312940680759,
+      "camera_clearance_m": 1.3036775478279814,
+      "support_spread_m": 0.013350157242075666,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.939091835640366,
+      "camera_clearance_m": 1.3070170062556912,
+      "support_spread_m": 0.00887140580989787,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9392678589756719,
+      "camera_clearance_m": 1.3068409829203853,
+      "support_spread_m": 0.0022331521746769,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9398638702504811,
+      "camera_clearance_m": 1.3062449716455762,
+      "support_spread_m": 0.0028012867975348854,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9409092977710971,
+      "camera_clearance_m": 1.3051995441249602,
+      "support_spread_m": 0.0030985631392446145,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9418630953262573,
+      "camera_clearance_m": 1.3042457465698,
+      "support_spread_m": 0.0021187291363317096,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9423110457346147,
+      "camera_clearance_m": 1.3037977961614426,
+      "support_spread_m": 0.0009554296063942758,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9423663612630315,
+      "camera_clearance_m": 1.3037424806330258,
+      "support_spread_m": 0.00032548715758229374,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9424509756261017,
+      "camera_clearance_m": 1.3036578662699556,
+      "support_spread_m": 0.0005942962230585103,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9426592434010642,
+      "camera_clearance_m": 1.3034495984949932,
+      "support_spread_m": 0.0005942962230585103,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9427555756702813,
+      "camera_clearance_m": 1.303353266225776,
+      "support_spread_m": 0.0010657397320059658,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9428011107548993,
+      "camera_clearance_m": 1.303307731141158,
+      "support_spread_m": 0.002034641468694476,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9418740292063786,
+      "camera_clearance_m": 1.3042348126896788,
+      "support_spread_m": 0.0016980315001122737,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9418379079371783,
+      "camera_clearance_m": 1.304270933958879,
+      "support_spread_m": 0.0021784506073170284,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9422820100544261,
+      "camera_clearance_m": 1.303826831841631,
+      "support_spread_m": 0.0025376811973807367,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9427983479856028,
+      "camera_clearance_m": 1.3033104939104545,
+      "support_spread_m": 0.004326719099866705,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9440251673783722,
+      "camera_clearance_m": 1.3020836745176851,
+      "support_spread_m": 0.005582361093432686,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9468424322466572,
+      "camera_clearance_m": 1.2992664096494,
+      "support_spread_m": 0.007816416797732262,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9497389269248163,
+      "camera_clearance_m": 1.2963699149712409,
+      "support_spread_m": 0.007937171523011433,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9524275630228806,
+      "camera_clearance_m": 1.2936812788731769,
+      "support_spread_m": 0.005650161597753445,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9536098883859321,
+      "camera_clearance_m": 1.2924989535101252,
+      "support_spread_m": 0.003286677811979666,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9541768964689327,
+      "camera_clearance_m": 1.2919319454271245,
+      "support_spread_m": 0.0018763018891817529,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9547496626669163,
+      "camera_clearance_m": 1.291359179229141,
+      "support_spread_m": 0.0018763018891816419,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9550797393041395,
+      "camera_clearance_m": 1.2910291025919178,
+      "support_spread_m": 0.0011804218657526233,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.954984547582959,
+      "camera_clearance_m": 1.2911242943130983,
+      "support_spread_m": 0.0013830155679617206,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9546184815468902,
+      "camera_clearance_m": 1.291490360349167,
+      "support_spread_m": 0.001871790307269805,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9538710705475446,
+      "camera_clearance_m": 1.2922377713485127,
+      "support_spread_m": 0.001645819770208945,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9539291502160878,
+      "camera_clearance_m": 1.2921796916799695,
+      "support_spread_m": 0.0013007742544138834,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9536072396483114,
+      "camera_clearance_m": 1.292501602247746,
+      "support_spread_m": 0.0011494521338768493,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9540093360660485,
+      "camera_clearance_m": 1.2920995058300089,
+      "support_spread_m": 0.002004196927123947,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9545343303641325,
+      "camera_clearance_m": 1.2915745115319248,
+      "support_spread_m": 0.0019654301756125703,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9550579903876686,
+      "camera_clearance_m": 1.2910508515083887,
+      "support_spread_m": 0.0019654301756125703,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9556093482479157,
+      "camera_clearance_m": 1.2904994936481415,
+      "support_spread_m": 0.0019654301756125703,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9561560635754035,
+      "camera_clearance_m": 1.2899527783206537,
+      "support_spread_m": 0.0019654301756125703,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9566658714937667,
+      "camera_clearance_m": 1.2894429704022907,
+      "support_spread_m": 0.001676377199894219,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9571182640198589,
+      "camera_clearance_m": 1.2889905778761985,
+      "support_spread_m": 0.0012269409373730777,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9572089447172679,
+      "camera_clearance_m": 1.2888998971787893,
+      "support_spread_m": 0.0008276400683644436,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9573153936054999,
+      "camera_clearance_m": 1.2887934482905574,
+      "support_spread_m": 0.0007090168444207068,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9574718483385651,
+      "camera_clearance_m": 1.2886369935574922,
+      "support_spread_m": 0.0006082883659810356,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9572623702073583,
+      "camera_clearance_m": 1.2888464716886991,
+      "support_spread_m": 0.0005644707707161967,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9570965863099886,
+      "camera_clearance_m": 1.2890122555860688,
+      "support_spread_m": 0.001209330868241154,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9567734244465507,
+      "camera_clearance_m": 1.2893354174495066,
+      "support_spread_m": 0.0017056012644228735,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9565596771969878,
+      "camera_clearance_m": 1.2895491646990696,
+      "support_spread_m": 0.0017056012644229845,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9562004952421221,
+      "camera_clearance_m": 1.2899083466539352,
+      "support_spread_m": 0.0017800219230919012,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9566053555013299,
+      "camera_clearance_m": 1.2895034863947274,
+      "support_spread_m": 0.002396103175812625,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9573322628015434,
+      "camera_clearance_m": 1.288776579094514,
+      "support_spread_m": 0.002800910260350231,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9582497518654934,
+      "camera_clearance_m": 1.287859090030564,
+      "support_spread_m": 0.0023285675305095843,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9584053581100619,
+      "camera_clearance_m": 1.2877034837859953,
+      "support_spread_m": 0.0015396728370973278,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9583798756914845,
+      "camera_clearance_m": 1.2877289662045728,
+      "support_spread_m": 0.0004596266141023708,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9583919017922186,
+      "camera_clearance_m": 1.2877169401038389,
+      "support_spread_m": 0.00049163507464145,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9582248032864619,
+      "camera_clearance_m": 1.2878840386095955,
+      "support_spread_m": 0.0005847527271676256,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.958307629131866,
+      "camera_clearance_m": 1.2878012127641913,
+      "support_spread_m": 0.000979932910855963,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.958370556996722,
+      "camera_clearance_m": 1.2877382848993353,
+      "support_spread_m": 0.00109468425724768,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9580374209701475,
+      "camera_clearance_m": 1.2880714209259096,
+      "support_spread_m": 0.0016786147275232866,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9577304530424701,
+      "camera_clearance_m": 1.2883783888535874,
+      "support_spread_m": 0.0016338719432131832,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.957662460685184,
+      "camera_clearance_m": 1.2884463812108733,
+      "support_spread_m": 0.001426628723781631,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9578028533233951,
+      "camera_clearance_m": 1.2883059885726622,
+      "support_spread_m": 0.001426628723781742,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9577471204071928,
+      "camera_clearance_m": 1.2883617214888645,
+      "support_spread_m": 0.0013498420792573684,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9577573712564875,
+      "camera_clearance_m": 1.2883514706395698,
+      "support_spread_m": 0.001426628723781742,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9582093906347444,
+      "camera_clearance_m": 1.2878994512613129,
+      "support_spread_m": 0.001426628723781742,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9583070553901757,
+      "camera_clearance_m": 1.2878017865058817,
+      "support_spread_m": 0.0012091582833482217,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9585889658737682,
+      "camera_clearance_m": 1.287519876022289,
+      "support_spread_m": 0.0008906152993172212,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9588024875430612,
+      "camera_clearance_m": 1.2873063543529961,
+      "support_spread_m": 0.0006638917864706384,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9589592625223424,
+      "camera_clearance_m": 1.2871495793737149,
+      "support_spread_m": 0.0006312117207005752,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9590302466485352,
+      "camera_clearance_m": 1.287078595247522,
+      "support_spread_m": 0.000828980181029948,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.958972728538888,
+      "camera_clearance_m": 1.2871361133571693,
+      "support_spread_m": 0.013135358969076139,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.953270081214729,
+      "camera_clearance_m": 1.2928387606813283,
+      "support_spread_m": 0.02233291059548992,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9474365420224763,
+      "camera_clearance_m": 1.298672299873581,
+      "support_spread_m": 0.020867020930661506,
+      "status": "measured"
+    },
+    {
+      "floor_y": 0.9449673145663751,
+      "camera_clearance_m": 1.3011415273296822,
+      "support_spread_m": 0.1922715272759864,
+      "status": "changing_surface"
+    },
+    {
+      "floor_y": 0.9448554523938236,
+      "camera_clearance_m": 1.3012533895022336,
+      "support_spread_m": 0.18827582862033898,
+      "status": "changing_surface"
+    },
+    {
+      "floor_y": 1.1298296411798094,
+      "camera_clearance_m": 1.1162792007162479,
+      "support_spread_m": 0.19411447596642128,
+      "status": "changing_surface"
+    },
+    {
+      "floor_y": 1.1305309736781446,
+      "camera_clearance_m": 1.1155778682179127,
+      "support_spread_m": 0.1903148180910912,
+      "status": "changing_surface"
+    },
+    {
+      "floor_y": 1.131369402226968,
+      "camera_clearance_m": 1.1147394396690893,
+      "support_spread_m": 0.001955359345555685,
+      "status": "measured"
+    },
+    {
+      "floor_y": 1.131967071026234,
+      "camera_clearance_m": 1.1141417708698234,
+      "support_spread_m": 0.0031888559266013417,
+      "status": "measured"
+    },
+    {
+      "floor_y": 1.1327172717175922,
+      "camera_clearance_m": 1.1133915701784651,
+      "support_spread_m": 0.0030372999228811537,
+      "status": "measured"
+    },
+    {
+      "floor_y": 1.1333997842540187,
+      "camera_clearance_m": 1.1127090576420386,
+      "support_spread_m": 0.002849576660522102,
+      "status": "measured"
+    },
+    {
+      "floor_y": 1.1339746295938427,
+      "camera_clearance_m": 1.1121342123022147,
+      "support_spread_m": 0.002257795404063012,
+      "status": "measured"
+    },
+    {
+      "floor_y": 1.134565314019065,
+      "camera_clearance_m": 1.1115435278769923,
+      "support_spread_m": 0.0017481656673070667,
+      "status": "measured"
+    },
+    {
+      "floor_y": 1.1347853809423485,
+      "camera_clearance_m": 1.1113234609537088,
+      "support_spread_m": 0.0012979903419729766,
+      "status": "measured"
+    },
+    {
+      "floor_y": 1.1349162428689663,
+      "camera_clearance_m": 1.111192599027091,
+      "support_spread_m": 0.0008540237073564327,
+      "status": "measured"
+    },
+    {
+      "floor_y": 1.1349059414762768,
+      "camera_clearance_m": 1.1112029004197805,
+      "support_spread_m": 0.0007756056650358722,
+      "status": "measured"
+    },
+    {
+      "floor_y": 1.135052208191835,
+      "camera_clearance_m": 1.1110566337042223,
+      "support_spread_m": 0.0007851895970290013,
+      "status": "measured"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    },
+    {
+      "floor_y": null,
+      "camera_clearance_m": null,
+      "status": "missing_support"
+    }
+  ],
+  "leg_start": [
+    0,
+    19,
+    208,
+    210,
+    230,
+    250,
+    270,
+    272,
+    309
+  ],
+  "poses_sha256": "7e404225038ac49724d614a5547ca28ec3c43a65cf48397f64261ecba2eb6408"
+}

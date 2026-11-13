@@ -1,0 +1,38 @@
+{
+  "artifact_hashes_verified": 53,
+  "trained_checkpoint_hashes_match_validation": true,
+  "original_checkpoint_reproduces_earlier_four_windows": true,
+  "original_metric_differences": {
+    "0": {
+      "mean_ground_error_m": -1.4235290723974003e-09,
+      "endpoint_ground_error_m": 2.938176035804929e-09,
+      "mean_pixel_error_px": 0.0,
+      "endpoint_pixel_error_px": 0.0
+    },
+    "2": {
+      "mean_ground_error_m": -1.4733570474767532e-09,
+      "endpoint_ground_error_m": -1.7752275455196198e-08,
+      "mean_pixel_error_px": 0.0,
+      "endpoint_pixel_error_px": 0.0
+    },
+    "3": {
+      "mean_ground_error_m": 9.973876488600375e-09,
+      "endpoint_ground_error_m": 5.3544681438699726e-08,
+      "mean_pixel_error_px": 0.0,
+      "endpoint_pixel_error_px": 0.0
+    },
+    "4": {
+      "mean_ground_error_m": 5.4773695856713545e-09,
+      "endpoint_ground_error_m": -2.306693386300296e-08,
+      "mean_pixel_error_px": 0.0,
+      "endpoint_pixel_error_px": 0.0
+    }
+  },
+  "png_count": 41,
+  "legs": [
+    0,
+    2,
+    3,
+    4
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "updated": "2026-11-12",
+  "original_user_papers": 10,
+  "additional_geometry_papers": 4,
+  "papers": [
+    {
+      "id": "P01",
+      "title": "Propagating Confidences through CNNs for Sparse Data Regression",
+      "authors": [
+        "Abdelrahman Eldesokey",
+        "Michael Felsberg",
+        "Fahad Shahbaz Khan"
+      ],
+      "year": 2018,
+      "venue": "BMVC",
+      "primary_url": "https://arxiv.org/abs/1805.11913",
+      "implementation_url": "https://github.com/abdo-eldesokey/nconv",
+      "implementation_status": "Author repository; static layer inspected",
+      "reviewed": "2026-11-12",
+      "review_scope": "Primary metadata and reported mechanism; static implementation audit where available; no reproduction"
+    },
+    {
+      "id": "P02",
+      "title": "Image Inpainting for Irregular Holes Using Partial Convolutions",
+      "authors": [
+        "Guilin Liu",
+        "Fitsum A. Reda",
+        "Kevin J. Shih",
+        "Ting-Chun Wang",
+        "Andrew Tao",
+        "Bryan Catanzaro"
+      ],
+      "year": 2018,
+      "venue": "ECCV",
+      "primary_url": "https://arxiv.org/abs/1804.07723",
+      "implementation_url": "https://github.com/NVIDIA/partialconv",
+      "implementation_status": "NVIDIA author implementation; static layer inspected",
+      "reviewed": "2026-11-12",
+      "review_scope": "Primary metadata and reported mechanism; static implementation audit where available; no reproduction"
+    },
+    {
+      "id": "P03",
+      "title": "Free-Form Image Inpainting with Gated Convolution",
+      "authors": [
+        "Jiahui Yu",
+        "Zhe Lin",
+        "Jimei Yang",
+        "Xiaohui Shen",
+        "Xin Lu",
+        "Thomas S. Huang"
+      ],
+      "year": 2019,
+      "venue": "ICCV",
+      "primary_url": "https://arxiv.org/abs/1806.03589",
+      "implementation_url": "https://github.com/JiahuiYu/generative_inpainting",
+      "implementation_status": "Author implementation; legacy TensorFlow source inspected",
+      "reviewed": "2026-11-12",
+      "review_scope": "Primary metadata and reported mechanism; static implementation audit where available; no reproduction"
+    },
+    {
+      "id": "P04",
+      "title": "Guided Feature Selection for Deep Visual Odometry",
+      "authors": [
+        "Fei Xue",
+        "Qiuyuan Wang",
+        "Xin Wang",
+        "Wei Dong",
+        "Junqiu Wang",
+        "Hongbin Zha"
+      ],
+      "year": 2018,
+      "venue": "ACCV",
+      "primary_url": "https://arxiv.org/abs/1811.09935",
+      "implementation_url": null,
+      "implementation_status": "Usable official implementation not verified",
+      "reviewed": "2026-11-12",
+      "review_scope": "Primary metadata and reported mechanism; static implementation audit where available; no reproduction"
+    },
+    {
+      "id": "P05",
+      "title": "TartanVO: A Generalizable Learning-based VO",
+      "authors": [
+        "Wenshan Wang",
+        "Yaoyu Hu",
+        "Sebastian Scherer"
+      ],
+      "year": 2020,
+      "venue": "CoRL",
+      "primary_url": "https://arxiv.org/abs/2011.00359",
+      "implementation_url": "https://github.com/castacks/tartanvo",
+      "implementation_status": "Author implementation; intrinsics source inspected",
+      "reviewed": "2026-11-12",
+      "review_scope": "Primary metadata and reported mechanism; static implementation audit where available; no reproduction"
+    },
+    {
+      "id": "P06",
+      "title": "Deep Patch Visual Odometry",
+      "authors": [
+        "Zachary Teed",
+        "Lahav Lipson",
+        "Jia Deng"
+      ],
+      "year": 2023,
+      "venue": "NeurIPS",
+      "primary_url": "https://arxiv.org/abs/2208.04726",
+      "implementation_url": "https://github.com/princeton-vl/DPVO",
+      "implementation_status": "Author implementation; geometric optimizer source inspected",
+      "reviewed": "2026-11-12",
+      "review_scope": "Primary metadata and reported mechanism; static implementation audit where available; no reproduction"
+    },
+    {
+      "id": "P07",
+      "title": "Geometric Loss Functions for Camera Pose Regression with Deep Learning",
+      "authors": [
+        "Alex Kendall",
+        "Roberto Cipolla"
+      ],
+      "year": 2017,
+      "venue": "CVPR",
+      "primary_url": "https://arxiv.org/abs/1704.00390",
+      "implementation_url": "https://github.com/alexgkendall/caffe-posenet",
+      "implementation_status": "Legacy author PoseNet repo; exact 2017 loss reproduction unverified",
+      "reviewed": "2026-11-12",
+      "review_scope": "Primary metadata and reported mechanism; static implementation audit where available; no reproduction"
+    },
+    {
+      "id": "P08",
+      "title": "How Contextual are Contextualized Word Representations? Comparing the Geometry of BERT, ELMo, and GPT-2 Embeddings",
+      "authors": [
+        "Kawin Ethayarajh"
+      ],
+      "year": 2019,
+      "venue": "EMNLP-IJCNLP",
+      "primary_url": "https://arxiv.org/abs/1909.00512",
+      "implementation_url": "https://github.com/kawine/contextual",
+      "implementation_status": "Author analysis repository; static statistics inspected",
+      "reviewed": "2026-11-12",
+      "review_scope": "Primary metadata and reported mechanism; static implementation audit where available; no reproduction"
+    },
+    {
+      "id": "P09",
+      "title": "All-but-the-Top: Simple and Effective Postprocessing for Word Representations",
+      "authors": [
+        "Jiaqi Mu",
+        "Suma Bhat",
+        "Pramod Viswanath"
+      ],
+      "year": 2018,
+      "venue": "ICLR (commonly cited; linked arXiv metadata used)",
+      "primary_url": "https://arxiv.org/abs/1702.01417",
+      "implementation_url": "https://github.com/vyraun/Half-Size",
+      "implementation_status": "Supplied Half-Size is a different paper; official ABTT code not verified",
+      "reviewed": "2026-11-12",
+      "review_scope": "Primary metadata and reported mechanism; static implementation audit where available; no reproduction"
+    },
+    {
+      "id": "P10",
+      "title": "RankMe: Assessing the Downstream Performance of Pretrained Self-Supervised Representations by Their Rank",
+      "authors": [
+        "Quentin Garrido",
+        "Randall Balestriero",
+        "Laurent Najman",
+        "Yann LeCun"
+      ],
+      "year": 2023,
+      "venue": "ICML",
+      "primary_url": "https://proceedings.mlr.press/v202/garrido23a.html",
+      "implementation_url": "https://github.com/facebookresearch/RankMe",
+      "implementation_status": "Supplied facebookresearch/RankMe URL returns 404",
+      "reviewed": "2026-11-12",
+      "review_scope": "Primary metadata and reported mechanism; static implementation audit where available; no reproduction"
+    },
+    {
+      "id": "P11",
+      "title": "Deep Fundamental Matrix Estimation",
+      "authors": [
+        "René Ranftl",
+        "Vladlen Koltun"
+      ],
+      "year": 2018,
+      "venue": "ECCV",
+      "primary_url": "https://vladlen.info/publications/deep-fundamental-matrix-estimation/",
+      "implementation_url": "https://github.com/isl-org/DFE",
+      "implementation_status": "Additional geometry reference; primary record checked; not part of pinned source audit; no execution",
+      "reviewed": "2026-11-12"
+    },
+    {
+      "id": "P12",
+      "title": "DROID-SLAM: Deep Visual SLAM for Monocular, Stereo, and RGB-D Cameras",
+      "authors": [
+        "Zachary Teed",
+        "Jia Deng"
+      ],
+      "year": 2021,
+      "venue": "NeurIPS",
+      "primary_url": "https://arxiv.org/abs/2108.10869",
+      "implementation_url": "https://github.com/princeton-vl/DROID-SLAM",
+      "implementation_status": "Additional geometry reference; primary record checked; not part of pinned source audit; no execution",
+      "reviewed": "2026-11-12"
+    },
+    {
+      "id": "P13",
+      "title": "Transforming Camera Geometry to a Virtual Downward-Looking Camera: Robust Ego-Motion Estimation and Ground-Layer Detection",
+      "authors": [
+        "Qifa Ke",
+        "Takeo Kanade"
+      ],
+      "year": 2003,
+      "venue": "CVPR",
+      "primary_url": "https://publications.ri.cmu.edu/transforming-camera-geometry-to-a-virtual-downward-looking-camera-robust-ego-motion-estimation-and-ground-layer-detection",
+      "implementation_url": null,
+      "implementation_status": "Additional geometry reference; primary record checked; not part of pinned source audit; no execution",
+      "reviewed": "2026-11-12"
+    },
+    {
+      "id": "P14",
+      "title": "Real-Time Monocular Visual Odometry for On-Road Vehicles with 1-Point RANSAC",
+      "authors": [
+        "Davide Scaramuzza",
+        "Friedrich Fraundorfer",
+        "Roland Siegwart"
+      ],
+      "year": 2009,
+      "venue": "ICRA",
+      "primary_url": "https://rpg.ifi.uzh.ch/docs/ICRA09_scaramuzza.pdf",
+      "implementation_url": null,
+      "implementation_status": "Additional geometry reference; primary record checked; not part of pinned source audit; no execution",
+      "reviewed": "2026-11-12"
+    }
+  ]
+}

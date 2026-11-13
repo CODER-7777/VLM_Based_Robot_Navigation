@@ -1,0 +1,42 @@
+{
+  "checks": {
+    "metrics_recomputed_from_saved_paths": true,
+    "all_rendered_pngs_decode": true,
+    "all_expected_episodes": true,
+    "all_expected_legs": true,
+    "browser_interaction_checks": {
+      "checks": [
+        "Gallery opens as a local offline file",
+        "All completed episode choices available",
+        "Camera canvas includes photo and paths",
+        "Full episode and all legs selectable: 629",
+        "Full episode and all legs selectable: 478",
+        "Full episode and all legs selectable: 753",
+        "Full episode and all legs selectable: 837",
+        "Full episode and all legs selectable: 1031",
+        "Full episode and all legs selectable: 1285",
+        "Full episode and all legs selectable: 1395",
+        "Full episode and all legs selectable: 1481",
+        "Full episode and all legs selectable: 1689",
+        "Full episode and all legs selectable: 1781",
+        "Every full recording and leg renders in both coordinate views",
+        "Model isolation toggles paths",
+        "Playback advances recorded positions",
+        "Zoom and reset controls execute",
+        "Comparison PNG link matches selection",
+        "Metric plot link matches selection",
+        "Three individual checkpoint overlays linked",
+        "No JavaScript errors"
+      ],
+      "errors": [],
+      "views_tested": 143,
+      "width": 1600,
+      "scrollWidth": 1585
+    },
+    "mobile_no_horizontal_overflow": true
+  },
+  "episodes": 10,
+  "legs": 133,
+  "segments": 143,
+  "scope": "Offline PNG/data/UI checks; no inference or training"
+}

@@ -1,0 +1,6 @@
+{
+  "initial_files": 18,
+  "initial_matches_original_manifest": true,
+  "current_manifest": "VISUAL_SOURCE_MANIFEST.json",
+  "difference": "Added configure_solver_control helper only; original low-level controls unchanged"
+}

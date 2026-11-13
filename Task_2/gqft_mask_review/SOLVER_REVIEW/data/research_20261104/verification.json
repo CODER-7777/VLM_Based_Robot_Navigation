@@ -1,0 +1,145 @@
+{
+  "checked_utc": "2026-11-11T22:04:03.785977+00:00",
+  "scope": "Documentation packaging and saved-evidence checks; no new model results",
+  "training_performed": false,
+  "gpu_used": false,
+  "latest_user_gpu_choice": "4 (12 November)",
+  "checks": {
+    "all_14_approaches_present": {
+      "pass": true,
+      "detail": null
+    },
+    "all_10_original_and_4_additional_papers": {
+      "pass": true,
+      "detail": null
+    },
+    "primary_citations_in_document": {
+      "pass": true,
+      "detail": null
+    },
+    "bibtex_coverage": {
+      "pass": true,
+      "detail": null
+    },
+    "no_unfilled_placeholders": {
+      "pass": true,
+      "detail": null
+    },
+    "local_document_links": {
+      "pass": true,
+      "detail": []
+    },
+    "docx_zip_integrity": {
+      "pass": true,
+      "detail": null
+    },
+    "docx_xml_parse": {
+      "pass": true,
+      "detail": 6
+    },
+    "docx_matches_source_hash": {
+      "pass": true,
+      "detail": null
+    },
+    "docx_contains_paper_sections": {
+      "pass": true,
+      "detail": null
+    },
+    "docx_preserves_hyperlinks": {
+      "pass": true,
+      "detail": 48
+    },
+    "docx_preserves_tables": {
+      "pass": true,
+      "detail": null
+    },
+    "pdf_contains_paper_sections": {
+      "pass": true,
+      "detail": null
+    },
+    "pdf_contains_all_approaches": {
+      "pass": true,
+      "detail": null
+    },
+    "pdf_renders": {
+      "pass": true,
+      "detail": {
+        "pages": 14,
+        "visual_review": "Approach table, paper section and final-page render inspected"
+      }
+    },
+    "pdf_is_current": {
+      "pass": true,
+      "detail": null
+    },
+    "pdf_key_results": {
+      "pass": true,
+      "detail": null
+    },
+    "pinned_source_files_unchanged": {
+      "pass": true,
+      "detail": {
+        "files": 28,
+        "failures": []
+      }
+    },
+    "repository_statuses": {
+      "pass": true,
+      "detail": null
+    },
+    "pilot_ade_fde_match_saved_evidence": {
+      "pass": true,
+      "detail": null
+    },
+    "solver_scores_match_saved_evidence": {
+      "pass": true,
+      "detail": null
+    },
+    "15_recorded_hybrid_checks": {
+      "pass": true,
+      "detail": null
+    }
+  },
+  "artifacts": [
+    {
+      "path": "GQFT_APPROACHES_AND_RESEARCH.md",
+      "sha256": "caa4ace355693a5acf0743351e33d6baf8c7d447b7c3045802d1fba401f4673c",
+      "bytes": 47293
+    },
+    {
+      "path": "GQFT_APPROACHES_AND_RESEARCH.docx",
+      "sha256": "907675433c7be0a8ee5d5fe2eb0e6fad3743d1524c55d106525e646bc01a2bdc",
+      "bytes": 24420
+    },
+    {
+      "path": "GQFT_APPROACHES_AND_RESEARCH.pdf",
+      "sha256": "22aab598dc88f1c3a7002606fed4c39e21b79913c33485fb3398f9b426244fea",
+      "bytes": 112502
+    },
+    {
+      "path": "research_20261104/papers.json",
+      "sha256": "d423ea91f6802f6faf132dc902be540cf4c6ca685e7324b2ef1528dbda584449",
+      "bytes": 8955
+    },
+    {
+      "path": "research_20261104/papers.bib",
+      "sha256": "d14fd658ddc95640d51e935d3d3e720a60878a67d781599a92c62dbf6afa8986",
+      "bytes": 5119
+    },
+    {
+      "path": "research_20261104/REPOSITORY_IMPLEMENTATIONS.md",
+      "sha256": "92b0f44ecfc7a345538e4dda58fdb22fa9f8f2f774a946db3be50d220633bfd3",
+      "bytes": 10286
+    },
+    {
+      "path": "research_20261104/export_document.py",
+      "sha256": "ce9d45096133c63b37066b941f01ac63e5cf7d2f903c7a76cc9482df7b52aa3f",
+      "bytes": 10436
+    },
+    {
+      "path": "research_20261104/verify_document.py",
+      "sha256": "41cc854be7986cbb24efa374bd6d0487c7c800e7df1d543c3be2b1be8c82a9d1",
+      "bytes": 6115
+    }
+  ]
+}

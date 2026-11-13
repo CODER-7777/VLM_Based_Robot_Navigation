@@ -1,0 +1,33 @@
+{
+  "status": "completed",
+  "gpu": 4,
+  "finite_steps_per_arm": 500,
+  "protocol": "Fixed H24, 104 overlapping validation windows, one seed, CUDA bf16",
+  "arms": [
+    {
+      "name": "yaw_local_reference",
+      "steps": 500,
+      "ade_px": 10.955824620173528,
+      "fde_px": 13.336321317232573,
+      "ambiguity": 0.2083333283662796,
+      "selected_history": null
+    },
+    {
+      "name": "solver_residual",
+      "steps": 500,
+      "ade_px": 15.630245038546049,
+      "fde_px": 16.419222524532906,
+      "ambiguity": 0.7307692170143127,
+      "selected_history": null
+    },
+    {
+      "name": "solver_learned_weights",
+      "steps": 500,
+      "ade_px": 15.590364573552058,
+      "fde_px": 16.302606435922478,
+      "ambiguity": 0.7157894968986511,
+      "selected_history": null
+    }
+  ],
+  "conclusion": "Neither solver hybrid beats the matched yaw-local reference; all fail original history selection."
+}

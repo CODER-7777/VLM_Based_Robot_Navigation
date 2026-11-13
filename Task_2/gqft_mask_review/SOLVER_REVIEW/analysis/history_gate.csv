@@ -1,0 +1,15 @@
+model,history,ambiguity,cosine_near_queries,eligible_queries
+solver_residual,4,0.7884615659713745,104,104
+solver_residual,8,0.7980769276618958,104,104
+solver_residual,12,0.7884615659713745,104,104
+solver_residual,16,0.7307692170143127,104,104
+solver_residual,20,0.7788461446762085,104,104
+solver_residual,24,0.7307692170143127,104,104
+solver_residual,30,0.7788461446762085,104,104
+solver_learned_weights,4,0.7653061151504517,98,104
+solver_learned_weights,8,0.7216494679450989,97,104
+solver_learned_weights,12,0.7684210538864136,95,104
+solver_learned_weights,16,0.6315789222717285,95,104
+solver_learned_weights,20,0.7303370833396912,89,104
+solver_learned_weights,24,0.7157894968986511,95,104
+solver_learned_weights,30,0.7422680258750916,97,104

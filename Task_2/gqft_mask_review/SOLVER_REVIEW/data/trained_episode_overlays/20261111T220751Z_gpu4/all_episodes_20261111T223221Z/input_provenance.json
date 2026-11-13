@@ -1,0 +1,1458 @@
+{
+  "files": {
+    "ep629/predictions.json": "30c5c0c65b2a1fc0bb5ca20e0b0e570072130d34fc54ab1efaf7ae6b60b3263d",
+    "inputs/poses/b10_A_drivefix_idx3_20260829_114756.npz": "c1e730177de78a2823e4ecf4ee8718f34106f2789946d7a679005cd04b66cfb3",
+    "ep629/full/keyframe.jpg": "7df18e620b9ad37a7f5cd8e239009ac4a127396267fb0b8df51279cee7e4a843",
+    "ep629/leg00/keyframe.jpg": "7df18e620b9ad37a7f5cd8e239009ac4a127396267fb0b8df51279cee7e4a843",
+    "ep629/leg01/keyframe.jpg": "165ad018272c7aacb239d11977e26f04bb01a133164c48534e76af06e77e46a1",
+    "ep629/leg02/keyframe.jpg": "bf3125316256442a3e89fe29a646e1fcf1b20cd1756abc7148fcae8fe41baaff",
+    "ep629/leg03/keyframe.jpg": "0f357ad85d02bd6083b0f943d130daf7251ff952641a3fab05b58d379867c6de",
+    "ep629/leg04/keyframe.jpg": "79d1d0fb539b2c1b59e5e1b61bb839dd0b7741014470f1503d8980de68ac327c",
+    "ep629/leg05/keyframe.jpg": "269712a3b3c596684904004e65e1e4dff31f68c6fa794bd2d24d2c8f18621ce0",
+    "ep629/leg06/keyframe.jpg": "637a2e5ecfa29625be70d4fe4f3b677bcb04394dfaca239e6204d152a7f1d5c7",
+    "ep478/predictions.json": "d54d74250fef953dfe3725b2c66f054e599c82c07dd626a2baae06844a893fda",
+    "inputs/poses/b10_A_drivefix_idx2_20260829_114756.npz": "117c677eb7d75ec34f6dbc4aaf15ed86f65a298c50d0ba7c6d195d632ecb84ce",
+    "ep478/full/keyframe.jpg": "d2bba3db445963506e60b6c3969e6c0806310ed314ad0212d14519ed4e137734",
+    "ep478/leg00/keyframe.jpg": "d2bba3db445963506e60b6c3969e6c0806310ed314ad0212d14519ed4e137734",
+    "ep478/leg01/keyframe.jpg": "15e275b3f1bd2a9bff612c21bc705998396656126cc846023300813dbf2da83f",
+    "ep478/leg02/keyframe.jpg": "734f2c9a9123205275f0a089ef3447c681e21ad03b871a190c2bb16a96e8f868",
+    "ep478/leg03/keyframe.jpg": "5bda46e9ff23f0ea020570b1598f0494ae32c08a877b251c4808825b7c61b93f",
+    "ep478/leg04/keyframe.jpg": "aa6bc01097be4ea0a046761dada779e7a0dfd18ae28e87e99868b68b3cbee3e4",
+    "ep478/leg05/keyframe.jpg": "aa6bc01097be4ea0a046761dada779e7a0dfd18ae28e87e99868b68b3cbee3e4",
+    "ep478/leg06/keyframe.jpg": "63055aa23ca8eb1e1df87782e3b504a955cc464033a5ec18c14a247f0df0c5a6",
+    "ep478/leg07/keyframe.jpg": "73c04962f5c66e3c26606ffd82ad7999b8b20678554546c086a9d26fac195b4b",
+    "ep478/leg08/keyframe.jpg": "73c04962f5c66e3c26606ffd82ad7999b8b20678554546c086a9d26fac195b4b",
+    "ep753/predictions.json": "8c92e2bc0a8479db49aa7c232f58161902effceff8fe05fd6a4521ba4765aa9b",
+    "inputs/poses/b10_A_drivefix_idx1_20260829_114756.npz": "5bf580fe96e4d5631cf3f27d45ebf56ef917ea917e4470efbde4725ade8f8e6e",
+    "ep753/full/keyframe.jpg": "10a3990c3719863d87b8d616c6169c820562945fb117e00c0d86f0671c9368b8",
+    "ep753/leg00/keyframe.jpg": "10a3990c3719863d87b8d616c6169c820562945fb117e00c0d86f0671c9368b8",
+    "ep753/leg01/keyframe.jpg": "890fd69ad349124c7f34c5db1509e96a8cb0e0a548fa36880a97181c57207df3",
+    "ep753/leg02/keyframe.jpg": "f593136b91f30ca1d8ec7e2c2ebb90061e160d4cb1c9dc5d98f9919359784c6f",
+    "ep753/leg03/keyframe.jpg": "f593136b91f30ca1d8ec7e2c2ebb90061e160d4cb1c9dc5d98f9919359784c6f",
+    "ep753/leg04/keyframe.jpg": "f593136b91f30ca1d8ec7e2c2ebb90061e160d4cb1c9dc5d98f9919359784c6f",
+    "ep753/leg05/keyframe.jpg": "f593136b91f30ca1d8ec7e2c2ebb90061e160d4cb1c9dc5d98f9919359784c6f",
+    "ep753/leg06/keyframe.jpg": "87014cc5b1abf234c749e390de6f24d5d1bc967f1be3745d981948b19d5ec9e9",
+    "ep753/leg07/keyframe.jpg": "d33afb313a5f31c003903bf5edcf6a330c057685d9a21a0b6047001ee24c4164",
+    "ep753/leg08/keyframe.jpg": "c782d100104288b333b75a1cffe49692cabc590926e03cdbfd6f4b96c25d4544",
+    "ep753/leg09/keyframe.jpg": "fd0a023cfe434675ea369d6aeb4ff75e0a0194582e99797b24d281ce0226629f",
+    "ep753/leg10/keyframe.jpg": "db09041838296fb670fd09f378c4d657e8d3e8b5a735482c935a19d07fb157be",
+    "ep753/leg11/keyframe.jpg": "fd0a023cfe434675ea369d6aeb4ff75e0a0194582e99797b24d281ce0226629f",
+    "ep753/leg12/keyframe.jpg": "940726c4e9c3abfac8bd54d117795292616134082b9ddd9106d624ca7ac9d2de",
+    "ep753/leg13/keyframe.jpg": "940726c4e9c3abfac8bd54d117795292616134082b9ddd9106d624ca7ac9d2de",
+    "ep753/leg14/keyframe.jpg": "b079fe786de80833e1cd950d510bff5212956fd8530ee995c7dfd8b04be3a8b0",
+    "ep753/leg15/keyframe.jpg": "b079fe786de80833e1cd950d510bff5212956fd8530ee995c7dfd8b04be3a8b0",
+    "ep837/predictions.json": "cf66c256d6b444cb8f7d0085a01480dc3ac937d3f170368546597cd5d703d43a",
+    "inputs/poses/b10_A_drivefix_idx0_20260829_114756.npz": "5ac9a49d55bfed1a6ac7dcf14badc1a97675ad34814d076b4d569680ce0e59f8",
+    "ep837/full/keyframe.jpg": "6d645fd709d7d37e9f1b63f351c6eb6be80bbcbf50ecc6fbd0b5242c8da89825",
+    "ep837/leg00/keyframe.jpg": "6d645fd709d7d37e9f1b63f351c6eb6be80bbcbf50ecc6fbd0b5242c8da89825",
+    "ep837/leg01/keyframe.jpg": "20123256eba47eb962dfb6f23f24e3559801c6dbddfd6b396dae5bd752f5ea5d",
+    "ep837/leg02/keyframe.jpg": "0b7c0db1ba2cbcd6191c8997d8d56de8a65c8821fe38fe07cf98a5ccd6494515",
+    "ep837/leg03/keyframe.jpg": "cd1234a0ae43fcfd18042e58a2dbae066e1639c6489b379d0b9e0027069484d1",
+    "ep837/leg04/keyframe.jpg": "1ad7ecd46e6d47043ae08c27ea34c23d4aad45fdc1622518344d4df06b4a7a75",
+    "ep837/leg05/keyframe.jpg": "c250ab9c70a265b82049bfeb98b8ac14703e5da942628973394f661f971c7b31",
+    "ep837/leg06/keyframe.jpg": "995f8213c945aaf398d6414df06c2fbc6103fa1304fe2a628f67c3f4b72160b8",
+    "ep837/leg07/keyframe.jpg": "0129d69c90836dfcc53fe1032346b117737ca49a50c14fc51fdaf4ce3ac17571",
+    "ep837/leg08/keyframe.jpg": "5b976bae5ab5c6d9a082891da21e39da2cbb6e49c93ed77c6244fc351603a33f",
+    "ep837/leg09/keyframe.jpg": "57cbf5fa1505097fe28ae5fb10b44f23769b12c3cc9c3b19e4ed14a10f1e28cf",
+    "ep837/leg10/keyframe.jpg": "344df7193dc08e0d2ef366966cbc7d63dd0f58cfca46f985058230ec94642282",
+    "ep837/leg11/keyframe.jpg": "6233da2c4f5436db240501f8954e2f8054cdb11d47c5769e1b672d77c2eb8264",
+    "ep837/leg12/keyframe.jpg": "97292aeebbcc4b707a258a89477348f9541729f6541c7425b82217dc064d005d",
+    "ep837/leg13/keyframe.jpg": "de8987f68b14546d32882ca0220adb55db34acba5d0772052e8c6f570f08b3c6",
+    "ep837/leg14/keyframe.jpg": "73f808a41a4a57115cb5d9db1ea3ab343c58874ede4ba23ba05c0317f68eb4e4",
+    "ep837/leg15/keyframe.jpg": "12d4f57d05458a3246388b4cd37cc03af52465d2353330ab944c8b415634f570",
+    "ep837/leg16/keyframe.jpg": "aa7dc60943f40279c5c671b0aaddf286383db7267ede2e510df6823d187a298e",
+    "ep837/leg17/keyframe.jpg": "6a1db4d0b67f54b8acebfc27e99296f7690a78f02c7160a661fa80b72ba035bd",
+    "ep837/leg18/keyframe.jpg": "6a1db4d0b67f54b8acebfc27e99296f7690a78f02c7160a661fa80b72ba035bd",
+    "ep837/leg19/keyframe.jpg": "b3a5a42da64eeffe67f7873e9224485a390378882dc0123e8b966c8b7d46b537",
+    "ep837/leg20/keyframe.jpg": "9847287d5f825eae9112a5980055438a37cd0a4badb42322c3bce43e3c9cc845",
+    "ep1031/predictions.json": "0a3f1692e777e2f6de2cdb710ca5813509492a3d660011e0a137b82653d822d1",
+    "inputs/poses/b10_A_drivefix_idx4_20260829_114756.npz": "75bdcbd6bd9f4242083bf198dc20f3d8dfd4c4b2cbf112afda013d0244fe5d8e",
+    "ep1031/full/keyframe.jpg": "4c062bd30bbcf2de8331f8c9d7662d433ca372cffc7c194643a0220215d8c21a",
+    "ep1031/leg00/keyframe.jpg": "4c062bd30bbcf2de8331f8c9d7662d433ca372cffc7c194643a0220215d8c21a",
+    "ep1031/leg01/keyframe.jpg": "82ef67ecf1550d4f5c182be83f5b819adb4cee7b54a6224c6d5aa3886556f8a1",
+    "ep1031/leg02/keyframe.jpg": "ec7d0275a9146b629e30f1ba9cff8d5d4af2e82f7f50606e12aadee60272ad65",
+    "ep1031/leg03/keyframe.jpg": "15e00afb9d5c862bab6d87100768167c6e92a7b2980635179b262daee423b3ec",
+    "ep1031/leg04/keyframe.jpg": "bac49a93829bde5ad4c746a33ff6006f8012e85291b12d16f917cd57d6238501",
+    "ep1031/leg05/keyframe.jpg": "7c455d1d6fbc3d1fe4ec483e99f1b1f072a9aac8e5bb3db2a7fabc40f5f3bb4e",
+    "ep1031/leg06/keyframe.jpg": "7c455d1d6fbc3d1fe4ec483e99f1b1f072a9aac8e5bb3db2a7fabc40f5f3bb4e",
+    "ep1285/predictions.json": "aa8c17a1c5fb8565037c307f0cb9443486f490b82a9d9ec4e74b10f4907b66c8",
+    "inputs/poses/b10_A_drivefix_idx7_20260829_114756.npz": "571189f385bd8afd79071ada881297d7c5ffde2724f510045762c22e3505ec2e",
+    "ep1285/full/keyframe.jpg": "cefcec76eaff6d9fab9356c5b5d7d79a8aea35b091ae752227dc91ec273fd00c",
+    "ep1285/leg00/keyframe.jpg": "cefcec76eaff6d9fab9356c5b5d7d79a8aea35b091ae752227dc91ec273fd00c",
+    "ep1285/leg01/keyframe.jpg": "2acf1907fdc114cc3f72d0cd3b7687253e20aee0a2bb10b133a9d8d4b5e60036",
+    "ep1285/leg02/keyframe.jpg": "bd8e0767e10a05c3749811107118202e11879b9791d605d72071bf93a844cf9e",
+    "ep1285/leg03/keyframe.jpg": "f3106db663c64feaba6ed8e3d1025c04b3835fefa8ae72dd07dc7c4504fa8fa1",
+    "ep1285/leg04/keyframe.jpg": "cd931e8e128071dee488d1b70d943df49ba6265427bd4b41cb9c7fbff8d7a320",
+    "ep1285/leg05/keyframe.jpg": "6037fd58ceb01f5a4efa94d12a7e6d1c15317296a35f92dde3f3f73941630d2f",
+    "ep1285/leg06/keyframe.jpg": "ffc6425dead9ac71c5bbe85dddec5e503bd0f39ffd6c38a0b6354c25a7b0c934",
+    "ep1285/leg07/keyframe.jpg": "51e4b675066ff9284dca29340f9390cd04755777f8a01f46d174320b41a37c16",
+    "ep1285/leg08/keyframe.jpg": "478be2729a13f07b604bcf92900522667f72065c3ac5abda5ba21a42da595fe3",
+    "ep1285/leg09/keyframe.jpg": "b5a232d2d42b99df884bef8fde8081323b4a5c19b4e006d83969b8c6975b42f7",
+    "ep1285/leg10/keyframe.jpg": "d6df0e6ab54d979ec378f2cc3fd37966e50b8183d5840be8b85a03468e0911d9",
+    "ep1285/leg11/keyframe.jpg": "159edb255d11482631f8627f103b0b99d441bae2b9a87d37b66560b25794e60c",
+    "ep1285/leg12/keyframe.jpg": "159edb255d11482631f8627f103b0b99d441bae2b9a87d37b66560b25794e60c",
+    "ep1285/leg13/keyframe.jpg": "77c7c824ca7bf96601aabb49ebcc4c7ca6a202d88e5c096bf72c7019bf5c06b6",
+    "ep1285/leg14/keyframe.jpg": "55d026e7ce5abcab32eaf22cd9e2b1b99d204060e7c7d07d15ead8a37b9649af",
+    "ep1285/leg15/keyframe.jpg": "e36742dd11a9bb2cde9d95896f43e333f806b818c6518e4f937b150379fdad69",
+    "ep1285/leg16/keyframe.jpg": "859151c783ad704e360ff5759f372b03293221167ff092d3005b15b67379a855",
+    "ep1285/leg17/keyframe.jpg": "e36742dd11a9bb2cde9d95896f43e333f806b818c6518e4f937b150379fdad69",
+    "ep1285/leg18/keyframe.jpg": "e23d2d2d3900837065425d3fb26173f663152ac78455df2f433a98559c077c71",
+    "ep1285/leg19/keyframe.jpg": "24ff178c90821d05341d3eebf7d5e3930a8705ae1a1a1cc249813759cf334f1a",
+    "ep1285/leg20/keyframe.jpg": "7acb3afab280523085fb390c5855032c4d49c51685439624d2f6d9ee1ad76aa2",
+    "ep1285/leg21/keyframe.jpg": "78b14e537fc4571453d9667e25a8c37fd33bf14f9536e5aed8f629dbe7203d7c",
+    "ep1285/leg22/keyframe.jpg": "f30bee25900ff6ca09bda1dac8358847685b3bfda58f2c91a91800f8b61868a0",
+    "ep1285/leg23/keyframe.jpg": "78b14e537fc4571453d9667e25a8c37fd33bf14f9536e5aed8f629dbe7203d7c",
+    "ep1285/leg24/keyframe.jpg": "777f23a22778adc8f33ccfb006f0beb2358dadacdfc12304cbbeb5ed542d0d8c",
+    "ep1285/leg25/keyframe.jpg": "7d5ff6a8865b50336b1f1021d99da19704328b801c11d2892a71c54f44b7283c",
+    "ep1285/leg26/keyframe.jpg": "6a961fdc7d0b87505bf793d55d1115aa6402fc0694ffba3b41978f1a33ce7727",
+    "ep1285/leg27/keyframe.jpg": "329040cd446b1687301ca59aaf41d7254e9e9d9c301c19d5d6f7362d6ecb5333",
+    "ep1285/leg28/keyframe.jpg": "ee5d326be48fedc497b7ffa6087aee19824f7ed0e3a67b650ab6a0c69f10f7c0",
+    "ep1285/leg29/keyframe.jpg": "ee5d326be48fedc497b7ffa6087aee19824f7ed0e3a67b650ab6a0c69f10f7c0",
+    "ep1395/predictions.json": "d5a6d62e2939c65d6f45e65a389c9bf2c8360804dedfb652e6c91b66115d44e0",
+    "inputs/poses/b10_A_drivefix_idx8_20260829_114756.npz": "370867420bf322bc7708cc30f32d0dc4a0ba5563bc616fdd1feb948df03a06c4",
+    "ep1395/full/keyframe.jpg": "2adab4836e934fe096fbf853e94f4da58de4d568d995d7f2da1c5d5f6d64cb10",
+    "ep1395/leg00/keyframe.jpg": "2adab4836e934fe096fbf853e94f4da58de4d568d995d7f2da1c5d5f6d64cb10",
+    "ep1395/leg01/keyframe.jpg": "60f6a9a6ca07c47177d6a239828c8a7ee43671cec362621281bc87aae12308c2",
+    "ep1395/leg02/keyframe.jpg": "7b83ceb157f3dc816fc3d5da9d3fb4cc2e1adc3e5a69d8afb4bd82e90effb3f3",
+    "ep1395/leg03/keyframe.jpg": "89fdba679427b88283116dcca6cc05d7c38b99163f14a36a196f805ac8a33a0b",
+    "ep1395/leg04/keyframe.jpg": "89fdba679427b88283116dcca6cc05d7c38b99163f14a36a196f805ac8a33a0b",
+    "ep1481/predictions.json": "48c7cb4fb4804312cab41181e278bc263a2d2e51f79e494d8e716db97692598d",
+    "inputs/poses/b10_A_drivefix_idx5_20260829_114756.npz": "ebe6420552908c676e911ea6ae57197612b98c76b3e01633072ee857dcb232db",
+    "ep1481/full/keyframe.jpg": "c54bbefe3661a79a65703ee56845f6d469ada28f82d475de76629c1278dcc08d",
+    "ep1481/leg00/keyframe.jpg": "c54bbefe3661a79a65703ee56845f6d469ada28f82d475de76629c1278dcc08d",
+    "ep1481/leg01/keyframe.jpg": "02fa8c573edf959c1a652f5f7a59fb97d16700ce367bab17c3f466bca4145f8d",
+    "ep1481/leg02/keyframe.jpg": "6b5e114cf203f9fb2b5b37fa4a492e6741d0758af615fd65279fa85826e46aea",
+    "ep1481/leg03/keyframe.jpg": "71376d993499a0a3c73d2249ad823adaae11fad80ad3caa5de627b3b164daa9a",
+    "ep1481/leg04/keyframe.jpg": "71376d993499a0a3c73d2249ad823adaae11fad80ad3caa5de627b3b164daa9a",
+    "ep1481/leg05/keyframe.jpg": "89e2acf8bfd2222357c36c356aea32fed3fe906467fee0a812b381ab9b5c725f",
+    "ep1481/leg06/keyframe.jpg": "be77754453cabb302b5081e4b7f601bfd6a863b008a7b70347a812263b07cf63",
+    "ep1481/leg07/keyframe.jpg": "bdae455ebe0465281522380da6b69c2adb49f8919ba9a19a781d697c473c21a6",
+    "ep1481/leg08/keyframe.jpg": "4fe8b08f98e3257613cf745dfdd410ea6cd3537568e5754f669421883ad72ebe",
+    "ep1481/leg09/keyframe.jpg": "83a7963bf4e5ddfc0af17c8e328bc105321cc1dda4ea7202612f2dd1a1fe8302",
+    "ep1481/leg10/keyframe.jpg": "83a7963bf4e5ddfc0af17c8e328bc105321cc1dda4ea7202612f2dd1a1fe8302",
+    "ep1481/leg11/keyframe.jpg": "72050fa8f24ffba615181a96a38340afa47a6cb0883fdffb4d3a13916ab72c7b",
+    "ep1689/predictions.json": "7b85003d67bd65326905441ef0ba14717a41839625c8d23a9bcb7b4441fccb9a",
+    "inputs/poses/b10_A_drivefix_idx6_20260829_114756.npz": "afd43c851b589df6ff86c144f0a2705b37c58ad5cde2bb19713c2a3c11584d0e",
+    "ep1689/full/keyframe.jpg": "35e5f6a9e3aebd8627561652cd5841f66a76aca5667effc30ca89829cff89b4c",
+    "ep1689/leg00/keyframe.jpg": "35e5f6a9e3aebd8627561652cd5841f66a76aca5667effc30ca89829cff89b4c",
+    "ep1689/leg01/keyframe.jpg": "20abde954207f081b197b6cb33c7133cbc610d25f9a6ab76730cc990b765b0c3",
+    "ep1689/leg02/keyframe.jpg": "f25ad09a04ae382ae91ddcf94b8ba54a12a41a070f73c4b38c4958e3ef72e635",
+    "ep1689/leg03/keyframe.jpg": "9722ede8a971e90fbab6a5755130379d3f8e374abf2f5154b4123e1230ec1596",
+    "ep1689/leg04/keyframe.jpg": "9722ede8a971e90fbab6a5755130379d3f8e374abf2f5154b4123e1230ec1596",
+    "ep1689/leg05/keyframe.jpg": "9c802eced678792bddcc7363c25a2d6f67660a9021418147549d63fb9bf50bc9",
+    "ep1689/leg06/keyframe.jpg": "eb15fb33153c4d38e423ba442a8793a63f427f9ac87c7a6bdfedb732bea6de31",
+    "ep1689/leg07/keyframe.jpg": "e82e991d999def1b58114acbc59176d88e80b02dd593e79a2a14178902f82cb5",
+    "ep1689/leg08/keyframe.jpg": "9e0c008d3ea135c6a8e9e16bd130b8655b9e0f5d06bbb021b089a9c44e71cd31",
+    "ep1689/leg09/keyframe.jpg": "9e0c008d3ea135c6a8e9e16bd130b8655b9e0f5d06bbb021b089a9c44e71cd31",
+    "ep1689/leg10/keyframe.jpg": "7f52ddace5712cce599bb34f780bf5d765baf17bcffde65ecba8e08aa38d4c6f",
+    "ep1689/leg11/keyframe.jpg": "745710ca702d5e968897aefbaf9695ed8080be77da27af6c3da31c0bf9887600",
+    "ep1689/leg12/keyframe.jpg": "6f9a04d99c003713caaa96db532dd5cd1e67f572475dd7fbeb011f43de09d5d9",
+    "ep1689/leg13/keyframe.jpg": "6f9a04d99c003713caaa96db532dd5cd1e67f572475dd7fbeb011f43de09d5d9",
+    "ep1689/leg14/keyframe.jpg": "ce318194cee83a6d4292ac2fec14e513c9cea47092358f53dc3f735c38e96fc6",
+    "ep1689/leg15/keyframe.jpg": "387ecb9a0d04cfc886fa4a524ada87dda6010c3aac595ea298325f4eba4a1170",
+    "ep1689/leg16/keyframe.jpg": "387ecb9a0d04cfc886fa4a524ada87dda6010c3aac595ea298325f4eba4a1170",
+    "ep1781/predictions.json": "3b14e46b72b65f760d6da9f1ef27eab83a8f2a57bc29935da0389acee7300be4",
+    "inputs/poses/b10_A_drivefix_idx9_20260829_114756.npz": "7e404225038ac49724d614a5547ca28ec3c43a65cf48397f64261ecba2eb6408",
+    "ep1781/full/keyframe.jpg": "8c3e7c44de63bf0a5785d4cd5d998d872dd13e5ef6013b719fe0a5f1c78856d0",
+    "ep1781/leg00/keyframe.jpg": "8c3e7c44de63bf0a5785d4cd5d998d872dd13e5ef6013b719fe0a5f1c78856d0",
+    "ep1781/leg01/keyframe.jpg": "7bf664eba0ae4c2ff154e038a633706fe2d2b84ad6ee231808b6e5b393990889",
+    "ep1781/leg02/keyframe.jpg": "25d2fa0d5c9f82df4cb27179a737cbca1dd92d49f98ee2efb32b93e988de958a",
+    "ep1781/leg03/keyframe.jpg": "25d2fa0d5c9f82df4cb27179a737cbca1dd92d49f98ee2efb32b93e988de958a",
+    "ep1781/leg04/keyframe.jpg": "ec18e1cff73ae15c043ba054cd4811f4bc585b9ce9885764348bd5a5a2cbadf2",
+    "ep1781/leg05/keyframe.jpg": "25d2fa0d5c9f82df4cb27179a737cbca1dd92d49f98ee2efb32b93e988de958a",
+    "ep1781/leg06/keyframe.jpg": "ec18e1cff73ae15c043ba054cd4811f4bc585b9ce9885764348bd5a5a2cbadf2",
+    "ep1781/leg07/keyframe.jpg": "ec18e1cff73ae15c043ba054cd4811f4bc585b9ce9885764348bd5a5a2cbadf2",
+    "ep1781/leg08/keyframe.jpg": "10581dcdd943ddbe8df9154c8bef331c937db3321a36742f0bb9cedb1ff86d09"
+  },
+  "keyframes": [
+    {
+      "episode": 629,
+      "segment": "full",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00000.png",
+      "original_sha256": "d21ed79c766d5f20553daae84e04afcedf34934797defa39818b5bd1dadc8cd8",
+      "display_jpeg": "ep629/full/keyframe.jpg",
+      "display_sha256": "7df18e620b9ad37a7f5cd8e239009ac4a127396267fb0b8df51279cee7e4a843",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 629,
+      "segment": "leg00",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00000.png",
+      "original_sha256": "d21ed79c766d5f20553daae84e04afcedf34934797defa39818b5bd1dadc8cd8",
+      "display_jpeg": "ep629/leg00/keyframe.jpg",
+      "display_sha256": "7df18e620b9ad37a7f5cd8e239009ac4a127396267fb0b8df51279cee7e4a843",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 629,
+      "segment": "leg01",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00120.png",
+      "original_sha256": "faaed497232f3b0671fe298bfa1b54f580f5d08d3ef9812229575d8e62ce02a5",
+      "display_jpeg": "ep629/leg01/keyframe.jpg",
+      "display_sha256": "165ad018272c7aacb239d11977e26f04bb01a133164c48534e76af06e77e46a1",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 629,
+      "segment": "leg02",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00140.png",
+      "original_sha256": "70e0519ca089fec606e31c7d23a1206c3c92dc8bfd8d6354d99fa8a0249a9014",
+      "display_jpeg": "ep629/leg02/keyframe.jpg",
+      "display_sha256": "bf3125316256442a3e89fe29a646e1fcf1b20cd1756abc7148fcae8fe41baaff",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 629,
+      "segment": "leg03",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00219.png",
+      "original_sha256": "b93a140aa9c988b1be380ad127a6ea68186910e41396b423ce32b0d8c75dbf29",
+      "display_jpeg": "ep629/leg03/keyframe.jpg",
+      "display_sha256": "0f357ad85d02bd6083b0f943d130daf7251ff952641a3fab05b58d379867c6de",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 629,
+      "segment": "leg04",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00337.png",
+      "original_sha256": "ce787b5e7a3953cba4bd7c1bbb4d500288c1e0a54572c0e8acc4a287a0271ad7",
+      "display_jpeg": "ep629/leg04/keyframe.jpg",
+      "display_sha256": "79d1d0fb539b2c1b59e5e1b61bb839dd0b7741014470f1503d8980de68ac327c",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 629,
+      "segment": "leg05",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00396.png",
+      "original_sha256": "4b445f963a27f8a1d896865de454b697b042482cba0364b19ab8bd7b56613468",
+      "display_jpeg": "ep629/leg05/keyframe.jpg",
+      "display_sha256": "269712a3b3c596684904004e65e1e4dff31f68c6fa794bd2d24d2c8f18621ce0",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 629,
+      "segment": "leg06",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00416.png",
+      "original_sha256": "814f5118c33f02576f57ec6d440769fb047aa0ed951ec5f4dd646a7a784af802",
+      "display_jpeg": "ep629/leg06/keyframe.jpg",
+      "display_sha256": "637a2e5ecfa29625be70d4fe4f3b677bcb04394dfaca239e6204d152a7f1d5c7",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 478,
+      "segment": "full",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx2_20260829_114756/00000.png",
+      "original_sha256": "f725b8a2d2e441f1e04f91e607d093f154477814ed27353dbf533d40cb305ae5",
+      "display_jpeg": "ep478/full/keyframe.jpg",
+      "display_sha256": "d2bba3db445963506e60b6c3969e6c0806310ed314ad0212d14519ed4e137734",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 478,
+      "segment": "leg00",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx2_20260829_114756/00000.png",
+      "original_sha256": "f725b8a2d2e441f1e04f91e607d093f154477814ed27353dbf533d40cb305ae5",
+      "display_jpeg": "ep478/leg00/keyframe.jpg",
+      "display_sha256": "d2bba3db445963506e60b6c3969e6c0806310ed314ad0212d14519ed4e137734",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 478,
+      "segment": "leg01",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx2_20260829_114756/00080.png",
+      "original_sha256": "a1041a11b263445c9edc76a24a99d637e049c945494de1bd1718c13ac7c7fb83",
+      "display_jpeg": "ep478/leg01/keyframe.jpg",
+      "display_sha256": "15e275b3f1bd2a9bff612c21bc705998396656126cc846023300813dbf2da83f",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 478,
+      "segment": "leg02",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx2_20260829_114756/00212.png",
+      "original_sha256": "009b26efe3b79862fea321637b0a19432e91c620399d583e65209e43b0ac50c8",
+      "display_jpeg": "ep478/leg02/keyframe.jpg",
+      "display_sha256": "734f2c9a9123205275f0a089ef3447c681e21ad03b871a190c2bb16a96e8f868",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 478,
+      "segment": "leg03",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx2_20260829_114756/00232.png",
+      "original_sha256": "dbe09aaddd7dd477e2922070ce65c4b25648c6d8e9e4907aef0490b26968438f",
+      "display_jpeg": "ep478/leg03/keyframe.jpg",
+      "display_sha256": "5bda46e9ff23f0ea020570b1598f0494ae32c08a877b251c4808825b7c61b93f",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 478,
+      "segment": "leg04",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx2_20260829_114756/00323.png",
+      "original_sha256": "fe5d1743c9bf65ed7e53b6f483ce0a79da7c35f14a2f2411d70320f0c59f7109",
+      "display_jpeg": "ep478/leg04/keyframe.jpg",
+      "display_sha256": "aa6bc01097be4ea0a046761dada779e7a0dfd18ae28e87e99868b68b3cbee3e4",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 478,
+      "segment": "leg05",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx2_20260829_114756/00325.png",
+      "original_sha256": "fe5d1743c9bf65ed7e53b6f483ce0a79da7c35f14a2f2411d70320f0c59f7109",
+      "display_jpeg": "ep478/leg05/keyframe.jpg",
+      "display_sha256": "aa6bc01097be4ea0a046761dada779e7a0dfd18ae28e87e99868b68b3cbee3e4",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 478,
+      "segment": "leg06",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx2_20260829_114756/00345.png",
+      "original_sha256": "e083e516a0be7831a22ad4b114ed49e94bc3b4f7e5ca6babe639aff00083b32c",
+      "display_jpeg": "ep478/leg06/keyframe.jpg",
+      "display_sha256": "63055aa23ca8eb1e1df87782e3b504a955cc464033a5ec18c14a247f0df0c5a6",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 478,
+      "segment": "leg07",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx2_20260829_114756/00441.png",
+      "original_sha256": "110a541a3ec8777d60d5c888b9a25de29a07b330c73b8690ddc38382bb0c94b7",
+      "display_jpeg": "ep478/leg07/keyframe.jpg",
+      "display_sha256": "73c04962f5c66e3c26606ffd82ad7999b8b20678554546c086a9d26fac195b4b",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 478,
+      "segment": "leg08",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx2_20260829_114756/00443.png",
+      "original_sha256": "110a541a3ec8777d60d5c888b9a25de29a07b330c73b8690ddc38382bb0c94b7",
+      "display_jpeg": "ep478/leg08/keyframe.jpg",
+      "display_sha256": "73c04962f5c66e3c26606ffd82ad7999b8b20678554546c086a9d26fac195b4b",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 753,
+      "segment": "full",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx1_20260829_114756/00000.png",
+      "original_sha256": "8aa9c82b72426b60c31f8b498a1bb5423c1caba166e35788d387ed16f7ca96b3",
+      "display_jpeg": "ep753/full/keyframe.jpg",
+      "display_sha256": "10a3990c3719863d87b8d616c6169c820562945fb117e00c0d86f0671c9368b8",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 753,
+      "segment": "leg00",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx1_20260829_114756/00000.png",
+      "original_sha256": "8aa9c82b72426b60c31f8b498a1bb5423c1caba166e35788d387ed16f7ca96b3",
+      "display_jpeg": "ep753/leg00/keyframe.jpg",
+      "display_sha256": "10a3990c3719863d87b8d616c6169c820562945fb117e00c0d86f0671c9368b8",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 753,
+      "segment": "leg01",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx1_20260829_114756/00020.png",
+      "original_sha256": "61655299b54c3cb658ea447c2b59f8518b685a0d8177948360af4ae5f667d76b",
+      "display_jpeg": "ep753/leg01/keyframe.jpg",
+      "display_sha256": "890fd69ad349124c7f34c5db1509e96a8cb0e0a548fa36880a97181c57207df3",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 753,
+      "segment": "leg02",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx1_20260829_114756/00055.png",
+      "original_sha256": "f239a148c889a6a5c17a93cfd385552b97b2abbeac25c8c624f0ce1d4ef2124c",
+      "display_jpeg": "ep753/leg02/keyframe.jpg",
+      "display_sha256": "f593136b91f30ca1d8ec7e2c2ebb90061e160d4cb1c9dc5d98f9919359784c6f",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 753,
+      "segment": "leg03",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx1_20260829_114756/00057.png",
+      "original_sha256": "f239a148c889a6a5c17a93cfd385552b97b2abbeac25c8c624f0ce1d4ef2124c",
+      "display_jpeg": "ep753/leg03/keyframe.jpg",
+      "display_sha256": "f593136b91f30ca1d8ec7e2c2ebb90061e160d4cb1c9dc5d98f9919359784c6f",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 753,
+      "segment": "leg04",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx1_20260829_114756/00059.png",
+      "original_sha256": "f239a148c889a6a5c17a93cfd385552b97b2abbeac25c8c624f0ce1d4ef2124c",
+      "display_jpeg": "ep753/leg04/keyframe.jpg",
+      "display_sha256": "f593136b91f30ca1d8ec7e2c2ebb90061e160d4cb1c9dc5d98f9919359784c6f",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 753,
+      "segment": "leg05",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx1_20260829_114756/00061.png",
+      "original_sha256": "f239a148c889a6a5c17a93cfd385552b97b2abbeac25c8c624f0ce1d4ef2124c",
+      "display_jpeg": "ep753/leg05/keyframe.jpg",
+      "display_sha256": "f593136b91f30ca1d8ec7e2c2ebb90061e160d4cb1c9dc5d98f9919359784c6f",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 753,
+      "segment": "leg06",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx1_20260829_114756/00081.png",
+      "original_sha256": "117350b111a778e8048a77c30dc0096767cfad7c745135362c12fe2708d8db91",
+      "display_jpeg": "ep753/leg06/keyframe.jpg",
+      "display_sha256": "87014cc5b1abf234c749e390de6f24d5d1bc967f1be3745d981948b19d5ec9e9",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 753,
+      "segment": "leg07",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx1_20260829_114756/00136.png",
+      "original_sha256": "cba1d6f2cfdb69c4e961a112c871c4d1e97e7d316e97ecfa80c790fe109cd516",
+      "display_jpeg": "ep753/leg07/keyframe.jpg",
+      "display_sha256": "d33afb313a5f31c003903bf5edcf6a330c057685d9a21a0b6047001ee24c4164",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 753,
+      "segment": "leg08",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx1_20260829_114756/00219.png",
+      "original_sha256": "22a26254b44c97b758c06255732ac8e9a8f14c377baf4ff6d1547ae2733bcf2b",
+      "display_jpeg": "ep753/leg08/keyframe.jpg",
+      "display_sha256": "c782d100104288b333b75a1cffe49692cabc590926e03cdbfd6f4b96c25d4544",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 753,
+      "segment": "leg09",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx1_20260829_114756/00316.png",
+      "original_sha256": "bd84b040e882fac43f89233754e95a929e219c3edcc490684fd4300a2f409487",
+      "display_jpeg": "ep753/leg09/keyframe.jpg",
+      "display_sha256": "fd0a023cfe434675ea369d6aeb4ff75e0a0194582e99797b24d281ce0226629f",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 753,
+      "segment": "leg10",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx1_20260829_114756/00335.png",
+      "original_sha256": "9ac8ce50ffe99c43378d1b3c908810afb9f6385a5e74cb7c1ab7c629f19b61ff",
+      "display_jpeg": "ep753/leg10/keyframe.jpg",
+      "display_sha256": "db09041838296fb670fd09f378c4d657e8d3e8b5a735482c935a19d07fb157be",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 753,
+      "segment": "leg11",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx1_20260829_114756/00354.png",
+      "original_sha256": "bd84b040e882fac43f89233754e95a929e219c3edcc490684fd4300a2f409487",
+      "display_jpeg": "ep753/leg11/keyframe.jpg",
+      "display_sha256": "fd0a023cfe434675ea369d6aeb4ff75e0a0194582e99797b24d281ce0226629f",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 753,
+      "segment": "leg12",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx1_20260829_114756/00435.png",
+      "original_sha256": "b12d73d6fc57572f91f71f39f1fc98e60a15472f76a8684801f5afebe38c60f5",
+      "display_jpeg": "ep753/leg12/keyframe.jpg",
+      "display_sha256": "940726c4e9c3abfac8bd54d117795292616134082b9ddd9106d624ca7ac9d2de",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 753,
+      "segment": "leg13",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx1_20260829_114756/00437.png",
+      "original_sha256": "b12d73d6fc57572f91f71f39f1fc98e60a15472f76a8684801f5afebe38c60f5",
+      "display_jpeg": "ep753/leg13/keyframe.jpg",
+      "display_sha256": "940726c4e9c3abfac8bd54d117795292616134082b9ddd9106d624ca7ac9d2de",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 753,
+      "segment": "leg14",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx1_20260829_114756/00517.png",
+      "original_sha256": "48aedafa287e66f8b045fbf498eb70e2a18fd77ead768c5dfdf8fe1b878ef26e",
+      "display_jpeg": "ep753/leg14/keyframe.jpg",
+      "display_sha256": "b079fe786de80833e1cd950d510bff5212956fd8530ee995c7dfd8b04be3a8b0",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 753,
+      "segment": "leg15",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx1_20260829_114756/00519.png",
+      "original_sha256": "48aedafa287e66f8b045fbf498eb70e2a18fd77ead768c5dfdf8fe1b878ef26e",
+      "display_jpeg": "ep753/leg15/keyframe.jpg",
+      "display_sha256": "b079fe786de80833e1cd950d510bff5212956fd8530ee995c7dfd8b04be3a8b0",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 837,
+      "segment": "full",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx0_20260829_114756/00000.png",
+      "original_sha256": "cb51ba5a2add3fcf6472abb1501d15a82d0a78bf206a2569f6859d8ad3f2bc56",
+      "display_jpeg": "ep837/full/keyframe.jpg",
+      "display_sha256": "6d645fd709d7d37e9f1b63f351c6eb6be80bbcbf50ecc6fbd0b5242c8da89825",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 837,
+      "segment": "leg00",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx0_20260829_114756/00000.png",
+      "original_sha256": "cb51ba5a2add3fcf6472abb1501d15a82d0a78bf206a2569f6859d8ad3f2bc56",
+      "display_jpeg": "ep837/leg00/keyframe.jpg",
+      "display_sha256": "6d645fd709d7d37e9f1b63f351c6eb6be80bbcbf50ecc6fbd0b5242c8da89825",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 837,
+      "segment": "leg01",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx0_20260829_114756/00153.png",
+      "original_sha256": "b32a7438fa0067ac19f8f19571077485bb67869f59dd86ecbfe800848932abfd",
+      "display_jpeg": "ep837/leg01/keyframe.jpg",
+      "display_sha256": "20123256eba47eb962dfb6f23f24e3559801c6dbddfd6b396dae5bd752f5ea5d",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 837,
+      "segment": "leg02",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx0_20260829_114756/00172.png",
+      "original_sha256": "45d26308b7ab54fd758ba1478d12abb4b4d7f5b5ddebde351e53bc0b4738bcb4",
+      "display_jpeg": "ep837/leg02/keyframe.jpg",
+      "display_sha256": "0b7c0db1ba2cbcd6191c8997d8d56de8a65c8821fe38fe07cf98a5ccd6494515",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 837,
+      "segment": "leg03",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx0_20260829_114756/00191.png",
+      "original_sha256": "3b2c50391f69f6d75b43762e248614eec0a453b1c4f621491444396247ca62fe",
+      "display_jpeg": "ep837/leg03/keyframe.jpg",
+      "display_sha256": "cd1234a0ae43fcfd18042e58a2dbae066e1639c6489b379d0b9e0027069484d1",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 837,
+      "segment": "leg04",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx0_20260829_114756/00246.png",
+      "original_sha256": "f88532a36a813772973fbabe1ca05da0250baf5a942ae9b23d58263d490be10b",
+      "display_jpeg": "ep837/leg04/keyframe.jpg",
+      "display_sha256": "1ad7ecd46e6d47043ae08c27ea34c23d4aad45fdc1622518344d4df06b4a7a75",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 837,
+      "segment": "leg05",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx0_20260829_114756/00265.png",
+      "original_sha256": "7fe58c82ea5f91178f39212eb8ad77b9ff33c204c56352ab0cc71081997ddff2",
+      "display_jpeg": "ep837/leg05/keyframe.jpg",
+      "display_sha256": "c250ab9c70a265b82049bfeb98b8ac14703e5da942628973394f661f971c7b31",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 837,
+      "segment": "leg06",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx0_20260829_114756/00403.png",
+      "original_sha256": "624f878d535d49e37e90fc4089bd0c823d79415c6877e01e20f9b3efe69aa845",
+      "display_jpeg": "ep837/leg06/keyframe.jpg",
+      "display_sha256": "995f8213c945aaf398d6414df06c2fbc6103fa1304fe2a628f67c3f4b72160b8",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 837,
+      "segment": "leg07",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx0_20260829_114756/00440.png",
+      "original_sha256": "cacfcb890dd42cc3104339d4b5882ed12591658c7e2ebc1a19f7e2c9f447d36e",
+      "display_jpeg": "ep837/leg07/keyframe.jpg",
+      "display_sha256": "0129d69c90836dfcc53fe1032346b117737ca49a50c14fc51fdaf4ce3ac17571",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 837,
+      "segment": "leg08",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx0_20260829_114756/00551.png",
+      "original_sha256": "8b8b732fc3fba340e4971216dfc6a1e7235eb152fa3a4f957cebee2ea96bc331",
+      "display_jpeg": "ep837/leg08/keyframe.jpg",
+      "display_sha256": "5b976bae5ab5c6d9a082891da21e39da2cbb6e49c93ed77c6244fc351603a33f",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 837,
+      "segment": "leg09",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx0_20260829_114756/00636.png",
+      "original_sha256": "2c512013e44f6f0b81d69892e61427bb07a24e1bec8664a5aad6c5d7547ce3f9",
+      "display_jpeg": "ep837/leg09/keyframe.jpg",
+      "display_sha256": "57cbf5fa1505097fe28ae5fb10b44f23769b12c3cc9c3b19e4ed14a10f1e28cf",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 837,
+      "segment": "leg10",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx0_20260829_114756/00702.png",
+      "original_sha256": "597676099451a576a68618ca8f71597d2220b6e022712f00acb687d876c0a9e0",
+      "display_jpeg": "ep837/leg10/keyframe.jpg",
+      "display_sha256": "344df7193dc08e0d2ef366966cbc7d63dd0f58cfca46f985058230ec94642282",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 837,
+      "segment": "leg11",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx0_20260829_114756/00722.png",
+      "original_sha256": "5203466644e9db73c9aec01103330940af9830e2d33add20f9197eb1350fa732",
+      "display_jpeg": "ep837/leg11/keyframe.jpg",
+      "display_sha256": "6233da2c4f5436db240501f8954e2f8054cdb11d47c5769e1b672d77c2eb8264",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 837,
+      "segment": "leg12",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx0_20260829_114756/00835.png",
+      "original_sha256": "b9dd871b8f274bc29e6b94647705ec980bd2687609760e155d01cefd54fc60c4",
+      "display_jpeg": "ep837/leg12/keyframe.jpg",
+      "display_sha256": "97292aeebbcc4b707a258a89477348f9541729f6541c7425b82217dc064d005d",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 837,
+      "segment": "leg13",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx0_20260829_114756/00903.png",
+      "original_sha256": "fb68042d102efae726e4a4198d6ef1a4006f416f3b728ab07448910edaa15f3f",
+      "display_jpeg": "ep837/leg13/keyframe.jpg",
+      "display_sha256": "de8987f68b14546d32882ca0220adb55db34acba5d0772052e8c6f570f08b3c6",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 837,
+      "segment": "leg14",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx0_20260829_114756/00921.png",
+      "original_sha256": "a25c99403c25a900912b575ad6b8b8b8f7d69b75d38c09693a5fa708b28f8531",
+      "display_jpeg": "ep837/leg14/keyframe.jpg",
+      "display_sha256": "73f808a41a4a57115cb5d9db1ea3ab343c58874ede4ba23ba05c0317f68eb4e4",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 837,
+      "segment": "leg15",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx0_20260829_114756/00941.png",
+      "original_sha256": "ef79969bfb8498cc082971754014439057a95182749b9c159ac85d03c95d4b99",
+      "display_jpeg": "ep837/leg15/keyframe.jpg",
+      "display_sha256": "12d4f57d05458a3246388b4cd37cc03af52465d2353330ab944c8b415634f570",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 837,
+      "segment": "leg16",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx0_20260829_114756/01045.png",
+      "original_sha256": "9db4baf76c44adfa551e9281bdb9b47e00dd278042e916bc03bbf3075c67cc3d",
+      "display_jpeg": "ep837/leg16/keyframe.jpg",
+      "display_sha256": "aa7dc60943f40279c5c671b0aaddf286383db7267ede2e510df6823d187a298e",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 837,
+      "segment": "leg17",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx0_20260829_114756/01065.png",
+      "original_sha256": "365738a1916c12751af359f2d98b540107294efb43407b48e75d18bc904c175e",
+      "display_jpeg": "ep837/leg17/keyframe.jpg",
+      "display_sha256": "6a1db4d0b67f54b8acebfc27e99296f7690a78f02c7160a661fa80b72ba035bd",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 837,
+      "segment": "leg18",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx0_20260829_114756/01067.png",
+      "original_sha256": "365738a1916c12751af359f2d98b540107294efb43407b48e75d18bc904c175e",
+      "display_jpeg": "ep837/leg18/keyframe.jpg",
+      "display_sha256": "6a1db4d0b67f54b8acebfc27e99296f7690a78f02c7160a661fa80b72ba035bd",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 837,
+      "segment": "leg19",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx0_20260829_114756/01086.png",
+      "original_sha256": "1eda6086e18f9d0933b3780affb7eaacef318704d39b571afe3bd841f1624afb",
+      "display_jpeg": "ep837/leg19/keyframe.jpg",
+      "display_sha256": "b3a5a42da64eeffe67f7873e9224485a390378882dc0123e8b966c8b7d46b537",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 837,
+      "segment": "leg20",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx0_20260829_114756/01148.png",
+      "original_sha256": "0fc009ffb177964e1d354935e80a923c4a764737951a4ee9ccfc20b79ea17481",
+      "display_jpeg": "ep837/leg20/keyframe.jpg",
+      "display_sha256": "9847287d5f825eae9112a5980055438a37cd0a4badb42322c3bce43e3c9cc845",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1031,
+      "segment": "full",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx4_20260829_114756/00000.png",
+      "original_sha256": "1905550076bed41bf23e70ce6dcfd1c53b2864cb69486516f09d6a8ba21b7cec",
+      "display_jpeg": "ep1031/full/keyframe.jpg",
+      "display_sha256": "4c062bd30bbcf2de8331f8c9d7662d433ca372cffc7c194643a0220215d8c21a",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1031,
+      "segment": "leg00",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx4_20260829_114756/00000.png",
+      "original_sha256": "1905550076bed41bf23e70ce6dcfd1c53b2864cb69486516f09d6a8ba21b7cec",
+      "display_jpeg": "ep1031/leg00/keyframe.jpg",
+      "display_sha256": "4c062bd30bbcf2de8331f8c9d7662d433ca372cffc7c194643a0220215d8c21a",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1031,
+      "segment": "leg01",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx4_20260829_114756/00047.png",
+      "original_sha256": "4ddd48d6bc3457d4df4317e20853ba25e56bb0ef9a38a2f2032938379c81c9b0",
+      "display_jpeg": "ep1031/leg01/keyframe.jpg",
+      "display_sha256": "82ef67ecf1550d4f5c182be83f5b819adb4cee7b54a6224c6d5aa3886556f8a1",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1031,
+      "segment": "leg02",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx4_20260829_114756/00086.png",
+      "original_sha256": "955dc61459ee012a9e874467b095eca833b79cfc0f8aaf44e7f5c2e073d56899",
+      "display_jpeg": "ep1031/leg02/keyframe.jpg",
+      "display_sha256": "ec7d0275a9146b629e30f1ba9cff8d5d4af2e82f7f50606e12aadee60272ad65",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1031,
+      "segment": "leg03",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx4_20260829_114756/00150.png",
+      "original_sha256": "a8c5fea2695b9626d6998deaf7f78b2480ea0e1e038cff7ced7d43fee2069384",
+      "display_jpeg": "ep1031/leg03/keyframe.jpg",
+      "display_sha256": "15e00afb9d5c862bab6d87100768167c6e92a7b2980635179b262daee423b3ec",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1031,
+      "segment": "leg04",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx4_20260829_114756/00169.png",
+      "original_sha256": "249df0f45fa26bb4061c80d2b577d3fae59045eb77bf0a0b5e6ab39c0de8191a",
+      "display_jpeg": "ep1031/leg04/keyframe.jpg",
+      "display_sha256": "bac49a93829bde5ad4c746a33ff6006f8012e85291b12d16f917cd57d6238501",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1031,
+      "segment": "leg05",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx4_20260829_114756/00310.png",
+      "original_sha256": "cee91bf0d7bb13f76c25eafc6269055b82be4031043cbb2d3d718510594807f3",
+      "display_jpeg": "ep1031/leg05/keyframe.jpg",
+      "display_sha256": "7c455d1d6fbc3d1fe4ec483e99f1b1f072a9aac8e5bb3db2a7fabc40f5f3bb4e",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1031,
+      "segment": "leg06",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx4_20260829_114756/00312.png",
+      "original_sha256": "cee91bf0d7bb13f76c25eafc6269055b82be4031043cbb2d3d718510594807f3",
+      "display_jpeg": "ep1031/leg06/keyframe.jpg",
+      "display_sha256": "7c455d1d6fbc3d1fe4ec483e99f1b1f072a9aac8e5bb3db2a7fabc40f5f3bb4e",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "full",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/00000.png",
+      "original_sha256": "cd7fa8e829e35acc7e4dd3c8266b147b7fae1162bdd89440b04875dd892cfc85",
+      "display_jpeg": "ep1285/full/keyframe.jpg",
+      "display_sha256": "cefcec76eaff6d9fab9356c5b5d7d79a8aea35b091ae752227dc91ec273fd00c",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg00",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/00000.png",
+      "original_sha256": "cd7fa8e829e35acc7e4dd3c8266b147b7fae1162bdd89440b04875dd892cfc85",
+      "display_jpeg": "ep1285/leg00/keyframe.jpg",
+      "display_sha256": "cefcec76eaff6d9fab9356c5b5d7d79a8aea35b091ae752227dc91ec273fd00c",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg01",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/00055.png",
+      "original_sha256": "27eb7ced8c4a14bad684b5c4feeecab7585d2ce74dd24105f5494afed56c7166",
+      "display_jpeg": "ep1285/leg01/keyframe.jpg",
+      "display_sha256": "2acf1907fdc114cc3f72d0cd3b7687253e20aee0a2bb10b133a9d8d4b5e60036",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg02",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/00074.png",
+      "original_sha256": "f6a110bbffbc0c0f434b8100d02223f86381349f29820289f8af2bf55caddf68",
+      "display_jpeg": "ep1285/leg02/keyframe.jpg",
+      "display_sha256": "bd8e0767e10a05c3749811107118202e11879b9791d605d72071bf93a844cf9e",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg03",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/00094.png",
+      "original_sha256": "7271276544f19092f658af552cf2d98214169e7f26d6f48a0150c53c0d39af58",
+      "display_jpeg": "ep1285/leg03/keyframe.jpg",
+      "display_sha256": "f3106db663c64feaba6ed8e3d1025c04b3835fefa8ae72dd07dc7c4504fa8fa1",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg04",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/00158.png",
+      "original_sha256": "de12cf90180b7ed3f74b8bc760ea934a43ed1e70df5b8c6029a5727254d0a6d6",
+      "display_jpeg": "ep1285/leg04/keyframe.jpg",
+      "display_sha256": "cd931e8e128071dee488d1b70d943df49ba6265427bd4b41cb9c7fbff8d7a320",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg05",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/00195.png",
+      "original_sha256": "ecd78aec7f025e31d218e5b1a2ce22a202c5d62e4d94b85d54019448f4000d2c",
+      "display_jpeg": "ep1285/leg05/keyframe.jpg",
+      "display_sha256": "6037fd58ceb01f5a4efa94d12a7e6d1c15317296a35f92dde3f3f73941630d2f",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg06",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/00285.png",
+      "original_sha256": "b10468e93a16c9f648e6408d9882f6b80fe36533386df97c019f8da3127a9fb8",
+      "display_jpeg": "ep1285/leg06/keyframe.jpg",
+      "display_sha256": "ffc6425dead9ac71c5bbe85dddec5e503bd0f39ffd6c38a0b6354c25a7b0c934",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg07",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/00304.png",
+      "original_sha256": "63b6a70b6c408ca40b628fb7b49f9d157ce01d2475c9efdef9eecf270efa7e52",
+      "display_jpeg": "ep1285/leg07/keyframe.jpg",
+      "display_sha256": "51e4b675066ff9284dca29340f9390cd04755777f8a01f46d174320b41a37c16",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg08",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/00368.png",
+      "original_sha256": "79ccca06969f71e885c1d81e7c0564e41b0182cfc196ca2c08c74771beade9b4",
+      "display_jpeg": "ep1285/leg08/keyframe.jpg",
+      "display_sha256": "478be2729a13f07b604bcf92900522667f72065c3ac5abda5ba21a42da595fe3",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg09",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/00388.png",
+      "original_sha256": "d35a68db997fcd15dd6e66ee1b7743d3ede01de4b17c1d31c306e487265c3720",
+      "display_jpeg": "ep1285/leg09/keyframe.jpg",
+      "display_sha256": "b5a232d2d42b99df884bef8fde8081323b4a5c19b4e006d83969b8c6975b42f7",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg10",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/00480.png",
+      "original_sha256": "d1e72b4685dd9f305a250f7e83d8b93bc30214624e06e57578af81d56aad1478",
+      "display_jpeg": "ep1285/leg10/keyframe.jpg",
+      "display_sha256": "d6df0e6ab54d979ec378f2cc3fd37966e50b8183d5840be8b85a03468e0911d9",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg11",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/00569.png",
+      "original_sha256": "c06c29fc87ebb32ae473c65f938916a8de87fbc3bf72b35c55a1aad14552c57d",
+      "display_jpeg": "ep1285/leg11/keyframe.jpg",
+      "display_sha256": "159edb255d11482631f8627f103b0b99d441bae2b9a87d37b66560b25794e60c",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg12",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/00571.png",
+      "original_sha256": "c06c29fc87ebb32ae473c65f938916a8de87fbc3bf72b35c55a1aad14552c57d",
+      "display_jpeg": "ep1285/leg12/keyframe.jpg",
+      "display_sha256": "159edb255d11482631f8627f103b0b99d441bae2b9a87d37b66560b25794e60c",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg13",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/00608.png",
+      "original_sha256": "6d2fd0956445a2a892d1c00e0c0ac381d8d86ec76191bb89fb265645d6c9796c",
+      "display_jpeg": "ep1285/leg13/keyframe.jpg",
+      "display_sha256": "77c7c824ca7bf96601aabb49ebcc4c7ca6a202d88e5c096bf72c7019bf5c06b6",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg14",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/00727.png",
+      "original_sha256": "80332be303b145536586653411ffe4921d76a4846c3bf987039f1d6fcdd4470b",
+      "display_jpeg": "ep1285/leg14/keyframe.jpg",
+      "display_sha256": "55d026e7ce5abcab32eaf22cd9e2b1b99d204060e7c7d07d15ead8a37b9649af",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg15",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/00746.png",
+      "original_sha256": "d356f2bc88f0b28c793b701f224cb33f8f6443396d039887d2a125993c357650",
+      "display_jpeg": "ep1285/leg15/keyframe.jpg",
+      "display_sha256": "e36742dd11a9bb2cde9d95896f43e333f806b818c6518e4f937b150379fdad69",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg16",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/00766.png",
+      "original_sha256": "467ab19c6f2fcccca57ca50284a8e5aa6a652dcb506a6faab011a64acdaec8f6",
+      "display_jpeg": "ep1285/leg16/keyframe.jpg",
+      "display_sha256": "859151c783ad704e360ff5759f372b03293221167ff092d3005b15b67379a855",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg17",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/00786.png",
+      "original_sha256": "d356f2bc88f0b28c793b701f224cb33f8f6443396d039887d2a125993c357650",
+      "display_jpeg": "ep1285/leg17/keyframe.jpg",
+      "display_sha256": "e36742dd11a9bb2cde9d95896f43e333f806b818c6518e4f937b150379fdad69",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg18",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/00836.png",
+      "original_sha256": "f2f885d331ea8c71f98bbbb5e419ea33fe51c52ae90589de26ab012479c83207",
+      "display_jpeg": "ep1285/leg18/keyframe.jpg",
+      "display_sha256": "e23d2d2d3900837065425d3fb26173f663152ac78455df2f433a98559c077c71",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg19",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/00954.png",
+      "original_sha256": "5c64b401351d4d5ffa1dee99cb722b5c8d8bceeac6e779160ebaab00c9990b8c",
+      "display_jpeg": "ep1285/leg19/keyframe.jpg",
+      "display_sha256": "24ff178c90821d05341d3eebf7d5e3930a8705ae1a1a1cc249813759cf334f1a",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg20",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/00974.png",
+      "original_sha256": "b9369b5c5b6d5a14a667e4e7f4476ed9e867cd1236a0a6a8acb088f6f03f04f8",
+      "display_jpeg": "ep1285/leg20/keyframe.jpg",
+      "display_sha256": "7acb3afab280523085fb390c5855032c4d49c51685439624d2f6d9ee1ad76aa2",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg21",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/01072.png",
+      "original_sha256": "38f4919132bbd8a9b2170bcd9a0a4ed7cd3db8a6989fa8b976fc10520ef0ef83",
+      "display_jpeg": "ep1285/leg21/keyframe.jpg",
+      "display_sha256": "78b14e537fc4571453d9667e25a8c37fd33bf14f9536e5aed8f629dbe7203d7c",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg22",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/01092.png",
+      "original_sha256": "77b45d0768dda0d6cf3a194f59cc71e6959212a0ec7b674ef9d07fadbf863f72",
+      "display_jpeg": "ep1285/leg22/keyframe.jpg",
+      "display_sha256": "f30bee25900ff6ca09bda1dac8358847685b3bfda58f2c91a91800f8b61868a0",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg23",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/01112.png",
+      "original_sha256": "38f4919132bbd8a9b2170bcd9a0a4ed7cd3db8a6989fa8b976fc10520ef0ef83",
+      "display_jpeg": "ep1285/leg23/keyframe.jpg",
+      "display_sha256": "78b14e537fc4571453d9667e25a8c37fd33bf14f9536e5aed8f629dbe7203d7c",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg24",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/01228.png",
+      "original_sha256": "091a120b89b928b0c5c25176b3f7300b464e832c66910b9968f9faeb8a8b170b",
+      "display_jpeg": "ep1285/leg24/keyframe.jpg",
+      "display_sha256": "777f23a22778adc8f33ccfb006f0beb2358dadacdfc12304cbbeb5ed542d0d8c",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg25",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/01247.png",
+      "original_sha256": "32d398cc0be3f2208a9bfdff857544a9f45f13ed0da63d165763d788d05b1b25",
+      "display_jpeg": "ep1285/leg25/keyframe.jpg",
+      "display_sha256": "7d5ff6a8865b50336b1f1021d99da19704328b801c11d2892a71c54f44b7283c",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg26",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/01350.png",
+      "original_sha256": "3c3721367e41025e2d29dbaff741dc717f3e6a5e855d31e2f27e7c2c5b40da5b",
+      "display_jpeg": "ep1285/leg26/keyframe.jpg",
+      "display_sha256": "6a961fdc7d0b87505bf793d55d1115aa6402fc0694ffba3b41978f1a33ce7727",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg27",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/01370.png",
+      "original_sha256": "5827741411af9293517b195bc616c2a14f650239074548d7e931a74f2097164f",
+      "display_jpeg": "ep1285/leg27/keyframe.jpg",
+      "display_sha256": "329040cd446b1687301ca59aaf41d7254e9e9d9c301c19d5d6f7362d6ecb5333",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg28",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/01427.png",
+      "original_sha256": "d40159247bd8c59adaede9be7634563969d75fce321f11db454ac43aa371edaf",
+      "display_jpeg": "ep1285/leg28/keyframe.jpg",
+      "display_sha256": "ee5d326be48fedc497b7ffa6087aee19824f7ed0e3a67b650ab6a0c69f10f7c0",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1285,
+      "segment": "leg29",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx7_20260829_114756/01429.png",
+      "original_sha256": "d40159247bd8c59adaede9be7634563969d75fce321f11db454ac43aa371edaf",
+      "display_jpeg": "ep1285/leg29/keyframe.jpg",
+      "display_sha256": "ee5d326be48fedc497b7ffa6087aee19824f7ed0e3a67b650ab6a0c69f10f7c0",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1395,
+      "segment": "full",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx8_20260829_114756/00000.png",
+      "original_sha256": "70183c8ed3bff80b30a38dae26b6b928c539db48f1b63d750ba2baa2d7a99f78",
+      "display_jpeg": "ep1395/full/keyframe.jpg",
+      "display_sha256": "2adab4836e934fe096fbf853e94f4da58de4d568d995d7f2da1c5d5f6d64cb10",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1395,
+      "segment": "leg00",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx8_20260829_114756/00000.png",
+      "original_sha256": "70183c8ed3bff80b30a38dae26b6b928c539db48f1b63d750ba2baa2d7a99f78",
+      "display_jpeg": "ep1395/leg00/keyframe.jpg",
+      "display_sha256": "2adab4836e934fe096fbf853e94f4da58de4d568d995d7f2da1c5d5f6d64cb10",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1395,
+      "segment": "leg01",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx8_20260829_114756/00058.png",
+      "original_sha256": "f824e810b08a689c5715ebd45329dea572b6eb4da1d3e7a18e8d0f1ecb3c5d2f",
+      "display_jpeg": "ep1395/leg01/keyframe.jpg",
+      "display_sha256": "60f6a9a6ca07c47177d6a239828c8a7ee43671cec362621281bc87aae12308c2",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1395,
+      "segment": "leg02",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx8_20260829_114756/00077.png",
+      "original_sha256": "b6ae873a17dafe228c713c8f819a15bc93a7b002690062666cedd88590ce5cb2",
+      "display_jpeg": "ep1395/leg02/keyframe.jpg",
+      "display_sha256": "7b83ceb157f3dc816fc3d5da9d3fb4cc2e1adc3e5a69d8afb4bd82e90effb3f3",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1395,
+      "segment": "leg03",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx8_20260829_114756/00124.png",
+      "original_sha256": "0aa693fd8e3e0707a6f075e395347abef44fa25063ff5e9572b5de2fc4d8b2b1",
+      "display_jpeg": "ep1395/leg03/keyframe.jpg",
+      "display_sha256": "89fdba679427b88283116dcca6cc05d7c38b99163f14a36a196f805ac8a33a0b",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1395,
+      "segment": "leg04",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx8_20260829_114756/00126.png",
+      "original_sha256": "0aa693fd8e3e0707a6f075e395347abef44fa25063ff5e9572b5de2fc4d8b2b1",
+      "display_jpeg": "ep1395/leg04/keyframe.jpg",
+      "display_sha256": "89fdba679427b88283116dcca6cc05d7c38b99163f14a36a196f805ac8a33a0b",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1481,
+      "segment": "full",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx5_20260829_114756/00000.png",
+      "original_sha256": "3bf3742f027b497c2d5a1b26e0a6ca8892fda5d2a64e15eb26d0ec8b482ec440",
+      "display_jpeg": "ep1481/full/keyframe.jpg",
+      "display_sha256": "c54bbefe3661a79a65703ee56845f6d469ada28f82d475de76629c1278dcc08d",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1481,
+      "segment": "leg00",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx5_20260829_114756/00000.png",
+      "original_sha256": "3bf3742f027b497c2d5a1b26e0a6ca8892fda5d2a64e15eb26d0ec8b482ec440",
+      "display_jpeg": "ep1481/leg00/keyframe.jpg",
+      "display_sha256": "c54bbefe3661a79a65703ee56845f6d469ada28f82d475de76629c1278dcc08d",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1481,
+      "segment": "leg01",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx5_20260829_114756/00019.png",
+      "original_sha256": "ba2a9f4cca6193dd0883f6e585059edcf3b9fc771c3deb58d11d0c460155048a",
+      "display_jpeg": "ep1481/leg01/keyframe.jpg",
+      "display_sha256": "02fa8c573edf959c1a652f5f7a59fb97d16700ce367bab17c3f466bca4145f8d",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1481,
+      "segment": "leg02",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx5_20260829_114756/00102.png",
+      "original_sha256": "50880b49db43bbe549b8f24709e8a808a7ebad7daee71c7a2cf49b4370b6588e",
+      "display_jpeg": "ep1481/leg02/keyframe.jpg",
+      "display_sha256": "6b5e114cf203f9fb2b5b37fa4a492e6741d0758af615fd65279fa85826e46aea",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1481,
+      "segment": "leg03",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx5_20260829_114756/00122.png",
+      "original_sha256": "b521e8c2e0606994e70cb006d30fd3c93c5274de113b5cc65c40e6ae44866132",
+      "display_jpeg": "ep1481/leg03/keyframe.jpg",
+      "display_sha256": "71376d993499a0a3c73d2249ad823adaae11fad80ad3caa5de627b3b164daa9a",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1481,
+      "segment": "leg04",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx5_20260829_114756/00124.png",
+      "original_sha256": "b521e8c2e0606994e70cb006d30fd3c93c5274de113b5cc65c40e6ae44866132",
+      "display_jpeg": "ep1481/leg04/keyframe.jpg",
+      "display_sha256": "71376d993499a0a3c73d2249ad823adaae11fad80ad3caa5de627b3b164daa9a",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1481,
+      "segment": "leg05",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx5_20260829_114756/00229.png",
+      "original_sha256": "664b2ac7dd6e447c52eeefb051966c26eed9673d90e10cf315aad8585c7c69f9",
+      "display_jpeg": "ep1481/leg05/keyframe.jpg",
+      "display_sha256": "89e2acf8bfd2222357c36c356aea32fed3fe906467fee0a812b381ab9b5c725f",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1481,
+      "segment": "leg06",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx5_20260829_114756/00248.png",
+      "original_sha256": "116bb73294169502e6194956bcad8a375dba682596b48af9aeb7aec5ef20bc53",
+      "display_jpeg": "ep1481/leg06/keyframe.jpg",
+      "display_sha256": "be77754453cabb302b5081e4b7f601bfd6a863b008a7b70347a812263b07cf63",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1481,
+      "segment": "leg07",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx5_20260829_114756/00316.png",
+      "original_sha256": "7914219e0a65715c7cef2d938248f8571b9f32dffdc62c68d5ca35a4d35fd396",
+      "display_jpeg": "ep1481/leg07/keyframe.jpg",
+      "display_sha256": "bdae455ebe0465281522380da6b69c2adb49f8919ba9a19a781d697c473c21a6",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1481,
+      "segment": "leg08",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx5_20260829_114756/00338.png",
+      "original_sha256": "8cbc30cbf3ab96588f5c815a2be4aeb88f2100092a8c81c1cf95aa3e8ae5f938",
+      "display_jpeg": "ep1481/leg08/keyframe.jpg",
+      "display_sha256": "4fe8b08f98e3257613cf745dfdd410ea6cd3537568e5754f669421883ad72ebe",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1481,
+      "segment": "leg09",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx5_20260829_114756/00358.png",
+      "original_sha256": "7d9757d70973556fcd80df3f920f654e342beae4ff37a950ea80d26286ea4a45",
+      "display_jpeg": "ep1481/leg09/keyframe.jpg",
+      "display_sha256": "83a7963bf4e5ddfc0af17c8e328bc105321cc1dda4ea7202612f2dd1a1fe8302",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1481,
+      "segment": "leg10",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx5_20260829_114756/00360.png",
+      "original_sha256": "7d9757d70973556fcd80df3f920f654e342beae4ff37a950ea80d26286ea4a45",
+      "display_jpeg": "ep1481/leg10/keyframe.jpg",
+      "display_sha256": "83a7963bf4e5ddfc0af17c8e328bc105321cc1dda4ea7202612f2dd1a1fe8302",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1481,
+      "segment": "leg11",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx5_20260829_114756/00380.png",
+      "original_sha256": "81c74180512486e3e77b1222dd62da8ae3c3f8d856331fe09f2f7ccda6272067",
+      "display_jpeg": "ep1481/leg11/keyframe.jpg",
+      "display_sha256": "72050fa8f24ffba615181a96a38340afa47a6cb0883fdffb4d3a13916ab72c7b",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1689,
+      "segment": "full",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx6_20260829_114756/00000.png",
+      "original_sha256": "40b8a1703c9a508bedf761212f613b50f3e98903849706c0b8d4c75317992da6",
+      "display_jpeg": "ep1689/full/keyframe.jpg",
+      "display_sha256": "35e5f6a9e3aebd8627561652cd5841f66a76aca5667effc30ca89829cff89b4c",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1689,
+      "segment": "leg00",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx6_20260829_114756/00000.png",
+      "original_sha256": "40b8a1703c9a508bedf761212f613b50f3e98903849706c0b8d4c75317992da6",
+      "display_jpeg": "ep1689/leg00/keyframe.jpg",
+      "display_sha256": "35e5f6a9e3aebd8627561652cd5841f66a76aca5667effc30ca89829cff89b4c",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1689,
+      "segment": "leg01",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx6_20260829_114756/00090.png",
+      "original_sha256": "1945c8f5e04435ea4ce3b3aa57204ddde64560b2e88d180c85780023e2f0bb0d",
+      "display_jpeg": "ep1689/leg01/keyframe.jpg",
+      "display_sha256": "20abde954207f081b197b6cb33c7133cbc610d25f9a6ab76730cc990b765b0c3",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1689,
+      "segment": "leg02",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx6_20260829_114756/00134.png",
+      "original_sha256": "d3aa2463cf5bc73f6ab5ef3713a7c530586496f1b23066e2ed6e4c1048b5469d",
+      "display_jpeg": "ep1689/leg02/keyframe.jpg",
+      "display_sha256": "f25ad09a04ae382ae91ddcf94b8ba54a12a41a070f73c4b38c4958e3ef72e635",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1689,
+      "segment": "leg03",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx6_20260829_114756/00210.png",
+      "original_sha256": "7b2cee643c3edc7b8009e5bfdc1e7de22982ec47663827ea5f32c95b4e96c4ab",
+      "display_jpeg": "ep1689/leg03/keyframe.jpg",
+      "display_sha256": "9722ede8a971e90fbab6a5755130379d3f8e374abf2f5154b4123e1230ec1596",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1689,
+      "segment": "leg04",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx6_20260829_114756/00212.png",
+      "original_sha256": "7b2cee643c3edc7b8009e5bfdc1e7de22982ec47663827ea5f32c95b4e96c4ab",
+      "display_jpeg": "ep1689/leg04/keyframe.jpg",
+      "display_sha256": "9722ede8a971e90fbab6a5755130379d3f8e374abf2f5154b4123e1230ec1596",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1689,
+      "segment": "leg05",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx6_20260829_114756/00232.png",
+      "original_sha256": "6701c6510e316300b05c4b17e5718aa5e1421b0b182d5b840706a4dbfc88a046",
+      "display_jpeg": "ep1689/leg05/keyframe.jpg",
+      "display_sha256": "9c802eced678792bddcc7363c25a2d6f67660a9021418147549d63fb9bf50bc9",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1689,
+      "segment": "leg06",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx6_20260829_114756/00292.png",
+      "original_sha256": "c00b4db36f421a8d60f8a9e76837e3d1eddad3fd9e6d394078fd975e3ae01422",
+      "display_jpeg": "ep1689/leg06/keyframe.jpg",
+      "display_sha256": "eb15fb33153c4d38e423ba442a8793a63f427f9ac87c7a6bdfedb732bea6de31",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1689,
+      "segment": "leg07",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx6_20260829_114756/00308.png",
+      "original_sha256": "75aab40eebf3c4f4f1c9c37e419e0f3d8a31621237dac354d12ec2415163e260",
+      "display_jpeg": "ep1689/leg07/keyframe.jpg",
+      "display_sha256": "e82e991d999def1b58114acbc59176d88e80b02dd593e79a2a14178902f82cb5",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1689,
+      "segment": "leg08",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx6_20260829_114756/00327.png",
+      "original_sha256": "d80d85c91c3ada949cf17e13a068304f38fbb3c306599e27551d45c8de1211b5",
+      "display_jpeg": "ep1689/leg08/keyframe.jpg",
+      "display_sha256": "9e0c008d3ea135c6a8e9e16bd130b8655b9e0f5d06bbb021b089a9c44e71cd31",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1689,
+      "segment": "leg09",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx6_20260829_114756/00329.png",
+      "original_sha256": "d80d85c91c3ada949cf17e13a068304f38fbb3c306599e27551d45c8de1211b5",
+      "display_jpeg": "ep1689/leg09/keyframe.jpg",
+      "display_sha256": "9e0c008d3ea135c6a8e9e16bd130b8655b9e0f5d06bbb021b089a9c44e71cd31",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1689,
+      "segment": "leg10",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx6_20260829_114756/00349.png",
+      "original_sha256": "f3605057ced1817d3a26d7533ddaf894e5604783bfddc42cde19266a2dfd862a",
+      "display_jpeg": "ep1689/leg10/keyframe.jpg",
+      "display_sha256": "7f52ddace5712cce599bb34f780bf5d765baf17bcffde65ecba8e08aa38d4c6f",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1689,
+      "segment": "leg11",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx6_20260829_114756/00532.png",
+      "original_sha256": "20ed801f65fbf2b4ef23b740dabff82acd005f83f9e50dd26a5069f533b8813c",
+      "display_jpeg": "ep1689/leg11/keyframe.jpg",
+      "display_sha256": "745710ca702d5e968897aefbaf9695ed8080be77da27af6c3da31c0bf9887600",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1689,
+      "segment": "leg12",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx6_20260829_114756/00588.png",
+      "original_sha256": "5cd21eef0b588470764b8053ce024719bec82bca30432ec436f0036917f28d0a",
+      "display_jpeg": "ep1689/leg12/keyframe.jpg",
+      "display_sha256": "6f9a04d99c003713caaa96db532dd5cd1e67f572475dd7fbeb011f43de09d5d9",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1689,
+      "segment": "leg13",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx6_20260829_114756/00590.png",
+      "original_sha256": "5cd21eef0b588470764b8053ce024719bec82bca30432ec436f0036917f28d0a",
+      "display_jpeg": "ep1689/leg13/keyframe.jpg",
+      "display_sha256": "6f9a04d99c003713caaa96db532dd5cd1e67f572475dd7fbeb011f43de09d5d9",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1689,
+      "segment": "leg14",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx6_20260829_114756/00610.png",
+      "original_sha256": "d47c6d8e09436d2675ae68f09d322bb057ce8ff5fe384c80054888a406466a53",
+      "display_jpeg": "ep1689/leg14/keyframe.jpg",
+      "display_sha256": "ce318194cee83a6d4292ac2fec14e513c9cea47092358f53dc3f735c38e96fc6",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1689,
+      "segment": "leg15",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx6_20260829_114756/00632.png",
+      "original_sha256": "2d39441856f69e1867a5a26edfb8bed8175a9a1858007aff67dae622ac3f6400",
+      "display_jpeg": "ep1689/leg15/keyframe.jpg",
+      "display_sha256": "387ecb9a0d04cfc886fa4a524ada87dda6010c3aac595ea298325f4eba4a1170",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1689,
+      "segment": "leg16",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx6_20260829_114756/00634.png",
+      "original_sha256": "2d39441856f69e1867a5a26edfb8bed8175a9a1858007aff67dae622ac3f6400",
+      "display_jpeg": "ep1689/leg16/keyframe.jpg",
+      "display_sha256": "387ecb9a0d04cfc886fa4a524ada87dda6010c3aac595ea298325f4eba4a1170",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1781,
+      "segment": "full",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx9_20260829_114756/00000.png",
+      "original_sha256": "a40e70d22628d05fadf011887693473eace3626343ac7bdbb1fdeba95dcbcebb",
+      "display_jpeg": "ep1781/full/keyframe.jpg",
+      "display_sha256": "8c3e7c44de63bf0a5785d4cd5d998d872dd13e5ef6013b719fe0a5f1c78856d0",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1781,
+      "segment": "leg00",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx9_20260829_114756/00000.png",
+      "original_sha256": "a40e70d22628d05fadf011887693473eace3626343ac7bdbb1fdeba95dcbcebb",
+      "display_jpeg": "ep1781/leg00/keyframe.jpg",
+      "display_sha256": "8c3e7c44de63bf0a5785d4cd5d998d872dd13e5ef6013b719fe0a5f1c78856d0",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1781,
+      "segment": "leg01",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx9_20260829_114756/00019.png",
+      "original_sha256": "03589739e0e3fa6aea786ea427dc93aed7fd1ee62d15fd2bdbeed3380766ac21",
+      "display_jpeg": "ep1781/leg01/keyframe.jpg",
+      "display_sha256": "7bf664eba0ae4c2ff154e038a633706fe2d2b84ad6ee231808b6e5b393990889",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1781,
+      "segment": "leg02",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx9_20260829_114756/00208.png",
+      "original_sha256": "c02d7d98d5d2e94a2899e0baa47f489d5e8b26f6065876a7c81d5cec3c051751",
+      "display_jpeg": "ep1781/leg02/keyframe.jpg",
+      "display_sha256": "25d2fa0d5c9f82df4cb27179a737cbca1dd92d49f98ee2efb32b93e988de958a",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1781,
+      "segment": "leg03",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx9_20260829_114756/00210.png",
+      "original_sha256": "c02d7d98d5d2e94a2899e0baa47f489d5e8b26f6065876a7c81d5cec3c051751",
+      "display_jpeg": "ep1781/leg03/keyframe.jpg",
+      "display_sha256": "25d2fa0d5c9f82df4cb27179a737cbca1dd92d49f98ee2efb32b93e988de958a",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1781,
+      "segment": "leg04",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx9_20260829_114756/00230.png",
+      "original_sha256": "bde7ecedb4d7499270cb2867a528c20de8f7712f9fe70b92bb7077b77a487c72",
+      "display_jpeg": "ep1781/leg04/keyframe.jpg",
+      "display_sha256": "ec18e1cff73ae15c043ba054cd4811f4bc585b9ce9885764348bd5a5a2cbadf2",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1781,
+      "segment": "leg05",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx9_20260829_114756/00250.png",
+      "original_sha256": "c02d7d98d5d2e94a2899e0baa47f489d5e8b26f6065876a7c81d5cec3c051751",
+      "display_jpeg": "ep1781/leg05/keyframe.jpg",
+      "display_sha256": "25d2fa0d5c9f82df4cb27179a737cbca1dd92d49f98ee2efb32b93e988de958a",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1781,
+      "segment": "leg06",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx9_20260829_114756/00270.png",
+      "original_sha256": "bde7ecedb4d7499270cb2867a528c20de8f7712f9fe70b92bb7077b77a487c72",
+      "display_jpeg": "ep1781/leg06/keyframe.jpg",
+      "display_sha256": "ec18e1cff73ae15c043ba054cd4811f4bc585b9ce9885764348bd5a5a2cbadf2",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1781,
+      "segment": "leg07",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx9_20260829_114756/00272.png",
+      "original_sha256": "bde7ecedb4d7499270cb2867a528c20de8f7712f9fe70b92bb7077b77a487c72",
+      "display_jpeg": "ep1781/leg07/keyframe.jpg",
+      "display_sha256": "ec18e1cff73ae15c043ba054cd4811f4bc585b9ce9885764348bd5a5a2cbadf2",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    },
+    {
+      "episode": 1781,
+      "segment": "leg08",
+      "original_png": "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx9_20260829_114756/00309.png",
+      "original_sha256": "4fc0fe4ef007c153586b29d71db5adec4c5f7b9e83bee50ddc7b1989a68417eb",
+      "display_jpeg": "ep1781/leg08/keyframe.jpg",
+      "display_sha256": "10581dcdd943ddbe8df9154c8bef331c937db3321a36742f0bb9cedb1ff86d09",
+      "conversion": "JPEG quality86, dimensions and projection coordinates preserved"
+    }
+  ],
+  "poses_copied_without_changes": true,
+  "scope": "Source identities only; no GPU, inference, alignment or training"
+}

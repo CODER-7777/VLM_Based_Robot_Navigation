@@ -1,0 +1,12 @@
+{
+  "episodes_rendered": 10,
+  "legs_rendered": 133,
+  "full_episode_views": 10,
+  "png_images": 725,
+  "all_expected_episodes": true,
+  "all_expected_legs": true,
+  "prediction_file_hashes_verified": true,
+  "inference_performed_locally": false,
+  "scope": "Frozen model trajectories; includes full recordings and per-leg resets; no fitted alignment",
+  "gallery_bytes": 25767556
+}

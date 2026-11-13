@@ -1,0 +1,182 @@
+[
+  {
+    "episode": 629,
+    "arm": "yaw_local_reference",
+    "old_cm": 80.34620138671286,
+    "center_cm": 80.34620138671286
+  },
+  {
+    "episode": 629,
+    "arm": "solver_residual",
+    "old_cm": 24.461967480916734,
+    "center_cm": 23.257827532806285
+  },
+  {
+    "episode": 629,
+    "arm": "solver_learned_weights",
+    "old_cm": 17.877018882598215,
+    "center_cm": 33.007343435789075
+  },
+  {
+    "episode": 478,
+    "arm": "yaw_local_reference",
+    "old_cm": 88.42617096455841,
+    "center_cm": 88.42617096455841
+  },
+  {
+    "episode": 478,
+    "arm": "solver_residual",
+    "old_cm": 69.64525723538054,
+    "center_cm": 60.45884140562272
+  },
+  {
+    "episode": 478,
+    "arm": "solver_learned_weights",
+    "old_cm": 77.37507313966536,
+    "center_cm": 44.725945297513434
+  },
+  {
+    "episode": 753,
+    "arm": "yaw_local_reference",
+    "old_cm": 23.628948058283576,
+    "center_cm": 23.628948058283576
+  },
+  {
+    "episode": 753,
+    "arm": "solver_residual",
+    "old_cm": 60.823234273929906,
+    "center_cm": 48.54935515831366
+  },
+  {
+    "episode": 753,
+    "arm": "solver_learned_weights",
+    "old_cm": 44.34382237498925,
+    "center_cm": 38.236244104148284
+  },
+  {
+    "episode": 837,
+    "arm": "yaw_local_reference",
+    "old_cm": 420.54340134664585,
+    "center_cm": 420.54340134664585
+  },
+  {
+    "episode": 837,
+    "arm": "solver_residual",
+    "old_cm": 874.800311523064,
+    "center_cm": 607.8098327837585
+  },
+  {
+    "episode": 837,
+    "arm": "solver_learned_weights",
+    "old_cm": 882.6958859307773,
+    "center_cm": 605.3391023161539
+  },
+  {
+    "episode": 1031,
+    "arm": "yaw_local_reference",
+    "old_cm": 75.58840090642208,
+    "center_cm": 75.58840090642208
+  },
+  {
+    "episode": 1031,
+    "arm": "solver_residual",
+    "old_cm": 89.2513792314731,
+    "center_cm": 127.83436406333426
+  },
+  {
+    "episode": 1031,
+    "arm": "solver_learned_weights",
+    "old_cm": 81.68581412668254,
+    "center_cm": 120.49925207757512
+  },
+  {
+    "episode": 1285,
+    "arm": "yaw_local_reference",
+    "old_cm": 202.8577774119983,
+    "center_cm": 202.8577774119983
+  },
+  {
+    "episode": 1285,
+    "arm": "solver_residual",
+    "old_cm": 419.7550752164574,
+    "center_cm": 130.72294333324527
+  },
+  {
+    "episode": 1285,
+    "arm": "solver_learned_weights",
+    "old_cm": 422.61773870285094,
+    "center_cm": 120.21714723807723
+  },
+  {
+    "episode": 1395,
+    "arm": "yaw_local_reference",
+    "old_cm": 12.46758947770113,
+    "center_cm": 12.46758947770113
+  },
+  {
+    "episode": 1395,
+    "arm": "solver_residual",
+    "old_cm": 7.3603932960511305,
+    "center_cm": 8.14557252704272
+  },
+  {
+    "episode": 1395,
+    "arm": "solver_learned_weights",
+    "old_cm": 4.11656464687566,
+    "center_cm": 4.177552252843517
+  },
+  {
+    "episode": 1481,
+    "arm": "yaw_local_reference",
+    "old_cm": 170.0766417034764,
+    "center_cm": 170.0766417034764
+  },
+  {
+    "episode": 1481,
+    "arm": "solver_residual",
+    "old_cm": 107.96366237901427,
+    "center_cm": 28.72247210040444
+  },
+  {
+    "episode": 1481,
+    "arm": "solver_learned_weights",
+    "old_cm": 119.97297586653393,
+    "center_cm": 36.09316463906888
+  },
+  {
+    "episode": 1689,
+    "arm": "yaw_local_reference",
+    "old_cm": 350.7153723393402,
+    "center_cm": 350.7153723393402
+  },
+  {
+    "episode": 1689,
+    "arm": "solver_residual",
+    "old_cm": 219.43233239181188,
+    "center_cm": 67.28007008763747
+  },
+  {
+    "episode": 1689,
+    "arm": "solver_learned_weights",
+    "old_cm": 226.09322076964574,
+    "center_cm": 67.4262259796496
+  },
+  {
+    "episode": 1781,
+    "arm": "yaw_local_reference",
+    "old_cm": 203.73993625003243,
+    "center_cm": 203.73993625003243
+  },
+  {
+    "episode": 1781,
+    "arm": "solver_residual",
+    "old_cm": 138.26597223110437,
+    "center_cm": 114.34328661289534
+  },
+  {
+    "episode": 1781,
+    "arm": "solver_learned_weights",
+    "old_cm": 148.67947765650484,
+    "center_cm": 121.02212491115549
+  }
+]

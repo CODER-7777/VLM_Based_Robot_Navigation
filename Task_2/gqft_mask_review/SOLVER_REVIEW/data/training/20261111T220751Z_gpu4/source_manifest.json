@@ -1,0 +1,85 @@
+{
+  "run_id": "20261111T220751Z_gpu4",
+  "files": [
+    {
+      "path": "step2/__init__.py",
+      "bytes": 65,
+      "sha256": "805983376c1d4dc4ab3add1220f637dc9034846c284e7e89d53244fee15cdd1d"
+    },
+    {
+      "path": "step2/cache_searaft.py",
+      "bytes": 7569,
+      "sha256": "6f5a2e0b7fc79dcc04c8bf49af1797d4b8bec780b082c78b06741e2cacd49d94"
+    },
+    {
+      "path": "step2/capture_hsgm_habitat.py",
+      "bytes": 9218,
+      "sha256": "c1d6e9c531e911475ba1460cb8c69e8739d644e795898708e2d184eab2992f16"
+    },
+    {
+      "path": "step2/checkpoint.py",
+      "bytes": 3699,
+      "sha256": "5454765fc3cacfa552b727995e375a8faf301ba9afbfcdc7a2f32ed0c02428f5"
+    },
+    {
+      "path": "step2/dataset.py",
+      "bytes": 10587,
+      "sha256": "2d48dd9b3b8821fbde75c1328ef1081865d40a45efcf7d31079837a7bfb26547"
+    },
+    {
+      "path": "step2/episode_contract.py",
+      "bytes": 1420,
+      "sha256": "9bae0d48f72ea80a7129b98ce55b315eca55af6c8916b0871e7de043f259ddaa"
+    },
+    {
+      "path": "step2/evaluate_gqft.py",
+      "bytes": 7637,
+      "sha256": "234d9ba6aa33f728e7998eac461cce1fbcf31a075666c36d5b70453810c084c0"
+    },
+    {
+      "path": "step2/geometry.py",
+      "bytes": 9784,
+      "sha256": "34032df53a0265fe92c136f42fd18429de3b7f2a98d2baeace52a546c2529b5d"
+    },
+    {
+      "path": "step2/ground_solver.py",
+      "bytes": 8538,
+      "sha256": "a4b71aee110c7f27627dd98063b6270c8497b08e9f43d1e5d770ba064b8f9942"
+    },
+    {
+      "path": "step2/history_study.py",
+      "bytes": 9591,
+      "sha256": "dd8e8cedbee405c00cab1fc3c768a61948a1825878c996ada0a9a0fb4abaa420"
+    },
+    {
+      "path": "step2/make_hsgm_manifest.py",
+      "bytes": 4427,
+      "sha256": "cc4d6924f07da81524d4640befc4ff244dcdbfb611c93f6cdab016569e323f7e"
+    },
+    {
+      "path": "step2/metrics.py",
+      "bytes": 3638,
+      "sha256": "eeaa219019fd13504a79712349b45f0ceda87e0d41edf47cf8597693e696e68e"
+    },
+    {
+      "path": "step2/models/__init__.py",
+      "bytes": 93,
+      "sha256": "7068d02648131714db7eb83420dd3f1ca09f5c802a8201a431294943a3bc9385"
+    },
+    {
+      "path": "step2/models/gqft.py",
+      "bytes": 24102,
+      "sha256": "97de835cfe359d90b22ac47dffe178592fa4a9119e05596c475fcabca50f63de"
+    },
+    {
+      "path": "step2/train_gqft.py",
+      "bytes": 18039,
+      "sha256": "966fa5c7cb96d8997c6e26d7cf4ee5ab5259c382d47dda1c952fb0d0035418ff"
+    },
+    {
+      "path": "tools/evaluate_ground_solver.py",
+      "bytes": 12343,
+      "sha256": "6fe936cee4f96f15c6b1e6d965920d5f500befd5cd9f98e0ee119e6b6ccbbcb8"
+    }
+  ]
+}

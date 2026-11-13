@@ -1,0 +1,38 @@
+{
+  "episode": 629,
+  "physical_gpu": "4",
+  "changed_camera_height": false,
+  "frames": [
+    {
+      "frame": 0,
+      "mean_absolute_rgb_error": 0.8076028806584362,
+      "rgb_correlation": 0.9995694177248667,
+      "sensor_world_position": [
+        7.860569953918457,
+        1.3716274499893188,
+        -0.23864400386810303
+      ]
+    },
+    {
+      "frame": 139,
+      "mean_absolute_rgb_error": 0.8379790380658436,
+      "rgb_correlation": 0.9995574682561362,
+      "sensor_world_position": [
+        3.884212017059326,
+        1.3716274499893188,
+        -0.26187700033187866
+      ]
+    },
+    {
+      "frame": 337,
+      "mean_absolute_rgb_error": 0.8701568930041153,
+      "rgb_correlation": 0.9996996296444919,
+      "sensor_world_position": [
+        10.198271751403809,
+        1.3716274499893188,
+        -0.05428040400147438
+      ]
+    }
+  ],
+  "pass": true
+}

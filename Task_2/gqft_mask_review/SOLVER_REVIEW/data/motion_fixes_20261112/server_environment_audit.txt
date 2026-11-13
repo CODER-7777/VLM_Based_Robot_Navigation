@@ -1,0 +1,3 @@
+SCRIPTS ['overlay.py', 'summarize.py', 'compare.py', 'run_dpvo.py', 'plot_grid.py', 'plot_traj.py', 'smoke_render.py', 'build_poses.py', 'smoke2.py', 'render_frames.py', 'report.py']
+CURRENT_HABITAT None
+ENVIRONMENTS /data/robotics/toshith/envs ['hsgm_overlay', 'hsgm_uv_cache', 'fresh_heading_v7_stream', 'hsgm_vllm', 'agentvln', 'internnav', 'hsgm', 'kitchen3d', 'metric3d', 'fresh_heading_v7', 'xterra_mjlab']

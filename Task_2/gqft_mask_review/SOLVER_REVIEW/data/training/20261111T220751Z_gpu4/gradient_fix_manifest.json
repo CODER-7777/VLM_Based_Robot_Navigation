@@ -1,0 +1,9 @@
+{
+  "change": [
+    "Normal cached geometry across inference-to-training",
+    "Finite derivative of RMS at zero residual for padded frames"
+  ],
+  "original_sha256": "a4b71aee110c7f27627dd98063b6270c8497b08e9f43d1e5d770ba064b8f9942",
+  "fixed_sha256": "30c7b0cfacb0ec6e32b934c143b330eb44cc3b69ff6a229415915a7b9ae8735c",
+  "scope": "learned-weight arm only; preserve all previous snapshots"
+}

@@ -1,0 +1,156 @@
+[
+  {
+    "id": "P01",
+    "url": "https://arxiv.org/pdf/1805.11913",
+    "downloaded": true,
+    "pdf_bytes": 6128964,
+    "pdf_sha256": "a227ced038b7b52718fdcdc4ae533964634a8c87c2034c1af5564d06cc14eee0",
+    "extracted_pages": 11,
+    "extracted_words": 4994,
+    "local_reading_copy": "/tmp/gqft_papers_review_20261113/P01.txt",
+    "scope": "Access/extraction receipt, not a claim that every line was reviewed"
+  },
+  {
+    "id": "P02",
+    "url": "https://arxiv.org/pdf/1804.07723",
+    "downloaded": true,
+    "pdf_bytes": 23281077,
+    "pdf_sha256": "d0753c271d144a280dcf6e6c0040ff72d7e4443c86a366067116a108de43abeb",
+    "extracted_pages": 23,
+    "extracted_words": 6680,
+    "local_reading_copy": "/tmp/gqft_papers_review_20261113/P02.txt",
+    "scope": "Access/extraction receipt, not a claim that every line was reviewed"
+  },
+  {
+    "id": "P03",
+    "url": "https://arxiv.org/pdf/1806.03589",
+    "downloaded": true,
+    "pdf_bytes": 21062470,
+    "pdf_sha256": "1e2b2455924bdd563579ba1a4e648c520fd41a076d9810d23b9a354410d62364",
+    "extracted_pages": 17,
+    "extracted_words": 8106,
+    "local_reading_copy": "/tmp/gqft_papers_review_20261113/P03.txt",
+    "scope": "Access/extraction receipt, not a claim that every line was reviewed"
+  },
+  {
+    "id": "P04",
+    "url": "https://arxiv.org/pdf/1811.09935",
+    "downloaded": true,
+    "pdf_bytes": 7296811,
+    "pdf_sha256": "23e1026d8bfa5e1d8ce2299991bd6715e10d7ae691cc8da37493544e9cf20780",
+    "extracted_pages": 16,
+    "extracted_words": 5905,
+    "local_reading_copy": "/tmp/gqft_papers_review_20261113/P04.txt",
+    "scope": "Access/extraction receipt, not a claim that every line was reviewed"
+  },
+  {
+    "id": "P05",
+    "url": "https://arxiv.org/pdf/2011.00359",
+    "downloaded": true,
+    "pdf_bytes": 2880943,
+    "pdf_sha256": "5ec9a207a385eed00727b9c555cd4063ed8a9d06e1a179b4cf6ea59c52665bc1",
+    "extracted_pages": 12,
+    "extracted_words": 6902,
+    "local_reading_copy": "/tmp/gqft_papers_review_20261113/P05.txt",
+    "scope": "Access/extraction receipt, not a claim that every line was reviewed"
+  },
+  {
+    "id": "P06",
+    "url": "https://arxiv.org/pdf/2208.04726",
+    "downloaded": true,
+    "pdf_bytes": 2200266,
+    "pdf_sha256": "c6ac8e33f75b4504a3ba36c4e03b9dbf2fbfdeb507be1431070c501ea210d29c",
+    "extracted_pages": 14,
+    "extracted_words": 8942,
+    "local_reading_copy": "/tmp/gqft_papers_review_20261113/P06.txt",
+    "scope": "Access/extraction receipt, not a claim that every line was reviewed"
+  },
+  {
+    "id": "P07",
+    "url": "https://arxiv.org/pdf/1704.00390",
+    "downloaded": true,
+    "pdf_bytes": 5321530,
+    "pdf_sha256": "ab8426f59e8287feb2bfa86e5e94bb985d21395d9f2d717e589d1541a0272721",
+    "extracted_pages": 10,
+    "extracted_words": 7582,
+    "local_reading_copy": "/tmp/gqft_papers_review_20261113/P07.txt",
+    "scope": "Access/extraction receipt, not a claim that every line was reviewed"
+  },
+  {
+    "id": "P08",
+    "url": "https://arxiv.org/pdf/1909.00512",
+    "downloaded": true,
+    "pdf_bytes": 340087,
+    "pdf_sha256": "3e20d77329e50038974a290a50a6f815c49116a6ef77f5d27d941b8097edf4ed",
+    "extracted_pages": 11,
+    "extracted_words": 6275,
+    "local_reading_copy": "/tmp/gqft_papers_review_20261113/P08.txt",
+    "scope": "Access/extraction receipt, not a claim that every line was reviewed"
+  },
+  {
+    "id": "P09",
+    "url": "https://arxiv.org/pdf/1702.01417",
+    "downloaded": true,
+    "pdf_bytes": 870101,
+    "pdf_sha256": "2c2443b956c51b15d8fec9242acb86c6a6bf5de14bb2f3f98c4ffa3b02cef417",
+    "extracted_pages": 25,
+    "extracted_words": 12150,
+    "local_reading_copy": "/tmp/gqft_papers_review_20261113/P09.txt",
+    "scope": "Access/extraction receipt, not a claim that every line was reviewed"
+  },
+  {
+    "id": "P10",
+    "url": "https://proceedings.mlr.press/v202/garrido23a/garrido23a.pdf",
+    "downloaded": true,
+    "pdf_bytes": 1008486,
+    "pdf_sha256": "270216a46649a984b7a76caafcd5a0ad096120472be14d614193a6e7ad72bfc4",
+    "extracted_pages": 46,
+    "extracted_words": 17889,
+    "local_reading_copy": "/tmp/gqft_papers_review_20261113/P10.txt",
+    "scope": "Access/extraction receipt, not a claim that every line was reviewed"
+  },
+  {
+    "id": "P11",
+    "url": "https://vladlen.info/papers/deep-fundamental.pdf",
+    "downloaded": true,
+    "pdf_bytes": 2512415,
+    "pdf_sha256": "b47bf027bbb3a3311aab4b75bc44e2df4993b58acb13f99dba1e8dfec8277d4c",
+    "extracted_pages": 16,
+    "extracted_words": 7705,
+    "local_reading_copy": "/tmp/gqft_papers_review_20261113/P11.txt",
+    "scope": "Access/extraction receipt, not a claim that every line was reviewed"
+  },
+  {
+    "id": "P12",
+    "url": "https://arxiv.org/pdf/2108.10869",
+    "downloaded": true,
+    "pdf_bytes": 11003883,
+    "pdf_sha256": "0e15f20bff5f7ceac468c2899baafc8c114a3018c7a7b213eed7c402e5ccec90",
+    "extracted_pages": 15,
+    "extracted_words": 8469,
+    "local_reading_copy": "/tmp/gqft_papers_review_20261113/P12.txt",
+    "scope": "Access/extraction receipt, not a claim that every line was reviewed"
+  },
+  {
+    "id": "P13",
+    "url": "https://publications.ri.cmu.edu/storage/publications/pub_files/pub4/ke_qifa_2003_1/ke_qifa_2003_1.pdf",
+    "downloaded": true,
+    "pdf_bytes": 1020511,
+    "pdf_sha256": "58940cac8b0e9ba965c2ada076fd607952ce0559f2c5beed4236db6936d6bdbc",
+    "extracted_pages": 8,
+    "extracted_words": 6100,
+    "local_reading_copy": "/tmp/gqft_papers_review_20261113/P13.txt",
+    "scope": "Access/extraction receipt, not a claim that every line was reviewed"
+  },
+  {
+    "id": "P14",
+    "url": "https://rpg.ifi.uzh.ch/docs/ICRA09_scaramuzza.pdf",
+    "downloaded": true,
+    "pdf_bytes": 7381958,
+    "pdf_sha256": "ee011cda4993d86bfb8aaba471577b83b0fb035c39eed4b06ed5e21f0bdee45d",
+    "extracted_pages": 7,
+    "extracted_words": 5552,
+    "local_reading_copy": "/tmp/gqft_papers_review_20261113/P14.txt",
+    "scope": "Access/extraction receipt, not a claim that every line was reviewed"
+  }
+]

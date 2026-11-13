@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "masked_attention_pngs": 62,
+  "source_image_hashes_verified": true,
+  "internal_links_verified": 145,
+  "docx_source_hash_matches": true,
+  "pdf_has_all14_papers": true,
+  "new_training_or_inference": false
+}

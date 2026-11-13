@@ -1,0 +1,92 @@
+{
+  "gifs": [
+    {
+      "episode": 478,
+      "leg": "leg03",
+      "flow_pairs": 90,
+      "gif": "ep478_leg03_solver_correction_and_learned_weights.gif",
+      "sha256": "659c7ac47c0bb9af49080e137547b17f38ca6b6918d331ab906401f7d66abee3",
+      "size_bytes": 543341,
+      "frames_verified": 91,
+      "duration_ms": 9520,
+      "source_predictions": "data/trained_episode_overlays/20261111T220751Z_gpu4/all_episodes_20261111T223221Z/ep478/predictions.json",
+      "predictions_sha256": "d54d74250fef953dfe3725b2c66f054e599c82c07dd626a2baae06844a893fda",
+      "background_sha256": "5bda46e9ff23f0ea020570b1598f0494ae32c08a877b251c4808825b7c61b93f",
+      "models": [
+        "solver_residual",
+        "solver_learned_weights"
+      ],
+      "reference_visible": true,
+      "source": "Original frozen solver run before central-floor/height experiments",
+      "animation": "Reveal saved path point i at each GIF frame; fixed first camera image; no new inference",
+      "locked_test_scene_diagnostic_only": false
+    },
+    {
+      "episode": 753,
+      "leg": "leg11",
+      "flow_pairs": 80,
+      "gif": "ep753_leg11_solver_correction_and_learned_weights.gif",
+      "sha256": "89b0a7c226cce7d8c2d22d042f408cdaad1e735175e86d5d5e062c5b2495fa2a",
+      "size_bytes": 460315,
+      "frames_verified": 81,
+      "duration_ms": 8720,
+      "source_predictions": "data/trained_episode_overlays/20261111T220751Z_gpu4/all_episodes_20261111T223221Z/ep753/predictions.json",
+      "predictions_sha256": "8c92e2bc0a8479db49aa7c232f58161902effceff8fe05fd6a4521ba4765aa9b",
+      "background_sha256": "fd0a023cfe434675ea369d6aeb4ff75e0a0194582e99797b24d281ce0226629f",
+      "models": [
+        "solver_residual",
+        "solver_learned_weights"
+      ],
+      "reference_visible": true,
+      "source": "Original frozen solver run before central-floor/height experiments",
+      "animation": "Reveal saved path point i at each GIF frame; fixed first camera image; no new inference",
+      "locked_test_scene_diagnostic_only": false
+    },
+    {
+      "episode": 837,
+      "leg": "leg00",
+      "flow_pairs": 152,
+      "gif": "ep837_leg00_solver_correction_and_learned_weights.gif",
+      "sha256": "e7ae66cfae24652c3a7d393a93b6458323141ec9055606eb9371178cdb5f8585",
+      "size_bytes": 404874,
+      "frames_verified": 153,
+      "duration_ms": 14480,
+      "source_predictions": "data/trained_episode_overlays/20261111T220751Z_gpu4/all_episodes_20261111T223221Z/ep837/predictions.json",
+      "predictions_sha256": "cf66c256d6b444cb8f7d0085a01480dc3ac937d3f170368546597cd5d703d43a",
+      "background_sha256": "6d645fd709d7d37e9f1b63f351c6eb6be80bbcbf50ecc6fbd0b5242c8da89825",
+      "models": [
+        "solver_residual",
+        "solver_learned_weights"
+      ],
+      "reference_visible": true,
+      "source": "Original frozen solver run before central-floor/height experiments",
+      "animation": "Reveal saved path point i at each GIF frame; fixed first camera image; no new inference",
+      "locked_test_scene_diagnostic_only": true
+    },
+    {
+      "episode": 837,
+      "leg": "leg08",
+      "flow_pairs": 84,
+      "gif": "ep837_leg08_solver_correction_and_learned_weights.gif",
+      "sha256": "68eef84e999e6896256e84b3fe0a40342c807f49cddd053b52dd123d54c3257a",
+      "size_bytes": 374759,
+      "frames_verified": 85,
+      "duration_ms": 9040,
+      "source_predictions": "data/trained_episode_overlays/20261111T220751Z_gpu4/all_episodes_20261111T223221Z/ep837/predictions.json",
+      "predictions_sha256": "cf66c256d6b444cb8f7d0085a01480dc3ac937d3f170368546597cd5d703d43a",
+      "background_sha256": "5b976bae5ab5c6d9a082891da21e39da2cbb6e49c93ed77c6244fc351603a33f",
+      "models": [
+        "solver_residual",
+        "solver_learned_weights"
+      ],
+      "reference_visible": true,
+      "source": "Original frozen solver run before central-floor/height experiments",
+      "animation": "Reveal saved path point i at each GIF frame; fixed first camera image; no new inference",
+      "locked_test_scene_diagnostic_only": true
+    }
+  ],
+  "all_frames_decode": true,
+  "first_and_final_frames_match_rendered_paths": true,
+  "training_performed": false,
+  "new_inference_performed": false
+}

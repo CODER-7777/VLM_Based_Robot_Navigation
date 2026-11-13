@@ -1,0 +1,97 @@
+{
+  "repository": "castacks/tartanvo",
+  "url": "https://github.com/castacks/tartanvo",
+  "checked_utc": "2026-11-04T12:20:35.339445+00:00",
+  "execution": "Source inspected as text only; no install, model download or execution.",
+  "http_status": 200,
+  "default_branch": "main",
+  "description": "TartanVO: A Generalizable Learning-based VO",
+  "archived": false,
+  "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause",
+    "url": "https://api.github.com/licenses/bsd-3-clause",
+    "node_id": "MDc6TGljZW5zZTU="
+  },
+  "homepage": null,
+  "commit_sha": "d9045b6f391e2ae85a4f1ff3a85936255ebc1ccb",
+  "tree_paths": [
+    ".gitignore",
+    "CMakeLists.txt",
+    "Datasets/__init__.py",
+    "Datasets/tartanTrajFlowDataset.py",
+    "Datasets/transformation.py",
+    "Datasets/utils.py",
+    "LICENSE",
+    "Network/PWC/PWCNet.py",
+    "Network/PWC/__init__.py",
+    "Network/PWC/correlation.py",
+    "Network/VOFlowNet.py",
+    "Network/VONet.py",
+    "Network/__init__.py",
+    "README.md",
+    "TartanVO.py",
+    "config.rviz",
+    "docker/ros_entrypoint.sh",
+    "docker/tartanvo_ros.dockerfile",
+    "evaluator/__init__.py",
+    "evaluator/evaluate_ate_scale.py",
+    "evaluator/evaluate_kitti.py",
+    "evaluator/evaluate_rpe.py",
+    "evaluator/evaluator_base.py",
+    "evaluator/pose_est.txt",
+    "evaluator/pose_gt.txt",
+    "evaluator/tartanair_evaluator.py",
+    "evaluator/trajectory_transform.py",
+    "evaluator/transformation.py",
+    "package.xml",
+    "publish_image_from_folder.py",
+    "results/euroc_v102_tartanvo_1914.png",
+    "results/euroc_v102_tartanvo_1914.txt",
+    "results/kitti_10_tartanvo_1914.png",
+    "results/kitti_10_tartanvo_1914.txt",
+    "results/rviz.png",
+    "results/video_shot.png",
+    "tartanvo_node.py",
+    "vo_trajectory_from_folder.py"
+  ],
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "README.md",
+      "status": "downloaded for static reading",
+      "url": "https://github.com/castacks/tartanvo/blob/d9045b6f391e2ae85a4f1ff3a85936255ebc1ccb/README.md",
+      "sha256": "80d2e04d7d89a405265622e35bb63b152f8d3a8ee96f7f8ff4cae911e089016b",
+      "bytes": 10457
+    },
+    {
+      "path": "Datasets/utils.py",
+      "status": "downloaded for static reading",
+      "url": "https://github.com/castacks/tartanvo/blob/d9045b6f391e2ae85a4f1ff3a85936255ebc1ccb/Datasets/utils.py",
+      "sha256": "42655f77b4cbcbcfa20099bfee902a98f95baef675d4f94ddc912e6696ea63c3",
+      "bytes": 7956
+    },
+    {
+      "path": "TartanVO.py",
+      "status": "downloaded for static reading",
+      "url": "https://github.com/castacks/tartanvo/blob/d9045b6f391e2ae85a4f1ff3a85936255ebc1ccb/TartanVO.py",
+      "sha256": "9ca946513deb9c58dc56ebe5511aff1dafe4a00383bfd7a07103ffd10b6061d8",
+      "bytes": 4374
+    },
+    {
+      "path": "Network/VOFlowNet.py",
+      "status": "downloaded for static reading",
+      "url": "https://github.com/castacks/tartanvo/blob/d9045b6f391e2ae85a4f1ff3a85936255ebc1ccb/Network/VOFlowNet.py",
+      "sha256": "702592d5805d16a66a81ba60e8b7fa81ac9c3a40bf3ffabee42db457c8ad1acd",
+      "bytes": 5275
+    },
+    {
+      "path": "LICENSE",
+      "status": "downloaded for static reading",
+      "url": "https://github.com/castacks/tartanvo/blob/d9045b6f391e2ae85a4f1ff3a85936255ebc1ccb/LICENSE",
+      "sha256": "0b8ade8355cb891984323e5422bbdea48991de43851e5e1a732bf8399c860975",
+      "bytes": 1522
+    }
+  ]
+}

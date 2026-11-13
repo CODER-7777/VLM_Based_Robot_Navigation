@@ -1,0 +1,198 @@
+{
+  "protocol": {
+    "created_utc": "2026-10-14T22:45:44.130749+00:00",
+    "mode": "episodes",
+    "plan": {
+      "experiment": "soft_attention_v1",
+      "declared_before_inference": true,
+      "checkpoint_sha256": "40729f0f537c28e5b07565aba01133bb594c7781cc59eedf90bc3fafa939ee8d",
+      "immutable_isolation_source_sha256": "1068665a21ea03eb90f5ff2f315f0a96b8547110bbcccb00eb985b5742b95dd7",
+      "primary_candidate": "soft_rf_attention",
+      "policies": [
+        "original",
+        "attention_only",
+        "soft_coarse_attention",
+        "soft_rf_attention"
+      ],
+      "reliability_floor": 0.25,
+      "formula": "p_soft(i) = p_original(i) * (0.25 + 0.75 * coverage(i)) / sum_j[p_original(j) * (0.25 + 0.75 * coverage(j))]",
+      "coverage": "Density of supplied valid, finite flow pixels; primary uses 31x31 convolution footprint with stride16 and padding15 excluding outside-image padding; coarse control uses adaptive grid bins.",
+      "constant_coverage_fallback": "Preserve original attention exactly when coverage is spatially constant, including all-valid and all-invalid frames.",
+      "max_pooling": "Unchanged per-channel maximum over all original feature cells for every policy.",
+      "cnn_inputs_and_weights": "Identical original cached inputs and frozen trained CNN weights for all policies; no additional zeroing or confidence threshold.",
+      "validation": {
+        "scene": "D7G3Y4RVNrH",
+        "split": "val",
+        "windows": 104,
+        "reference_history": 30,
+        "evaluated_history": 24,
+        "stride": 5,
+        "queries": 1,
+        "query_px": [
+          480,
+          809
+        ],
+        "seed": 20260820,
+        "target_ground_plane": "sequence_floor",
+        "dtype": "float32",
+        "origin_excluded": true,
+        "augmentation": "none"
+      },
+      "episode_diagnostics": "Same four saved episode-629 windows, used only for explanation, not selection or tuning.",
+      "selection": {
+        "primary_metric": "mean_ground_error_m",
+        "guardrails": [
+          "endpoint_ground_error_m",
+          "mean_3d_error_m",
+          "endpoint_3d_error_m",
+          "mean_pixel_error_px",
+          "last_valid_pixel_error_px"
+        ],
+        "advance_to_training_planning_only_if": "Primary candidate strictly improves aggregate validation mean ground error, has no aggregate guardrail regression, and adds no depth or prefix failures; inspect motion families. This is a screening rule, not a generalization claim.",
+        "independence": "Windows overlap within one scene. No independent held-out estimate or completed history gate is claimed.",
+        "hyperparameter_search": "None in this experiment; no floor sweep or retrospective primary-candidate change."
+      },
+      "trained": false,
+      "locked_test_access": false,
+      "gpu": "2",
+      "scope": "Analysis-only attention intervention; no production-model change and no automatic training."
+    },
+    "plan_sha256": "7703ddf098f9ab5f7bfa935907d5251b06cf4b18daab532ab50387cd40792e72",
+    "script_sha256": "66b062726c36e428aaf280d0432c236ca8aa7c5af973728d39939701a4d4b228",
+    "checkpoint": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/runs/gqft_spatial_yaw_v1/best.pt",
+    "camera": {
+      "width": 960,
+      "height": 540,
+      "fx": 198.82250993908562,
+      "fy": 198.82250993908562,
+      "cx": 480.0,
+      "cy": 270.0,
+      "camera_height_m": 1.2,
+      "pitch_down_deg": 30.0
+    },
+    "model_config": {
+      "d_model": 256,
+      "temporal_layers": 4,
+      "temporal_heads": 8,
+      "dropout": 0.1,
+      "max_history": 30,
+      "max_step_m": 0.12,
+      "max_step_yaw_rad": 0.15,
+      "canvas_height": 810,
+      "spatial_pooling": "attention_max",
+      "predict_yaw": true,
+      "spatial_mask": "none",
+      "mask_confidence_threshold": 0.0,
+      "mask_min_coverage": 0.75
+    },
+    "device": "cuda:0",
+    "cuda_visible_devices": "2",
+    "torch_version": "2.7.0+cu126",
+    "numpy_version": "1.24.0",
+    "history": 24,
+    "origin_excluded": true,
+    "trained": false,
+    "test_accessed": false,
+    "shared_domain": "Same target-valid post-origin points for all policies, regardless of prediction gate.",
+    "poses_file": "/data/robotics/toshith/flowvo_compare/poses/b10_A_drivefix_idx3_20260829_114756.npz",
+    "poses_sha256": "c1e730177de78a2823e4ecf4ee8718f34106f2789946d7a679005cd04b66cfb3"
+  },
+  "summary": {
+    "window_count": 4,
+    "policies": {
+      "original": {
+        "mean_ground_error_m": 0.07203050502503108,
+        "endpoint_ground_error_m": 0.1867587057572402,
+        "mean_3d_error_m": 0.07216809317598022,
+        "endpoint_3d_error_m": 0.18698538038608556,
+        "mean_pixel_error_px": 33.181738362309105,
+        "last_valid_pixel_error_px": 69.05356185716637,
+        "pixel_points": 96,
+        "nonpositive_prediction_depth_points": 0,
+        "rejected_prediction_prefix_points": 0,
+        "windows_ground_better_than_original": 0,
+        "median_window_pixel_error_px": 27.793562255390924,
+        "pooled_pixel_error_px": 33.1817383623091,
+        "delta_from_original": {
+          "mean_ground_error_m": 0.0,
+          "endpoint_ground_error_m": 0.0,
+          "mean_3d_error_m": 0.0,
+          "endpoint_3d_error_m": 0.0,
+          "mean_pixel_error_px": 0.0,
+          "last_valid_pixel_error_px": 0.0
+        }
+      },
+      "attention_only": {
+        "mean_ground_error_m": 0.07357127267611065,
+        "endpoint_ground_error_m": 0.19057072219545312,
+        "mean_3d_error_m": 0.07384464613745118,
+        "endpoint_3d_error_m": 0.19081916393968618,
+        "mean_pixel_error_px": 32.68374298590618,
+        "last_valid_pixel_error_px": 67.94758354247021,
+        "pixel_points": 96,
+        "nonpositive_prediction_depth_points": 0,
+        "rejected_prediction_prefix_points": 0,
+        "windows_ground_better_than_original": 1,
+        "median_window_pixel_error_px": 28.73468019584287,
+        "pooled_pixel_error_px": 32.68374298590618,
+        "delta_from_original": {
+          "mean_ground_error_m": 0.0015407676510795637,
+          "endpoint_ground_error_m": 0.003812016438212912,
+          "mean_3d_error_m": 0.0016765529614709562,
+          "endpoint_3d_error_m": 0.003833783553600617,
+          "mean_pixel_error_px": -0.4979953764029261,
+          "last_valid_pixel_error_px": -1.1059783146961593
+        }
+      },
+      "soft_coarse_attention": {
+        "mean_ground_error_m": 0.07153017780804566,
+        "endpoint_ground_error_m": 0.1848843209345396,
+        "mean_3d_error_m": 0.07167205709686325,
+        "endpoint_3d_error_m": 0.18511442310759207,
+        "mean_pixel_error_px": 32.6832185294098,
+        "last_valid_pixel_error_px": 67.94208907634271,
+        "pixel_points": 96,
+        "nonpositive_prediction_depth_points": 0,
+        "rejected_prediction_prefix_points": 0,
+        "windows_ground_better_than_original": 2,
+        "median_window_pixel_error_px": 27.56178981196423,
+        "pooled_pixel_error_px": 32.68321852940979,
+        "delta_from_original": {
+          "mean_ground_error_m": -0.0005003272169854245,
+          "endpoint_ground_error_m": -0.0018743848227006088,
+          "mean_3d_error_m": -0.0004960360791169682,
+          "endpoint_3d_error_m": -0.0018709572784934847,
+          "mean_pixel_error_px": -0.498519832899305,
+          "last_valid_pixel_error_px": -1.1114727808236609
+        }
+      },
+      "soft_rf_attention": {
+        "mean_ground_error_m": 0.0718909955454148,
+        "endpoint_ground_error_m": 0.1860993072835927,
+        "mean_3d_error_m": 0.07203045041518577,
+        "endpoint_3d_error_m": 0.18632911495861,
+        "mean_pixel_error_px": 32.922328294189214,
+        "last_valid_pixel_error_px": 68.59549004545117,
+        "pixel_points": 96,
+        "nonpositive_prediction_depth_points": 0,
+        "rejected_prediction_prefix_points": 0,
+        "windows_ground_better_than_original": 2,
+        "median_window_pixel_error_px": 27.550571672310266,
+        "pooled_pixel_error_px": 32.922328294189214,
+        "delta_from_original": {
+          "mean_ground_error_m": -0.00013950947961628712,
+          "endpoint_ground_error_m": -0.0006593984736475156,
+          "mean_3d_error_m": -0.0001376427607944486,
+          "endpoint_3d_error_m": -0.0006562654274755719,
+          "mean_pixel_error_px": -0.259410068119891,
+          "last_valid_pixel_error_px": -0.4580718117152003
+        }
+      }
+    },
+    "checks": {
+      "original_encoder_max_abs": 0.0,
+      "max_pooling_max_abs_change": 0.0,
+      "cnn_feature_preprocessing_max_abs_change": 0.0
+    }
+  }
+}

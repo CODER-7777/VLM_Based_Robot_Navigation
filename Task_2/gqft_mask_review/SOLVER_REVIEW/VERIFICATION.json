@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "source_copies_hash_checked": 2546,
+  "package_hashes_checked": 2567,
+  "internal_links_checked": 83,
+  "trajectory_pngs": 1830,
+  "home": {
+    "offline": true,
+    "title": "GQFT solver review \u00b7 start here",
+    "images": true,
+    "imageCount": 9,
+    "width": 1600,
+    "scroll": 1585
+  },
+  "mobile": {
+    "width": 430,
+    "scroll": 430
+  },
+  "portable_dashboard": {
+    "defaultExperiment": "original",
+    "heightExperiment": "height",
+    "images": true,
+    "heightRows": 5,
+    "errors": []
+  },
+  "scope": "Copied artifacts,links and offline UI; no new inference or training"
+}

@@ -1,0 +1,10 @@
+{
+  "original_rgb_center": "Checkpoint/pose hashes, exact original reference/neural control, flow identity, metrics, PNG and UI verified",
+  "height_corrected_center": "Checkpoint/pose hashes, exact original reference/neural control, flow identity, metrics, PNG and UI verified",
+  "trajectory_views": 218,
+  "trajectory_pngs": 1105,
+  "synthetic_cpu_checks": 18,
+  "height_data_frames": 2880,
+  "training_performed": false,
+  "scope": "Artifact and intervention verification; does not certify generalization or pass history gate"
+}

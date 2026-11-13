@@ -1,0 +1,15 @@
+{
+  "device": "cpu",
+  "torch": "2.8.0+cu128",
+  "checks": {
+    "unchanged_validation_motion": true,
+    "cached_geometry_is_normal": true,
+    "original_bug_reproduced": true,
+    "solver_gradients_finite_nonzero": true,
+    "empty_frame_rms_backward_finite": true,
+    "empty_frame_diagnostic_zero": true,
+    "full_model_validation_then_backward": true,
+    "full_model_padded_backward_finite": true
+  },
+  "loss": 0.15252785384655
+}

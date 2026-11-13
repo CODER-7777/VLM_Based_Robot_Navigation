@@ -1,0 +1,5 @@
+JOB_STOPPED {"status": "stopped_by_user", "pid": 1851617, "started_utc": "2026-11-11T22:11:45.486476+00:00", "gpu_physical": 4, "steps_per_arm": 500, "completed_arms": ["yaw_local_reference"], "current_arm": "solver_residual", "current_log": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/ground_pilots/20261111T220751Z_gpu4/solver_residual/train.log", "updated_utc": "2026-11-11T22:12:54.131176+00:00", "stop_reason": "User revoked GPU 4 permission; no alternate GPU selected", "stopped_utc": "2026-11-11T22:12:55Z"}
+
+index, memory.used [MiB], utilization.gpu [%]
+4, 2327 MiB, 0 %
+

@@ -1,0 +1,6 @@
+method,ade_px,ground_error_m,protocol
+Neural reference,10.909007181020883,0.04324522095087629,"H24/reference30, float32,104 windows,26 sequences,one validation house"
+Solver + correction,15.618773457453802,0.06329333115942203,"H24/reference30, float32,104 windows,26 sequences,one validation house"
+Central floor + correction,5.839332671532264,0.021886431638939448,"H24/reference30, float32,104 windows,26 sequences,one validation house"
+Solver + learned weights,15.447922730079064,0.06320700063504493,"H24/reference30, float32,104 windows,26 sequences,one validation house"
+Central floor + learned weights,4.654267869362465,0.0171345615795312,"H24/reference30, float32,104 windows,26 sequences,one validation house"

@@ -1,0 +1,65 @@
+{
+  "status": {
+    "status": "training",
+    "pid": 1854768,
+    "started_utc": "2026-11-11T22:11:45.486476+00:00",
+    "gpu_physical": 4,
+    "steps_per_arm": 500,
+    "completed_arms": [
+      "yaw_local_reference",
+      "solver_residual"
+    ],
+    "current_arm": "solver_learned_weights",
+    "current_log": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/ground_pilots/20261111T220751Z_gpu4/solver_learned_weights/train.log",
+    "updated_utc": "2026-11-11T22:12:54.131176+00:00",
+    "resumed_utc": "2026-11-11T22:23:34.734393+00:00",
+    "active_source": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/ground_pilots/20261111T220751Z_gpu4/source_training_fix",
+    "finished_utc": "2026-11-11T22:21:04.239811+00:00",
+    "reason": "No finite optimizer updates in learned-weight arm; completed arms preserved"
+  },
+  "last_log_lines": [
+    "TRAIN {\"step\": 240, \"epoch\": 0, \"loss\": -0.07780758403241635, \"motion\": 0.0063340550084831195, \"path\": 0.005331266659777611, \"endpoint\": 0.007341275422368199, \"visibility\": 3.395003514015116e-05, \"motion_nll\": -2.9961783289909363, \"yaw\": 0.01699204369297149, \"grad_norm\": 0.35333913564682007, \"lr\": 0.00012798258008196844, \"finite_streak\": 240, \"time\": 1794435846.2783713}",
+    "TRAIN {\"step\": 260, \"epoch\": 0, \"loss\": -0.0840617568232119, \"motion\": 0.008511878288845764, \"path\": 0.004906478992779739, \"endpoint\": 0.006915050480165519, \"visibility\": 3.077540641243104e-05, \"motion_nll\": -2.9977667689323426, \"yaw\": 0.00997492423703079, \"grad_norm\": 1.3035370111465454, \"lr\": 0.0001149302040104271, \"finite_streak\": 260, \"time\": 1794435847.8256297}",
+    "TRAIN {\"step\": 280, \"epoch\": 0, \"loss\": -0.0804542719386518, \"motion\": 0.009255314990878106, \"path\": 0.006673397266422398, \"endpoint\": 0.0072190938924904914, \"visibility\": 3.035486270164256e-05, \"motion_nll\": -2.9945899486541747, \"yaw\": 0.009176943506099633, \"grad_norm\": 0.34263336658477783, \"lr\": 0.00010168454781326244, \"finite_streak\": 280, \"time\": 1794435849.3833578}",
+    "TRAIN {\"step\": 300, \"epoch\": 0, \"loss\": -0.10123768132179975, \"motion\": 0.005403055605711415, \"path\": 0.005191180057590827, \"endpoint\": 0.008369963592849671, \"visibility\": 2.92967841232894e-05, \"motion_nll\": -2.998469316959381, \"yaw\": 0.006752548995427788, \"grad_norm\": 0.19744980335235596, \"lr\": 8.850342312164161e-05, \"finite_streak\": 300, \"time\": 1794435851.001563}"
+  ],
+  "last_train": {
+    "step": 300,
+    "epoch": 0,
+    "loss": -0.10123768132179975,
+    "motion": 0.005403055605711415,
+    "path": 0.005191180057590827,
+    "endpoint": 0.008369963592849671,
+    "visibility": 2.92967841232894e-05,
+    "motion_nll": -2.998469316959381,
+    "yaw": 0.006752548995427788,
+    "grad_norm": 0.19744980335235596,
+    "lr": 8.850342312164161e-05,
+    "finite_streak": 300,
+    "time": 1794435851.001563
+  },
+  "inference_and_padding_gpu_check.json": {
+    "device": "cuda",
+    "torch": "2.7.0+cu126",
+    "checks": {
+      "unchanged_validation_motion": true,
+      "cached_geometry_is_normal": true,
+      "original_bug_reproduced": true,
+      "solver_gradients_finite_nonzero": true,
+      "empty_frame_rms_backward_finite": true,
+      "empty_frame_diagnostic_zero": true,
+      "full_model_validation_then_backward": true,
+      "full_model_padded_backward_finite": true
+    },
+    "loss": 0.1652403324842453
+  },
+  "gradient_fix_manifest.json": {
+    "change": [
+      "Normal cached geometry across inference-to-training",
+      "Finite derivative of RMS at zero residual for padded frames"
+    ],
+    "original_sha256": "a4b71aee110c7f27627dd98063b6270c8497b08e9f43d1e5d770ba064b8f9942",
+    "fixed_sha256": "30c7b0cfacb0ec6e32b934c143b330eb44cc3b69ff6a229415915a7b9ae8735c",
+    "scope": "learned-weight arm only; preserve all previous snapshots"
+  }
+}

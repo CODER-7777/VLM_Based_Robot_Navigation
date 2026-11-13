@@ -1,0 +1,17 @@
+MODULE trimesh ModuleSpec(name='trimesh', loader=<_frozen_importlib_external.SourceFileLoader object at 0x7f628656b550>, origin='/data/robotics/toshith/envs/agentvln/lib/python3.10/site-packages/trimesh/__init__.py', submodule_search_locations=['/data/robotics/toshith/envs/agentvln/lib/python3.10/site-packages/trimesh'])
+MODULE open3d None
+MODULE rtree None
+MODULE scipy ModuleSpec(name='scipy', loader=<_frozen_importlib_external.SourceFileLoader object at 0x7f6286568700>, origin='/data/robotics/toshith/envs/agentvln/lib/python3.10/site-packages/scipy/__init__.py', submodule_search_locations=['/data/robotics/toshith/envs/agentvln/lib/python3.10/site-packages/scipy'])
+MODULE pyrender None
+MODULE habitat_sim None
+SCENE_ROOT True
+SCENE 837 /data/robotics/toshith/HSGM_public/data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb True
+SCENE 753 /data/robotics/toshith/HSGM_public/data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb True
+SCENE 478 /data/robotics/toshith/HSGM_public/data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb True
+SCENE 629 /data/robotics/toshith/HSGM_public/data/scene_datasets/mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb True
+SCENE 1031 /data/robotics/toshith/HSGM_public/data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb True
+SCENE 1481 /data/robotics/toshith/HSGM_public/data/scene_datasets/mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb True
+SCENE 1689 /data/robotics/toshith/HSGM_public/data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb True
+SCENE 1285 /data/robotics/toshith/HSGM_public/data/scene_datasets/mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb True
+SCENE 1395 /data/robotics/toshith/HSGM_public/data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb True
+SCENE 1781 /data/robotics/toshith/HSGM_public/data/scene_datasets/mp3d/x8F5xyUWy9e/x8F5xyUWy9e.glb True

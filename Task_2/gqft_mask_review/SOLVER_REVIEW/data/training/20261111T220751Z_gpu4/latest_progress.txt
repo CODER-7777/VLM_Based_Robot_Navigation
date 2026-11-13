@@ -1,0 +1,37 @@
+STATUS {
+  "status": "failed",
+  "pid": 1852631,
+  "started_utc": "2026-11-11T22:11:45.486476+00:00",
+  "gpu_physical": 4,
+  "steps_per_arm": 500,
+  "completed_arms": [
+    "yaw_local_reference",
+    "solver_residual"
+  ],
+  "current_arm": "solver_learned_weights",
+  "current_log": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/ground_pilots/20261111T220751Z_gpu4/solver_learned_weights/train.log",
+  "updated_utc": "2026-11-11T22:12:54.131176+00:00",
+  "resumed_utc": "2026-11-11T22:15:10.990468+00:00",
+  "error": "Traceback (most recent call last):\n  File \"/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/ground_pilots/20261111T220751Z_gpu4/resume_training_pilot.py\", line 60, in main\n    subprocess.run(command, cwd=ROOT/'source', env=env,\n  File \"/usr/lib/python3.10/subprocess.py\", line 526, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['/data/robotics/toshith/envs/agentvln/bin/python', '-B', '-m', 'step2.train_gqft', '--manifest', '/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/results/hsgm_manifest_v1.json', '--sequences-root', '/data/robotics/toshith/rgbd_vo_dataset/hsgm_sequences', '--steps', '500', '--batch-size', '4', '--workers', '2', '--queries', '1', '--max-history', '30', '--virtual-extension-px', '270', '--lr', '0.0002', '--weight-decay', '0.01', '--warmup', '50', '--log-every', '20', '--val-every', '100', '--val-batches', '100', '--checkpoint-every', '500', '--min-stable-step', '500', '--seed', '20260820', '--init-checkpoint', '/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/runs/gqft_spatial_yaw_v1/best.pt', '--reinitialize-motion-heads', '--predict-yaw', '--spatial-pooling', 'attention_max', '--spatial-mask', 'none', '--motion-integration', 'yaw_local', '--target-ground-plane', 'sequence_floor', '--allow-gpu', '--out', '/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/ground_pilots/20261111T220751Z_gpu4/solver_learned_weights', '--motion-prior', 'ground_solver', '--ground-max-floor-m', '1.0', '--ground-learned-weights']' returned non-zero exit status 1.\n"
+}
+
+ARM yaw_local_reference
+LAST_LOGS VAL {"step": 500, "ade_px": 8.98307247534584, "fde_px": 10.834132047799917, "length_mae": 0.09230769230769231, "endpoint_5px": 0.34615384615384615, "endpoint_10px": 0.6076923076923076, "visible_points": 2354, "queries": 260, "best_ade_px": 8.81413611458233, "initial_ade_px": 57905.58400491019}
+TRAINING_STABLE {"step": 500, "ade_px": 8.98307247534584, "fde_px": 10.834132047799917, "length_mae": 0.09230769230769231, "endpoint_5px": 0.34615384615384615, "endpoint_10px": 0.6076923076923076, "visible_points": 2354, "queries": 260, "best_ade_px": 8.81413611458233, "initial_ade_px": 57905.58400491019}
+TRAINING_DONE {"step": 500, "best_ade_px": 8.81413611458233}
+FIXED_VALIDATION {"selected_history": null, "h24": [{"history": 24, "ade_px": 10.955824620173528, "fde_px": 13.336321317232573, "length_mae": 0.0, "endpoint_5px": 0.14423076923076922, "endpoint_10px": 0.47115384615384615, "visible_points": 2600, "queries": 104, "signature_samples": 104, "signature_sequences": 26, "signature_cross_sequence_eligible": 104, "signature_reference_curve_points": 31, "nn_cosine_mean": 0.9910609126091003, "nn_full_curve_gap_m_mean": 0.19884531199932098, "nn_endpoint_gap_m_mean": 0.41380903124809265, "signature_ambiguity": 0.2083333283662796, "signature_close_pairs": 24, "signature_ambiguity_curve_gap_m": 0.1, "prefix_ade_px": 10.955824620173528}]}
+CHECKPOINTS [('last.pt', 48747743), ('best.pt', 48747743)]
+ARM solver_residual
+LAST_LOGS VAL {"step": 500, "ade_px": 13.224189906172967, "fde_px": 16.359957333711478, "length_mae": 0.0, "endpoint_5px": 0.28846153846153844, "endpoint_10px": 0.4115384615384615, "visible_points": 2354, "queries": 260, "best_ade_px": 13.183536441627963, "initial_ade_px": 13.459730135351293}
+TRAINING_STABLE {"step": 500, "ade_px": 13.224189906172967, "fde_px": 16.359957333711478, "length_mae": 0.0, "endpoint_5px": 0.28846153846153844, "endpoint_10px": 0.4115384615384615, "visible_points": 2354, "queries": 260, "best_ade_px": 13.183536441627963, "initial_ade_px": 13.459730135351293}
+TRAINING_DONE {"step": 500, "best_ade_px": 13.183536441627963}
+FIXED_VALIDATION {"selected_history": null, "h24": [{"history": 24, "ade_px": 15.630245038546049, "fde_px": 16.419222524532906, "length_mae": 0.0, "endpoint_5px": 0.28846153846153844, "endpoint_10px": 0.40384615384615385, "visible_points": 2600, "queries": 104, "signature_samples": 104, "signature_sequences": 26, "signature_cross_sequence_eligible": 104, "signature_reference_curve_points": 31, "nn_cosine_mean": 0.9997612237930298, "nn_full_curve_gap_m_mean": 0.23767350614070892, "nn_endpoint_gap_m_mean": 0.4883626699447632, "signature_ambiguity": 0.7307692170143127, "signature_close_pairs": 104, "signature_ambiguity_curve_gap_m": 0.1, "prefix_ade_px": 15.630245038546049}]}
+CHECKPOINTS [('last.pt', 48768527), ('best.pt', 48768527)]
+ARM solver_learned_weights
+LAST_LOGS   File "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/ground_pilots/20261111T220751Z_gpu4/source/step2/ground_solver.py", line 108, in _project
+    C = p1 @ R.T                       # [N,M,3]
+RuntimeError: Inference tensors cannot be saved for backward. To work around you can make a clone to get a normal tensor and use it in autograd.
+CHECKPOINTS []
+GPU index, memory.used [MiB], utilization.gpu [%]
+4, 2327 MiB, 0 %
+

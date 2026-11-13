@@ -1,0 +1,20 @@
+MAX_FLOOR_M=6.0
+leg00 start=0 GT end(f,l)=[0.216 0.712] est end=[0.298 0.901] mean_err=0.082 m end_err=0.206 m  GTyaw=-292.3 est=78.5
+leg02 start=140 GT end(f,l)=[ 0.313 -0.589] est end=[ 0.338 -0.846] mean_err=0.062 m end_err=0.258 m  GTyaw=-83.7 est=-79.0
+leg03 start=219 GT end(f,l)=[ 1.115 -0.043] est end=[ 1.499 -0.12 ] mean_err=0.201 m end_err=0.392 m  GTyaw=-3.2 est=-21.2
+leg04 start=337 GT end(f,l)=[0.939 0.207] est end=[1.409 0.325] mean_err=0.261 m end_err=0.484 m  GTyaw=6.1 est=-1.0
+MAX_FLOOR_M=3.0
+leg00 start=0 GT end(f,l)=[0.216 0.712] est end=[0.282 0.85 ] mean_err=0.067 m end_err=0.152 m  GTyaw=-292.3 est=78.0
+leg02 start=140 GT end(f,l)=[ 0.313 -0.589] est end=[ 0.322 -0.813] mean_err=0.058 m end_err=0.224 m  GTyaw=-83.7 est=-77.1
+leg03 start=219 GT end(f,l)=[ 1.115 -0.043] est end=[ 1.425 -0.099] mean_err=0.159 m end_err=0.315 m  GTyaw=-3.2 est=-20.9
+leg04 start=337 GT end(f,l)=[0.939 0.207] est end=[1.372 0.321] mean_err=0.231 m end_err=0.447 m  GTyaw=6.1 est=1.8
+MAX_FLOOR_M=2.0
+leg00 start=0 GT end(f,l)=[0.216 0.712] est end=[0.247 0.771] mean_err=0.042 m end_err=0.067 m  GTyaw=-292.3 est=76.3
+leg02 start=140 GT end(f,l)=[ 0.313 -0.589] est end=[ 0.306 -0.733] mean_err=0.040 m end_err=0.144 m  GTyaw=-83.7 est=-76.8
+leg03 start=219 GT end(f,l)=[ 1.115 -0.043] est end=[ 1.276 -0.068] mean_err=0.074 m end_err=0.164 m  GTyaw=-3.2 est=-18.0
+leg04 start=337 GT end(f,l)=[0.939 0.207] est end=[1.126 0.255] mean_err=0.101 m end_err=0.193 m  GTyaw=6.1 est=12.2
+MAX_FLOOR_M=1.5
+leg00 start=0 GT end(f,l)=[0.216 0.712] est end=[0.212 0.696] mean_err=0.018 m end_err=0.017 m  GTyaw=-292.3 est=74.5
+leg02 start=140 GT end(f,l)=[ 0.313 -0.589] est end=[ 0.289 -0.622] mean_err=0.018 m end_err=0.040 m  GTyaw=-83.7 est=-79.7
+leg03 start=219 GT end(f,l)=[ 1.115 -0.043] est end=[ 1.111 -0.045] mean_err=0.020 m end_err=0.005 m  GTyaw=-3.2 est=-13.0
+leg04 start=337 GT end(f,l)=[0.939 0.207] est end=[0.955 0.216] mean_err=0.015 m end_err=0.018 m  GTyaw=6.1 est=14.1

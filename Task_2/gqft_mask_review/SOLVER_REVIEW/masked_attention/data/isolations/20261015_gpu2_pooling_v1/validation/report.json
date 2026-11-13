@@ -1,0 +1,767 @@
+{
+  "protocol": {
+    "mode": "validation",
+    "history": 24,
+    "origin_excluded": true,
+    "checkpoint": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/runs/gqft_spatial_yaw_v1/best.pt",
+    "checkpoint_sha256": "40729f0f537c28e5b07565aba01133bb594c7781cc59eedf90bc3fafa939ee8d",
+    "model_config": {
+      "d_model": 256,
+      "temporal_layers": 4,
+      "temporal_heads": 8,
+      "dropout": 0.1,
+      "max_history": 30,
+      "max_step_m": 0.12,
+      "max_step_yaw_rad": 0.15,
+      "canvas_height": 810,
+      "spatial_pooling": "attention_max",
+      "predict_yaw": true,
+      "spatial_mask": "none",
+      "mask_confidence_threshold": 0.0,
+      "mask_min_coverage": 0.75
+    },
+    "camera": {
+      "width": 960,
+      "height": 540,
+      "fx": 198.82250993908562,
+      "fy": 198.82250993908562,
+      "cx": 480.0,
+      "cy": 270.0,
+      "camera_height_m": 1.2,
+      "pitch_down_deg": 30.0
+    },
+    "coverage": 0.75,
+    "device": "cuda:0",
+    "cuda_visible_devices": "2",
+    "dtype": "float32",
+    "trained": false,
+    "test_accessed": false,
+    "rf_rule": "31x31 convolution footprint, stride16, padding15, exclude outside-image padding; GroupNorm has additional global dependence",
+    "policy_definition": {
+      "original": "original attention + original max",
+      "attention_only": "coarse-masked attention + original max",
+      "max_only": "original attention + coarse-masked max",
+      "both": "coarse-masked attention + coarse-masked max",
+      "rf_both": "convolution-footprint coverage masking for both branches"
+    },
+    "shared_domain": "Pixel errors use identical target-valid post-origin points for all policies, irrespective of prediction prefix gate",
+    "manifest": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/results/hsgm_manifest_v1.json",
+    "manifest_sha256": "a630b824c9907b0bb841b70d9a0ac43e0c0cb3eab296f7d374aefbb3866b751c",
+    "split": "val",
+    "reference_history": 30,
+    "stride": 5,
+    "queries": 1,
+    "seed": 20260820,
+    "target_ground_plane": "sequence_floor"
+  },
+  "summary": {
+    "window_count": 104,
+    "policies": {
+      "original": {
+        "mean_ground_error_m": 0.04491708633137695,
+        "endpoint_ground_error_m": 0.08999301411779513,
+        "mean_3d_error_m": 0.055457960385599886,
+        "endpoint_3d_error_m": 0.10440568547673071,
+        "mean_pixel_error_px": 12.120684408643204,
+        "last_valid_pixel_error_px": 15.305364200034727,
+        "pooled_pixel_error_px": 12.1206844086432,
+        "windows_ground_better_than_original": 0
+      },
+      "attention_only": {
+        "mean_ground_error_m": 0.06496006869084071,
+        "endpoint_ground_error_m": 0.16270055665142322,
+        "mean_3d_error_m": 0.07868935575436765,
+        "endpoint_3d_error_m": 0.18035228298882108,
+        "mean_pixel_error_px": 16.043385193335457,
+        "last_valid_pixel_error_px": 27.316992443830102,
+        "pooled_pixel_error_px": 16.043385193335453,
+        "windows_ground_better_than_original": 35
+      },
+      "max_only": {
+        "mean_ground_error_m": 0.11156013865585875,
+        "endpoint_ground_error_m": 0.2600289658102967,
+        "mean_3d_error_m": 0.12107137766528639,
+        "endpoint_3d_error_m": 0.26891055604224157,
+        "mean_pixel_error_px": 30.41841789827379,
+        "last_valid_pixel_error_px": 49.54175529987383,
+        "pooled_pixel_error_px": 30.418417898273784,
+        "windows_ground_better_than_original": 17
+      },
+      "both": {
+        "mean_ground_error_m": 0.2511289872349496,
+        "endpoint_ground_error_m": 0.6967621855969539,
+        "mean_3d_error_m": 0.2621334955346853,
+        "endpoint_3d_error_m": 0.7041373039166123,
+        "mean_pixel_error_px": 83662.70521541519,
+        "last_valid_pixel_error_px": 419387.57808794,
+        "pooled_pixel_error_px": 83662.70521541518,
+        "windows_ground_better_than_original": 14
+      },
+      "rf_both": {
+        "mean_ground_error_m": 0.04798161217391737,
+        "endpoint_ground_error_m": 0.10896037549908619,
+        "mean_3d_error_m": 0.062368704378408996,
+        "endpoint_3d_error_m": 0.13090386415332522,
+        "mean_pixel_error_px": 12.97378125055245,
+        "last_valid_pixel_error_px": 20.877560272556646,
+        "pooled_pixel_error_px": 12.97378125055245,
+        "windows_ground_better_than_original": 60
+      }
+    },
+    "paired_effects": {
+      "mean_ground_error_m": {
+        "attention_effect_with_original_max": 0.020042982359463765,
+        "max_effect_with_original_attention": 0.0666430523244818,
+        "joint_effect": 0.20621190090357264,
+        "interaction": 0.11952586621962709,
+        "rf_both_minus_coarse_both": -0.2031473750610322
+      },
+      "endpoint_ground_error_m": {
+        "attention_effect_with_original_max": 0.07270754253362809,
+        "max_effect_with_original_attention": 0.17003595169250157,
+        "joint_effect": 0.6067691714791588,
+        "interaction": 0.3640256772530291,
+        "rf_both_minus_coarse_both": -0.5878018100978677
+      },
+      "mean_pixel_error_px": {
+        "attention_effect_with_original_max": 3.9227007846922533,
+        "max_effect_with_original_attention": 18.297733489630588,
+        "joint_effect": 83650.58453100655,
+        "interaction": 83628.36409673223,
+        "rf_both_minus_coarse_both": -83649.73143416464
+      }
+    },
+    "by_motion_family": {
+      "0": {
+        "window_count": 16,
+        "policies": {
+          "original": {
+            "mean_ground_error_m": 0.04471327448075279,
+            "endpoint_ground_error_m": 0.08796652100544264,
+            "mean_3d_error_m": 0.05091179843866475,
+            "endpoint_3d_error_m": 0.09644905091326128,
+            "mean_pixel_error_px": 11.843078464433791,
+            "last_valid_pixel_error_px": 12.56889166965653,
+            "pooled_pixel_error_px": 11.843078464433793,
+            "windows_ground_better_than_original": 0
+          },
+          "attention_only": {
+            "mean_ground_error_m": 0.04964353354115254,
+            "endpoint_ground_error_m": 0.11732402329938993,
+            "mean_3d_error_m": 0.06305522370963673,
+            "endpoint_3d_error_m": 0.1331652236818005,
+            "mean_pixel_error_px": 13.370282375375751,
+            "last_valid_pixel_error_px": 18.36351896426379,
+            "pooled_pixel_error_px": 13.37028237537575,
+            "windows_ground_better_than_original": 0
+          },
+          "max_only": {
+            "mean_ground_error_m": 0.06865165662317699,
+            "endpoint_ground_error_m": 0.14303501968479657,
+            "mean_3d_error_m": 0.07160103907900167,
+            "endpoint_3d_error_m": 0.14649894943989822,
+            "mean_pixel_error_px": 18.20828848945002,
+            "last_valid_pixel_error_px": 19.97996691142971,
+            "pooled_pixel_error_px": 18.208288489450023,
+            "windows_ground_better_than_original": 0
+          },
+          "both": {
+            "mean_ground_error_m": 0.09889088828081356,
+            "endpoint_ground_error_m": 0.2898625164375983,
+            "mean_3d_error_m": 0.10821749609577931,
+            "endpoint_3d_error_m": 0.2957598555127193,
+            "mean_pixel_error_px": 24.221705218598355,
+            "last_valid_pixel_error_px": 43.18678454525549,
+            "pooled_pixel_error_px": 24.221705218598355,
+            "windows_ground_better_than_original": 0
+          },
+          "rf_both": {
+            "mean_ground_error_m": 0.035698086505138046,
+            "endpoint_ground_error_m": 0.07219618220973975,
+            "mean_3d_error_m": 0.05338085079387596,
+            "endpoint_3d_error_m": 0.1009033584761192,
+            "mean_pixel_error_px": 10.279447251563864,
+            "last_valid_pixel_error_px": 13.127762811899949,
+            "pooled_pixel_error_px": 10.279447251563864,
+            "windows_ground_better_than_original": 10
+          }
+        },
+        "paired_effects": {
+          "mean_ground_error_m": {
+            "attention_effect_with_original_max": 0.004930259060399754,
+            "max_effect_with_original_attention": 0.0239383821424242,
+            "joint_effect": 0.054177613800060774,
+            "interaction": 0.02530897259723682,
+            "rf_both_minus_coarse_both": -0.06319280177567552
+          },
+          "endpoint_ground_error_m": {
+            "attention_effect_with_original_max": 0.02935750229394729,
+            "max_effect_with_original_attention": 0.05506849867935393,
+            "joint_effect": 0.20189599543215567,
+            "interaction": 0.11746999445885445,
+            "rf_both_minus_coarse_both": -0.21766633422785855
+          },
+          "mean_pixel_error_px": {
+            "attention_effect_with_original_max": 1.5272039109419602,
+            "max_effect_with_original_attention": 6.3652100250162285,
+            "joint_effect": 12.378626754164564,
+            "interaction": 4.486212818206376,
+            "rf_both_minus_coarse_both": -13.942257967034491
+          }
+        }
+      },
+      "1": {
+        "window_count": 16,
+        "policies": {
+          "original": {
+            "mean_ground_error_m": 0.04160792210777013,
+            "endpoint_ground_error_m": 0.09442328775202805,
+            "mean_3d_error_m": 0.04385774870496916,
+            "endpoint_3d_error_m": 0.0994150971688657,
+            "mean_pixel_error_px": 11.416929955078777,
+            "last_valid_pixel_error_px": 19.7844615342732,
+            "pooled_pixel_error_px": 11.416929955078777,
+            "windows_ground_better_than_original": 0
+          },
+          "attention_only": {
+            "mean_ground_error_m": 0.04564138789169437,
+            "endpoint_ground_error_m": 0.10010473957607333,
+            "mean_3d_error_m": 0.048192136954092316,
+            "endpoint_3d_error_m": 0.10581715101027522,
+            "mean_pixel_error_px": 12.263305947575905,
+            "last_valid_pixel_error_px": 21.50350906175037,
+            "pooled_pixel_error_px": 12.263305947575907,
+            "windows_ground_better_than_original": 9
+          },
+          "max_only": {
+            "mean_ground_error_m": 0.12965182999832517,
+            "endpoint_ground_error_m": 0.2773237577229624,
+            "mean_3d_error_m": 0.13109491830671666,
+            "endpoint_3d_error_m": 0.2789427856673993,
+            "mean_pixel_error_px": 33.688895755484396,
+            "last_valid_pixel_error_px": 53.56860457921145,
+            "pooled_pixel_error_px": 33.6888957554844,
+            "windows_ground_better_than_original": 4
+          },
+          "both": {
+            "mean_ground_error_m": 0.16063755084603154,
+            "endpoint_ground_error_m": 0.3846990683015121,
+            "mean_3d_error_m": 0.16219056247955058,
+            "endpoint_3d_error_m": 0.3865158531822711,
+            "mean_pixel_error_px": 48.14474661965942,
+            "last_valid_pixel_error_px": 116.71795866711952,
+            "pooled_pixel_error_px": 48.144746619659436,
+            "windows_ground_better_than_original": 4
+          },
+          "rf_both": {
+            "mean_ground_error_m": 0.046569873231305126,
+            "endpoint_ground_error_m": 0.11234865135190612,
+            "mean_3d_error_m": 0.04980339782654688,
+            "endpoint_3d_error_m": 0.11790213561011814,
+            "mean_pixel_error_px": 11.17969689159881,
+            "last_valid_pixel_error_px": 19.85503964885037,
+            "pooled_pixel_error_px": 11.179696891598809,
+            "windows_ground_better_than_original": 11
+          }
+        },
+        "paired_effects": {
+          "mean_ground_error_m": {
+            "attention_effect_with_original_max": 0.004033465783924238,
+            "max_effect_with_original_attention": 0.08804390789055504,
+            "joint_effect": 0.11902962873826141,
+            "interaction": 0.02695225506378214,
+            "rf_both_minus_coarse_both": -0.11406767761472641
+          },
+          "endpoint_ground_error_m": {
+            "attention_effect_with_original_max": 0.0056814518240452805,
+            "max_effect_with_original_attention": 0.18290046997093437,
+            "joint_effect": 0.2902757805494841,
+            "interaction": 0.1016938587545044,
+            "rf_both_minus_coarse_both": -0.272350416949606
+          },
+          "mean_pixel_error_px": {
+            "attention_effect_with_original_max": 0.8463759924971281,
+            "max_effect_with_original_attention": 22.271965800405617,
+            "joint_effect": 36.727816664580644,
+            "interaction": 13.609474871677895,
+            "rf_both_minus_coarse_both": -36.96504972806061
+          }
+        }
+      },
+      "2": {
+        "window_count": 12,
+        "policies": {
+          "original": {
+            "mean_ground_error_m": 0.03299753616249381,
+            "endpoint_ground_error_m": 0.06422959970937463,
+            "mean_3d_error_m": 0.03597282114838905,
+            "endpoint_3d_error_m": 0.06741017442678553,
+            "mean_pixel_error_px": 8.747406162390785,
+            "last_valid_pixel_error_px": 11.5705679225642,
+            "pooled_pixel_error_px": 8.747406162390785,
+            "windows_ground_better_than_original": 0
+          },
+          "attention_only": {
+            "mean_ground_error_m": 0.05186640786278309,
+            "endpoint_ground_error_m": 0.11640118677069032,
+            "mean_3d_error_m": 0.06598373295637276,
+            "endpoint_3d_error_m": 0.1325929854392845,
+            "mean_pixel_error_px": 12.976423751682788,
+            "last_valid_pixel_error_px": 18.878520631398963,
+            "pooled_pixel_error_px": 12.97642375168279,
+            "windows_ground_better_than_original": 3
+          },
+          "max_only": {
+            "mean_ground_error_m": 0.08304008854664045,
+            "endpoint_ground_error_m": 0.18291893514789093,
+            "mean_3d_error_m": 0.0852323901349757,
+            "endpoint_3d_error_m": 0.18464919476755837,
+            "mean_pixel_error_px": 22.118932135650777,
+            "last_valid_pixel_error_px": 37.45885406177178,
+            "pooled_pixel_error_px": 22.11893213565078,
+            "windows_ground_better_than_original": 1
+          },
+          "both": {
+            "mean_ground_error_m": 0.16654497482232086,
+            "endpoint_ground_error_m": 0.4287898314247329,
+            "mean_3d_error_m": 0.18183855484257072,
+            "endpoint_3d_error_m": 0.44628563183104214,
+            "mean_pixel_error_px": 58.71455774237341,
+            "last_valid_pixel_error_px": 264.0635267122792,
+            "pooled_pixel_error_px": 58.71455774237342,
+            "windows_ground_better_than_original": 1
+          },
+          "rf_both": {
+            "mean_ground_error_m": 0.030700717073412404,
+            "endpoint_ground_error_m": 0.06281367955480761,
+            "mean_3d_error_m": 0.03361592280012539,
+            "endpoint_3d_error_m": 0.06627470316135531,
+            "mean_pixel_error_px": 8.82131131905605,
+            "last_valid_pixel_error_px": 16.354414373358086,
+            "pooled_pixel_error_px": 8.821311319056052,
+            "windows_ground_better_than_original": 8
+          }
+        },
+        "paired_effects": {
+          "mean_ground_error_m": {
+            "attention_effect_with_original_max": 0.01886887170028928,
+            "max_effect_with_original_attention": 0.05004255238414664,
+            "joint_effect": 0.13354743865982704,
+            "interaction": 0.06463601457539112,
+            "rf_both_minus_coarse_both": -0.13584425774890846
+          },
+          "endpoint_ground_error_m": {
+            "attention_effect_with_original_max": 0.052171587061315694,
+            "max_effect_with_original_attention": 0.1186893354385163,
+            "joint_effect": 0.3645602317153583,
+            "interaction": 0.1936993092155263,
+            "rf_both_minus_coarse_both": -0.3659761518699253
+          },
+          "mean_pixel_error_px": {
+            "attention_effect_with_original_max": 4.2290175892920026,
+            "max_effect_with_original_attention": 13.371525973259992,
+            "joint_effect": 49.96715157998263,
+            "interaction": 32.36660801743063,
+            "rf_both_minus_coarse_both": -49.89324642331736
+          }
+        }
+      },
+      "3": {
+        "window_count": 12,
+        "policies": {
+          "original": {
+            "mean_ground_error_m": 0.05087439560213277,
+            "endpoint_ground_error_m": 0.118224096303733,
+            "mean_3d_error_m": 0.05724152715521502,
+            "endpoint_3d_error_m": 0.12935197493953857,
+            "mean_pixel_error_px": 12.479929359587656,
+            "last_valid_pixel_error_px": 20.032754528813786,
+            "pooled_pixel_error_px": 12.479929359587654,
+            "windows_ground_better_than_original": 0
+          },
+          "attention_only": {
+            "mean_ground_error_m": 0.05260560449103371,
+            "endpoint_ground_error_m": 0.11566429297670672,
+            "mean_3d_error_m": 0.05947188181038543,
+            "endpoint_3d_error_m": 0.12721820039060378,
+            "mean_pixel_error_px": 12.554650190971932,
+            "last_valid_pixel_error_px": 19.146887866680952,
+            "pooled_pixel_error_px": 12.554650190971934,
+            "windows_ground_better_than_original": 8
+          },
+          "max_only": {
+            "mean_ground_error_m": 0.07032571461045291,
+            "endpoint_ground_error_m": 0.17461677324867056,
+            "mean_3d_error_m": 0.0749595292637044,
+            "endpoint_3d_error_m": 0.18174102358301183,
+            "mean_pixel_error_px": 19.871864955726117,
+            "last_valid_pixel_error_px": 33.91104674370698,
+            "pooled_pixel_error_px": 19.87186495572612,
+            "windows_ground_better_than_original": 2
+          },
+          "both": {
+            "mean_ground_error_m": 0.11230732567283863,
+            "endpoint_ground_error_m": 0.3568682904205709,
+            "mean_3d_error_m": 0.11831225425896374,
+            "endpoint_3d_error_m": 0.36512021217239615,
+            "mean_pixel_error_px": 30.27549710593109,
+            "last_valid_pixel_error_px": 83.81231874078851,
+            "pooled_pixel_error_px": 30.275497105931088,
+            "windows_ground_better_than_original": 2
+          },
+          "rf_both": {
+            "mean_ground_error_m": 0.03789145325956093,
+            "endpoint_ground_error_m": 0.08227595186188105,
+            "mean_3d_error_m": 0.0553030010294294,
+            "endpoint_3d_error_m": 0.11523403539550593,
+            "mean_pixel_error_px": 9.912224942175323,
+            "last_valid_pixel_error_px": 17.151718831806154,
+            "pooled_pixel_error_px": 9.912224942175321,
+            "windows_ground_better_than_original": 12
+          }
+        },
+        "paired_effects": {
+          "mean_ground_error_m": {
+            "attention_effect_with_original_max": 0.001731208888900937,
+            "max_effect_with_original_attention": 0.019451319008320138,
+            "joint_effect": 0.06143293007070586,
+            "interaction": 0.04025040217348479,
+            "rf_both_minus_coarse_both": -0.07441587241327771
+          },
+          "endpoint_ground_error_m": {
+            "attention_effect_with_original_max": -0.0025598033270262804,
+            "max_effect_with_original_attention": 0.05639267694493756,
+            "joint_effect": 0.2386441941168379,
+            "interaction": 0.18481132049892662,
+            "rf_both_minus_coarse_both": -0.2745923385586898
+          },
+          "mean_pixel_error_px": {
+            "attention_effect_with_original_max": 0.07472083138427621,
+            "max_effect_with_original_attention": 7.391935596138461,
+            "joint_effect": 17.795567746343437,
+            "interaction": 10.3289113188207,
+            "rf_both_minus_coarse_both": -20.363272163755767
+          }
+        }
+      },
+      "4": {
+        "window_count": 12,
+        "policies": {
+          "original": {
+            "mean_ground_error_m": 0.04318193120470329,
+            "endpoint_ground_error_m": 0.07654052525820446,
+            "mean_3d_error_m": 0.04569502391350802,
+            "endpoint_3d_error_m": 0.08166028357564402,
+            "mean_pixel_error_px": 9.994112257901895,
+            "last_valid_pixel_error_px": 10.064824037802467,
+            "pooled_pixel_error_px": 9.994112257901897,
+            "windows_ground_better_than_original": 0
+          },
+          "attention_only": {
+            "mean_ground_error_m": 0.09526076670032783,
+            "endpoint_ground_error_m": 0.29128216103757565,
+            "mean_3d_error_m": 0.1008257873945057,
+            "endpoint_3d_error_m": 0.2991558210559115,
+            "mean_pixel_error_px": 19.032785110641242,
+            "last_valid_pixel_error_px": 40.38898100489372,
+            "pooled_pixel_error_px": 19.03278511064124,
+            "windows_ground_better_than_original": 0
+          },
+          "max_only": {
+            "mean_ground_error_m": 0.1656209737802101,
+            "endpoint_ground_error_m": 0.349580516232505,
+            "mean_3d_error_m": 0.1660775276092852,
+            "endpoint_3d_error_m": 0.35012700716414585,
+            "mean_pixel_error_px": 37.38356183060315,
+            "last_valid_pixel_error_px": 44.08010045106543,
+            "pooled_pixel_error_px": 37.38356183060314,
+            "windows_ground_better_than_original": 0
+          },
+          "both": {
+            "mean_ground_error_m": 0.4666083636102066,
+            "endpoint_ground_error_m": 1.3922286206692245,
+            "mean_3d_error_m": 0.4784308060757045,
+            "endpoint_3d_error_m": 1.3973829455235993,
+            "mean_pixel_error_px": 124544.3784056552,
+            "last_valid_pixel_error_px": 951990.735294552,
+            "pooled_pixel_error_px": 124544.37840565517,
+            "windows_ground_better_than_original": 0
+          },
+          "rf_both": {
+            "mean_ground_error_m": 0.044639243284625645,
+            "endpoint_ground_error_m": 0.09504796204757075,
+            "mean_3d_error_m": 0.047873981592043285,
+            "endpoint_3d_error_m": 0.101829200848276,
+            "mean_pixel_error_px": 9.956683451782387,
+            "last_valid_pixel_error_px": 13.962473890376378,
+            "pooled_pixel_error_px": 9.956683451782386,
+            "windows_ground_better_than_original": 7
+          }
+        },
+        "paired_effects": {
+          "mean_ground_error_m": {
+            "attention_effect_with_original_max": 0.052078835495624545,
+            "max_effect_with_original_attention": 0.1224390425755068,
+            "joint_effect": 0.42342643240550326,
+            "interaction": 0.24890855433437192,
+            "rf_both_minus_coarse_both": -0.4219691203255809
+          },
+          "endpoint_ground_error_m": {
+            "attention_effect_with_original_max": 0.2147416357793712,
+            "max_effect_with_original_attention": 0.27303999097430054,
+            "joint_effect": 1.31568809541102,
+            "interaction": 0.8279064686573482,
+            "rf_both_minus_coarse_both": -1.2971806586216537
+          },
+          "mean_pixel_error_px": {
+            "attention_effect_with_original_max": 9.038672852739348,
+            "max_effect_with_original_attention": 27.389449572701253,
+            "joint_effect": 124534.38429339729,
+            "interaction": 124497.95617097185,
+            "rf_both_minus_coarse_both": -124534.42172220342
+          }
+        }
+      },
+      "5": {
+        "window_count": 12,
+        "policies": {
+          "original": {
+            "mean_ground_error_m": 0.029778495199151614,
+            "endpoint_ground_error_m": 0.0546658249272371,
+            "mean_3d_error_m": 0.031156356351567494,
+            "endpoint_3d_error_m": 0.05582263733284329,
+            "mean_pixel_error_px": 9.363277303919999,
+            "last_valid_pixel_error_px": 12.505207635158845,
+            "pooled_pixel_error_px": 9.363277303919999,
+            "windows_ground_better_than_original": 0
+          },
+          "attention_only": {
+            "mean_ground_error_m": 0.03878837518197336,
+            "endpoint_ground_error_m": 0.07417263340350988,
+            "mean_3d_error_m": 0.0419897394607714,
+            "endpoint_3d_error_m": 0.07652349175789745,
+            "mean_pixel_error_px": 12.873376150299686,
+            "last_valid_pixel_error_px": 19.51918895301971,
+            "pooled_pixel_error_px": 12.873376150299686,
+            "windows_ground_better_than_original": 3
+          },
+          "max_only": {
+            "mean_ground_error_m": 0.13602496971935688,
+            "endpoint_ground_error_m": 0.2848715559456523,
+            "mean_3d_error_m": 0.13685725060213877,
+            "endpoint_3d_error_m": 0.2857085876574729,
+            "mean_pixel_error_px": 54.62953271858361,
+            "last_valid_pixel_error_px": 103.83154125935913,
+            "pooled_pixel_error_px": 54.62953271858361,
+            "windows_ground_better_than_original": 0
+          },
+          "both": {
+            "mean_ground_error_m": 0.17471222451504187,
+            "endpoint_ground_error_m": 0.3936464577808339,
+            "mean_3d_error_m": 0.17537190345037254,
+            "endpoint_3d_error_m": 0.39442539020042716,
+            "mean_pixel_error_px": 78.09553259870565,
+            "last_valid_pixel_error_px": 182.3494069647226,
+            "pooled_pixel_error_px": 78.09553259870566,
+            "windows_ground_better_than_original": 0
+          },
+          "rf_both": {
+            "mean_ground_error_m": 0.05256747481253941,
+            "endpoint_ground_error_m": 0.10923877456478666,
+            "mean_3d_error_m": 0.053891486487963235,
+            "endpoint_3d_error_m": 0.10997411423081005,
+            "mean_pixel_error_px": 17.98915409865833,
+            "last_valid_pixel_error_px": 30.675346803715545,
+            "pooled_pixel_error_px": 17.98915409865832,
+            "windows_ground_better_than_original": 1
+          }
+        },
+        "paired_effects": {
+          "mean_ground_error_m": {
+            "attention_effect_with_original_max": 0.009009879982821746,
+            "max_effect_with_original_attention": 0.10624647452020526,
+            "joint_effect": 0.14493372931589027,
+            "interaction": 0.02967737481286324,
+            "rf_both_minus_coarse_both": -0.12214474970250247
+          },
+          "endpoint_ground_error_m": {
+            "attention_effect_with_original_max": 0.01950680847627278,
+            "max_effect_with_original_attention": 0.23020573101841518,
+            "joint_effect": 0.3389806328535968,
+            "interaction": 0.08926809335890884,
+            "rf_both_minus_coarse_both": -0.28440768321604726
+          },
+          "mean_pixel_error_px": {
+            "attention_effect_with_original_max": 3.5100988463796874,
+            "max_effect_with_original_attention": 45.26625541466361,
+            "joint_effect": 68.73225529478565,
+            "interaction": 19.955901033742343,
+            "rf_both_minus_coarse_both": -60.10637850004731
+          }
+        }
+      },
+      "6": {
+        "window_count": 12,
+        "policies": {
+          "original": {
+            "mean_ground_error_m": 0.054019036787215695,
+            "endpoint_ground_error_m": 0.10589734092942267,
+            "mean_3d_error_m": 0.06741951184174008,
+            "endpoint_3d_error_m": 0.12759030555160697,
+            "mean_pixel_error_px": 12.359722203072968,
+            "last_valid_pixel_error_px": 12.651554441029916,
+            "pooled_pixel_error_px": 12.359722203072968,
+            "windows_ground_better_than_original": 0
+          },
+          "attention_only": {
+            "mean_ground_error_m": 0.07253095473734328,
+            "endpoint_ground_error_m": 0.16179148089513032,
+            "mean_3d_error_m": 0.09134760340925302,
+            "endpoint_3d_error_m": 0.1929345462429949,
+            "mean_pixel_error_px": 14.300736607676363,
+            "last_valid_pixel_error_px": 20.166989435690034,
+            "pooled_pixel_error_px": 14.300736607676363,
+            "windows_ground_better_than_original": 6
+          },
+          "max_only": {
+            "mean_ground_error_m": 0.09805270662860739,
+            "endpoint_ground_error_m": 0.2813739450692134,
+            "mean_3d_error_m": 0.10571694813052178,
+            "endpoint_3d_error_m": 0.28842824423697827,
+            "mean_pixel_error_px": 22.668969682866273,
+            "last_valid_pixel_error_px": 46.431074731268104,
+            "pooled_pixel_error_px": 22.668969682866273,
+            "windows_ground_better_than_original": 5
+          },
+          "both": {
+            "mean_ground_error_m": 0.4099881200805254,
+            "endpoint_ground_error_m": 1.1627047783538678,
+            "mean_3d_error_m": 0.43648046998471063,
+            "endpoint_3d_error_m": 1.1776210225365613,
+            "mean_pixel_error_px": 216555.03826286655,
+            "last_valid_pixel_error_px": 1116296.2180278946,
+            "pooled_pixel_error_px": 216555.03826286655,
+            "windows_ground_better_than_original": 4
+          },
+          "rf_both": {
+            "mean_ground_error_m": 0.06338788246492054,
+            "endpoint_ground_error_m": 0.15253468297414322,
+            "mean_3d_error_m": 0.07801615899660684,
+            "endpoint_3d_error_m": 0.17275780589832537,
+            "mean_pixel_error_px": 14.218538584748211,
+            "last_valid_pixel_error_px": 26.39536671437094,
+            "pooled_pixel_error_px": 14.218538584748211,
+            "windows_ground_better_than_original": 5
+          }
+        },
+        "paired_effects": {
+          "mean_ground_error_m": {
+            "attention_effect_with_original_max": 0.018511917950127584,
+            "max_effect_with_original_attention": 0.0440336698413917,
+            "joint_effect": 0.3559690832933097,
+            "interaction": 0.2934234955017904,
+            "rf_both_minus_coarse_both": -0.3466002376156048
+          },
+          "endpoint_ground_error_m": {
+            "attention_effect_with_original_max": 0.05589413996570765,
+            "max_effect_with_original_attention": 0.17547660413979077,
+            "joint_effect": 1.0568074374244452,
+            "interaction": 0.8254366933189466,
+            "rf_both_minus_coarse_both": -1.0101700953797246
+          },
+          "mean_pixel_error_px": {
+            "attention_effect_with_original_max": 1.9410144046033952,
+            "max_effect_with_original_attention": 10.309247479793305,
+            "joint_effect": 216542.67854066347,
+            "interaction": 216530.42827877912,
+            "rf_both_minus_coarse_both": -216540.8197242818
+          }
+        }
+      },
+      "7": {
+        "window_count": 12,
+        "policies": {
+          "original": {
+            "mean_ground_error_m": 0.06333509113153915,
+            "endpoint_ground_error_m": 0.11719565688295842,
+            "mean_3d_error_m": 0.11679102007326746,
+            "endpoint_3d_error_m": 0.18186170086241168,
+            "mean_pixel_error_px": 21.088139695351046,
+            "last_valid_pixel_error_px": 22.683776896358783,
+            "pooled_pixel_error_px": 21.088139695351042,
+            "windows_ground_better_than_original": 0
+          },
+          "attention_only": {
+            "mean_ground_error_m": 0.12488859110336231,
+            "endpoint_ground_error_m": 0.36085471872810376,
+            "mean_3d_error_m": 0.17402585728825928,
+            "endpoint_3d_error_m": 0.41598490809365635,
+            "mean_pixel_error_px": 33.12658210036639,
+            "last_valid_pixel_error_px": 65.49066258682527,
+            "pooled_pixel_error_px": 33.12658210036639,
+            "windows_ground_better_than_original": 6
+          },
+          "max_only": {
+            "mean_ground_error_m": 0.14938543290350517,
+            "endpoint_ground_error_m": 0.41974427483496046,
+            "mean_3d_error_m": 0.21018035084423167,
+            "endpoint_3d_error_m": 0.4726484481471966,
+            "mean_pixel_error_px": 37.75718146836371,
+            "last_valid_pixel_error_px": 65.58450003088022,
+            "pooled_pixel_error_px": 37.75718146836371,
+            "windows_ground_better_than_original": 5
+          },
+          "both": {
+            "mean_ground_error_m": 0.5002522951661693,
+            "endpoint_ground_error_m": 1.4049521835388898,
+            "mean_3d_error_m": 0.5208455612545103,
+            "endpoint_3d_error_m": 1.4119871534199602,
+            "mean_pixel_error_px": 383713.7876751786,
+            "last_valid_pixel_error_px": 1565661.9585296658,
+            "pooled_pixel_error_px": 383713.78767517867,
+            "windows_ground_better_than_original": 3
+          },
+          "rf_both": {
+            "mean_ground_error_m": 0.07696325496363403,
+            "endpoint_ground_error_m": 0.19635242524002974,
+            "mean_3d_error_m": 0.13424922221281277,
+            "endpoint_3d_error_m": 0.2766896376795627,
+            "mean_pixel_error_px": 22.929332917484032,
+            "last_valid_pixel_error_px": 32.42246513419673,
+            "pooled_pixel_error_px": 22.929332917484032,
+            "windows_ground_better_than_original": 6
+          }
+        },
+        "paired_effects": {
+          "mean_ground_error_m": {
+            "attention_effect_with_original_max": 0.06155349997182316,
+            "max_effect_with_original_attention": 0.08605034177196602,
+            "joint_effect": 0.4369172040346302,
+            "interaction": 0.289313362290841,
+            "rf_both_minus_coarse_both": -0.42328904020253527
+          },
+          "endpoint_ground_error_m": {
+            "attention_effect_with_original_max": 0.24365906184514535,
+            "max_effect_with_original_attention": 0.30254861795200205,
+            "joint_effect": 1.2877565266559314,
+            "interaction": 0.7415488468587841,
+            "rf_both_minus_coarse_both": -1.2085997582988601
+          },
+          "mean_pixel_error_px": {
+            "attention_effect_with_original_max": 12.038442405015346,
+            "max_effect_with_original_attention": 16.669041773012665,
+            "joint_effect": 383692.69953548326,
+            "interaction": 383663.99205130525,
+            "rf_both_minus_coarse_both": -383690.8583422611
+          }
+        }
+      }
+    },
+    "checks": {
+      "original_encoder_max_abs_error": 0.0,
+      "joint_encoder_max_abs_error": 0.0,
+      "input_preprocessing_max_abs_change": 0.0,
+      "cnn_feature_preprocessing_max_abs_change": 0.0
+    }
+  }
+}

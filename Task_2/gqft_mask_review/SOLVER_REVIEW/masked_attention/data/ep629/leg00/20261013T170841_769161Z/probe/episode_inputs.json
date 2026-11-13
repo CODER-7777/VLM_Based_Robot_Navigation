@@ -1,0 +1,61 @@
+{
+  "episode_id": 629,
+  "episode_index": 3,
+  "leg": 0,
+  "window_start_within_leg": 0,
+  "window_start_episode_frame": 0,
+  "history": 24,
+  "frames": [
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00000.png",
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00001.png",
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00002.png",
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00003.png",
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00004.png",
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00005.png",
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00006.png",
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00007.png",
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00008.png",
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00009.png",
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00010.png",
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00011.png",
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00012.png",
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00013.png",
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00014.png",
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00015.png",
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00016.png",
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00017.png",
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00018.png",
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00019.png",
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00020.png",
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00021.png",
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00022.png",
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00023.png",
+    "/data/robotics/toshith/flowvo_compare/frames/b10_A_drivefix_idx3_20260829_114756/00024.png"
+  ],
+  "poses_file": "/data/robotics/toshith/flowvo_compare/poses/b10_A_drivefix_idx3_20260829_114756.npz",
+  "physical": {
+    "resolution": [
+      540,
+      960
+    ],
+    "hfov_deg": 135.0,
+    "camera_position_agent": [
+      0.0,
+      1.2,
+      0.0
+    ],
+    "camera_orientation_deg": [
+      -30.0,
+      0.0,
+      0.0
+    ],
+    "agent_radius_m": 0.1,
+    "agent_height_m": 1.5,
+    "mesh_floor_offset_applied": false
+  },
+  "flow_units": "du/W,dv/H",
+  "device": "cuda:0",
+  "cuda_visible_devices": "7",
+  "time_protocol": "Consecutive recorded PNGs; no resampling. Verify original capture rate before benchmark use.",
+  "ground_truth_error_evaluated": false
+}

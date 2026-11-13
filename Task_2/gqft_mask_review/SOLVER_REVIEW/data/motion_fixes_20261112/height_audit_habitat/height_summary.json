@@ -1,0 +1,433 @@
+{
+  "method": "Vertical mesh intersections at the footprint and four 5cm offsets; no trajectory-scale fitting",
+  "legacy_renderer": "agent_y=floor_y from first leg; camera_y=agent_y+mount_offset",
+  "absolute_floor_y_is_not_camera_height": true,
+  "training_performed": false,
+  "gpu_used": false,
+  "mesh_frame": "mp3d_z_up",
+  "mesh_to_habitat": "(x,y,z)->(x,z,-y)",
+  "coordinate_source": "https://github.com/facebookresearch/habitat-sim/blob/main/src/esp/assets/Asset.cpp",
+  "episodes": [
+    {
+      "episode": 837,
+      "scene": "mp3d/TbHJrupSAjP/TbHJrupSAjP.glb",
+      "pose_file": "/data/robotics/toshith/flowvo_compare/poses/b10_A_drivefix_idx0_20260829_114756.npz",
+      "legacy_agent_y": 1.5434648990631104,
+      "camera_mount_m": 1.2,
+      "legacy_camera_world_y": 2.7434648990631105,
+      "frames": 1170,
+      "status_counts": {
+        "ambiguous_overhead_or_object": 131,
+        "changing_surface": 5,
+        "measured": 1033,
+        "missing_support": 1
+      },
+      "clearance_median_m": 2.7513164099519036,
+      "clearance_p05_m": 2.7357367884189827,
+      "clearance_p95_m": 2.7576503154098524,
+      "height_mismatch_fraction_of_measured": 0.9932236205227493,
+      "source_mesh_bounds": [
+        [
+          -5.77249002456665,
+          -1.9376180171966553,
+          -2.775599956512451
+        ],
+        [
+          9.773884773254395,
+          13.68776798248291,
+          6.968315124511719
+        ]
+      ],
+      "habitat_mesh_bounds": [
+        [
+          -5.77249002456665,
+          -2.775599956512451,
+          -13.68776798248291
+        ],
+        [
+          9.773884773254395,
+          6.968315124511719,
+          1.9376180171966553
+        ]
+      ],
+      "selection_scope": "Geometry audit only; episode837 remains excluded from model/threshold selection"
+    },
+    {
+      "episode": 753,
+      "scene": "mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb",
+      "pose_file": "/data/robotics/toshith/flowvo_compare/poses/b10_A_drivefix_idx1_20260829_114756.npz",
+      "legacy_agent_y": 0.35480260848999023,
+      "camera_mount_m": 1.2,
+      "legacy_camera_world_y": 1.5548026084899902,
+      "frames": 521,
+      "status_counts": {
+        "measured": 521
+      },
+      "clearance_median_m": 1.4362685708989147,
+      "clearance_p05_m": 1.3465301421672298,
+      "clearance_p95_m": 1.4854632060873967,
+      "height_mismatch_fraction_of_measured": 1.0,
+      "source_mesh_bounds": [
+        [
+          -17.675395965576172,
+          -18.037343978881836,
+          -3.445194959640503
+        ],
+        [
+          11.672539710998535,
+          26.977994918823242,
+          4.734117031097412
+        ]
+      ],
+      "habitat_mesh_bounds": [
+        [
+          -17.675395965576172,
+          -3.445194959640503,
+          -26.977994918823242
+        ],
+        [
+          11.672539710998535,
+          4.734117031097412,
+          18.037343978881836
+        ]
+      ],
+      "selection_scope": "Geometry audit only; episode837 remains excluded from model/threshold selection"
+    },
+    {
+      "episode": 478,
+      "scene": "mp3d/oLBMNvg9in8/oLBMNvg9in8.glb",
+      "pose_file": "/data/robotics/toshith/flowvo_compare/poses/b10_A_drivefix_idx2_20260829_114756.npz",
+      "legacy_agent_y": 0.18433868885040283,
+      "camera_mount_m": 1.2,
+      "legacy_camera_world_y": 1.3843386888504028,
+      "frames": 445,
+      "status_counts": {
+        "ambiguous_overhead_or_object": 23,
+        "changing_surface": 15,
+        "measured": 407
+      },
+      "clearance_median_m": 1.4083391642164056,
+      "clearance_p05_m": 1.3648276405969089,
+      "clearance_p95_m": 2.031037555396769,
+      "height_mismatch_fraction_of_measured": 0.9901719901719902,
+      "source_mesh_bounds": [
+        [
+          -5.371264934539795,
+          -6.3956708908081055,
+          -2.3900039196014404
+        ],
+        [
+          6.054351806640625,
+          5.001463890075684,
+          8.575631141662598
+        ]
+      ],
+      "habitat_mesh_bounds": [
+        [
+          -5.371264934539795,
+          -2.3900039196014404,
+          -5.001463890075684
+        ],
+        [
+          6.054351806640625,
+          8.575631141662598,
+          6.3956708908081055
+        ]
+      ],
+      "selection_scope": "Geometry audit only; episode837 remains excluded from model/threshold selection"
+    },
+    {
+      "episode": 1689,
+      "scene": "mp3d/oLBMNvg9in8/oLBMNvg9in8.glb",
+      "pose_file": "/data/robotics/toshith/flowvo_compare/poses/b10_A_drivefix_idx6_20260829_114756.npz",
+      "legacy_agent_y": 0.055485233664512634,
+      "camera_mount_m": 1.2,
+      "legacy_camera_world_y": 1.2554852336645126,
+      "frames": 636,
+      "status_counts": {
+        "changing_surface": 44,
+        "measured": 587,
+        "missing_support": 5
+      },
+      "clearance_median_m": 1.2900263120238185,
+      "clearance_p05_m": 1.2564009198850965,
+      "clearance_p95_m": 1.9186193681646577,
+      "height_mismatch_fraction_of_measured": 0.33560477001703576,
+      "source_mesh_bounds": [
+        [
+          -5.371264934539795,
+          -6.3956708908081055,
+          -2.3900039196014404
+        ],
+        [
+          6.054351806640625,
+          5.001463890075684,
+          8.575631141662598
+        ]
+      ],
+      "habitat_mesh_bounds": [
+        [
+          -5.371264934539795,
+          -2.3900039196014404,
+          -5.001463890075684
+        ],
+        [
+          6.054351806640625,
+          8.575631141662598,
+          6.3956708908081055
+        ]
+      ],
+      "selection_scope": "Geometry audit only; episode837 remains excluded from model/threshold selection"
+    },
+    {
+      "episode": 629,
+      "scene": "mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb",
+      "pose_file": "/data/robotics/toshith/flowvo_compare/poses/b10_A_drivefix_idx3_20260829_114756.npz",
+      "legacy_agent_y": 0.17162737250328064,
+      "camera_mount_m": 1.2,
+      "legacy_camera_world_y": 1.3716273725032806,
+      "frames": 418,
+      "status_counts": {
+        "measured": 418
+      },
+      "clearance_median_m": 1.3685201051358589,
+      "clearance_p05_m": 1.36347145541765,
+      "clearance_p95_m": 1.3718518615015958,
+      "height_mismatch_fraction_of_measured": 1.0,
+      "source_mesh_bounds": [
+        [
+          -3.1357879638671875,
+          -5.173708915710449,
+          -0.2283719927072525
+        ],
+        [
+          19.306781768798828,
+          8.152770042419434,
+          2.9348950386047363
+        ]
+      ],
+      "habitat_mesh_bounds": [
+        [
+          -3.1357879638671875,
+          -0.2283719927072525,
+          -8.152770042419434
+        ],
+        [
+          19.306781768798828,
+          2.9348950386047363,
+          5.173708915710449
+        ]
+      ],
+      "selection_scope": "Geometry audit only; episode837 remains excluded from model/threshold selection"
+    },
+    {
+      "episode": 1481,
+      "scene": "mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb",
+      "pose_file": "/data/robotics/toshith/flowvo_compare/poses/b10_A_drivefix_idx5_20260829_114756.npz",
+      "legacy_agent_y": 0.17162737250328064,
+      "camera_mount_m": 1.2,
+      "legacy_camera_world_y": 1.3716273725032806,
+      "frames": 382,
+      "status_counts": {
+        "measured": 382
+      },
+      "clearance_median_m": 1.3690701211753373,
+      "clearance_p05_m": 1.3616334033505508,
+      "clearance_p95_m": 1.384277915064209,
+      "height_mismatch_fraction_of_measured": 1.0,
+      "source_mesh_bounds": [
+        [
+          -3.1357879638671875,
+          -5.173708915710449,
+          -0.2283719927072525
+        ],
+        [
+          19.306781768798828,
+          8.152770042419434,
+          2.9348950386047363
+        ]
+      ],
+      "habitat_mesh_bounds": [
+        [
+          -3.1357879638671875,
+          -0.2283719927072525,
+          -8.152770042419434
+        ],
+        [
+          19.306781768798828,
+          2.9348950386047363,
+          5.173708915710449
+        ]
+      ],
+      "selection_scope": "Geometry audit only; episode837 remains excluded from model/threshold selection"
+    },
+    {
+      "episode": 1285,
+      "scene": "mp3d/zsNo4HB9uLZ/zsNo4HB9uLZ.glb",
+      "pose_file": "/data/robotics/toshith/flowvo_compare/poses/b10_A_drivefix_idx7_20260829_114756.npz",
+      "legacy_agent_y": 0.17162737250328064,
+      "camera_mount_m": 1.2,
+      "legacy_camera_world_y": 1.3716273725032806,
+      "frames": 1431,
+      "status_counts": {
+        "measured": 1431
+      },
+      "clearance_median_m": 1.368061232834815,
+      "clearance_p05_m": 1.3641394454899889,
+      "clearance_p95_m": 1.3789053611574134,
+      "height_mismatch_fraction_of_measured": 1.0,
+      "source_mesh_bounds": [
+        [
+          -3.1357879638671875,
+          -5.173708915710449,
+          -0.2283719927072525
+        ],
+        [
+          19.306781768798828,
+          8.152770042419434,
+          2.9348950386047363
+        ]
+      ],
+      "habitat_mesh_bounds": [
+        [
+          -3.1357879638671875,
+          -0.2283719927072525,
+          -8.152770042419434
+        ],
+        [
+          19.306781768798828,
+          2.9348950386047363,
+          5.173708915710449
+        ]
+      ],
+      "selection_scope": "Geometry audit only; episode837 remains excluded from model/threshold selection"
+    },
+    {
+      "episode": 1031,
+      "scene": "mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+      "pose_file": "/data/robotics/toshith/flowvo_compare/poses/b10_A_drivefix_idx4_20260829_114756.npz",
+      "legacy_agent_y": 1.5968608856201172,
+      "camera_mount_m": 1.2,
+      "legacy_camera_world_y": 2.7968608856201174,
+      "frames": 314,
+      "status_counts": {
+        "ambiguous_overhead_or_object": 69,
+        "changing_surface": 17,
+        "measured": 228
+      },
+      "clearance_median_m": 2.7936228660114124,
+      "clearance_p05_m": 1.6987028855085797,
+      "clearance_p95_m": 2.799804315290281,
+      "height_mismatch_fraction_of_measured": 1.0,
+      "source_mesh_bounds": [
+        [
+          -10.50326156616211,
+          -13.69407844543457,
+          -0.07288999855518341
+        ],
+        [
+          32.57889938354492,
+          11.709379196166992,
+          8.094776153564453
+        ]
+      ],
+      "habitat_mesh_bounds": [
+        [
+          -10.50326156616211,
+          -0.07288999855518341,
+          -11.709379196166992
+        ],
+        [
+          32.57889938354492,
+          8.094776153564453,
+          13.69407844543457
+        ]
+      ],
+      "selection_scope": "Geometry audit only; episode837 remains excluded from model/threshold selection"
+    },
+    {
+      "episode": 1395,
+      "scene": "mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+      "pose_file": "/data/robotics/toshith/flowvo_compare/poses/b10_A_drivefix_idx8_20260829_114756.npz",
+      "legacy_agent_y": 0.12710899114608765,
+      "camera_mount_m": 1.2,
+      "legacy_camera_world_y": 1.3271089911460876,
+      "frames": 128,
+      "status_counts": {
+        "measured": 128
+      },
+      "clearance_median_m": 1.324783475380786,
+      "clearance_p05_m": 1.3165720334360267,
+      "clearance_p95_m": 1.326506655219014,
+      "height_mismatch_fraction_of_measured": 1.0,
+      "source_mesh_bounds": [
+        [
+          -10.50326156616211,
+          -13.69407844543457,
+          -0.07288999855518341
+        ],
+        [
+          32.57889938354492,
+          11.709379196166992,
+          8.094776153564453
+        ]
+      ],
+      "habitat_mesh_bounds": [
+        [
+          -10.50326156616211,
+          -0.07288999855518341,
+          -11.709379196166992
+        ],
+        [
+          32.57889938354492,
+          8.094776153564453,
+          13.69407844543457
+        ]
+      ],
+      "selection_scope": "Geometry audit only; episode837 remains excluded from model/threshold selection"
+    },
+    {
+      "episode": 1781,
+      "scene": "mp3d/x8F5xyUWy9e/x8F5xyUWy9e.glb",
+      "pose_file": "/data/robotics/toshith/flowvo_compare/poses/b10_A_drivefix_idx9_20260829_114756.npz",
+      "legacy_agent_y": 1.0461088418960571,
+      "camera_mount_m": 1.2,
+      "legacy_camera_world_y": 2.2461088418960573,
+      "frames": 346,
+      "status_counts": {
+        "changing_surface": 4,
+        "measured": 152,
+        "missing_support": 190
+      },
+      "clearance_median_m": 1.2938575926502924,
+      "clearance_p05_m": 1.1138041805587122,
+      "clearance_p95_m": 1.3046888085336155,
+      "height_mismatch_fraction_of_measured": 0.19078947368421054,
+      "source_mesh_bounds": [
+        [
+          -14.769477844238281,
+          -9.255003929138184,
+          -0.15389199554920197
+        ],
+        [
+          6.485613822937012,
+          10.003105163574219,
+          6.47279691696167
+        ]
+      ],
+      "habitat_mesh_bounds": [
+        [
+          -14.769477844238281,
+          -0.15389199554920197,
+          -10.003105163574219
+        ],
+        [
+          6.485613822937012,
+          6.47279691696167,
+          9.255003929138184
+        ]
+      ],
+      "selection_scope": "Geometry audit only; episode837 remains excluded from model/threshold selection"
+    }
+  ]
+}

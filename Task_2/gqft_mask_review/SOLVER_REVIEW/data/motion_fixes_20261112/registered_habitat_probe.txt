@@ -1,0 +1,13 @@
+PATH /data/robotics/toshith/vln_baselines/envs/habitat310-build/bin/python True
+ Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'habitat_sim'
+
+PATH /data/robotics/toshith/vln_baselines/envs/habitat38/bin/python True
+HABITAT_OK /data/robotics/toshith/vln_baselines/envs/habitat38/bin/python /data/robotics/toshith/vln_baselines/envs/habitat38/lib/python3.8/site-packages/habitat_sim/__init__.py
+CV2_OK
+ 
+PATH /data/robotics/toshith/pixel_ekf/environment/vlnce/bin/python True
+HABITAT_OK /data/robotics/toshith/pixel_ekf/environment/vlnce/bin/python /data/robotics/toshith/pixel_ekf/environment/vlnce/lib/python3.6/site-packages/habitat_sim/__init__.py
+CV2_OK
+ 

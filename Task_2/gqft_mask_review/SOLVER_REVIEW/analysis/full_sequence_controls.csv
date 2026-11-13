@@ -1,0 +1,7 @@
+method,ground_error_cm,endpoint_yaw_error_deg,protocol
+Neural / chunked,9.47133327762668,9.013103920106705,"48 observed pairs,context24,float32,26 validation sequences"
+Neural / sliding,9.509250844040743,8.911392484719936,"48 observed pairs,context24,float32,26 validation sequences"
+Original floor solver,13.546672552967301,16.88464280275198,"48 observed pairs,context24,float32,26 validation sequences"
+Central floor solver,6.406697480437848,4.79372115032031,"48 observed pairs,context24,float32,26 validation sequences"
+Far-ray yaw + central translation,11.533976761767498,22.912935435771942,"48 observed pairs,context24,float32,26 validation sequences"
+Residual-based quality fusion,11.011239363310429,9.383555751007338,"48 observed pairs,context24,float32,26 validation sequences"

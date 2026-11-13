@@ -1,0 +1,511 @@
+{
+  "files": [
+    {
+      "file": "data/ep629/leg00/20261013T170841_769161Z/ground_truth_comparison.png",
+      "source": "ep629/leg00/20261013T170841_769161Z/ground_truth_comparison.png",
+      "sha256": "2dba7d7831958ca044e6faf1318fe11d44bddfad5f2bb057b7c3835a1de77d90"
+    },
+    {
+      "file": "data/ep629/leg00/20261013T170841_769161Z/mask_explained.png",
+      "source": "ep629/leg00/20261013T170841_769161Z/mask_explained.png",
+      "sha256": "b7e9d0ef99be74d15fa748b9b69d242e886c4e2c864e13c0b75f2128995ee58f"
+    },
+    {
+      "file": "data/ep629/leg00/20261013T170841_769161Z/probe/episode_inputs.json",
+      "source": "ep629/leg00/20261013T170841_769161Z/probe/episode_inputs.json",
+      "sha256": "ecff55feabed458d7d1a50b3e0ca250cc802d0a116d595c076336f4d15ade3f8"
+    },
+    {
+      "file": "data/ep629/leg00/20261013T170841_769161Z/probe/flow_searaft_160x90.npz",
+      "source": "ep629/leg00/20261013T170841_769161Z/probe/flow_searaft_160x90.npz",
+      "sha256": "8d9e16dd2bf543f69d2e11004408aa443c2a543128a2f3512583d331be199d61"
+    },
+    {
+      "file": "data/ep629/leg00/20261013T170841_769161Z/probe/mask_diagnostics.png",
+      "source": "ep629/leg00/20261013T170841_769161Z/probe/mask_diagnostics.png",
+      "sha256": "5236f275609c874577ecd7fc3b46a655280e3ac8e3a0b4838538c14bc6f9ae2c"
+    },
+    {
+      "file": "data/ep629/leg00/20261013T170841_769161Z/probe/mask_maps.npz",
+      "source": "ep629/leg00/20261013T170841_769161Z/probe/mask_maps.npz",
+      "sha256": "dfb69677f288638cfcdc9c9fed25abc28bf0871e6b1908620e951d79f4fbacdd"
+    },
+    {
+      "file": "data/ep629/leg00/20261013T170841_769161Z/probe/prediction_comparison.png",
+      "source": "ep629/leg00/20261013T170841_769161Z/probe/prediction_comparison.png",
+      "sha256": "2214b8c9daceb2c1c79bbb747b13dfdc724071c35b6955d90e3fa63a03f8d069"
+    },
+    {
+      "file": "data/ep629/leg00/20261013T170841_769161Z/probe/probe.json",
+      "source": "ep629/leg00/20261013T170841_769161Z/probe/probe.json",
+      "sha256": "febe2c51158a55f914ae3a225980b1f2f67d8609a1887bd5d7977a91ad5171a7"
+    },
+    {
+      "file": "data/ep629/leg00/20261013T170841_769161Z/projection_explained.png",
+      "source": "ep629/leg00/20261013T170841_769161Z/projection_explained.png",
+      "sha256": "2bf935f27e34369f495ab77082dd0479f5202c32e97cd3642d8624cc42e4bddc"
+    },
+    {
+      "file": "data/ep629/leg00/20261013T170841_769161Z/review.json",
+      "source": "ep629/leg00/20261013T170841_769161Z/review.json",
+      "sha256": "60208553a2641f3ecc7b53b28344e51c74bd11ae31308dfcfe9bac49c9bbaddd"
+    },
+    {
+      "file": "data/ep629/leg02/20261013T165039_654952Z/ground_truth_comparison.png",
+      "source": "ep629/leg02/20261013T165039_654952Z/ground_truth_comparison.png",
+      "sha256": "282bc4da968ce96b41f36cc0acb27a32501cff008f91bca21a6898e066fdfd8c"
+    },
+    {
+      "file": "data/ep629/leg02/20261013T165039_654952Z/mask_explained.png",
+      "source": "ep629/leg02/20261013T165039_654952Z/mask_explained.png",
+      "sha256": "2810fec9946a1d7be907a2d8d1dc39a95a0712436eb36345849b58e578dcf7cb"
+    },
+    {
+      "file": "data/ep629/leg02/20261013T165039_654952Z/projection_explained.png",
+      "source": "ep629/leg02/20261013T165039_654952Z/projection_explained.png",
+      "sha256": "53af2339790c9891d9f5ffd2b0102dd1d697ea93ba2832f9147e57e19585cb97"
+    },
+    {
+      "file": "data/ep629/leg02/20261013T165039_654952Z/review.json",
+      "source": "ep629/leg02/20261013T165039_654952Z/review.json",
+      "sha256": "1c61098a4bc09ca7d712437cdd2e97eb4f6ed2d91526ffd87043c7853b087d72"
+    },
+    {
+      "file": "data/ep629/leg03/20261013T165054_373912Z/ground_truth_comparison.png",
+      "source": "ep629/leg03/20261013T165054_373912Z/ground_truth_comparison.png",
+      "sha256": "0a3f84b425e95840b34a11be6bad2e804d790baa4902f7c58cee4eb5cb8e2155"
+    },
+    {
+      "file": "data/ep629/leg03/20261013T165054_373912Z/mask_explained.png",
+      "source": "ep629/leg03/20261013T165054_373912Z/mask_explained.png",
+      "sha256": "0a05c735232c12431fb1b99fba9bb8c8bd1afadc9d37a0da2ed1d9447ae30e62"
+    },
+    {
+      "file": "data/ep629/leg03/20261013T165054_373912Z/projection_explained.png",
+      "source": "ep629/leg03/20261013T165054_373912Z/projection_explained.png",
+      "sha256": "7f18a4aa521ef94701f33fa2a99c8675958dc970c82ebb5aedbfd74dc6ed0571"
+    },
+    {
+      "file": "data/ep629/leg03/20261013T165054_373912Z/review.json",
+      "source": "ep629/leg03/20261013T165054_373912Z/review.json",
+      "sha256": "eca890534e21be15aa0544d47537fe742f5192a2581ae9e94ae218b916b98c2e"
+    },
+    {
+      "file": "data/ep629/leg04/20261013T165108_948717Z/ground_truth_comparison.png",
+      "source": "ep629/leg04/20261013T165108_948717Z/ground_truth_comparison.png",
+      "sha256": "8898f54a4ed37cd47df6f950cb73ca2c4ca5537fcdf1a3c62364b1e83073f0df"
+    },
+    {
+      "file": "data/ep629/leg04/20261013T165108_948717Z/mask_explained.png",
+      "source": "ep629/leg04/20261013T165108_948717Z/mask_explained.png",
+      "sha256": "5c81d1e4b840fbd1a2aa87b975cf08038ef1ae5660b92a8807bf7e0379db3c1a"
+    },
+    {
+      "file": "data/ep629/leg04/20261013T165108_948717Z/projection_explained.png",
+      "source": "ep629/leg04/20261013T165108_948717Z/projection_explained.png",
+      "sha256": "04cc21206a4e76e7ab2f20c3b1749916945991d9e519f1631a4b13b41cc3748b"
+    },
+    {
+      "file": "data/ep629/leg04/20261013T165108_948717Z/review.json",
+      "source": "ep629/leg04/20261013T165108_948717Z/review.json",
+      "sha256": "c0652b0af02c3fc9ce298fd2e1e6e626073d133155303fa05cf7c8edd364b198"
+    },
+    {
+      "file": "data/isolations/20261015_gpu2_pooling_v1/validation/pooling_ablation.png",
+      "source": "isolations/20261015_gpu2_pooling_v1/validation/pooling_ablation.png",
+      "sha256": "6a0c0ddb035d3e08a655b39b4a0a4524dfcc94af3db84483edcedfda08ffe6f3"
+    },
+    {
+      "file": "data/isolations/20261015_gpu2_pooling_v1/validation/report.json",
+      "source": "isolations/20261015_gpu2_pooling_v1/validation/report.json",
+      "sha256": "910ff7398ab18b234dbfe5e604c754d5c7a7fb25a662c3ce9a349bcf48a01c43"
+    },
+    {
+      "file": "data/isolations/20261015_gpu2_pooling_v1/validation/windows.jsonl",
+      "source": "isolations/20261015_gpu2_pooling_v1/validation/windows.jsonl",
+      "sha256": "d45e4cef006ce2922751e87c8df182c33aa9d488d4933b5286eda2cde853af44"
+    },
+    {
+      "file": "data/isolations/20261015_gpu2_pooling_v2/episodes/pooling_ablation.png",
+      "source": "isolations/20261015_gpu2_pooling_v2/episodes/pooling_ablation.png",
+      "sha256": "7f0e6975f8d339d87f992a5369ed2a334891f45854ff399099d0e87d8355063f"
+    },
+    {
+      "file": "data/isolations/20261015_gpu2_pooling_v2/episodes/report.json",
+      "source": "isolations/20261015_gpu2_pooling_v2/episodes/report.json",
+      "sha256": "35464962b3cb078238cbd7d308f6361249daa8c50f2cc2896b639902a71504a2"
+    },
+    {
+      "file": "data/isolations/20261015_gpu2_pooling_v2/episodes/windows.jsonl",
+      "source": "isolations/20261015_gpu2_pooling_v2/episodes/windows.jsonl",
+      "sha256": "cb9e42dad7d16c9c0e10c80a21599c8f65573fc80a64c4519375ec7504649e88"
+    },
+    {
+      "file": "data/isolations/20261015_gpu2_pooling_v2/neighbour_support.png",
+      "source": "isolations/20261015_gpu2_pooling_v2/neighbour_support.png",
+      "sha256": "95405b4b085cab71cb471e29e6e1f0a07c4ef68227dc70775eefc319b89146ba"
+    },
+    {
+      "file": "data/isolations/20261015_gpu2_pooling_v2/restored_cells_paths.png",
+      "source": "isolations/20261015_gpu2_pooling_v2/restored_cells_paths.png",
+      "sha256": "5ac28e5d0a8b6706dff66047201d1f58be472183e330f1034ff0f73e7403578c"
+    },
+    {
+      "file": "data/isolations/20261015_gpu2_pooling_v2/validation/pooling_ablation.png",
+      "source": "isolations/20261015_gpu2_pooling_v2/validation/pooling_ablation.png",
+      "sha256": "0e15ee4e106c717d45104b68bf05c652dd4b377e49fe5b8e4d59fe059aaff940"
+    },
+    {
+      "file": "data/isolations/20261015_gpu2_pooling_v2/validation/report.json",
+      "source": "isolations/20261015_gpu2_pooling_v2/validation/report.json",
+      "sha256": "a9522cb9ea0c7edca173f0225875608d5c0e6a632bca797afedb703a640c7fd2"
+    },
+    {
+      "file": "data/isolations/20261015_gpu2_pooling_v2/validation/windows.jsonl",
+      "source": "isolations/20261015_gpu2_pooling_v2/validation/windows.jsonl",
+      "sha256": "4be253910f9854f95bf82283934b6d452b1bf1c40737685ce324538d56f81ea6"
+    },
+    {
+      "file": "data/isolations/20261015_gpu2_pooling_v2/verification.json",
+      "source": "isolations/20261015_gpu2_pooling_v2/verification.json",
+      "sha256": "e19b13148d06644b39bbf613dfcdd7e21e8bef50fe726960f710473368ff9ee5"
+    },
+    {
+      "file": "data/soft_attention/20261015_gpu2_v1/cpu_verification.json",
+      "source": "soft_attention/20261015_gpu2_v1/cpu_verification.json",
+      "sha256": "41c823dbdb25a026103c84724d398bf61e96a9f05c7c1d381457d613e98e6ecf"
+    },
+    {
+      "file": "data/soft_attention/20261015_gpu2_v1/episodes/predeclared_plan.json",
+      "source": "soft_attention/20261015_gpu2_v1/episodes/predeclared_plan.json",
+      "sha256": "44ac8d500262f5c9be117b57f8f64ccf7ff6ff41d51bf4066e6235c1cba69f09"
+    },
+    {
+      "file": "data/soft_attention/20261015_gpu2_v1/episodes/report.json",
+      "source": "soft_attention/20261015_gpu2_v1/episodes/report.json",
+      "sha256": "6567132eae8459ab5f4e6a436967eb9a495c164d3fc2167fde9fbccd9f5f6875"
+    },
+    {
+      "file": "data/soft_attention/20261015_gpu2_v1/episodes/soft_attention_comparison.png",
+      "source": "soft_attention/20261015_gpu2_v1/episodes/soft_attention_comparison.png",
+      "sha256": "c82bd704984446acbf75bcf05d2469d96d59a9d3e4175fbca2a2f3b9a5050e06"
+    },
+    {
+      "file": "data/soft_attention/20261015_gpu2_v1/episodes/windows.jsonl",
+      "source": "soft_attention/20261015_gpu2_v1/episodes/windows.jsonl",
+      "sha256": "7aa44d65b170a7092238e25f5650bcbd2673fe3a7aee5ef6a47dde78bd3dc2d2"
+    },
+    {
+      "file": "data/soft_attention/20261015_gpu2_v1/sequence_sensitivity.json",
+      "source": "soft_attention/20261015_gpu2_v1/sequence_sensitivity.json",
+      "sha256": "79f9440eaf42e04dd24c156edb94b5e7de8299527b6b8a51d215fe5d614d8ec8"
+    },
+    {
+      "file": "data/soft_attention/20261015_gpu2_v1/validation/predeclared_plan.json",
+      "source": "soft_attention/20261015_gpu2_v1/validation/predeclared_plan.json",
+      "sha256": "44ac8d500262f5c9be117b57f8f64ccf7ff6ff41d51bf4066e6235c1cba69f09"
+    },
+    {
+      "file": "data/soft_attention/20261015_gpu2_v1/validation/report.json",
+      "source": "soft_attention/20261015_gpu2_v1/validation/report.json",
+      "sha256": "e63858031df6409d878528984f798dc3b0aad3599fce0a05bfd174d58bdc8dd6"
+    },
+    {
+      "file": "data/soft_attention/20261015_gpu2_v1/validation/soft_attention_comparison.png",
+      "source": "soft_attention/20261015_gpu2_v1/validation/soft_attention_comparison.png",
+      "sha256": "6dbf9cb6fe002217c0b360829385802bbf37130164b11d434e254db788f7042e"
+    },
+    {
+      "file": "data/soft_attention/20261015_gpu2_v1/validation/windows.jsonl",
+      "source": "soft_attention/20261015_gpu2_v1/validation/windows.jsonl",
+      "sha256": "6da579eecb2cfdbba4e3f6eca7ce979de03079e9ea3e8585a14ffb920f354eac"
+    },
+    {
+      "file": "data/soft_attention/20261015_gpu2_v1/verification.json",
+      "source": "soft_attention/20261015_gpu2_v1/verification.json",
+      "sha256": "1635008be57e2997b4c31e1dddc91934f94e5ae19d5a3dcb18cbf44e906b7ab5"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/ARTIFACT_SHA256.json",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/ARTIFACT_SHA256.json",
+      "sha256": "15c067c9074c3b88551a1684abe7a0a1e7ad35d5d7eca1bb67704ede51203e6a"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/README.md",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/README.md",
+      "sha256": "d1b113b0021f514ae88aea297167b30c41a164e84c63985f61bce9d8ebb9e646"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/START_HERE_overview.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/START_HERE_overview.png",
+      "sha256": "76fb4b49fb5260e26a730623ba0db768aeffc7363b515a820213f8b52757150d"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/gallery.html",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/gallery.html",
+      "sha256": "be83a3155e3e27f665cf26357b5133be768037a53ba30d03a475a55973243bc8"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/index.html",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/index.html",
+      "sha256": "0f1dfd6e61b1e55f71a398f052241d6bfabb0845b6149ea1b058e21339164217"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/attention_comparison.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/attention_comparison.png",
+      "sha256": "328115d55b0163afab409b7bb6d837be5f73cea1383633756b30a149391bfe0a"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/attention_maps.npz",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/attention_maps.npz",
+      "sha256": "e1873bec1dad1722cb81a757524227eb30e5e18e5be2360e887448e0d8b98447"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/comparison.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/comparison.png",
+      "sha256": "03960b929e975a165bfe75d6e00d65cd9a23258d43455546514ee731c6829426"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/comparison_zoom.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/comparison_zoom.png",
+      "sha256": "33beb22ff44628415a85601a83acdd1ce59fd974401a987a1d673d11f70a305d"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/ground_paths.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/ground_paths.png",
+      "sha256": "7f71aea5328ed76921978033a0ebdc713ddbebfdf08b2e8424597bf37861468d"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/mask_reliability.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/mask_reliability.png",
+      "sha256": "fc45696df2741b50ec9baa0054c46e412e78651adcaa47ea59c7dc961367b9f7"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/masked_only_overlay.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/masked_only_overlay.png",
+      "sha256": "e654a026433094754fe2647403c8f11f4963a09e768a40ee0c95c9fcfaf7ebad"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/masked_yaw_local_overlay.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/masked_yaw_local_overlay.png",
+      "sha256": "b2be1f762e6e951bc4eb65fa713a4fbe785de766c334207b5789a6b993063ecf"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/predictions.json",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/predictions.json",
+      "sha256": "36974ebee3d8d3a3fc42b0435fce8b93b79dfd62e5e29818b1e8ccff294298d5"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/pretrained_yaw_overlay.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/pretrained_yaw_overlay.png",
+      "sha256": "74dc1682f7b660bfa1409dc067a56760e9cd90daa85db2e2f2bcbb668ea72464"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/reference_overlay.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/reference_overlay.png",
+      "sha256": "857d2798e13b69e2508714f2486ea93e0ab8dee407f9c68bd93794206feedeed"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/yaw_local_only_overlay.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg00/yaw_local_only_overlay.png",
+      "sha256": "873e33a80d408f5dfd6387fd2ee21fc7385662c39cfca98288a45d875e1a95ad"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/attention_comparison.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/attention_comparison.png",
+      "sha256": "13f08e1a628f740de9654285903078591aa31533b1df8262d1a35d67b0688b07"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/attention_maps.npz",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/attention_maps.npz",
+      "sha256": "b8cffa9e57ef3b6cacc72b0bacf5e639f49da1a5cd2f228e43fa63935918833e"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/comparison.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/comparison.png",
+      "sha256": "8e0edd7c92705f466c24e06720ddbe8254caf6e9ebe276bb3530293268312790"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/comparison_zoom.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/comparison_zoom.png",
+      "sha256": "1bd3af726f0fb84a0a573628c0885cac434a5e1f495e112ab27dd1248574f46d"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/ground_paths.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/ground_paths.png",
+      "sha256": "b01ea9df0c5a4c9eca621036a41ce9428be424343655892dd98fcb07f0ac49f3"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/mask_reliability.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/mask_reliability.png",
+      "sha256": "cae8574f0c76ef67b40caaa3baaf62e96b181e9d64cca71bd9b834a06e767469"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/masked_only_overlay.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/masked_only_overlay.png",
+      "sha256": "fc4e3b0be32c907bcf60c7874713f2abf5bbe6839770c937a689f3e8ca2a420d"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/masked_yaw_local_overlay.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/masked_yaw_local_overlay.png",
+      "sha256": "5cf9550d6f9203c67900a26269b2e36dd0643bcf274eaf4153c0738990656e5f"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/predictions.json",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/predictions.json",
+      "sha256": "00187d268d45a52204393d8e9dba530cd8d6590dc4b7bb856c55603a8ca16475"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/pretrained_yaw_overlay.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/pretrained_yaw_overlay.png",
+      "sha256": "0fc1f3bb153230f4614aa8ed0fba1aee59ffb4579f0590e5a529c252e9d95578"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/reference_overlay.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/reference_overlay.png",
+      "sha256": "4cb138f4ce62b69f326eaf21c30fe5557617c8bcdda33bdd92f8267452af0ad6"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/yaw_local_only_overlay.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg02/yaw_local_only_overlay.png",
+      "sha256": "56696be997b0f9f1031d925fd1880dc0e615d104ac68797e83df45842b5bdc83"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/attention_comparison.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/attention_comparison.png",
+      "sha256": "f48a21c85af4f0d4e1636f2e0bed4fe1759d75356d4ceb2646d8fe82554c2bbb"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/attention_maps.npz",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/attention_maps.npz",
+      "sha256": "0fc0df3e8f572d621826cb48fb436c0bd801e18fdcb79a9b67da9a97e9cdae05"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/comparison.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/comparison.png",
+      "sha256": "f9c9eb11532af204d14d36f2e442da8a1fae3a07799fd90b9ada5e085817d601"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/comparison_zoom.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/comparison_zoom.png",
+      "sha256": "66001c94fae166dd71998558bb3f68e3ee33d6e702579896ebbbba2f6d8730a1"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/ground_paths.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/ground_paths.png",
+      "sha256": "411ed196d83ba7abdaa8896890c50a36ea63b6c78f46e181395216deb98df017"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/mask_reliability.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/mask_reliability.png",
+      "sha256": "798c1cb88aad615be6d44ca2ee637f697929fbd79f054a43976555b7b823a701"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/masked_only_overlay.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/masked_only_overlay.png",
+      "sha256": "309aa2f18fdc400a329cb31b2c67208cd69eaea19ed301f86ac2ef49cecb484f"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/masked_yaw_local_overlay.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/masked_yaw_local_overlay.png",
+      "sha256": "b046bc54c8d1b0776d421078270fc6162eda715785e1b588478343f61884c4f3"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/predictions.json",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/predictions.json",
+      "sha256": "c7cb92de0466d59d82b22d5bd76d2630b1a804896d74073615b538975f097027"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/pretrained_yaw_overlay.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/pretrained_yaw_overlay.png",
+      "sha256": "46995b76fb39eb94f04bc38a2f6ad0e533380b55691ad34298bf37193fc06716"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/reference_overlay.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/reference_overlay.png",
+      "sha256": "968ff7c1a9188921b324b67ba39f6e7a020a0dfe83446a8587a895002f227156"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/yaw_local_only_overlay.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg03/yaw_local_only_overlay.png",
+      "sha256": "82cf9cc9c20aa4df0e3c6546d1d2e0591b417cf8a19607bafe60863680dfeb82"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/attention_comparison.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/attention_comparison.png",
+      "sha256": "12d4c6e7cb1dd3d4091f95b5bcbc77d659f27121eb761f80a78e548ec3558f23"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/attention_maps.npz",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/attention_maps.npz",
+      "sha256": "b013787687e3b30933d1285ae40277c3d22ac4d2d8735b84155aa4093ce58d12"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/comparison.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/comparison.png",
+      "sha256": "4d5022f85770f74796acf844590834af7d6313b968af9ea447c09a6b9a0a0d00"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/comparison_zoom.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/comparison_zoom.png",
+      "sha256": "a8f6d2eeb6646e440df76ea62281ae13ab2c5564c5bdb23d542b5390e7c3874c"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/ground_paths.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/ground_paths.png",
+      "sha256": "182da973f736b6ae1d40839e0ceedc789bc7e10e4659d702c556df7de0d472d6"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/mask_reliability.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/mask_reliability.png",
+      "sha256": "df3e4b39a087f5b898abab3a66724aeb6864f9313dac033376b9ff31f739f464"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/masked_only_overlay.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/masked_only_overlay.png",
+      "sha256": "925556e4e1ce6f3ab08c4bac9ef6ff3ae67b4be0005fc3c5b0495fed6f64bd11"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/masked_yaw_local_overlay.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/masked_yaw_local_overlay.png",
+      "sha256": "cc394c1747844d5105d5d756d39f9b14854e7fa9dbc34299fd8a9bff06440d73"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/predictions.json",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/predictions.json",
+      "sha256": "275dcac720424fb7190e2f2a95a280df0be50c6a8c14c2cc3dd7783ede27283a"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/pretrained_yaw_overlay.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/pretrained_yaw_overlay.png",
+      "sha256": "835045cb412e256cd16c5a3674fcecc45457bb6c9a216588adbd3c5f42705690"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/reference_overlay.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/reference_overlay.png",
+      "sha256": "3c6c463a4defe11507bb4116b89dd57b98f8c3e2d9d42dbd9479a12b691274e6"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/yaw_local_only_overlay.png",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/leg04/yaw_local_only_overlay.png",
+      "sha256": "de8394ad8aca785f558685e6ff5e0479b74af2e8691fd23d32cfe1479c2422c7"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/metrics.json",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/metrics.json",
+      "sha256": "9765020560fe04229f204990933fe1d7760cee725fcd505ebd22d783fa29a131"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/provenance.json",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/provenance.json",
+      "sha256": "ab5b04f104d8947350490935f61b9bebb11f5f8388bc73ab0ed5ec0be3143aea"
+    },
+    {
+      "file": "data/trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/verification.json",
+      "source": "trained_episode_overlays/20261019T101035Z_431613/20261019T123632Z/verification.json",
+      "sha256": "9356d87c94c95f5ca5d36e99e8cd1786733dbe0c98f065217c055b2b12031ab3"
+    }
+  ],
+  "pngs": 62,
+  "images_regenerated": false
+}

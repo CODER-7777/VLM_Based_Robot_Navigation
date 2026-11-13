@@ -1,0 +1,35 @@
+<!doctype html><meta charset="utf-8"><title>Episode 629 trained models</title>
+<style>body{font:16px system-ui;background:#15171b;color:#eee;margin:24px}img{width:100%;height:auto}a{color:#71d7ff}section{margin:35px 0}p{line-height:1.5}</style>
+<h1>Episode 629 — newly trained checkpoint comparisons</h1>
+<p>Magenta: recorded ground truth. Cyan: trained reference. Green: soft mask. Purple: yaw-local. Orange: mask + yaw-local. Steel: original pretrained yaw.</p>
+<p>Same first 24 flow pairs of legs 0, 2, 3, 4. These are short diagnostic windows, not full-leg results. No scale or rotation was fitted. All four new checkpoints are from step 500.</p>
+<p>Open the zoom comparisons first, then ground paths to judge metric motion. Dotted paths continue after the analytic canvas gate. The lower white area is the extended query canvas.</p>
+<p><a href="START_HERE_overview.png">All legs overview</a> · <a href="provenance.json">Checkpoint provenance</a></p>
+<section><h2>Leg 00</h2>
+<h3>Camera overlay — zoom</h3><a href="leg00/comparison_zoom.png"><img loading="lazy" src="leg00/comparison_zoom.png"></a>
+<h3>Camera overlay — full view</h3><a href="leg00/comparison.png"><img loading="lazy" src="leg00/comparison.png"></a>
+<h3>Ground paths and errors</h3><a href="leg00/ground_paths.png"><img loading="lazy" src="leg00/ground_paths.png"></a>
+<h3>Learned attention</h3><a href="leg00/attention_comparison.png"><img loading="lazy" src="leg00/attention_comparison.png"></a>
+<h3>What the soft prior weights</h3><a href="leg00/mask_reliability.png"><img loading="lazy" src="leg00/mask_reliability.png"></a>
+</section>
+<section><h2>Leg 02</h2>
+<h3>Camera overlay — zoom</h3><a href="leg02/comparison_zoom.png"><img loading="lazy" src="leg02/comparison_zoom.png"></a>
+<h3>Camera overlay — full view</h3><a href="leg02/comparison.png"><img loading="lazy" src="leg02/comparison.png"></a>
+<h3>Ground paths and errors</h3><a href="leg02/ground_paths.png"><img loading="lazy" src="leg02/ground_paths.png"></a>
+<h3>Learned attention</h3><a href="leg02/attention_comparison.png"><img loading="lazy" src="leg02/attention_comparison.png"></a>
+<h3>What the soft prior weights</h3><a href="leg02/mask_reliability.png"><img loading="lazy" src="leg02/mask_reliability.png"></a>
+</section>
+<section><h2>Leg 03</h2>
+<h3>Camera overlay — zoom</h3><a href="leg03/comparison_zoom.png"><img loading="lazy" src="leg03/comparison_zoom.png"></a>
+<h3>Camera overlay — full view</h3><a href="leg03/comparison.png"><img loading="lazy" src="leg03/comparison.png"></a>
+<h3>Ground paths and errors</h3><a href="leg03/ground_paths.png"><img loading="lazy" src="leg03/ground_paths.png"></a>
+<h3>Learned attention</h3><a href="leg03/attention_comparison.png"><img loading="lazy" src="leg03/attention_comparison.png"></a>
+<h3>What the soft prior weights</h3><a href="leg03/mask_reliability.png"><img loading="lazy" src="leg03/mask_reliability.png"></a>
+</section>
+<section><h2>Leg 04</h2>
+<h3>Camera overlay — zoom</h3><a href="leg04/comparison_zoom.png"><img loading="lazy" src="leg04/comparison_zoom.png"></a>
+<h3>Camera overlay — full view</h3><a href="leg04/comparison.png"><img loading="lazy" src="leg04/comparison.png"></a>
+<h3>Ground paths and errors</h3><a href="leg04/ground_paths.png"><img loading="lazy" src="leg04/ground_paths.png"></a>
+<h3>Learned attention</h3><a href="leg04/attention_comparison.png"><img loading="lazy" src="leg04/attention_comparison.png"></a>
+<h3>What the soft prior weights</h3><a href="leg04/mask_reliability.png"><img loading="lazy" src="leg04/mask_reliability.png"></a>
+</section>

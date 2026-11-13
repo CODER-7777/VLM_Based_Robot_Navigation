@@ -1,0 +1,127 @@
+{
+  "scope": "Method-focused review of all14 primary papers; not exhaustive line-by-line reading of every appendix/reference",
+  "papers": [
+    {
+      "id": "P01",
+      "method_sections": "3.1\u20133.3 normalized convolution/applicability/confidence",
+      "pdf_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "P02",
+      "method_sections": "3.1\u20133.2 partial convolution and mask update",
+      "pdf_pages": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": "P03",
+      "method_sections": "3.1 gated convolution",
+      "pdf_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "P04",
+      "method_sections": "3.1\u20133.3 feature extraction,dual branches,guidance",
+      "pdf_pages": [
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "P05",
+      "method_sections": "3.3\u20133.4 scale and intrinsic conditioning",
+      "pdf_pages": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "P06",
+      "method_sections": "3 approach,confidence-weighted BA and training",
+      "pdf_pages": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "P07",
+      "method_sections": "3.3.2\u20133.3.4 task losses and reprojection",
+      "pdf_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "P08",
+      "method_sections": "3\u20134 contextuality/anisotropy measures",
+      "pdf_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "P09",
+      "method_sections": "2.1 and Algorithm1 mean/PCA postprocessing",
+      "pdf_pages": [
+        4
+      ]
+    },
+    {
+      "id": "P10",
+      "method_sections": "3.1 RankMe statistic and limitations",
+      "pdf_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "P11",
+      "method_sections": "4 model fitting,weight estimator,Algorithm1",
+      "pdf_pages": [
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "P12",
+      "method_sections": "3.1\u20133.2 correspondence revisions and DBA",
+      "pdf_pages": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "P13",
+      "method_sections": "2\u20134.1 virtual geometry/local fitting/ground weighting",
+      "pdf_pages": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "P14",
+      "method_sections": "III\u2013IV circular motion and outlier consensus",
+      "pdf_pages": [
+        2,
+        3,
+        4
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "status": "training",
+  "pid": 1852631,
+  "started_utc": "2026-11-11T22:11:45.486476+00:00",
+  "gpu_physical": 4,
+  "steps_per_arm": 500,
+  "completed_arms": [
+    "yaw_local_reference"
+  ],
+  "current_arm": "solver_residual",
+  "current_log": "/data/robotics/toshith/vivekananda/gqft_algorithm_sharing_vivekananda/gqft_mask_review/ground_pilots/20261111T220751Z_gpu4/solver_residual/train.log",
+  "updated_utc": "2026-11-11T22:12:54.131176+00:00",
+  "resumed_utc": "2026-11-11T22:15:10.990468+00:00"
+}
+
+resume_controller.log 
+ 
+solver_residual/train.log 
+ TRAIN {"step": 140, "epoch": 0, "loss": -0.07612343411892653, "motion": 0.010135863861069083, "path": 0.006989972351584583, "endpoint": 0.007871145172975958, "visibility": 4.0739588030191955e-06, "motion_nll": -2.9948946714401243, "yaw": 0.009107853940076894, "grad_norm": 3.1404316425323486, "lr": 0.00018185661446562, "finite_streak": 140, "time": 1794435329.1285138}
+TRAIN {"step": 160, "epoch": 0, "loss": -0.08319262433797121, "motion": 0.008351246126403566, "path": 0.006254003173671663, "endpoint": 0.008554015171830543, "visibility": 4.126956753225386e-06, "motion_nll": -2.995411491394043, "yaw": 0.009181959276065754, "grad_norm": 0.16270588338375092, "lr": 0.00017333728103217187, "finite_streak": 160, "time": 1794435330.3189619}
+TRAIN {"step": 180, "epoch": 0, "loss": -0.042788580618798734, "motion": 0.010234583684359677, "path": 0.005896619526902213, "endpoint": 0.006350961129646749, "visibility": 3.6890943988510116e-06, "motion_nll": -2.99725878238678, "yaw": 0.026943763118470087, "grad_norm": 0.8100394010543823, "lr": 0.00016348784015593755, "finite_streak": 180, "time": 1794435331.5478768}
+TRAIN {"step": 200, "epoch": 0, "loss": -0.060105782374739646, "motion": 0.008074316768033895, "path": 0.005022072882275097, "endpoint": 0.006667297432431951, "visibility": 0.10413891078786719, "motion_nll": -2.9961356639862062, "yaw": 0.009839817852480337, "grad_norm": 0.26996567845344543, "lr": 0.0001525, "finite_streak": 200, "time": 1794435332.80471}
+index, memory.used [MiB], utilization.gpu [%]
+4, 3473 MiB, 11 %
+

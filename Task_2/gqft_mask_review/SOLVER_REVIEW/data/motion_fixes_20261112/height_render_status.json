@@ -1,0 +1,59 @@
+{
+  "scope": "Mesh-reconstructed 1.2m counterfactual RGB; originals preserved; no training or fitted output scale",
+  "completed": [
+    753,
+    629,
+    1481,
+    1285,
+    1395
+  ],
+  "blocked": [
+    {
+      "episode": 837,
+      "reason": "Uncertain floor support; no interpolation or guessed heights",
+      "status_counts": {
+        "ambiguous_overhead_or_object": 131,
+        "changing_surface": 5,
+        "measured": 1033,
+        "missing_support": 1
+      }
+    },
+    {
+      "episode": 478,
+      "reason": "Uncertain floor support; no interpolation or guessed heights",
+      "status_counts": {
+        "ambiguous_overhead_or_object": 23,
+        "changing_surface": 15,
+        "measured": 407
+      }
+    },
+    {
+      "episode": 1689,
+      "reason": "Uncertain floor support; no interpolation or guessed heights",
+      "status_counts": {
+        "changing_surface": 44,
+        "measured": 587,
+        "missing_support": 5
+      }
+    },
+    {
+      "episode": 1031,
+      "reason": "Uncertain floor support; no interpolation or guessed heights",
+      "status_counts": {
+        "ambiguous_overhead_or_object": 69,
+        "changing_surface": 17,
+        "measured": 228
+      }
+    },
+    {
+      "episode": 1781,
+      "reason": "Uncertain floor support; no interpolation or guessed heights",
+      "status_counts": {
+        "changing_surface": 4,
+        "measured": 152,
+        "missing_support": 190
+      }
+    }
+  ],
+  "status": "completed_safe_subset"
+}
